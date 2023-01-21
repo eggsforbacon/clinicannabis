@@ -6,22 +6,22 @@ import {Facebook, Instagram, Youtube} from "react-bootstrap-icons";
 const Footer = () => {
 
     const linkFamilyStyle: string = "h-full flex flex-col items-stretch justify-start space-y-2";
-    const linkStyle: string = "text-neutral-900 font-semibold text-lg transition ease-in-out duration-300 lg:hover:text-green-100 focus:text-green-100";
+    const linkStyle: string = "text-clinic-dark-jade font-semibold text-lg transition ease-in-out duration-300 lg:hover:text-green-100 focus:text-green-100";
 
     return (
         <footer className={"flex w-full flex-col justify-center items-center bg-clinic-muted-jade"}>
             <section
-                className={"flex flex-col md:min-h-168 w-full px-44 py-8 items-center text-green-100 justify-center"}>
+                className={"flex flex-col md:min-h-168 w-full px-28 py-8 items-center text-green-100 justify-center"}>
                 <article className={"grid w-full h-fit py-6 lg:grid-cols-3 lg:place-items-center"}>
                     <section className={linkFamilyStyle}>
                         <h2 className={"font-bold text-4xl tracking-widest uppercase"}>{strings.footer.questions.headline}</h2>
-                        <p className={"font-normal text-neutral-900"}>{strings.footer.questions.subtitle}</p>
+                        <p className={"font-normal text-clinic-dark-jade"}>{strings.footer.questions.subtitle}</p>
                         <ul className={"flex flex-col items-start space-y-8 text-neutral-900"}>
                             <li>
                                 <div className={"w-full flex items-center justify-stretch"}>
                                     <section className={"flex flex-col items-stretch justify-center"}>
                                         <Link href={"tel:+576023152102"} className={linkStyle}>{strings.footer.questions.phone}</Link>
-                                        <p className={"font-normal"}>{strings.footer.questions.phoneScript}</p>
+                                        <p className={"font-normal text-clinic-dark-jade"}>{strings.footer.questions.phoneScript}</p>
                                     </section>
                                 </div>
                             </li>
@@ -29,14 +29,14 @@ const Footer = () => {
                                 <div className={"w-full flex items-center justify-stretch"}>
                                     <section className={"flex flex-col items-start justify-center"}>
                                         <Link href={"mailto:info@clinicannabis.com.co"} className={linkStyle}>{strings.footer.questions.email}</Link>
-                                        <p className={"font-normal"}>{strings.footer.questions.emailScript}</p>
+                                        <p className={"font-normal text-clinic-dark-jade"}>{strings.footer.questions.emailScript}</p>
                                     </section>
                                 </div>
                             </li>
                             <li>
                                 <div className={"w-full flex items-center justify-stretch"}>
                                     <section className={"flex flex-col items-start justify-center"}>
-                                        <Link href={"https://goo.gl/maps/LXE5LD2FWvLQYJd5A"} className={linkStyle}>{strings.footer.questions.address}</Link>
+                                        <Link href={"https://goo.gl/maps/BP2WeL5AkFZp1AcK9"} className={linkStyle}>{strings.footer.questions.address}</Link>
                                         <p className={"font-normal"}>{strings.footer.questions.addressScript}</p>
                                     </section>
                                 </div>
@@ -64,7 +64,7 @@ const Footer = () => {
                     </section>
                 </article>
                 <span
-                    className={"text-transparent border-solid border-2 border-transparent rounded-md border-t-neutral-900 w-full h-2"}/>
+                    className={"text-transparent border-solid border-2 border-transparent rounded-md border-t-clinic-dark-jade w-full h-2"}/>
                 <section className={"w-full flex justify-between items-center my-8 h-fit"}>
                     <Image src={"/images/clinicannabis_footer.png"} alt={"Logo de Clinicannabis"}
                            width={384 / 4}

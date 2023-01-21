@@ -1,6 +1,11 @@
 export const strings = {
     'navbar' : {
-
+        'home' : <>{"Nuestra Clínica"}</>,
+        'services' : <>{"Servicios"}</>,
+        'experience' : <>{"Centro de experiencia"}</>,
+        'blog' : <>{"Blog médico"}</>,
+        'contact' : <>{"Contáctanos"}</>,
+        'cta' : <>{"Agenda tu cita"}</>,
     },
     'footer' : {
         'copy' : <>{"Clinicannabis "}&copy;{" 2023 | Todos los derechos reservados"}</>,
@@ -11,7 +16,7 @@ export const strings = {
             'phoneScript' : <>{"Lunes a viernes 8:00 - 17:00"}</>,
             'email' : <>{"info@clinicannabis.com.co"}</>,
             'emailScript' : <>{"Apuntamos a un tiempo de respuesta de 24h"}</>,
-            'address' : <>{"Carrera 105 #15-09"}</>,
+            'address' : <>{"Calle 18 # 106 - 11"}</>,
             'addressScript' : <>{"Encuéntranos en Ciudad Jardín"}</>,
         },
         'clinic' : {

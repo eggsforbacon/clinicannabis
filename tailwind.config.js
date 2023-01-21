@@ -47,7 +47,7 @@ module.exports = {
       colors : {
         'clinic-jade' : '#00b34f',
         'clinic-muted-jade' : '#00a052',
-        'clinic-jade-dark' : '#00662d',
+        'clinic-dark-jade' : '#003316',
         'clinic-pale-jade' : '#00ac69',
         'clinic-persian-green' : '#00a88f',
         'clinic-blue-chill' : '#0e9390',
