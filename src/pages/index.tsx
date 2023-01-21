@@ -1,7 +1,7 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
     return (
@@ -12,12 +12,11 @@ const Home: NextPage = () => {
             </Head>
 
             <Navbar selection={"home"}/>
-            <main className="w-full">
+            <main className="w-full min-h-screen">
+
             </main>
 
-            <footer className="flex h-24 w-full items-center justify-center border-t">
-
-            </footer>
+            <Footer/>
         </div>
     )
 }

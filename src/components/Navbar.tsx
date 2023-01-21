@@ -13,7 +13,7 @@ const Navbar = (
     return (
         <nav
             className={"font-black text-neutral-600 flex items-center justify-around bg-white border-solid border-2 border-b-neutral-300 w-full h-fit"}>
-            <Image src={"/images/Clinicannabis.png"} alt={"Logo de Clinicannabis"} width={500 / 2} height={174 / 2}/>
+            <Image src={"/images/clinicannabis_hr.png"} alt={"Logo horizontal de Clinicannabis"} width={500 / 2} height={174 / 2}/>
             <section className={"h-full"}>
                 <ul className={"h-10 flex justify-end items-end space-x-8"}>
                     <li className={listItemStyle}>

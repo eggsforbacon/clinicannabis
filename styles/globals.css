@@ -4,6 +4,10 @@
 @tailwind utilities;
 
 @layer base {
+    .debug {
+        @apply border-solid border-2 border-fuchsia-600;
+    }
+
     body {
         @apply font-solomon-sans font-semibold;
     }

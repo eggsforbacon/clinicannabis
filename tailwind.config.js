@@ -7,14 +7,51 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height : {
+        '104' : '24rem',
+        '112' : '26rem',
+        '120' : '28rem',
+        '128' : '30rem',
+        '136' : '34rem',
+        '144' : '36rem',
+        '168' : '42rem',
+        '192' : '48rem',
+        '208' : '52rem',
+        '224' : '56rem',
+        '256' : '64rem',
+        '288' : '72rem',
+        '320' : '80rem',
+        '384' : '96rem',
+        '424' : '106rem',
+      },
+      width : {
+        '104' : '24rem',
+        '112' : '26rem',
+        '120' : '28rem',
+        '128' : '30rem',
+        '136' : '34rem',
+        '144' : '36rem',
+        '168' : '42rem',
+        '192' : '48rem',
+        '208' : '52rem',
+        '224' : '56rem',
+        '256' : '64rem',
+        '288' : '72rem',
+        '320' : '80rem',
+        '384' : '96rem',
+        '424' : '106rem',
+      },
       fontFamily: {
         'solomon-sans' : ['Solomon Sans']
       },
       colors : {
         'clinic-jade' : '#00b34f',
+        'clinic-muted-jade' : '#00a052',
+        'clinic-jade-dark' : '#00662d',
         'clinic-pale-jade' : '#00ac69',
         'clinic-persian-green' : '#00a88f',
         'clinic-blue-chill' : '#0e9390',
+        'clinic-dark-teal' : "#0c3b41",
       },
       /*Awfully useful animation timing functions*/
       transitionTimingFunction: {

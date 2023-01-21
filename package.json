@@ -8,7 +8,9 @@
   "dependencies": {
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap-icons": "^1.10.2",
+    "react-dom": "18.2.0",
+    "react-localization": "^1.0.19"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
