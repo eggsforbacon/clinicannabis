@@ -12,3 +12,9 @@
         @apply font-solomon-sans font-semibold;
     }
 }
+
+@layer components {
+    .hero-clip {
+        clip-path: ellipse(70% 80% at 50% 80%);
+    }
+}

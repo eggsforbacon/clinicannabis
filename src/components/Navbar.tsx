@@ -10,7 +10,7 @@ const Navbar = (
     const selectedStyle : string = "h-0.5 absolute -bottom-[34px] px-1 rounded-sm w-full bg-clinic-jade";
     const listItemStyle : string = "flex relative flex-col items-center justify-start";
     const linkStyle : string = "font-semibold tracking-wide transition quartic-in-out duration-300 lg:hover:text-clinic-jade lg:hover:-translate-y-1 focus:text-clinic-jade";
-    const buttonStyle : string = "rounded-full border-solid border-2 border-clinic-persian-green text-clinic-persian-green font-normal text-lg px-4 py-1 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-clinic-persian-green lg:hover:text-white focus:scale-110 focus:bg-clinic-persian-green focus:text-white";
+    const buttonStyle : string = "rounded-full border-solid border-2 border-clinic-pale-jade text-clinic-pale-jade font-normal text-lg px-4 py-1 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-clinic-pale-jade lg:hover:text-white focus:scale-110 focus:bg-clinic-pale-jade focus:text-white";
 
     return (
         <nav
@@ -39,7 +39,9 @@ const Navbar = (
                         <span className={props.selection === "contact" ? selectedStyle : ""} />
                     </li>
                 </ul>
-                <Link href={"/"} className={buttonStyle}>{strings.navbar.cta}</Link>
+                <button className={buttonStyle}>
+                    <Link href={"/"}>{strings.navbar.cta}</Link>
+                </button>
             </section>
         </nav>
     );

@@ -41,6 +41,9 @@ module.exports = {
         '384' : '96rem',
         '424' : '106rem',
       },
+      transitionProperty : {
+        'bg-size' : 'background-size'
+      },
       fontFamily: {
         'solomon-sans' : ['Solomon Sans']
       },
