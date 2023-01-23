@@ -57,9 +57,9 @@ const Footer = () => {
                         <h3 className={"text-2xl uppercase tracking-widest"}>{strings.footer.fast.headline}</h3>
                         <ul className={"flex flex-col justify-start items-stretch space-y-6"}>
                             <li><Link href={"/"} className={linkStyle}>{strings.footer.fast.contact}</Link></li>
-                            <li><Link href={"/"} className={linkStyle}>{strings.footer.fast.data}</Link></li>
-                            <li><Link href={"/"} className={linkStyle}>{strings.footer.fast.FAQ}</Link></li>
-                            <li><Link href={"/"} className={linkStyle}>{strings.footer.fast.PQRSD}</Link></li>
+                            <li><Link href={"/legal#data"} className={linkStyle}>{strings.footer.fast.data}</Link></li>
+                            <li><Link href={"/info#faq"} className={linkStyle}>{strings.footer.fast.FAQ}</Link></li>
+                            <li><Link href={"/info#pqrsd"} className={linkStyle}>{strings.footer.fast.PQRSD}</Link></li>
                         </ul>
                     </section>
                 </article>
@@ -67,22 +67,25 @@ const Footer = () => {
                     className={"text-transparent border-solid border-2 border-transparent rounded-md border-t-clinic-dark-jade w-full h-2"}/>
                 <section className={"w-full flex justify-between items-center my-8 h-fit"}>
                     <Image src={"/images/clinicannabis_footer.png"} alt={"Logo de Clinicannabis"}
-                           width={384 / 4}
-                           height={418 / 4}/>
+                           width={1309 / 10}
+                           height={1318 / 10}/>
                     <ul className={"flex justify-end space-x-8 items-center"}>
                         <li className={"rounded-full w-12 h-12 border-[1px] grid place-items-center border-solid border-green-100 transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}>
                             <Link href={"https://www.facebook.com/Clinicanabis"} target={"_blank"}>
                                 <Facebook className={"fill-green-100 p-1 w-8 h-8"}/>
+                                <p className={"sr-only"}>Facebook</p>
                             </Link>
                         </li>
                         <li className={"rounded-full w-12 h-12 border-[1px] grid place-items-center border-solid border-green-100 transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}>
                             <Link href={"https://www.instagram.com/clinicanabis/"} target={"_blank"}>
                                 <Instagram className={"fill-green-100 p-1 w-8 h-8"}/>
+                                <p className={"sr-only"}>Instagram</p>
                             </Link>
                         </li>
                         <li className={"rounded-full w-12 h-12 border-[1px] grid place-items-center border-solid border-green-100 transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}>
                             <Link href={"https://www.youtube.com/@clinicannabis9526"} target={"_blank"}>
                                 <Youtube className={"fill-green-100 p-1 w-8 h-8"}/>
+                                <p className={"sr-only"}>YouTube</p>
                             </Link>
                         </li>
                     </ul>

@@ -5,39 +5,50 @@ import {useRouter} from "next/router";
 
 const Navbar = (
     props: {
-        selection : string
+        selection: string
     }) => {
 
-    const selectedStyle : string = "h-0.5 absolute -bottom-[34px] px-1 rounded-sm w-full bg-clinic-jade";
-    const listItemStyle : string = "flex relative flex-col items-center justify-start";
-    const linkStyle : string = "font-semibold tracking-wide transition quartic-in-out duration-300 lg:hover:text-clinic-jade lg:hover:-translate-y-1 focus:text-clinic-jade";
-    const buttonStyle : string = "rounded-full border-solid border-2 border-clinic-pale-jade text-clinic-pale-jade font-normal text-lg px-4 py-1 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-clinic-pale-jade lg:hover:text-white focus:scale-110 focus:bg-clinic-pale-jade focus:text-white";
+    const selectedStyle: string = "h-0.5 absolute -bottom-[34px] px-1 rounded-sm w-full bg-clinic-jade";
+    const listItemStyle: string = "flex relative flex-col items-center justify-start";
+    const linkStyle: string = "font-semibold tracking-wide transition quartic-in-out duration-300 lg:hover:text-clinic-jade lg:hover:-translate-y-1 focus:text-clinic-jade";
+    const buttonStyle: string = "rounded-full border-solid border-2 border-clinic-pale-jade text-clinic-pale-jade font-normal text-lg px-4 py-1 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-clinic-pale-jade lg:hover:text-white focus:scale-110 focus:bg-clinic-pale-jade focus:text-white";
     const navigate = useRouter();
     return (
         <nav
             className={"font-black text-neutral-600 flex items-center justify-between bg-white border-solid border-2 border-b-neutral-300 w-full h-fit px-28"}>
-            <Image src={"/images/clinicannabis_hr.png"} alt={"Logo horizontal de Clinicannabis"} width={500 / 2} height={174 / 2}/>
+            <Image src={"/images/clinicannabis_hr.png"} alt={"Logo horizontal de Clinicannabis"} width={500 / 2}
+                   height={174 / 2} priority/>
             <section className={"h-full flex justify-between items-center gap-12"}>
                 <ul className={"h-10 flex justify-end items-center gap-8"}>
                     <li className={listItemStyle}>
-                        <Link className={`${linkStyle} ${props.selection === "home" ? "font-bold text-clinic-jade" : ""}`} href={"/"}>{strings.navbar.home}</Link>
-                        <span className={props.selection === "home" ? selectedStyle : ""} />
+                        <Link
+                            className={`${linkStyle} ${props.selection === "home" ? "font-bold text-clinic-jade" : ""}`}
+                            href={"/"}>{strings.navbar.home}</Link>
+                        <span className={props.selection === "home" ? selectedStyle : ""}/>
                     </li>
                     <li className={listItemStyle}>
-                        <Link className={`${linkStyle} ${props.selection === "services" ? "font-bold text-clinic-jade" : ""}`} href={"/services"}>{strings.navbar.services}</Link>
-                        <span className={props.selection === "services" ? selectedStyle : ""} />
+                        <Link
+                            className={`${linkStyle} ${props.selection === "services" ? "font-bold text-clinic-jade" : ""}`}
+                            href={"/services"}>{strings.navbar.services}</Link>
+                        <span className={props.selection === "services" ? selectedStyle : ""}/>
                     </li>
                     <li className={listItemStyle}>
-                        <Link className={`${linkStyle} ${props.selection === "experience" ? "font-bold text-clinic-jade" : ""}`} href={"/experience-center"}>{strings.navbar.experience}</Link>
-                        <span className={props.selection === "experience" ? selectedStyle : ""} />
+                        <Link
+                            className={`${linkStyle} ${props.selection === "experience" ? "font-bold text-clinic-jade" : ""}`}
+                            href={"/experience-center"}>{strings.navbar.experience}</Link>
+                        <span className={props.selection === "experience" ? selectedStyle : ""}/>
                     </li>
                     <li className={listItemStyle}>
-                        <Link className={`${linkStyle} ${props.selection === "blog" ? "font-bold text-clinic-jade" : ""}`} href={"/blog"}>{strings.navbar.blog}</Link>
-                        <span className={props.selection === "blog" ? selectedStyle : ""} />
+                        <Link
+                            className={`${linkStyle} ${props.selection === "blog" ? "font-bold text-clinic-jade" : ""}`}
+                            href={"/blog"}>{strings.navbar.blog}</Link>
+                        <span className={props.selection === "blog" ? selectedStyle : ""}/>
                     </li>
                     <li className={listItemStyle}>
-                        <Link className={`${linkStyle} ${props.selection === "contact" ? "font-bold text-clinic-jade" : ""}`} href={"/contact"}>{strings.navbar.contact}</Link>
-                        <span className={props.selection === "contact" ? selectedStyle : ""} />
+                        <Link
+                            className={`${linkStyle} ${props.selection === "contact" ? "font-bold text-clinic-jade" : ""}`}
+                            href={"/contact"}>{strings.navbar.contact}</Link>
+                        <span className={props.selection === "contact" ? selectedStyle : ""}/>
                     </li>
                 </ul>
                 <button className={buttonStyle} onClick={() => navigate.push("/contact")}>

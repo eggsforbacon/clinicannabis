@@ -32,6 +32,8 @@ const Home: NextPage = () => {
             <Head>
                 <title>Clinicannabis</title>
                 <link rel="icon" href="/favicon.ico"/>
+                <meta name={"description"} content={`${strings.landing.hero.headline}. ${strings.landing.hero.subtitle}${strings.landing.hero.subtitleRemark}`}/>
+                <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"home"}/>
             <main className="w-full min-h-screen">
@@ -61,15 +63,15 @@ const Home: NextPage = () => {
                 </header>
                 <section className={"h-80 flex justify-center gap-8 w-full hero-clip overflow-hidden"}>
                     <Image src={"/images/hero/1.png"} className={"h-[288px] w-auto"} alt={""} height={480 / 2}
-                           width={640 / 1.5}/>
+                           width={640 / 1.5} priority/>
                     <Image src={"/images/hero/2.png"} className={"h-[288px] w-auto"} alt={""} height={480 / 2}
-                           width={640 / 1.5}/>
+                           width={640 / 1.5} priority/>
                     <Image src={"/images/hero/3.png"} className={"h-[288px] w-auto"} alt={""} height={480 / 2}
-                           width={640 / 1.5}/>
+                           width={640 / 1.5} priority/>
                     <Image src={"/images/hero/4.png"} className={"h-[288px] w-auto"} alt={""} height={480 / 2}
-                           width={640 / 1.5}/>
+                           width={640 / 1.5} priority/>
                     <Image src={"/images/hero/5.png"} className={"h-[288px] w-auto"} alt={""} height={480 / 2}
-                           width={640 / 1.5}/>
+                           width={640 / 1.5} priority/>
                 </section>
             </main>
             <Footer/>
