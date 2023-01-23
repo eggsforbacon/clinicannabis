@@ -5,8 +5,10 @@ import Footer from "../components/Footer";
 import {strings} from "../accessibility/strings";
 import React, {useEffect, useState} from "react";
 import Image from "next/image";
+
 import {useRouter} from "next/router";
 import {Hero} from "../components/content/index/Hero";
+import {OurHistory} from "../components/content/index/OurHistory";
 
 const Home: NextPage = () => {
 
@@ -20,7 +22,7 @@ const Home: NextPage = () => {
     const navigate = useRouter();
 
     return (
-        <main className="w-full min-h-screen overflow-x-clip">
+        <main className="max-w-[1920px] w-full min-h-screen overflow-x-clip bg-white">
             <Head>
                 <title>Clinicannabis</title>
                 <link rel="icon" href="/favicon.ico"/>
@@ -30,18 +32,7 @@ const Home: NextPage = () => {
             </Head>
             <Navbar selection={"home"}/>
             <Hero hasWindow={hasWindow}/>
-            <section className={"h-80 flex justify-center gap-8 w-full hero-clip overflow-clip"}>
-                <Image src={"/images/hero/1.png"} className={"h-[288px] w-auto"} alt={""} height={480 / 2}
-                       width={640 / 1.5} priority/>
-                <Image src={"/images/hero/2.png"} className={"h-[288px] w-auto"} alt={""} height={480 / 2}
-                       width={640 / 1.5} priority/>
-                <Image src={"/images/hero/3.png"} className={"h-[288px] w-auto"} alt={""} height={480 / 2}
-                       width={640 / 1.5} priority/>
-                <Image src={"/images/hero/4.png"} className={"h-[288px] w-auto"} alt={""} height={480 / 2}
-                       width={640 / 1.5} priority/>
-                <Image src={"/images/hero/5.png"} className={"h-[288px] w-auto"} alt={""} height={480 / 2}
-                       width={640 / 1.5} priority/>
-            </section>
+            <OurHistory />
             <Footer/>
         </main>
     )

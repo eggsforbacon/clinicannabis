@@ -25,7 +25,7 @@ const Navbar = (
     const navigate = useRouter();
     return (
         <nav
-            className={"relative font-black text-neutral-600 flex flex-col lg:flex-row items-center justify-between bg-white lg:border-solid lg:border-2 lg:border-b-neutral-300 w-full h-fit lg:px-28"}>
+            className={"relative font-black text-neutral-600 flex flex-col lg:flex-row items-center justify-between bg-white lg:border-transparent lg:border-solid lg:border-2 lg:border-b-neutral-300 w-full h-fit lg:px-28"}>
             <section
                 className={"max-lg:z-20 w-full bg-white border-solid border-2 border-b-neutral-300 lg:border-none p-4 md:px-16 lg:p-0 lg:w-auto h-fit flex items-center justify-between"}>
                 <Image src={"/images/clinicannabis_hr.png"} className={"w-auto h-14 lg:h-auto lg:w-auto"}

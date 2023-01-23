@@ -9,7 +9,7 @@
     }
 
     body {
-        @apply font-solomon-sans font-semibold;
+        @apply font-solomon-sans font-semibold flex justify-center bg-neutral-100;
     }
 }
 
