@@ -122,11 +122,21 @@ module.exports = {
                     '0%' : {opacity: '0', width : '0%'},
                     '100%' : {opacity: '1', width : "50%"},
                 },
+                'swing-in-top-fwd' : {
+                    '0%' : {opacity : '0', transform: 'rotateX(-100deg)', transformOrigin: 'top'},
+                    '100%' : {opacity : '1', transform: 'rotateX(0deg)', transformOrigin: 'top'}
+                },
+                'swing-out-top-bck' : {
+                    '0%' : {opacity : '1', transform: 'rotateX(0deg)', transformOrigin: 'top'},
+                    '100%' : {opacity : '0', transform: 'rotateX(-100deg)', transformOrigin: 'top'}
+                }
             },
             animation: {
                 'fade-in-bottom': 'fade-in-bottom 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'shrink-to-half' : 'shrink-to-half 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'expand-to-half' : 'expand-to-half 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
+                'swing-in-top-fwd' : 'swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1 forwards',
+                'swing-out-top-bck' : 'swing-out-top-bck 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 1 forwards',
             }
         },
     },
