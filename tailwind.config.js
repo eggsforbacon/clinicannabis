@@ -56,6 +56,15 @@ module.exports = {
                 'clinic-persian-green': '#00a88f',
                 'clinic-blue-chill': '#0e9390',
                 'clinic-dark-teal': "#0c3b41",
+
+                'caribbean-green' : "#00B451",
+                'GO-green' : "#00AC69",
+                'persian-green' : "#00A98F",
+                'viridian-green' : "#009490",
+                'c-test' : "#013A41",
+                'skobeloff' : "#006875",
+                'midnight-green' : "#005361",
+                'rich-black' : "#0C3A41",
             },
             /*Awfully useful animation timing functions*/
             transitionTimingFunction: {

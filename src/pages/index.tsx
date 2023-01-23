@@ -39,14 +39,14 @@ const Home: NextPage = () => {
             <header className={"px-44 pt-24 h-136 w-full flex items-start justify-center"}>
                 <section className={`flex items-center justify-around ${animateHeroHeadline}`}>
                     <article className={"w-136 flex flex-col md:items-start md:justify-center gap-8 w-full"}>
-                        <h1 className={`text-clinic-jade lg:text-5xl font-semibold ${animateHero} lg:animation-duration-800`}>{strings.landing.hero.headline}</h1>
-                        <p className={`text-neutral-400 w-4/5 font-normal lg:text-lg ${animateHero} lg:animation-duration-1200`}>
+                        <h1 className={`text-viridian-green w-full lg:text-6xl tracking-normal font-black ${animateHero} lg:animation-duration-800`}>{strings.landing.hero.headline}<br/><strong className={"text-caribbean-green"}>{strings.landing.hero.headlineRemark}</strong></h1>
+                        <p className={`text-neutral-400 w-full pr-12 font-normal lg:text-xl ${animateHero} lg:animation-duration-1200`}>
                             {strings.landing.hero.subtitle}
                             <strong
-                                className={"bg-gradient-to-r w-fit from-clinic-jade to-clinic-blue-chill bg-[length:0%_3px] bg-no-repeat bg-left-bottom transition-bg-size duration-300 ease-in-out lg:hover:bg-[length:100%_3px]"}>{strings.landing.hero.subtitleRemark}</strong>
+                                className={"bg-gradient-to-r w-fit from-clinic-jade to-clinic-blue-chill bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-bg-size duration-300 ease-in-out lg:hover:bg-[length:100%_3px]"}>{strings.landing.hero.subtitleRemark}</strong>
                         </p>
                         <button
-                            className={`rounded-md bg-clinic-jade text-base text-green-50 px-16 py-3 shadow-lg shadow-clinic-jade/15 transition duration-500 ease-in-out lg:hover:-translate-y-2 lg:hover:shadow-clinic-jade/50 ${animateHero} lg:animation-duration-2400`}
+                            className={`mt-6 rounded-full bg-viridian-green text-xl text-white px-10 py-2 shadow-lg shadow-viridian-green/15 transition duration-500 ease-in-out scale-110 lg:hover:bg-white lg:hover:text-viridian-green focus:scale-110 focus:bg-white focus:text-viridian-green border-transparent border-2 border-solid lg:hover:border-viridian-green lg:hover:shadow-viridian-green/20 ${animateHero} lg:animation-duration-2400`}
                             onClick={() => navigate.push("/contact")}>{strings.landing.hero.cta}</button>
                     </article>
                 </section>

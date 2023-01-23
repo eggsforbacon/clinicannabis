@@ -38,7 +38,8 @@ export const strings = {
     },
     'landing': {
         'hero': {
-            'headline': <>{"No te acostumbres "}<br/><b>{"al dolor."}</b></>,
+            'headline': <>{"No te acostumbres "}</>,
+            'headlineRemark' : <>{"al dolor"}</>,
             'subtitle': <>{"En Clinicannabis creemos que siempre hay una mejor alternativa para tratarlo. Contamos con un equipo de profesionales dispuestos a mostrarte que el alivio "}</>,
             'subtitleRemark' : <>{"sí es posible."}</>,
             'cta': <>{"Contáctanos"}</>,

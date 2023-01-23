@@ -6,10 +6,10 @@ import {Facebook, Instagram, Youtube} from "react-bootstrap-icons";
 const Footer = () => {
 
     const linkFamilyStyle: string = "h-full flex flex-col items-stretch justify-start space-y-2";
-    const linkStyle: string = "text-clinic-dark-jade font-semibold text-lg transition ease-in-out duration-300 lg:hover:text-green-100 focus:text-green-100";
+    const linkStyle: string = "text-green-100 font-semibold text-lg transition ease-in-out duration-300 lg:hover:text-clinic-blue-chill focus:text-clinic-blue-chill";
 
     return (
-        <footer className={"flex w-full flex-col justify-center items-center bg-clinic-muted-jade"}>
+        <footer className={"flex w-full flex-col justify-center items-center bg-clinic-dark-teal"}>
             <section
                 className={"flex flex-col md:min-h-168 w-full px-28 py-8 items-center text-green-100 justify-center"}>
                 <article className={"grid w-full h-fit py-6 lg:grid-cols-3 lg:place-items-center"}>
@@ -21,7 +21,7 @@ const Footer = () => {
                                 <div className={"w-full flex items-center justify-stretch"}>
                                     <section className={"flex flex-col items-stretch justify-center"}>
                                         <Link href={"tel:+576023152102"} className={linkStyle}>{strings.footer.questions.phone}</Link>
-                                        <p className={"font-normal text-clinic-dark-jade"}>{strings.footer.questions.phoneScript}</p>
+                                        <p className={"font-normal"}>{strings.footer.questions.phoneScript}</p>
                                     </section>
                                 </div>
                             </li>
@@ -29,7 +29,7 @@ const Footer = () => {
                                 <div className={"w-full flex items-center justify-stretch"}>
                                     <section className={"flex flex-col items-start justify-center"}>
                                         <Link href={"mailto:info@clinicannabis.com.co"} className={linkStyle}>{strings.footer.questions.email}</Link>
-                                        <p className={"font-normal text-clinic-dark-jade"}>{strings.footer.questions.emailScript}</p>
+                                        <p className={"font-normal"}>{strings.footer.questions.emailScript}</p>
                                     </section>
                                 </div>
                             </li>
