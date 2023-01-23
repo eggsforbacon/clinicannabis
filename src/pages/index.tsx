@@ -9,6 +9,7 @@ import Image from "next/image";
 import {useRouter} from "next/router";
 import {Hero} from "../components/content/index/Hero";
 import {OurHistory} from "../components/content/index/OurHistory";
+import {Humanizing} from "../components/content/index/Humanizing";
 
 const Home: NextPage = () => {
 
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
             <Navbar selection={"home"}/>
             <Hero hasWindow={hasWindow}/>
             <OurHistory />
+            <Humanizing />
             <Footer/>
         </main>
     )

@@ -59,13 +59,13 @@ module.exports = {
 
                 'caribbean-green' : "#00B451",
                 'GO-green' : "#00AC69",
+                'green-sheen' : "#74A5A2",
                 'persian-green' : "#00A98F",
                 'viridian-green' : "#009490",
                 'skobeloff' : "#006875",
                 'midnight-green' : "#005361",
                 'rich-black' : "#0C3A41",
                 'dark-green' : "#022528",
-                'green-sheen' : "#74A5A2",
             },
             /*Awfully useful animation timing functions*/
             transitionTimingFunction: {

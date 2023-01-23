@@ -10,14 +10,14 @@ export const strings = {
     'footer': {
         'copy': <>{"Clinicannabis "}&copy;{" 2023 | Todos los derechos reservados"}</>,
         'questions': {
-            'headline': <>{"Déjanos tus Preguntas"}</>,
-            'subtitle': <>{"Estamos contigo. Para lo que necesites:"}</>,
-            'phone': <>{"(602) 315 2102"}</>,
+            'headline': <>{"¿Tienes alguna"}</>,
+            'remark': <>{"pregunta?"}</>,
+            'phone': <>{"317 483 4360"}</>,
             'phoneScript': <>{"Lunes a viernes 8:00 - 17:00"}</>,
             'email': <>{"info@clinicannabis.com.co"}</>,
             'emailScript': <>{"Apuntamos a un tiempo de respuesta de 24h"}</>,
             'address': <>{"Calle 18 # 106 - 11"}</>,
-            'addressScript': <>{"Encuéntranos en Ciudad Jardín"}</>,
+            'addressScript': <>{"Ciudad Jardín, Cali."}</>,
         },
         'clinic': {
             'headline': <>{"Clinicannabis"}</>,
@@ -25,7 +25,6 @@ export const strings = {
             'history': <>{"Nuestra historia"}</>,
             'experience': <>{"Nuestra clínica"}</>,
             'stories': <>{"Historias de victoria"}</>,
-            'experts': <>{"Nuestros expertos"}</>,
 
         },
         'fast': {
@@ -33,7 +32,7 @@ export const strings = {
             'contact': <>{"Contáctanos"}</>,
             'data': <>{"Protección de datos"}</>,
             'FAQ': <>{"Preguntas frecuentes"}</>,
-            'PQRSD': <>{"PQRSD"}</>,
+            'experts': <>{"Nuestros expertos"}</>,
         },
     },
     'landing': {

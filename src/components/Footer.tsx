@@ -1,112 +1,106 @@
 import {strings} from "../accessibility/strings";
 import Link from "next/link";
 import Image from "next/image";
-import {Facebook, Instagram, Youtube} from "react-bootstrap-icons";
+import {Envelope, Facebook, Geo, GeoAlt, Instagram, Mailbox, Phone, Voicemail, Youtube} from "react-bootstrap-icons";
 
 const Footer = () => {
 
     const linkFamilyStyle: string = "h-full flex flex-col items-stretch justify-start space-y-2";
-    const linkStyle: string = "text-green-100 font-semibold text-lg transition ease-in-out duration-300 lg:hover:text-clinic-blue-chill focus:text-clinic-blue-chill";
+    const linkStyle: string = "text-white font-normal text-xl transition ease-in-out duration-300 lg:hover:text-clinic-blue-chill focus:text-clinic-blue-chill";
 
     return (
-        <footer className={"flex w-full flex-col justify-center items-center bg-clinic-dark-teal"}>
-            <section
-                className={"flex flex-col md:min-h-168 w-full px-28 py-8 items-center text-green-100 justify-center"}>
-                <article className={"grid w-full h-fit py-6 lg:grid-cols-3 lg:place-items-center"}>
-                    <section className={linkFamilyStyle}>
-                        <h2 className={"font-bold text-4xl tracking-widest uppercase"}>{strings.footer.questions.headline}</h2>
-                        <p className={"font-normal text-clinic-dark-jade"}>{strings.footer.questions.subtitle}</p>
-                        <ul className={"flex flex-col items-start space-y-8 text-neutral-900"}>
-                            <li>
-                                <div className={"w-full flex items-center justify-stretch"}>
-                                    <section className={"flex flex-col items-stretch justify-center"}>
-                                        <Link href={"tel:+576023152102"} className={linkStyle}>{strings.footer.questions.phone}</Link>
-                                        <p className={"font-normal"}>{strings.footer.questions.phoneScript}</p>
-                                    </section>
-                                </div>
+    <>
+        <footer className={"flex w-full h-320 relative flex-col justify-end items-center"}>
+            <section className={"z-10 w-full flex flex-col justify-end items-center"}>
+                <section className={"w-[70%] h-[38rem] grid grid-cols-3 py-20"}>
+                    <section className={"w-[120%] h-full pt-4 flex flex-col items-start justify-start gap-10"}>
+                        <h1 className={"text-6xl font-black text-caribbean-green"}>{strings.footer.questions.headline}<br/><strong
+                            className={"text-white"}>{strings.footer.questions.remark}</strong></h1>
+                        <ul className={"flex items-start justify-start flex-col w-full gap-2"}>
+                            <li className={"flex w-full min-h-[4rem] items-center justify-start gap-4"}>
+                                <GeoAlt className={"fill-white h-full"} size={30}/>
+                                <Link href={"https://goo.gl/maps/BP2WeL5AkFZp1AcK9"}
+                                      className={linkStyle}>{strings.footer.questions.address}<br/>{strings.footer.questions.addressScript}
+                                </Link>
                             </li>
-                            <li>
-                                <div className={"w-full flex items-center justify-stretch"}>
-                                    <section className={"flex flex-col items-start justify-center"}>
-                                        <Link href={"mailto:info@clinicannabis.com.co"} className={linkStyle}>{strings.footer.questions.email}</Link>
-                                        <p className={"font-normal"}>{strings.footer.questions.emailScript}</p>
-                                    </section>
-                                </div>
+                            <li className={"flex w-full min-h-[4rem] items-center justify-start gap-4"}>
+                                <Phone className={"fill-white h-full"} size={30}/>
+                                <Link href={"https://wa.me/+573174834360"}
+                                      className={linkStyle}>{strings.footer.questions.phone}
+                                </Link>
                             </li>
-                            <li>
-                                <div className={"w-full flex items-center justify-stretch"}>
-                                    <section className={"flex flex-col items-start justify-center"}>
-                                        <Link href={"https://goo.gl/maps/BP2WeL5AkFZp1AcK9"} className={linkStyle}>{strings.footer.questions.address}</Link>
-                                        <p className={"font-normal"}>{strings.footer.questions.addressScript}</p>
-                                    </section>
-                                </div>
+                            <li className={"flex w-full min-h-[4rem] items-center justify-start gap-4"}>
+                                <Envelope className={"fill-white h-full"} size={30}/>
+                                <Link href={"mailto:info@clinicannabis.com.co"}
+                                      className={linkStyle}>{strings.footer.questions.email}
+                                </Link>
                             </li>
                         </ul>
+                        <section className={"flex flex-col w-full gap-2"}>
+                            <ul className={"flex items-center justify-start"}>
+                                <li>
+                                    <Link href={"https://www.facebook.com/Clinicanabis"} target={"_blank"}>
+                                        <Facebook
+                                            className={"h-6 w-6 fill-caribbean-green transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}/>
+                                        <p className={"sr-only"}>Facebook</p>
+                                    </Link>
+                                </li>
+                                <span className={"h-full w-[2px] bg-white mx-3.5"}/>
+                                <li>
+                                    <Link href={"https://www.instagram.com/clinicanabis/"} target={"_blank"}>
+                                        <Instagram
+                                            className={"h-6 w-6 fill-caribbean-green transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}/>
+                                        <p className={"sr-only"}>Instagram</p>
+                                    </Link>
+                                </li>
+                                <span className={"h-full w-[2px] bg-white mx-3.5"}/>
+                                <li>
+                                    <Link href={"https://www.youtube.com/@clinicannabis9526"} target={"_blank"}>
+                                        <Youtube
+                                            className={"h-6 w-6 fill-caribbean-green transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}/>
+                                        <p className={"sr-only"}>YouTube</p>
+                                    </Link>
+                                </li>
+                            </ul>
+                            <p className={"text-xl font-light text-white"}>@Clinicannabis</p>
+                        </section>
                     </section>
-                    <section className={linkFamilyStyle}>
-                        <h3 className={"text-2xl uppercase tracking-widest"}>{strings.footer.clinic.headline}</h3>
-                        <ul className={"flex flex-col justify-start items-stretch space-y-6"}>
-                            <li><Link href={"/"} className={linkStyle}>{strings.footer.clinic.home}</Link></li>
-                            <li><Link href={"/"} className={linkStyle}>{strings.footer.clinic.history}</Link></li>
-                            <li><Link href={"/"} className={linkStyle}>{strings.footer.clinic.experience}</Link></li>
-                            <li><Link href={"/"} className={linkStyle}>{strings.footer.clinic.stories}</Link></li>
-                            <li><Link href={"/"} className={linkStyle}>{strings.footer.clinic.experts}</Link></li>
-                        </ul>
-                    </section>
-                    <section className={linkFamilyStyle}>
-                        <h3 className={"text-2xl uppercase tracking-widest"}>{strings.footer.fast.headline}</h3>
-                        <ul className={"flex flex-col justify-start items-stretch space-y-6"}>
-                            <li><Link href={"/"} className={linkStyle}>{strings.footer.fast.contact}</Link></li>
-                            <li><Link href={"/legal#data"} className={linkStyle}>{strings.footer.fast.data}</Link></li>
-                            <li><Link href={"/info#faq"} className={linkStyle}>{strings.footer.fast.FAQ}</Link></li>
-                            <li><Link href={"/info#pqrsd"} className={linkStyle}>{strings.footer.fast.PQRSD}</Link></li>
-                        </ul>
-                    </section>
-                </article>
-                <span
-                    className={"text-transparent border-solid border-2 border-transparent rounded-md border-t-clinic-dark-jade w-full h-2"}/>
-                <section className={"w-full flex justify-between items-center my-8 h-fit"}>
-                    <Image src={"/images/clinicannabis_footer.png"} alt={"Logo de Clinicannabis"}
-                           width={1309 / 10}
-                           height={1318 / 10}/>
-                    <ul className={"flex justify-end space-x-8 items-center"}>
-                        <li className={"rounded-full w-12 h-12 border-[1px] grid place-items-center border-solid border-green-100 transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}>
-                            <Link href={"https://www.facebook.com/Clinicanabis"} target={"_blank"}>
-                                <Facebook className={"fill-green-100 p-1 w-8 h-8"}/>
-                                <p className={"sr-only"}>Facebook</p>
-                            </Link>
+                    <ul className={"w-full flex flex-col gap-5 justify-end items-start pl-24 pb-20"}>
+                        <li><h3 className={"text-white text-2xl"}>{strings.footer.clinic.headline}</h3></li>
+                        <li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.home}</Link>
                         </li>
-                        <li className={"rounded-full w-12 h-12 border-[1px] grid place-items-center border-solid border-green-100 transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}>
-                            <Link href={"https://www.instagram.com/clinicanabis/"} target={"_blank"}>
-                                <Instagram className={"fill-green-100 p-1 w-8 h-8"}/>
-                                <p className={"sr-only"}>Instagram</p>
-                            </Link>
+                        <li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.history}</Link>
                         </li>
-                        <li className={"rounded-full w-12 h-12 border-[1px] grid place-items-center border-solid border-green-100 transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}>
-                            <Link href={"https://www.youtube.com/@clinicannabis9526"} target={"_blank"}>
-                                <Youtube className={"fill-green-100 p-1 w-8 h-8"}/>
-                                <p className={"sr-only"}>YouTube</p>
-                            </Link>
+                        <li><Link href={"/"}
+                                  className={`${linkStyle} text-2xl`}>{strings.footer.clinic.experience}</Link></li>
+                        <li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.stories}</Link>
+                        </li>
+                    </ul>
+                    <ul className={"w-full flex flex-col gap-5 justify-end items-start pl-24 pb-20"}>
+                        <li><h3 className={"text-white text-2xl"}>{strings.footer.fast.headline}</h3></li>
+                        <li><Link href={"/contact"}
+                                  className={`${linkStyle} text-2xl`}>{strings.footer.fast.contact}</Link></li>
+                        <li><Link href={"/legal#data"}
+                                  className={`${linkStyle} text-2xl`}>{strings.footer.fast.data}</Link></li>
+                        <li><Link href={"/info"} className={`${linkStyle} text-2xl`}>{strings.footer.fast.FAQ}</Link>
+                        </li>
+                        <li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.fast.experts}</Link>
                         </li>
                     </ul>
                 </section>
-                {/*<section className={"w-full flex justify-start items-center space-x-8"}>*/}
-                {/*    <Image src={"/images/sic_footer.png"} alt={"Logo de la Superintendencia de Industria y Comercio"}*/}
-                {/*           width={428 / 2}*/}
-                {/*           height={87 / 2}/>*/}
-                {/*    <Image src={"/images/servicio_salud_footer.png"} alt={"Logo de Servicio de Salud Habilitado 2019"}*/}
-                {/*           width={311 / 3}*/}
-                {/*           height={288 / 3}/>*/}
-                {/*    <Image src={"/images/alcaldia_sc_footer.png"} alt={"Logo de la Alcaldía de Santiago de Cali"}*/}
-                {/*           width={2085 / 14}*/}
-                {/*           height={2084 / 14}/>*/}
-                {/*</section>*/}
             </section>
-            <section
-                className={"text-sm font-normal tracking-wide grid grid-cols-1 place-items-center w-full py-6"}>
-                <p>{strings.footer.copy}</p>
-            </section>
+            <Image src={"/images/backgrounds/footer.svg"}
+                   className={"z-0 pointer-events-none selection:bg-transparent absolute bottom-0"} alt={""}
+                   height={584} width={1920} priority/>
+            <Image src={"/images/svg/leafFooter.svg"}
+                   className={"z-0 pointer-events-none selection:bg-transparent absolute right-0"} alt={""}
+                   height={896} width={896} priority/>
         </footer>
+        <section
+            className={"text-base text-green-sheen bg-dark-green font-normal grid grid-cols-1 place-items-center w-full py-3"}>
+            <p>{strings.footer.copy}</p>
+        </section>
+    </>
     );
 }
 
