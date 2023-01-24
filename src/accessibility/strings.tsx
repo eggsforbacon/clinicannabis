@@ -2,10 +2,10 @@ export const strings = {
     'navbar': {
         'home': <>{"Nuestra Clínica"}</>,
         'services': <>{"Servicios"}</>,
-        'experience': <>{"Centro de experiencia"}</>,
-        'blog': <>{"Blog médico"}</>,
+        'experience': <>{"Centro de Experiencia"}</>,
+        'blog': <>{"Blog Médico"}</>,
         'contact': <>{"Contáctanos"}</>,
-        'cta': <>{"Agenda tu cita"}</>,
+        'cta': <>{"Agenda tu Cita"}</>,
     },
     'footer': {
         'copy': <>{"Clinicannabis "}&copy;{" 2023 | Todos los derechos reservados"}</>,
