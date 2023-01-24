@@ -10,7 +10,7 @@ const Footer = () => {
 
     return (
     <>
-        <footer className={"flex w-full h-384 relative flex-col justify-end items-center"}>
+        <footer className={"flex w-full h-256 relative flex-col justify-end items-center"}>
             <section className={"z-10 w-full flex flex-col justify-end items-center"}>
                 <section className={"w-[70%] h-[38rem] grid grid-cols-3 py-20"}>
                     <section className={"w-[120%] h-full pt-4 flex flex-col items-start justify-start gap-10"}>

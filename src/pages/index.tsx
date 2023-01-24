@@ -10,6 +10,7 @@ import {useRouter} from "next/router";
 import {Hero} from "../components/content/index/Hero";
 import {OurHistory} from "../components/content/index/OurHistory";
 import {Humanizing} from "../components/content/index/Humanizing";
+import {Numbers} from "../components/content/index/Numbers";
 
 const Home: NextPage = () => {
 
@@ -35,6 +36,7 @@ const Home: NextPage = () => {
             <Hero hasWindow={hasWindow}/>
             <OurHistory />
             <Humanizing />
+            <Numbers />
             <Footer/>
         </main>
     )

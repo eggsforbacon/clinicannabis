@@ -24,14 +24,14 @@ export const Humanizing = () => {
             }
         }
 
-        observe(imgTrigger, [imageAnimation, setImageAnimation], "animate-fade-in-bottom");
-        observe(textTrigger, [textAnimation, setTextAnimation], "animate-fade-in-bottom animation-duration-1600");
+        observe(imgTrigger, [imageAnimation, setImageAnimation], "animate-fade-in-bottom animation-duration-500");
+        observe(textTrigger, [textAnimation, setTextAnimation], "animate-fade-in-bottom animation-duration-800");
 
     }, []);
 
     return (
         <>
-            <article className={"relative px-40 pt-16 min-h-[56rem] w-full flex items-start justify-center"}>
+            <article className={"relative px-40 pt-16 min-h-[72rem] w-full flex items-start justify-center"}>
                 <Image src={"/images/backgrounds/humanizing.png"}
                        className={"z-0 pointer-events-none absolute selection:bg-transparent -top-0"} alt={""}
                        height={584} width={1920} priority/>
@@ -45,15 +45,15 @@ export const Humanizing = () => {
                         <h2 className={"text-white font-black text-8xl"}><strong
                             className={"text-caribbean-green"}>Humanización</strong><br/>en atención<br/>al paciente
                         </h2>
-                        <p className={"text-white text-3xl font-normal"}>Clinicannabis cuenta con personal calificado,
+                        <p className={"text-white text-2xl font-normal w-144"}>Clinicannabis cuenta con personal calificado,
                             sus profesionales tienen experiencia en humanización en la atención e implementación de las
                             políticas de Seguridad del Paciente y Gestión del Riesgo</p>
                     </article>
                 </section>
                 <span ref={imageTriggerRef}
-                      className={"absolute bottom-56 w-full h-1 bg-transparent pointer-events-none selection:bg-transparent"}/>
-                <span ref={textTriggerRef}
                       className={"absolute top-96 w-full h-1 bg-transparent pointer-events-none selection:bg-transparent"}/>
+                <span ref={textTriggerRef}
+                      className={"absolute bottom-56 w-full h-1 bg-transparent pointer-events-none selection:bg-transparent"}/>
             </article>
         </>
     );

@@ -9,7 +9,8 @@ export const Hero = (props : {
     const [animateHero, setAnimateHero] = useState("lg:opacity-0 translate-y-[100px]");
     const [animateHeroVideo, setAnimateHeroVideo] = useState("lg:w-[80%]");
     const [animateHeroHeadline, setAnimateHeroHeadline] = useState("lg:w-0 opacity-0 pointer-events-none");
-    const serviceImageStyle = "absolute brightness-75 inset-0 bg-cover bg-center bg-no-repeat h-full w-full transition duration-1000 ease-in-out lg:hover:scale-125 lg:hover:brightness-50";
+    const serviceImageStyle = "absolute inset-0 bg-cover bg-center bg-no-repeat h-full w-full transition duration-300 ease-in-out lg:hover:brightness-[25%]";
+    const linkStyle = "z-10 transition duration-300 ease-in-out lg:hover:text-white focus:text-white";
     const handleOnEnded = (e: React.SyntheticEvent<HTMLVideoElement>) => {
         e.preventDefault();
         setAnimateHero("lg:opacity-0 lg:translate-y-[100px] lg:animate-fade-in-bottom lg:animation-delay-600");
@@ -45,30 +46,30 @@ export const Hero = (props : {
                         </video>}
                 </section>
             </header>
-            <ul className={"h-72 flex justify-center gap-10 w-full hero-clip bg-white overflow-clip text-white"}>
-                <li className={"relative w-full h-full overflow-clip flex items-center justify-center"}>
-                    <Link className={"z-10"} href={"/services"}>Cannabis Medicinal</Link>
+            <ul className={"z-10 h-72 flex justify-center gap-10 w-full hero-clip bg-white overflow-clip text-transparent"}>
+                <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white"}>
+                    <Link className={linkStyle} href={"/services"}>Cannabis Medicinal</Link>
                     <section className={`bg-[url('/images/hero/1.png')] ${serviceImageStyle}`}>
                     </section>
                 </li>
-                <li className={"relative w-full h-full overflow-clip flex items-center justify-center"}>
-                    <Link className={"z-10"} href={"/services"}>Medicina Funcional</Link>
+                <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white"}>
+                    <Link className={linkStyle} href={"/services"}>Medicina Funcional</Link>
                     <section className={`bg-[url('/images/hero/2.png')] ${serviceImageStyle}`}>
                     </section>
                 </li>
-                <li className={"relative w-full h-full overflow-clip flex items-center justify-center"}>
-                    <Link className={"z-10"} href={"/services"}>Sueros Terapéuticos</Link>
+                <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white"}>
+                    <Link className={linkStyle} href={"/services"}>Sueros Terapéuticos</Link>
                     <section className={`bg-[url('/images/hero/3.png')] ${serviceImageStyle}`}>
                     </section>
                 </li>
-                <li className={"relative w-full h-full overflow-clip flex items-center justify-center"}>
-                    <Link className={"z-10"} href={"/experience"}>Centro de Experiencia</Link>
-                    <section className={`bg-[url('/images/hero/5.png')] ${serviceImageStyle}`}>
+                <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white"}>
+                    <Link className={linkStyle} href={"/services"}>Sistema Súper Inductivo</Link>
+                    <section className={`bg-[url('/images/hero/4.png')] ${serviceImageStyle}`}>
                     </section>
                 </li>
-                <li className={"relative w-full h-full overflow-clip flex items-center justify-center"}>
-                    <Link className={"z-10"} href={"/services"}>Sistema Súper Inductivo</Link>
-                    <section className={`bg-[url('/images/hero/4.png')] ${serviceImageStyle}`}>
+                <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white"}>
+                    <Link className={linkStyle} href={"/experience"}>Centro de Experiencia</Link>
+                    <section className={`bg-[url('/images/hero/5.png')] ${serviceImageStyle}`}>
                     </section>
                 </li>
             </ul>
