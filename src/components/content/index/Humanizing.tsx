@@ -42,9 +42,9 @@ export const Humanizing = () => {
                                height={660} width={640} priority/>
                     </section>
                     <article className={`h-3/4 flex flex-col items-start justify-end space-y-20 ${textAnimation}`}>
-                        <h1 className={"text-white font-black text-8xl"}><strong
+                        <h2 className={"text-white font-black text-8xl"}><strong
                             className={"text-caribbean-green"}>Humanización</strong><br/>en atención<br/>al paciente
-                        </h1>
+                        </h2>
                         <p className={"text-white text-3xl font-normal"}>Clinicannabis cuenta con personal calificado,
                             sus profesionales tienen experiencia en humanización en la atención e implementación de las
                             políticas de Seguridad del Paciente y Gestión del Riesgo</p>
