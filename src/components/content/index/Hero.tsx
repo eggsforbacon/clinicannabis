@@ -22,9 +22,9 @@ export const Hero = (props : {
 
     return (
         <>
-            <header className={"px-44 pt-24 h-136 w-full flex items-start justify-center"}>
+            <header className={"px-44 pt-24 h-136 flex items-start justify-center"}>
                 <section className={`flex items-center justify-around ${animateHeroHeadline}`}>
-                    <article className={"w-136 flex flex-col md:items-start md:justify-center gap-8 w-full"}>
+                    <article className={"w-136 flex flex-col md:items-start md:justify-center gap-8"}>
                         <h2 className={`text-viridian-green w-full lg:text-6xl tracking-normal font-black ${animateHero} lg:animation-duration-800`}>{strings.landing.hero.headline}<br/><strong className={"text-caribbean-green"}>{strings.landing.hero.headlineRemark}</strong></h2>
                         <p className={`text-neutral-400 w-full pr-12 font-normal lg:text-xl ${animateHero} lg:animation-duration-1200`}>
                             {strings.landing.hero.subtitle}

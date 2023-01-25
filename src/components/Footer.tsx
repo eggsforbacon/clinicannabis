@@ -10,8 +10,14 @@ const Footer = () => {
 
     return (
     <>
-        <footer className={"flex w-full h-256 relative flex-col justify-end items-center"}>
-            <section className={"z-10 w-full flex flex-col justify-end items-center"}>
+        <footer className={"z-0 flex w-full h-256 relative flex-col justify-end items-center mt-auto"}>
+            <Image src={"/images/backgrounds/footer.svg"}
+                   className={"z-0 w-full h-auto pointer-events-none selection:bg-transparent absolute bottom-0"} alt={""}
+                   height={584} width={1920} priority/>
+            <Image src={"/images/svg/leafFooter.svg"}
+                   className={"z-0 pointer-events-none selection:bg-transparent absolute right-0 -bottom-0 opacity-5"} alt={""}
+                   height={926} width={926} priority/>
+            <section className={"z-0 w-full flex flex-col justify-end items-center"}>
                 <section className={"w-[70%] h-[38rem] grid grid-cols-3 py-20"}>
                     <section className={"w-[120%] h-full pt-4 flex flex-col items-start justify-start gap-10"}>
                         <h1 className={"text-6xl font-black text-caribbean-green"}>{strings.footer.questions.headline}<br/><strong
@@ -89,12 +95,6 @@ const Footer = () => {
                     </ul>
                 </section>
             </section>
-            <Image src={"/images/backgrounds/footer.svg"}
-                   className={"z-0 pointer-events-none selection:bg-transparent absolute bottom-0"} alt={""}
-                   height={584} width={1920} priority/>
-            <Image src={"/images/svg/leafFooter.svg"}
-                   className={"z-0 pointer-events-none selection:bg-transparent absolute right-0 -bottom-0 opacity-5"} alt={""}
-                   height={926} width={926} priority/>
         </footer>
         <section
             className={"z-20 text-base text-green-sheen bg-dark-green font-normal grid grid-cols-1 place-items-center w-full py-3"}>

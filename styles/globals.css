@@ -9,7 +9,15 @@
     }
 
     body {
-        @apply font-solomon-sans font-semibold flex justify-center bg-neutral-100;
+        @apply font-solomon-sans font-semibold flex items-center justify-center bg-neutral-100;
+    }
+
+    main {
+        @apply max-w-[1920px] w-full min-h-screen flex flex-col overflow-x-clip bg-white;
+    }
+
+    #__next {
+        @apply w-full flex items-center justify-center;
     }
 }
 
