@@ -1,4 +1,5 @@
 @import "typography.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,5 +25,17 @@
 @layer components {
     .hero-clip {
         clip-path: ellipse(70% 80% at 50% 80%);
+    }
+
+    .green-overlay {
+        background: rgb(0, 83, 97);
+        background: linear-gradient(90deg,
+        rgba(12, 58, 65, 0.25) 0%,
+        rgba(0, 83, 97, 0.25) 16%,
+        rgba(0, 104, 117, 0.25) 32%,
+        rgba(0, 104, 117, 0.25) 48%,
+        rgba(0, 148, 144, 0.25) 65%,
+        rgba(0, 169, 143, 0.25) 82%,
+        rgba(0, 172, 105, 0.25) 100%);
     }
 }

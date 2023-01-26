@@ -139,6 +139,11 @@ module.exports = {
                 'swing-out-top-bck' : {
                     '0%' : {opacity : '1', transform: 'rotateX(0deg)', transformOrigin: 'top'},
                     '100%' : {opacity : '0', transform: 'rotateX(-100deg)', transformOrigin: 'top'}
+                },
+                'bg-pan-right' : {
+                    '0%' : {backgroundPosition : '0% 50%'},
+                    '50%' : {backgroundPosition : '100% 50%'},
+                    '100%' : {backgroundPosition : '100% 50%'},
                 }
             },
             animation: {
@@ -147,6 +152,7 @@ module.exports = {
                 'expand-to-half' : 'expand-to-half 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'swing-in-top-fwd' : 'swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1 forwards',
                 'swing-out-top-bck' : 'swing-out-top-bck 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 1 forwards',
+                'bg-pan-right' : 'bg-pan-right 8s linear infinite forwards'
             }
         },
     },
