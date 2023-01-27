@@ -3,14 +3,11 @@ import {useEffect, useRef, useState} from "react";
 
 export const Humanizing = () => {
 
-    const imageTriggerRef = useRef(null);
-    const [imageAnimation, setImageAnimation] = useState("opacity-0 -translate-x-[100px]");
-    const textTriggerRef = useRef(null);
-    const [textAnimation, setTextAnimation] = useState("opacity-0 -translate-x-[100px]");
+    const triggerRef = useRef(null);
+    const [animation, setAnimation] = useState("opacity-0 -translate-x-[100px]");
 
     useEffect(() => {
-        const imgTrigger = imageTriggerRef.current as unknown as HTMLSpanElement;
-        const textTrigger = textTriggerRef.current as unknown as HTMLSpanElement;
+        const trigger = triggerRef.current as unknown as HTMLSpanElement;
         const observe = (trigger: HTMLSpanElement, state: [string, any], change: string) => {
             const observer = new IntersectionObserver(callback);
             observer.observe(trigger);
@@ -24,8 +21,7 @@ export const Humanizing = () => {
             }
         }
 
-        observe(imgTrigger, [imageAnimation, setImageAnimation], "animate-fade-in-bottom animation-duration-500");
-        observe(textTrigger, [textAnimation, setTextAnimation], "animate-fade-in-bottom animation-duration-800");
+        observe(trigger, [animation, setAnimation], "animate-fade-in-bottom ");
 
     }, []);
 
@@ -36,12 +32,12 @@ export const Humanizing = () => {
                        className={"z-0 pointer-events-none absolute selection:bg-transparent -top-0"} alt={""}
                        height={584} width={1920} priority/>
                 <section className={"z-10 w-full grid grid-cols-2 place-items-end gap-x-56 px-6"}>
-                    <section className={`h-fit w-fit rounded-3xl overflow-clip shadow-lg ${imageAnimation}`}>
+                    <section className={`h-fit w-fit rounded-3xl overflow-clip shadow-lg ${animation} animation-duration-500`}>
                         <Image src={"/images/landing/humanizingHero.png"}
                                className={"pointer-events-none selection:bg-transparent"} alt={""}
                                height={660} width={640} priority/>
                     </section>
-                    <article className={`h-3/4 flex flex-col items-start justify-end space-y-20 ${textAnimation}`}>
+                    <article className={`h-3/4 flex flex-col items-start justify-end space-y-20 ${animation} animation-duration-800`}>
                         <h2 className={"text-white font-black text-8xl"}><strong
                             className={"text-caribbean-green"}>Humanización</strong><br/>en atención<br/>al paciente
                         </h2>
@@ -50,10 +46,8 @@ export const Humanizing = () => {
                             políticas de Seguridad del Paciente y Gestión del Riesgo</p>
                     </article>
                 </section>
-                <span ref={imageTriggerRef}
+                <span ref={triggerRef}
                       className={"absolute top-96 w-full h-1 bg-transparent pointer-events-none selection:bg-transparent"}/>
-                <span ref={textTriggerRef}
-                      className={"absolute bottom-56 w-full h-1 bg-transparent pointer-events-none selection:bg-transparent"}/>
             </article>
         </>
     );

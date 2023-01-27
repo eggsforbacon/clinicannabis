@@ -14,6 +14,19 @@ import {MissionVision} from "../components/content/index/MissionVision";
 
 const Home: NextPage = () => {
 
+    const observe = (trigger: HTMLSpanElement, state: [string, any], change: string) => {
+        const observer = new IntersectionObserver(callback);
+        observer.observe(trigger);
+
+        function callback(entries: IntersectionObserverEntry[]) {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                state[1](change);
+                observer.unobserve(trigger);
+            }
+        }
+    }
+
     const [hasWindow, setHasWindow] = useState(false);
     useEffect(() => {
         if (typeof window !== "undefined") {
