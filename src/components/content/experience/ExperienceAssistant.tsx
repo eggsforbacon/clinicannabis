@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const ExperienceAssistant = () => {
     return (
-        <section className={"w-full h-320 relative"}>
+        <section className={"w-full h-320 relative mt-32"}>
             <Image className={"absolute select-none bottom-[27rem] left-[52rem] scale-[190]"}
                    src={"/images/experience/assistantBackLeaf.svg"} alt={"Placeholder"} width={16} height={6}/>
             <Image className={"absolute select-none top-1"}
