@@ -1,5 +1,10 @@
 import {Carousel} from "../../Carousel";
 import {useEffect, useState} from "react";
+import {CarouselSlide} from "./CarouselSlide";
+import {CoffeeShop} from "./CoffeeShop";
+import {Boutique} from "./Boutique";
+import {OriginsHall} from "./OriginsHall";
+import {strings} from "../../../accessibility/strings";
 
 export const Areas = () => {
 
@@ -12,11 +17,18 @@ export const Areas = () => {
             setCurrent((current) => current === 3 ? 0 : current + 1);
         }, 4000);
         return () => clearInterval(carouselInterval);
-    }), [current])
+    }), [current]);
+
+    const carouselItems = [
+        <CarouselSlide src={"/images/experience/carousel/0.jpg"} alt={""} headline={strings.experience.carousel["1"].headline} content={strings.experience.carousel["1"].content} interaction={strings.experience.carousel["1"].interaction} to={"/experience/pharmacy"} />,
+        <CarouselSlide src={"/images/experience/carousel/1.jpg"} alt={""} headline={strings.experience.carousel["2"].headline} content={strings.experience.carousel["2"].content} interaction={strings.experience.carousel["2"].interaction} to={"/experience/coffee-shop"} />,
+        <CarouselSlide src={"/images/experience/carousel/2.jpg"} alt={""} headline={strings.experience.carousel["3"].headline} content={strings.experience.carousel["3"].content} interaction={strings.experience.carousel["3"].interaction} to={"/experience/boutique"} />,
+        <CarouselSlide src={"/images/experience/carousel/3.jpg"} alt={""} headline={strings.experience.carousel["4"].headline} content={strings.experience.carousel["4"].content} interaction={strings.experience.carousel["4"].interaction} to={"/experience/origins-hall"} />,
+    ];
 
     return (
         <section className={"w-full mt-32 relative"}>
-            <article className={"w-full flex items-center justify-around px-40 py-16 debug"}>
+            <article className={"w-full flex items-center justify-around px-40 py-16"}>
                 <section className={"flex flex-col items-start justify-start gap-16 h-full"}>
                     <h2 className={"text-8xl font-black w-112 text-caribbean-green"}>Conoce <strong
                         className={"text-viridian-green"}>el Centro</strong></h2>
@@ -27,7 +39,7 @@ export const Areas = () => {
                         <li className={`${navItemStyle} ${(current % 4 === 3) ? "text-caribbean-green" : "text-neutral-400"}`}>Salón Orígenes</li>
                     </ul>
                 </section>
-                <Carousel indexState={[current, setCurrent]}/>
+                <Carousel indexState={[current, setCurrent]} items={carouselItems}/>
             </article>
         </section>
     );

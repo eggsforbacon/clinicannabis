@@ -120,6 +120,10 @@ module.exports = {
                 2400 : '2400ms',
             },
             keyframes: {
+                'fade-in-top': {
+                    '0%': {opacity: '0', transform: 'translateY(-100px)'},
+                    '100%': {opacity: '1', transform: 'translateY(0)'}
+                },
                 'fade-in-bottom': {
                     '0%': {opacity: '0', transform: 'translateY(100px)'},
                     '100%': {opacity: '1', transform: 'translateY(0)'}
@@ -155,6 +159,7 @@ module.exports = {
                 }
             },
             animation: {
+                'fade-in-top': 'fade-in-top 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'fade-in-bottom': 'fade-in-bottom 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'fade-in-right': 'fade-in-right 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'fade-in-left': 'fade-in-left 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
