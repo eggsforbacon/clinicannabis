@@ -43,6 +43,39 @@ export const strings = {
             'subtitleRemark' : <>{"sí es posible."}</>,
             'cta': <>{"Contáctanos"}</>,
             'experience': <>{"Nuestro centro de Experiencia"}</>
+        },
+        'about' : {
+            'headline' : <>{"¿Quienes "}</>,
+            'headlineRemark' : <>{"somos?"}</>,
+            'content' : <>{"Somos una institución que, sensibilizada con la situación de salud de\n" +
+                "Colombia donde las enfermedades crónicas no transmisibles tienen una\n" +
+                "alta carga de morbilidad y mortalidad, y ante la necesidad de los pacientes\n" +
+                "de encontrar tratamientos para conservar la vitalidad, la funcionalidad y\n" +
+                "prevenir enfermedades, tiene el interés de aportar a la comunidad\n" +
+                "tratamientos alternativos ambulatorios con medicina cannábica, sueros\n" +
+                "terapéuticos y el Sistema Súper Inductivo, con protocolos médicos que\n" +
+                "promuevan prácticas clínicas seguras en espacios de bienestar\n" +
+                "contribuyendo a la salud preventiva, autocuidado, recuperación y calidad\n" +
+                "de vida de sus pacientes."}</>,
+            'mission' : {
+                'headline' : <>{"Nuestra "}</>,
+                'remark' : <>{"Misión"}</>,
+                'content' : <>{"Prestar servicios de salud preventiva, alivio del dolor y rehabilitación con el\n" +
+                    "uso de terapias autorizadas con cannabis medicinal, sueros terapéuticos y\n" +
+                    "el Sistema Súper Inductivo de alta tecnología no invasiva que permitan\n" +
+                    "mejorar las condiciones de salud de la población; con talento humano\n" +
+                    "sensibilizado y competente para lograr los resultados deseados brindando\n" +
+                    "una atención segura, humanizada, responsable y de calidad."}</>,
+            },
+            'vision' : {
+                'headline' : <>{"Nuestra "}</>,
+                'remark' : <>{"Visión"}</>,
+                'content' : <>{"Consolidarnos en el año 2025 como centro médico líder en la prestación de\n" +
+                    "servicios de salud en la modalidad presencial, domiciliaria y telemedicina\n" +
+                    "con cannabis medicinal y terapias alternativas, con un modelo de atención\n" +
+                    "innovador e integral, identificando individualmente las necesidades de\n" +
+                    "nuestros usuarios y sensibilizándonos con su recuperación."}</>,
+            }
         }
     }
 }

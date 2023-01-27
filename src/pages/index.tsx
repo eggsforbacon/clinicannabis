@@ -6,9 +6,10 @@ import {strings} from "../accessibility/strings";
 import React, {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import {Hero} from "../components/content/index/Hero";
-import {OurHistory} from "../components/content/index/OurHistory";
+import {About} from "../components/content/index/About";
 import {Humanizing} from "../components/content/index/Humanizing";
 import {Numbers} from "../components/content/index/Numbers";
+import {MissionVision} from "../components/content/index/MissionVision";
 
 
 const Home: NextPage = () => {
@@ -33,7 +34,8 @@ const Home: NextPage = () => {
             </Head>
             <Navbar selection={"home"}/>
             <Hero hasWindow={hasWindow}/>
-            <OurHistory />
+            <About />
+            <MissionVision />
             <Humanizing />
             <Numbers />
             <Footer/>
