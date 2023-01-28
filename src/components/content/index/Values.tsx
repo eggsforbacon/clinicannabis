@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {useEffect, useRef, useState} from "react";
 
-export const Humanizing = () => {
+export const Values = () => {
 
     const triggerRef = useRef(null);
     const [animation, setAnimation] = useState("opacity-0 -translate-x-[100px]");

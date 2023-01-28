@@ -7,9 +7,11 @@ import React, {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import {Hero} from "../components/content/index/Hero";
 import {About} from "../components/content/index/About";
-import {Humanizing} from "../components/content/index/Humanizing";
+import {Values} from "../components/content/index/Values";
 import {Numbers} from "../components/content/index/Numbers";
 import {MissionVision} from "../components/content/index/MissionVision";
+import {Experience} from "../components/content/index/Experience";
+import {Blog} from "../components/content/index/Blog";
 
 
 const Home: NextPage = () => {
@@ -49,8 +51,9 @@ const Home: NextPage = () => {
             <Hero hasWindow={hasWindow}/>
             <About />
             <MissionVision />
-            <Humanizing />
-            <Numbers />
+            <Values />
+            <Experience />
+            <Blog />
             <Footer/>
         </main>
     )

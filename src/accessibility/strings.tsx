@@ -76,9 +76,79 @@ export const strings = {
                     "innovador e integral, identificando individualmente las necesidades de\n" +
                     "nuestros usuarios y sensibilizándonos con su recuperación."}</>,
             }
+        },
+        'values' : {
+            'humanization' : {
+                'headline' : <>{""}</>,
+                'remark' : <>{""}</>,
+                'content' : <>{""}</>,
+            },
+            'respect' : {
+                'headline' : <>{""}</>,
+                'remark' : <>{""}</>,
+                'content' : <>{""}</>,
+            },
+            'compromise' : {
+                'headline' : <>{""}</>,
+                'remark' : <>{""}</>,
+                'content' : <>{""}</>,
+            },
+            'innovation' : {
+                'headline' : <>{""}</>,
+                'remark' : <>{""}</>,
+                'content' : <>{""}</>,
+            },
+            'quality' : {
+                'headline' : <>{""}</>,
+                'remark' : <>{""}</>,
+                'content' : <>{""}</>,
+            },
+            'excellence' : {
+                'headline' : <>{""}</>,
+                'remark' : <>{""}</>,
+                'content' : <>{""}</>,
+            },
+        },
+        'experience' :{
+            'headline': <>{"Centro de "}</>,
+            'remark' : <>{"experiencia"}</>,
+            'content' : <>{"No somos sólo una clínica, somos un centro de bienestar y salud, ofrecemos una experiencia vital. Contamos con una Tienda-Boutique de productos con CBD y derivados cannábicos que promueven el cuidado personal; Salón Orígenes y un Coffee Shop."}</>,
+            'cta' : <>{"Conócelo"}</>,
+        },
+        'blog' : {
+            'headline': <>{"Nuestro "}</>,
+            'remark' : <>{"blog médico"}</>,
+            'content' : <>{"Un texto que llame a leer el blog o yo qué sé."}</>,
+            'cta' : <>{"Leer más"}</>
+        },
+    },
+    'services': {
+        'headline' : <>{"Nuestros "}</>,
+        'remark' : <>{"servicios"}</>,
+        'subtext' : <>{"En Clinicannabis cumplimos con los requisitos normativos para satisfacer las expectativas y necesidades de nuestros grupos de interés."}</>,
+        'sections' : {
+            1 : {
+                'headline' : <>{"Cannabis Medicinal"}</>,
+                'remark' : <>{"Dolor crónico y otras patologías"}</>,
+                'content' : <>{"A través del cannabis medicinal manejamos el dolor crónico y otras patologías. Con el uso terapéutico del cannabis medicinal mejoramos y aliviamos los síntomas subyacentes del dolor crónico: ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
+            },
+            2 : {
+                'headline' : <>{"Sistema Súper Inductivo"}</>,
+                'remark' : <>{"Innovación tecnológica"}</>,
+                'content' : <>{"Somos pioneros en el Valle del Cauca en ofrecer esta tecnología biomédica no invasiva e indolora que favorece el tratamiento de enfermedades neuromusculares, osteoarticulares, lesiones deportivas; así como la recuperación postquirúrgica, alivio del dolor y rehabilitación respiratoria, facilitando la recuperación y funcionalidad."}</>,
+            },
+            3 : {
+                'headline' : <>{"Sueros terapéuticos"}</>,
+                'remark' : <>{"Regeneración y depuración"}</>,
+                'content' : <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyen a la revitalización celular, fomenta la eliminación de toxinas y potencia el tratamiento para enfermedades crónicas. Recupera tu bienestar a través de esta experiencia de sanación, hay uno elaborado especialmente para ti."}</>,
+            },
+            4 : {
+                'headline' : <>{"Medicina Funcional"}</>,
+                'remark' : <>{""}</>,
+                'content' : <>{"Evaluamos a cada paciente de manera integral enfocándonos en la biología de los sistemas del organismo, e identificando los factores que puedan alterar su equilibrio. Es un modelo de medicina centrado en la persona más no en la enfermedad."}</>,
+            }
         }
     },
-    'services': {},
     'experience': {
         'hero': {
             'headline': <>{"Te ofrecemos "}</>,
