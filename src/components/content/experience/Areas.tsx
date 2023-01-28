@@ -1,46 +1,88 @@
 import {Carousel} from "../../Carousel";
-import {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {CarouselSlide} from "./CarouselSlide";
-import {CoffeeShop} from "./CoffeeShop";
-import {Boutique} from "./Boutique";
-import {OriginsHall} from "./OriginsHall";
 import {strings} from "../../../accessibility/strings";
+import {useRouter} from "next/router";
 
 export const Areas = () => {
 
     const [current, setCurrent] = useState(0);
 
-    const navItemStyle = "text-2xl transition duration-1000 ease-in-out font-semibold";
+    const navItemStyle = "text-2xl transition duration-1000 ease-in-out font-semibold lg:hover:cursor-pointer lg:hover:text-viridian-green focus:cursor-pointer focus:text-viridian-green";
+    const navigate = useRouter();
+    const triggerRef = useRef(null);
+    const [animateCarousel, setAnimateCarousel] = useState("opacity-0 -translate-y-[100px]");
+    const [navAnimation, setNavAnimation] = useState("opacity-0 -translate-x-[100px]");
 
     useEffect((() => {
         const carouselInterval = setInterval(() => {
             setCurrent((current) => current === 3 ? 0 : current + 1);
-        }, 4000);
+        }, 5500);
+        const trigger = triggerRef.current as unknown as HTMLSpanElement;
+        const observe = (trigger: HTMLSpanElement, state: [string, any][], changes: string[]) => {
+            const observer = new IntersectionObserver(callback);
+            observer.observe(trigger);
+
+            function callback(entries: IntersectionObserverEntry[]) {
+                const entry = entries[0];
+                if (entry.isIntersecting) {
+                    state.forEach((e,i) => {
+                        e[1](changes[i]);
+                        observer.unobserve(trigger);
+                    })
+                }
+            }
+        }
+
+        observe(trigger, [[animateCarousel, setAnimateCarousel], [navAnimation, setNavAnimation]], ["animate-fade-in-top", "animate-fade-in-left"]);
         return () => clearInterval(carouselInterval);
     }), [current]);
 
+    const links = ["/experience/pharmacy", "/experience/coffee-shop", "/experience/boutique", "/experience/origins-hall"];
     const carouselItems = [
-        <CarouselSlide src={"/images/experience/carousel/0.jpg"} alt={""} headline={strings.experience.carousel["1"].headline} content={strings.experience.carousel["1"].content} interaction={strings.experience.carousel["1"].interaction} to={"/experience/pharmacy"} />,
-        <CarouselSlide src={"/images/experience/carousel/1.jpg"} alt={""} headline={strings.experience.carousel["2"].headline} content={strings.experience.carousel["2"].content} interaction={strings.experience.carousel["2"].interaction} to={"/experience/coffee-shop"} />,
-        <CarouselSlide src={"/images/experience/carousel/2.jpg"} alt={""} headline={strings.experience.carousel["3"].headline} content={strings.experience.carousel["3"].content} interaction={strings.experience.carousel["3"].interaction} to={"/experience/boutique"} />,
-        <CarouselSlide src={"/images/experience/carousel/3.jpg"} alt={""} headline={strings.experience.carousel["4"].headline} content={strings.experience.carousel["4"].content} interaction={strings.experience.carousel["4"].interaction} to={"/experience/origins-hall"} />,
+        <CarouselSlide src={"/images/experience/carousel/0.jpg"} alt={""}
+                       headline={strings.experience.carousel["1"].headline}
+                       content={strings.experience.carousel["1"].content}
+                       interaction={strings.experience.carousel["1"].interaction} to={links[0]}/>,
+        <CarouselSlide src={"/images/experience/carousel/1.jpg"} alt={""}
+                       headline={strings.experience.carousel["2"].headline}
+                       content={strings.experience.carousel["2"].content}
+                       interaction={strings.experience.carousel["2"].interaction} to={links[1]}/>,
+        <CarouselSlide src={"/images/experience/carousel/2.jpg"} alt={""}
+                       headline={strings.experience.carousel["3"].headline}
+                       content={strings.experience.carousel["3"].content}
+                       interaction={strings.experience.carousel["3"].interaction} to={links[2]}/>,
+        <CarouselSlide src={"/images/experience/carousel/3.jpg"} alt={""}
+                       headline={strings.experience.carousel["4"].headline}
+                       content={strings.experience.carousel["4"].content}
+                       interaction={strings.experience.carousel["4"].interaction} to={links[3]}/>,
     ];
 
     return (
         <section className={"w-full mt-32 relative"}>
             <article className={"w-full flex items-center justify-around px-40 py-16"}>
                 <section className={"flex flex-col items-start justify-start gap-16 h-full"}>
-                    <h2 className={"text-8xl font-black w-112 text-caribbean-green"}>Conoce <strong
+                    <h2 className={`text-8xl font-black w-112 text-caribbean-green ${navAnimation} animation-duration-1600`}>Conoce <strong
                         className={"text-viridian-green"}>el Centro</strong></h2>
                     <ul className={"flex flex-col items-start justify-start gap-8 h-full w-64"}>
-                        <li className={`${navItemStyle} ${(current % 4 === 0) ? "text-caribbean-green" : "text-neutral-400"}`}>Droguería</li>
-                        <li className={`${navItemStyle} ${(current % 4 === 1) ? "text-caribbean-green" : "text-neutral-400"}`}>Coffee Shop</li>
-                        <li className={`${navItemStyle} ${(current % 4 === 2) ? "text-caribbean-green" : "text-neutral-400"}`}>Boutique</li>
-                        <li className={`${navItemStyle} ${(current % 4 === 3) ? "text-caribbean-green" : "text-neutral-400"}`}>Salón Orígenes</li>
+                        <li onClick={() => setCurrent(0)}
+                            className={`${navItemStyle} ${(current % 4 === 0) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-800`}>Droguería
+                        </li>
+                        <li onClick={() => setCurrent(1)}
+                            className={`${navItemStyle} ${(current % 4 === 1) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1000`}>Coffee Shop
+                        </li>
+                        <li onClick={() => setCurrent(2)}
+                            className={`${navItemStyle} ${(current % 4 === 2) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1200`}>Boutique
+                        </li>
+                        <li onClick={() => setCurrent(3)}
+                            className={`${navItemStyle} ${(current % 4 === 3) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1400`}>Salón Orígenes
+                        </li>
                     </ul>
                 </section>
-                <Carousel indexState={[current, setCurrent]} items={carouselItems}/>
+                <Carousel index={current} items={carouselItems} animate={`${animateCarousel} animation-duration-1200`}/>
             </article>
+            <span ref={triggerRef}
+                  className={"absolute top-96 w-full h-1 bg-transparent pointer-events-none selection:bg-transparent"}/>
         </section>
     );
 }
