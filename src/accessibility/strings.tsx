@@ -118,7 +118,7 @@ export const strings = {
         'blog' : {
             'headline': <>{"Nuestro "}</>,
             'remark' : <>{"blog médico"}</>,
-            'content' : <>{"Un texto que llame a leer el blog o yo qué sé."}</>,
+            'content' : <>{"En Clinicannabis estás en las mejores manos. Encuentra tips, artículos de salud y las últimas noticias de salud en nuestro blog médico."}</>,
             'cta' : <>{"Leer más"}</>
         },
     },
