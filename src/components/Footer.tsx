@@ -10,7 +10,7 @@ const Footer = () => {
 
     return (
     <>
-        <footer className={"z-0 flex w-full h-256 relative flex-col justify-end items-center mt-auto"}>
+        <footer className={"z-0 flex w-full h-144 relative flex-col justify-end items-center mt-auto"}>
             <Image src={"/images/backgrounds/footer.svg"}
                    className={"z-0 w-full h-auto pointer-events-none selection:bg-transparent absolute bottom-0"} alt={""}
                    height={584} width={1920} priority/>

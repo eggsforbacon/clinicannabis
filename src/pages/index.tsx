@@ -50,9 +50,10 @@ const Home: NextPage = () => {
             <Navbar selection={"home"}/>
             <Hero hasWindow={hasWindow}/>
             <About />
-            <MissionVision />
+            {/*<MissionVision />*/}
             <Values />
             <Experience />
+            <Numbers />
             <Blog />
             <Footer/>
         </main>

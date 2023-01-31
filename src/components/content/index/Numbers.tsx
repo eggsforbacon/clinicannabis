@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export const Numbers = () => {
     return (
-        <article className={"relative px-40 pt-16 min-h-[22rem] w-full flex items-center justify-center"}>
+        <article className={"relative px-40 w-full flex items-center justify-center overflow-clip py-16"}>
             <Image src={"/images/backgrounds/numbers.png"}
-                   className={"z-0 pointer-events-none absolute selection:bg-transparent"} alt={""}
+                   className={"z-0 pointer-events-none absolute selection:bg-transparent h-full w-auto"} alt={""}
                    height={584} width={1920} priority/>
             <section className={"text-white z-10 grid grid-cols-3 w-full"}>
                 <section className={"text-center w-full flex flex-col items-center justify-center gap-2"}>

@@ -27,7 +27,7 @@ export const Values = () => {
 
     return (
         <>
-            <article className={"relative px-40 pt-16 min-h-[72rem] w-full flex items-start justify-center"}>
+            <article className={"relative px-40 pt-16 min-h-[56rem] w-full flex items-start justify-center"}>
                 <Image src={"/images/backgrounds/humanizing.png"}
                        className={"z-0 pointer-events-none absolute selection:bg-transparent -top-0"} alt={""}
                        height={584} width={1920} priority/>

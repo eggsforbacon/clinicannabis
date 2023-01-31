@@ -119,7 +119,7 @@ export const strings = {
             'headline': <>{"Nuestro "}</>,
             'remark' : <>{"blog médico"}</>,
             'content' : <>{"En Clinicannabis estás en las mejores manos. Encuentra tips, artículos de salud y las últimas noticias de salud en nuestro blog médico."}</>,
-            'cta' : <>{"Leer más"}</>
+            'cta' : <>{"Descúbrelo"}</>
         },
     },
     'services': {
