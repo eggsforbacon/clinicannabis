@@ -1,15 +1,15 @@
 import {NextPage} from "next";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import {Hero} from "../components/content/experience/Hero";
-import {ExperienceAssistant} from "../components/content/experience/ExperienceAssistant";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import {Hero} from "../../components/content/experience/Hero";
+import {ExperienceAssistant} from "../../components/content/experience/ExperienceAssistant";
 import Image from "next/image";
-import {strings} from "../accessibility/strings";
+import {strings} from "../../model/strings";
 import Head from "next/head";
 import React from "react";
-import {Areas} from "../components/content/experience/Areas";
+import {Areas} from "../../components/content/experience/Areas";
 
-const Experience: NextPage = () => {
+const Index: NextPage = () => {
     return (
         <main>
             <Head>
@@ -28,4 +28,4 @@ const Experience: NextPage = () => {
     );
 }
 
-export default Experience;
+export default Index;

@@ -16,7 +16,7 @@ export const strings = {
             'phoneScript': <>{"Lunes a viernes 8:00 - 17:00"}</>,
             'email': <>{"info@clinicannabis.com.co"}</>,
             'emailScript': <>{"Apuntamos a un tiempo de respuesta de 24h"}</>,
-            'address': <>{"Calle 18 # 106 - 11"}</>,
+            'address': <>{"Cl. 18 #106-11 Local 4"}</>,
             'addressScript': <>{"Ciudad Jardín, Cali."}</>,
         },
         'clinic': {
@@ -47,11 +47,7 @@ export const strings = {
         'about': {
             'headline': <>{"¿Quienes "}</>,
             'headlineRemark': <>{"somos?"}</>,
-            'content': <>{"Somos una institución que, sensibilizada con la situación de salud de\n" +
-                "Colombia donde las enfermedades crónicas no transmisibles tienen una\n" +
-                "alta carga de morbilidad y mortalidad, y ante la necesidad de los pacientes\n" +
-                "de encontrar tratamientos para conservar la vitalidad, la funcionalidad y\n" +
-                "prevenir enfermedades, tiene el interés de aportar a la comunidad\n" +
+            'content': <>{"Somos una institución que tiene el interés de aportar a la comunidad\n" +
                 "tratamientos alternativos ambulatorios con medicina cannábica, sueros\n" +
                 "terapéuticos y el Sistema Súper Inductivo, con protocolos médicos que\n" +
                 "promuevan prácticas clínicas seguras en espacios de bienestar\n" +

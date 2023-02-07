@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {strings} from "../../../accessibility/strings";
+import {strings} from "../../../model/strings";
 import React, {useEffect, useRef, useState} from "react";
 import {useRouter} from "next/router";
 
@@ -32,8 +32,9 @@ export const About = () => {
     return (
         <article className={"relative px-44 pt-32 min-h-[56rem] w-full flex items-start justify-center"}>
             <Image src={"/images/landing/whatsForYouHero.png"}
-                   className={`absolute pointer-events-none top-20 -right-36 selection:bg-transparent ${animation}`} alt={""}
+                   className={`absolute pointer-events-none top-36 -right-36 selection:bg-transparent ${animation}`} alt={""}
                    height={2752 * .7} width={1666 *.7}/>
+            <span className={"w-1/2 bg-gradient-to-b from-white via-white to-transparent h-20 top-32 absolute -right-0"} />
             <Image src={"/images/svg/leafHumanizing.svg"}
                    className={"z-0 pointer-events-none absolute selection:bg-transparent left-0 top-0 opacity-40"} alt={""}
                    height={1000} width={1000}/>

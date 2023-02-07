@@ -1,4 +1,4 @@
-import {strings} from "../../../accessibility/strings";
+import {strings} from "../../../model/strings";
 import React, {useState} from "react";
 import {useRouter} from "next/router";
 import Link from "next/link";

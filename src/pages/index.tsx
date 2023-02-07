@@ -2,7 +2,7 @@ import type {NextPage} from 'next'
 import Head from 'next/head'
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import {strings} from "../accessibility/strings";
+import {strings} from "../model/strings";
 import React, {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import {Hero} from "../components/content/index/Hero";

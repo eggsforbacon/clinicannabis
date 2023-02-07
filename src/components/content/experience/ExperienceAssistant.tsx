@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {strings} from "../../../accessibility/strings";
+import {strings} from "../../../model/strings";
 import React, {useEffect, useRef, useState} from "react";
 
 export const ExperienceAssistant = () => {

@@ -10,7 +10,7 @@ export const Input = (
         name : string,
         icon? : ReactNode,
         required? : boolean,
-        autoFocus? : boolean
+        autoFocus? : boolean,
     }
 ) => {
 
@@ -33,7 +33,7 @@ export const Input = (
         <div tabIndex={1} onFocus={handleFocusIn} onBlur={handleFocusOut}
             className={`w-128 relative flex items-center justify-center h-64 border-solid border-2 ${isFocused ? color : deselectedColor} rounded-lg transition duration-700 ease-in-out`}>
             <label htmlFor={props.name} className={"absolute z-30 left-6 -top-2.5 px-2 bg-neutral-50 text-sm "}>{props.label}</label>
-            <textarea className={"px-4 resize-none w-full h-full bg-transparent border-transparent focus:border-none focus:ring-transparent focus:outline-none"}/>
+            <textarea {...props} className={"px-4 resize-none w-full h-full bg-transparent border-transparent focus:border-none focus:ring-transparent focus:outline-none"}/>
         </div>
     ) : (
         <div tabIndex={1} onFocus={handleFocusIn} onBlur={handleFocusOut}

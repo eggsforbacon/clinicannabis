@@ -1,4 +1,4 @@
-import {strings} from "../../../accessibility/strings";
+import {strings} from "../../../model/strings";
 import {useEffect, useRef, useState} from "react";
 
 export const MissionVision = () => {

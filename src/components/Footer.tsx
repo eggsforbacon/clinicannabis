@@ -1,4 +1,4 @@
-import {strings} from "../accessibility/strings";
+import {strings} from "../model/strings";
 import Link from "next/link";
 import Image from "next/image";
 import {Envelope, Facebook, Geo, GeoAlt, Instagram, Mailbox, Phone, Voicemail, Youtube} from "react-bootstrap-icons";
@@ -25,7 +25,7 @@ const Footer = () => {
                         <ul className={"flex items-start justify-start flex-col w-full gap-2"}>
                             <li className={"flex w-full min-h-[4rem] items-center justify-start gap-4"}>
                                 <GeoAlt className={"fill-white h-full"} size={30}/>
-                                <Link href={"https://goo.gl/maps/BP2WeL5AkFZp1AcK9"}
+                                <Link href={"https://goo.gl/maps/WXLy4un1udeGgoc9A"}
                                       className={linkStyle}>{strings.footer.questions.address}<br/>{strings.footer.questions.addressScript}
                                 </Link>
                             </li>

@@ -1,7 +1,7 @@
 import {Carousel} from "../../Carousel";
 import React, {useEffect, useRef, useState} from "react";
 import {CarouselSlide} from "./CarouselSlide";
-import {strings} from "../../../accessibility/strings";
+import {strings} from "../../../model/strings";
 import {useRouter} from "next/router";
 
 export const Areas = () => {

@@ -2,7 +2,7 @@ import {NextPage} from "next";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from "next/head";
-import {strings} from "../accessibility/strings";
+import {strings} from "../model/strings";
 import React from "react";
 import {GoogleMap, useLoadScript, Marker} from "@react-google-maps/api";
 import {Map} from "../components/content/contact/Map";
