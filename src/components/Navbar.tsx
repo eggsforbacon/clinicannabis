@@ -55,7 +55,7 @@ const Navbar = (
                     <li className={listItemStyle}>
                         <Link
                             className={`${linkStyle} ${props.selection === "experience" ? "font-bold text-clinic-jade" : ""}`}
-                            href={"/experience"}>{strings.navbar.experience}</Link>
+                            href={"/experience/"}>{strings.navbar.experience}</Link>
                         <span className={props.selection === "experience" ? selectedStyle : ""}/>
                     </li>
                     <li className={listItemStyle}>

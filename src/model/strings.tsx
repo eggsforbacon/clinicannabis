@@ -1,11 +1,15 @@
-export const strings = {
+interface IKeyedObject {
+    [key : string]: any
+}
+
+export const strings : IKeyedObject = {
     'navbar': {
         'home': <>{"Nuestra Clínica"}</>,
         'services': <>{"Servicios"}</>,
         'experience': <>{"Centro de Experiencia"}</>,
         'blog': <>{"Blog Médico"}</>,
         'contact': <>{"Contáctanos"}</>,
-        'cta': <>{"Agenda tu Cita"}</>,
+        'cta': <>{"Agenda tu cita"}</>,
     },
     'footer': {
         'copy': <>{"Clinicannabis "}&copy;{" 2023 | Todos los derechos reservados"}</>,
@@ -75,9 +79,9 @@ export const strings = {
         },
         'values' : {
             'humanization' : {
-                'headline' : <>{""}</>,
-                'remark' : <>{""}</>,
-                'content' : <>{""}</>,
+                'headline' : <>{"Humanización "}</>,
+                'remark' : <>{"en atención"}<br/>{" al paciente"}</>,
+                'content' : <>{"Clinicannabis cuenta con personal calificado para atenderte. Nuestro objetivo es brindarte una asistencia más humana y cercana. Te escuchamos y determinamos el tratamiento que más se ajuste a la búsqueda de tu alivio. En Clinicannabis estás en las mejores manos. Tenemos experiencia en implementación de las Políticas de Seguridad del Paciente y Gestión del Riesgo."}</>,
             },
             'respect' : {
                 'headline' : <>{""}</>,
@@ -126,7 +130,7 @@ export const strings = {
             1 : {
                 'headline' : <>{"Cannabis Medicinal"}</>,
                 'remark' : <>{"Dolor crónico y otras patologías"}</>,
-                'content' : <>{"A través del cannabis medicinal manejamos el dolor crónico y otras patologías. Con el uso terapéutico del cannabis medicinal mejoramos y aliviamos los síntomas subyacentes del dolor crónico: ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
+                'content' : <>{"Cumplimos con los requisitos normativos para aliviar los síntomas derivados del dolor crónico. Con el uso de la medicina cannábica obtienes mejores resultados en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
             },
             2 : {
                 'headline' : <>{"Sistema Súper Inductivo"}</>,
@@ -142,6 +146,12 @@ export const strings = {
                 'headline' : <>{"Medicina Funcional"}</>,
                 'remark' : <>{""}</>,
                 'content' : <>{"Evaluamos a cada paciente de manera integral enfocándonos en la biología de los sistemas del organismo, e identificando los factores que puedan alterar su equilibrio. Es un modelo de medicina centrado en la persona más no en la enfermedad."}</>,
+            },
+            5 : {
+                'headline' : <>{"Centro de Experiencia"}</>,
+                'remark' : <>{""}</>,
+                'content' : <>{"Además de nuestros servicios como centro de salud, ofrecemos una experiencia vital de bienestar. Contamos con un Centro de Experiencia, en el que puedes encontrar productos derivados del Cannabis que promueven el cuidado personal, experiencias holísticas y de crecimiento personal además podrás disfrutar de alimentación saludable."}</>,
+                'cta': <>{"Conócelo"}</>,
             }
         }
     },
@@ -155,7 +165,7 @@ export const strings = {
             'headline' : <>{"Asistente "}</>,
             'remark' : <>{"de experiencia"}</>,
             'subtitle' : <>{"Medicina Cannábica"}</>,
-            'content' : <>{"de experienciaCumplimos con los requisitos normativos para aliviar los síntomas derivados del dolor crónico. Con el uso de la medicina cannábica obtienes mejores resultados en estados de: ansiedad, depresión, alteraciones del apetito y trastornos del sueño."}</>,
+            'content' : <>{"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer augue leo, ullamcorper vel lectus id, porta varius erat. Suspendisse rutrum velit sit amet dui pretium, ac laoreet nisi convallis. Aliquam erat volutpat. Phasellus quis justo nec est lacinia gravida."}</>,
         },
         'carousel' : {
             1 : {

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {useEffect, useRef, useState} from "react";
+import {strings} from "../../../model/strings";
 
 export const Values = () => {
 
@@ -39,11 +40,8 @@ export const Values = () => {
                     </section>
                     <article className={`h-3/4 flex flex-col items-start justify-end space-y-20 ${animation} animation-duration-800`}>
                         <h2 className={"text-white font-black text-8xl"}><strong
-                            className={"text-caribbean-green"}>Humanización</strong><br/>en atención<br/>al paciente
-                        </h2>
-                        <p className={"text-white text-2xl font-normal w-144"}>Clinicannabis cuenta con personal calificado,
-                            sus profesionales tienen experiencia en humanización en la atención e implementación de las
-                            políticas de Seguridad del Paciente y Gestión del Riesgo</p>
+                            className={"text-caribbean-green"}>{strings.landing.values.humanization.headline}</strong><br/>{strings.landing.values.humanization.remark}</h2>
+                        <p className={"text-white text-2xl font-normal w-144"}>{strings.landing.values.humanization.content}</p>
                     </article>
                 </section>
                 <span ref={triggerRef}

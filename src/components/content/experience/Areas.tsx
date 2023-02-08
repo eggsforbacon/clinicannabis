@@ -26,7 +26,7 @@ export const Areas = () => {
             function callback(entries: IntersectionObserverEntry[]) {
                 const entry = entries[0];
                 if (entry.isIntersecting) {
-                    state.forEach((e,i) => {
+                    state.forEach((e, i) => {
                         e[1](changes[i]);
                         observer.unobserve(trigger);
                     })
@@ -39,27 +39,16 @@ export const Areas = () => {
     }), [current]);
 
     const links = ["/experience/pharmacy", "/experience/coffee-shop", "/experience/boutique", "/experience/origins-hall"];
-    const carouselItems = [
-        <CarouselSlide src={"/images/experience/carousel/0.jpg"} alt={""}
-                       headline={strings.experience.carousel["1"].headline}
-                       content={strings.experience.carousel["1"].content}
-                       interaction={strings.experience.carousel["1"].interaction} to={links[0]}/>,
-        <CarouselSlide src={"/images/experience/carousel/1.jpg"} alt={""}
-                       headline={strings.experience.carousel["2"].headline}
-                       content={strings.experience.carousel["2"].content}
-                       interaction={strings.experience.carousel["2"].interaction} to={links[1]}/>,
-        <CarouselSlide src={"/images/experience/carousel/2.jpg"} alt={""}
-                       headline={strings.experience.carousel["3"].headline}
-                       content={strings.experience.carousel["3"].content}
-                       interaction={strings.experience.carousel["3"].interaction} to={links[2]}/>,
-        <CarouselSlide src={"/images/experience/carousel/3.jpg"} alt={""}
-                       headline={strings.experience.carousel["4"].headline}
-                       content={strings.experience.carousel["4"].content}
-                       interaction={strings.experience.carousel["4"].interaction} to={links[3]}/>,
-    ];
+    const carouselItems = [<span/>, <span/>, <span/>, <span/>].map((_, i : number) => {
+        const index = (i+1).toString();
+        return <CarouselSlide src={`/images/experience/carousel/${i}.jpg`} alt={""}
+                              headline={strings.experience.carousel[index].headline}
+                              content={strings.experience.carousel[index].content}
+                              interaction={strings.experience.carousel[index].interaction} to={links[i]}/>
+    });
 
     return (
-        <section className={"w-full mt-32 relative"}>
+        <section className={"w-full mt-28 mb-48 z-10 relative"}>
             <article className={"w-full flex items-center justify-around px-40 py-16"}>
                 <section className={"flex flex-col items-start justify-start gap-16 h-full"}>
                     <h2 className={`text-8xl font-black w-112 text-caribbean-green ${navAnimation} animation-duration-1600`}>Conoce <strong
@@ -69,13 +58,15 @@ export const Areas = () => {
                             className={`${navItemStyle} ${(current % 4 === 0) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-800`}>Droguería
                         </li>
                         <li onClick={() => setCurrent(1)}
-                            className={`${navItemStyle} ${(current % 4 === 1) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1000`}>Coffee Shop
+                            className={`${navItemStyle} ${(current % 4 === 1) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1000`}>Coffee
+                            Shop
                         </li>
                         <li onClick={() => setCurrent(2)}
                             className={`${navItemStyle} ${(current % 4 === 2) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1200`}>Boutique
                         </li>
                         <li onClick={() => setCurrent(3)}
-                            className={`${navItemStyle} ${(current % 4 === 3) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1400`}>Salón Orígenes
+                            className={`${navItemStyle} ${(current % 4 === 3) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1400`}>Salón
+                            Orígenes
                         </li>
                     </ul>
                 </section>
