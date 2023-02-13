@@ -44,6 +44,7 @@ module.exports = {
             transitionProperty: {
                 'bg-size': 'background-size',
                 'size' : 'width, height, padding, margin',
+                'opacity' : 'opacity',
             },
             fontFamily: {
                 'solomon-sans': ['Solomon Sans']
