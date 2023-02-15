@@ -60,7 +60,7 @@ export const strings : IKeyedObject = {
             'mission': {
                 'headline': <>{"Nuestra "}</>,
                 'remark': <>{"Misión"}</>,
-                'content': <>{"Prestar servicios de salud preventiva, alivio del dolor y rehabilitación con el\n" +
+                'content': <>{"Prestar services de salud preventiva, alivio del dolor y rehabilitación con el\n" +
                     "uso de terapias autorizadas con cannabis medicinal, sueros terapéuticos y\n" +
                     "el Sistema Súper Inductivo de alta tecnología no invasiva que permitan\n" +
                     "mejorar las condiciones de salud de la población; con talento humano\n" +
@@ -71,7 +71,7 @@ export const strings : IKeyedObject = {
                 'headline': <>{"Nuestra "}</>,
                 'remark': <>{"Visión"}</>,
                 'content': <>{"Consolidarnos en el año 2025 como centro médico líder en la prestación de\n" +
-                    "servicios de salud en la modalidad presencial, domiciliaria y telemedicina\n" +
+                    "services de salud en la modalidad presencial, domiciliaria y telemedicina\n" +
                     "con cannabis medicinal y terapias alternativas, con un modelo de atención\n" +
                     "innovador e integral, identificando individualmente las necesidades de\n" +
                     "nuestros usuarios y sensibilizándonos con su recuperación."}</>,
@@ -124,11 +124,11 @@ export const strings : IKeyedObject = {
     },
     'services': {
         'headline' : <>{"Nuestros "}</>,
-        'remark' : <>{"servicios"}</>,
+        'remark' : <>{"services"}</>,
         'subtext' : <>{"En Clinicannabis cumplimos con los requisitos normativos para satisfacer las expectativas y necesidades de nuestros grupos de interés."}</>,
         'sections' : {
             1 : {
-                'headline' : <>{"Cannabis Medicinal"}</>,
+                'headline' : <>{"Cannabis medicinal"}</>,
                 'remark' : <>{"Dolor crónico y otras patologías"}</>,
                 'content' : <>{"Cumplimos con los requisitos normativos para aliviar los síntomas derivados del dolor crónico. Con el uso de la medicina cannábica obtienes mejores resultados en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
             },
@@ -150,7 +150,7 @@ export const strings : IKeyedObject = {
             5 : {
                 'headline' : <>{"Centro de Experiencia"}</>,
                 'remark' : <>{""}</>,
-                'content' : <>{"Además de nuestros servicios como centro de salud, ofrecemos una experiencia vital de bienestar. Contamos con un Centro de Experiencia, en el que puedes encontrar productos derivados del Cannabis que promueven el cuidado personal, experiencias holísticas y de crecimiento personal además podrás disfrutar de alimentación saludable."}</>,
+                'content' : <>{"Además de nuestros services como centro de salud, ofrecemos una experiencia vital de bienestar. Contamos con un Centro de Experiencia, en el que puedes encontrar productos derivados del Cannabis que promueven el cuidado personal, experiencias holísticas y de crecimiento personal además podrás disfrutar de alimentación saludable."}</>,
                 'cta': <>{"Conócelo"}</>,
             }
         }
@@ -159,7 +159,7 @@ export const strings : IKeyedObject = {
         'hero': {
             'headline': <>{"Te ofrecemos "}</>,
             'remark' : <>{"experiencias"}</>,
-            'content': <>{"Además de nuestros servicios como centro de salud, ofrecemos una experiencia vital de bienestar. Contamos con un Centro de Experiencia, en el que puedes encontrar productos derivados del Cannabis que promueven el cuidado personal, experiencias holísticas y de crecimiento personal además podrás disfrutar de alimentación saludable."}</>
+            'content': <>{"Además de nuestros services como centro de salud, ofrecemos una experiencia vital de bienestar. Contamos con un Centro de Experiencia, en el que puedes encontrar productos derivados del Cannabis que promueven el cuidado personal, experiencias holísticas y de crecimiento personal además podrás disfrutar de alimentación saludable."}</>
         },
         'assistant' : {
             'headline' : <>{"Asistente "}</>,
