@@ -13,7 +13,7 @@ const Navbar = (
         context? : string,
     }) => {
 
-    const selectedStyle: string = "h-0.5 absolute -bottom-2 lg:-bottom-[34px] px-1 rounded-sm w-full bg-caribbean-green";
+    const selectedStyle: string = "z-10 h-0.5 absolute -bottom-2 lg:-bottom-[34px] px-1 rounded-sm w-full bg-caribbean-green";
     const listItemStyle: string = "flex relative flex-col items-center justify-start";
     const linkStyle: string = "font-semibold tracking-wide transition quartic-in-out duration-300 lg:hover:text-clinic-persian-green lg:hover:-translate-y-1 focus:text-clinic-persian-green";
     const buttonStyle: string = "hidden lg:block rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-6 py-1 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
