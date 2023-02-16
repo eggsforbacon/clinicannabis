@@ -1,8 +1,8 @@
 interface IKeyedObject {
-    [key : string]: any
+    [key: string]: any
 }
 
-export const strings : IKeyedObject = {
+export const strings: IKeyedObject = {
     'navbar': {
         'home': <>{"Nuestra Clínica"}</>,
         'services': <>{"Servicios"}</>,
@@ -77,80 +77,80 @@ export const strings : IKeyedObject = {
                     "nuestros usuarios y sensibilizándonos con su recuperación."}</>,
             }
         },
-        'values' : {
-            'humanization' : {
-                'headline' : <>{"Humanización "}</>,
-                'remark' : <>{"en atención"}<br/>{" al paciente"}</>,
-                'content' : <>{"Clinicannabis cuenta con personal calificado para atenderte. Nuestro objetivo es brindarte una asistencia más humana y cercana. Te escuchamos y determinamos el tratamiento que más se ajuste a la búsqueda de tu alivio. En Clinicannabis estás en las mejores manos. Tenemos experiencia en implementación de las Políticas de Seguridad del Paciente y Gestión del Riesgo."}</>,
+        'values': {
+            'humanization': {
+                'headline': <>{"Humanización "}</>,
+                'remark': <>{"en atención"}<br/>{" al paciente"}</>,
+                'content': <>{"Clinicannabis cuenta con personal calificado para atenderte. Nuestro objetivo es brindarte una asistencia más humana y cercana. Te escuchamos y determinamos el tratamiento que más se ajuste a la búsqueda de tu alivio. En Clinicannabis estás en las mejores manos. Tenemos experiencia en implementación de las Políticas de Seguridad del Paciente y Gestión del Riesgo."}</>,
             },
-            'respect' : {
-                'headline' : <>{""}</>,
-                'remark' : <>{""}</>,
-                'content' : <>{""}</>,
+            'respect': {
+                'headline': <>{""}</>,
+                'remark': <>{""}</>,
+                'content': <>{""}</>,
             },
-            'compromise' : {
-                'headline' : <>{""}</>,
-                'remark' : <>{""}</>,
-                'content' : <>{""}</>,
+            'compromise': {
+                'headline': <>{""}</>,
+                'remark': <>{""}</>,
+                'content': <>{""}</>,
             },
-            'innovation' : {
-                'headline' : <>{""}</>,
-                'remark' : <>{""}</>,
-                'content' : <>{""}</>,
+            'innovation': {
+                'headline': <>{""}</>,
+                'remark': <>{""}</>,
+                'content': <>{""}</>,
             },
-            'quality' : {
-                'headline' : <>{""}</>,
-                'remark' : <>{""}</>,
-                'content' : <>{""}</>,
+            'quality': {
+                'headline': <>{""}</>,
+                'remark': <>{""}</>,
+                'content': <>{""}</>,
             },
-            'excellence' : {
-                'headline' : <>{""}</>,
-                'remark' : <>{""}</>,
-                'content' : <>{""}</>,
+            'excellence': {
+                'headline': <>{""}</>,
+                'remark': <>{""}</>,
+                'content': <>{""}</>,
             },
         },
-        'experience' :{
+        'experience': {
             'headline': <>{"Centro de "}</>,
-            'remark' : <>{"experiencia"}</>,
-            'content' : <>{"No somos sólo una clínica, somos un centro de bienestar y salud, ofrecemos una experiencia vital. Contamos con una Tienda-Boutique de productos con CBD y derivados cannábicos que promueven el cuidado personal; Salón Orígenes y un Coffee Shop."}</>,
-            'cta' : <>{"Conócelo"}</>,
+            'remark': <>{"experiencia"}</>,
+            'content': <>{"No somos sólo una clínica, somos un centro de bienestar y salud, ofrecemos una experiencia vital. Contamos con una Tienda-Boutique de productos con CBD y derivados cannábicos que promueven el cuidado personal; Salón Orígenes y un Coffee Shop."}</>,
+            'cta': <>{"Conócelo"}</>,
         },
-        'blog' : {
+        'blog': {
             'headline': <>{"Nuestro "}</>,
-            'remark' : <>{"blog médico"}</>,
-            'content' : <>{"En Clinicannabis estás en las mejores manos. Encuentra tips, artículos de salud y las últimas noticias de salud en nuestro blog médico."}</>,
-            'cta' : <>{"Descúbrelo"}</>
+            'remark': <>{"blog médico"}</>,
+            'content': <>{"En Clinicannabis estás en las mejores manos. Encuentra tips, artículos de salud y las últimas noticias de salud en nuestro blog médico."}</>,
+            'cta': <>{"Descúbrelo"}</>
         },
     },
     'services': {
-        'headline' : <>{"Nuestros "}</>,
-        'remark' : <>{"services"}</>,
-        'subtext' : <>{"En Clinicannabis cumplimos con los requisitos normativos para satisfacer las expectativas y necesidades de nuestros grupos de interés."}</>,
-        'sections' : {
-            1 : {
-                'headline' : <>{"Cannabis medicinal"}</>,
-                'remark' : <>{"Dolor crónico y otras patologías"}</>,
-                'content' : <>{"Cumplimos con los requisitos normativos para aliviar los síntomas derivados del dolor crónico. Con el uso de la medicina cannábica obtienes mejores resultados en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
+        'headline': <>{"Nuestros "}</>,
+        'remark': <>{"services"}</>,
+        'subtext': <>{"En Clinicannabis cumplimos con los requisitos normativos para satisfacer las expectativas y necesidades de nuestros grupos de interés."}</>,
+        'sections': {
+            1: {
+                'headline': <>{"Cannabis medicinal"}</>,
+                'remark': <>{"Dolor crónico y otras patologías"}</>,
+                'content': <>{"Cumplimos con los requisitos normativos para aliviar los síntomas derivados del dolor crónico. Con el uso de la medicina cannábica obtienes mejores resultados en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
             },
-            2 : {
-                'headline' : <>{"Sistema Súper Inductivo"}</>,
-                'remark' : <>{"Innovación tecnológica"}</>,
-                'content' : <>{"Somos pioneros en el Valle del Cauca en ofrecer esta tecnología biomédica no invasiva e indolora que favorece el tratamiento de enfermedades neuromusculares, osteoarticulares, lesiones deportivas; así como la recuperación postquirúrgica, alivio del dolor y rehabilitación respiratoria, facilitando la recuperación y funcionalidad."}</>,
+            2: {
+                'headline': <>{"Sistema Súper Inductivo"}</>,
+                'remark': <>{"Innovación tecnológica"}</>,
+                'content': <>{"Somos pioneros en el Valle del Cauca en ofrecer esta tecnología biomédica no invasiva e indolora que favorece el tratamiento de enfermedades neuromusculares, osteoarticulares, lesiones deportivas; así como la recuperación postquirúrgica, alivio del dolor y rehabilitación respiratoria, facilitando la recuperación y funcionalidad."}</>,
             },
-            3 : {
-                'headline' : <>{"Sueros terapéuticos"}</>,
-                'remark' : <>{"Regeneración y depuración"}</>,
-                'content' : <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyen a la revitalización celular, fomenta la eliminación de toxinas y potencia el tratamiento para enfermedades crónicas. Recupera tu bienestar a través de esta experiencia de sanación, hay uno elaborado especialmente para ti."}</>,
+            3: {
+                'headline': <>{"Sueros terapéuticos"}</>,
+                'remark': <>{"Regeneración y depuración"}</>,
+                'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyen a la revitalización celular, fomenta la eliminación de toxinas y potencia el tratamiento para enfermedades crónicas. Recupera tu bienestar a través de esta experiencia de sanación, hay uno elaborado especialmente para ti."}</>,
             },
-            4 : {
-                'headline' : <>{"Medicina Funcional"}</>,
-                'remark' : <>{""}</>,
-                'content' : <>{"Evaluamos a cada paciente de manera integral enfocándonos en la biología de los sistemas del organismo, e identificando los factores que puedan alterar su equilibrio. Es un modelo de medicina centrado en la persona más no en la enfermedad."}</>,
+            4: {
+                'headline': <>{"Medicina Funcional"}</>,
+                'remark': <>{""}</>,
+                'content': <>{"Evaluamos a cada paciente de manera integral enfocándonos en la biología de los sistemas del organismo, e identificando los factores que puedan alterar su equilibrio. Es un modelo de medicina centrado en la persona más no en la enfermedad."}</>,
             },
-            5 : {
-                'headline' : <>{"Centro de Experiencia"}</>,
-                'remark' : <>{""}</>,
-                'content' : <>{"Además de nuestros services como centro de salud, ofrecemos una experiencia vital de bienestar. Contamos con un Centro de Experiencia, en el que puedes encontrar productos derivados del Cannabis que promueven el cuidado personal, experiencias holísticas y de crecimiento personal además podrás disfrutar de alimentación saludable."}</>,
+            5: {
+                'headline': <>{"Centro de Experiencia"}</>,
+                'remark': <>{""}</>,
+                'content': <>{"Además de nuestros services como centro de salud, ofrecemos una experiencia vital de bienestar. Contamos con un Centro de Experiencia, en el que puedes encontrar productos derivados del Cannabis que promueven el cuidado personal, experiencias holísticas y de crecimiento personal además podrás disfrutar de alimentación saludable."}</>,
                 'cta': <>{"Conócelo"}</>,
             }
         }
@@ -158,38 +158,46 @@ export const strings : IKeyedObject = {
     'experience': {
         'hero': {
             'headline': <>{"Te ofrecemos "}</>,
-            'remark' : <>{"experiencias"}</>,
+            'remark': <>{"experiencias"}</>,
             'content': <>{"Además de nuestros services como centro de salud, ofrecemos una experiencia vital de bienestar. Contamos con un Centro de Experiencia, en el que puedes encontrar productos derivados del Cannabis que promueven el cuidado personal, experiencias holísticas y de crecimiento personal además podrás disfrutar de alimentación saludable."}</>
         },
-        'assistant' : {
-            'headline' : <>{"Asistente "}</>,
-            'remark' : <>{"de experiencia"}</>,
-            'subtitle' : <>{"Medicina Cannábica"}</>,
-            'content' : <>{"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer augue leo, ullamcorper vel lectus id, porta varius erat. Suspendisse rutrum velit sit amet dui pretium, ac laoreet nisi convallis. Aliquam erat volutpat. Phasellus quis justo nec est lacinia gravida."}</>,
+        'assistant': {
+            'headline': <>{"Asistente "}</>,
+            'remark': <>{"de experiencia"}</>,
+            'subtitle': <>{"Medicina Cannábica"}</>,
+            'content': <>{"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer augue leo, ullamcorper vel lectus id, porta varius erat. Suspendisse rutrum velit sit amet dui pretium, ac laoreet nisi convallis. Aliquam erat volutpat. Phasellus quis justo nec est lacinia gravida."}</>,
         },
-        'carousel' : {
-            1 : {
-                'headline' : <>{"Droguería"}</>,
-                'content' : <>{""}</>,
-                'interaction' : <>{"Mira nuestro catálogo"}</>
+        'carousel': {
+            1: {
+                'headline': <>{"Droguería"}</>,
+                'content': <>{""}</>,
+                'interaction': <>{"Mira nuestro catálogo"}</>
             },
-            2 : {
-                'headline' : <>{"Coffee Shop"}</>,
-                'content' : <>{""}</>,
-                'interaction' : <>{"Mira nuestro menú"}</>
+            2: {
+                'headline': <>{"Coffee Shop"}</>,
+                'content': <>{""}</>,
+                'interaction': <>{"Mira nuestro menú"}</>
             },
-            3 : {
-                'headline' : <>{"Boutique"}</>,
-                'content' : <>{"En este espacio encontrarás productos con CBD y otros complementos que promueven el cuidado personal."}</>,
-                'interaction' : <>{"Mira nuestros productos"}</>
+            3: {
+                'headline': <>{"Boutique"}</>,
+                'content': <>{"En este espacio encontrarás productos con CBD y otros complementos que promueven el cuidado personal."}</>,
+                'interaction': <>{"Mira nuestros productos"}</>
             },
-            4 : {
-                'headline' : <>{"Salón Orígenes"}</>,
-                'content' : <>{""}</>,
-                'interaction' : <>{"Reserva tu espacio"}</>
+            4: {
+                'headline': <>{"Salón Orígenes"}</>,
+                'content': <>{""}</>,
+                'interaction': <>{"Reserva tu espacio"}</>
             },
         }
     },
     'blog': {},
-    'contact': {}
+    'contact': {},
+    'soon': {
+        'headline': <>{"¡Clinicannabis ya está aquí!"}</>,
+        'copy': <>{"Somos una institución que te ofrece alternativas terapéuticas no convencionales para tratar dolor crónico,\n" +
+            "mejorar tu calidad de vida o simplemente prevenir cualquier afección que comprometa tu salud."}</>,
+        'cta': <>{"¡Actualizate!"}</>,
+        'mail': <>{"Déjanos tu email"}</>,
+        'mailAction': "Suscribirme",
+    }
 }
