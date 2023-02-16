@@ -6,11 +6,13 @@ import {Envelope, Facebook, Instagram, Youtube} from "react-bootstrap-icons";
 import React, {useState} from "react";
 import Link from "next/link";
 import {sendContactForm, sendSubscribeForm} from "../lib/api";
+import {useGoogleReCaptcha} from "react-google-recaptcha-v3";
 
 const soon: NextPage = () => {
 
     const [thankYouStyle, setThankYouStyle] = useState("opacity-0");
     const [subEmail, setSubEmail] = useState("");
+    const { executeRecaptcha } = useGoogleReCaptcha();
 
     const showThankYou = () => {
         setThankYouStyle("opacity-100");
@@ -29,8 +31,16 @@ const soon: NextPage = () => {
         showThankYou();
         const form = e.target as HTMLFormElement;
         (form.ctSubmit as HTMLInputElement).blur();
-        await setSubEmail(form.ctEmail.value);
-        await sendSubscribeForm({email: subEmail});
+        if (!executeRecaptcha) {
+            console.log("Execute recaptcha not yet available");
+            return;
+        }
+        executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+            console.log(gReCaptchaToken, "response Google reCaptcha server");
+            sendSubscribeForm({email: subEmail, gToken: gReCaptchaToken});
+            setSubEmail(form.ctEmail.value);
+        });
+
     }
 
     return (
@@ -47,7 +57,8 @@ const soon: NextPage = () => {
                         <input type={"submit"}
                                className={"px-16 py-2 text-2xl text-viridian-green bg-white border-solid border-2 border-viridian-green rounded-full shadow-md transition duration-500 ease-in-out hover:cursor-pointer lg:hover:bg-viridian-green focus:bg-viridian-green lg:hover:text-white focus:text-white lg:hover:-translate-y-2 focus:-translate-y-2"}
                                value={strings.soon.mailAction} name={"ctSubmit"}/>
-                        <p className={`transition duration-500 ease-in-out ${thankYouStyle} text-viridian-green text-xl font-normal`}>¡Gracias por suscribirte!</p>
+                        <p className={`transition duration-500 ease-in-out ${thankYouStyle} text-viridian-green text-xl font-normal`}>¡Gracias
+                            por suscribirte!</p>
                     </form>
                     <ul className={"flex items-center justify-start"}>
                         <li>
