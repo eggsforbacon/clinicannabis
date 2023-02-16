@@ -18,5 +18,4 @@ jobs :
           server : ftp.clinicannabis.com.co
           username : ${{secrets.CICD_USR_FTP}}
           password : ${{secrets.CICD_HSH_FTP}}
-          local-dir : /.next/
           server-dir : /public_html/
