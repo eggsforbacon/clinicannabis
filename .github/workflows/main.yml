@@ -18,7 +18,7 @@ jobs :
           node-version: '18'
       - name : Build app
         run : |
-          - npm-install
+          - npm install
           - next build
           - next start
       - name : Sync files
