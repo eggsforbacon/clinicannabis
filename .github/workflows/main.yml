@@ -11,16 +11,7 @@ jobs :
     runs-on : ubuntu-latest
     steps:
       - name : Get latest code
-        uses : actions/checkout@v2
-      - name : Use Node.js 18
-        uses : actions/setup-node@v2
-        with :
-          node-version: '18'
-      - name : Build app
-        run : |
-          - npm install
-          - next build
-          - next start
+        uses : actions/checkout@v3
       - name : Sync files
         uses : SamKirkland/FTP-Deploy-Action@4.1.0
         with :
