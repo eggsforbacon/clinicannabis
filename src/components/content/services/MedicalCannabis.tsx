@@ -11,7 +11,7 @@ export const MedicalCannabis = () => {
             <section className={"absolute w-168 mt-96 ml-56 flex flex-col justify-between items-start"}>
                 <section className={"pt-24"}>
                     <h2 className={"text-9xl font-black tracking-wide text-white mb-4"}>{strings.services.sections["1"].headline}</h2>
-                    <h3 className={"text-white font-semibold text-3xl"}>{strings.services.sections["1"].remark}</h3>
+                    <h3 className={"text-white font-normal text-4xl"}>{strings.services.sections["1"].remark}</h3>
                 </section>
                 <p className={"mt-28 text-neutral-400 font-normal text-3xl"}>{strings.services.sections["1"].content}</p>
             </section>
