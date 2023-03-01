@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import {MedicalCannabis} from "../components/content/services/MedicalCannabis";
 import {SIS} from "../components/content/services/SIS";
-import {FunctionalMedicine} from "../components/content/services/FunctionalMedicine";
 import {Serums} from "../components/content/services/Serums";
+import {FunctionalMedicine} from "../components/content/services/FunctionalMedicine";
 import {Experience} from "../components/content/services/Experience";
 import Head from "next/head";
 import React from "react";
@@ -21,8 +21,8 @@ const Services : NextPage = () => {
             <Navbar selection={"services"} />
             <MedicalCannabis />
             <SIS />
-            <FunctionalMedicine />
             <Serums />
+            <FunctionalMedicine />
             <Experience />
             <Footer />
         </main>

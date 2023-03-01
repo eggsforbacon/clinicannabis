@@ -51,22 +51,20 @@ export const Areas = () => {
         <section className={"w-full mt-28 mb-48 z-10 relative"}>
             <article className={"w-full flex items-center justify-around px-40 py-16"}>
                 <section className={"flex flex-col items-start justify-start gap-16 h-full"}>
-                    <h2 className={`text-8xl font-black w-112 text-caribbean-green ${navAnimation} animation-duration-1600`}>Conoce <strong
-                        className={"text-viridian-green"}>el Centro</strong></h2>
+                    <h2 className={`text-8xl font-black w-112 text-caribbean-green ${navAnimation} animation-duration-1600`}>{strings.experience.carousel.title}<strong
+                        className={"text-viridian-green"}>{strings.experience.carousel.remark}</strong></h2>
                     <ul className={"flex flex-col items-start justify-start gap-8 h-full w-64"}>
                         <li onClick={() => setCurrent(0)}
-                            className={`${navItemStyle} ${(current % 4 === 0) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-800`}>Droguería
+                            className={`${navItemStyle} ${(current % 4 === 0) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-800`}>{strings.experience.carousel[1].headline}
                         </li>
                         <li onClick={() => setCurrent(1)}
-                            className={`${navItemStyle} ${(current % 4 === 1) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1000`}>Coffee
-                            Shop
+                            className={`${navItemStyle} ${(current % 4 === 1) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1000`}>{strings.experience.carousel[2].headline}
                         </li>
                         <li onClick={() => setCurrent(2)}
-                            className={`${navItemStyle} ${(current % 4 === 2) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1200`}>Boutique
+                            className={`${navItemStyle} ${(current % 4 === 2) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1200`}>{strings.experience.carousel[3].headline}
                         </li>
                         <li onClick={() => setCurrent(3)}
-                            className={`${navItemStyle} ${(current % 4 === 3) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1400`}>Salón
-                            Orígenes
+                            className={`${navItemStyle} ${(current % 4 === 3) ? "text-caribbean-green" : "text-neutral-400"} ${navAnimation} animation-duration-1400`}>{strings.experience.carousel[4].headline}
                         </li>
                     </ul>
                 </section>

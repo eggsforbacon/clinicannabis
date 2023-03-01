@@ -75,12 +75,12 @@ const Footer = () => {
                         <li><h3 className={"text-white text-2xl"}>{strings.footer.clinic.headline}</h3></li>
                         <li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.home}</Link>
                         </li>
-                        <li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.history}</Link>
-                        </li>
+                        {/*<li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.history}</Link>*/}
+                        {/*</li>*/}
                         <li><Link href={"/"}
                                   className={`${linkStyle} text-2xl`}>{strings.footer.clinic.experience}</Link></li>
-                        <li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.stories}</Link>
-                        </li>
+                        {/*<li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.stories}</Link>*/}
+                        {/*</li>*/}
                     </ul>
                     <ul className={"w-full flex flex-col gap-5 justify-end items-start pl-24 pb-20"}>
                         <li><h3 className={"text-white text-2xl"}>{strings.footer.fast.headline}</h3></li>
@@ -88,10 +88,10 @@ const Footer = () => {
                                   className={`${linkStyle} text-2xl`}>{strings.footer.fast.contact}</Link></li>
                         <li><Link href={"/legal#data"}
                                   className={`${linkStyle} text-2xl`}>{strings.footer.fast.data}</Link></li>
-                        <li><Link href={"/info"} className={`${linkStyle} text-2xl`}>{strings.footer.fast.FAQ}</Link>
-                        </li>
-                        <li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.fast.experts}</Link>
-                        </li>
+                        {/*<li><Link href={"/info"} className={`${linkStyle} text-2xl`}>{strings.footer.fast.FAQ}</Link>*/}
+                        {/*</li>*/}
+                        {/*<li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.fast.experts}</Link>*/}
+                        {/*</li>*/}
                     </ul>
                 </section>
             </section>

@@ -9,7 +9,6 @@ import {Hero} from "../components/content/index/Hero";
 import {About} from "../components/content/index/About";
 import {Values} from "../components/content/index/Values";
 import {Numbers} from "../components/content/index/Numbers";
-import {MissionVision} from "../components/content/index/MissionVision";
 import {Experience} from "../components/content/index/Experience";
 import {Blog} from "../components/content/index/Blog";
 
@@ -50,7 +49,6 @@ const Home: NextPage = () => {
             <Navbar selection={"home"}/>
             <Hero hasWindow={hasWindow}/>
             <About />
-            {/*<MissionVision />*/}
             <Values />
             <Experience />
             <Numbers />
