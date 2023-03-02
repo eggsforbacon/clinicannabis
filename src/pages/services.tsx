@@ -8,6 +8,7 @@ import {FunctionalMedicine} from "../components/content/services/FunctionalMedic
 import {Experience} from "../components/content/services/Experience";
 import Head from "next/head";
 import React from "react";
+import {Hero} from "../components/content/services/Hero";
 
 const Services : NextPage = () => {
     return (
@@ -19,6 +20,7 @@ const Services : NextPage = () => {
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"services"} />
+            <Hero />
             <MedicalCannabis />
             <SIS />
             <Serums />

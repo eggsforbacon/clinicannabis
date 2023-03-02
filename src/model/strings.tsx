@@ -119,7 +119,7 @@ export const strings: IKeyedObject = {
     },
     'services': {
         'headline': <>{"Nuestros "}</>,
-        'remark': <>{"services"}</>,
+        'remark': <>{"servicios"}</>,
         'subtext': <>{"Trabajamos para cumplir con los estándares de calidad que garanticen que nuestros tratamientos y productos te brinden una mejor calidad de vida."}</>,
         'sections': {
             1: {
@@ -199,6 +199,11 @@ export const strings: IKeyedObject = {
             "message": <>{"¿Cómo podemos ayudarte?"}</>,
         },
         "cta": <>{"Enviar"}</>,
+    },
+    '404' : {
+      "headline" : <>{"No encontramos esta página"}</>,
+      "copy" : <>{"Despreocúpate. Aún puedes conocer todo lo que tenemos para ti."}</>,
+      "cta" : <>{"Nuestra Clínica"}</>,
     },
     'soon': {
         'headline': <>{"¡Clinicannabis ya está aquí!"}</>,

@@ -4,8 +4,8 @@ import {strings} from "../../../model/strings";
 export const SIS = () => {
     return (
         <article className={"relative h-256 z-10"}>
-            <Image src={"/images/services/service2.png"} className={"absolute -top-28 right-0"} alt={""} width={1920}
-                   height={937}/>
+            <Image src={"/images/services/service2.png"} className={"absolute -top-28 -right-20"} alt={""} width={1678 *.9}
+                   height={909 *.9}/>
             <Image src={"/images/services/servicesSISLeaf.svg"}
                    className={"absolute top-[30rem] scale-[1.85] -left-[30rem] -rotate-[8deg]"} alt={""}
                    width={16 * 300}
