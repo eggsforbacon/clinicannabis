@@ -189,7 +189,9 @@ export const strings: IKeyedObject = {
     },
     'blog': {
         "headline" : <>{"Blog Médico"}</>,
-        "copy" : <>{"Entérate de la actualidad médica, de bienestar y tratamientos basados en la medicina cannábica y funcional, entre otro temas de interés."}</>
+        "copy" : <>{"Entérate de la actualidad médica, de bienestar y tratamientos basados en la medicina cannábica y funcional, entre otros temas de interés."}</>,
+        "teaser": <>{"¡Lo sentimos! Trabajamos para poder brindarte información de bienestar actual. Por el momento, mira todo lo que tenemos para ofrecerte"}</>,
+        "cta": <>{"Nuestra Clínica"}</>,
     },
     'contact': {
         "headline" : <>{""}</>,
