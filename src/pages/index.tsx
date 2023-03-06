@@ -51,7 +51,7 @@ const Home: NextPage = () => {
             <About />
             <Values />
             <Experience />
-            <Numbers />
+            {/*<Numbers />*/}
             <Blog />
             <Footer/>
         </main>

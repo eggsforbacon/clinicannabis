@@ -4,7 +4,7 @@ import React from "react";
 
 export const FunctionalMedicine = () => {
     return (
-        <article className={"relative h-[68rem] z-10"}>
+        <article className={"relative h-[68rem] z-10"} id={"functional-medicine"}>
             <Image className={"absolute select-none top-[56rem] right-[42rem] rotate-[3deg] -scale-x-[170] scale-y-[170]"}
                    src={"/images/experience/assistantBackLeaf.svg"} alt={"Placeholder"} width={16} height={6}/>
             <Image className={`absolute select-none top-40 scale-125 -left-44`}

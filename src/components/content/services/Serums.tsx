@@ -3,7 +3,7 @@ import {strings} from "../../../model/strings";
 
 export const Serums = () => {
     return (
-        <article className={"relative h-288"}>
+        <article className={"relative h-288"} id={"serums"}>
             <Image src={"/images/services/service3.png"} className={"z-0 absolute opacity-50 -top-0 right-0"} alt={""} width={1920}
                    height={1383}/>
             <section className={"absolute right-0 w-208 mt-40 mr-12 flex flex-col justify-between items-start text-midnight-green"}>

@@ -16,7 +16,7 @@ const Services : NextPage = () => {
             <Head>
                 <title>Nuestros Servicios</title>
                 <meta name={"description"}
-                      content={"En Clinicannabis cumplimos con los requisitos normativos para satisfacer las expectativas y necesidades de nuestros grupos de interés."}/>
+                      content={"Trabajamos para cumplir con los estándares de calidad que garanticen que nuestros tratamientos y productos te brinden una mejor calidad de vida."}/>
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"services"} />

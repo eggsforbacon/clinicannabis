@@ -3,7 +3,7 @@ import {strings} from "../../../model/strings";
 
 export const MedicalCannabis = () => {
     return (
-        <article className={"relative h-256"}>
+        <article className={"relative h-256"} id={"medicinal-cannabis"}>
             <Image src={"/images/services/service1.png"} className={"absolute -top-5 right-0"} alt={""} width={1920}
                    height={1001}/>
             <Image src={"/images/services/questionableAsset.svg"} className={"absolute -top-5 left-0"} alt={""}

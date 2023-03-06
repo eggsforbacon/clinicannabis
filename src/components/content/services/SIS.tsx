@@ -3,7 +3,7 @@ import {strings} from "../../../model/strings";
 
 export const SIS = () => {
     return (
-        <article className={"relative h-256 z-10"}>
+        <article className={"relative h-256 z-10"} id={"sis"}>
             <Image src={"/images/services/service2.png"} className={"absolute -top-28 -right-20"} alt={""} width={1678 *.9}
                    height={909 *.9}/>
             <Image src={"/images/services/servicesSISLeaf.svg"}

@@ -16,7 +16,7 @@ export const Experience = () => {
             <section
                 className={"absolute left-0 w-208 mt-32 ml-44 flex flex-col gap-12 justify-between items-center text-midnight-green"}>
                 <section className={"pt-24"}>
-                    <h2 className={"text-9xl font-black tracking-wide mb-4"}>{strings.services.sections["5"].headline}</h2>
+                    <h2 id={"experience-center"} className={"text-9xl font-black tracking-wide mb-4"}>{strings.services.sections["5"].headline}</h2>
                     <h3 className={"font-normal text-5xl"}>{strings.services.sections["5"].remark}</h3>
                 </section>
                 <p className={"w-208 font-normal text-4xl"}>{strings.services.sections["5"].content}</p>

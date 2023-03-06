@@ -6,6 +6,7 @@ import {Envelope, Facebook, Instagram, Youtube} from "react-bootstrap-icons";
 import Link from "next/link";
 import React from "react";
 import {useRouter} from "next/router";
+import Head from "next/head";
 
 const FourOhFour : NextPage = () => {
 
@@ -13,6 +14,13 @@ const FourOhFour : NextPage = () => {
 
     return (
         <main>
+            <Head>
+                <title>Página no Encontrada</title>
+                <link rel="icon" href="/favicon.ico"/>
+                <meta name={"description"}
+                      content={"Despreocúpate. Aún puedes conocer todo lo que tenemos para ti."}/>
+                <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
+            </Head>
             <article className={"flex flex-col items-center justify-start pt-16 gap-8"}>
                 <Image src={"/images/soon/clinilogo.jpg"} alt={""} width={500} height={300}/>
                 <h1 className={"text-skobeloff text-7xl font-black"}>{strings["404"].headline}</h1>

@@ -25,7 +25,7 @@ const Contact: NextPage = () => {
                 <Head>
                     <title>Contáctanos</title>
                     <meta name={"description"}
-                          content={"¿Quieres descubrir por qué somos la mejor alternativa para tratar el dolor? Contáctanos, estás en las mejores manos"}/>
+                          content={"¿Quieres descubrir por qué somos la mejor alternativa para tratar el dolor? Contáctanos, estás en las mejores manos."}/>
                     <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
                 </Head>
                 <Navbar selection={"contact"}/>
