@@ -50,7 +50,7 @@ const Navbar = (
                 <li className={listItemStyle}>
                     <Link
                         className={`${linkStyle} ${props.selection === "experience" ? "font-bold text-clinic-jade" : ""}`}
-                        href={"/experience/"}>{strings.navbar.experience}</Link>
+                        href={"/experience"}>{strings.navbar.experience}</Link>
                     <span className={props.selection === "experience" ? selectedStyle : ""}/>
                 </li>
                 <li className={listItemStyle}>
@@ -99,7 +99,6 @@ const Navbar = (
         );
     }
 
-    const navigate = useRouter();
     return (
         <nav
             className={"z-10 relative font-black text-neutral-600 flex flex-col lg:flex-row items-center justify-between bg-white lg:border-transparent lg:border-solid lg:border-2 lg:border-b-neutral-300 w-full h-fit lg:px-28"}>
@@ -109,7 +108,7 @@ const Navbar = (
                        alt={"Logo horizontal de Clinicannabis"} width={500 / 2}
                        height={174 / 2} priority/>
                 <button className={"w-12 h-12 rounded-full bg-clinic-jade lg:hidden"} aria-expanded={"false"}
-                        aria-controls={"navigation"} aria-label={"Menu"} onClick={expandMenu }>
+                        aria-controls={"navigation"} aria-label={"Menu"} onClick={expandMenu}>
 
                 </button>
             </section>
@@ -120,9 +119,9 @@ const Navbar = (
                     {linkTree()}
                 </ul>
                 {(props.selection !== "contact" && props.context !== "shop") &&
-                    <button className={buttonStyle} onClick={() => navigate.push("/contact")}>
+                    <a className={buttonStyle} href={"https://wa.me/+573174834360"} >
                         {strings.navbar.cta}
-                    </button>}
+                    </a>}
                 {props.context === "shop" && <Cart open={[cartOpen, setCartOpen]} />}
             </section>
         </nav>

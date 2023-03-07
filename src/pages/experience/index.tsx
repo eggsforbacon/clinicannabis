@@ -16,7 +16,7 @@ const Index: NextPage = () => {
                 <title>Centro de Experiencia</title>
                 <link rel="icon" href="/favicon.ico"/>
                 <meta name={"description"}
-                      content={`Pendiente`}/>
+                      content={"Nuestro Centro de Experiencia tiene para ti complementos que te permitirán mejorar tu calidad de vida. Te ofrecemos un amplio catálogo de servicios y productos, que potenciarán tu recuperación y bienestar."}/>
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"experience"}/>
