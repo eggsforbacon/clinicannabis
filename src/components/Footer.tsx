@@ -12,8 +12,8 @@ const Footer = () => {
     <>
         <footer className={"z-0 flex w-full h-144 relative flex-col justify-end items-center mt-auto"}>
             <Image src={"/images/backgrounds/footer.svg"}
-                   className={"z-0 w-full h-auto pointer-events-none selection:bg-transparent absolute bottom-0"} alt={""}
-                   height={16} width={16} priority/>
+                   className={"z-0 w-full h-auto pointer-events-none selection:bg-transparent absolute scale-[1.1] bottom-0"} alt={""}
+                   height={932} width={1920} priority/>
             <Image src={"/images/svg/leafFooter.svg"}
                    className={"z-0 pointer-events-none selection:bg-transparent absolute right-0 -bottom-0 opacity-5"} alt={""}
                    height={16*50} width={16*50} priority/>
