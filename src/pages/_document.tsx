@@ -7,6 +7,7 @@ export default function Document() {
         <Html className='scroll-smooth' lang={"es-CO"} >
             <Head>
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
+                <link rel="icon" href="/favicon.png"/>
             </Head>
             <body>
             <WhatsappButton />
