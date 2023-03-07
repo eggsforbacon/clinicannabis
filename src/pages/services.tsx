@@ -15,6 +15,7 @@ const Services : NextPage = () => {
         <main className="w-full min-h-screen overflow-x-clip">
             <Head>
                 <title>Nuestros Servicios</title>
+                <link rel="icon" href="/favicon.ico"/>
                 <meta name={"description"}
                       content={"Trabajamos para cumplir con los estándares de calidad que garanticen que nuestros tratamientos y productos te brinden una mejor calidad de vida."}/>
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
