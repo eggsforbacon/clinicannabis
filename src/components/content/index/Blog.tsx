@@ -10,7 +10,7 @@ export const Blog = () => {
     const navigate = useRouter();
 
     return (
-        <article className={"w-full relative overflow-clip px-44 bg-viridian-green/25 min-h-[56rem]"}>
+        <article className={"w-full relative overflow-clip px-44 min-h-[56rem]"}>
             <Image src={"/images/landing/blogBackground.png"} className={"z-0 top-0 left-0 absolute pointer-events-none select-none"}
                    alt={""} width={1920} height={1075}/>
             <section className={"z-10 relative w-full min-h-[56rem] flex items-center mb-16 justify-evenly "}>

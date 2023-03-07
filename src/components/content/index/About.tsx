@@ -40,7 +40,7 @@ export const About = () => {
                    height={1000} width={1000}/>
             <Image src={"/images/backgrounds/ourHistory.svg"}
                    className={"z-0 pointer-events-none absolute selection:bg-transparent -top-0 overflow-y-clip"} alt={""}
-                   height={584} width={1920}/>
+                   height={268.7} width={1920}/>
             <section className={"z-10 w-full flex items-center justify-between mb-16"}>
                 <article className={"w-136 flex flex-col items-start justify-start"}>
                     <h2 className={`tracking-tight text-viridian-green text-9xl leading-[0.9] font-black mb-10 ${animation} animation-duration-1000`}>{strings.landing.about.headline}<strong className={"text-caribbean-green"}>{strings.landing.about.headlineRemark}</strong></h2>
