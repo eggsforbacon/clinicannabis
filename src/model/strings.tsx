@@ -4,12 +4,12 @@ interface IKeyedObject {
 
 export const strings: IKeyedObject = {
     'navbar': {
-        'home': <>{"Nuestra Clínica"}</>,
+        'home': <>{"Clínica"}</>,
         'services': <>{"Servicios"}</>,
-        'experience': <>{"Centro de Experiencia"}</>,
-        'blog': <>{"Blog Médico"}</>,
+        'experience': <>{"Experiencia"}</>,
+        'blog': <>{"Blog"}</>,
         'contact': <>{"Contáctanos"}</>,
-        'cta': <>{"Agenda tu cita"}</>,
+        'cta': <>{"Agéndate"}</>,
     },
     'footer': {
         'copy': <>{"Clinicannabis "}&copy;{" 2023 | Todos los derechos reservados"}</>,

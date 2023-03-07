@@ -14,7 +14,7 @@ export const Hero = (props : {
     const handleOnEnded = (e: React.SyntheticEvent<HTMLVideoElement>) => {
         e.preventDefault();
         setAnimateHero("lg:opacity-0 lg:translate-y-[100px] lg:animate-fade-in-bottom lg:animation-delay-600");
-        setAnimateHeroVideo("lg:w-[80%] lg:animate-shrink-to-half lg:animation-fill-both");
+        setAnimateHeroVideo("lg:w-[80%] lg:animate-shrink-to-half-lg xl:animate-shrink-to-half-xl lg:animation-fill-both");
         setAnimateHeroHeadline("lg:animate-expand-to-half");
     }
 
@@ -22,7 +22,7 @@ export const Hero = (props : {
 
     return (
         <>
-            <header className={"px-44 pt-24 h-136 flex items-start justify-center"}>
+            <header className={"px-44 pt-24 h-144 flex items-start justify-center"}>
                 <section className={`flex items-center justify-around ${animateHeroHeadline}`}>
                     <article className={"w-136 flex flex-col md:items-start md:justify-center gap-8"}>
                         <h2 className={`text-viridian-green w-full lg:text-6xl tracking-normal font-black ${animateHero} lg:animation-duration-800`}>{strings.landing.hero.headline}<br/><strong className={"text-caribbean-green"}>{strings.landing.hero.headlineRemark}</strong></h2>
@@ -39,7 +39,7 @@ export const Hero = (props : {
                 <section
                     className={`relative h-full flex justify-center items-center overflow-clip ${animateHeroVideo}`}>
                     {props.hasWindow &&
-                        <video height={1080 * 1.5} width={1920 * 1.5} muted playsInline autoPlay className={""}
+                        <video height={1080 * 1.8} width={1920 * 1.8} muted playsInline autoPlay className={"lg:scale-[1.9] xl:scale-[1.425]"}
                                onEnded={handleOnEnded}>
                             <source src={"/video/ClinicannabisAnimation.mp4"} placeholder={"/images/hero/heroHash.png"} type={"video/mp4"}/>
                             Your browser does not support the video tag.

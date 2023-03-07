@@ -24,7 +24,7 @@
 
 @layer components {
     .hero-clip {
-        clip-path: ellipse(70% 80% at 50% 80%);
+        clip-path: ellipse(80% 72% at 50% 80%);
     }
 
     .green-overlay {

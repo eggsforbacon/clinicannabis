@@ -137,9 +137,13 @@ module.exports = {
                     '0%' : {opacity: '0', transform: 'translateX(-100px)'},
                     '100%' : {opacity: '1', transform: 'translateX(0)'},
                 },
-                'shrink-to-half' : {
+                'shrink-to-half-xl' : {
                     '0%' : {width : '80%', transform: 'translateY(0)'},
-                    '100%' : {width : "60%", transform: 'translateY(-50px)'},
+                    '100%' : {width : "70%", transform: 'translateY(-50px)'},
+                },
+                'shrink-to-half-lg': {
+                    '0%' : {width : '80%', transform: 'translateY(0)'},
+                    '100%' : {width : "70%", transform: 'translateY(-70px)'},
                 },
                 'expand-to-half' : {
                     '0%' : {opacity: '0', width : '0%'},
@@ -164,7 +168,8 @@ module.exports = {
                 'fade-in-bottom': 'fade-in-bottom 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'fade-in-right': 'fade-in-right 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'fade-in-left': 'fade-in-left 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
-                'shrink-to-half' : 'shrink-to-half 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
+                'shrink-to-half-xl' : 'shrink-to-half-xl 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
+                'shrink-to-half-lg' : 'shrink-to-half-lg 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'expand-to-half' : 'expand-to-half 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'swing-in-top-fwd' : 'swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1 forwards',
                 'swing-out-top-bck' : 'swing-out-top-bck 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 1 forwards',
