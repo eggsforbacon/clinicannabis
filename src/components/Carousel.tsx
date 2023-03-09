@@ -5,8 +5,7 @@ export const Carousel = (
         index: number
         items : ReactNode[] | any[],
         ref? : LegacyRef<any>,
-        animate? : string,
-        horizontal? : boolean
+        animate? : string
     }
 ) => {
 
@@ -18,8 +17,8 @@ export const Carousel = (
     const elements = props.items;
 
     return (
-        <article ref={props.ref} className={props.horizontal? `w-fit` : `rounded-3xl overflow-clip w-192 h-192 relative flex flex-col items-center justify-center shadow-lg transition duration-1000 ease-in-out lg:hover:-translate-y-2 ${props.animate || ""}`}>
-            <ul className={props.horizontal? "w-fit h-fit flex" : "h-fit w-full flex flex-col justify-center items-stretch"}>
+        <article ref={props.ref} className={`rounded-3xl overflow-clip w-192 h-192 relative flex flex-col items-center justify-center shadow-lg transition duration-1000 ease-in-out lg:hover:-translate-y-2 ${props.animate || ""}`}>
+            <ul className={"h-fit w-full flex flex-col justify-center items-stretch"}>
                 {elements[prev]}
                 {elements[index]}
                 {elements[next]}

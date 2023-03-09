@@ -5,6 +5,7 @@ import Link from "next/link";
 import {useWindowDimensions} from "../../../hooks/useWindowDimensions";
 import {Carousel} from "../../Carousel";
 import {ServiceCard} from "../../ServiceCard";
+import {SwiperCarousel} from "../../SwiperCarousel";
 
 export const Hero = (props: {
     hasWindow: boolean
@@ -42,19 +43,11 @@ export const Hero = (props: {
     ]
 
     const serviceCards = [
-        <ServiceCard name={servicesTitles[0]} to={serviceLinks[0]} url={servicesBgs[0]} interaction={"Descubre"} />,
-        <ServiceCard name={servicesTitles[1]} to={serviceLinks[1]} url={servicesBgs[1]} interaction={"Descubre"} />,
-        <ServiceCard name={servicesTitles[2]} to={serviceLinks[2]} url={servicesBgs[2]} interaction={"Descubre"} />,
-        <ServiceCard name={servicesTitles[3]} to={serviceLinks[3]} url={servicesBgs[3]} interaction={"Descubre"} />,
+        <ServiceCard name={servicesTitles[0]} to={serviceLinks[0]} url={servicesBgs[0]} interaction={"Descubre"}/>,
+        <ServiceCard name={servicesTitles[1]} to={serviceLinks[1]} url={servicesBgs[1]} interaction={"Descubre"}/>,
+        <ServiceCard name={servicesTitles[2]} to={serviceLinks[2]} url={servicesBgs[2]} interaction={"Descubre"}/>,
+        <ServiceCard name={servicesTitles[3]} to={serviceLinks[3]} url={servicesBgs[3]} interaction={"Descubre"}/>,
     ];
-
-    const [currentService, setCurrentService] = useState(0);
-    useEffect(() => {
-        const serviceInterval = setInterval(() => {
-            setCurrentService((current) => current === 3 ? 0 : current + 1);
-        }, 5500);
-        return () => clearInterval(serviceInterval);
-    }, [currentService])
 
     const pickServiceDisplay = () => {
         if (wWidth > 768) {
@@ -88,19 +81,9 @@ export const Hero = (props: {
                 </ul>
             );
         } else {
-            const listStyleSm = "relative w-80 h-80 mx-2 rounded-3xl overflow-clip flex items-center justify-center";
-
-            const DiscoverLink = (props : {to : string}) => {
-                return (
-                    <Link href={props.to} className={"rounded-full border-2 border-solid border-white px-6 py-2 text-lg transition duration-300 ease-in-out focus:bg-viridian-green"}>
-                        Descubre
-                    </Link>
-                )
-            }
-
             return (
-                <section className={"w-full"}>
-                    <Carousel index={currentService} items={serviceCards} horizontal />
+                <section className={"w-full relative"}>
+                    <SwiperCarousel items={serviceCards} delay={6000} />
                 </section>
             )
         }
@@ -108,7 +91,7 @@ export const Hero = (props: {
 
     return (
         <>
-            <header className={"pt-46 lg:px-44 lg:pt-52 h-192 flex items-start justify-center"}>
+            <header className={"pt-46 lg:px-44 lg:pt-52 h-screen md:h-192 flex items-start justify-center"}>
                 <section
                     className={`absolute h-full w-full lg:w-auto lg:h-auto z-10 lg:relative flex items-center justify-around ${animateHeroHeadline}`}>
                     <article
