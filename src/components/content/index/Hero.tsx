@@ -43,10 +43,10 @@ export const Hero = (props: {
     ]
 
     const serviceCards = [
-        <ServiceCard name={servicesTitles[0]} to={serviceLinks[0]} url={servicesBgs[0]} interaction={"Descubre"}/>,
-        <ServiceCard name={servicesTitles[1]} to={serviceLinks[1]} url={servicesBgs[1]} interaction={"Descubre"}/>,
-        <ServiceCard name={servicesTitles[2]} to={serviceLinks[2]} url={servicesBgs[2]} interaction={"Descubre"}/>,
-        <ServiceCard name={servicesTitles[3]} to={serviceLinks[3]} url={servicesBgs[3]} interaction={"Descubre"}/>,
+        <ServiceCard name={servicesTitles[0]} to={serviceLinks[0]} url={servicesBgs[0]} interaction={"Descubre"} bgPos={"bg-[right_-12rem_top_4rem] bg-[length:780px_auto]"}/>,
+        <ServiceCard name={servicesTitles[1]} to={serviceLinks[1]} url={servicesBgs[1]} interaction={"Descubre"} bgPos={"bg-right-top bg-[length:780px_auto]"}/>,
+        <ServiceCard name={servicesTitles[2]} to={serviceLinks[2]} url={servicesBgs[2]} interaction={"Descubre"} bgPos={"bg-right-top bg-[length:780px_auto]"}/>,
+        <ServiceCard name={servicesTitles[3]} to={serviceLinks[3]} url={servicesBgs[3]} interaction={"Descubre"} bgPos={"bg-right-top bg-[length:780px_auto]"}/>,
     ];
 
     const pickServiceDisplay = () => {

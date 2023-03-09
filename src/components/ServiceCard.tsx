@@ -3,10 +3,12 @@ export const ServiceCard = (
         name : string,
         url : string,
         to : string,
-        interaction : string
+        interaction : string,
+        bgPos: string,
     }) => {
     return (
-        <article className={`relative flex flex-col justify-end items-center h-screen w-screen bg-cover bg-center bg-no-repeat overflow-clip ${props.url}`}>
+        <article className={`relative flex flex-col justify-end items-center h-screen w-screen ${props.bgPos} bg-no-repeat overflow-clip ${props.url}`}>
+            <section className={"w-full h-1/2 absolute top-0 lef-0 z-10 bg-gradient-to-b from-midnight-green via-midnight-green/70"}/>
             <section className={"w-224 h-224 rounded-full bg-teal-50/50 absolute -bottom-[33rem] z-10 animate-float-down-sm"}/>
             <section className={`w-224 h-224 rounded-full bg-teal-50/90 absolute -bottom-[34.5rem] z-10 animate-float-up-sm`}/>
             <section className={`w-224 h-224 rounded-full bg-teal-50 absolute -bottom-[36rem] z-10 flex flex-col gap-6 items-center pt-16 justify-start`}>
