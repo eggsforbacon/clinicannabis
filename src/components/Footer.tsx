@@ -8,19 +8,18 @@ const Footer = () => {
     const linkFamilyStyle: string = "h-full flex flex-col items-stretch justify-start space-y-2";
     const linkStyle: string = "text-white font-normal text-xl transition ease-in-out duration-300 lg:hover:text-clinic-blue-chill focus:text-clinic-blue-chill";
 
-    //TODO: FIX OR I KIL I SIRIUS
     return (
     <>
-        <footer className={"z-0 flex w-full h-320 lg:h-144 relative flex-col justify-end items-center mt-auto"}>
+        <footer className={"z-0 bg-rich-black lg:bg-white flex w-full h-fit lg:h-144 relative flex-col justify-end items-center mt-auto"}>
             <Image src={"/images/backgrounds/footer.svg"}
-                   className={"z-0 w-full h-auto pointer-events-none selection:bg-transparent absolute scale-[1.1] bottom-0"} alt={""}
+                   className={"z-0 w-full h-auto pointer-events-none selection:bg-transparent absolute scale-[1.1] -top-28 lg:top-auto lg:bottom-0"} alt={""}
                    height={932} width={1920} priority/>
             <Image src={"/images/svg/leafFooter.svg"}
                    className={"z-0 pointer-events-none selection:bg-transparent absolute right-0 -bottom-0 opacity-5"} alt={""}
                    height={16*50} width={16*50} priority/>
             <section className={"z-0 w-full flex flex-col justify-end items-center"}>
-                <section className={"w-[70%] h-[38rem] grid grid-cols-3 py-20"}>
-                    <section className={"w-[120%] h-full pt-4 flex flex-col items-start justify-start gap-10"}>
+                <section className={"w-full lg:w-[70%] lg:h-[38rem] flex flex-col items-stretch justify-start lg:grid py-6 lg:grid-cols-3 gap-20"}>
+                    <section className={"lg:w-[120%] w-full px-8 h-full pt-4 flex flex-col items-start justify-start gap-10"}>
                         <h1 className={"text-6xl font-black text-caribbean-green"}>{strings.footer.questions.headline}<br/><strong
                             className={"text-white"}>{strings.footer.questions.remark}</strong></h1>
                         <ul className={"flex items-start justify-start flex-col w-full gap-2"}>
@@ -72,7 +71,7 @@ const Footer = () => {
                             <p className={"text-xl font-light text-white"}>@Clinicannabis</p>
                         </section>
                     </section>
-                    <ul className={"w-full flex flex-col gap-5 justify-end items-start pl-24 pb-20"}>
+                    <ul className={"w-full flex flex-col gap-5 justify-end items-start px-8 lg:pl-24 pb-20"}>
                         <li><h3 className={"text-white text-2xl"}>{strings.footer.clinic.headline}</h3></li>
                         <li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.home}</Link>
                         </li>
@@ -83,7 +82,7 @@ const Footer = () => {
                         {/*<li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.stories}</Link>*/}
                         {/*</li>*/}
                     </ul>
-                    <ul className={"w-full flex flex-col gap-5 justify-end items-start pl-24 pb-20"}>
+                    <ul className={"w-full flex flex-col gap-5 justify-end items-start px-8 lg:pl-24 pb-20"}>
                         <li><h3 className={"text-white text-2xl"}>{strings.footer.fast.headline}</h3></li>
                         <li><Link href={"/contact"}
                                   className={`${linkStyle} text-2xl`}>{strings.footer.fast.contact}</Link></li>
@@ -99,7 +98,7 @@ const Footer = () => {
         </footer>
         <section
             className={"z-20 text-base text-green-sheen bg-dark-green font-normal grid grid-cols-1 place-items-center w-full py-3"}>
-            <p>{strings.footer.copy}</p>
+            <p className={"px-8 text-center"}>{strings.footer.copy}</p>
         </section>
     </>
     );

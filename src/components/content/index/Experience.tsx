@@ -12,7 +12,7 @@ export const Experience = () => {
     const {width: wWidth, height: wHeight} = useWindowDimensions();
 
     return (
-        <article className={"w-full overflow-clip h-fit lg:h-[62rem] lg:px-44 relative"}>
+        <article className={"w-full overflow-clip h-224 lg:h-[62rem] lg:px-44 relative"}>
             <section className={"absolute w-full h-full top-0 left-0 z-0"}>
                 {wWidth > 820 &&
                     <>
