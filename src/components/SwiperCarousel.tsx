@@ -29,7 +29,7 @@ export const SwiperCarousel = (
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Pagination]}
+                modules={[Autoplay, Pagination]}
                 style={{
                     "--swiper-pagination-color" : "#009490",
                 } as CSSProperties}

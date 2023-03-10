@@ -39,16 +39,16 @@ export const Values = () => {
                              className={"z-0 pointer-events-none left-0 scale-[1.75] md:scale-[2] xl:scale-125 absolute max-md:left-36 selection:bg-transparent -top-0"} alt={""}
                              height={584} width={1920} priority/>}
                 <section className={"z-10 w-full grid place-items-center lg:grid-cols-2 lg:place-items-end lg:ml-44 xl:ml-auto xl:gap-x-56"}>
-                    {/*<section className={`h-168 w-[40rem] relative rounded-3xl overflow-clip shadow-lg ${animation} animation-duration-500`}>
+                    <section className={`hidden md:-right-16 lg:block lg:h-168 lg:w-[40rem] relative rounded-3xl overflow-clip shadow-lg ${animation} animation-duration-500`}>
                         <Image src={"/images/landing/humanizingHero.png"}
                                className={"pointer-events-none relative h-full selection:bg-transparent"} alt={""}
                                height={660} width={640} priority/>
                         <span className={"w-full h-full absolute xl:bg-gradient-to-t xl:from-black/0 lg:bg-gradient-to-r lg:from-black/60 top-0 right-0"}/>
-                    </section>*/}
+                    </section>
                     <article className={`order-1 lg:-order-1 xl:order-1 h-full flex flex-col px-8 items-center lg:items-start justify-end gap-20 ${animation} animation-duration-800`}>
                         <h2 className={"text-white font-black text-5xl leading-[1] w-full lg:text-8xl"}><strong
                             className={"text-caribbean-green"}>{strings.landing.values.humanization.headline}</strong><br/>{strings.landing.values.humanization.remark}</h2>
-                        <p className={"text-white text-base lg:text-2xl font-normal text-justify md:text-left lg:w-144"}>{strings.landing.values.humanization.content}</p>
+                        <p className={"text-white text-sm lg:text-2xl font-normal text-left md:text-left lg:w-144"}>{strings.landing.values.humanization.content}</p>
                     </article>
                 </section>
                 <span ref={triggerRef}

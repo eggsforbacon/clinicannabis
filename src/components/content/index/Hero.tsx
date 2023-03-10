@@ -43,7 +43,7 @@ export const Hero = (props: {
     ]
 
     const serviceCards = [
-        <ServiceCard name={servicesTitles[0]} to={serviceLinks[0]} url={servicesBgs[0]} interaction={"Descubre"} bgPos={"bg-[right_-30rem_top_-6rem] bg-[length:1220px_auto]"}/>,
+        <ServiceCard name={servicesTitles[0]} to={serviceLinks[0]} url={servicesBgs[0]} interaction={"Descubre"} bgPos={"bg-[right_-34rem_top_-6rem] bg-[length:1360px_auto]"}/>,
         <ServiceCard name={servicesTitles[1]} to={serviceLinks[1]} url={servicesBgs[1]} interaction={"Descubre"} bgPos={"bg-right-top bg-[length:900px_auto]"}/>,
         <ServiceCard name={servicesTitles[2]} to={serviceLinks[2]} url={servicesBgs[2]} interaction={"Descubre"} bgPos={"bg-right-top bg-[length:900px_auto]"}/>,
         <ServiceCard name={servicesTitles[3]} to={serviceLinks[3]} url={servicesBgs[3]} interaction={"Descubre"} bgPos={"bg-right-top bg-[length:900px_auto]"}/>,
@@ -91,11 +91,11 @@ export const Hero = (props: {
 
     return (
         <>
-            <header className={"pt-46 lg:px-44 lg:pt-52 h-screen md:h-192 flex items-start justify-center"}>
+            <header className={"pt-46 lg:px-44 lg:pt-52 h-screen md:h-208 lg:h-192 flex items-start justify-center"}>
                 <section
                     className={`absolute h-full w-full lg:w-auto lg:h-auto z-10 lg:relative flex items-center justify-around ${animateHeroHeadline}`}>
                     <article
-                        className={"lg:w-136 h-full w-full flex flex-col items-center justify-end pb-20 lg:py-0 lg:items-start lg:justify-center gap-16 lg:gap-8"}>
+                        className={"lg:w-136 h-full w-full flex flex-col items-center justify-end pb-20 md:pb-96 lg:py-0 lg:items-start lg:justify-center gap-16 lg:gap-8"}>
                         <h2 className={`text-viridian-green text-center !w-screen lg:!w-auto text-3xl lg:text-6xl lg:text-left tracking-normal font-black ${animateHero} lg:animation-duration-800`}>{strings.landing.hero.headline}<br/><strong
                             className={"text-caribbean-green"}>{strings.landing.hero.headlineRemark}</strong></h2>
                         <p className={`hidden lg:block text-neutral-400 w-full pr-12 font-normal lg:text-xl ${animateHero} lg:animation-duration-1200`}>
