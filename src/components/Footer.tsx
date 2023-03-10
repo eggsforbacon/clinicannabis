@@ -7,7 +7,7 @@ const Footer = () => {
 
     const linkFamilyStyle: string = "h-full flex flex-col items-stretch justify-start space-y-2";
     const linkStyle: string = "text-white font-normal text-xl transition ease-in-out duration-300 lg:hover:text-clinic-blue-chill focus:text-clinic-blue-chill";
-
+    //TODO: FUCKING MAKE THIS THING RESPONSIVE OR I KIL
     return (
     <>
         <footer className={"z-0 flex w-full h-144 relative flex-col justify-end items-center mt-auto"}>

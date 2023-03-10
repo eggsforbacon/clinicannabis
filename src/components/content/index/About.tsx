@@ -45,7 +45,7 @@ export const About = () => {
                    height={268.7} width={1920}/>
             <section className={"z-10 px-12 lg:px-0 w-full flex items-center justify-between mb-20"}>
                 <article className={"lg:w-136 flex flex-col items-start justify-start"}>
-                    <h2 className={`tracking-tight text-caribbean-green text-6xl lg:text-9xl leading-[0.9] font-black mb-10 ${animation} animation-duration-1000`}>{strings.landing.about.headline}<strong className={"text-viridian-green"}>{wWidth > 768 ? "" : <>&ensp;&emsp;</>}{strings.landing.about.headlineRemark}</strong></h2>
+                    <h2 className={`tracking-tight max-w-[22rem] text-caribbean-green text-6xl lg:text-9xl leading-[0.9] font-black mb-10 ${animation} animation-duration-1000`}>{strings.landing.about.headline}<strong className={"text-viridian-green"}>{wWidth > 768 ? "" : <>&ensp;&emsp;</>}{strings.landing.about.headlineRemark}</strong></h2>
                     <p className={`w-full text-neutral-800 text-left text-sm lg:text-2xl font-normal ${animation} animation-duration-1400`}>{strings.landing.about.content}</p>
                     {/*<button*/}
                     {/*    className={"hidden ml-32 lg:mt-12 font-normal rounded-full bg-white text-2xl text-viridian-green px-16 py-2 shadow-lg shadow-viridian-green/20 transition duration-500 ease-in-out scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-white focus:text-viridian-green border-viridian-green border-2 border-solid lg:hover:shadow-viridian-green/15"}*/}

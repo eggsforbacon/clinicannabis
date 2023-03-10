@@ -75,12 +75,12 @@ const Navbar = (
                         href={"/services"}>{strings.navbar.services}</Link>
                     <span className={props.selection === "services" ? selectedStyle : deselectedStyle}/>
                 </li>
-                <li className={listItemStyle}>
-                    <Link
-                        className={`${linkStyle} ${props.selection === "experience" ? "font-bold text-clinic-jade" : ""}`}
-                        href={"/experience"}>{strings.navbar.experience}</Link>
-                    <span className={props.selection === "experience" ? selectedStyle : deselectedStyle}/>
-                </li>
+                {/*<li className={listItemStyle}>*/}
+                {/*    <Link*/}
+                {/*        className={`${linkStyle} ${props.selection === "experience" ? "font-bold text-clinic-jade" : ""}`}*/}
+                {/*        href={"/experience"}>{strings.navbar.experience}</Link>*/}
+                {/*    <span className={props.selection === "experience" ? selectedStyle : deselectedStyle}/>*/}
+                {/*</li>*/}
                 <li className={listItemStyle}>
                     <Link
                         className={`${linkStyle} ${props.selection === "blog" ? "font-bold text-clinic-jade" : ""}`}
