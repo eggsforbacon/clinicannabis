@@ -177,11 +177,6 @@ module.exports = {
                     '50%': {transform: 'translateY(5px)'},
                     '100%': {transform: 'translateY(0px)'},
                 },
-                'float-up-button-landing-service' : {
-                    '0%': {boxShadow: '0 5px 15px 0px rgba(12,58,65,0.2)',transform: 'translateY(0px)'},
-                    '50%': {boxShadow: '0 11px 15px 0px rgba(0,180,81,0.3)',transform: 'translateY(-6px)'},
-                    '100%': {boxShadow: '0 5px 15px 0px rgba(12,58,65,0.2)',transform: 'translateY(0px)'},
-                },
             },
             animation: {
                 'fade-in-top': 'fade-in-top 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
@@ -197,7 +192,6 @@ module.exports = {
                 'bg-pan-right': 'bg-pan-right 8s linear infinite forwards',
                 'float-up-sm' : 'float-up-sm 8s ease-in-out infinite forwards',
                 'float-down-sm' : 'float-down-sm 8s ease-in-out infinite forwards',
-                'float-up-button-landing-service' : 'float-up-button-landing-service 8s ease-in-out infinite forwards',
             }
         },
     },
