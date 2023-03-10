@@ -7,10 +7,11 @@ const Footer = () => {
 
     const linkFamilyStyle: string = "h-full flex flex-col items-stretch justify-start space-y-2";
     const linkStyle: string = "text-white font-normal text-xl transition ease-in-out duration-300 lg:hover:text-clinic-blue-chill focus:text-clinic-blue-chill";
-    //TODO: FUCKING MAKE THIS THING RESPONSIVE OR I KIL
+
+    //TODO: FIX OR I KIL I SIRIUS
     return (
     <>
-        <footer className={"z-0 flex w-full h-144 relative flex-col justify-end items-center mt-auto"}>
+        <footer className={"z-0 flex w-full h-320 lg:h-144 relative flex-col justify-end items-center mt-auto"}>
             <Image src={"/images/backgrounds/footer.svg"}
                    className={"z-0 w-full h-auto pointer-events-none selection:bg-transparent absolute scale-[1.1] bottom-0"} alt={""}
                    height={932} width={1920} priority/>

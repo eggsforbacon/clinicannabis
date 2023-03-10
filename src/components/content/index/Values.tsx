@@ -40,7 +40,7 @@ export const Values = () => {
                     <Image src={"/images/services/questionableAsset.svg"} alt={""} width={160 * 10} height={160 * 10}
                            className={"absolute -top-36 selection:bg-transparent pointer-events-none left-64 -rotate-12 scale-[3] left-0 z-0"}/>
                     <Image src={"/images/services/servicesSISLeaf.svg"} alt={""} width={160 * 10} height={160 * 10}
-                           className={"absolute scale-y-[5.5] -scale-x-[5.5] md:hidden selection:bg-transparent pointer-events-none top-64 -rotate-6 right-0 z-0"}/>
+                           className={"absolute scale-y-[5.125] -scale-x-[5.125] md:hidden selection:bg-transparent pointer-events-none top-64 -rotate-6 right-0 z-0"}/>
                 </>}
                 <section
                     className={"z-10 w-full grid place-items-center lg:grid-cols-2 lg:place-items-end lg:ml-44 xl:ml-auto xl:gap-x-56"}>
@@ -57,7 +57,7 @@ export const Values = () => {
                         <h2 className={"text-white font-black text-5xl leading-[1] w-full lg:text-8xl"}><strong
                             className={"text-caribbean-green"}>{strings.landing.values.humanization.headline}</strong><br/>{strings.landing.values.humanization.remark}
                         </h2>
-                        <p className={"text-white text-sm lg:text-2xl font-normal text-left md:text-left lg:w-144"}>{strings.landing.values.humanization.content}</p>
+                        <p className={"text-white text-base lg:text-2xl font-normal text-left md:text-left lg:w-144"}>{strings.landing.values.humanization.content}</p>
                     </article>
                 </section>
                 <span ref={triggerRef}

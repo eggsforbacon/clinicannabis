@@ -1,7 +1,7 @@
 import {CartContext} from "./CartContext";
 import {useReducer} from "react";
 import {cartReducer} from "./cartReducer";
-import {CartItem as ItemType, CartState} from "../interfaces/interfaces";
+import {CartItem as ItemType, CartState} from "../../interfaces/interfaces";
 
 interface props {
     children: JSX.Element [] | JSX.Element

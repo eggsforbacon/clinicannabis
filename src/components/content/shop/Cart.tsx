@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {strings} from "../../../model/strings";
 import React, {useContext, useEffect} from "react";
-import {CartContext} from "../../../context/CartContext";
+import {CartContext} from "../../../context/Cart/CartContext";
 import {CartItem} from "./CartItem";
 import {CartItem as ItemType} from "../../../interfaces/interfaces"
 
