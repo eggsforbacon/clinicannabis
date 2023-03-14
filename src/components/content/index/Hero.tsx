@@ -45,9 +45,9 @@ export const Hero = (props: {
     ]
 
     const serviceCards = [
-        <ServiceCard name={servicesTitles[0]} to={serviceLinks[0]} url={servicesBgs[0]} interaction={"Descubre"} bgPos={"bg-[right_-34rem_top_-6rem] bg-[length:1360px_auto]"} index={0}/>,
+        <ServiceCard name={servicesTitles[0]} to={serviceLinks[0]} url={servicesBgs[0]} interaction={"Descubre"} bgPos={"bg-[right_-34rem_top_-12rem] bg-[length:1360px_auto]"} index={0}/>,
         <ServiceCard name={servicesTitles[1]} to={serviceLinks[1]} url={servicesBgs[1]} interaction={"Descubre"} bgPos={"bg-right-top bg-[length:900px_auto]"} index={1}/>,
-        <ServiceCard name={servicesTitles[2]} to={serviceLinks[2]} url={servicesBgs[2]} interaction={"Descubre"} bgPos={"bg-right-top bg-[length:900px_auto]"} index={2}/>,
+        <ServiceCard name={servicesTitles[2]} to={serviceLinks[2]} url={servicesBgs[2]} interaction={"Descubre"} bgPos={"bg-[right_-4rem_top_0rem] bg-[length:900px_auto]"} index={2}/>,
         <ServiceCard name={servicesTitles[3]} to={serviceLinks[3]} url={servicesBgs[3]} interaction={"Descubre"} bgPos={"bg-right-top bg-[length:900px_auto]"} index={3}/>,
     ];
 
