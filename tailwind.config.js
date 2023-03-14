@@ -47,6 +47,9 @@ module.exports = {
                 'opacity': 'opacity',
                 'bg': 'background',
             },
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            },
             fontFamily: {
                 'solomon-sans': ['Solomon Sans']
             },

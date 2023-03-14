@@ -13,7 +13,7 @@ import { Autoplay, Pagination } from "swiper";
 export const SwiperCarousel = (
     props : {
         items : ReactNode[],
-        delay : number
+        delay : number,
     }
 ) => {
     return (
@@ -29,7 +29,7 @@ export const SwiperCarousel = (
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Autoplay, Pagination]}
+                modules={[Pagination]}
                 style={{
                     "--swiper-pagination-color" : "#009490",
                 } as CSSProperties}

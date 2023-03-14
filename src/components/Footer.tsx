@@ -10,15 +10,15 @@ const Footer = () => {
 
     return (
     <>
-        <footer className={"z-0 bg-rich-black lg:bg-white flex w-full h-fit lg:h-144 relative flex-col justify-end items-center mt-auto"}>
+        <footer className={"z-0 bg-rich-black lg:bg-white flex w-full h-fit lg:h-288 relative flex-col justify-end items-center mt-auto overflow-clip"}>
             <Image src={"/images/backgrounds/footer.svg"}
-                   className={"z-0 w-full h-auto pointer-events-none selection:bg-transparent absolute scale-[1.1] -top-28 lg:top-auto lg:bottom-0"} alt={""}
+                   className={"z-0 w-full h-auto pointer-events-none selection:bg-transparent absolute lg:scale-[1.85] xl:scale-[1.1] -top-28 lg:bottom-28 lg:left-36 xl:left-auto lg:top-auto xl:bottom-0"} alt={""}
                    height={932} width={1920} priority/>
             <Image src={"/images/svg/leafFooter.svg"}
                    className={"z-0 pointer-events-none selection:bg-transparent absolute right-0 -bottom-0 opacity-5"} alt={""}
                    height={16*50} width={16*50} priority/>
-            <section className={"z-0 w-full flex flex-col justify-end items-center"}>
-                <section className={"w-full lg:w-[70%] lg:h-[38rem] flex flex-col items-stretch justify-start lg:grid py-6 lg:grid-cols-3 gap-20"}>
+            <section className={"z-0 w-full px-28 flex flex-col justify-end items-center"}>
+                <section className={"w-full xl:w-[70%] lg:h-[40rem] xl:h-[38rem] flex flex-col items-stretch justify-start lg:grid py-6 lg:grid-cols-3 gap-20"}>
                     <section className={"lg:w-[120%] w-full px-8 h-full pt-4 flex flex-col items-start justify-start gap-10"}>
                         <h1 className={"text-6xl font-black text-caribbean-green"}>{strings.footer.questions.headline}<br/><strong
                             className={"text-white"}>{strings.footer.questions.remark}</strong></h1>

@@ -55,7 +55,7 @@ export const About = () => {
                    alt={""}
                    height={268.7} width={1920}/>
             <section className={"z-10 px-12 lg:px-0 w-full flex items-center justify-between mb-20"}>
-                <article className={"lg:w-136 flex flex-col items-start justify-start"}>
+                <article className={"lg:w-136 flex flex-col items-start justify-start pt-16"}>
                     <h2 className={`tracking-tight max-w-[22rem] text-caribbean-green text-6xl lg:text-9xl leading-[0.9] font-black mb-10 ${animation} animation-duration-1000`}>{strings.landing.about.headline}<strong
                         className={"text-viridian-green"}>{wWidth > 768 ? "" : <>&ensp;&emsp;</>}{strings.landing.about.headlineRemark}</strong>
                     </h2>

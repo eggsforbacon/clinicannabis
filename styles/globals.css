@@ -27,7 +27,11 @@
         clip-path: ellipse(80% 72% at 50% 80%);
     }
 
-    .service-clip {
+    .service-clip-even {
+        clip-path: ellipse(190% 75% at 120% 80%);
+    }
+
+    .service-clip-odd {
         clip-path: ellipse(190% 75% at -20% 80%);
     }
 

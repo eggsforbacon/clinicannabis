@@ -8,6 +8,7 @@ import Cart from "./content/shop/Cart";
 import {CartProvider} from "../context/Cart/CartProvider";
 import NavbarContext from "../context/Navbar/NavbarContext";
 import {NavbarProvider} from "../context/Navbar/NavbarProvider";
+import {useWindowDimensions} from "../hooks/useWindowDimensions";
 
 const Navbar = (
     props: {
@@ -21,11 +22,31 @@ const Navbar = (
     const linkStyle: string = "font-semibold tracking-wide transition quartic-in-out duration-300 lg:hover:text-clinic-persian-green lg:hover:-translate-y-1 focus:text-clinic-persian-green";
     const buttonStyle: string = "hidden lg:block rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-6 py-1 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
 
+    const {width: wWidth, height: wHeight} = useWindowDimensions();
+
     const [mobileExpanded, setMobileExpanded] = useState(false);
     const [cartOpen, setCartOpen] = useState(false);
+    const [show, setShow] = useState(wWidth <= 768);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    const controlNavbar = () => {
+        if (typeof window !== 'undefined') {
+            if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
+                setShow(false);
+                setMobileExpanded(false);
+            } else { // if scroll up show the navbar
+                setShow(true);
+                setMobileExpanded(false);
+            }
+
+            // remember current page location to use in the next move
+            setLastScrollY(window.scrollY);
+        }
+    };
 
     const expandMenu = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
+        setShow(true);
         console.log(mobileExpanded);
         setMobileExpanded(!mobileExpanded);
     }
@@ -35,21 +56,6 @@ const Navbar = (
         setCartOpen(!cartOpen);
     }
 
-    const [show, setShow] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
-
-    const controlNavbar = () => {
-        if (typeof window !== 'undefined') {
-            if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
-                setShow(false);
-            } else { // if scroll up show the navbar
-                setShow(true);
-            }
-
-            // remember current page location to use in the next move
-            setLastScrollY(window.scrollY);
-        }
-    };
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -135,23 +141,23 @@ const Navbar = (
 
     return (
             <nav
-                className={`z-50 fixed transition-opacity duration-700 ease-in-out ${show ? "opacity-100" : "pointer-events-none selected:bg-transparent opacity-0"} font-black text-neutral-600 flex flex-col lg:flex-row items-center justify-between bg-white lg:border-transparent lg:border-solid lg:border-2 lg:border-b-neutral-300 w-full h-fit lg:px-24`}>
+                className={`z-50 fixed transition duration-700 ease-in-out ${show ? "bg-white lg:opacity-100" : "bg-transparent border-transparent lg:opacity-0 lg:bg-white lg:hover:opacity-100"} font-black text-neutral-600 flex flex-col lg:flex-row items-center justify-between lg:border-transparent lg:border-solid lg:border-2 lg:border-b-neutral-300 w-full h-fit lg:px-24`}>
                 <section
-                    className={"max-lg:z-20 w-full bg-white border-solid border-2 border-b-neutral-300 lg:border-none p-4 md:px-16 lg:p-0 lg:w-auto h-fit flex items-center justify-between"}>
-                    <Image src={"/images/clinicannabis_hr.png"} className={`w-auto h-14 lg:h-24 lg:w-[17.25rem] transition duration-700 ease-in-out ${logoShown ? "opacity-100" : "opacity-0 pointer-events-none selection:bg-transparent"}`}
+                    className={`max-lg:z-20 w-full border-solid border-2 transition duration-700 ease-in-out ${show ? "bg-white border-b-neutral-300" : "bg-transparent border-transparent"} lg:border-none p-4 md:px-16 lg:p-0 lg:w-auto h-fit flex items-center justify-between`}>
+                    <Image src={"/images/clinicannabis_hr.png"} className={`w-auto h-14 lg:h-24 lg:w-[17.25rem] transition duration-700 ease-in-out ${show ? "opacity-100" : "pointer-events-none selected:bg-transparent opacity-0"} lg:opacity-100`}
                            alt={"Logo horizontal de Clinicannabis"} width={500 / 2}
                            height={174 / 2} priority/>
                     <button className={"w-12 h-12 rounded-full lg:hidden grid place-items-center"}
                             aria-expanded={"false"}
                             aria-controls={"navigation"} aria-label={"Menu"} onClick={expandMenu}>
-                        <List className={mobileExpanded ? "fill-caribbean-green" : "fill-viridian-green"} size={32}/>
+                        <List className={`transition duration-700 ease-in-out ${show ? (mobileExpanded ? "fill-caribbean-green" : "fill-viridian-green") : "!fill-green-sheen"}`} size={32}/>
                     </button>
                 </section>
                 <section
                     className={"h-full flex flex-col md:flex-row justify-center lg:justify-between items-center lg:gap-12"}
                     id={"navigation"}>
                     <ul
-                        className={`${mobileExpanded ? "max-lg:animate-swing-in-top-fwd" : "max-lg:animate-swing-out-top-bck"} max-lg:z-10 absolute max-lg:top-20 bg-white w-full lg:w-auto border-b-solid border-b-2 border-b-neutral-300 lg:relative lg:border-none lg:border-transparent h-96 lg:h-fit lg:mt-12 flex flex-col lg:flex-row justify-center lg:justify-end items-center gap-10 py-8 lg:py-0`}>
+                        className={`${mobileExpanded && show ? "max-lg:animate-swing-in-top-fwd" : "max-lg:animate-swing-out-top-bck"} max-lg:z-10 absolute max-lg:top-20 bg-white w-full lg:w-auto border-b-solid border-b-2 border-b-neutral-300 lg:relative lg:border-none lg:border-transparent h-96 lg:h-fit lg:mt-12 flex flex-col lg:flex-row justify-center lg:justify-end items-center gap-10 py-8 lg:py-0`}>
                         {linkTree()}
                     </ul>
                     {(props.selection !== "contact" && props.context !== "shop") &&

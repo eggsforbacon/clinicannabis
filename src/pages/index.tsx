@@ -39,10 +39,9 @@ const Home: NextPage = () => {
         setLogoShown(false);
 
         const navbarTrigger = navbarLogoRef.current as unknown as HTMLSpanElement;
-
         const observe = (trigger: HTMLSpanElement, callback: (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => void) => {
             const observer = new IntersectionObserver(callback);
-            observer.observe(trigger);
+            observer.observe(trigger as Element);
         }
 
         function navbarCallback(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
@@ -51,7 +50,7 @@ const Home: NextPage = () => {
             setLogoShown(entry.isIntersecting);
         }
 
-        observe(navbarTrigger, navbarCallback);
+        // observe(navbarTrigger, navbarCallback);
 
     }, []);
 
@@ -67,11 +66,11 @@ const Home: NextPage = () => {
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"home"}/>
-            <span ref={navbarLogoRef} className={"pointer-events-none bg-transparent selection:bg-transparent absolute top-[200vh] md:top-0 w-full"}/>
+            {/*<span ref={navbarLogoRef} className={"debug h-full pointer-events-none bg-transparent selection:bg-transparent absolute top-[200vh] md:top-0 w-full"}/>*/}
             <Hero hasWindow={hasWindow}/>
             <About/>
             <Values/>
-            <Experience/>
+            {/*<Experience/>*/}
             {/*<Numbers />*/}
             {/*<Blog />*/}
             <Footer/>
