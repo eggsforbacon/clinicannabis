@@ -70,8 +70,8 @@ const Home: NextPage = () => {
             <Hero hasWindow={hasWindow}/>
             <About/>
             <Values/>
-            {/*<Experience/>*/}
-            {/*<Numbers />*/}
+            <Experience/>
+            <Numbers />
             {/*<Blog />*/}
             <Footer/>
         </main>

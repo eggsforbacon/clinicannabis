@@ -45,7 +45,7 @@ export const Values = () => {
                 <section
                     className={"z-10 w-full grid place-items-center lg:grid-cols-2 lg:place-items-end lg:ml-44 xl:ml-auto xl:gap-x-56"}>
                     <section
-                        className={`hidden md:-right-16 lg:h-168 lg:w-[40rem] relative rounded-3xl overflow-clip shadow-lg ${animation} animation-duration-500`}>
+                        className={`md:-right-16 lg:h-168 lg:w-[40rem] relative rounded-3xl overflow-clip shadow-lg ${animation} animation-duration-500`}>
                         <Image src={"/images/landing/humanizingHero.png"}
                                className={"pointer-events-none relative h-full selection:bg-transparent"} alt={""}
                                height={660} width={640} priority/>
