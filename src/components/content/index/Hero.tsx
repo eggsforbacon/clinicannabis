@@ -57,7 +57,7 @@ export const Hero = (props: {
                 <ul className={"z-10 h-72 flex justify-center gap-10 w-full hero-clip bg-white overflow-clip"}>
                     <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
                         <Link className={linkStyle} href={"/services#medicinal-cannabis"}>{servicesTitles[0]}</Link>
-                        <section className={`${servicesBgs[0]} ${serviceImageStyle}`}>
+                        <section className={`${servicesBgs[0]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}>
                         </section>
                     </li>
                     <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
