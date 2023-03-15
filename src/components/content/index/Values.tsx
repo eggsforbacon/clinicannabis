@@ -32,11 +32,11 @@ export const Values = () => {
     return (
         <>
             <article
-                className={"relative xl:px-40 pt-16 pb-44 lg:min-h-[54rem] xl:min-h-[64rem] w-full flex items-end justify-end"}>
-                <Image src={"/images/landing/values/humanizing.png"} className={`pointer-events-none selection:bg-transparent absolute z-10 -top-10 left-0 ${animation} animation-duration-500`} alt={""} width={1920} height={1087} />
+                className={"relative xl:px-40 pt-16 pb-44 min-h-[44rem] lg:min-h-[54rem] xl:min-h-[64rem] w-full flex items-start lg:items-end justify-end"}>
+                <Image src={"/images/landing/values/humanizing.png"} className={`!scale-[3.5] w-full h-auto lg:!scale-100 pointer-events-none selection:bg-transparent absolute z-10 -left-44 top-32 lg:-top-10 lg:left-0 ${animation} animation-duration-500`} alt={""} width={1920} height={1087} />
                 <span ref={triggerRef}
                       className={"absolute -top-6 w-full h-1 bg-transparent pointer-events-none selection:bg-transparent"}/>
-                <section className={"w-1/2 relative z-10 flex flex-col items-stretch justify-end gap-8"}>
+                <section className={"px-6 lg:mt-0 lg:px-0 lg:w-1/2 relative z-10 flex flex-col items-stretch justify-end gap-8"}>
                     <h2 className={"text-white font-black text-5xl lg:leading-[0.85] w-full lg:text-8xl"}><strong
                         className={"text-caribbean-green"}>{strings.landing.values.humanization.headline}</strong><br/>{strings.landing.values.humanization.remark}
                     </h2>

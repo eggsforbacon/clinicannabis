@@ -50,11 +50,11 @@ export const About = () => {
                    alt={""}
                    height={1000} width={1000}/>
             <section className={"z-10 px-12 lg:px-0 w-full flex items-center justify-between mb-20"}>
-                <article className={" lg:w-136 flex flex-col items-start justify-start pt-16"}>
-                    <h2 className={` tracking-tight max-w-[22rem] text-caribbean-green text-6xl lg:text-9xl font-black ${animation} animation-duration-1000`}>{strings.landing.about.headline}<strong
-                        className={"text-viridian-green relative -top-8"}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{strings.landing.about.headlineRemark}</strong>
+                <article className={"lg:w-136 flex flex-col items-start justify-start pt-16 gap-8 lg:gap-16"}>
+                    <h2 className={` tracking-tight max-w-[22rem] leading-[0.8] lg:leading-[0.6] text-caribbean-green text-6xl lg:text-9xl font-black ${animation} animation-duration-1000`}>{strings.landing.about.headline}<strong
+                        className={"text-viridian-green relative "}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{strings.landing.about.headlineRemark}</strong>
                     </h2>
-                    <p className={` w-full text-neutral-800 text-left text-base lg:text-2xl font-normal ${animation} animation-duration-1400`}>{strings.landing.about.content}</p>
+                    <p className={`lg:ml-8 w-full text-neutral-800 text-left text-base lg:text-2xl font-normal ${animation} animation-duration-1400`}>{strings.landing.about.content}</p>
                     {/*<button*/}
                     {/*    className={"hidden ml-32 lg:mt-12 font-normal rounded-full bg-white text-2xl text-viridian-green px-16 py-2 shadow-lg shadow-viridian-green/20 transition duration-500 ease-in-out scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-white focus:text-viridian-green border-viridian-green border-2 border-solid lg:hover:shadow-viridian-green/15"}*/}
                     {/*    onClick={() => navigate.push("/about")}>Ver más</button>*/}

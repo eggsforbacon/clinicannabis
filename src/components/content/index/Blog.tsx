@@ -18,8 +18,8 @@ export const Blog = () => {
     ];
 
     return (
-        <article className={"w-full relative overflow-clip min-h-[56rem]"}>
-            <SwiperCarousel items={blogItems} delay={5000} pagination className={"min-h-[56rem] overflow-clip"}/>
+        <article className={"w-full relative overflow-clip lg:min-h-[56rem]"}>
+            <SwiperCarousel items={blogItems} delay={5000} pagination className={"lg:min-h-[56rem] overflow-clip"}/>
         </article>
     );
 }

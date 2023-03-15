@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export const Numbers = () => {
     return (
-        <article className={"relative px-40 w-full flex items-center justify-center overflow-clip py-16 backdrop-blur-2xl"}>
-            <section className={"text-midnight-green z-10 grid gap-16 grid-cols-3 w-full"}>
+        <article className={"relative lg:px-40 w-full flex items-center justify-center overflow-clip py-16 backdrop-blur-2xl"}>
+            <span className={"absolute z-0 bg-gradient-to-br from-caribbean-green/20 via-viridian-green/10 w-[150vw] h-full"}/>
+            <section className={"text-midnight-green relative z-10 grid gap-16 lg:grid-cols-3 w-full"}>
                 <section className={"py-3 text-center w-full flex flex-col items-center justify-center gap-2"}>
                     <h2 className={"font-black text-5xl"}>147.000+</h2>
                     <h3 className={"font-light text-3xl"}>Procedimientos</h3>
