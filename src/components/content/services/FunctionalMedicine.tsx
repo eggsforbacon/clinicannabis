@@ -4,8 +4,9 @@ import React from "react";
 
 export const FunctionalMedicine = () => {
     return (
-        <article className={"relative h-[90rem] z-10 flex flex-col justify-end items-start pl-16"} id={"functional-medicine"}>
-            <Image className={`absolute select-none top-20 left-0`}
+        <article className={"relative z-10 h-224 lg:h-[90rem] flex flex-col justify-end items-start pl-16"} id={"functional-medicine"}>
+            <span className={"w-full h-2/3 absolute bottom-0 lg:hidden right-0 bg-gradient-to-t from-GO-green/60 via-GO-green/10"}/>
+            <Image className={`absolute select-none top-20 left-0 hidden lg:block `}
                    src={"/images/services/service4.png"} alt={"Placeholder"} width={1920} height={1465}/>
             <section
                 className={"relative w-208 px-32 flex flex-col justify-end items-start text-rich-black gap-20"}>

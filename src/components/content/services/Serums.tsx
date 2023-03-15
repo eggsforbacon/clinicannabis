@@ -3,8 +3,8 @@ import {strings} from "../../../model/strings";
 
 export const Serums = () => {
     return (
-        <article className={"relative z-10 h-288"} id={"serums"}>
-            <Image src={"/images/services/service3.png"} className={"z-0 absolute select-none -top-0 right-0"} alt={""} width={1920}
+        <article className={"relative z-20 h-208 lg:h-288"} id={"serums"}>
+            <Image src={"/images/services/service3.png"} className={"z-0 scale-[4] lg:scale-100 absolute select-none top-96 right-44 lg:-top-0 lg:right-0"} alt={""} width={1920}
                    height={1379}/>
             <section className={"absolute right-0 w-208 mt-40 mr-12 flex flex-col justify-between items-start text-midnight-green"}>
                 <section className={"pt-24"}>
