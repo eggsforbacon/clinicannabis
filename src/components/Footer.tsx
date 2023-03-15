@@ -17,7 +17,8 @@ import {
 const Footer = () => {
 
     const linkFamilyStyle: string = "h-full flex flex-col items-stretch justify-start space-y-2";
-    const linkStyle: string = "text-white font-normal transition ease-in-out duration-300 lg:hover:text-caribbean-green focus:text-caribbean-green";
+    const linkStyle: string = "text-dark-green lg:text-white lg:font-normal transition ease-in-out duration-300 lg:hover:text-caribbean-green focus:text-caribbean-green";
+    const linkButtonStyle : string = "flex items-center justify-start gap-6 bg-green-100 lg:bg-transparent rounded-lg h-16 py-2 px-4 lg:p-0 lg:h-auto";
 
     return (
         <>
@@ -30,55 +31,49 @@ const Footer = () => {
                        className={"z-0 pointer-events-none selection:bg-transparent absolute right-0 -bottom-0 opacity-5"}
                        alt={""}
                        height={16 * 50} width={16 * 50} priority/>
-                <section className={"z-0 h-144 w-full bg-rich-black text-white"}>
-                    <section className={"px-10 xl:mx-96 h-full flex flex-col items-stretch justify-between"}>
-                        <section className={"px-3 py-10 h-full flex items-center justify-start gap-16"}>
-                            <section className={"flex flex-col items-stretch justify-start gap-10"}>
+                <section className={"z-0 h-fit lg:h-144 w-full bg-rich-black text-white"}>
+                    <section className={"lg:px-10 xl:mx-96 h-full flex flex-col items-stretch justify-between"}>
+                        <section className={"px-6 g:px-3 py-10 h-full flex flex-col lg:flex-row items-center justify-start gap-16"}>
+                            <section className={"flex w-full flex-col items-stretch justify-start gap-10"}>
                                 <div className={"flex flex-col items-start justify-start gap-4"}>
                                     <h2 className={"text-3xl w-72"}>{strings.footer.questions.headline}
                                         <strong> {strings.footer.questions.remark}</strong></h2>
-                                    <p className={"text-xl font-normal"}>{strings.footer.questions.invitation}</p>
+                                    <p className={"text-lg lg:text-xl font-light"}>{strings.footer.questions.invitation}</p>
                                 </div>
-                                <section className={"flex items-center justify-start gap-6"}>
-                                    <Whatsapp className={"fill-white h-full"} size={22}/>
-                                    <Link href={"https://wa.me/+573174834360"}
-                                          className={linkStyle}>{strings.footer.questions.phone}
-                                    </Link>
-                                </section>
-                                <section className={"flex items-center justify-start gap-6"}>
-                                    <Envelope className={"fill-white h-full"} size={22}/>
-                                    <Link href={"mailto:info@clinicannabis.com.co"}
-                                          className={linkStyle}>{strings.footer.questions.email}
-                                    </Link>
-                                </section>
-                                <section className={"flex items-center justify-start gap-6"}>
-                                    <GeoAlt className={"fill-white h-full"} size={22}/>
-                                    <Link href={"https://goo.gl/maps/WXLy4un1udeGgoc9A"}
-                                          className={linkStyle}>{strings.footer.questions.address}<br/>{strings.footer.questions.addressScript}
-                                    </Link>
-                                </section>
+                                <Link href={"https://wa.me/+573174834360"} className={linkButtonStyle}>
+                                    <Whatsapp className={"lg:fill-white fill-midnight-green h-full"} size={22}/>
+                                    <p className={linkStyle}>{strings.footer.questions.phone}</p>
+                                </Link>
+                                <Link href={"mailto:info@clinicannabis.com.co"} className={linkButtonStyle}>
+                                    <Envelope className={"lg:fill-white fill-midnight-green h-full"} size={22}/>
+                                    <p className={linkStyle}>{strings.footer.questions.email}</p>
+                                </Link>
+                                <Link href={"https://goo.gl/maps/WXLy4un1udeGgoc9A"} className={linkButtonStyle}>
+                                    <GeoAlt className={"lg:fill-white fill-midnight-green h-full"} size={22}/>
+                                    <p className={linkStyle}>{strings.footer.questions.address}<br/>{strings.footer.questions.addressScript}</p>
+                                </Link>
                             </section>
-                            <section className={"h-full w-full flex items-center justify-start gap-10"}>
-                                <ul className={"flex flex-col items-stretch justify-start gap-4 h-full mr-10 w-full"}>
+                            <section className={"h-full w-full flex flex-col lg:flex-row items-center justify-start gap-10"}>
+                                <ul className={"flex flex-col items-stretch justify-start gap-4 h-full lg:mr-10 w-full"}>
                                     <li><h3 className={"text-white text-xl"}>{strings.footer.clinic.headline}</h3></li>
                                     <li><Link href={"/"}
-                                              className={`${linkStyle} font-light text-xl`}>{strings.footer.clinic.home}</Link>
+                                              className={`${linkStyle} !text-white font-light text-xl`}>{strings.footer.clinic.home}</Link>
                                     </li>
                                     {/*<li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.history}</Link>*/}
                                     {/*</li>*/}
                                     <li><Link href={"/"}
-                                              className={`${linkStyle} font-light text-xl`}>{strings.footer.clinic.experience}</Link>
+                                              className={`${linkStyle} !text-white font-light text-xl`}>{strings.footer.clinic.experience}</Link>
                                     </li>
                                     {/*<li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.stories}</Link>*/}
                                     {/*</li>*/}
                                 </ul>
-                                <ul className={"flex flex-col items-stretch justify-start gap-4 h-full mr-10 w-full"}>
+                                <ul className={"flex flex-col items-stretch justify-start gap-4 h-full lg:mr-10 w-full"}>
                                     <li><h3 className={"text-white text-xl"}>{strings.footer.fast.headline}</h3></li>
                                     <li><Link href={"/contact"}
-                                              className={`${linkStyle} font-light text-xl`}>{strings.footer.fast.contact}</Link>
+                                              className={`${linkStyle} !text-white font-light text-xl`}>{strings.footer.fast.contact}</Link>
                                     </li>
                                     <li><Link href={"/legal#data"}
-                                              className={`${linkStyle} font-light text-xl`}>{strings.footer.fast.data}</Link>
+                                              className={`${linkStyle} !text-white font-light text-xl`}>{strings.footer.fast.data}</Link>
                                     </li>
                                     {/*<li><Link href={"/info"} className={`${linkStyle} text-2xl`}>{strings.footer.fast.FAQ}</Link>*/}
                                     {/*</li>*/}
@@ -88,7 +83,7 @@ const Footer = () => {
                             </section>
                         </section>
                         <span className={"w-full h-px bg-green-sheen"}/>
-                        <section className={"px-3 py-10 h-full flex items-center justify-between"}>
+                        <section className={"px-3 py-10 h-full flex flex-col lg:flex-row items-center justify-between"}>
                             <Image src={"/images/svg/clinic_white.svg"} alt={""} width={16} height={16}
                                    className={"-ml-6 h-20 w-auto"}/>
                             <ul className={"flex items-center justify-start"}>
