@@ -28,9 +28,9 @@ export const Hero = (props: {
     const {width: wWidth, height: wHeight} = useWindowDimensions();
     const servicesBgs = [
         "bg-[url('/images/hero/1.png')]",
-        "bg-[url('/images/hero/2.png')]",
-        "bg-[url('/images/hero/3.png')]",
-        "bg-[url('/images/hero/4.png')]",
+        "bg-[url('/images/hero/2.jpg')]",
+        "bg-[url('/images/hero/3.jpg')]",
+        "bg-[url('/images/hero/4.jpg')]",
     ];
 
     const servicesTitles = [
@@ -46,9 +46,9 @@ export const Hero = (props: {
 
     const serviceCards = [
         <ServiceCard name={servicesTitles[0]} to={serviceLinks[0]} url={servicesBgs[0]} interaction={"Descubre"} bgPos={"bg-[right_-34rem_top_-12rem] bg-[length:1360px_auto]"} index={0}/>,
-        <ServiceCard name={servicesTitles[1]} to={serviceLinks[1]} url={servicesBgs[1]} interaction={"Descubre"} bgPos={"bg-right-top bg-[length:900px_auto]"} index={1}/>,
-        <ServiceCard name={servicesTitles[2]} to={serviceLinks[2]} url={servicesBgs[2]} interaction={"Descubre"} bgPos={"bg-[right_-4rem_top_0rem] bg-[length:900px_auto]"} index={2}/>,
-        <ServiceCard name={servicesTitles[3]} to={serviceLinks[3]} url={servicesBgs[3]} interaction={"Descubre"} bgPos={"bg-right-top bg-[length:900px_auto]"} index={3}/>,
+        <ServiceCard name={servicesTitles[1]} to={serviceLinks[1]} url={servicesBgs[1]} interaction={"Descubre"} bgPos={"bg-[right_-24rem_top] bg-[length:1060px_auto]"} index={1}/>,
+        <ServiceCard name={servicesTitles[2]} to={serviceLinks[2]} url={servicesBgs[2]} interaction={"Descubre"} bgPos={"bg-[right_-24rem_top] bg-[length:960px_auto]"} index={2}/>,
+        <ServiceCard name={servicesTitles[3]} to={serviceLinks[3]} url={servicesBgs[3]} interaction={"Descubre"} bgPos={"bg-[right_-24rem_top] bg-[length:900px_auto]"} index={3}/>,
     ];
 
     const pickServiceDisplay = () => {
@@ -62,17 +62,17 @@ export const Hero = (props: {
                     </li>
                     <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
                         <Link className={linkStyle} href={"/services#functional-medicine"}>{servicesTitles[1]}</Link>
-                        <section className={`${servicesBgs[1]} ${serviceImageStyle}`}>
+                        <section className={`${servicesBgs[1]} bg-[600px_auto] bg-[center_top_-2rem] ${serviceImageStyle}`}>
                         </section>
                     </li>
                     <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
                         <Link className={linkStyle} href={"/services#serums"}>{servicesTitles[2]}</Link>
-                        <section className={`${servicesBgs[2]} ${serviceImageStyle}`}>
+                        <section className={`${servicesBgs[2]}  ${serviceImageStyle}`}>
                         </section>
                     </li>
                     <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
                         <Link className={linkStyle} href={"/services#sis"}>{servicesTitles[3]}</Link>
-                        <section className={`${servicesBgs[3]} ${serviceImageStyle}`}>
+                        <section className={`${servicesBgs[3]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}>
                         </section>
                     </li>
                     {/*<li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>*/}
@@ -85,7 +85,7 @@ export const Hero = (props: {
         } else {
             return (
                 <section className={"w-full relative"}>
-                    <SwiperCarousel items={serviceCards} delay={6000} />
+                    <SwiperCarousel items={serviceCards} delay={6000} auto pagination />
                 </section>
             )
         }

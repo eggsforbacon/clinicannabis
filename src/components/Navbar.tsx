@@ -19,8 +19,8 @@ const Navbar = (
     const selectedStyle: string = "z-10 h-0.5 absolute -bottom-0.5 lg:relative px-1 rounded-sm w-full bg-caribbean-green";
     const deselectedStyle: string = "h-0.5 absolute -bottom-0.5 lg:relative px-1 rounded-sm w-full";
     const listItemStyle: string = "flex relative flex-col items-center justify-end h-full gap-12";
-    const linkStyle: string = "font-semibold tracking-wide transition quartic-in-out duration-300 lg:hover:text-clinic-persian-green lg:hover:-translate-y-1 focus:text-clinic-persian-green";
-    const buttonStyle: string = "hidden lg:block rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-6 py-1 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
+    const linkStyle: string = "font-semibold tracking-wide transition quartic-in-out duration-300 lg:hover:text-white lg:hover:-translate-y-1 focus:text-clinic-persian-green";
+    const buttonStyle: string = "hidden lg:block rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-6 py-1 transition duration-300 exponential-out lg:hover:border-white focus:border-white lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
 
     const {width: wWidth, height: wHeight} = useWindowDimensions();
 
@@ -141,9 +141,9 @@ const Navbar = (
 
     return (
             <nav
-                className={`z-50 fixed transition duration-700 ease-in-out ${show ? "bg-white lg:opacity-100" : "bg-transparent border-transparent lg:opacity-0 lg:bg-white lg:hover:opacity-100"} font-black text-neutral-600 flex flex-col lg:flex-row items-center justify-between lg:border-transparent lg:border-solid lg:border-2 lg:border-b-neutral-300 w-full h-fit lg:px-24`}>
+                className={`z-50 fixed transition duration-700 ease-in-out ${show ? "bg-transparent lg:backdrop-blur-xl lg:bg-viridian-green/10 lg:opacity-100" : "bg-transparent border-transparent lg:opacity-0 lg:backdrop-blur-xl lg:bg-white/40 lg:hover:opacity-100"} font-black text-dark-green flex flex-col lg:flex-row items-center justify-between lg:border-transparent lg:border-solid lg:border-2 lg:border-b-neutral-300 w-full h-fit lg:px-24`}>
                 <section
-                    className={`max-lg:z-20 w-full border-solid border-2 transition duration-700 ease-in-out ${show ? "bg-white border-b-neutral-300" : "bg-transparent border-transparent"} lg:border-none p-4 md:px-16 lg:p-0 lg:w-auto h-fit flex items-center justify-between`}>
+                    className={`max-lg:z-20 w-full border-solid border-2 transition duration-700 ease-in-out ${show ? "max-md:backdrop-blur-xl max-md:bg-white/10 border-none" : "bg-transparent border-none"} lg:border-none p-4 md:px-16 lg:p-0 lg:w-auto h-fit flex items-center justify-between`}>
                     <Image src={"/images/clinicannabis_hr.png"} className={`w-auto h-14 lg:h-24 lg:w-[17.25rem] transition duration-700 ease-in-out ${show ? "opacity-100" : "pointer-events-none selected:bg-transparent opacity-0"} lg:opacity-100`}
                            alt={"Logo horizontal de Clinicannabis"} width={500 / 2}
                            height={174 / 2} priority/>
@@ -154,10 +154,10 @@ const Navbar = (
                     </button>
                 </section>
                 <section
-                    className={"h-full flex flex-col md:flex-row justify-center lg:justify-between items-center lg:gap-12"}
+                    className={"h-120 lg:h-full flex flex-col md:flex-row justify-center lg:justify-between items-center lg:gap-12"}
                     id={"navigation"}>
                     <ul
-                        className={`${mobileExpanded && show ? "max-lg:animate-swing-in-top-fwd" : "max-lg:animate-swing-out-top-bck"} max-lg:z-10 absolute max-lg:top-20 bg-white w-full lg:w-auto border-b-solid border-b-2 border-b-neutral-300 lg:relative lg:border-none lg:border-transparent h-96 lg:h-fit lg:mt-12 flex flex-col lg:flex-row justify-center lg:justify-end items-center gap-10 py-8 lg:py-0`}>
+                        className={`${mobileExpanded && show ? "max-lg:animate-swing-in-top-fwd" : "max-lg:animate-swing-out-top-bck"} backdrop-blur-2xl bg-white/10 lg:backdrop-blur-none lg:bg-transparent max-lg:z-10 absolute max-lg:top-0 w-full lg:w-auto border-b-solid border-b-2 border-b-neutral-300 lg:relative lg:border-none lg:border-transparent h-120 pt-36 lg:pt-0 lg:h-fit lg:mt-12 flex flex-col lg:flex-row justify-center lg:justify-end items-center gap-10 py-8 lg:py-0`}>
                         {linkTree()}
                     </ul>
                     {(props.selection !== "contact" && props.context !== "shop") &&

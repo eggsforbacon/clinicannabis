@@ -14,8 +14,16 @@ export const SwiperCarousel = (
     props : {
         items : ReactNode[],
         delay : number,
+        className? : string,
+        auto? : boolean,
+        pagination? : boolean,
     }
 ) => {
+
+    const modules = [];
+    if (props.auto) modules.push(Autoplay);
+    if (props.pagination) modules.push(Pagination);
+
     return (
         <>
             <Swiper
@@ -29,7 +37,7 @@ export const SwiperCarousel = (
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Pagination]}
+                modules={modules}
                 style={{
                     "--swiper-pagination-color" : "#009490",
                 } as CSSProperties}
@@ -37,7 +45,7 @@ export const SwiperCarousel = (
 
             >
                 {props.items.map((slide, index) =>
-                    <SwiperSlide key={`page${index}`} className={"w-full h-full"}>
+                    <SwiperSlide key={`page${index}`} className={`w-full h-full ${props.className || ""}`}>
                         {slide}
                     </SwiperSlide>
                     )}

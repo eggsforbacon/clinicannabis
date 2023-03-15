@@ -12,35 +12,16 @@ export const Experience = () => {
     const {width: wWidth, height: wHeight} = useWindowDimensions();
 
     return (
-        <article className={"w-full overflow-clip h-224 lg:h-[62rem] lg:px-44 relative"}>
+        <article className={"w-full overflow-x-clip h-224 lg:h-[52rem] lg:px-44 relative"}>
+            <Image src={"/images/landing/experienceHero.png"} alt={""} width={1920} height={820} className={"z-0 absolute -top-16 scale-125 left-0"} />
             <section className={"absolute w-full h-full top-0 left-0 z-0"}>
-                {wWidth > 820 &&
-                    <>
-                        <Image
-                            className={"z-0 absolute select-none lg:-bottom-12 xl:bottom-16 right-[56rem] lg:-rotate-[8deg] xl:rotate-0 -scale-x-[220] scale-y-[220]"}
-                            src={"/images/experience/experienceLdngBackLeaf.svg"} alt={"Placeholder"} width={16}
-                            height={6}/>
-                        <Image className={"z-10 absolute select-none lg:-bottom-8 xl:-bottom-14 lg:-left-[30rem] xl:-left-10"}
-                               src={"/images/landing/experienceHero.png"} alt={"Placeholder"} width={1612 * .75}
-                               height={1292 * .75}/>
-                        <Image className={"z-20 absolute select-none lg:-bottom-44 xl:-bottom-64 left-[72rem] scale-[190]"}
-                               src={"/images/experience/assistantBackLeaf.svg"} alt={"Placeholder"} width={16}
-                               height={16}/>
-                    </>
-                }
+
             </section>
-            <section className={"relative z-10 px-8 md:pl-32 xl:px-0 w-full h-full flex items-center justify-between"}>
-                <section className={"hidden lg:block w-full"}>
-                </section>
-                <section className={"md:w-3/5 lg:w-4/5 xl:w-2/5 h-full flex flex-col items-start justify-start pt-56 pb-16 lg:pb-0 lg:pt-32 gap-16 md:gap-8 lg:gap-32"}>
-                    <h2 className={"text-midnight-green lg:text-caribbean-green text-[3.5rem] lg:text-[7rem] font-black leading-[0.75]"}>{strings.landing.experience.headline}<strong
+            <section className={"relative z-10 px-8 md:pl-32 xl:px-0 w-full h-168 flex items-center justify-between"}>
+                <section className={"w-1/2 relative z-10 flex flex-col items-stretch justify-end gap-8"}>
+                    <h2 className={"text-midnight-green lg:text-caribbean-green text-[3.5rem] lg:text-[7rem] font-black lg:leading-[0.6]"}>{strings.landing.experience.headline}<strong
                         className={"text-caribbean-green lg:text-midnight-green text-6xl lg:text-9xl"}>{strings.landing.experience.remark}</strong></h2>
-                    <section className={"flex flex-col items-center md:items-start justify-start gap-6"}>
-                        <p className={"text-midnight-green text-base lg:text-white lg:text-2xl"}>{strings.landing.experience.content}</p>
-                        <button className={buttonStyle} onClick={() => navigate.push("/experience")}>
-                            {strings.landing.experience.cta}
-                        </button>
-                    </section>
+                    <p className={"text-neutral-800 text-base lg:text-2xl font-normal text-left md:text-left lg:w-192"}>{strings.landing.experience.content}</p>
                 </section>
             </section>
         </article>

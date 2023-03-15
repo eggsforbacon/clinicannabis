@@ -112,6 +112,23 @@ export const strings: IKeyedObject = {
             'cta': <>{"Conócelo"}</>,
         },
         'blog': {
+            'slides': {
+                1: {
+                    'title': <>{"Noticias Médicas"}</>,
+                    'copy': <>{"Obtén información de Clinicannabis enviada directamente a tu correo."}</>,
+                    'cta': <>{"Suscríbete"}</>
+                },
+                2: {
+                    'title': <>{""}</>,
+                    'copy': <>{""}</>,
+                    'cta': <>{""}</>
+                },
+                3: {
+                    'title': <>{""}</>,
+                    'copy': <>{""}</>,
+                    'cta': <>{""}</>
+                },
+            },
             'headline': <>{"Blog "}</>,
             'remark': <>{"médico"}</>,
             'content': <>{"Tenemos para ti la actualidad en temas de salud, medicina funcional e innovación médica alternativa."}</>,
@@ -164,8 +181,8 @@ export const strings: IKeyedObject = {
             'content': <>{"Estamos comprometidos contigo y tu familia, ofreciéndote servicios de salud, humanizados y de calidad. Nuestro equipo humano está capacitado en la gestión del riesgo en todas las etapas de la atención, construyendo una cultura de seguridad en busca de la reducción de eventos adversos."}</>,
         },
         'carousel': {
-            'title' : <>{"Tenemos "}</>,
-            'remark' : <>{"para ti"}</>,
+            'title': <>{"Tenemos "}</>,
+            'remark': <>{"para ti"}</>,
             1: {
                 'headline': <>{"Droguería"}</>,
                 'content': <>{"Encuentra la mejor opción para complementar tu tratamiento y potencializar tu recuperación."}</>,
@@ -189,24 +206,24 @@ export const strings: IKeyedObject = {
         }
     },
     'blog': {
-        "headline" : <>{"Blog Médico"}</>,
-        "copy" : <>{"Entérate de la actualidad médica, de bienestar y tratamientos basados en la medicina cannábica y funcional, entre otros temas de interés."}</>,
+        "headline": <>{"Blog Médico"}</>,
+        "copy": <>{"Entérate de la actualidad médica, de bienestar y tratamientos basados en la medicina cannábica y funcional, entre otros temas de interés."}</>,
         "teaser": <>{"¡Lo sentimos! Trabajamos para poder brindarte información de bienestar actual. Por el momento, mira todo lo que tenemos para ofrecerte"}</>,
         "cta": <>{"Nuestra Clínica"}</>,
     },
     'contact': {
-        "headline" : <>{""}</>,
-        "fields" : {
+        "headline": <>{""}</>,
+        "fields": {
             "name": <>{"Tu nombre"}</>,
             "mail": <>{"Tu correo"}</>,
             "message": <>{"¿Cómo podemos ayudarte?"}</>,
         },
         "cta": <>{"Enviar"}</>,
     },
-    '404' : {
-      "headline" : <>{"No encontramos esta página"}</>,
-      "copy" : <>{"Despreocúpate. Aún puedes conocer todo lo que tenemos para ti."}</>,
-      "cta" : <>{"Nuestra Clínica"}</>,
+    '404': {
+        "headline": <>{"No encontramos esta página"}</>,
+        "copy": <>{"Despreocúpate. Aún puedes conocer todo lo que tenemos para ti."}</>,
+        "cta": <>{"Nuestra Clínica"}</>,
     },
     'soon': {
         'headline': <>{"¡Clinicannabis ya está aquí!"}</>,
