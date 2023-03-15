@@ -141,8 +141,9 @@ export const strings: IKeyedObject = {
         'subtext': <>{"Trabajamos para cumplir con los estándares de calidad que garanticen que nuestros tratamientos y productos te brinden una mejor calidad de vida."}</>,
         'sections': {
             1: {
-                'headline': <>{"Cannabis medicinal"}</>,
-                'remark': <>{"Dolor crónico y otras patologías"}</>,
+                'headline': <>{"Cannabis "}</>,
+                'remark': <>{"medicinal"}</>,
+                'subtitle': <>{"Dolor crónico y otras patologías"}</>,
                 'content': <>{"Aplicamos protocolos de medicina cannábica enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obteniendo mejoras en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
             },
             2: {

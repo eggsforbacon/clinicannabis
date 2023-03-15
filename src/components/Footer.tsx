@@ -23,7 +23,7 @@ const Footer = () => {
     return (
         <>
             <footer
-                className={"z-0 bg-rich-black lg:bg-white flex w-full h-fit lg:h-256 relative flex-col justify-end items-center mt-auto overflow-x-clip"}>
+                className={"z-0 bg-rich-black lg:bg-white flex w-full h-fit lg:h-144 relative flex-col justify-end items-center mt-auto overflow-x-clip"}>
                 {/*<Image src={"/images/backgrounds/footer.svg"}*/}
                 {/*       className={"z-0 w-full h-auto pointer-events-none selection:bg-transparent absolute lg:scale-[1.85] xl:scale-[1.1] -top-28 lg:bottom-28 lg:left-36 xl:left-auto lg:top-auto xl:bottom-0"} alt={""}*/}
                 {/*       height={932} width={1920} priority/>*/}
