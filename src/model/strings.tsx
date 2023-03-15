@@ -16,6 +16,7 @@ export const strings: IKeyedObject = {
         'questions': {
             'headline': <>{"¿Tienes alguna"}</>,
             'remark': <>{"pregunta?"}</>,
+            'invitation': <>{"¡Nosotros te ayudamos!"}</>,
             'phone': <>{"317 483 4360"}</>,
             'phoneScript': <>{"Lunes a viernes 8:00 - 17:00"}</>,
             'email': <>{"info@clinicannabis.com.co"}</>,
