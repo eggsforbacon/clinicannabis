@@ -10,9 +10,9 @@ export const Experience = () => {
     const navigate = useRouter();
 
     return (
-        <article className={"relative h-320"}>
-            <Image className={`absolute select-none top-4 z-0`}
-                   src={"/images/services/service5.png"} alt={"Placeholder"} width={1921} height={1281}/>
+        <article className={"relative debug h-[68rem]"}>
+            <Image className={`absolute select-none -top-36 -right-36 z-0`}
+                   src={"/images/services/service5.png"} alt={"Placeholder"} width={1920} height={1268}/>
             <section
                 className={"absolute left-0 w-208 mt-32 ml-44 flex flex-col gap-12 justify-between items-center text-midnight-green"}>
                 <section className={"pt-24"}>

@@ -157,8 +157,9 @@ export const strings: IKeyedObject = {
                 'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. ¡Hay uno elaborado especialmente para ti!"}</>,
             },
             4: {
-                'headline': <>{"Medicina Funcional"}</>,
-                'remark': <>{"Atención integral"}</>,
+                'headline': <>{"Medicina "}</>,
+                'remark': <>{"Funcional"}</>,
+                'subtitle': <>{"Atención integral"}</>,
                 'content': <>{"Evaluamos a cada uno de nuestros pacientes. Nos enfocamos en tus necesidades de salud y bienestar, e identificamos los factores que puedan alterar tu calidad de vida."}</>,
             },
             5: {

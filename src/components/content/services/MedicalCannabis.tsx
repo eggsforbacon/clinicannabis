@@ -3,13 +3,13 @@ import {strings} from "../../../model/strings";
 
 export const MedicalCannabis = () => {
     return (
-        <article className={"relative h-256 flex lg:block flex-col items-stretch justify-center"} id={"medicinal-cannabis"}>
+        <article className={"relative z-10 h-256 flex lg:block flex-col items-stretch justify-center"} id={"medicinal-cannabis"}>
             <Image src={"/images/services/service1.png"}
-                   className={"absolute scale-[3] lg:scale-[1.5] xl:scale-100 right-16 brightness-50 lg:brightness-100 top-72 lg:-top-5 lg:-right-24 xl:right-0"} alt={""}
+                   className={"select-none absolute scale-[3] lg:scale-[1.5] xl:scale-100 right-16 brightness-50 lg:brightness-100 top-72 lg:-top-5 lg:-right-24 xl:right-0"} alt={""}
                    width={1920}
                    height={1001}/>
             <Image src={"/images/services/questionableAsset.svg"}
-                   className={"absolute scale-[6] lg:scale-[1.5] lg:left-24 xl:rotate-[-2.25deg] xl:left-96 lg:-top-[9.25rem] top-80 left-[32rem]"}
+                   className={"select-none absolute scale-[6] lg:scale-[1.5] lg:left-24 xl:rotate-[-2.25deg] xl:left-96 lg:-top-[9.25rem] top-80 left-[32rem]"}
                    alt={""}
                    width={16 * 180} height={16 * 180}/>
             <section
