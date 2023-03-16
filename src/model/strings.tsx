@@ -4,18 +4,19 @@ interface IKeyedObject {
 
 export const strings: IKeyedObject = {
     'navbar': {
-        'home': <>{"Nuestra Clínica"}</>,
+        'home': <>{"Clínica"}</>,
         'services': <>{"Servicios"}</>,
-        'experience': <>{"Centro de Experiencia"}</>,
-        'blog': <>{"Blog Médico"}</>,
+        'experience': <>{"Experiencia"}</>,
+        'blog': <>{"Blog"}</>,
         'contact': <>{"Contáctanos"}</>,
-        'cta': <>{"Agenda tu cita"}</>,
+        'cta': <>{"Agéndate"}</>,
     },
     'footer': {
         'copy': <>{"Clinicannabis "}&copy;{" 2023 | Todos los derechos reservados"}</>,
         'questions': {
             'headline': <>{"¿Tienes alguna"}</>,
             'remark': <>{"pregunta?"}</>,
+            'invitation': <>{"¡Nosotros te ayudamos!"}</>,
             'phone': <>{"317 483 4360"}</>,
             'phoneScript': <>{"Lunes a viernes 8:00 - 17:00"}</>,
             'email': <>{"info@clinicannabis.com.co"}</>,
@@ -111,6 +112,23 @@ export const strings: IKeyedObject = {
             'cta': <>{"Conócelo"}</>,
         },
         'blog': {
+            'slides': {
+                1: {
+                    'title': <>{"Noticias Médicas"}</>,
+                    'copy': <>{"Obtén información de Clinicannabis enviada directamente a tu correo."}</>,
+                    'cta': <>{"Suscríbete"}</>
+                },
+                2: {
+                    'title': <>{""}</>,
+                    'copy': <>{""}</>,
+                    'cta': <>{""}</>
+                },
+                3: {
+                    'title': <>{""}</>,
+                    'copy': <>{""}</>,
+                    'cta': <>{""}</>
+                },
+            },
             'headline': <>{"Blog "}</>,
             'remark': <>{"médico"}</>,
             'content': <>{"Tenemos para ti la actualidad en temas de salud, medicina funcional e innovación médica alternativa."}</>,
@@ -123,8 +141,9 @@ export const strings: IKeyedObject = {
         'subtext': <>{"Trabajamos para cumplir con los estándares de calidad que garanticen que nuestros tratamientos y productos te brinden una mejor calidad de vida."}</>,
         'sections': {
             1: {
-                'headline': <>{"Cannabis medicinal"}</>,
-                'remark': <>{"Dolor crónico y otras patologías"}</>,
+                'headline': <>{"Cannabis "}</>,
+                'remark': <>{"medicinal"}</>,
+                'subtitle': <>{"Dolor crónico y otras patologías"}</>,
                 'content': <>{"Aplicamos protocolos de medicina cannábica enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obteniendo mejoras en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
             },
             2: {
@@ -138,8 +157,9 @@ export const strings: IKeyedObject = {
                 'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. ¡Hay uno elaborado especialmente para ti!"}</>,
             },
             4: {
-                'headline': <>{"Medicina Funcional"}</>,
-                'remark': <>{"Atención integral"}</>,
+                'headline': <>{"Medicina "}</>,
+                'remark': <>{"Funcional"}</>,
+                'subtitle': <>{"Atención integral"}</>,
                 'content': <>{"Evaluamos a cada uno de nuestros pacientes. Nos enfocamos en tus necesidades de salud y bienestar, e identificamos los factores que puedan alterar tu calidad de vida."}</>,
             },
             5: {
@@ -163,8 +183,8 @@ export const strings: IKeyedObject = {
             'content': <>{"Estamos comprometidos contigo y tu familia, ofreciéndote servicios de salud, humanizados y de calidad. Nuestro equipo humano está capacitado en la gestión del riesgo en todas las etapas de la atención, construyendo una cultura de seguridad en busca de la reducción de eventos adversos."}</>,
         },
         'carousel': {
-            'title' : <>{"Tenemos "}</>,
-            'remark' : <>{"para ti"}</>,
+            'title': <>{"Tenemos "}</>,
+            'remark': <>{"para ti"}</>,
             1: {
                 'headline': <>{"Droguería"}</>,
                 'content': <>{"Encuentra la mejor opción para complementar tu tratamiento y potencializar tu recuperación."}</>,
@@ -188,24 +208,24 @@ export const strings: IKeyedObject = {
         }
     },
     'blog': {
-        "headline" : <>{"Blog Médico"}</>,
-        "copy" : <>{"Entérate de la actualidad médica, de bienestar y tratamientos basados en la medicina cannábica y funcional, entre otros temas de interés."}</>,
+        "headline": <>{"Blog Médico"}</>,
+        "copy": <>{"Entérate de la actualidad médica, de bienestar y tratamientos basados en la medicina cannábica y funcional, entre otros temas de interés."}</>,
         "teaser": <>{"¡Lo sentimos! Trabajamos para poder brindarte información de bienestar actual. Por el momento, mira todo lo que tenemos para ofrecerte"}</>,
         "cta": <>{"Nuestra Clínica"}</>,
     },
     'contact': {
-        "headline" : <>{""}</>,
-        "fields" : {
+        "headline": <>{""}</>,
+        "fields": {
             "name": <>{"Tu nombre"}</>,
             "mail": <>{"Tu correo"}</>,
             "message": <>{"¿Cómo podemos ayudarte?"}</>,
         },
         "cta": <>{"Enviar"}</>,
     },
-    '404' : {
-      "headline" : <>{"No encontramos esta página"}</>,
-      "copy" : <>{"Despreocúpate. Aún puedes conocer todo lo que tenemos para ti."}</>,
-      "cta" : <>{"Nuestra Clínica"}</>,
+    '404': {
+        "headline": <>{"No encontramos esta página"}</>,
+        "copy": <>{"Despreocúpate. Aún puedes conocer todo lo que tenemos para ti."}</>,
+        "cta": <>{"Nuestra Clínica"}</>,
     },
     'soon': {
         'headline': <>{"¡Clinicannabis ya está aquí!"}</>,

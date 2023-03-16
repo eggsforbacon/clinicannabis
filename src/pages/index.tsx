@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import {strings} from "../model/strings";
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useRef, useState} from "react";
 import {useRouter} from "next/router";
 import {Hero} from "../components/content/index/Hero";
 import {About} from "../components/content/index/About";
@@ -11,6 +11,7 @@ import {Values} from "../components/content/index/Values";
 import {Numbers} from "../components/content/index/Numbers";
 import {Experience} from "../components/content/index/Experience";
 import {Blog} from "../components/content/index/Blog";
+import NavbarContext from "../context/Navbar/NavbarContext";
 
 
 const Home: NextPage = () => {
@@ -28,11 +29,29 @@ const Home: NextPage = () => {
         }
     }
 
+    const {setLogoShown, logoShown} = useContext(NavbarContext);
     const [hasWindow, setHasWindow] = useState(false);
+    const navbarLogoRef = useRef(null);
     useEffect(() => {
         if (typeof window !== "undefined") {
             setHasWindow(true);
         }
+        setLogoShown(false);
+
+        const navbarTrigger = navbarLogoRef.current as unknown as HTMLSpanElement;
+        const observe = (trigger: HTMLSpanElement, callback: (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => void) => {
+            const observer = new IntersectionObserver(callback);
+            observer.observe(trigger as Element);
+        }
+
+        function navbarCallback(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
+            observer.observe(navbarTrigger);
+            const entry = entries[0];
+            setLogoShown(entry.isIntersecting);
+        }
+
+        // observe(navbarTrigger, navbarCallback);
+
     }, []);
 
     const navigate = useRouter();
@@ -47,11 +66,12 @@ const Home: NextPage = () => {
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"home"}/>
+            {/*<span ref={navbarLogoRef} className={"debug h-full pointer-events-none bg-transparent selection:bg-transparent absolute top-[200vh] md:top-0 w-full"}/>*/}
             <Hero hasWindow={hasWindow}/>
-            <About />
-            <Values />
-            <Experience />
-            {/*<Numbers />*/}
+            <About/>
+            <Values/>
+            <Experience/>
+            <Numbers />
             <Blog />
             <Footer/>
         </main>

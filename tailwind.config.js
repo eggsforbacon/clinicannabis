@@ -43,8 +43,12 @@ module.exports = {
             },
             transitionProperty: {
                 'bg-size': 'background-size',
-                'size' : 'width, height, padding, margin',
-                'opacity' : 'opacity',
+                'size': 'width, height, padding, margin',
+                'opacity': 'opacity',
+                'bg': 'background',
+            },
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
             },
             fontFamily: {
                 'solomon-sans': ['Solomon Sans']
@@ -58,15 +62,15 @@ module.exports = {
                 'clinic-blue-chill': '#0e9390',
                 'clinic-dark-teal': "#0c3b41",
 
-                'caribbean-green' : "#00B451",
-                'GO-green' : "#00AC69",
-                'green-sheen' : "#74A5A2",
-                'persian-green' : "#00A98F",
-                'viridian-green' : "#009490",
-                'skobeloff' : "#006875",
-                'midnight-green' : "#005361",
-                'rich-black' : "#0C3A41",
-                'dark-green' : "#022528",
+                'caribbean-green': "#00B451",
+                'GO-green': "#00AC69",
+                'green-sheen': "#74A5A2",
+                'persian-green': "#00A98F",
+                'viridian-green': "#009490",
+                'skobeloff': "#006875",
+                'midnight-green': "#005361",
+                'rich-black': "#0C3A41",
+                'dark-green': "#022528",
             },
             /*Awfully useful animation timing functions*/
             transitionTimingFunction: {
@@ -111,14 +115,14 @@ module.exports = {
                     'in-out': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
                 }
             },
-            animationDuration : {
-                1200 : '1200ms',
-                1400 : '1400ms',
-                1600 : '1600ms',
-                1800 : '1800ms',
-                2000 : '2000ms',
-                2200 : '2200ms',
-                2400 : '2400ms',
+            animationDuration: {
+                1200: '1200ms',
+                1400: '1400ms',
+                1600: '1600ms',
+                1800: '1800ms',
+                2000: '2000ms',
+                2200: '2200ms',
+                2400: '2400ms',
             },
             keyframes: {
                 'fade-in-top': {
@@ -130,45 +134,67 @@ module.exports = {
                     '100%': {opacity: '1', transform: 'translateY(0)'}
                 },
                 'fade-in-right': {
-                    '0%' : {opacity: '0', transform: 'translateX(100px)'},
-                    '100%' : {opacity: '1', transform: 'translateX(0)'},
+                    '0%': {opacity: '0', transform: 'translateX(100px)'},
+                    '100%': {opacity: '1', transform: 'translateX(0)'},
                 },
                 'fade-in-left': {
-                    '0%' : {opacity: '0', transform: 'translateX(-100px)'},
-                    '100%' : {opacity: '1', transform: 'translateX(0)'},
+                    '0%': {opacity: '0', transform: 'translateX(-100px)'},
+                    '100%': {opacity: '1', transform: 'translateX(0)'},
                 },
-                'shrink-to-half' : {
-                    '0%' : {width : '80%', transform: 'translateY(0)'},
-                    '100%' : {width : "60%", transform: 'translateY(-50px)'},
+                'shrink-to-half-xl': {
+                    '0%': {width: '80%', transform: 'translateY(0)'},
+                    '100%': {width: "70%", transform: 'translateY(-50px)'},
                 },
-                'expand-to-half' : {
-                    '0%' : {opacity: '0', width : '0%'},
-                    '100%' : {opacity: '1', width : "50%"},
+                'shrink-to-half-lg': {
+                    '0%': {width: '80%', transform: 'translateY(0)'},
+                    '100%': {width: "70%", transform: 'translateY(-70px)'},
                 },
-                'swing-in-top-fwd' : {
-                    '0%' : {opacity : '0', transform: 'rotateX(-100deg)', transformOrigin: 'top'},
-                    '100%' : {opacity : '1', transform: 'rotateX(0deg)', transformOrigin: 'top'}
+                'shrink-to-top-sm': {
+                    '0%': {transform: 'translateY(0)'},
+                    '100%': {transform: 'translateY(-150px)'},
                 },
-                'swing-out-top-bck' : {
-                    '0%' : {opacity : '1', transform: 'rotateX(0deg)', transformOrigin: 'top'},
-                    '100%' : {opacity : '0', transform: 'rotateX(-100deg)', transformOrigin: 'top'}
+                'expand-to-half': {
+                    '0%': {opacity: '0', width: '0%'},
+                    '100%': {opacity: '1', width: "50%"},
                 },
-                'bg-pan-right' : {
-                    '0%' : {backgroundPosition : '0% 50%'},
-                    '50%' : {backgroundPosition : '100% 50%'},
-                    '100%' : {backgroundPosition : '100% 50%'},
-                }
+                'swing-in-top-fwd': {
+                    '0%': {opacity: '0', transform: 'rotateX(-100deg)', transformOrigin: 'top'},
+                    '100%': {opacity: '1', transform: 'rotateX(0deg)', transformOrigin: 'top'}
+                },
+                'swing-out-top-bck': {
+                    '0%': {opacity: '1', transform: 'rotateX(0deg)', transformOrigin: 'top'},
+                    '100%': {opacity: '0', transform: 'rotateX(-100deg)', transformOrigin: 'top'}
+                },
+                'bg-pan-right': {
+                    '0%': {backgroundPosition: '0% 50%'},
+                    '50%': {backgroundPosition: '100% 50%'},
+                    '100%': {backgroundPosition: '100% 50%'},
+                },
+                'float-up-sm': {
+                    '0%': {transform: 'translateY(0px)'},
+                    '50%': {transform: 'translateY(-8px)'},
+                    '100%': {transform: 'translateY(0px)'},
+                },
+                'float-down-sm': {
+                    '0%': {transform: 'translateY(0px)'},
+                    '50%': {transform: 'translateY(5px)'},
+                    '100%': {transform: 'translateY(0px)'},
+                },
             },
             animation: {
                 'fade-in-top': 'fade-in-top 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'fade-in-bottom': 'fade-in-bottom 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'fade-in-right': 'fade-in-right 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
                 'fade-in-left': 'fade-in-left 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
-                'shrink-to-half' : 'shrink-to-half 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
-                'expand-to-half' : 'expand-to-half 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
-                'swing-in-top-fwd' : 'swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1 forwards',
-                'swing-out-top-bck' : 'swing-out-top-bck 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 1 forwards',
-                'bg-pan-right' : 'bg-pan-right 8s linear infinite forwards'
+                'shrink-to-half-xl': 'shrink-to-half-xl 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
+                'shrink-to-half-lg': 'shrink-to-half-lg 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
+                'shrink-to-top-sm': 'shrink-to-top-sm 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
+                'expand-to-half': 'expand-to-half 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
+                'swing-in-top-fwd': 'swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1 forwards',
+                'swing-out-top-bck': 'swing-out-top-bck 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 1 forwards',
+                'bg-pan-right': 'bg-pan-right 8s linear infinite forwards',
+                'float-up-sm' : 'float-up-sm 8s ease-in-out infinite forwards',
+                'float-down-sm' : 'float-down-sm 8s ease-in-out infinite forwards',
             }
         },
     },

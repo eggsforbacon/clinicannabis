@@ -21,7 +21,7 @@ const Services : NextPage = () => {
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"services"} />
-            <Hero />
+            {/*<Hero />*/}
             <MedicalCannabis />
             <SIS />
             <Serums />

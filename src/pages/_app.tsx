@@ -1,8 +1,9 @@
 import '../../styles/globals.css'
 import type {AppProps} from 'next/app'
-import {CartProvider} from "../context/CartProvider";
+import {CartProvider} from "../context/Cart/CartProvider";
 import {useEffect} from "react";
 import {useRouter} from "next/router";
+import {NavbarProvider} from "../context/Navbar/NavbarProvider";
 
 function MyApp({Component, pageProps}: AppProps) {
 
@@ -14,7 +15,9 @@ function MyApp({Component, pageProps}: AppProps) {
 
     return (
         <CartProvider>
-            <Component {...pageProps} />
+            <NavbarProvider>
+                <Component {...pageProps} />
+            </NavbarProvider>
         </CartProvider>
     );
 }
