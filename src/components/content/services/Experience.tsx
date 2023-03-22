@@ -13,6 +13,7 @@ export const Experience = () => {
         <article className={"relative z-0 overflow-clip h-[68rem]"}>
             <Image className={`absolute select-none scale-[4] bottom-72 opacity-80 lg:opacity-100 right-36 lg:scale-100 lg:-top-36 lg:-right-36 z-0`}
                    src={"/images/services/service5.png"} alt={"Placeholder"} width={1920} height={1268}/>
+            <span className={"hidden lg:block w-full bg-gradient-to-b from-white via-white/70 absolute h-120 top-0 left-0"}/>
             <span className={"lg:hidden h-112 bg-gradient-to-b from-white via-white/50 absolute top-36 left-0 w-full"}/>
             <span className={"lg:hidden h-112 bg-gradient-to-b from-GO-green/60 via-GO-green/10 absolute top-0 left-0 w-full"}/>
             <section

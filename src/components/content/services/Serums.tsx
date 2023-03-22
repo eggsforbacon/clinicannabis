@@ -9,9 +9,9 @@ export const Serums = () => {
             <section className={"absolute right-0 w-208 mt-40 mr-12 flex flex-col justify-between items-start text-midnight-green"}>
                 <section className={"pt-24"}>
                     <h2 className={"text-8xl font-black tracking-wide mb-4"}>{strings.services.sections["3"].headline}</h2>
-                    <h3 className={"font-normal text-viridian-green text-4xl"}>{strings.services.sections["3"].remark}</h3>
+                    <h3 className={"font-normal text-viridian-green text-4xl"}>{strings.services.sections["3"].subtitle}</h3>
                 </section>
-                <p className={"mt-16 w-168 font-normal text-neutral-600 text-2xl"}>{strings.services.sections["3"].content}</p>
+                <p className={"mt-16 w-136 text-neutral-600 text-2xl"}>{strings.services.sections["3"].content}</p>
             </section>
         </article>
     );
