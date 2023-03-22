@@ -147,13 +147,14 @@ export const strings: IKeyedObject = {
                 'content': <>{"Aplicamos protocolos de medicina cannábica enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obteniendo mejoras en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
             },
             2: {
-                'headline': <>{"Sistema Súper Inductivo"}</>,
-                'remark': <>{"Innovación tecnológica"}</>,
+                'headline': <>{"Sistema Súper "}</>,
+                'remark': <>{"Inductivo"}</>,
+                'subtitle': <>{"Innovación tecnológica"}</>,
                 'content': <>{"Como pioneros en el Valle del Cauca, nuestro equipo médico está a la vanguardia en la tecnología biomédica que, haciendo uso del Sistema Súper Inductivo, permite diagnosticar de manera no invasiva e indolora a nuestros pacientes, logrando tratar enfermedades neuromusculares, osteoarticulares, lesiones deportivas, recuperación postquirúrgica, alivio del dolor y rehabilitación respiratoria."}</>,
             },
             3: {
                 'headline': <>{"Sueros terapéuticos"}</>,
-                'remark': <>{"Regeneración y depuración"}</>,
+                'subtitle': <>{"Regeneración y depuración"}</>,
                 'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. ¡Hay uno elaborado especialmente para ti!"}</>,
             },
             4: {
