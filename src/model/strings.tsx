@@ -113,20 +113,24 @@ export const strings: IKeyedObject = {
         },
         'blog': {
             'slides': {
-                1: {
+                2: {
                     'title': <>{"Noticias Médicas"}</>,
                     'copy': <>{"Obtén información de Clinicannabis enviada directamente a tu correo."}</>,
-                    'cta': <>{"Suscríbete"}</>
+                    'cta': <>{"Suscríbete"}</>,
+                    'image': "/images/landing/blog/blogBackground.png",
                 },
-                2: {
-                    'title': <>{""}</>,
-                    'copy': <>{""}</>,
-                    'cta': <>{""}</>
+                1: {
+                    'title': <>{"Actualidad del cannabis "}<span className={"font-semibold"}>{"en la salud"}</span></>,
+                    'copy': <>{"Obtén información de "}<span className={"font-bold"}>Clinicannabis</span>{" enviada directamente a tu correo."}</>,
+                    'cta': <>{"Suscríbete"}</>,
+                    'image': "/images/landing/blog/updatedBg.png",
+
                 },
                 3: {
                     'title': <>{""}</>,
                     'copy': <>{""}</>,
-                    'cta': <>{""}</>
+                    'cta': <>{""}</>,
+                    'image': "/images/landing/blog/blogBackground.png",
                 },
             },
             'headline': <>{"Blog "}</>,
