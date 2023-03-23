@@ -180,6 +180,21 @@ module.exports = {
                     '50%': {transform: 'translateY(5px)'},
                     '100%': {transform: 'translateY(0px)'},
                 },
+                'shake-bottom': {
+                    '0%, 100%' : {transform: 'rotate(0deg)', transformOrigin: '50% 100%'},
+                    '10%' : {transform: 'rotate(2deg)'},
+                    '20%, 40%, 60%' : {transform: 'rotate(-4deg)'},
+                    '30%, 50%, 70%': {transform: 'rotate(4deg)'},
+                    '80%': {transform: 'rotate(-2deg)'},
+                    '90%' : {transform: 'rotate(2deg)'},
+                },
+                'heartbeat' : {
+                    '0%, 100%': {transform: 'scale(1)', animationTimingFunction: 'ease-out', transformOrigin: 'center center'},
+                    '10%': {transform: 'scale(0.91)', animationTimingFunction: 'ease-in'},
+                    '17%': {transform: 'scale(0.98)', animationTimingFunction: 'ease-out'},
+                    '33%': {transform: 'scale(0.87)', animationTimingFunction: 'ease-in'},
+                    '45%': {transform: 'scale(1)', animationTimingFunction: 'ease-out'},
+                },
             },
             animation: {
                 'fade-in-top': 'fade-in-top 0.8s cubic-bezier(0.770, 0.000, 0.175, 1.000) 1 forwards',
@@ -195,6 +210,8 @@ module.exports = {
                 'bg-pan-right': 'bg-pan-right 8s linear infinite forwards',
                 'float-up-sm' : 'float-up-sm 8s ease-in-out infinite forwards',
                 'float-down-sm' : 'float-down-sm 8s ease-in-out infinite forwards',
+                'shake-bottom': 'shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) forwards infinite',
+                'heartbeat': 'heartbeat 8s ease-in-out infinite forwards',
             }
         },
     },

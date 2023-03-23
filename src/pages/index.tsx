@@ -12,6 +12,7 @@ import {Numbers} from "../components/content/index/Numbers";
 import {Experience} from "../components/content/index/Experience";
 import {Blog} from "../components/content/index/Blog";
 import NavbarContext from "../context/Navbar/NavbarContext";
+import {Invima} from "../components/content/index/Invima";
 
 
 const Home: NextPage = () => {
@@ -72,6 +73,7 @@ const Home: NextPage = () => {
             <Values/>
             <Experience/>
             <Numbers />
+            <Invima/>
             <Blog />
             <Footer/>
         </main>
