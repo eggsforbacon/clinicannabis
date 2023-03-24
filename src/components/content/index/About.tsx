@@ -44,10 +44,10 @@ export const About = () => {
                    className={`hidden lg:block lg:!opacity-40 xl:!opacity-100 absolute pointer-events-none -top-10 -right-0 selection:bg-transparent ${animation}`}
                    alt={""}
                    height={1055*1.4} width={1920*1.4} quality={100} loading={"lazy"}/>
-            <Image src={"/images/svg/leafHumanizing.svg"}
-                   className={"hidden lg:block z-0 pointer-events-none absolute selection:bg-transparent left-0 top-0 opacity-40"}
-                   alt={""}
-                   height={1000} width={1000}/>
+            {/*<Image src={"/images/svg/leafHumanizing.svg"}*/}
+            {/*       className={"hidden lg:block z-0 pointer-events-none absolute selection:bg-transparent left-0 top-0 opacity-40"}*/}
+            {/*       alt={""}*/}
+            {/*       height={1000} width={1000}/>*/}
             <section className={"z-10 px-12 lg:px-0 w-full flex items-center justify-between mb-20"}>
                 <article className={"lg:w-136 flex flex-col items-start justify-start pt-16 gap-8 lg:gap-16"}>
                     <h2 className={` tracking-tight max-w-[22rem] leading-[0.8] lg:leading-[0.6] text-caribbean-green text-6xl lg:text-9xl font-black ${animation} animation-duration-1000`}>{strings.landing.about.headline}<strong

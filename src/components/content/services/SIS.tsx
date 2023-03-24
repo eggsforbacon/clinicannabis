@@ -1,16 +1,24 @@
 import Image from "next/image";
 import {strings} from "../../../model/strings";
+import React from "react";
 
 export const SIS = () => {
+
+    const buttonStyle: string = "hidden mt-12 lg:block text-3xl rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-10 py-2 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
+
     return (
-        <article className={"relative h-[40rem] lg:h-224 z-0"} id={"sis"}>
+        <article className={"relative h-[40rem] lg:h-192 z-0"} id={"sis"}>
             <Image src={"/images/services/service2.png"} className={"absolute scale-[3] lg:scale-100 select-none top-36 lg:-top-28 -left-36 lg:left-0"} alt={""} width={1920}
-                   height={1151}/>
+                   height={1151} quality={100} loading={"lazy"}/>
             <span className={"absolute lg:hidden w-screen bg-gradient-to-b from-white via-white/50 -top-28 left-0 h-96"}/>
-            <section className={"px-6 lg:px-0 relative lg:absolute lg:w-168 lg:mt-32 lg:ml-56 flex flex-col justify-start items-start gap-4"}>
-                <h2 className={"text-6xl lg:text-8xl font-black text-midnight-green leading-[0.8]"}>{strings.services.sections["2"].headline}<strong className={"text-7xl lg:text-9xl text-caribbean-green"}>{strings.services.sections["2"].remark}</strong></h2>
+            <span className={"lg:hidden w-screen h-64 bg-gradient-to-t from-white via-white/40 absolute bottom-6 left-0"}/>
+            <section className={"px-6 lg:px-0 relative lg:absolute lg:w-168 lg:mt-32 lg:ml-56 flex flex-col justify-start items-start"}>
+                <h2 className={"text-6xl lg:text-8xl font-black text-midnight-green leading-[0.8] lg:leading-[0.75]"}>{strings.services.sections["2"].headline}<strong className={"text-7xl lg:text-9xl text-caribbean-green"}>{strings.services.sections["2"].remark}</strong></h2>
                 <h3 className={"text-2xl lg:text-4xl text-viridian-green"}>{strings.services.sections["2"].subtitle}</h3>
-                <p className={"text-lg lg:text-2xl text-neutral-600"}>{strings.services.sections["2"].content}</p>
+                <p className={"mt-8 text-lg lg:text-2xl text-neutral-600"}>{strings.services.sections["2"].content}</p>
+                <a href={"https://www.instagram.com/p/CqMA67CDUDB/"} target={"_blank"} rel={"noreferrer"} className={buttonStyle}>
+                    {strings.services.sections["5"].cta}
+                </a>
             </section>
         </article>
     );
