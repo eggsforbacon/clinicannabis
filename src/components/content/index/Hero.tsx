@@ -21,7 +21,7 @@ export const Hero = (props: {
         setAnimateHero("lg:opacity-0 lg:translate-y-[100px] lg:animate-fade-in-bottom lg:animation-delay-600");
         setAnimateHeroVideo("lg:w-[80%] md:animate-shrink-to-top-sm lg:animate-shrink-to-half-lg xl:animate-shrink-to-half-xl lg:animation-fill-both");
         setAnimateHeroHeadline("md:animate-expand-to-half");
-        setOpacity("opacity-0 pointer-events-none selection:bg-transparent -z-10 lg:opacity-100 lg:pointer-events-auto lg:z-10");
+        setOpacity("opacity-0 pointer-events-none selection:bg-transparent lg:opacity-100 lg:pointer-events-auto lg:z-10");
     }
 
     const navigate = useRouter();
@@ -29,8 +29,8 @@ export const Hero = (props: {
     const servicesBgs = [
         "bg-[url('/images/hero/1.png')]",
         "bg-[url('/images/hero/2.jpg')]",
-        "bg-[url('/images/hero/3.jpg')]",
-        "bg-[url('/images/hero/4.jpg')]",
+        "bg-[url('/images/hero/3.JPG')]",
+        "bg-[url('/images/hero/4.JPG')]",
     ];
 
     const servicesTitles = [
@@ -93,7 +93,7 @@ export const Hero = (props: {
 
     return (
         <>
-            <header className={`transition duration-500 ease-in-out ${opacity} pt-46 lg:px-44 lg:pt-52 h-screen md:h-208 lg:h-192 absolute lg:relative z-50 lg:z-10 bg-white flex items-start justify-center overflow-x-clip`}>
+            <header className={`transition-opacity duration-700 ease-in-out ${opacity} pt-46 lg:px-44 lg:pt-52 h-screen md:h-208 lg:h-192 absolute lg:relative z-50 lg:z-10 bg-white flex items-start justify-center overflow-x-clip`}>
                 <section className={"lg:hidden aspect-square absolute -top-52 -left-52 opacity-70 h-168 w-168 z-40"}>
                     <div className={"absolute bg-white h-136 aspect-square rounded-full bg-gradient-radial from-caribbean-green via-transparent animate-rotate-blob"}/>
                     <div className={"absolute top-0 left-0 w-full h-full backdrop-blur-[200px]"}/>
