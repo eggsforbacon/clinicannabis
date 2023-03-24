@@ -120,7 +120,7 @@ export const strings: IKeyedObject = {
                     'image': "/images/landing/blog/blogBackground.png",
                 },
                 1: {
-                    'title': <>{"Actualidad del cannabis "}<span className={"font-semibold"}>{"en la salud"}</span></>,
+                    'title': <>{"Actualidad "}<br/><span className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/><span className={"font-normal"}>{"en la salud"}</span></>,
                     'copy': <>{"Obtén información de "}<span className={"font-bold"}>Clinicannabis</span>{" enviada directamente a tu correo."}</>,
                     'cta': <>{"Suscríbete"}</>,
                     'image': "/images/landing/blog/updatedBg.png",

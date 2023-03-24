@@ -10,13 +10,13 @@ export const Blog = () => {
     const navigate = useRouter();
 
     const blogItems = [
-        <BlogSlide  index={"1"} imageClass={"z-0 absolute brightness-[60%] lg:brightness-100 !scale-[4] lg:!scale-[1.35] bottom-64 lg:bottom-auto lg:top-20 right-36 lg:-right-10"}/>,
+        <BlogSlide  index={"1"} imageClass={"z-0 absolute brightness-[60%] lg:brightness-100 !scale-[4] lg:!scale-[1.35] bottom-32 lg:bottom-auto lg:top-20 right-16 lg:-right-10"}/>,
         // <BlogSlide  index={"2"} imageClass={"z-0 absolute !scale-[4] lg:!scale-100 top-10 lg:-top-20 right-36 lg:right-0"}/>,
     ];
 
     return (
-        <article className={"w-full relative overflow-clip lg:min-h-[56rem]"}>
-            <SwiperCarousel items={blogItems} delay={5000} pagination className={"lg:min-h-[56rem] overflow-clip"}/>
+        <article className={"w-full relative overflow-clip"}>
+            <SwiperCarousel items={blogItems} delay={5000} pagination className={"overflow-clip"}/>
         </article>
     );
 }
