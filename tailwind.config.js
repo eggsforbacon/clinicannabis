@@ -214,7 +214,7 @@ module.exports = {
                 'float-up-sm' : 'float-up-sm 8s ease-in-out infinite forwards',
                 'float-down-sm' : 'float-down-sm 8s ease-in-out infinite forwards',
                 'shake-bottom': 'shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) forwards infinite',
-                'heartbeat': 'heartbeat 5s ease-in-out infinite forwards',
+                'heartbeat': 'heartbeat 3s ease-in-out infinite forwards',
             }
         },
     },
