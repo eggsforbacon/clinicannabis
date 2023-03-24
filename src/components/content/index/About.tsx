@@ -43,8 +43,7 @@ export const About = () => {
             <Image src={"/images/landing/whoAreWeBg.png"}
                    className={`hidden lg:block lg:!opacity-40 xl:!opacity-100 absolute pointer-events-none -top-10 -right-0 selection:bg-transparent ${animation}`}
                    alt={""}
-                   height={1055*1.4} width={1920*1.4}/>
-
+                   height={1055*1.4} width={1920*1.4} quality={100} loading={"lazy"}/>
             <Image src={"/images/svg/leafHumanizing.svg"}
                    className={"hidden lg:block z-0 pointer-events-none absolute selection:bg-transparent left-0 top-0 opacity-40"}
                    alt={""}
