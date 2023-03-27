@@ -7,11 +7,11 @@ export const FunctionalMedicine = () => {
     const buttonStyle: string = "w-fit text-xl lg:block text-3xl rounded-full border-solid border-2 border-GO-green text-GO-green lg:border-white lg:text-white font-normal text-base px-8 lg:px-10 py-1.5 lg:py-2 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
 
     return (
-        <article className={"relative z-10 h-144 lg:h-[78rem] flex flex-col justify-end items-start lg:pl-16"}
+        <article className={"relative z-20 h-144 lg:h-[78rem] flex flex-col justify-end items-start lg:pl-16"}
                  id={"functional-medicine"}>
             {/*<span*/}
             {/*    className={"w-full h-2/3 absolute bottom-0 lg:hidden right-0 bg-gradient-to-t from-GO-green/30 via-GO-green/10"}/>*/}
-            <Image className={`absolute select-none -top-4 left-0 hidden lg:block `}
+            <Image className={`absolute select-none -top-6 left-0 hidden lg:block `}
                    src={"/images/services/service4.png"} alt={"Placeholder"} width={1920} height={1465} quality={100}/>
             <section
                 className={"px-8 lg:px-0 lg:mt-64 relative h-full lg:w-208 lg:px-32 flex flex-col justify-start items-start text-rich-black gap-8 lg:gap-44"}>
