@@ -17,8 +17,8 @@ import {
 const Footer = () => {
 
     const linkFamilyStyle: string = "h-full flex flex-col items-stretch justify-start space-y-2";
-    const linkStyle: string = "text-dark-green lg:text-white lg:font-normal transition ease-in-out duration-300 lg:hover:text-caribbean-green focus:text-caribbean-green";
-    const linkButtonStyle : string = "flex items-center justify-start gap-6 bg-green-100 lg:bg-transparent rounded-lg h-16 py-2 px-4 lg:p-0 lg:h-auto";
+    const linkStyle: string = "text-white lg:text-white lg:font-normal transition ease-in-out duration-300 lg:hover:text-caribbean-green focus:text-caribbean-green";
+    const linkButtonStyle : string = "flex items-center justify-start border-solid border-2 border-green-sheen lg:border-none gap-6 rounded-lg h-16 py-2 px-4 lg:p-0 lg:h-auto";
 
     return (
         <>
@@ -41,15 +41,15 @@ const Footer = () => {
                                     <p className={"text-lg lg:text-xl font-light"}>{strings.footer.questions.invitation}</p>
                                 </div>
                                 <Link href={"https://wa.me/+573174834360"} className={linkButtonStyle}>
-                                    <Whatsapp className={"lg:fill-white fill-midnight-green h-full"} size={22}/>
+                                    <Whatsapp className={"lg:fill-white fill-green/sheen h-full"} size={22}/>
                                     <p className={linkStyle}>{strings.footer.questions.phone}</p>
                                 </Link>
                                 <Link href={"mailto:info@clinicannabis.com.co"} className={linkButtonStyle}>
-                                    <Envelope className={"lg:fill-white fill-midnight-green h-full"} size={22}/>
+                                    <Envelope className={"lg:fill-white fill-green/sheen h-full"} size={22}/>
                                     <p className={linkStyle}>{strings.footer.questions.email}</p>
                                 </Link>
                                 <Link href={"https://goo.gl/maps/WXLy4un1udeGgoc9A"} className={linkButtonStyle}>
-                                    <GeoAlt className={"lg:fill-white fill-midnight-green h-full"} size={22}/>
+                                    <GeoAlt className={"lg:fill-white fill-green/sheen h-full"} size={22}/>
                                     <p className={linkStyle}>{strings.footer.questions.address}<br/>{strings.footer.questions.addressScript}</p>
                                 </Link>
                             </section>

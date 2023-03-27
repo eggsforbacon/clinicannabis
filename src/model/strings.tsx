@@ -149,23 +149,27 @@ export const strings: IKeyedObject = {
                 'remark': <>{"medicinal"}</>,
                 'subtitle': <>{"Dolor crónico y otras patologías"}</>,
                 'content': <>{"Aplicamos protocolos de medicina cannábica enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obteniendo mejoras en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
+                'cta': <>{"Conócelo"}</>,
             },
             2: {
                 'headline': <>{"Sistema Súper "}</>,
                 'remark': <>{"Inductivo"}</>,
                 'subtitle': <>{"Innovación tecnológica"}</>,
                 'content': <>{"Como pioneros en el Valle del Cauca, nuestro equipo médico está a la vanguardia en la tecnología biomédica que, haciendo uso del Sistema Súper Inductivo, permite diagnosticar de manera no invasiva e indolora a nuestros pacientes, logrando tratar enfermedades neuromusculares, osteoarticulares, lesiones deportivas, recuperación postquirúrgica, alivio del dolor y rehabilitación respiratoria."}</>,
+                'cta': <>{"Conócelo"}</>,
             },
             3: {
                 'headline': <>{"Sueros terapéuticos"}</>,
                 'subtitle': <>{"Regeneración y depuración"}</>,
-                'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. ¡Hay uno elaborado especialmente para ti!"}</>,
+                'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. "}</>,
+                'remark': <>{"¡Hay uno elaborado especialmente para ti!"}</>,
             },
             4: {
                 'headline': <>{"Medicina "}</>,
                 'remark': <>{"Funcional"}</>,
                 'subtitle': <>{"Atención integral"}</>,
                 'content': <>{"Evaluamos a cada uno de nuestros pacientes. Nos enfocamos en tus necesidades de salud y bienestar, e identificamos los factores que puedan alterar tu calidad de vida."}</>,
+                'cta': <>{"Conócela"}</>,
             },
             5: {
                 'headline': <>{"Centro de Experiencia"}</>,
