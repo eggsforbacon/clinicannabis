@@ -8,6 +8,7 @@ import {GoogleMap, useLoadScript, Marker} from "@react-google-maps/api";
 import {Map} from "../components/content/contact/Map";
 import {ContactForm} from "../components/content/contact/ContactForm";
 import {GoogleReCaptchaProvider} from "react-google-recaptcha-v3";
+import Image from "next/image";
 
 const Contact: NextPage = () => {
 
@@ -30,11 +31,12 @@ const Contact: NextPage = () => {
                     <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
                 </Head>
                 <Navbar selection={"contact"}/>
-                <article className={"flex items-center justify-center"}>
+                <article className={"flex items-center justify-center relative pt-16"}>
+                    <Image src={"/images/contact/background.png"} alt={""} quality={100} width={1920} height={1080} className={"absolute z-0 top-0 left-0"}/>
                     <section
-                        className={"z-10 p-16 flex items-center justify-around w-full rounded-2xl shadow-lg bg-neutral-50 h-256 mx-16 mt-8 mb-32"}>
+                        className={"z-10 p-16 flex items-center justify-around w-full rounded-2xl h-256 backdrop-blur-sm"}>
                         <ContactForm/>
-                        <Map/>
+                        {/*<Map/>*/}
                     </section>
                 </article>
                 <Footer/>
