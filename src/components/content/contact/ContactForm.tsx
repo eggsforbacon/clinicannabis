@@ -29,11 +29,11 @@ export const ContactForm = () => {
     }
 
     return (
-        <form className={"w-192 h-full flex flex-col justify-start items-center py-10 gap-14 px-8"} onSubmit={handleSubmit}>
+        <form className={"w-full lg:w-192 h-full flex flex-col justify-start items-center py-8 gap-8 lg:gap-14 lg:px-8"} onSubmit={handleSubmit}>
             <Input type={"text"} required label={"Tu nombre"} color={"viridian-green"} name={"ctName"} icon={<Person className={"p-3 w-14 h-full"} />} />
             <Input type={"email"} required label={"Tu correo"} color={"viridian-green"} name={"ctEmail"} icon={<Envelope className={"p-3 w-14 h-full"} />} />
             <Input type={"area"} required label={"¿Cómo podemos ayudarte?"} color={"viridian-green"} name={"ctMessage"} />
-            <input type={"submit"} className={"px-16 py-2 text-2xl text-white border-solid border-2 border-white rounded-full shadow-md transition duration-500 ease-in-out hover:cursor-pointer lg:hover:border-viridian-green focus:border-viridian-green lg:hover:bg-viridian-green focus:bg-viridian-green lg:hover:text-white focus:text-white lg:hover:-translate-y-2 focus:-translate-y-2"} value={"Enviar"}/>
+            <input type={"submit"} className={"px-12 py-2 text-lg lg:text-2xl text-white border-solid border-2 border-white rounded-full shadow-md transition duration-500 ease-in-out hover:cursor-pointer lg:hover:border-viridian-green focus:border-viridian-green lg:hover:bg-viridian-green focus:bg-viridian-green lg:hover:text-white focus:text-white lg:hover:-translate-y-2 focus:-translate-y-2"} value={"Enviar"}/>
         </form>
     );
 }

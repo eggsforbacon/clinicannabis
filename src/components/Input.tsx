@@ -32,21 +32,21 @@ export const Input = (
 
 
     return props.type === "area" ? (
-        <div>
+        <div className={"w-full lg:w-128"}>
             <label htmlFor={props.name}
                    className={`bg-transparent transition duration-700 ease-in-out ${isFocused ? color : deselectedColor} text-base `}>{props.label}</label>
             <div tabIndex={1} onFocus={handleFocusIn} onBlur={handleFocusOut}
-                 className={`w-128 relative flex items-center justify-center h-64 border-solid border-2  ${isFocused ? color : deselectedColor} rounded-lg transition duration-700 ease-in-out`}>
+                 className={`w-full lg:w-128 relative flex items-center justify-center h-64 border-solid border-2  ${isFocused ? color : deselectedColor} rounded-lg transition duration-700 ease-in-out`}>
                 <textarea {...props}
                           className={"px-4 resize-none w-full h-full bg-transparent border-transparent focus:border-none focus:ring-transparent focus:outline-none"}/>
             </div>
         </div>
     ) : (
-        <div>
+        <div className={"w-full lg:w-128"}>
             <label htmlFor={props.name}
                    className={`bg-transparent transition duration-700 ease-in-out ${isFocused ? color : deselectedColor} text-base `}>{props.label}</label>
             <div tabIndex={1} onFocus={handleFocusIn} onBlur={handleFocusOut}
-                 className={`w-128 relative flex items-center justify-center h-14 border-solid border-2 ${isFocused ? color : deselectedColor} rounded-lg transition duration-700 ease-in-out`}>
+                 className={`w-full lg:w-128 relative flex items-center justify-center h-14 border-solid border-2 ${isFocused ? color : deselectedColor} rounded-lg transition duration-700 ease-in-out`}>
                 {props.icon || <div className={"p-3 w-14 h-full"}/>}
                 <input {...props}
                        className={"px-1 w-full h-full bg-transparent border-transparent focus:border-none focus:ring-transparent focus:outline-none"}/>
