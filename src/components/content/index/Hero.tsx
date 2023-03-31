@@ -11,8 +11,8 @@ export const Hero = (props: {
     hasWindow: boolean
 }) => {
     const [animateHero, setAnimateHero] = useState("lg:opacity-0 translate-y-[100px]");
-    const [animateHeroVideo, setAnimateHeroVideo] = useState("lg:w-[80%]");
-    const [animateHeroHeadline, setAnimateHeroHeadline] = useState("lg:w-0 opacity-0 pointer-events-none");
+    const [animateHeroVideo, setAnimateHeroVideo] = useState("lg:!w-[80%]");
+    const [animateHeroHeadline, setAnimateHeroHeadline] = useState("lg:hidden lg:w-0 opacity-0 pointer-events-none");
     const [opacity, setOpacity] = useState("opacity-100");
     const loaded = props.hasWindow && sessionStorage.getItem("loaded");
     const [hasLoaded, setHasLoaded] = useState(loaded !== null && loaded === "true");
@@ -21,10 +21,11 @@ export const Hero = (props: {
     const handleOnEnded = (e: React.SyntheticEvent<HTMLVideoElement>) => {
         e.preventDefault();
         setAnimateHero("lg:opacity-0 lg:translate-y-[100px] lg:animate-fade-in-bottom lg:animation-delay-600");
-        setAnimateHeroVideo("lg:w-[80%] md:animate-shrink-to-top-sm lg:animate-shrink-to-half-lg xl:animate-shrink-to-half-xl lg:animation-fill-both");
-        setAnimateHeroHeadline("md:animate-expand-to-half");
+        setAnimateHeroVideo("lg:!w-[80%] md:animate-shrink-to-top-sm lg:animate-shrink-to-half-lg xl:animate-shrink-to-half-xl lg:animation-fill-both");
+        setAnimateHeroHeadline("flex md:animate-expand-to-half");
         setOpacity("opacity-0 pointer-events-none selection:bg-transparent lg:opacity-100 lg:pointer-events-auto lg:z-10");
         sessionStorage.setItem("loaded", "true");
+        setHasLoaded(true);
     }
 
     const navigate = useRouter();
@@ -128,6 +129,12 @@ export const Hero = (props: {
                 </section>
                 <section
                     className={`${!hasLoaded ? "" : "max-lg:hidden"} relative h-full bg-white z-50 lg:z-auto flex justify-center items-center overflow-clip ${animateHeroVideo}`}>
+                    <section
+                        className={"lg:hidden aspect-square absolute -top-52 -left-52 opacity-70 h-168 lg:w-0 lg:h-0 w-168"}>
+                        <div
+                            className={"absolute bg-white h-136 aspect-square rounded-full bg-gradient-radial from-caribbean-green via-transparent animate-rotate-blob"}/>
+                        <div className={"absolute top-0 left-0 w-full h-full backdrop-blur-[200px]"}/>
+                    </section>
                     {props.hasWindow &&
                         <video height={1080 * 1.8} width={1920 * 1.8} muted playsInline autoPlay
                                className={"scale-[1.5] lg:scale-[1.75] xl:scale-[1.25]"}
@@ -137,12 +144,6 @@ export const Hero = (props: {
                                     type={"video/mp4"}/>
                             Your browser does not support the video tag.
                         </video>}
-                    <section
-                        className={"lg:hidden aspect-square absolute -top-52 -left-52 opacity-70 h-168 w-168 z-40"}>
-                        <div
-                            className={"absolute bg-white h-136 aspect-square rounded-full bg-gradient-radial from-caribbean-green via-transparent animate-rotate-blob"}/>
-                        <div className={"absolute top-0 left-0 w-full h-full backdrop-blur-[200px]"}/>
-                    </section>
                 </section>
             </header>
             {pickServiceDisplay()}
