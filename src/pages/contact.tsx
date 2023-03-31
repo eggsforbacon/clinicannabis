@@ -4,12 +4,11 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import {strings} from "../model/strings";
 import React from "react";
-import {GoogleMap, useLoadScript, Marker} from "@react-google-maps/api";
-import {Map} from "../components/content/contact/Map";
 import {ContactForm} from "../components/content/contact/ContactForm";
 import {GoogleReCaptchaProvider} from "react-google-recaptcha-v3";
 import Image from "next/image";
 import Link from "next/link";
+import bgImage from "./../../public/images/contact/background.png";
 
 const Contact: NextPage = () => {
 
@@ -33,7 +32,7 @@ const Contact: NextPage = () => {
                 </Head>
                 <Navbar selection={"contact"} />
                 <article className={"flex items-center justify-center relative pt-16"}>
-                    <Image src={"/images/contact/background.png"} alt={""} quality={100} width={1920} height={1080}
+                    <Image src={bgImage} alt={""} quality={100} loading={"lazy"} placeholder={"blur"}
                            className={"brightness-[45%] scale-[5] lg:scale-100 absolute z-0 top-1/3 -left-10 lg:top-0 lg:left-0"}/>
                     <section
                         className={"z-10 pt-16 lg:py-16 px-8 lg:px-32 flex flex-col lg:flex-row items-center justify-between w-full"}>

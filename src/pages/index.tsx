@@ -39,20 +39,6 @@ const Home: NextPage = () => {
         }
         setLogoShown(false);
 
-        const navbarTrigger = navbarLogoRef.current as unknown as HTMLSpanElement;
-        const observe = (trigger: HTMLSpanElement, callback: (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => void) => {
-            const observer = new IntersectionObserver(callback);
-            observer.observe(trigger as Element);
-        }
-
-        function navbarCallback(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
-            observer.observe(navbarTrigger);
-            const entry = entries[0];
-            setLogoShown(entry.isIntersecting);
-        }
-
-        // observe(navbarTrigger, navbarCallback);
-
     }, []);
 
     const navigate = useRouter();
