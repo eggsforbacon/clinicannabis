@@ -223,7 +223,8 @@ export const strings: IKeyedObject = {
         "cta": <>{"Nuestra Clínica"}</>,
     },
     'contact': {
-        "headline": <>{""}</>,
+        "headline": <>{"¡Contáctanos!"}</>,
+        "copy": <>{"Suscríbete a nuestro boletín y recibe las actualizaciones que tenemos para ti."}</>,
         "fields": {
             "name": <>{"Tu nombre"}</>,
             "mail": <>{"Tu correo"}</>,

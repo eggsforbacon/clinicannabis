@@ -141,7 +141,7 @@ const Navbar = (
 
     return (
             <nav
-                className={`z-50 fixed transition duration-700 ease-in-out ${show ? "lg:bg-white lg:opacity-100" : "bg-transparent border-transparent lg:opacity-0 lg:bg-white lg:hover:opacity-100"} font-black text-dark-green flex flex-col lg:flex-row items-center justify-between lg:border-transparent lg:border-solid lg:border-2 lg:border-b-neutral-300 h-[5.5rem] lg:h-fit w-full lg:px-24`}>
+                className={`${props.selection !== "contact" ? "block" : "block lg:hidden"} z-50 fixed transition duration-700 ease-in-out ${show ? "lg:bg-white lg:opacity-100" : "bg-transparent border-transparent lg:opacity-0 lg:bg-white lg:hover:opacity-100"} font-black text-dark-green flex flex-col lg:flex-row items-center justify-between lg:border-transparent lg:border-solid lg:border-2 lg:border-b-neutral-300 h-[5.5rem] lg:h-fit w-full lg:px-24`}>
                 <section
                     className={`max-lg:z-20 w-full border-solid border-2 transition duration-700 ease-in-out ${show ? "max-md:bg-white border-none" : "bg-transparent border-none"} lg:border-none p-4 md:px-16 lg:p-0 lg:w-auto h-fit flex items-center justify-between`}>
                     <Image src={"/images/clinicannabis_hr.png"} className={`w-auto h-14 lg:h-24 lg:w-[17.25rem] transition duration-700 ease-in-out ${show ? "opacity-100" : "pointer-events-none selected:bg-transparent opacity-0"} lg:opacity-100`}
@@ -160,7 +160,7 @@ const Navbar = (
                         className={`${mobileExpanded && show ? "max-lg:animate-swing-in-top-fwd" : "max-lg:animate-swing-out-top-bck"} bg-white lg:bg-transparent max-lg:z-10 absolute max-lg:top-0 w-full lg:w-auto border-b-solid border-b-2 border-b-neutral-300 lg:relative lg:border-none lg:border-transparent h-120 pt-36 lg:pt-0 lg:h-fit lg:mt-12 flex flex-col lg:flex-row justify-center lg:justify-end items-center gap-10 py-8 lg:py-0`}>
                         {linkTree()}
                     </ul>
-                    {(props.selection !== "contact" && props.context !== "shop") &&
+                    {props.context !== "shop" &&
                         <a className={buttonStyle} href={"https://wa.me/+573174834360"}>
                             {strings.navbar.cta}
                         </a>}
