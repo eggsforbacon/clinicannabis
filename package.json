@@ -16,6 +16,7 @@
     "react-dom": "18.2.0",
     "react-google-recaptcha-v3": "^1.10.1",
     "react-localization": "^1.0.19",
+    "sharp": "^0.32.0",
     "tailwindcss-animation": "^0.1.2",
     "tailwindcss-animation-delay": "^1.0.7"
   },
