@@ -110,7 +110,7 @@ export const Hero = (props: {
     return (
         <>
             <header
-                className={`transition-opacity duration-700 ease-in-out ${opacity} pt-46 lg:px-44 lg:pt-52 h-screen md:h-208 lg:h-192 absolute lg:relative z-50 lg:z-10 bg-white flex items-start justify-center overflow-x-clip`}>
+                className={`transition-opacity duration-700 ease-in-out ${opacity} pt-46 lg:px-44 lg:pt-52 h-screen md:h-208 lg:h-192 fixed lg:relative z-50 lg:z-10 bg-white flex items-start justify-center overflow-x-clip`}>
                 <section
                     className={`absolute h-full w-full lg:w-auto lg:h-auto z-10 lg:relative flex items-center justify-around ${animateHeroHeadline}`}>
                     <article
@@ -129,21 +129,21 @@ export const Hero = (props: {
                 </section>
                 <section
                     className={`${!hasLoaded ? "" : "max-lg:hidden"} relative h-full bg-white z-50 lg:z-auto flex justify-center items-center overflow-clip ${animateHeroVideo}`}>
+                    {props.hasWindow &&
+                        <video height={1080 * 1.8} width={1920 * 1.8} muted playsInline autoPlay controls={false}
+                               className={"scale-[1.5] lg:scale-[1.75] xl:scale-[1.25]"}
+                               onEnded={handleOnEnded}
+                               onCanPlay={beforePlay}>
+                            <source src={"/video/ClinicannabisAnimation.mp4"}
+                                    type={"video/mp4"}/>
+                            Your browser does not support the video tag.
+                        </video>}
                     <section
                         className={"lg:hidden aspect-square absolute -top-52 -left-52 opacity-70 h-168 lg:w-0 lg:h-0 w-168"}>
                         <div
                             className={"absolute bg-white h-136 aspect-square rounded-full bg-gradient-radial from-caribbean-green via-transparent animate-rotate-blob"}/>
                         <div className={"absolute top-0 left-0 w-full h-full backdrop-blur-[200px]"}/>
                     </section>
-                    {props.hasWindow &&
-                        <video height={1080 * 1.8} width={1920 * 1.8} muted playsInline autoPlay
-                               className={"scale-[1.5] lg:scale-[1.75] xl:scale-[1.25]"}
-                               onEnded={handleOnEnded}
-                               onCanPlay={beforePlay}>
-                            <source src={"/video/ClinicannabisAnimation.mp4"} placeholder={"/images/hero/heroHash.png"}
-                                    type={"video/mp4"}/>
-                            Your browser does not support the video tag.
-                        </video>}
                 </section>
             </header>
             {pickServiceDisplay()}

@@ -21,6 +21,11 @@ const Contact: NextPage = () => {
                 appendTo: "head",
                 nonce: undefined,
             }}
+            container={{
+                parameters: {
+                    badge: "inline",
+                }
+            }}
         >
             <main>
                 <Head>
@@ -31,6 +36,9 @@ const Contact: NextPage = () => {
                     <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
                 </Head>
                 <Navbar selection={"contact"} />
+                <Link href={"/"}>
+                    <Image className={"lg:block hidden absolute top-4 left-24 z-50"} src={"/images/svg/clinic_white.svg"} alt={""} width={560*.6} height={560*.6} />
+                </Link>
                 <article className={"flex items-center justify-center relative pt-16"}>
                     <Image src={bgImage} alt={""} quality={100} loading={"lazy"} placeholder={"blur"}
                            className={"brightness-[45%] scale-[5] lg:scale-100 absolute z-0 top-1/3 -left-10 lg:top-0 lg:left-0"}/>
@@ -39,9 +47,6 @@ const Contact: NextPage = () => {
                         <section className={"flex flex-col items-center lg:items-start justify-center gap-8 text-neutral-200 lg:w-112"}>
                             <h1 className={"font-black text-white text-5xl lg:text-8xl"}>{strings.contact.headline}</h1>
                             <p className={"text-center lg:text-left text-xl lg:text-3xl font-normal"}>{strings.contact.copy}</p>
-                            <Link href={"/"}>
-                                <Image className={"hidden lg:block -ml-12"} src={"/images/svg/clinic_white.svg"} alt={""} width={560} height={560} />
-                            </Link>
                         </section>
                         <ContactForm/>
                         {/*<Map/>*/}

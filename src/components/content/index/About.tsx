@@ -9,7 +9,7 @@ export const About = () => {
 
     const hereRef = useRef(null);
     const triggerRef = useRef(null);
-    const [animation, setAnimation] = useState("opacity-0 -translate-x-[100px]");
+    const [animation, setAnimation] = useState("opacity-0 translate-y-[100px]");
     const {setLogoShown, logoShown} = useContext(NavbarContext);
 
     useEffect(() => {
@@ -41,7 +41,7 @@ export const About = () => {
         <article
                  className={"relative lg:px-44 pt-16 lg:pt-32 h-[36rem] lg:min-h-[56rem] lg:h-auto w-full flex items-start justify-center"}>
             <Image src={"/images/landing/whoAreWeBg.png"}
-                   className={`hidden lg:block lg:!opacity-40 xl:!opacity-100 absolute pointer-events-none -top-10 -right-0 selection:bg-transparent ${animation}`}
+                   className={`hidden lg:block absolute pointer-events-none -top-10 right-0 selection:bg-transparent ${animation}`}
                    alt={""}
                    height={1055*1.4} width={1920*1.4} quality={80} loading={"lazy"}/>
             {/*<Image src={"/images/svg/leafHumanizing.svg"}*/}
@@ -60,7 +60,7 @@ export const About = () => {
                 </article>
             </section>
             <span ref={triggerRef}
-                  className={"absolute top-96 w-full h-1 bg-transparent pointer-events-none selection:bg-transparent"}/>
+                  className={"absolute top-72 w-full h-1 bg-transparent pointer-events-none selection:bg-transparent"}/>
         </article>
     );
 }
