@@ -163,6 +163,7 @@ export const strings: IKeyedObject = {
                 'subtitle': <>{"Regeneración y depuración"}</>,
                 'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. "}</>,
                 'remark': <>{"¡Hay uno elaborado especialmente para ti!"}</>,
+                'cta': <>{"Conócelos"}</>,
             },
             4: {
                 'headline': <>{"Medicina "}</>,
@@ -177,7 +178,37 @@ export const strings: IKeyedObject = {
                 'content': <>{"En Clinicannabis encontrarás complementos ideales para tu tratamiento y mejoramiento de calidad vida. Te ofrecemos una experiencia de bienestar donde productos derivados del cannabis, experiencias holísticas y de crecimiento personal, promueven el cuidado complemento de tu salud."}</>,
                 'cta': <>{"Conócelo"}</>,
             }
-        }
+        },
+        'serums' : {
+          'headline': <>{"Nuestros "}</>,
+          'remark': <>{"sueros"}</>,
+          'items': {
+              1 : {
+                  'name': <>{"Afrodita"}</>,
+                  'function': <>{"Función sexual, hormonas femeninas"}</>,
+                  'descriptions': {
+                      'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                      'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                  }
+              },
+              2: {
+                  'name': <>{"Poseidón"}</>,
+                  'function': <>{"Función sexual, hormonas masculinas"}</>,
+                  'descriptions': {
+                      'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                      'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                  }
+              },
+              3: {
+                  'name': <>{"Perseo"}</>,
+                  'function': <>{"Resaca"}</>,
+                  'descriptions': {
+                      'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                      'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                  }
+              },
+          },
+        },
     },
     'experience': {
         'hero': {

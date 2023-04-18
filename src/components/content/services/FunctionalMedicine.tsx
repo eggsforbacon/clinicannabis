@@ -14,7 +14,7 @@ export const FunctionalMedicine = () => {
             <Image className={`absolute select-none -top-6 left-0 hidden lg:block `}
                    src={"/images/services/service4.png"} alt={"Placeholder"} width={1920} height={1465} quality={100}/>
             <section
-                className={"px-8 lg:px-0 lg:mt-64 relative h-full lg:w-208 lg:px-32 flex flex-col justify-start items-start text-rich-black gap-8 lg:gap-44"}>
+                className={"px-8 lg:mt-64 relative h-full lg:w-208 lg:px-32 flex flex-col justify-start items-start text-rich-black gap-8 lg:gap-44"}>
                 <section className={"flex flex-col lg:gap-4"}>
                     <h2 className={"text-6xl lg:text-[7rem] font-black lg:tracking-wide tracking-normal mb-4 leading-[0.65] lg:leading-[0.7]"}>{strings.services.sections["4"].headline}<strong
                         className={"text-caribbean-green text-7xl lg:text-[9rem]"}>{strings.services.sections["4"].remark}</strong>

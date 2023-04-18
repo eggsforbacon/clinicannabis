@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const ServiceCard = (
     props: {
-        name : string,
+        name : string | JSX.Element,
         url : string,
         to : string,
         interaction : string,

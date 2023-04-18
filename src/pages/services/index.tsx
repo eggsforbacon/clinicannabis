@@ -1,16 +1,16 @@
 import {NextPage} from "next";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import {MedicalCannabis} from "../components/content/services/MedicalCannabis";
-import {SIS} from "../components/content/services/SIS";
-import {Serums} from "../components/content/services/Serums";
-import {FunctionalMedicine} from "../components/content/services/FunctionalMedicine";
-import {Experience} from "../components/content/services/Experience";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import {MedicalCannabis} from "../../components/content/services/MedicalCannabis";
+import {SIS} from "../../components/content/services/SIS";
+import {Serums} from "../../components/content/services/Serums";
+import {FunctionalMedicine} from "../../components/content/services/FunctionalMedicine";
+import {Experience} from "../../components/content/services/Experience";
 import Head from "next/head";
 import React from "react";
-import {Hero} from "../components/content/services/Hero";
+import {Hero} from "../../components/content/services/Hero";
 
-const Services : NextPage = () => {
+const Index : NextPage = () => {
     return (
         <main className="w-full min-h-screen overflow-x-clip">
             <Head>
@@ -32,4 +32,4 @@ const Services : NextPage = () => {
     );
 }
 
-export default Services;
+export default Index;

@@ -2673,6 +2673,14 @@ react-localization@^1.0.19:
   dependencies:
     localized-strings "^0.2.0"
 
+react-material-symbols@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.npmjs.org/react-material-symbols/-/react-material-symbols-4.0.2.tgz"
+  integrity sha512-DzBR39exUi5bQYzUj1vq61smZa/Io9TcGv3ga99NTqKWMgkbNNnPx1LLxlX3aSDiSFUJZMVvX7IMWBxeSy0RuQ==
+  dependencies:
+    react "^18.2.0"
+    react-dom "^18.2.0"
+
 react-player@^2.11.0:
   version "2.11.0"
   resolved "https://registry.npmjs.org/react-player/-/react-player-2.11.0.tgz"

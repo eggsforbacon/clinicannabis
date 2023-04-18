@@ -17,7 +17,7 @@ export const Hero = (props: {
     const loaded = props.hasWindow && sessionStorage.getItem("loaded");
     const [hasLoaded, setHasLoaded] = useState(loaded !== null && loaded === "true");
     const serviceImageStyle = "absolute inset-0 bg-cover bg-center bg-no-repeat h-full w-full";
-    const linkStyle = "lg:text-transparent flex flex-col gap-4 items-center justify-center relative z-10 w-full h-full lg:bg-transparent transition duration-300 lg:hover:text-white text-white lg:focus:text-white lg:hover:bg-black/70 lg:hover:cursor-pointer lg:focus:bg-black/25 bg-black/60";
+    const linkStyle = "lg:text-transparent flex flex-col text-center gap-4 items-center justify-center relative z-10 w-full h-full lg:bg-transparent transition duration-300 lg:hover:text-white text-[1.75rem] leading-[1] text-white lg:focus:text-white lg:hover:bg-dark-green/70 lg:hover:cursor-pointer lg:focus:bg-black/25 bg-black/60";
     const handleOnEnded = (e: React.SyntheticEvent<HTMLVideoElement>) => {
         e.preventDefault();
         setAnimateHero("lg:opacity-0 lg:translate-y-[100px] lg:animate-fade-in-bottom lg:animation-delay-600");
@@ -37,9 +37,13 @@ export const Hero = (props: {
         "bg-[url('/images/hero/4.webp')]",
     ];
 
+    // const servicesTitles = [
+    //     <>{"Cannabis"}<br/>{"Medicinal"}</>, <>{"Medicina"}<br/>{"Funcional"}</>, <>{"Sueros"}<br/>{"Terapéuticos"}</>, <>{"Sistema"}<br/>{"Súper Inductivo"}</>
+    // ];
+
     const servicesTitles = [
-        "Cannabis Medicinal", "Medicina Funcional", "Sueros Terapéuticos", "Sistema Súper Inductivo"
-    ];
+        "Cannabis Medicinal", "Medicina Funcional", "Sueros Terapéuticos", <>{"Sistema"}<br/>{"Súper Inductivo"}</>
+    ]
 
     const serviceLinks = [
         "/services#medicinal-cannabis",
