@@ -2,6 +2,8 @@ import {NextPage} from "next";
 import Navbar from "../components/Navbar";
 import {Link as ScrollLink} from "react-scroll/modules";
 import {strings} from "../model/strings";
+import Head from "next/head";
+import React from "react";
 
 const Legal: NextPage = () => {
 
@@ -14,6 +16,13 @@ const Legal: NextPage = () => {
     const lih3 = "text-xl font-bold uppercase my-4";
     return (
         <main>
+            <Head>
+                <title>Tratamiento de Datos</title>
+                <link rel="icon" href="/favicon.ico"/>
+                {/*<meta name={"description"}*/}
+                {/*      content={""}/>*/}
+                <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
+            </Head>
             <Navbar selection={""}/>
             <section className={"md:ml-8 w-full"}>
                 <article className={"flex flex-col items-center space-y-16 py-52"}>
@@ -67,7 +76,8 @@ const Legal: NextPage = () => {
                                 <p className={pStyle}>{content.liable.post}</p>
                                 <li className={lih2} id={"definitions"}><h2>{navigation.definitions.title}</h2></li>
                                 <ul className={"list-disc ml-10 flex flex-col items-start justify-start gap-3"}>
-                                    <li className={"mt-4"}><strong>{navigation.definitions.auth}:</strong> {content.definitions.auth}</li>
+                                    <li className={"mt-4"}>
+                                        <strong>{navigation.definitions.auth}:</strong> {content.definitions.auth}</li>
                                     <li>
                                         <strong>{navigation.definitions.database}:</strong> {content.definitions.database}
                                     </li>
@@ -194,15 +204,20 @@ const Legal: NextPage = () => {
                                     </ol>
                                     <li className={lih3}><h3>{navigation.elaboration.procedures.title}</h3></li>
                                     <ol className={"ml-5"}>
-                                        <li><h4 className={"text-xl font-bold"}>{navigation.elaboration.procedures.questions}</h4></li>
+                                        <li><h4
+                                            className={"text-xl font-bold"}>{navigation.elaboration.procedures.questions}</h4>
+                                        </li>
                                         <p className={"mt-4 mb-3"}>{content.elaboration.procedures.questions}</p>
-                                        <li><h4 className={"text-xl font-bold"}>{navigation.elaboration.procedures.demands}</h4></li>
+                                        <li><h4
+                                            className={"text-xl font-bold"}>{navigation.elaboration.procedures.demands}</h4>
+                                        </li>
                                         <section className={"flex flex-col items-start justify-start gap-3 mt-4"}>
                                             {Object.values(content.elaboration.procedures.demands).map((s, index) => {
                                                 return <p key={`p${index}`}>{s as unknown as JSX.Element}</p>
                                             })}
                                         </section>
-                                        <p className={"mt-4 mb-3"}><strong>NOTA: </strong>{content.elaboration.procedures.note}</p>
+                                        <p className={"mt-4 mb-3"}>
+                                            <strong>NOTA: </strong>{content.elaboration.procedures.note}</p>
                                     </ol>
                                     <li className={lih3}><h3>{navigation.elaboration.validity}</h3></li>
                                     <section className={"flex flex-col items-start justify-start gap-3 mt-4"}>
@@ -214,7 +229,8 @@ const Legal: NextPage = () => {
                                     <p className={"mt-4 mb-3"}>{content.elaboration.channels.intro}</p>
                                     <ul className={"ml-4 dashed flex flex-col items-start justify-start gap-3"}>
                                         {Object.values(content.elaboration.channels).map((c, index) => {
-                                            if (index !== 0) return <li key={`channel${index}`}>{c as unknown as JSX.Element}</li>
+                                            if (index !== 0) return <li
+                                                key={`channel${index}`}>{c as unknown as JSX.Element}</li>
                                         })}
                                     </ul>
                                 </ol>
