@@ -53,7 +53,7 @@ const Footer = () => {
                                     <p className={linkStyle}>{strings.footer.questions.address}<br/>{strings.footer.questions.addressScript}</p>
                                 </Link>
                             </section>
-                            <section className={"h-full w-full flex flex-col lg:flex-row items-center justify-start gap-10"}>
+                            <section className={"h-full w-full flex flex-col lg:flex-row items-center justify-start gap-10 lg:gap-0"}>
                                 <ul className={"flex flex-col items-stretch justify-start gap-4 h-full lg:mr-10 w-full"}>
                                     <li><h3 className={"text-white text-xl"}>{strings.footer.clinic.headline}</h3></li>
                                     <li><Link href={"/"}
@@ -72,7 +72,7 @@ const Footer = () => {
                                     <li><Link href={"/contact"}
                                               className={`${linkStyle} !text-white font-light text-xl`}>{strings.footer.fast.contact}</Link>
                                     </li>
-                                    <li><Link href={"/legal#data"}
+                                    <li><Link href={"/legal"}
                                               className={`${linkStyle} !text-white font-light text-xl`}>{strings.footer.fast.data}</Link>
                                     </li>
                                     {/*<li><Link href={"/info"} className={`${linkStyle} text-2xl`}>{strings.footer.fast.FAQ}</Link>*/}

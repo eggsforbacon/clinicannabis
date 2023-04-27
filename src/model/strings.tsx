@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface IKeyedObject {
     [key: string]: any
 }
@@ -120,8 +122,11 @@ export const strings: IKeyedObject = {
                     'image': "/images/landing/blog/blogBackground.png",
                 },
                 1: {
-                    'title': <>{"Actualidad "}<br/><span className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/><span className={"font-normal"}>{"en la salud"}</span></>,
-                    'copy': <>{"Obtén información de "}<span className={"font-bold"}>Clinicannabis</span>{" enviada directamente a tu correo."}</>,
+                    'title': <>{"Actualidad "}<br/><span
+                        className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/><span
+                        className={"font-normal"}>{"en la salud"}</span></>,
+                    'copy': <>{"Obtén información de "}<span
+                        className={"font-bold"}>Clinicannabis</span>{" enviada directamente a tu correo."}</>,
                     'cta': <>{"Suscríbete"}</>,
                     'image': "/images/landing/blog/updatedBg.png",
 
@@ -179,35 +184,35 @@ export const strings: IKeyedObject = {
                 'cta': <>{"Conócelo"}</>,
             }
         },
-        'serums' : {
-          'headline': <>{"Nuestros "}</>,
-          'remark': <>{"sueros"}</>,
-          'items': {
-              1 : {
-                  'name': <>{"Afrodita"}</>,
-                  'function': <>{"Función sexual, hormonas femeninas"}</>,
-                  'descriptions': {
-                      'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                      'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                  }
-              },
-              2: {
-                  'name': <>{"Poseidón"}</>,
-                  'function': <>{"Función sexual, hormonas masculinas"}</>,
-                  'descriptions': {
-                      'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                      'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                  }
-              },
-              3: {
-                  'name': <>{"Perseo"}</>,
-                  'function': <>{"Resaca"}</>,
-                  'descriptions': {
-                      'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                      'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                  }
-              },
-          },
+        'serums': {
+            'headline': <>{"Nuestros "}</>,
+            'remark': <>{"sueros"}</>,
+            'items': {
+                1: {
+                    'name': <>{"Afrodita"}</>,
+                    'function': <>{"Función sexual, hormonas femeninas"}</>,
+                    'descriptions': {
+                        'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                2: {
+                    'name': <>{"Poseidón"}</>,
+                    'function': <>{"Función sexual, hormonas masculinas"}</>,
+                    'descriptions': {
+                        'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                3: {
+                    'name': <>{"Perseo"}</>,
+                    'function': <>{"Resaca"}</>,
+                    'descriptions': {
+                        'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+            },
         },
     },
     'experience': {
@@ -262,6 +267,356 @@ export const strings: IKeyedObject = {
             "message": <>{"¿Cómo podemos ayudarte?"}</>,
         },
         "cta": <>{"Enviar"}</>,
+    },
+    'legal': {
+        'title': <>{"Política de Tratamiento de Datos Personales"}</>,
+        'update': <>{"Actualizado por última vez el 25/04/2023"}</>,
+        'version': <>{"Versión 1.0"}</>,
+        'navigation': {
+            'objective': <>{"Objetivo"}</>,
+            'liable': <>{"Responsable"}</>,
+            'definitions': {
+                'title': <>{"Definiciones"}</>,
+                'auth': <>{"Autorización"}</>,
+                'database': <>{"Base de Datos"}</>,
+                'personal': <>{"Dato personal"}</>,
+                'semiPrivate': <>{"Dato personal semiprivado"}</>,
+                'sensitive': <>{"Dato personal sensible"}</>,
+                'private': <>{"Dato personal privado"}</>,
+                'underage': <>{"Datos de menores de edad"}</>,
+                'inCharge': <>{"Encargado del tratamiento"}</>,
+                'habeas': <>{"Habeas Data"}</>,
+                'responsible': <>{"Responsable del tratamiento"}</>,
+                'holder': <>{"Titular"}</>,
+                'treatment': <>{"Tratamiento"}</>,
+                'legality': <>{"Principio de legalidad en materia de Tratamiento de Datos"}</>,
+                'purpose': <>{"Principio de Finalidad"}</>,
+                'freedom': <>{"Principio de Libertad"}</>,
+                'veracity': <>{"Principio de Veracidad"}</>,
+                'transparency': <>{"Principio de Transparencia"}</>,
+                'restriction': <>{"Principio de Acceso y Circulación restringida"}</>,
+                'security': <>{"Principio de Seguridad"}</>,
+                'confidentiality': <>{"Principio de Confidencialidad"}</>,
+            },
+            'general': <>{"Condiciones generales"}</>,
+            'elaboration': {
+                'title': <>{"Desarrollo del Tratamiento de Datos Personales"}</>,
+                'content': <>{"Contenido de las bases de Datos"}</>,
+                'treatment': <>{"Tratamiento"}</>,
+                'purpose': <>{"Finalidad"}</>,
+                'auth': <>{"Autorización"}</>,
+                'rights': <>{"Derechos de los Titulares"}</>,
+                'responsible': <>{"Deberes del Responsable del Tratamiento"}</>,
+                'inCharge': <>{"Deberes del Encargado del Tratamiento"}</>,
+                'procedures': {
+                    'title': <>{"Procedimiento para la presentación y respuestas de consultas y reclamos"}</>,
+                    'questions': <>{"Consultas"}</>,
+                    'demands': <>{"Reclamos"}</>,
+                },
+                'validity': <>{"Vigencia"}</>,
+                'channels': <>{"Canales de atención a los Titulares"}</>,
+            },
+        },
+        'content': {
+            'objective': <>{"Establecer los lineamientos y la Política de Tratamiento de Datos Personales de Clinicannabis, en cumplimiento de " +
+                "las disposiciones de la Ley 1581 de 2012 y del Decreto 1377 de 2013, que establecen y describen los mecanismos " +
+                "por medio de los cuales se debe garantizar el manejo adecuado y conforme al derecho, de los datos personales " +
+                "tratados, los cuales se encuentran en sus bases de datos, esto, con el fin de garantizar a los titulares de los " +
+                "mismos un adecuado ejercicio de su derecho al Habeas Data."}</>,
+            'liable': {
+                'paragraph': <>{"Centro de Medicina Ancestral Orígenes S.A - Clinicannabis, es una Institución Prestadora de Servicios de Salud de " +
+                    "carácter privado, con NIT 901.172.983-0"}</>,
+                'pbx': <>{"PBX: 5244080"}</>,
+                'phone': <>{"Celular: 3174834360 - 3009126254"}</>,
+                'mail': <>{"Correo electrónico: info@clinicannabis.com.co"}</>,
+                'post': <>{"Es importante tener presente que toda área, colaborador, empleado, proveedor y/o contratista de Clinicannabis, " +
+                    "que por sus funciones está encargado del tratamiento de las bases de datos que contengan información personal, " +
+                    "debe cumplir con lo dispuesto en la presente Política de Tratamiento"}</>
+            },
+            'definitions': {
+                'auth': <>{"Consentimiento previo, expreso e informado del Titular para llevar a cabo el Tratamiento " +
+                    "de datos personales."}</>,
+                'database': <>{"Conjunto organizado de datos personales que sea objeto de Tratamiento."}</>,
+                'personal': <>{"Cualquier información vinculada o que pueda asociarse a una o varias personas " +
+                    "naturales determinadas o determinables."}</>,
+                'semiPrivate': <>{"Son aquellos datos que no tienen una naturaleza íntima, reservada, ni " +
+                    "pública y cuyo conocimiento o divulgación puede interesar no sólo a su titular, sino a un grupo de personas " +
+                    "o a la sociedad en general. En este caso, para su tratamiento se requiere la autorización expresa del titular " +
+                    "de la información. Ejemplo: datos de carácter financiero, datos relativos a las relaciones con las entidades " +
+                    "de seguridad social como: Entidad Responsable de Pago (ERP), Administradoras de Fondos Pensionales " +
+                    "(AFP), Administradores de Riesgos Laborales (ARL) y Cajas de Compensación."}</>,
+                'sensitive': <>{"Son aquellos que afectan la intimidad del titular o cuyo uso indebido puede " +
+                    "generar su discriminación, tales como aquellos que revelen el origen racial o étnico, la orientación política, " +
+                    "las convicciones religiosas o filosóficas, la pertenencia a sindicatos, organizaciones sociales, de derechos " +
+                    "humanos o que promueva intereses de cualquier partido político o que garanticen los derechos y garantías " +
+                    "de partidos políticos de oposición así como los datos relativos a la salud, a la vida sexual y los datos " +
+                    "biométricos."}</>,
+                'private': <>{"Es un dato personal que por su naturaleza íntima o reservada solo interesa " +
+                    "a su titular y para su tratamiento requiere de su autorización expresa. Ejemplo: nivel de escolaridad, libros " +
+                    "de los comerciantes, entre otros. Dato personal público: es aquel tipo de dato personal que las normas y la " +
+                    "constitución han determinado expresamente como públicos y para su recolección y tratamiento, no es " +
+                    "necesaria la autorización del titular de la información. Ejemplo: estado civil de las personas, datos " +
+                    "contenidos en el Registro Único Nacional de Tránsito (RUNT), datos contenidos en sentencias judiciales " +
+                    "ejecutoriadas, entre otros."}</>,
+                'underage': <>{"Son los datos personales de las niñas, niños y adolescentes menores " +
+                    "de 18 años de edad. Estos datos podrán ser tratados en la medida en que dicho tratamiento responda y " +
+                    "respete el interés superior de las niñas, niños y adolescentes, y se asegure el respeto a sus derechos " +
+                    "fundamentales, para lo cual el representante legal del menor de edad, (quien ejerza la patria potestad), " +
+                    "otorgará la autorización previo ejercicio del menor de su derecho a ser escuchado"}</>,
+                'inCharge': <>{"Persona natural o jurídica, pública o privada, que por sí misma o en " +
+                    "asocio con otros, realice el Tratamiento de datos personales por cuenta del responsable del Tratamiento."}</>,
+                'habeas': <>{"es el derecho que tienen los titulares de conocer, actualizar y rectificar las informaciones " +
+                    "que se hayan recogido sobre ellos en el banco de datos y en archivos de entidades públicas y privadas."}</>,
+                'responsible': <>{"Persona natural o jurídica, pública o privada, que por sí misma o " +
+                    "en asocio con otros, decida sobre la base de datos y/o el Tratamiento de los datos."}</>,
+                'holder': <>{"Persona natural cuyos datos personales sean objeto de Tratamiento."}</>,
+                'treatment': <>{"Cualquier operación o conjunto de operaciones sobre datos personales, tales como la " +
+                    "recolección, almacenamiento, uso, circulación o supresión."}</>,
+                'legality': <>{"El Tratamiento es una " +
+                    "actividad reglada que debe sujetarse a lo establecido en la ley y en las demás disposiciones que lo " +
+                    "desarrollen."}</>,
+                'purpose': <>{"El Tratamiento debe obedecer a una finalidad legítima de acuerdo con la " +
+                    "Constitución y la Ley, la cual debe ser informada al Titular."}</>,
+                'freedom': <>{"El Tratamiento sólo puede ejercerse con el consentimiento, previo, expreso e " +
+                    "informado del Titular. Los datos personales no podrán ser obtenidos o divulgados sin previa autorización, o " +
+                    "en ausencia de mandato legal o judicial que releve el consentimiento."}</>,
+                'veracity': <>{"La información sujeta a Tratamiento debe ser veraz, completa, exacta, " +
+                    "actualizada, comprobable y comprensible. Se prohíbe el Tratamiento de datos parciales, incompletos, " +
+                    "fraccionados o que induzcan a error."}</>,
+                'transparency': <>{"En el Tratamiento debe garantizarse el derecho del Titular a obtener " +
+                    "del responsable del Tratamiento o del Encargado del Tratamiento, en cualquier momento y sin " +
+                    "restricciones, información acerca de la existencia de datos que le conciernan."}</>,
+                'restriction': <>{"El Tratamiento se sujeta a los límites que se " +
+                    "derivan de la naturaleza de los datos personales, de las disposiciones de la ley y la Constitución. En este " +
+                    "sentido, el Tratamiento sólo podrá hacerse por personas autorizadas por el Titular y/o por las personas " +
+                    "previstas en la ley."}</>,
+                'security': <>{"La información sujeta a Tratamiento por el responsable del Tratamiento o " +
+                    "Encargado del Tratamiento, se deberá manejar con las medidas técnicas, humanas y administrativas que " +
+                    "sean necesarias para otorgar seguridad a los registros evitando su adulteración, pérdida, consulta, uso o " +
+                    "acceso no autorizado o fraudulento."}</>,
+                'confidentiality': <>{"Todas las personas que intervengan en el Tratamiento de datos " +
+                    "personales que no tengan la naturaleza de públicos están obligadas a garantizar la reserva de la " +
+                    "información, inclusive después de finalizada su relación con alguna de las labores que comprende el " +
+                    "Tratamiento, pudiendo sólo realizar suministro o comunicación de datos personales cuando ello " +
+                    "corresponda al desarrollo de las actividades autorizadas en la ley."}</>,
+            },
+            'general': {
+                0: <>{"Toda actividad de recolección de datos personales deberá contar con un enunciado previo relacionado a " +
+                    "autorización que entregará el titular a Clinicannabis frente al manejo de sus datos personales. Entre estas " +
+                    "actividades: Encuestas, campañas, base de datos institucionales, entrega de boletín informativo."}</>,
+                1: <>{"Se contará con audio de cada llamada con el fin de salvaguardar al responsable del tratamiento en dicha " +
+                    "autorización entregada por el titular."}</>,
+                2: <>{"Todo proveedor, cliente, socio, empleado o colaborador que participe en vídeos con fines educativos, " +
+                    "publicitarios deberá firmar autorización a la agencia que realice dicha actividad. Documento que debe " +
+                    "reposar en los archivos de Clinicannabis en caso de futuras reclamaciones."}</>,
+            },
+            'elaboration': {
+                'content': {
+                    0: <>{"Como regla general, las bases de datos de Clinicannabis, que se encuentren sujetas a tratamiento almacenan " +
+                        "información personal de los titulares, como por ejemplo el nombre, el número y el tipo de identificación, el género y " +
+                        "los datos de contacto: dirección física y electrónica, el teléfono fijo y móvil, etc."}</>,
+                    1: <>{"Dependiendo de la finalidad y la naturaleza de las bases de datos se tienen en ellas otra clase de datos específicos " +
+                        "también sometidos a tratamiento, esto es, por ejemplo, en la base de datos de empleados y contratistas, " +
+                        "información sobre la historia laboral y académica, también información familiar, personal y eventualmente bancaria."}</>,
+                    2: <>{"A su vez, teniendo en cuenta la naturaleza y los servicios que presta Clinicannabis, en sus bases de datos se " +
+                        "podrán almacenar datos sensibles y privados con previa autorización del titular, entre ellos datos relacionados con " +
+                        "su estado de salud, tratamiento y rehabilitación."}</>,
+                },
+                'treatment': {
+                    0: <>{"Clinicannabis en virtud de su objeto social, ha obtenido y conservado desde su creación, datos personales de sus " +
+                        "grupos de interés, los cuales en adelante se llamarán titulares, estos datos son recolectados, almacenados, " +
+                        "organizados, usados, transmitidos, actualizados, rectificados y en general administrados, de acuerdo con la " +
+                        "respectiva relación y/o vinculación (civil, laboral, comercial o educativa o clínica, entre otras)."}</>,
+                    1: <>{"La información referenciada, podrá ser entregada, transmitida o transferida a entidades públicas, socios " +
+                        "comerciales, contratistas, empleados, afiliados, y/o compañías filiales, subsidiarias o vinculadas, única y " +
+                        "exclusivamente con el fin de cumplir con las finalidades de la base de datos correspondiente."}</>,
+                    2: <>{"También podrá ser transmitida o transferida a los titulares, sus causahabientes y representantes legales. En todo " +
+                        "caso, la entrega, transmisión o transferencia se hará previa suscripción de los compromisos que sean necesarios " +
+                        "para salvaguardar la confidencialidad y privacidad de la información autorizada para tratar. A su vez, en " +
+                        "cumplimiento de deberes legales, Clinicannabis podrá suministrar la información personal a entidades judiciales o " +
+                        "administrativas."}</>,
+                    3: <>{"Clinicannabis, velará por el correcto uso de datos personales de menores de edad, garantizando que se cumpla " +
+                        "con las exigencias legales aplicables y que todo tratamiento esté previamente autorizado y se encuentre justificado " +
+                        "en el interés superior de los menores."}</>,
+                },
+                'purpose': {
+                    0: <>{"La información que reposa en las bases de datos de Clinicannabis, tiene como finalidad permitir el adecuado " +
+                        "desarrollo de su objeto social y permitir el adecuado cumplimiento de los deberes que la ley le impone, " +
+                        "principalmente en materia contable, fiscal, administrativa, operativa, societaria, formativa, laboral, contractual, " +
+                        "comercial y de mercadeo, etc."}</>,
+                    1: <>{"La información sobre clientes, proveedores, socios y empleados, actuales o pasados, se guarda con el fin de " +
+                        "facilitar, promover, permitir o mantener relaciones de carácter laboral, civil y comercial."}</>,
+                    2: <>{"Clinicannabis, suprime los datos personales recaudados cuando hayan dejado de ser necesarios, pertinentes y " +
+                        "adecuados para la finalidad y el propósito para el cual fueron recaudados."}</>,
+                    3: <>{"En lo relativo a la grabación de vídeos y toma fotográfica estos son con fines exclusivamente educativos, de " +
+                        "seguridad y/o publicitarios para promoción de los demás eventos. Siempre se contará con la autorización del uso " +
+                        "de su imagen por escrito."}</>,
+                    4: {
+                        'intro': <>{"En términos generales, el tratamiento de los datos personales proporcionados por los diversos grupos de interés " +
+                            "de Clinicannabis, tendrá las siguientes finalidades:"}</>,
+                        0: <>{"Registrar y actualizar datos entregados por el titular."}</>,
+                        1: <>{"Prestar servicios de salud."}</>,
+                        2: <>{"Caracterizar y hacer seguimiento a la población, para la gestión del riesgo en salud, utilizando la " +
+                            "información derivada de los servicios de salud."}</>,
+                        3: <>{"Entregar reportes de Salud Pública de obligatorio cumplimiento."}</>,
+                        4: <>{"Dar respuesta a requerimientos a entidades de control."}</>,
+                        5: <>{"Evaluar indicadores de oportunidad y calidad de los servicios."}</>,
+                        6: <>{"Evaluar la calidad de los productos y servicios de salud ofrecidos por la institución."}</>,
+                        7: <>{"Realizar proceso de selección de personal de acuerdo con la aptitud para un cargo o tarea."}</>,
+                        8: <>{"Establecer una relación o vinculación contractual."}</>,
+                        9: <>{"Cumplir el proceso de afiliación al Sistema General de Seguridad Social Integral (Entidades promotoras de " +
+                            "salud, administradoras de riesgos laborales, fondos de pensiones y cesantías, caja de compensación)."}</>,
+                        10: <>{"Evaluar el desempeño, satisfacción laboral, crecimiento personal, bienestar, seguridad y salud en el " +
+                            "trabajo."}</>,
+                        11: <>{"Ofrecer oportunidades de capacitación."}</>,
+                        12: <>{"Efectuar proceso de remuneración."}</>,
+                        13: <>{"Dar a conocer avances de la institución en aspectos investigativos, académicos y clínicos."}</>,
+                        14: <>{"Efectuar el reconocimiento económico por la prestación del servicio."}</>,
+                        15: <>{"Presentar informes a las instituciones con las cuales se tenga algún tipo de convenio o relación comercial " +
+                            "para atención de pacientes)"}</>,
+                        16: <>{"Hacer invitación a eventos clínicos y académicos."}</>,
+                        17: <>{"Evaluar los conocimientos adquiridos durante su formación."}</>,
+                        18: <>{"Suministrar información a las autoridades competentes en caso de ser requerida."}</>,
+                        19: <>{"Cumplir con exigencias judiciales."}</>,
+                        20: <>{"Ejercer y defender acciones legales."}</>,
+                    },
+                },
+                'auth': {
+                    0: <>{"Clinicannabis solicita autorización escrita a todo proveedor, cliente, socio, empleado o colaborador del cual realice " +
+                        "el tratamiento de datos personales, para que sus datos puedan ser tratados de conformidad con la finalidad " +
+                        "establecida para cada caso, y en cumplimiento de las normas que regulan la materia, pero, principalmente, " +
+                        "buscando la protección y la garantía del derecho constitucional al Habeas Data."}</>,
+                    1: <>{"Adicionalmente al comunicarse telefónicamente con Clinicannabis se estará autorizando el uso de tratamiento de " +
+                        "datos cuando después de escuchar el mensaje relacionado el cliente o proveedor continúe en la llamada y sea " +
+                        "atendido."}</>,
+                },
+                'rights': {
+                    'intro': <>{"Conforme se expone en el art. 8 de la Ley 1581 de 2012 el titular de los datos personales tendrá los siguientes " +
+                        "derechos:"}</>,
+                    0: <>{"Conocer, actualizar y rectificar sus datos personales frente a los Responsables del Tratamiento o " +
+                        "Encargados del Tratamiento. Este derecho se podrá ejercer, entre otros, frente a datos parciales, " +
+                        "inexactos, incompletos, fraccionados, que induzcan a error, o aquellos cuyo Tratamiento esté " +
+                        "expresamente prohibido o no haya sido autorizado."}</>,
+                    1: <>{"Solicitar prueba de la autorización otorgada al Responsable del Tratamiento salvo cuando " +
+                        "expresamente se exceptúe como requisito para el Tratamiento."}</>,
+                    2: <>{"Ser informado por el Responsable del Tratamiento o el Encargado del Tratamiento, previa solicitud, " +
+                        "respecto del uso que le ha dado a sus datos personales."}</>,
+                    3: <>{"Presentar ante la Superintendencia de Industria y Comercio quejas por infracciones a lo dispuesto en " +
+                        "la presente ley y las demás normas que la modifiquen, adicionen o complementen."}</>,
+                    4: <>{"Revocar la autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los " +
+                        "principios, derechos y garantías constitucionales y legales. La revocatoria y/o supresión procederá " +
+                        "cuando la Superintendencia de Industria y Comercio haya determinado que en el Tratamiento el " +
+                        "Responsable o Encargado han incurrido en conductas contrarias a esta ley y a la Constitución."}</>,
+                    5: <>{"Acceder en forma gratuita a sus datos personales que hayan sido objeto de Tratamiento."}</>,
+                },
+                'responsible': {
+                    'intro': <>{"Según el artículo 17 de la Ley 1567 de 2012, el responsable del tratamiento debe cumplir con los siguientes " +
+                        "deberes:"}</>,
+                    0: <>{"Garantizar al Titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de habeas data."}</>,
+                    1: <>{"Solicitar y conservar, en las condiciones previstas en la presente ley, copia de la respectiva " +
+                        "autorización otorgada por el Titular."}</>,
+                    2: <>{"Informar debidamente al Titular sobre la finalidad de la recolección y los derechos que le asisten por " +
+                        "virtud de la autorización otorgada."}</>,
+                    3: <>{"Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración, " +
+                        "pérdida, consulta, uso o acceso no autorizado o fraudulento."}</>,
+                    4: <>{"Garantizar que la información que se suministre al Encargado del Tratamiento sea veraz, completa, " +
+                        "exacta, actualizada, comprobable y comprensible."}</>,
+                    5: <>{"Actualizar la información, comunicando de forma oportuna al Encargado del Tratamiento, todas las " +
+                        "novedades respecto de los datos que previamente le haya suministrado y adoptar las demás medidas " +
+                        "necesarias para que la información suministrada a este se mantenga actualizada."}</>,
+                    6: <>{"Rectificar la información cuando sea incorrecta y comunicar lo pertinente al Encargado del " +
+                        "Tratamiento."}</>,
+                    7: <>{"Suministrar al Encargado del Tratamiento, según el caso, únicamente datos cuyo Tratamiento esté " +
+                        "previamente autorizado de conformidad con lo previsto en la presente ley."}</>,
+                    8: <>{"Exigir al Encargado del Tratamiento en todo momento, el respeto a las condiciones de seguridad y " +
+                        "privacidad de la información del Titular."}</>,
+                    9: <>{"Tramitar las consultas y reclamos formulados en los términos señalados en la presente ley."}</>,
+                    10: <>{"Adoptar un manual interno de políticas y procedimientos para garantizar el adecuado cumplimiento de " +
+                        "la presente ley y en especial, para la atención de consultas y reclamos."}</>,
+                    11: <>{"Informar al Encargado del Tratamiento cuando determinada información se encuentra en discusión " +
+                        "por parte del Titular, una vez se haya presentado la reclamación y no haya finalizado el trámite " +
+                        "respectivo."}</>,
+                    12: <>{"Informar a solicitud del Titular sobre el uso dado a sus datos."}</>,
+                    13: <>{"Informar a la autoridad de protección de datos cuando se presenten violaciones a los códigos de " +
+                        "seguridad y existan riesgos en la administración de la información de los Titulares."}</>,
+                    14: <>{"Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio."}</>,
+                },
+                'inCharge': {
+                    'intro': <>{"Según el artículo 18 de la Ley 1567 de 2012, el encargado del tratamiento debe cumplir con los siguientes deberes:"}</>,
+                    0: <>{"Garantizar al Titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de habeas data."}</>,
+                    1: <>{"Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración, " +
+                        "pérdida, consulta, uso o acceso no autorizado o fraudulento."}</>,
+                    2: <>{"Realizar oportunamente la actualización, rectificación o supresión de los datos en los términos de la " +
+                        "presente ley."}</>,
+                    3: <>{"Actualizar la información reportada por los Responsables del Tratamiento dentro de los cinco (5) días " +
+                        "hábiles contados a partir de su recibo."}</>,
+                    4: <>{"Tramitar las consultas y los reclamos formulados por los Titulares en los términos señalados en la " +
+                        "presente ley."}</>,
+                    5: <>{"Adoptar un manual interno de políticas y procedimientos para garantizar el adecuado cumplimiento de " +
+                        "la presente ley y, en especial, para la atención de consultas y reclamos por parte de los Titulares."}</>,
+                    6: <>{"Registrar en la base de datos la leyenda “reclamo en trámite” en la forma en que se regula en la " +
+                        "presente ley."}</>,
+                    7: <>{"Insertar en la base de datos la leyenda “información en discusión judicial” una vez notificado por parte " +
+                        "de la autoridad competente sobre procesos judiciales relacionados con la calidad del dato personal."}</>,
+                    8: <>{"Abstenerse de circular información que esté siendo controvertida por el Titular y cuyo bloqueo haya " +
+                        "sido ordenado por la Superintendencia de Industria y Comercio."}</>,
+                    9: <>{"Permitir el acceso a la información únicamente a las personas que pueden tener acceso a ella."}</>,
+                    10: <>{"Informar a la Superintendencia de Industria y Comercio cuando se presenten violaciones a los " +
+                        "códigos de seguridad y existan riesgos en la administración de la información de los Titulares."}</>,
+                    11: <>{"Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio."}</>,
+                },
+                'procedures': {
+                    'questions': <>{"Los titulares de los datos personales que conforman las bases de datos de Clinicannabis, o " +
+                        "sus causahabientes y representantes, podrán consultarlos. Toda solicitud de consulta, corrección, actualización o " +
+                        "supresión deberá presentarse por escrito o por correo electrónico. Las consultas serán atendidas en un término de " +
+                        "diez (10) días hábiles contados a partir de la fecha de recibo de la respectiva solicitud. Cuando no fuere posible " +
+                        "atender la consulta dentro de dicho término, se informará al interesado, expresando los motivos de la demora y " +
+                        "señalando la fecha en que se atenderá su consulta, la cual en ningún caso podrá superar los cinco (5) días hábiles " +
+                        "siguientes al vencimiento del primer término."}</>,
+                    'demands': {
+                        0: <>{"Cuando se trata de reclamos estos deben ser formulados por escrito físico o por correo " +
+                            "electrónico, los cuales deberán contener como mínimo lo siguiente: identificación del titular, descripción de los " +
+                            "hechos que dan lugar al reclamo, dirección del titular y documentos que sirva de pruebas.Si el reclamo resulta " +
+                            "incompleto, se requerirá al interesado dentro de los cinco (5) días siguientes a la recepción del reclamo para que " +
+                            "subsane las fallas. Transcurridos dos (2) meses desde la fecha del requerimiento, sin que el solicitante presente la " +
+                            "información requerida, se entenderá que ha desistido del reclamo."}</>,
+                        1: <>{"En caso de que quien reciba el reclamo no sea competente para resolverlo, dará traslado a quien corresponda en " +
+                            "un término máximo de dos (2) días hábiles e informará de la situación al interesado. Una vez recibido el reclamo " +
+                            "completo, se incluirá en la base de datos una leyenda que diga “reclamo en trámite” y el motivo del mismo, en un " +
+                            "término no mayor a dos (2) días hábiles. Dicha leyenda deberá mantenerse hasta que el reclamo sea decidido. El " +
+                            "término máximo para atender el reclamo será de quince (15) días hábiles contados a partir del día siguiente a la " +
+                            "fecha de su recibo. Cuando no fuere posible atender el reclamo dentro de dicho término, se informará al interesado " +
+                            "los motivos de la demora y la fecha en que se atenderá su reclamo, la cual en ningún caso podrá superar los ocho " +
+                            "(8) días hábiles siguientes al vencimiento del primer término."}</>,
+                    },
+                    'note': <>{"La respuesta en ambos casos se hará con el apoyo del asesor jurídico con el fin de salvaguardar la imagen " +
+                        "de Clinicannabis y dando además cumplimiento a toda la normatividad vigente."}</>
+                },
+                'validity': {
+                    0: <>{"La Política de Tratamiento de Datos Personales de Clinicannabis estará vigente a partir del 24 de julio del año " +
+                        "2022."}</>,
+                    1: <>{"Clinicannabis se reserva el derecho a modificarla, en los términos y con las limitaciones previstas en la " +
+                        "Constitución y la ley."}</>,
+                    2: <>{"Las bases de datos administradas y tratadas por Clinicannabis se mantendrán indefinidamente, mientras sirvan " +
+                        "para desarrollar su objeto, y mientras sean necesarias para asegurar el cumplimiento de obligaciones de carácter " +
+                        "legal, pero como se mencionó antes, los datos podrán ser eliminados cuando ya no sean necesarios ni pertinentes " +
+                        "para cumplir con la finalidad y el propósito vigente al momento de la recolección, también serán eliminados a " +
+                        "solicitud de su titular, en tanto esta solicitud no contraríe una obligación legal de Clinicannabis o una obligación " +
+                        "contenida en un contrato entre Clinicannabis y el titular."}</>,
+                },
+                'channels': {
+                    'intro': <>{"Los medios que Clinicannabis tiene a disposición para que los titulares ejerzan sus derechos y realicen las " +
+                        "peticiones, consultas y reclamos son los siguientes:"}</>,
+                    0: <>{"Auxiliar Administrativa (Recepción)"}</>,
+                    1: <>{"Auxiliar de experiencia del Paciente"}</>,
+                    2: <>{"Buzón disponible en la sede."}</>,
+                    3: <>{"Línea telefónica: 3174834360 5244080 - 3009126254"}</>,
+                    4: <>{"Correo electrónico info@clinicannabis.com.co"}</>,
+                    5: <>{"Sitio web "}<Link href={"https://www.clinicannabis.com"}>{"https://www.clinicannabis.com"}</Link></>,
+
+                },
+            }
+        }
     },
     '404': {
         "headline": <>{"No encontramos esta página"}</>,

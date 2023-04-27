@@ -6,6 +6,7 @@ import {useWindowDimensions} from "../../../hooks/useWindowDimensions";
 import {Carousel} from "../../Carousel";
 import {ServiceCard} from "../../ServiceCard";
 import {SwiperCarousel} from "../../SwiperCarousel";
+import Image from "next/image";
 
 export const Hero = (props: {
     hasWindow: boolean
@@ -133,7 +134,7 @@ export const Hero = (props: {
                 </section>
                 <section
                     className={`${!hasLoaded ? "" : "max-lg:hidden"} relative h-full bg-white z-50 lg:z-auto flex justify-center items-center overflow-clip ${animateHeroVideo}`}>
-                    {props.hasWindow &&
+                    {props.hasWindow && /*&& <Image priority src={"/video/ClinicannabisAnimation.gif"} alt={""} height={1080 * 1.8} width={1920 * 1.8} className={"scale-[1.5] lg:scale-[1.75] xl:scale-[1.25]"} /> */
                         <video height={1080 * 1.8} width={1920 * 1.8} muted playsInline autoPlay controls={false}
                                className={"scale-[1.5] lg:scale-[1.75] xl:scale-[1.25]"}
                                onEnded={handleOnEnded}
@@ -141,7 +142,8 @@ export const Hero = (props: {
                             <source src={"/video/ClinicannabisAnimation.mp4"}
                                     type={"video/mp4"}/>
                             Your browser does not support the video tag.
-                        </video>}
+                        </video>
+                    }
                     <section
                         className={"lg:hidden aspect-square absolute -top-52 -left-52 opacity-70 h-168 lg:w-0 lg:h-0 w-168"}>
                         <div

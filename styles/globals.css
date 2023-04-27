@@ -50,4 +50,27 @@
     .swiper-pagination {
         @apply fill-viridian-green;
     }
+
+    .arrow-list li {
+        list-style-type: '\2192';
+        padding-inline-start: 1ch;
+    }
+
+    .nested ol {
+        counter-reset: item
+    }
+
+    .nested li {
+        display: block
+    }
+
+    .nested li:before {
+        content: counters(item, ".") ". ";
+        counter-increment: item
+    }
+
+    .dashed li {
+        list-style-type: '\2014';
+        padding-inline-start: 1ch;
+    }
 }
