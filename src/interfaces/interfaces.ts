@@ -71,6 +71,7 @@ export interface AttributesBlogPost {
     description: string,
     subtitle: string,
     cover: [Object],
+    thumbnail: [Object],
     localizations: [Object]
 }
 

@@ -38,14 +38,15 @@ export const getStaticProps: GetStaticProps<{ blogs: BlogPost[] }> = async (
         },
     });
     const { jwt: token } = response;
-
+    if (typeof window !== 'undefined') {
+        sessionStorage.setItem("spi_jwt", token);
+    }
     const {data: blogResponse} = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?populate=*`, {
         "method": "GET",
         "headers": {
             "Authorization": `Bearer ${token}`
         }
     });
-    console.log(blogResponse);
     return {
         props: {
             blogs: blogResponse
