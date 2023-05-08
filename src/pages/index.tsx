@@ -8,7 +8,6 @@ import {useRouter} from "next/router";
 import {Hero} from "../components/content/index/Hero";
 import {About} from "../components/content/index/About";
 import {Values} from "../components/content/index/Values";
-import {Numbers} from "../components/content/index/Numbers";
 import {Experience} from "../components/content/index/Experience";
 import {Blog} from "../components/content/index/Blog";
 import NavbarContext from "../context/Navbar/NavbarContext";
@@ -41,8 +40,6 @@ const Home: NextPage = () => {
 
     }, []);
 
-    const navigate = useRouter();
-
     return (
         <main>
             <Head>
@@ -53,12 +50,10 @@ const Home: NextPage = () => {
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"home"}/>
-            {/*<span ref={navbarLogoRef} className={"debug h-full pointer-events-none bg-transparent selection:bg-transparent absolute top-[200vh] md:top-0 w-full"}/>*/}
             <Hero hasWindow={hasWindow}/>
             <About/>
             <Values/>
             <Experience/>
-            {/*<Numbers />*/}
             <Invima/>
             <Blog />
             <Footer/>
