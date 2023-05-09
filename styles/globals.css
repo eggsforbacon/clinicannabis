@@ -74,3 +74,88 @@
         padding-inline-start: 1ch;
     }
 }
+
+
+/*  ================================================
+    Adaptatividad Juan 
+================================================ */
+/* -- POPUP -- */
+.contentAll-popup{
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.703);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+.popup{
+    padding: 40px;
+}
+
+.popup img{
+    display: block;
+    margin: auto;
+    width: 40%;
+    object-fit: cover;
+    display: block;
+}
+
+.btn-close-popUp{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 80vh;
+    top: -20px;
+    background: black;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 10px;
+    padding: 20px;
+}
+
+.contentAll-popup-disable{
+    display: none;
+}
+@media (min-width: 1200px){
+    .popup img{
+        width: 35%;
+    }
+    .btn-close-popUp{
+        width: 50px;
+        height: 50px;
+        right: 69vh;
+        top: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+@media (min-width: 1400px) {
+    .popup img{
+        width: 55%;
+    }
+
+    .btn-close-popUp{
+        width: 60px;
+        height: 60px;
+        right: 31vh !important;
+        top: 10px !important;
+    }
+}
+
+/* ================================================ */
+/* @media Para ocultar la img de fondo para IOS */
+@media (min-width: 320px){
+    .article-3 img{
+        display: none;
+    }
+}
+
+@media (min-width: 576px){
+    .article-3 img{
+        display: block;
+    }
+}
+

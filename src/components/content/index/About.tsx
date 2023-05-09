@@ -38,8 +38,8 @@ export const About = () => {
     const buttonStyle: string = "hidden lg:block rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-6 py-1 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
     const navigate = useRouter();
     return (
-        <article
-                 className={"relative lg:px-44 pt-16 lg:pt-32 h-[36rem] lg:min-h-[56rem] lg:h-auto w-full flex items-start justify-center"}>
+        <article 
+                className={"relative lg:px-44 pt-16 lg:pt-32 h-[36rem] lg:min-h-[56rem] lg:h-auto w-full flex items-start justify-center lg:-mb-[15.2rem]"}>
             <Image src={"/images/landing/whoAreWeBg.png"}
                    className={`hidden lg:block absolute pointer-events-none -top-10 right-0 selection:bg-transparent ${animation}`}
                    alt={""}

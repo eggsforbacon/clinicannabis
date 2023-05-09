@@ -12,6 +12,7 @@ import {Experience} from "../components/content/index/Experience";
 import {Blog} from "../components/content/index/Blog";
 import NavbarContext from "../context/Navbar/NavbarContext";
 import {Invima} from "../components/content/index/Invima";
+import {PopUP} from "../components/PopUP";
 
 
 const Home: NextPage = () => {
@@ -51,6 +52,7 @@ const Home: NextPage = () => {
             </Head>
             <Navbar selection={"home"}/>
             <Hero hasWindow={hasWindow}/>
+            <PopUP/>
             <About/>
             <Values/>
             <Experience/>
