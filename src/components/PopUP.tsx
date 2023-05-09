@@ -22,7 +22,7 @@ export const PopUP = () => {
 
     return (
         <section>
-            <div className={`${openPopUp ? 'contentAll-popup':'contentAll-popup-disable'} relative debug`}>
+            <div className={`${openPopUp ? 'contentAll-popup':'contentAll-popup-disable'} relative`}>
                 <div className={"popup rounded-m"}>
                     <Image src={"/images/landing/Impop.jpeg"} quality={100} loading={"lazy"} alt={""} width={1920} height={820} className={"pr-5"} />
                     <button onClick={changePopUp} className={"btn-close-popUp"}>X</button>
