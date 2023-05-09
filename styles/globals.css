@@ -120,6 +120,7 @@
 .contentAll-popup-disable{
     display: none;
 }
+
 @media (min-width: 1200px){
     .popup img{
         width: 35%;
@@ -132,6 +133,7 @@
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 }
+
 @media (min-width: 1400px) {
     .popup img{
         width: 55%;
