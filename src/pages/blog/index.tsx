@@ -49,7 +49,7 @@ export const getStaticProps: GetStaticProps<{ blogs: BlogPost[] }> = async (
     });
     return {
         props: {
-            blogs: blogResponse
+            blogs: blogResponse !== null ? blogResponse : []
         }
     }
 }
