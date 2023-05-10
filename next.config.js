@@ -25,6 +25,11 @@ module.exports = {
         port: '1337',
         pathname: "/uploads/**"
       },
+      {
+        protocol: 'https',
+        hostname: 'strapi.clinicannabis.com.co',
+        pathname: "/uploads/**"
+      },
     ],
   },
 }
