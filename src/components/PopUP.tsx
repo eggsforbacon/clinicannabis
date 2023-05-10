@@ -1,20 +1,20 @@
 /* import React from "react"; */
 import Image from "next/image";
-import {strings} from "../model/strings";
-import React, {useContext, useEffect, useRef, useState} from "react";
+import { strings } from "../model/strings";
+import React, { useContext, useEffect, useRef, useState } from "react";
 
 
 export const PopUP = () => {
     // Declaracion y funcion de Estados
     const [openPopUp, setOpenPopUp] = useState(true);
-    
-    useEffect (() => {
+
+    useEffect(() => {
         if (typeof window !== 'undefined') {
             document.getElementsByTagName('body')[0].style.overflow = "hidden";
         }
     }, []);
 
-    const changePopUp =() => {
+    const changePopUp = () => {
         // Cambio estado popUp
         setOpenPopUp(false);
         document.getElementsByTagName('body')[0].style.overflowY = "scroll";
@@ -22,10 +22,17 @@ export const PopUP = () => {
 
     return (
         <section>
-            <div className={`${openPopUp ? 'contentAll-popup':'contentAll-popup-disable'} relative`}>
+            <div className={`${openPopUp ? 'contentAll-popup' : 'contentAll-popup-disable'} relative`}>
                 <div className={"popup rounded-m"}>
-                    <Image src={"/images/landing/Impop.jpeg"} quality={100} loading={"lazy"} alt={""} width={1920} height={820} className={"pr-5"} />
+                    <Image src={"/images/landing/Impop.jpeg"} quality={100} loading={"lazy"} alt={""} width={1920} height={820} className={""} />
                     <button onClick={changePopUp} className={"btn-close-popUp"}>X</button>
+                    
+                    <div className="card-body">
+                    <button type="button" className="btn btn-primary">
+                        Conoce Más <span aria-hidden="true">→</span>
+                    </button>
+
+                    </div>
                 </div>
             </div>
         </section>
