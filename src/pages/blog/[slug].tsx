@@ -1,16 +1,10 @@
 import {useRouter} from "next/router";
 import Image from "next/image";
-import {posts} from "../../model/posts";
 import Footer from "../../components/Footer";
-import {RecommendedPost} from "../../components/content/blog/RecommendedPost";
 import Navbar from "../../components/Navbar";
-import useSWR from 'swr';
 import {fetchURI} from "../../lib/api";
 import {AttributesBlogPost, BlogPost, CoverAttributesBlogPost, StrapiGetAllResponse} from "../../interfaces/interfaces";
-import {GetStaticProps, InferGetStaticPropsType} from "next";
 import React, {useEffect, useState} from "react";
-import Blog from "./index";
-import {attribute} from "postcss-selector-parser";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 
@@ -64,7 +58,8 @@ export const slug = () => {
     }, [slug]);
 
     if (!posts.length) {
-        return <div>Loading...</div>;
+        // router.reload();
+        return <div>Cargando...</div>;
     }
 
     const post = posts.filter(p => (p.attributes as unknown as AttributesBlogPost).slug === slug)[0]
@@ -98,7 +93,7 @@ export const slug = () => {
                 </section>
                 <section
                     className={"w-full h-full mt-96 relative px-4 lg:px-[26rem] text-justify flex flex-col items-center justify-start text-xl leading-[2] py-28"}>
-                    <ReactMarkdown>
+                    <ReactMarkdown transformImageUri={input => `${process.env.NEXT_PUBLIC_STRAPI_URL}${input}`}>
                         {body}
                     </ReactMarkdown>
                 </section>
