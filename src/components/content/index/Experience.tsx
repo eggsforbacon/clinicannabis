@@ -13,7 +13,7 @@ export const Experience = () => {
 
     return (
         <article className={"w-full overflow-x-clip lg:h-[42rem] lg:px-44 relative article-3"}>
-            <Image src={"/images/landing/experienceHero.png"} quality={100} loading={"lazy"} alt={""} width={1920} height={820} className={"z-0 absolute top-32 lg:-top-16 !scale-[5] max-sm:hidden lg:!scale-125 left-[42rem] lg:left-0 "} />
+            <Image src={"/images/landing/Centro-de-experienciaV2.png"} quality={100} loading={"lazy"} alt={""} width={1920} height={820} className={"z-0 absolute top-32 lg:-top-16 !scale-[5] max-sm:hidden lg:!scale-125 left-[42rem] lg:left-0 "} />
 
             <section className={"relative z-10 px-8 md:pl-32 xl:px-0 w-full h-128 lg:h-[38rem] flex items-start lg:items-center justify-between"}>
                 <section className={"lg:w-1/2 relative z-10 flex flex-col items-stretch justify-end gap-8"}>

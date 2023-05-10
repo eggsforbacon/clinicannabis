@@ -33,7 +33,7 @@ export const Values = () => {
     return (
         <>
             <article
-                className={"relative xl:px-40 pt-16 pb-20 lg:pb-56 min-h-[40rem] lg:min-h-[54rem] bg-viridian-green xl:min-h-[64rem] flex items-start lg:items-end justify-end"}>
+                className={"relative xl:px-40 pt-16 pb-20 lg:pb-56 min-h-[40rem] lg:min-h-[54rem] bg-none xl:min-h-[64rem] flex items-start lg:items-end justify-end"}>
                 <Image quality={80} loading={"lazy"} src={humanizing} className={`!scale-[3] !min-w-[360px] lg:!scale-100 pointer-events-none selection:bg-transparent absolute z-10 -left-44 top-32 lg:-top-10 lg:left-0 ${animation} animation-duration-500`} alt={""}/>
                 <span ref={triggerRef}
                       className={"absolute -top-6 w-full h-1 bg-transparent pointer-events-none selection:bg-transparent"}/>

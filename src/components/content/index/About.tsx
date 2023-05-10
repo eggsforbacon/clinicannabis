@@ -39,7 +39,7 @@ export const About = () => {
     const navigate = useRouter();
     return (
         <article 
-                className={"relative lg:px-44 pt-16 lg:pt-32 h-[36rem] lg:min-h-[56rem] lg:h-auto w-full flex items-start justify-center lg:-mb-[15.2rem]"}>
+                className={"relative lg:px-44 pt-16 lg:pt-32 h-[36rem] lg:min-h-[56rem] lg:h-auto w-full flex items-start justify-center lg:-mb-[15rem]"}>
             <Image src={"/images/landing/whoAreWeBg.png"}
                    className={`hidden lg:block absolute pointer-events-none -top-10 right-0 selection:bg-transparent ${animation}`}
                    alt={""}

@@ -23,15 +23,20 @@ export const PopUP = () => {
     return (
         <section>
             <div className={`${openPopUp ? 'contentAll-popup' : 'contentAll-popup-disable'} relative`}>
-                <div className={"popup rounded-m"}>
-                    <Image src={"/images/landing/Impop.jpeg"} quality={100} loading={"lazy"} alt={""} width={1920} height={820} className={""} />
+                <div className={"popup rounded-m w-100"}>
+                    <Image src={"/images/landing/Img-popUP.webp"} quality={100} loading={"lazy"} alt={""} width={1920} height={820} className={""} />
                     <button onClick={changePopUp} className={"btn-close-popUp"}>X</button>
                     
-                    <div className="card-body">
-                    <button type="button" className="btn btn-primary">
-                        Conoce Más <span aria-hidden="true">→</span>
-                    </button>
+                    <div className="BtnPop-1 btnPop-1">
+                        <button type="button" className="btn btn-primary">
+                            <span aria-hidden="true">←</span> Conoce Más
+                        </button>
+                    </div>
 
+                    <div className="BtnPop-2 btnPop-2">
+                        <button type="button" className="btn btn-primary">
+                            <span aria-hidden="true">↑</span> Conoce Más
+                        </button>
                     </div>
                 </div>
             </div>
