@@ -162,7 +162,7 @@
     padding-right: 8px;
     transition: .5s;
 }
-/*  */
+
 @media (min-width: 320px) {
     .BtnPop-1{
         display: none;
@@ -188,7 +188,7 @@
 
     .btnPop-2{
         right: 8%;
-        top: 45vh;
+        top: 50vh;
         width: 85%;
         padding: 15px 20px;
         text-align: center;
@@ -399,6 +399,33 @@
         right: 25rem;
     }
 }
+
+/*  ================================================
+   --  Adaptatividad Section Services --
+================================================ */
+@media(min-width: 1600px){
+    .pictSer{
+        height: 78vh;
+    }
+    .pictSer-2{
+        height: 86.5vh;
+        object-fit: cover; 
+    }
+}
+
+@media(min-width: 1900px){
+    .pictSer{
+        height: 90vh;
+    }
+    .pictSer-2{
+        height: 100vh; 
+    }
+}
+
+/*  ================================================
+   --  Section Form Para el evento --
+================================================ */
+
 
 /* ================================================ */
 /* @media Para ocultar la img de fondo para IOS */
