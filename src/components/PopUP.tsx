@@ -1,6 +1,6 @@
 /* import React from "react"; */
 import Image from "next/image";
-import { strings } from "../model/strings";
+import Link from "next/link";
 import React, { useContext, useEffect, useRef, useState } from "react";
 
 
@@ -29,13 +29,17 @@ export const PopUP = () => {
                     
                     <div className="BtnPop-1 btnPop-1">
                         <button type="button" className="btn btn-primary">
-                            <span aria-hidden="true">←</span> Conoce Más
+                            <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSfltUdT9RnNeMB-6Kwhf6a2R8ozJnaLjp_GCRBqbkNuPBnPVg/viewform"} className={`!text-white font-bold text-xl`} target="_blank">
+                                <span aria-hidden="true">←</span> Preinscribete aquí
+                            </Link>
                         </button>
                     </div>
 
                     <div className="BtnPop-2 btnPop-2">
                         <button type="button" className="btn btn-primary">
-                            <span aria-hidden="true">↑</span> Conoce Más
+                            <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSfltUdT9RnNeMB-6Kwhf6a2R8ozJnaLjp_GCRBqbkNuPBnPVg/viewform"} className={`!text-white font-bold text-xl`} target="_blank">
+                                <span aria-hidden="true">↑</span> Preinscribete aquí
+                            </Link>                        
                         </button>
                     </div>
                 </div>

@@ -122,7 +122,10 @@
 .contentAll-popup-disable{
     display: none;
 }
-
+.btn-primary span{
+    font-weight: bold;
+    font-size: 29px;
+}
 /* ctnd btn-popUp-1 */
 .popup:hover .btnPop-1{
     right: 17rem;
@@ -145,14 +148,9 @@
 }
 
 /* ctnd btn-popUp-2 */
-.popup:hover .btnPop-2{
-    top: 0rem;
-    transition: 2s;
-}
 .btnPop-2{
     position: absolute;
     right:  20%;
-    top: 100%;
     background-color: #443c81;
     padding: 10px 20px;
     border-radius: 50px;
@@ -187,17 +185,17 @@
         right: 0vh;
         top: 25px;
     }
-    .popup:hover .btnPop-2{
-        top: 75%;
-        transition: 2s;
-    }
 
     .btnPop-2{
-        right: 25%;
-        top: 100%;
-        width: 50%;
-        padding: 20px;
+        right: 8%;
+        top: 45vh;
+        width: 85%;
+        padding: 15px 20px;
         text-align: center;
+    }
+    
+    .btnPop-2 span{
+        padding-right: 12px;   
     }
 }
 
@@ -217,16 +215,15 @@
         right: 0vh;
         top: 25px;
     }
-    .popup:hover .btnPop-2{
-        top: 75%;
-        transition: 2s;
-    }
 
     .btnPop-2{
-        right: 20%;
-        top: 100%;
-        width: 60%;
+        right: 16%;
+        top: 60vh;
+        width: 70%;
         padding: 20px;
+    }
+    .btnPop-2 span{
+     padding-right: 15px;   
     }
 }
 
@@ -246,14 +243,11 @@
         right: 0vh;
         top: 25px;
     }
-    .popup:hover .btnPop-2{
-        top: 75%;
-        transition: 2s;
-    }
 
     .btnPop-2{
-        right: 40%;
-        top: 100%;
+        right: 21%;
+        top: 80vh;
+        width: 60%;
     }
 }
 
@@ -269,17 +263,20 @@
         right: 7vh;
         top: 13px;
     }
-    .popup:hover .btnPop-2{
-        top: 80%;
-        transition: 2s;
-    }
 
-    .btnPop-2{
-        right: 40%;
-        top: 100%;
-    }
     .popup{
         padding: 30px;
+    }
+    
+    .btnPop-2{
+        right: 20%;
+        top: 80vh;
+    }
+
+    .btnPop-2 span{
+        margin-right: 20px;
+        font-weight: 800;
+        font-size: 29px;
     }
 }
 
@@ -287,21 +284,20 @@
     .popup img{
         width: 85%;
     }
-
     .btn-close-popUp{
         width: 60px;
         height: 60px;
         right: 7vh;
         top: 13px;
     }
-    .popup:hover .btnPop-2{
-        top: 90%;
-        transition: 2s;
-    }
-
     .btnPop-2{
-        right: 40%;
-        top: 100%;
+        right: 21%;
+        top: 88vh;
+    }
+    .btnPop-2 span{
+        margin-right: 20px;
+        font-weight: 800;
+        font-size: 29px;
     }
 }
 
@@ -344,7 +340,7 @@
         top: 0;
     }
     .popup:hover .btnPop-1{
-        right: 17rem;
+        right: 11rem;
     }
 }
 
