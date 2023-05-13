@@ -423,10 +423,17 @@
 }
 
 /*  ================================================
-   --  Section Form Para el evento --
+   --  Section Landing Seminario --
 ================================================ */
+.infoSeminarioForm{
+    width: 50%;
+    padding-left: 6%;
+}
 
-
+.form-label{
+    display: flex;
+    flex-direction: column;
+}
 /* ================================================ */
 /* @media Para ocultar la img de fondo para IOS */
 @media (min-width: 320px){

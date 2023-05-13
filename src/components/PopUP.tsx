@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useContext, useEffect, useRef, useState } from "react";
+import {Seminario} from "../pages/seminario/seminario-iberoamericano";
 
 
 export const PopUP = () => {
@@ -29,7 +30,7 @@ export const PopUP = () => {
                     
                     <div className="BtnPop-1 btnPop-1">
                         <button type="button" className="btn btn-primary">
-                            <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSfltUdT9RnNeMB-6Kwhf6a2R8ozJnaLjp_GCRBqbkNuPBnPVg/viewform"} className={`!text-white font-bold text-xl`} target="_blank">
+                            <Link href={"/seminario/seminario-iberoamericano"} className={`!text-white font-bold text-xl`} target="_blank">
                                 <span aria-hidden="true">←</span> Preinscribete aquí
                             </Link>
                         </button>
@@ -37,7 +38,7 @@ export const PopUP = () => {
 
                     <div className="BtnPop-2 btnPop-2">
                         <button type="button" className="btn btn-primary">
-                            <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSfltUdT9RnNeMB-6Kwhf6a2R8ozJnaLjp_GCRBqbkNuPBnPVg/viewform"} className={`!text-white font-bold text-xl`} target="_blank">
+                            <Link href={"/seminario/seminario-iberoamericano"} className={`!text-white font-bold text-xl`} target="_blank">
                                 <span aria-hidden="true">↑</span> Preinscribete aquí
                             </Link>                        
                         </button>
