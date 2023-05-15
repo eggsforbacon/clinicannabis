@@ -13,6 +13,10 @@ import {Blog} from "../components/content/index/Blog";
 import NavbarContext from "../context/Navbar/NavbarContext";
 import {Invima} from "../components/content/index/Invima";
 import {PopUP} from "../components/PopUP";
+import {Services} from "../components/content/index/Services";
+import {HeroCarousel} from "../components/content/index/HeroSlides/HeroCarousel";
+import {ClinicIntro} from "../components/content/index/HeroSlides/ClinicIntro";
+import {IberoamericanoBanner} from "../components/content/index/HeroSlides/IberoamericanoBanner";
 
 
 const Home: NextPage = () => {
@@ -31,14 +35,15 @@ const Home: NextPage = () => {
     }
 
     const {setLogoShown, logoShown} = useContext(NavbarContext);
-    const [hasWindow, setHasWindow] = useState(false);
     const navbarLogoRef = useRef(null);
+    const [hasWindow, setHasWindow] = useState(false);
+
     useEffect(() => {
         if (typeof window !== "undefined") {
             setHasWindow(true);
         }
         setLogoShown(false);
-
+        console.log(hasWindow);
     }, []);
 
     return (
@@ -51,7 +56,9 @@ const Home: NextPage = () => {
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"home"}/>
-            <Hero hasWindow={hasWindow}/>
+            {/*<ClinicIntro hasWindow={hasWindow}/>*/}
+            <IberoamericanoBanner /> {/* Temporal fix */}
+            <Services />
             <PopUP/>
             <About/>
             <Values/>
