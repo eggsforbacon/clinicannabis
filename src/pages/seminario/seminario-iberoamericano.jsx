@@ -15,6 +15,11 @@ export const Seminario = () => {
         bnrHead: {
             width: "100%",
             objectfit: "Cover"
+        },
+
+        imgAgenda:{
+            display: "block",
+            margin: "auto",
         }
     };
 
@@ -82,7 +87,12 @@ export const Seminario = () => {
                 </div>
             </div>
             {/* Inicio Agenda */}
-            
+            <div className="Agenda">
+            <div className={'w-100 sm:mb-20 lg:mb-40'}>
+                <Image src={"/images/LandingSeminario/Landing page - Clinicannabis - Seminario_Mesa de trabajo 1.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520} 
+                style={style.imgAgenda} />
+            </div>
+            </div>
             {/* Inicio Conferecistas */}
 
             {/* Inicio Google Maps */}
