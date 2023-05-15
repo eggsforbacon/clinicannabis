@@ -144,6 +144,144 @@ export const strings: IKeyedObject = {
             'cta': <>{"Descúbrelo"}</>
         },
     },
+    'seminario':{
+        'parrafo': {
+            1:{
+                'blackText': <>{"Santiago de Cali será sede del Seminario Iberoamericano Cannabinoides "}</>,
+                'normalText': <>{"en la práctica clínica, una apuesta por realizar un recorrido académico a través de los conceptos básicos de la medicina cannábica."}</>
+            },
+            2:{
+                'blackText': <>{"Clinicannabis Medicina Integrativa, pionera en la aplicación de medicina cannábica en el suroccidente colombiano,"}</>,
+                'normalText': <>{"es el anfitrión de este gran evento que reúne a profesionales de amplia trayectoria y estudiantes universitarios de las áreas de la salud, para adentrarse en el campo del Sistema Endocannabinoide y sus aplicaciones en el manejo del dolor."}</>
+            }
+        },
+        'subtitle': <>{"Cronograma Cali - Viernes 16 de Junio"}</>,
+        'sections': {
+            1: {
+                'time': <>{"7:00 - 8:00 a.m:"}</>,
+                'info': <>{"Registro e inscripciones – Mesa"}</>,
+            },
+            2: {
+                'time': <>{"8:00 - 8:30 a.m:"}</>,
+                'info': <>{"Apertura del evento – Bienvenida"}</>,
+            },
+            3: {
+                'time': <>{"8:30 - 9:20 a.m:"}</>,
+                'info': <>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal"}</>,
+                'name': <>{"Dr. Mariano García de Palau"}</>,
+                'contry': <>{"España"}</>,
+            },
+            4: {
+                'time': <>{"9:20 - 10:10 a.m:"}</>,
+                'info': <>{"El sistema endocannabinoide como diana terapéutica y herramienta de cribado de pacientes "}</>,
+                'name': <>{" Dra. Cristina Sánchez"}</>,
+                'contry': <>{"España"}</>,
+            },
+            5: {
+                'time': <>{"10:10 - 10:30 a.m:"}</>,
+                'info': <>{"Refrigerio"}</>,
+            },
+            6: {
+                'time': <>{"10:30 - 11:20 a.m:"}</>,
+                'info': <>{"Cannabinoides y adicciones – Psiquiatra"}</>,
+                'name': <>{"Alberto Ulloa"}</>,
+                'contry': <>{"Medellín"}</>,
+            },
+            7: {
+                'time': <>{"11:20 a.m - 12:20 p.m:"}</>,
+                'info': <>{"Cannabis y salud mental en animales de compañía- Veterinaria y Zootecnista"}</>,
+                'name': <>{"Natalia Mejía"}</>,
+                'contry': <>{"Medellín"}</>,
+            },
+            8: {
+                'time': <>{"12:20 - 2:00 p.m:"}</>,
+                'info': <>{"Almuerzo"}</>,
+            },
+            9: {
+                'time': <>{"2:00 - 2:50 p.m:"}</>,
+                'info': <>{"Uso de cannabinoides en pacientes con dolor"}</>,
+                'name': <>{"Dr. Daniel Archer Juri"}</>,
+                'contry': <>{"Cali"}</>,
+            },
+            10: {
+                'time': <>{"2:50 - 3:40 pm:"}</>,
+                'info': <>{"Uso de cannabis en condiciones neurodegenerativas énfasis en Parkinson y Alzheimer"}</>,
+                'name': <>{"Dra. Paola Pineda"}</>,
+                'contry': <>{"Medellín"}</>,
+            },
+            11: {
+                'time': <>{"3:40 - 4:00 p.m:"}</>,
+                'info': <>{"Refrigerio"}</>,
+            },
+            12: {
+                'time': <>{"4:00 - 4:50 p.m:"}</>,
+                'info': <>{"Effective dosing: How much is enough?"}</>,
+                'name': <>{"Ing. Mara Gordon"}</>,
+                'contry': <>{"USA"}</>,
+            },
+            13: {
+                'time': <>{"4:50 - 5:40 p.m:"}</>,
+                'info': <>{"Psiconeuroinmunodermatología y medicina cannábica en pequeños animales – Veterinario"}</>,
+                'name': <>{"Juan Carlos Builes"}</>,
+                'contry': <>{"Medellín"}</>,
+            },
+            14: {
+                'time': <>{"5:40 - 6:30 p.m:"}</>,
+                'info': <>{"Sesión de preguntas"}</>,
+            },
+        },
+        'conference': {
+            1:{
+                'academy':<>{"Dra."}</>,
+                'name':<>{"Cristina Sánchez"}</>,
+                'contry':<>{"España"}</>
+            },
+            2:{
+                'academy':<>{"Dr."}</>,
+                'name':<>{"Mariano García de Palau"}</>,
+                'contry':<>{"España"}</>
+            },
+            3:{
+                'name':<>{"Mara Gordon"}</>,
+                'contry':<>{"Estados Unidos"}</>
+            },
+            4:{
+                'academy':<>{"Dra."}</>,
+                'name':<>{"Paola Pineda"}</>,
+                'contry':<>{"Colombia"}</>
+            },
+            5:{
+                'academy':<>{"Dr."}</>,
+                'name':<>{"Juan Guillermo Maya"}</>,
+                'contry':<>{"Colombia"}</>
+            },
+            6:{
+                'academy':<>{"Dra."}</>,
+                'name':<>{"Natalia Mejía"}</>,
+                'contry':<>{"Colombia"}</>
+            },
+            7:{
+                'academy':<>{"Dr."}</>,
+                'name':<>{"Alberto Ulloa"}</>,
+                'contry':<>{"Colombia"}</>
+            },
+            8:{
+                'academy':<>{"Dr."}</>,
+                'name':<>{"Andrés D. Archer"}</>,
+                'contry':<>{"Colombia"}</>
+            },
+            9:{
+                'academy':<>{"Dr."}</>,
+                'name':<>{"Juan Carlos Builes"}</>,
+                'contry':<>{"Colombia"}</>
+            },
+            10:{
+                'academy':<>{"Dra."}</>,
+                'name':<>{"Sandra Carrillo"}</>,
+                'contry':<>{"Colombia"}</>
+            }
+        },
+    },
     'services': {
         'headline': <>{"Nuestros "}</>,
         'remark': <>{"servicios"}</>,

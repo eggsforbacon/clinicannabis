@@ -74,6 +74,10 @@ module.exports = {
                 'midnight-green': "#005361",
                 'rich-black': "#0C3A41",
                 'dark-green': "#022528",
+
+                'text-title': "#494083",
+                'P-seminario' : "#706f6f",
+                'seminari': "#787776 ", 
             },
             /*Awfully useful animation timing functions*/
             transitionTimingFunction: {
