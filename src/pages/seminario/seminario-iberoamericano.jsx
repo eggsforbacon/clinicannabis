@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, {useState} from "react";
+import { sendContactForm } from "../../lib/api";
 
 export const Seminario = () => {
     const style = {
@@ -74,7 +75,7 @@ export const Seminario = () => {
                             <input type={"Phone"} required label={"Tu nombre"} color={"white"} name={"ctPhone "} className="px-4 py-3 rounded-full"/>
                         </label>
                         
-                        <input type="checkbox" required class="text-pink-500"/> Acepto Términos y Condiciones
+                        <input type="checkbox" required className="text-pink-500"/> Acepto Términos y Condiciones
 
                         <input type={"submit"} className={"px-12 py-2 text-lg lg:text-2xl text-white border-solid border-2 border-white rounded-full shadow-md transition duration-500 ease-in-out hover:cursor-pointer lg:hover:border-viridian-green focus:border-viridian-green lg:hover:bg-viridian-green focus:bg-viridian-green lg:hover:text-white focus:text-white lg:hover:-translate-y-2 focus:-translate-y-2"} value={"Enviar"}/>
                     </form>
