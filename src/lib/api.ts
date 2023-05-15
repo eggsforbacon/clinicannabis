@@ -10,7 +10,7 @@ export const validateCaptcha = async (data : {token : string}) => {
     });
 }
 
-export const sendContactForm = async (data : ContactType) => {
+export const sendContactForm = async (data : {[key : string]: string}) => {
     return fetch('/api/contact', {
         method: "POST",
         body: JSON.stringify(data),
