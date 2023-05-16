@@ -6,7 +6,7 @@ export const HeroCarousel = (props: {
 }) => {
     const [videoPlayedOnce, setVideoPlayedOnce] = useState(false);
     const slides: JSX.Element[] = [
-        <ClinicIntro hasWindow={props.hasWindow} videoState={{videoPlayedOnce, setVideoPlayedOnce}}/>,
+        <ClinicIntro hasWindow={props.hasWindow} />,
         <p className={"top-52 absolute left-52"}>Cosa</p>,
     ];
 
