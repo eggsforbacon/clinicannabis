@@ -447,7 +447,7 @@
 /*  ================================================
    --  Section Landing Seminario --
 ================================================ */
-/* -- Inicio Conferecistas -- */
+/* -- form y contexr  -- */
 .infoSeminarioForm {
     width: 50%;
     padding-left: 6%;
@@ -456,6 +456,7 @@
 .form-label {
     display: flex;
     flex-direction: column;
+    width: 60vh;
 }
 
 .check-btn {
@@ -464,7 +465,34 @@
 }
 
 /* -- Inicio Agenda -- */
+.CronogramaSeminario{
+    width: 100%;
+    position: relative;
+    padding: 0 80px;
+}
+@media (min-width: 1200px) {
+    .StepCrono-1{
+        width: 100%;
+        margin-left: 10vh;
+    }
+    .StepCrono-2{
+        width: 100%;
+        margin-right: 10vh;
+        margin-left: 10vh;
+    }
+}
 
+@media (min-width: 1400px) {
+    .StepCrono-1{
+        width: 60%;
+        padding-right: 10vh;
+        margin-left: 10vh;
+    }
+    .StepCrono-2{
+        width: 60%;
+        margin-right: 10vh;
+    }
+}
 /* -- Inicio Conferecistas -- */
 .card {
     width: 220px;
@@ -485,7 +513,6 @@
     flex-direction: column;
 }
 
-/*Text*/
 .card-title p {
     text-align: center;
 }
@@ -498,7 +525,6 @@
     padding: 0 13px;
 }
 
-/*Hover*/
 .card:hover {
     height: auto !important;
     margin-bottom: 5vh !important;
@@ -525,6 +551,26 @@
     transform: scale(1.1);
 }
 
+@media (min-width: 1200px) {
+    .card {
+        width: 220px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    .card {
+        width: 320px;
+        height: auto;
+    }
+    .map{
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    
+}
 /* ================================================ */
 /* @media Para ocultar la img de fondo para IOS */
 @media (min-width: 320px) {

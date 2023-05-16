@@ -31,7 +31,7 @@ export const PopUP = () => {
                     <div className="BtnPop-1 btnPop-1">
                         <button type="button" className="btn btn-primary">
                             <Link href={"/seminario/seminario-iberoamericano"} className={`!text-white font-bold text-xl`} target="_blank">
-                                <span aria-hidden="true">←</span> Preinscribete aquí
+                                <span aria-hidden="true">←</span> Preinscr&iacute;bete aquí
                             </Link>
                         </button>
                     </div>

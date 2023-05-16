@@ -53,7 +53,7 @@ export const Seminario = () => {
                     style={style.bnrHead} />
             </div>
 
-            {/*      */}
+            {/*   form y contexr   */}
             <div className={"flex items-center justify-evenly lg:mb-40"}>
                 <div className="infoSeminarioForm">
                     <article>
@@ -68,21 +68,25 @@ export const Seminario = () => {
                 <div>
                     <form className={"justify-start items-center gap-4"}>
                         <label className="form-label"> Nombre
-                            <input type={"text"} required label={"Tu nombre"} color={"white"} name={"ctName"} className="px-4 py-3 rounded-full" />
+                            <input type={"text"} required label={"Tu nombre"} color={"white"} name={"ctName"} className="px-4 py-3 border-none rounded-full" />
                         </label>
 
                         <label className="form-label"> Email
-                            <input type={"email"} required label={"Tu correo"} color={"white"} name={"ctEmail"} className="px-4 py-3 rounded-full" />
+                            <input type={"email"} required label={"Tu correo"} color={"white"} name={"ctEmail"} className="px-4 py-3 border-none rounded-full" />
                         </label>
 
                         <label className="form-label"> Teléfono
-                            <input type={"Phone"} required label={"Tu nombre"} color={"white"} name={"ctPhone "} className="px-4 py-3 rounded-full" />
+                            <input type={"Phone"} required label={"Tu telefono"} color={"white"} name={"ctPhone"} className="px-4 py-3 border-none rounded-full" />
                         </label>
 
-                        <input type="checkbox" required className="text-pink-500" /> Acepto Términos y Condiciones
-                        <input type={"submit"} className={"px-12 py-2 text-lg lg:text-2xl text-white border-solid border-2 border-white rounded-full shadow-md transition duration-500 ease-in-out hover:cursor-pointer lg:hover:border-viridian-green focus:border-viridian-green lg:hover:bg-viridian-green focus:bg-viridian-green lg:hover:text-white focus:text-white lg:hover:-translate-y-2 focus:-translate-y-2"} value={"Enviar"} />
+                        <div className={"mt-5 ml-2"}>
+                            <input type="checkbox" required className="text-pink-500" /> Acepto Términos y Condiciones
+                            <input type={"submit"} 
+                                className={"px-12 py-2 text-lg lg:text-2xl text-black flex items-center mt-2 border-solid border-2 border-white rounded-full shadow-md transition duration-500 ease-in-out hover:cursor-pointer lg:hover:border-viridian-green focus:border-viridian-green lg:hover:bg-viridian-green focus:bg-viridian-green lg:hover:text-white focus:text-white lg:hover:-translate-y-2 focus:-translate-y-2"} 
+                                value={"Enviar"} style={{}}/>
+                        </div>
                     </form>
-                </div>
+                </div>  
             </div>
             {/* Inicio Agenda */}
             <div className="Agenda mb-20">
@@ -94,8 +98,8 @@ export const Seminario = () => {
                 <div className={"CronogramaSeminario flex flex-row justify-around"}>
                     <div className="StepCrono-1">
                         <div className="infoSeminario text-text-title">
-                            <p className={"text-left text-lg"}><b>{strings.seminario.sections["1"].time}</b></p>
-                            <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["1"].info}</p>
+                            <p className={"text-left text-lg text-xl-6"}><b>{strings.seminario.sections["1"].time}</b></p>
+                            <p className={"text-left text-lg mb-6 text-xl-6"}>{strings.seminario.sections["1"].info}</p>
                         </div>
                         <div className="infoSeminario text-text-title">
                             <p className={"text-left text-lg"}><b>{strings.seminario.sections["2"].time}</b></p>
@@ -362,7 +366,7 @@ export const Seminario = () => {
                         style={style.imgAgenda} />
                 </div>
                 <div className="map">
-                    <iframe
+                    <iframe className={"map"}
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.563306712596!2d-76.53850312611074!3d3.4557794511935027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f19d047757%3A0x14b8c3e63b55e08a!2sCali%20Marriott%20Hotel!5e0!3m2!1sen!2sco!4v1684265260790!5m2!1sen!2sco"
                         width="1262" height="450"
                         style={{ border: "0" }}
