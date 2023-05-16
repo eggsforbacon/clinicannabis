@@ -53,7 +53,7 @@ export const Seminario = () => {
                     style={style.bnrHead} />
             </div>
 
-            {/* Inicio parte del Form e info */}
+            {/*      */}
             <div className={"flex items-center justify-evenly lg:mb-40"}>
                 <div className="infoSeminarioForm">
                     <article>
@@ -80,13 +80,12 @@ export const Seminario = () => {
                         </label>
 
                         <input type="checkbox" required className="text-pink-500" /> Acepto Términos y Condiciones
-
                         <input type={"submit"} className={"px-12 py-2 text-lg lg:text-2xl text-white border-solid border-2 border-white rounded-full shadow-md transition duration-500 ease-in-out hover:cursor-pointer lg:hover:border-viridian-green focus:border-viridian-green lg:hover:bg-viridian-green focus:bg-viridian-green lg:hover:text-white focus:text-white lg:hover:-translate-y-2 focus:-translate-y-2"} value={"Enviar"} />
                     </form>
                 </div>
             </div>
             {/* Inicio Agenda */}
-            <div className="Agenda">
+            <div className="Agenda mb-20">
                 <div className={'mb-20'}>
                     <Image src={"/images/LandingSeminario/Clinicannabis-Seminario-04.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                         style={style.imgAgenda} />
@@ -187,219 +186,190 @@ export const Seminario = () => {
                 </div>
             </div>
             {/* Inicio Conferecistas */}
-            <div className="conferencistas">
-                <div className={'mb-20'}>
+            <div className="conferencistas mb-10 mt-10">
+                <div className={'mb-5'}>
                     <Image src={"/images/LandingSeminario/conferenci.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                         style={style.imgAgenda} />
                 </div>
+
                 <div className="cards-conferences flex flex-wrap justify-evenly	">
                     <div class="card">
-                        <div class="slide slide1">
-                            <div class="content">
-                                <div class="icon">
-                                    <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-07.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                                        style={{}} />
-                                </div>
+                        <div class="card-info">
+                            <div class="card-avatar">
+                                <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-07.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    style={{}} />
                             </div>
                         </div>
 
-                        <div class="slide slide2">
-                            <div class="content text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["1"].academy}
-                                    <b>{strings.seminario.conference["1"].name}</b>
-                                </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["1"].contry}</p>
-                            </div>
+                        <div class="card-social card-title text-text-title">
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["1"].academy}
+                                <b>{strings.seminario.conference["1"].name}</b>
+                            </p>
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["1"].contry}</p>
                         </div>
                     </div>
-                    {/*  */}
+                    {/* Card 2 */}
                     <div class="card">
-                        <div class="slide slide1">
-                            <div class="content">
-                                <div class="icon">
-                                    <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-08.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                                        style={{}} />
-                                </div>
+                        <div class="card-info">
+                            <div class="card-avatar">
+                                <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-08.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    style={{}} />
                             </div>
                         </div>
 
-                        <div class="slide slide2">
-                            <div class="content text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["2"].academy}
-                                    <b>{strings.seminario.conference["2"].name}</b>
-                                </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["2"].contry}</p>
-                            </div>
+                        <div class="card-title card-social text-text-title">
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["2"].academy}
+                                <b>{strings.seminario.conference["2"].name}</b>
+                            </p>
+
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["2"].contry}</p>
                         </div>
                     </div>
-                    {/*  */}
+                    {/* Card 3 */}
                     <div class="card">
-                        <div class="slide slide1">
-                            <div class="content">
-                                <div class="icon">
-                                    <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-09.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                                        style={{}} />
-                                </div>
+                        <div class="card-info">
+                            <div class="card-avatar">
+                                <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-09.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    style={{}} />
                             </div>
                         </div>
 
-                        <div class="slide slide2">
-                            <div class="content text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["3"].academy}
-                                    <b>{strings.seminario.conference["3"].name}</b>
-                                </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["3"].contry}</p>
-                            </div>
+                        <div class="card-title card-social text-text-title">
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["3"].academy}
+                                <b>{strings.seminario.conference["3"].name}</b>
+                            </p>
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["3"].contry}</p>
                         </div>
                     </div>
-                    {/*  */}
+                    {/* Card 4 */}
                     <div class="card">
-                        <div class="slide slide1">
-                            <div class="content">
-                                <div class="icon">
-                                    <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-10.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                                        style={{}} />
-                                </div>
+                        <div class="card-info">
+                            <div class="card-avatar">
+                                <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-10.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    style={{}} />
                             </div>
                         </div>
 
-                        <div class="slide slide2">
-                            <div class="content text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["4"].academy}
-                                    <b>{strings.seminario.conference["4"].name}</b>
-                                </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["4"].contry}</p>
-                            </div>
+                        <div class="card-title card-social text-text-title">
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["4"].academy}
+                                <b>{strings.seminario.conference["4"].name}</b>
+                            </p>
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["4"].contry}</p>
                         </div>
                     </div>
-                    {/*  */}
+                    {/* Card 5 */}
                     <div class="card">
-                        <div class="slide slide1">
-                            <div class="content">
-                                <div class="icon">
-                                    <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-11.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                                        style={{}} />
-                                </div>
+                        <div class="card-info">
+                            <div class="card-avatar">
+                                <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-11.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    style={{}} />
                             </div>
                         </div>
 
-                        <div class="slide slide2">
-                            <div class="content text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["5"].academy}
-                                    <b>{strings.seminario.conference["5"].name}</b>
-                                </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["5"].contry}</p>
-                            </div>
+                        <div class="card-title card-social text-text-title">
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["5"].academy}
+                                <b>{strings.seminario.conference["5"].name}</b>
+                            </p>
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["5"].contry}</p>
                         </div>
                     </div>
-                    {/*  */}
+                    {/* Card 6 */}
                     <div class="card">
-                        <div class="slide slide1">
-                            <div class="content">
-                                <div class="icon">
-                                    <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-12.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                                        style={{}} />
-                                </div>
+                        <div class="card-info">
+                            <div class="card-avatar">
+                                <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-12.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    style={{}} />
                             </div>
                         </div>
 
-                        <div class="slide slide2">
-                            <div class="content text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["6"].academy}
-                                    <b>{strings.seminario.conference["6"].name}</b>
-                                </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["6"].contry}</p>
-                            </div>
+                        <div class="card-title card-social text-text-title">
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["6"].academy}
+                                <b>{strings.seminario.conference["6"].name}</b>
+                            </p>
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["6"].contry}</p>
                         </div>
                     </div>
-                    {/*  */}
+                    {/* Card 7*/}
                     <div class="card">
-                        <div class="slide slide1">
-                            <div class="content">
-                                <div class="icon">
-                                    <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-13.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                                        style={{}} />
-                                </div>
+                        <div class="card-info">
+                            <div class="card-avatar">
+                                <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-13.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    style={{}} />
                             </div>
                         </div>
 
-                        <div class="slide slide2">
-                            <div class="content text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["7"].academy}
-                                    <b>{strings.seminario.conference["7"].name}</b>
-                                </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["7"].contry}</p>
-                            </div>
+                        <div class="card-title card-social text-text-title">
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["7"].academy}
+                                <b>{strings.seminario.conference["7"].name}</b>
+                            </p>
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["7"].contry}</p>
                         </div>
                     </div>
-                    {/*  */}
+                    {/* Card 8 */}
                     <div class="card">
-                        <div class="slide slide1">
-                            <div class="content">
-                                <div class="icon">
-                                    <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-14.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                                        style={{}} />
-                                </div>
+                        <div class="card-info">
+                            <div class="card-avatar">
+                                <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-14.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    style={{}} />
                             </div>
                         </div>
 
-                        <div class="slide slide2">
-                            <div class="content text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["8"].academy}
-                                    <b>{strings.seminario.conference["8"].name}</b>
-                                </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["8"].contry}</p>
-                            </div>
+                        <div class="card-title card-social text-text-title">
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["8"].academy}
+                                <b>{strings.seminario.conference["8"].name}</b>
+                            </p>
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["8"].contry}</p>
                         </div>
                     </div>
-                    {/*  */}
+                    {/* Card 9 */}
                     <div class="card">
-                        <div class="slide slide1">
-                            <div class="content">
-                                <div class="icon">
-                                    <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-15.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                                        style={{}} />
-                                </div>
+                        <div class="card-info">
+                            <div class="card-avatar">
+                                <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-15.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    style={{}} />
                             </div>
                         </div>
 
-                        <div class="slide slide2">
-                            <div class="content text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["9"].academy}
-                                    <b>{strings.seminario.conference["9"].name}</b>
-                                </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["9"].contry}</p>
-                            </div>
+                        <div class="card-title card-social text-text-title">
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["9"].academy}
+                                <b>{strings.seminario.conference["9"].name}</b>
+                            </p>
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["9"].contry}</p>
                         </div>
                     </div>
-                    {/*  */}
+                    {/* Card 10 */}
                     <div class="card">
-                        <div class="slide slide1">
-                            <div class="content">
-                                <div class="icon">
-                                    <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-16.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                                        style={{}} />
-                                </div>
+                        <div class="card-info">
+                            <div class="card-avatar">
+                                <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-16.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    style={{}} />
                             </div>
                         </div>
 
-                        <div class="slide slide2">
-                            <div class="content text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["10"].academy}
-                                    <b>{strings.seminario.conference["10"].name}</b>
-                                </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["10"].contry}</p>
-                            </div>
+                        <div class="card-title card-social text-text-title">
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["10"].academy}
+                                <b>{strings.seminario.conference["10"].name}</b>
+                            </p>
+                            <p className={"text-left text-lg"}>{strings.seminario.conference["10"].contry}</p>
                         </div>
                     </div>
                 </div>
             </div>
             {/* Inicio Google Maps */}
             <div className="ubication">
-                <div className={'mb-20'}>
+                <div className={''}>
                     <Image src={"/images/LandingSeminario/Ubication.png "} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                         style={style.imgAgenda} />
-                    <p className={"text-center text-2xl text-text-title"}>{strings.seminario.subtitle}</p>
+                </div>
+                <div className="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.563306712596!2d-76.53850312611074!3d3.4557794511935027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f19d047757%3A0x14b8c3e63b55e08a!2sCali%20Marriott%20Hotel!5e0!3m2!1sen!2sco!4v1684265260790!5m2!1sen!2sco"
+                        width="1262" height="450"
+                        style={{ border: "0" }}
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
             {/* Inicio footer */}
