@@ -281,6 +281,56 @@ export const strings: IKeyedObject = {
                 'contry':<>{"Colombia"}</>
             }
         },
+        'conferecistas':{
+            1:{ 
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Dra. Cristina Sánchez - España."}</>,
+                'indice':<>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
+                'txt':<>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979. Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral. Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
+            },
+            2:{ 
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Dr. Mariano García de Palau – España."}</>,
+                'indice':<>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
+                'txt':<>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979. Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral. Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
+            },
+            3:{ 
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Ing. Mara Gordon – USA."}</>,
+                'indice':<>{"Effective dosing: How much is enough?"}</>,
+                'txt':<>{"Líder de renombre mundial en el ecosistema del cannabis medicinal. Utilizó su experiencia como ingeniera de procesos para ayudar a las empresas de Fortune 500 a desarrollar sistemas inteligentes en la creación de fórmulas de cannabis y regímenes de dosificación terapéuticos para miles de pacientes en California, mejorando drásticamente su salud, calidad de vida y longevidad. Mara forma parte de los consejos de administración de Aunt Zelda’s y Zelira Therapeutics."}</>
+            },
+            4:{ 
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Dra. Paola Pineda – Colombia."}</>,
+                'indice':<>{"Uso de cannabis en condiciones neurodegenerativas énfasis en Parkinson y Alzheimer."}</>,
+                'txt':<>{"Médica y cirujana con experiencia de 10 años en manejo de personas con epilepsia, cáncer, dolor no asociado a neoplasias, enfermedades neurodegenerativas, enfermedades autoinmunes, trastornos del sueño, entre otros, que han optado por la terapia a base de cannabis como parte fundamental de su tratamiento. Desde 2013, encontró como podría integrar la medicina con cannabis en la atención de pacientes con enfermedades crónicas quienes por su condición de base tienen un gran deterioro en su calidad de vida. Participó en los primeros debates del congreso de la república donde se empezó a hablar sobre la importancia de la reglamentación del cannabis medicinal para diferentes condiciones de salud."}</>
+            },
+            6:{ 
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Veterinaria y zootecnista Natalia Mejía – Colombia."}</>,
+                'indice':<>{"Cannabis y salud mental en animales de compañía."}</>,
+                'txt':<>{"Médica veterinaria zootecnista, magíster en etología clínica con estudios en medicina veterinaria integrativa y con varios años de experiencia en el uso de cannabis medicinal en sus pacientes."}</>
+            },
+            7:{ 
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Psiquiatra Alberto Ulloa – Colombia."}</>,
+                'indice':<>{"Cannabinoides y adicciones."}</>,
+                'txt':<>{"Médico especialista en psiquiatría de la Universidad Javeriana. Cuenta con 33 años de experiencia en el ejercicio público y privado de la psiquiatría, la asesoría, la docencia y la atención, de personas e instituciones que requieren de servicio y apoyo técnico, para la promoción, prevención y atención de problemas de salud mental y el consumo de sustancias psicoactivas."}</>
+            },
+            8:{ 
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Dr. Daniel Archer Juri – Colombia."}</>,
+                'indice':<>{"Uso de cannabinoides en pacientes con dolor."}</>,
+                'txt':<>{"Médico de la Universidad Libre, especialista en terapias alternativas de la Universidad Manuela Beltrán. Cuenta con amplia experiencia en el manejo clínico de cannabis medicinal, integrando el conocimiento de la medicina tradicional china y la medicina alopática, es docente médico y terapeuta de la Escuela Neijing Kali, médico especialista en cannabis del Centro de Medicina Ancestral Orígenes Clinicannabis."}</>
+            },
+            9:{ 
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Veterinario Juan Carlos Builes – Colombia."}</>,
+                'indice':<>{"Psiconeuroinmunodermatología y medicina cannábica en pequeños animales."}</>,
+                'txt':<>{"Médico veterinario y especialista médico de la Universidad de Antioquia, director del Centro Veterinario Juan Carlos Builes Medellín, desde 2001 a la fecha. Amplia experiencia en el uso del cannabis medicinal desde 2019."}</>
+            },
+        },
     },
     'services': {
         'headline': <>{"Nuestros "}</>,

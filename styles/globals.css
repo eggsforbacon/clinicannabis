@@ -79,6 +79,98 @@
 /*  ================================================
     Adaptatividad Juan 
 ================================================ */
+/* -- Btn Head -- */
+.Button-Banner{
+    position: relative;
+    z-index: 99;
+    top: 29em;
+    left: 25em;
+}
+.Position-Btn{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.bg-buttonHD{
+    padding: 15px 40px;
+    transition: all .5s;
+    backdrop-filter: blur(10px);
+}
+.bg-buttonHD:hover{
+    background: #ffffff36;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+@media (min-width: 320px) {
+    .Button-Banner{
+        top: 7em;
+        left: 5em;
+    }
+    .text-button{   
+        font-size: 10px;
+        font-weight: 400;
+        text-align: justify;
+    }
+    .bg-buttonHD{padding: 0px 12px;}
+    .border-Button{border: solid 2px #e5e7eb;}
+    .Position-Btn{width: 60%;}
+}
+@media (min-width: 576px) {
+    .Position-Btn{
+        width: 50%;
+    }
+    .Button-Banner{
+        top: 10.5em;
+        left: 10.7em;
+    }
+    .text-button{   
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .bg-buttonHD{padding: 0px 12px;}
+    .border-Button{border: solid 2px #e5e7eb;}
+}
+@media (min-width: 768px) {
+    .Button-Banner{
+        top: 14em;
+        left: 13em;
+    }
+    .text-button{   
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .bg-buttonHD{padding: 6px 20px;}
+    .border-Button{border: solid 4px #e5e7eb;}
+}
+@media (min-width: 992px) {
+    .Button-Banner{
+        top: 18em;
+        left: 17em;
+    }
+    .text-button{   
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+    .bg-buttonHD{padding: 7px 25px;}
+}
+@media (min-width: 1200px) {
+    .Button-Banner{
+        top: 29em;
+        left: 25em;
+    }
+    .bg-buttonHD{padding: 15px 40px;}
+}
+@media (min-width: 1400px) {
+    .Button-Banner{
+        top: 26em;
+    }
+}
+@media (min-width: 1400px) {
+    .Button-Banner{
+        top: 30em;
+    }
+}
+
 /* -- POPUP -- */
 .contentAll-popup {
     width: 100%;
@@ -493,9 +585,10 @@
         margin-right: 10vh;
     }
 }
+
 /* -- Inicio Conferecistas -- */
 .card {
-    width: 220px;
+    width: 320px;
     height: auto;
     border-radius: 50px;
 }
@@ -526,15 +619,10 @@
 }
 
 .card:hover {
-    height: auto !important;
-    margin-bottom: 5vh !important;
+    height: 52vh !important;
     background: #fff;
     box-shadow: 20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
-}
-
-.card:hover .card-info {
-    transform: translateY(-5%);
 }
 
 .card:hover .card-social {
@@ -542,29 +630,81 @@
     opacity: 1;
 }
 
-.card-social__item svg:hover {
-    fill: #232323;
-    transform: scale(1.1);
+/* ============================== */
+/* Btn Pop */
+.btn-modal {
+    margin-top: 6px !important;
+    padding: 10px 20px;
+    display: block;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+.modal{
+    width: 80rem;
+    position: absolute;
+    margin-top: 25rem;
+    margin-left: 50%;
+}
+/* 
+.overlay {
+    margin-top: -3vh;
+    width: 100%;
+    height: 90vh;
+    background: rgba(29, 29, 29, 0.849);
+    border-radius: 1%;
+} */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #ffffff;
+    padding: 60px;
+    border-radius: 3px;
+    max-width: 100%;
+    width: 100%;
+    width: 50% !important;
+    height: auto;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.card-avatar:hover {
-    transform: scale(1.1);
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
 }
 
+/* ============================== */
+/* @media */
 @media (min-width: 1200px) {
     .card {
-        width: 220px;
+        width: 270px;
         height: auto;
+    }
+    .map iframe{
+        width: 100% !important;
+    }
+    /* Pop */
+    .modal, .overlay{
+        top: -47vh;
+        left: -40px;
     }
 }
 
 @media (min-width: 1400px) {
     .card {
-        width: 320px;
+        width: 340px;
         height: auto;
     }
-    .map{
-        width: 100% !important;
+    /* Pop */
+    .modal, .overlay{
+        top: -36vh;
+        left: -1px;
     }
 }
 

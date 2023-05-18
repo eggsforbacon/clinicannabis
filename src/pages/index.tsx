@@ -59,7 +59,6 @@ const Home: NextPage = () => {
             {/*<ClinicIntro hasWindow={hasWindow}/>*/}
             <IberoamericanoBanner /> {/* Temporal fix */}
             <Services />
-            <PopUP/>
             <About/>
             <Values/>
             <Experience/>
