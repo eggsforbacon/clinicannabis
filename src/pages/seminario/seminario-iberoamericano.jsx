@@ -488,10 +488,10 @@ export const Seminario = () => {
                             </div>
 
                             <div className="card-title card-social text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["8"].academy}
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["8"].academy}
                                     <b>{strings.seminario.conference["8"].name}</b>
                                 </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["8"].contry}</p>
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["8"].contry}</p>
 
                                 {/*  */}
                                 <button onClick={toggleModal6} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
@@ -521,10 +521,10 @@ export const Seminario = () => {
                             </div>
 
                             <div className="card-title card-social text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["8"].academy}
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["8"].academy}
                                     <b>{strings.seminario.conference["8"].name}</b>
                                 </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["8"].contry}</p>
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["8"].contry}</p>
 
                                 {/*  */}
                                 <button onClick={toggleModal7} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
