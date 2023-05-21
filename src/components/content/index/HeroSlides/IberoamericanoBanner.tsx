@@ -6,7 +6,7 @@ export const IberoamericanoBanner = () => {
     const navigate = useRouter();
 
     return (
-        <section className={"w-full h-224 relative -mb-20 "}>
+        <section className={"w-full h-224 relative -mb-20 mt-20"}>
             <Image src={"/images/LandingSeminario/Banner Web-1280x620.png"}
                 alt={""} width={1280} height={565} className={"w-full absolute top-0 left-0"} quality={100} priority />
             {/* <Image onClick={() => { navigate.push("/seminario/seminario-iberoamericano") }} src={"/images/LandingSeminario/Banner Web-1280x620.png"}

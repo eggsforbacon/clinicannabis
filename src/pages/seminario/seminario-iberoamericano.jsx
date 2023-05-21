@@ -26,7 +26,6 @@ export const Seminario = () => {
         }
     };
 
-
     const [data, setData] = useState({
         name: "",
         email: "",
@@ -46,13 +45,83 @@ export const Seminario = () => {
     }
 
     const [modal, setModal] = useState(false);
-
     const toggleModal = () => {
         setModal(!modal);
     };
+    const [modal1, setModal1] = useState(false);
+    const toggleModal1 = () => {
+        setModal1(!modal1);
+    }
+    const [modal2, setModal2] = useState(false);
+    const toggleModal2 = () => {
+        setModal2(!modal2);
+    }
+    const [modal3, setModal3] = useState(false);
+    const toggleModal3 = () => {
+        setModal3(!modal3);
+    }
+    const [modal4, setModal4] = useState(false);
+    const toggleModal4 = () => {
+        setModal4(!modal4);
+    }
+    const [modal5, setModal5] = useState(false);
+    const toggleModal5 = () => {
+        setModal5(!modal5);
+    }
+    const [modal6, setModal6] = useState(false);
+    const toggleModal6 = () => {
+        setModal6(!modal6);
+    }
+    const [modal7, setModal7] = useState(false);
+    const toggleModal7 = () => {
+        setModal7(!modal7);
+    }
+
 
     if (typeof window !== "undefined") {
         if (modal) {
+            document.body.classList.add('active-modal')
+        } else {
+            document.body.classList.remove('active-modal')
+        }
+        //
+        if (modal1) {
+            document.body.classList.add('active-modal')
+        } else {
+            document.body.classList.remove('active-modal')
+        }
+        //
+        if (modal2) {
+            document.body.classList.add('active-modal')
+        } else {
+            document.body.classList.remove('active-modal')
+        }
+        //
+        if (modal3) {
+            document.body.classList.add('active-modal')
+        } else {
+            document.body.classList.remove('active-modal')
+        }
+        //
+        if (modal4) {
+            document.body.classList.add('active-modal')
+        } else {
+            document.body.classList.remove('active-modal')
+        }
+        //
+        if (modal5) {
+            document.body.classList.add('active-modal')
+        } else {
+            document.body.classList.remove('active-modal')
+        }
+        //
+        if (modal6) {
+            document.body.classList.add('active-modal')
+        } else {
+            document.body.classList.remove('active-modal')
+        }
+        //
+        if (modal7) {
             document.body.classList.add('active-modal')
         } else {
             document.body.classList.remove('active-modal')
@@ -68,7 +137,7 @@ export const Seminario = () => {
                         style={style.bnrHead} />
                 </div>
                 {/*   form y contexr   */}
-                <div className={"flex items-center justify-evenly lg:mb-40"}>
+                <div className={"content-form-TXT lg:mb-40"}>
                     <div className="infoSeminarioForm">
                         <article>
                             <p className={" text-xl text-P-seminario"}><b>{strings.seminario.parrafo["1"].blackText}</b></p>
@@ -79,7 +148,7 @@ export const Seminario = () => {
                         </article>
                     </div>
 
-                    <div>
+                    <div className={'mg-form'}>
                         <form className={"justify-start items-center gap-4"}>
                             <label className="form-label"> Nombre
                                 <input type={"text"} required label={"Tu nombre"} color={"white"} name={"ctName"} className="px-4 py-3 border-none rounded-full" />
@@ -109,7 +178,7 @@ export const Seminario = () => {
                             style={style.imgAgenda} />
                         <p className={"text-center text-2xl text-text-title"}>{strings.seminario.subtitle}</p>
                     </div>
-                    <div className={"CronogramaSeminario flex flex-row justify-around"}>
+                    <div className={"CronogramaSeminario InfoCronograma"}>
                         <div className="StepCrono-1">
                             <div className="infoSeminario text-text-title">
                                 <p className={"text-left text-lg text-xl-6"}><b>{strings.seminario.sections["1"].time}</b></p>
@@ -210,7 +279,8 @@ export const Seminario = () => {
                             style={style.imgAgenda} />
                     </div>
 
-                    <div className="cards-conferences flex flex-wrap justify-evenly	">
+                    <div className="cards-conferences">
+                        {/* Card 1 */}
                         <div class="card">
                             <div class="card-info">
                                 <div class="card-avatar">
@@ -220,165 +290,285 @@ export const Seminario = () => {
                             </div>
 
                             <div class="card-social card-title text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["1"].academy}
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["1"].academy}
                                     <b>{strings.seminario.conference["1"].name}</b>
                                 </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["1"].contry}</p>
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["1"].contry}</p>
                                 {/*  */}
-                                <button onClick={toggleModal} className={'btn-modal bg-[#584280] rounded-3xl'}>Open</button>
-
-                                {modal && (
-                                    <div className="modal">
-                                        <div onClick={toggleModal} className="overlay"></div>
-                                        <div className="modal-content">
-                                            <p className={"text-left text-lg mb-1"}><b>{strings.seminario.conferecistas["1"].title}</b></p>
-                                            <p className={"text-left text-lg"}>{strings.seminario.conferecistas["1"].subtitle}</p>
-                                            <p className={"text-left text-lg"}>{strings.seminario.conferecistas["1"].title}</p>
-                                            <p className={"text-left text-lg"}>{strings.seminario.conferecistas["1"].subtitle}</p>
-                                            <button className="close-modal" onClick={toggleModal}>X</button>
+                                <button onClick={toggleModal} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
+                                <div className="">
+                                    {modal && (
+                                        <div className="modal">
+                                            <div onClick={toggleModal} className="overlay"></div>
+                                            <div className="modal-content">
+                                                <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["1"].title}</b></p>
+                                                <p className={"text-left text-lg mb-2"}>{strings.seminario.conferecistas["1"].subtitle}</p>
+                                                <p className={"text-left text-lg mb-3"}>{strings.seminario.conferecistas["1"].indice}</p>
+                                                <p className={"text-left text-lg mb-4"}>{strings.seminario.conferecistas["1"].txt}</p>
+                                                <button className="close-modal" onClick={toggleModal}>X</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                )}
+                                    )}
+                                </div>
                             </div>
                         </div>
                         {/* Card 2 */}
-                        <div class="card">
-                            <div class="card-info">
-                                <div class="card-avatar">
+                        <div className="card">
+                            <div className="card-info">
+                                <div className="card-avatar">
                                     <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-08.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                                         style={{}} />
                                 </div>
                             </div>
 
-                            <div class="card-title card-social text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["2"].academy}
+                            <div className="card-title card-social text-text-title">
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["2"].academy}
                                     <b>{strings.seminario.conference["2"].name}</b>
                                 </p>
 
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["2"].contry}</p>
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["2"].contry}</p>
+                                {/*  */}
+                                <button onClick={toggleModal1} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
+                                <div className="">
+                                    {modal1 && (
+                                        <div className="modal1">
+                                            <div onClick={toggleModal1} className="overlay"></div>
+
+                                            <div className="modal-content">
+                                                <p className={"text-left text-lg mb-2 modal__title"}><b>{strings.seminario.conferecistas["2"].title}</b></p>
+                                                <p className={"text-left text-lg mb-2 modal__description"}>{strings.seminario.conferecistas["2"].subtitle}</p>
+                                                <p className={"text-left text-lg mb-3 modal__text"}>{strings.seminario.conferecistas["2"].indice}</p>
+                                                <p className={"text-left text-lg mb-4 modal__text"}>{strings.seminario.conferecistas["2"].txt}</p>
+                                                <button className="close-modal" onClick={toggleModal1}>X</button>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
                         {/* Card 3 */}
-                        <div class="card">
-                            <div class="card-info">
-                                <div class="card-avatar">
+                        <div className="card">
+                            <div className="card-info">
+                                <div className="card-avatar">
                                     <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-09.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                                         style={{}} />
                                 </div>
                             </div>
 
-                            <div class="card-title card-social text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["3"].academy}
+                            <div className="card-title card-social text-text-title">
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["3"].academy}
                                     <b>{strings.seminario.conference["3"].name}</b>
                                 </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["3"].contry}</p>
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["3"].contry}</p>
+
+                                {/*  */}
+                                <button onClick={toggleModal2} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
+                                <div className="">
+                                    {modal2 && (
+                                        <div className="modal2">
+                                            <div onClick={toggleModal2} className="overlay"></div>
+                                            <div className="modal-content">
+                                                <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["3"].title}</b></p>
+                                                <p className={"text-left text-lg mb-2"}>{strings.seminario.conferecistas["3"].subtitle}</p>
+                                                <p className={"text-left text-lg mb-3"}>{strings.seminario.conferecistas["3"].indice}</p>
+                                                <p className={"text-left text-lg mb-4"}>{strings.seminario.conferecistas["3"].txt}</p>
+                                                <button className="close-modal" onClick={toggleModal2}>X</button>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
                         {/* Card 4 */}
-                        <div class="card">
-                            <div class="card-info">
-                                <div class="card-avatar">
+                        <div className="card">
+                            <div className="card-info">
+                                <div className="card-avatar">
                                     <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-10.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                                         style={{}} />
                                 </div>
                             </div>
 
-                            <div class="card-title card-social text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["4"].academy}
+                            <div className="card-title card-social text-text-title">
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["4"].academy}
                                     <b>{strings.seminario.conference["4"].name}</b>
                                 </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["4"].contry}</p>
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["4"].contry}</p>
+                                {/*  */}
+                                <button onClick={toggleModal3} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
+                                <article className="">
+                                    {modal3 && (
+                                        <div className="moda3">
+                                            <div onClick={toggleModal3} className="overlay"></div>
+                                            <div className={'modal-content'}>
+                                                <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["4"].title}</b></p>
+                                                <p className={"text-left text-lg mb-2"}>{strings.seminario.conferecistas["4"].subtitle}</p>
+                                                <p className={"text-left text-lg mb-3"}>{strings.seminario.conferecistas["4"].indice}</p>
+                                                <p className={"text-left text-lg mb-4"}>{strings.seminario.conferecistas["4"].txt}</p>
+                                                <button className="close-modal" onClick={toggleModal3}>X</button>
+                                            </div>
+                                        </div>
+                                    )}
+                                </article>
                             </div>
                         </div>
                         {/* Card 5 */}
-                        <div class="card">
-                            <div class="card-info">
-                                <div class="card-avatar">
+                        <div className="card">
+                            <div className="card-info">
+                                <div className="card-avatar">
                                     <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-12.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                                         style={{}} />
                                 </div>
                             </div>
 
-                            <div class="card-title card-social text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["6"].academy}
+                            <div className="card-title card-social text-text-title">
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["6"].academy}
                                     <b>{strings.seminario.conference["6"].name}</b>
                                 </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["6"].contry}</p>
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["6"].contry}</p>
+
+                                {/*  */}
+                                <div className="">
+                                    <button onClick={toggleModal4} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
+
+                                    {modal4 && (
+                                        <div className="modal">
+                                            <div onClick={toggleModal4} className="overlay"></div>
+                                            <div className="modal-content">
+                                                <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["6"].title}</b></p>
+                                                <p className={"text-left text-lg mb-2"}>{strings.seminario.conferecistas["6"].subtitle}</p>
+                                                <p className={"text-left text-lg mb-3"}>{strings.seminario.conferecistas["6"].indice}</p>
+                                                <p className={"text-left text-lg mb-4"}>{strings.seminario.conferecistas["6"].txt}</p>
+                                                <button className="close-modal" onClick={toggleModal4}>X</button>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
                         {/* Card 6*/}
-                        <div class="card">
-                            <div class="card-info">
-                                <div class="card-avatar">
+                        <div className="card">
+                            <div className="card-info">
+                                <div className="card-avatar">
                                     <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-13.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                                         style={{}} />
                                 </div>
                             </div>
 
-                            <div class="card-title card-social text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["7"].academy}
+                            <div className="card-title card-social text-text-title">
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["7"].academy}
                                     <b>{strings.seminario.conference["7"].name}</b>
                                 </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["7"].contry}</p>
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["7"].contry}</p>
+
+                                {/*  */}
+                                <button onClick={toggleModal5} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
+                                <div className="">
+                                    {modal5 && (
+                                        <div className="modal1">
+                                            <div onClick={toggleModal5} className="overlay"></div>
+                                            <div className="modal-content">
+                                                <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["7"].title}</b></p>
+                                                <p className={"text-left text-lg mb-2"}>{strings.seminario.conferecistas["7"].subtitle}</p>
+                                                <p className={"text-left text-lg mb-3"}>{strings.seminario.conferecistas["7"].indice}</p>
+                                                <p className={"text-left text-lg mb-4"}>{strings.seminario.conferecistas["7"].txt}</p>
+                                                <button className="close-modal" onClick={toggleModal5}>X</button>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
                         {/* Card 7 */}
-                        <div class="card">
-                            <div class="card-info">
-                                <div class="card-avatar">
+                        <div className="card">
+                            <div className="card-info">
+                                <div className="card-avatar">
                                     <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-14.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                                         style={{}} />
                                 </div>
                             </div>
 
-                            <div class="card-title card-social text-text-title">
+                            <div className="card-title card-social text-text-title">
                                 <p className={"text-left text-lg"}>{strings.seminario.conference["8"].academy}
                                     <b>{strings.seminario.conference["8"].name}</b>
                                 </p>
                                 <p className={"text-left text-lg"}>{strings.seminario.conference["8"].contry}</p>
+
+                                {/*  */}
+                                <button onClick={toggleModal6} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
+                                <div className="">
+                                    {modal6 && (
+                                        <div className="modal2">
+                                            <div onClick={toggleModal6} className="overlay"></div>
+                                            <div className="modal-content">
+                                                <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["8"].title}</b></p>
+                                                <p className={"text-left text-lg mb-2"}>{strings.seminario.conferecistas["8"].subtitle}</p>
+                                                <p className={"text-left text-lg mb-3"}>{strings.seminario.conferecistas["8"].indice}</p>
+                                                <p className={"text-left text-lg mb-4"}>{strings.seminario.conferecistas["8"].txt}</p>
+                                                <button className="close-modal" onClick={toggleModal6}>X</button>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
                         {/* Card 8 */}
-                        <div class="card">
-                            <div class="card-info">
-                                <div class="card-avatar">
+                        <div className="card">
+                            <div className="card-info">
+                                <div className="card-avatar">
                                     <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-15.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                                         style={{}} />
                                 </div>
                             </div>
 
-                            <div class="card-title card-social text-text-title">
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["9"].academy}
-                                    <b>{strings.seminario.conference["9"].name}</b>
+                            <div className="card-title card-social text-text-title">
+                                <p className={"text-left text-lg"}>{strings.seminario.conference["8"].academy}
+                                    <b>{strings.seminario.conference["8"].name}</b>
                                 </p>
-                                <p className={"text-left text-lg"}>{strings.seminario.conference["9"].contry}</p>
+                                <p className={"text-left text-lg"}>{strings.seminario.conference["8"].contry}</p>
+
+                                {/*  */}
+                                <button onClick={toggleModal7} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
+                                <div className="">
+                                    {modal6 && (
+                                        <div className="modal3">
+                                            <div onClick={toggleModal7} className="overlay"></div>
+                                            <div className="modal-content">
+                                                <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["9"].title}</b></p>
+                                                <p className={"text-left text-lg mb-2"}>{strings.seminario.conferecistas["9"].subtitle}</p>
+                                                <p className={"text-left text-lg mb-3"}>{strings.seminario.conferecistas["9"].indice}</p>
+                                                <p className={"text-left text-lg mb-4"}>{strings.seminario.conferecistas["9"].txt}</p>
+                                                <button className="close-modal" onClick={toggleModal7}>X</button>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        
+                    </div >
+                </div >
                 {/* Inicio Google Maps */}
-                <div className="ubication">
+                < div className="ubication" >
                     <div className={''}>
                         <Image src={"/images/LandingSeminario/Ubication.png "} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                             style={style.imgAgenda} />
                     </div>
-                    <div className="map">
+                    <div className="Google-map">
                         <iframe className={"map"}
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.563306712596!2d-76.53850312611074!3d3.4557794511935027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f19d047757%3A0x14b8c3e63b55e08a!2sCali%20Marriott%20Hotel!5e0!3m2!1sen!2sco!4v1684265260790!5m2!1sen!2sco"
                             width="1262" height="450"
-                            style={{ border: "0" }}
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-                </div>
+                </div >
                 {/* Inicio footer */}
-                <div className={'w-100'}>
+                < div className={'w-100'} >
                     <Image src={"/images/LandingSeminario/Landing page-Clinicannabis-Seminario-03.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                         style={style.bnrHead} />
-                </div>
-            </section>
+                </div >
+            </section >
         </>
     );
 }

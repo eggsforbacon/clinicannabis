@@ -292,7 +292,8 @@ export const strings: IKeyedObject = {
                 'title':<>{"Conferencista:"}</>,
                 'subtitle':<>{"Dr. Mariano García de Palau – España."}</>,
                 'indice':<>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
-                'txt':<>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979. Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral. Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
+                'txt':<>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979 Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral."
+                + "Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
             },
             3:{ 
                 'title':<>{"Conferencista:"}</>,

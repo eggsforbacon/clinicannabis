@@ -80,435 +80,146 @@
     Adaptatividad Juan 
 ================================================ */
 /* -- Btn Head -- */
-.Button-Banner{
+.Button-Banner {
     position: relative;
     z-index: 99;
     top: 29em;
     left: 25em;
 }
-.Position-Btn{
+
+.Position-Btn {
     display: flex;
     width: 50%;
     justify-content: space-around;
     align-items: center;
 }
-.bg-buttonHD{
+
+.bg-buttonHD {
     padding: 15px 40px;
     transition: all .5s;
     backdrop-filter: blur(10px);
 }
-.bg-buttonHD:hover{
+
+.bg-buttonHD:hover {
     background: #ffffff36;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+
 @media (min-width: 320px) {
-    .Button-Banner{
+    .Button-Banner {
         top: 7em;
         left: 5em;
     }
-    .text-button{   
+
+    .text-button {
         font-size: 10px;
         font-weight: 400;
         text-align: justify;
     }
-    .bg-buttonHD{padding: 0px 12px;}
-    .border-Button{border: solid 2px #e5e7eb;}
-    .Position-Btn{width: 60%;}
-}
-@media (min-width: 576px) {
-    .Position-Btn{
-        width: 50%;
-    }
-    .Button-Banner{
-        top: 10.5em;
-        left: 10.7em;
-    }
-    .text-button{   
-        font-size: 13px;
-        font-weight: 400;
-    }
-    .bg-buttonHD{padding: 0px 12px;}
-    .border-Button{border: solid 2px #e5e7eb;}
-}
-@media (min-width: 768px) {
-    .Button-Banner{
-        top: 14em;
-        left: 13em;
-    }
-    .text-button{   
-        font-size: 13px;
-        font-weight: 400;
-    }
-    .bg-buttonHD{padding: 6px 20px;}
-    .border-Button{border: solid 4px #e5e7eb;}
-}
-@media (min-width: 992px) {
-    .Button-Banner{
-        top: 18em;
-        left: 17em;
-    }
-    .text-button{   
-        font-size: 1.25rem;
-        font-weight: 400;
-    }
-    .bg-buttonHD{padding: 7px 25px;}
-}
-@media (min-width: 1200px) {
-    .Button-Banner{
-        top: 29em;
-        left: 25em;
-    }
-    .bg-buttonHD{padding: 15px 40px;}
-}
-@media (min-width: 1400px) {
-    .Button-Banner{
-        top: 26em;
-    }
-}
-@media (min-width: 1400px) {
-    .Button-Banner{
-        top: 30em;
-    }
-}
 
-/* -- POPUP -- */
-.contentAll-popup {
-    width: 100%;
-    height: auto;
-    z-index: 99;
-    backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.727);
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    position: fixed;
-}
-
-.popup {
-    cursor: pointer;
-}
-
-.popup img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.btn-close-popUp {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 80vh;
-    top: -20px;
-    background: black;
-    border-radius: 50%;
-    color: #fff;
-    line-height: 10px;
-    padding: 18px;
-    border: solid 2px #fff;
-}
-
-.contentAll-popup-disable {
-    display: none;
-}
-
-.btn-primary span {
-    font-weight: bold;
-    font-size: 29px;
-}
-
-/* ctnd btn-popUp-1 */
-.popup:hover .btnPop-1 {
-    right: 17rem;
-    transition: 2s;
-}
-
-.btnPop-1 {
-    position: absolute;
-    right: -20%;
-    bottom: 12%;
-    background-color: #443c81;
-    padding: 10px 20px;
-    border-radius: 50px;
-    color: #fff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.btnPop-1:hover span {
-    padding-right: 8px;
-    transition: .5s;
-}
-
-/* ctnd btn-popUp-2 */
-.btnPop-2 {
-    position: absolute;
-    right: 20%;
-    background-color: #443c81;
-    padding: 10px 20px;
-    border-radius: 50px;
-    color: #fff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.btnPop-2:hover span {
-    padding-right: 8px;
-    transition: .5s;
-}
-
-@media (min-width: 320px) {
-    .BtnPop-1 {
-        display: none;
+    .bg-buttonHD {
+        padding: 0px 12px;
     }
 
-    .BtnPop-2 {
-        display: block;
+    .border-Button {
+        border: solid 2px #e5e7eb;
     }
 
-    .popup {
-        padding: 20px;
-    }
-
-    .popup img {
-        width: 100%;
-        margin-top: 32px;
-    }
-
-    .btn-close-popUp {
-        width: 60px;
-        height: 60px;
-        right: 0vh;
-        top: 25px;
-    }
-
-    .btnPop-2 {
-        right: 8%;
-        top: 50vh;
-        width: 85%;
-        padding: 15px 20px;
-        text-align: center;
-    }
-
-    .btnPop-2 span {
-        padding-right: 12px;
-    }
-}
-
-@media (min-width: 411px) {
-    .popup {
-        padding: 20px;
-    }
-
-    .popup img {
-        width: 100%;
-        margin-top: 32px;
-    }
-
-    .btn-close-popUp {
-        width: 60px;
-        height: 60px;
-        right: 0vh;
-        top: 25px;
-    }
-
-    .btnPop-2 {
-        right: 16%;
-        top: 60vh;
-        width: 70%;
-        padding: 20px;
-    }
-
-    .btnPop-2 span {
-        padding-right: 15px;
-    }
-}
-
-@media (min-width: 576px) {
-    .popup {
-        padding: 20px;
-    }
-
-    .popup img {
-        width: 95%;
-        margin-top: 32px;
-    }
-
-    .btn-close-popUp {
-        width: 60px;
-        height: 60px;
-        right: 0vh;
-        top: 25px;
-    }
-
-    .btnPop-2 {
-        right: 21%;
-        top: 80vh;
+    .Position-Btn {
         width: 60%;
     }
 }
 
+@media (min-width: 576px) {
+    .Position-Btn {
+        width: 50%;
+    }
+
+    .Button-Banner {
+        top: 10.5em;
+        left: 10.7em;
+    }
+
+    .text-button {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .bg-buttonHD {
+        padding: 0px 12px;
+    }
+
+    .border-Button {
+        border: solid 2px #e5e7eb;
+    }
+}
+
 @media (min-width: 768px) {
-    .popup img {
-        width: 80%;
-        margin-top: 0;
+    .Button-Banner {
+        top: 14em;
+        left: 13em;
     }
 
-    .btn-close-popUp {
-        width: 60px;
-        height: 60px;
-        right: 7vh;
-        top: 13px;
+    .text-button {
+        font-size: 13px;
+        font-weight: 400;
     }
 
-    .popup {
-        padding: 30px;
+    .bg-buttonHD {
+        padding: 6px 20px;
     }
 
-    .btnPop-2 {
-        right: 20%;
-        top: 80vh;
-    }
-
-    .btnPop-2 span {
-        margin-right: 20px;
-        font-weight: 800;
-        font-size: 29px;
+    .border-Button {
+        border: solid 4px #e5e7eb;
     }
 }
 
-@media (min-width: 800px) {
-    .popup img {
-        width: 85%;
+@media (min-width: 992px) {
+    .Button-Banner {
+        top: 18em;
+        left: 17em;
     }
 
-    .btn-close-popUp {
-        width: 60px;
-        height: 60px;
-        right: 7vh;
-        top: 13px;
+    .text-button {
+        font-size: 1.25rem;
+        font-weight: 400;
     }
 
-    .btnPop-2 {
-        right: 21%;
-        top: 88vh;
-    }
-
-    .btnPop-2 span {
-        margin-right: 20px;
-        font-weight: 800;
-        font-size: 29px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .popup img {
-        width: 70%;
-    }
-
-    .btn-close-popUp {
-        width: 60px;
-        height: 60px;
-        right: 15vh;
-        top: 13px;
-        top: 10px;
-    }
-
-    .popup:hover .btnPop-1 {
-        right: 1rem;
-    }
-
-    .BtnPop-1 {
-        display: block;
-    }
-
-    .BtnPop-2 {
-        display: none;
+    .bg-buttonHD {
+        padding: 7px 25px;
     }
 }
 
 @media (min-width: 1200px) {
-    .popup {
-        padding: 30px;
+    .Button-Banner {
+        top: 23em;
+        left: 22em;
     }
 
-    .popup img {
-        width: 34%;
-    }
-
-    .btn-close-popUp {
-        width: 50px;
-        height: 50px;
-        right: 56vh;
-        top: 0;
-    }
-
-    .popup:hover .btnPop-1 {
-        right: 11rem;
+    .bg-buttonHD {
+        padding: 15px 40px;
     }
 }
 
 @media (min-width: 1400px) {
-    .popup {
-        padding: 30px;
+    .Button-Banner {
+        top: 26em;
+        left: 25em;
     }
 
-    .popup img {
-        width: 45%;
-    }
-
-    .btn-close-popUp {
-        width: 50px;
-        height: 50px;
-        right: 46vh;
-        top: 0;
-    }
-
-    .popup:hover .btnPop-1 {
-        right: 15rem;
+    .Position-Btn {
+        width: 50%;
     }
 }
 
 @media (min-width: 1600px) {
-    .popup {
-        padding: 35px;
+    .Button-Banner {
+        top: 30em;
+        left: 25em;
     }
 
-    .popup img {
-        width: 45%;
-    }
-
-    .btn-close-popUp {
-        width: 60px;
-        height: 60px;
-        right: 42vh;
-        top: .5vh;
-    }
-
-    .popup:hover .btnPop-1 {
-        right: 18rem;
-    }
-}
-
-@media (min-width: 1900px) {
-    .popup {
-        padding: 40px;
-    }
-
-    .popup img {
-        width: 39%;
-    }
-
-    .btn-close-popUp {
-        width: 65px;
-        height: 65px;
-        right: 55vh;
-        top: 2vh;
-    }
-
-    .popup:hover .btnPop-1 {
-        right: 25rem;
+    .Position-Btn {
+        width: 50%;
     }
 }
 
@@ -540,6 +251,12 @@
    --  Section Landing Seminario --
 ================================================ */
 /* -- form y contexr  -- */
+.content-form-TXT {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .infoSeminarioForm {
     width: 50%;
     padding-left: 6%;
@@ -556,18 +273,160 @@
     flex-direction: column;
 }
 
+@media (min-width: 320px) {
+    .content-form-TXT {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .infoSeminarioForm {
+        width: 93%;
+        padding-left: 9%;
+        padding-top: 8%;
+    }
+
+    .form-label {
+        width: auto;
+        padding-bottom: 1vh;
+        padding-right: 1vh;
+    }
+
+    .mg-form {
+        margin-left: 8%;
+        margin-top: 7%;
+    }
+}
+
+@media (min-width: 576px) {
+    .content-form-TXT {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .infoSeminarioForm {
+        width: 93%;
+        padding-left: 9%;
+        padding-top: 8%;
+    }
+
+    .form-label {
+        width: 47vh;
+        padding-bottom: 1vh;
+        padding-right: 1vh;
+    }
+
+    .mg-form {
+        margin-left: 8%;
+        margin-top: 7%;
+    }
+}
+
+@media (min-width: 768px) {
+    .content-form-TXT {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .infoSeminarioForm {
+        width: 56%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 0%;
+    }
+
+    .form-label {
+        width: 28vh;
+        padding-bottom: 1vh;
+        padding-right: 1vh;
+    }
+
+    .mg-form {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .infoSeminarioForm {
+        width: 50%;
+        padding-left: 6%;
+        padding-right: 0;
+    }
+
+    .infoSeminarioForm {
+        width: 50%;
+        padding-left: 6%;
+    }
+
+    .form-label {
+        width: 33vh;
+        padding-bottom: 0vh;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-label {
+        width: 60vh;
+    }
+}
+
+/* =========================================== */
 /* -- Inicio Agenda -- */
-.CronogramaSeminario{
+.InfoCronograma {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.CronogramaSeminario {
     width: 100%;
     position: relative;
     padding: 0 80px;
 }
+
+@media (min-width: 320px) {
+    .Agenda {
+        margin-top: 10%;
+    }
+
+    .CronogramaSeminario {
+        padding: 0 60px;
+    }
+
+    .InfoCronograma {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .Agenda {
+        margin-top: 0%;
+    }
+
+    .InfoCronograma {
+        flex-direction: row;
+    }
+
+    .CronogramaSeminario {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .CronogramaSeminario {
+        padding: 0 80px;
+    }
+}
+
 @media (min-width: 1200px) {
-    .StepCrono-1{
+    .StepCrono-1 {
         width: 100%;
         margin-left: 10vh;
     }
-    .StepCrono-2{
+
+    .StepCrono-2 {
         width: 100%;
         margin-right: 10vh;
         margin-left: 10vh;
@@ -575,63 +434,51 @@
 }
 
 @media (min-width: 1400px) {
-    .StepCrono-1{
+    .StepCrono-1 {
         width: 60%;
         padding-right: 10vh;
         margin-left: 10vh;
     }
-    .StepCrono-2{
+
+    .StepCrono-2 {
         width: 60%;
         margin-right: 10vh;
     }
 }
 
+/* =========================================== */
 /* -- Inicio Conferecistas -- */
-.card {
-    width: 320px;
-    height: auto;
-    border-radius: 50px;
-}
-
-.card-avatar img {
-    width: 85% !important;
-    transition: transform .2s ease;
-    margin-bottom: 1rem;
-    margin-left: 18px;
-}
-
-.card-title {
-    text-align: center;
+.cards-conferences {
     display: flex;
-    flex-direction: column;
-}
-
-.card-title p {
-    text-align: center;
-}
-
-.card-social {
-    transform: translateY(-28%) !important;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    opacity: 0;
-    transition: transform .2s ease, opacity .2s ease;
-    padding: 0 13px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.card {
+    width: 22%;
+    height: 40vh;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+    margin: 15px;
+    background: #fff;
+    border-radius: 50px;
+    transition: all .5s ease-in;
 }
 
 .card:hover {
-    height: 52vh !important;
-    background: #fff;
-    box-shadow: 20px 20px 60px #bebebe,
-        -20px -20px 60px #ffffff;
+    height: 60vh;
+    background-image: linear-gradient(48deg, #fff 0%, #e5efe9 100%);
 }
 
-.card:hover .card-social {
-    transform: translateY(100%);
-    opacity: 1;
+.card-avatar img {
+    width: 90%;
+    margin-left: 18px;
 }
 
-/* ============================== */
-/* Btn Pop */
 .btn-modal {
     margin-top: 6px !important;
     padding: 10px 20px;
@@ -641,20 +488,71 @@
     text-align: center;
     color: #fff;
 }
+
+/* ============= */
+/* -- Modal -- */
 .modal{
-    width: 80rem;
+    width: 50%;
     position: absolute;
-    margin-top: 25rem;
-    margin-left: 50%;
+    margin-left: -4%;
+    background: rgba(29, 29, 29, 0.378);
 }
-/* 
-.overlay {
-    margin-top: -3vh;
+.overlay,
+.modal {
+    margin-top: -80vh;
     width: 100%;
     height: 90vh;
-    background: rgba(29, 29, 29, 0.849);
     border-radius: 1%;
-} */
+}
+
+/* Modal1 */
+.modal1{
+    width: 99%;
+    position: absolute;
+    margin-left: -28%;
+    background: rgba(29, 29, 29, 0.378);
+}
+
+.overlay,
+.modal1 {
+    margin-top: -80vh;
+    width: 100%;
+    height: 100vh;
+    border-radius: 1%;
+}
+
+/* Modal2 */
+.modal2{
+    width: 99%;
+    position: absolute;
+    margin-left: -51.2%;
+    background: rgba(29, 29, 29, 0.378);
+}
+
+.overlay,
+.modal2 {
+    margin-top: -80vh;
+    width: 100%;
+    height: 100vh;
+    border-radius: 1%;
+}
+
+/* Modal3 */
+.moda3{
+    width: 90%;
+    position: absolute;
+    margin-left: -155.5vh;
+    background: rgba(29, 29, 29, 0.378);
+}
+
+.overlay,
+.moda3 {
+    margin-top: -80vh;
+    width: 100%;
+    height: 115vh;
+    border-radius: 1%;
+}
+
 .modal-content {
     position: absolute;
     top: 50%;
@@ -669,7 +567,10 @@
     width: 50% !important;
     height: auto;
     z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modal-content p{
+    text-align: justify;
 }
 
 .close-modal {
@@ -679,38 +580,13 @@
     padding: 5px 7px;
 }
 
-/* ============================== */
-/* @media */
-@media (min-width: 1200px) {
-    .card {
-        width: 270px;
-        height: auto;
-    }
-    .map iframe{
-        width: 100% !important;
-    }
-    /* Pop */
-    .modal, .overlay{
-        top: -47vh;
-        left: -40px;
-    }
+/* ================================================ */
+/* -- Google Maps -- */
+.map {
+    width: 100%;
+    border: 0;
 }
 
-@media (min-width: 1400px) {
-    .card {
-        width: 340px;
-        height: auto;
-    }
-    /* Pop */
-    .modal, .overlay{
-        top: -36vh;
-        left: -1px;
-    }
-}
-
-@media (min-width: 1600px) {
-    
-}
 /* ================================================ */
 /* @media Para ocultar la img de fondo para IOS */
 @media (min-width: 320px) {
