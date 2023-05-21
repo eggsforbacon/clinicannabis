@@ -494,17 +494,17 @@ export const Seminario = () => {
                                 <p className={"text-center text-lg"}>{strings.seminario.conference["8"].contry}</p>
 
                                 {/*  */}
-                                <button onClick={toggleModal6} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
+                                <button onClick={toggleModal7} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
                                 <div className="">
                                     {modal6 && (
-                                        <div className="modal2">
-                                            <div onClick={toggleModal6} className="overlay"></div>
+                                        <div className="modal3">
+                                            <div onClick={toggleModal7} className="overlay"></div>
                                             <div className="modal-content">
                                                 <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["8"].title}</b></p>
                                                 <p className={"text-left text-lg mb-2"}>{strings.seminario.conferecistas["8"].subtitle}</p>
                                                 <p className={"text-left text-lg mb-3"}>{strings.seminario.conferecistas["8"].indice}</p>
                                                 <p className={"text-left text-lg mb-4"}>{strings.seminario.conferecistas["8"].txt}</p>
-                                                <button className="close-modal" onClick={toggleModal6}>X</button>
+                                                <button className="close-modal" onClick={toggleModal7}>X</button>
                                             </div>
                                         </div>
                                     )}
@@ -521,30 +521,28 @@ export const Seminario = () => {
                             </div>
 
                             <div className="card-title card-social text-text-title">
-                                <p className={"text-center text-lg"}>{strings.seminario.conference["8"].academy}
-                                    <b>{strings.seminario.conference["8"].name}</b>
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["9"].academy}
+                                    <b>{strings.seminario.conference["9"].name}</b>
                                 </p>
-                                <p className={"text-center text-lg"}>{strings.seminario.conference["8"].contry}</p>
-
+                                <p className={"text-center text-lg"}>{strings.seminario.conference["9"].contry}</p>
                                 {/*  */}
-                                <button onClick={toggleModal7} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
+                                <button onClick={toggleModal6} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
                                 <div className="">
                                     {modal6 && (
-                                        <div className="modal3">
-                                            <div onClick={toggleModal7} className="overlay"></div>
+                                        <div className="moda3">
+                                            <div onClick={toggleModal6} className="overlay"></div>
                                             <div className="modal-content">
                                                 <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["9"].title}</b></p>
                                                 <p className={"text-left text-lg mb-2"}>{strings.seminario.conferecistas["9"].subtitle}</p>
                                                 <p className={"text-left text-lg mb-3"}>{strings.seminario.conferecistas["9"].indice}</p>
                                                 <p className={"text-left text-lg mb-4"}>{strings.seminario.conferecistas["9"].txt}</p>
-                                                <button className="close-modal" onClick={toggleModal7}>X</button>
+                                                <button className="close-modal" onClick={toggleModal6}>X</button>
                                             </div>
                                         </div>
                                     )}
                                 </div>
                             </div>
                         </div>
-                        
                     </div >
                 </div >
                 {/* Inicio Google Maps */}
