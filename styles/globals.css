@@ -182,8 +182,22 @@
 
 @media (min-width: 1200px) {
     .Button-Banner {
-        top: 22em;
-        left: 19em;
+        top: 29em;
+        left: 20em;
+    }
+
+    .bg-buttonHD {
+        padding: 15px 40px;
+    }
+    .bnn-img{
+        margin-top: 13vh !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .Button-Banner {
+        top: 30em;
+        left: 20em;
     }
 
     .bg-buttonHD {
@@ -193,8 +207,8 @@
 
 @media (min-width: 1400px) {
     .Button-Banner {
-        top: 25em;
-        left: 24em;
+        top: 31em;
+        left: 22em;
     }
 
     .Position-Btn {
@@ -204,8 +218,8 @@
 
 @media (min-width: 1600px) {
     .Button-Banner {
-        top: 30em;
-        left: 25em;
+        top: 35em;
+        left: 26em;
     }
 
     .Position-Btn {
