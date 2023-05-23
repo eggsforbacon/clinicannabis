@@ -112,7 +112,7 @@
     }
 
     .text-button {
-        font-size: 10px;
+        font-size: 15px;
         font-weight: 400;
         text-align: justify;
     }
@@ -140,11 +140,6 @@
         left: 10.7em;
     }
 
-    .text-button {
-        font-size: 13px;
-        font-weight: 400;
-    }
-
     .bg-buttonHD {
         padding: 0px 12px;
     }
@@ -158,11 +153,6 @@
     .Button-Banner {
         top: 14em;
         left: 13em;
-    }
-
-    .text-button {
-        font-size: 13px;
-        font-weight: 400;
     }
 
     .bg-buttonHD {
@@ -192,8 +182,8 @@
 
 @media (min-width: 1200px) {
     .Button-Banner {
-        top: 23em;
-        left: 22em;
+        top: 22em;
+        left: 19em;
     }
 
     .bg-buttonHD {
@@ -203,8 +193,8 @@
 
 @media (min-width: 1400px) {
     .Button-Banner {
-        top: 26em;
-        left: 25em;
+        top: 25em;
+        left: 24em;
     }
 
     .Position-Btn {
@@ -568,6 +558,7 @@
     height: auto;
     z-index: 2;
 }
+
 
 .modal-content p{
     text-align: justify;

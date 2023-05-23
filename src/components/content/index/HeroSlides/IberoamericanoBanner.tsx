@@ -14,11 +14,11 @@ export const IberoamericanoBanner = () => {
 
             <div className={'Button-Banner'}>
                 <div className="Position-Btn">
-                    <div className="button-Info-1">
+                    {/* <div className="button-Info-1">
                         <button className={'rounded-full border-Button text-center text-white bg-buttonHD'}>
                             <Link href={""} className={`text-button`} target="_blank">Inscribete</Link>
                         </button>
-                    </div>
+                    </div> */}
 
                     <div className="button-Info-2">
                         <button className={'rounded-full border-Button text-center text-white bg-buttonHD'}>
