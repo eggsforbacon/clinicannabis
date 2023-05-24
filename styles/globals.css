@@ -82,7 +82,7 @@
 /* -- Btn Head -- */
 .Button-Banner {
     position: relative;
-    z-index: 99;
+    z-index: 1;
     top: 29em;
     left: 25em;
 }
@@ -106,53 +106,15 @@
 }
 
 @media (min-width: 320px) {
+    .bnn__img2{
+        display: block;
+    }
+    .bnn__img1{
+        display: none;
+    }
     .Button-Banner {
-        top: 7em;
-        left: 5em;
-    }
-
-    .text-button {
-        font-size: 15px;
-        font-weight: 400;
-        text-align: justify;
-    }
-
-    .bg-buttonHD {
-        padding: 0px 12px;
-    }
-
-    .border-Button {
-        border: solid 2px #e5e7eb;
-    }
-
-    .Position-Btn {
-        width: 60%;
-    }
-}
-
-@media (min-width: 576px) {
-    .Position-Btn {
-        width: 50%;
-    }
-
-    .Button-Banner {
-        top: 10.5em;
-        left: 10.7em;
-    }
-
-    .bg-buttonHD {
-        padding: 0px 12px;
-    }
-
-    .border-Button {
-        border: solid 2px #e5e7eb;
-    }
-}
-
-@media (min-width: 768px) {
-    .Button-Banner {
-        top: 14em;
-        left: 13em;
+        top: 21em;
+        left: 4em;
     }
 
     .bg-buttonHD {
@@ -162,12 +124,95 @@
     .border-Button {
         border: solid 4px #e5e7eb;
     }
+    .h-banner {
+        height: 30rem;
+    }
+    .bnn-img{
+        margin-top: 10vh;
+    }
+    .text-button {
+        font-weight: 400;
+        text-align: justify;
+    }
+    .Position-Btn {
+        width: 60%;
+    }
 }
+@media (min-width: 360px) {
+    .Button-Banner {
+        top: 23em;
+        left: 5em;
+    }
+    .h-banner {
+        height: 33rem;
+    }
+}
+@media (min-width: 411px) {
+    .Button-Banner {
+        top: 26em;
+        left: 5em;
+    }
 
+    .bg-buttonHD {
+        padding: 6px 20px;
+    }
+
+    .border-Button {
+        border: solid 4px #e5e7eb;
+    }
+    .h-banner {
+        height: 37rem;
+    }
+    .bnn-img{
+        margin-top: 10vh;
+    }
+}
+@media (min-width: 576px) {
+    .Button-Banner {
+        top: 35em;
+        left: 7em;
+    }
+
+    .bg-buttonHD {
+        padding: 6px 20px;
+    }
+
+    .border-Button {
+        border: solid 4px #e5e7eb;
+    }
+    .h-banner {
+        height: 50rem;
+    }
+    .bnn-img{
+        margin-top: 10vh;
+    }
+}
+@media (min-width: 768px) {
+    .Button-Banner {
+        top: 19em;
+        left: 10em;
+    }
+
+    .bg-buttonHD {
+        padding: 6px 20px;
+    }
+
+    .border-Button {
+        border: solid 4px #e5e7eb;
+    }
+    .h-banner {
+        height: 28.5rem;
+    }
+    .bnn-img{
+        margin-top: 10vh;
+    }
+    .bnn__img1{display: block;}
+    .bnn__img2{display: none;}
+}
 @media (min-width: 992px) {
     .Button-Banner {
-        top: 18em;
-        left: 17em;
+        top: 24em;
+        left: 13em;
     }
 
     .text-button {
@@ -178,12 +223,17 @@
     .bg-buttonHD {
         padding: 7px 25px;
     }
+    .h-banner {
+        height: 36rem;
+    }
+    .bnn-img{
+        margin-top: 10vh;
+    }
 }
-
 @media (min-width: 1200px) {
     .Button-Banner {
         top: 29em;
-        left: 20em;
+        left: 16em;
     }
 
     .bg-buttonHD {
@@ -192,38 +242,42 @@
     .bnn-img{
         margin-top: 13vh !important;
     }
-}
-
-@media (min-width: 1280px) {
-    .Button-Banner {
-        top: 30em;
-        left: 20em;
+    .h-banner{
+        height: 56rem;
     }
-
-    .bg-buttonHD {
-        padding: 15px 40px;
+    .h-banner {
+        height: 47rem;
     }
 }
-
 @media (min-width: 1400px) {
     .Button-Banner {
-        top: 31em;
+        top:  33em;
         left: 22em;
     }
 
     .Position-Btn {
         width: 50%;
     }
+    .h-banner {
+        height: 57rem;
+    }
 }
-
 @media (min-width: 1600px) {
     .Button-Banner {
-        top: 35em;
-        left: 26em;
+        top: 39em;
+        left: 27em;
     }
-
     .Position-Btn {
         width: 50%;
+    }
+}
+@media (min-width: 1800px){
+    .Button-Banner {
+        top: 44em;
+        left: 28em;
+    }
+    .h-banner {
+        height: 66rem;
     }
 }
 
@@ -254,127 +308,79 @@
 /*  ================================================
    --  Section Landing Seminario --
 ================================================ */
-/* -- form y contexr  -- */
-.content-form-TXT {
+/* Cards Information */
+.cont-cardInfo{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 40px;
 }
-
-.infoSeminarioForm {
-    width: 50%;
-    padding-left: 6%;
-}
-
-.form-label {
+.card__Information{
+    width: 295px;
+    height: 385px;
+    background: #fdfdfd;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    width: 60vh;
-}
-
-.check-btn {
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  
+  .img-cardInfo {
+    height: 30%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+  }
+  
+  .textBox {
+    opacity: 0;
     display: flex;
     flex-direction: column;
-}
-
-@media (min-width: 320px) {
-    .content-form-TXT {
-        flex-direction: column;
-        align-items: stretch;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+  }
+  
+  
+  
+  
+  
+  
+  .card__Information:hover > .textBox {
+    opacity: 1;
+  }
+  
+  .card__Information:hover > .img-cardInfo {
+    height: 65%;
+    filter: blur(7px);
+    animation: anim 3s infinite;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform: translateY(0);
     }
-
-    .infoSeminarioForm {
-        width: 93%;
-        padding-left: 9%;
-        padding-top: 8%;
+  
+    50% {
+      transform: translateY(-20px);
     }
-
-    .form-label {
-        width: auto;
-        padding-bottom: 1vh;
-        padding-right: 1vh;
+  
+    100% {
+      transform: translateY(0);
     }
-
-    .mg-form {
-        margin-left: 8%;
-        margin-top: 7%;
-    }
-}
-
-@media (min-width: 576px) {
-    .content-form-TXT {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .infoSeminarioForm {
-        width: 93%;
-        padding-left: 9%;
-        padding-top: 8%;
-    }
-
-    .form-label {
-        width: 47vh;
-        padding-bottom: 1vh;
-        padding-right: 1vh;
-    }
-
-    .mg-form {
-        margin-left: 8%;
-        margin-top: 7%;
-    }
-}
-
-@media (min-width: 768px) {
-    .content-form-TXT {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .infoSeminarioForm {
-        width: 56%;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-top: 0%;
-    }
-
-    .form-label {
-        width: 28vh;
-        padding-bottom: 1vh;
-        padding-right: 1vh;
-    }
-
-    .mg-form {
-        margin-left: 0;
-        margin-top: 0;
-    }
-}
-
-@media (min-width: 992px) {
-    .infoSeminarioForm {
-        width: 50%;
-        padding-left: 6%;
-        padding-right: 0;
-    }
-
-    .infoSeminarioForm {
-        width: 50%;
-        padding-left: 6%;
-    }
-
-    .form-label {
-        width: 33vh;
-        padding-bottom: 0vh;
-        padding-right: 0;
-    }
-}
-
-@media (min-width: 1200px) {
-    .form-label {
-        width: 60vh;
-    }
-}
-
+  }
+  
+  .card__Information:hover {
+    transform: scale(1.04) rotate(-1deg);
+  }
+  
+  
 /* =========================================== */
 /* -- Inicio Agenda -- */
 .InfoCronograma {
@@ -553,7 +559,7 @@
 .moda3 {
     margin-top: -80vh;
     width: 100%;
-    height: 115vh;
+    height: 215vh;
     border-radius: 1%;
 }
 

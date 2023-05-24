@@ -136,40 +136,70 @@ export const Seminario = () => {
                     <Image src={"/images/LandingSeminario/Landing page - Clinicannabis - Seminario_Mesa de trabajo 1.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                         style={style.bnrHead} />
                 </div>
-                {/*   form y contexr   */}
-                <div className={"content-form-TXT lg:mb-40"}>
-                    <div className="infoSeminarioForm">
-                        <article>
-                            <p className={" text-xl text-P-seminario"}><b>{strings.seminario.parrafo["1"].blackText}</b></p>
-                            <p className={"text-lg text-seminari mb-5"}>{strings.seminario.parrafo["1"].normalText}</p>
-
-                            <p className={" text-xl text-P-seminario"}><b>{strings.seminario.parrafo["2"].blackText}</b></p>
-                            <p className={" text-lg text-seminari"}>{strings.seminario.parrafo["2"].normalText}</p>
-                        </article>
+                {/* Cards Information */}
+                <div className="cont-cardInfo">
+                    <div className="card__Information">
+                        <svg className={'img-cardInfo'}
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={64}
+                            height={64}
+                            style={{ fill: "#26e07f", }}
+                            viewBox="0 0 172 172"
+                        >
+                            <g
+                                fill="none"
+                                strokeMiterlimit={10}
+                                fontFamily="none"
+                                fontSize="none"
+                                fontWeight="none"
+                                style={{
+                                    mixBlendMode: "normal",
+                                }}
+                                textAnchor="none"
+                            >
+                                <path d="M0 172V0h172v172z" />
+                                <path
+                                    fill="#1fb141"
+                                    d="M21.5 21.5v129H86v-129zM86 53.75C86 71.53 100.47 86 118.25 86s32.25-14.47 32.25-32.25-14.47-32.25-32.25-32.25S86 35.97 86 53.75zM118.25 86C100.47 86 86 100.47 86 118.25s14.47 32.25 32.25 32.25 32.25-14.47 32.25-32.25S136.03 86 118.25 86z"
+                                />
+                            </g>
+                        </svg>
+                        <div class={'textBox'}>
+                            <p class="text head text-lg">Medicos</p>
+                        </div>
+                    </div>
+                    {/*  */}
+                    <div className="card__Information">
+                        <svg className={'img-cardInfo'}
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={64}
+                            height={64}
+                            style={{ fill: "#26e07f", }}
+                            viewBox="0 0 172 172"
+                        >
+                            <g
+                                fill="none"
+                                strokeMiterlimit={10}
+                                fontFamily="none"
+                                fontSize="none"
+                                fontWeight="none"
+                                style={{
+                                    mixBlendMode: "normal",
+                                }}
+                                textAnchor="none"
+                            >
+                                <path d="M0 172V0h172v172z" />
+                                <path
+                                    fill="#1fb141"
+                                    d="M21.5 21.5v129H86v-129zM86 53.75C86 71.53 100.47 86 118.25 86s32.25-14.47 32.25-32.25-14.47-32.25-32.25-32.25S86 35.97 86 53.75zM118.25 86C100.47 86 86 100.47 86 118.25s14.47 32.25 32.25 32.25 32.25-14.47 32.25-32.25S136.03 86 118.25 86z"
+                                />
+                            </g>
+                        </svg>
+                        <div class={'textBox '}>
+                            <p class="text head text-lg">Estudiantes</p>
+                        </div>
                     </div>
 
-                    <div className={'mg-form'}>
-                        <form className={"justify-start items-center gap-4"}>
-                            <label className="form-label"> Nombre
-                                <input type={"text"} required label={"Tu nombre"} color={"white"} name={"ctName"} className="px-4 py-3 border-none rounded-full" />
-                            </label>
-
-                            <label className="form-label"> Email
-                                <input type={"email"} required label={"Tu correo"} color={"white"} name={"ctEmail"} className="px-4 py-3 border-none rounded-full" />
-                            </label>
-
-                            <label className="form-label"> Teléfono
-                                <input type={"Phone"} required label={"Tu telefono"} color={"white"} name={"ctPhone"} className="px-4 py-3 border-none rounded-full" />
-                            </label>
-
-                            <div className={"mt-5 ml-2"}>
-                                <input type="checkbox" required className="text-pink-500" /> Acepto Términos y Condiciones
-                                <input type={"submit"}
-                                    className={"px-12 py-2 text-lg lg:text-2xl text-black flex items-center mt-2 border-solid border-2 border-white rounded-full shadow-md transition duration-500 ease-in-out hover:cursor-pointer lg:hover:border-viridian-green focus:border-viridian-green lg:hover:bg-viridian-green focus:bg-viridian-green lg:hover:text-white focus:text-white lg:hover:-translate-y-2 focus:-translate-y-2"}
-                                    value={"Enviar"} style={{}} />
-                            </div>
-                        </form>
-                    </div>
                 </div>
                 {/* Inicio Agenda */}
                 <div className="Agenda mb-20">
@@ -543,7 +573,7 @@ export const Seminario = () => {
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div >
                 </div >
                 {/* Inicio Google Maps */}

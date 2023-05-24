@@ -6,11 +6,15 @@ export const IberoamericanoBanner = () => {
     const navigate = useRouter();
 
     return (
-        <section className={"w-full h-224 relative mt-30"}>
+        <section className={"w-full h-banner relative mt-30"}>
             <Image src={"/images/LandingSeminario/Banner Web-1280x620.png"}
-                alt={""} width={1280} height={565} className={"w-full absolute top-0 left-0 bnn-img"} quality={100} priority />
+                alt={""} width={1280} height={565} className={"w-full absolute top-0 left-0 bnn-img bnn__img1"} quality={100} priority />
             {/* <Image onClick={() => { navigate.push("/seminario/seminario-iberoamericano") }} src={"/images/LandingSeminario/Banner Web-1280x620.png"}
                 alt={""} width={1280} height={565} className={"w-full absolute top-16 left-0"} quality={100} priority /> */}
+
+<Image src={"/images/LandingSeminario/Banner Web_360 x 820.png"}
+                alt={""} width={1280} height={565} className={"w-full absolute top-0 left-0 bnn-img bnn__img2"} quality={100} priority />
+
 
             <div className={'Button-Banner'}>
                 <div className="Position-Btn">
