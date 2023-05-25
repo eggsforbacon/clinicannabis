@@ -152,7 +152,7 @@ export const strings: IKeyedObject = {
             },
             2:{
                 'blackText': <>{"Clinicannabis Medicina Integrativa, pionera en la aplicación de medicina cannábica en el suroccidente colombiano,"}</>,
-                'normalText': <>{"es el anfitrión de este gran evento que reúne a profesionales de amplia trayectoria y estudiantes universitarios de las áreas de la salud, para adentrarse en el campo del Sistema Endocannabinoide y sus aplicaciones en el manejo del dolor."}</>
+                'normalText': <>{" es el anfitrión de este gran evento que reúne a profesionales de amplia trayectoria y estudiantes universitarios de las áreas de la salud, para adentrarse en el campo del Sistema Endocannabinoide y sus aplicaciones en el manejo del dolor."}</>
             }
         },
         'subtitle': <>{"Cronograma Cali - Viernes 16 de Junio"}</>,
@@ -334,7 +334,7 @@ export const strings: IKeyedObject = {
         },
         'cardInfo':{
             0:{
-                'title':<>{"Compra aqui:"}</>
+                'title':<>{"Compra aquí:"}</>
             },
             1:{ 
                 'title':<>{"Médico"}</>,
@@ -343,6 +343,9 @@ export const strings: IKeyedObject = {
             2:{ 
                 'title':<>{"Estudiante"}</>,
                 'precio':<>{"90.000 COP"}</>
+            },
+            3:{
+                'title':<>{"INSCRÍBETE AQUÍ"}</>,
             },
         },
     },

@@ -76,6 +76,7 @@ module.exports = {
                 'dark-green': "#022528",
 
                 'text-title': "#494083",
+                'textInf-cards': "706f6f",
                 'P-seminario' : "#706f6f",
                 'seminari': "#787776 ", 
             },
