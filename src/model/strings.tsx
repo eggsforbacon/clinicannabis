@@ -232,12 +232,12 @@ export const strings: IKeyedObject = {
         },
         'conference': {
             1:{
-                'academy':<>{"Dra."}</>,
+                'academy':<>{"Dra. "}</>,
                 'name':<>{"Cristina Sánchez"}</>,
                 'contry':<>{"España"}</>
             },
             2:{
-                'academy':<>{"Dr."}</>,
+                'academy':<>{"Dr. "}</>,
                 'name':<>{"Mariano García de Palau"}</>,
                 'contry':<>{"España"}</>
             },
@@ -246,37 +246,37 @@ export const strings: IKeyedObject = {
                 'contry':<>{"Estados Unidos"}</>
             },
             4:{
-                'academy':<>{"Dra."}</>,
+                'academy':<>{"Dra. "}</>,
                 'name':<>{"Paola Pineda"}</>,
                 'contry':<>{"Colombia"}</>
             },
             5:{
-                'academy':<>{"Dr."}</>,
+                'academy':<>{"Dr. "}</>,
                 'name':<>{"Juan Guillermo Maya"}</>,
                 'contry':<>{"Colombia"}</>
             },
             6:{
-                'academy':<>{"Dra."}</>,
+                'academy':<>{"Dra. "}</>,
                 'name':<>{"Natalia Mejía"}</>,
                 'contry':<>{"Colombia"}</>
             },
             7:{
-                'academy':<>{"Dr."}</>,
+                'academy':<>{"Dr. "}</>,
                 'name':<>{"Alberto Ulloa"}</>,
                 'contry':<>{"Colombia"}</>
             },
             8:{
-                'academy':<>{"Dr."}</>,
+                'academy':<>{"Dr. "}</>,
                 'name':<>{"Andrés D. Archer"}</>,
                 'contry':<>{"Colombia"}</>
             },
             9:{
-                'academy':<>{"Dr."}</>,
+                'academy':<>{"Dr. "}</>,
                 'name':<>{"Juan Carlos Builes"}</>,
                 'contry':<>{"Colombia"}</>
             },
             10:{
-                'academy':<>{"Dra."}</>,
+                'academy':<>{"Dra. "}</>,
                 'name':<>{"Sandra Carrillo"}</>,
                 'contry':<>{"Colombia"}</>
             }
@@ -330,6 +330,16 @@ export const strings: IKeyedObject = {
                 'subtitle':<>{"Veterinario Juan Carlos Builes – Colombia."}</>,
                 'indice':<>{"Psiconeuroinmunodermatología y medicina cannábica en pequeños animales."}</>,
                 'txt':<>{"Médico veterinario y especialista médico de la Universidad de Antioquia, director del Centro Veterinario Juan Carlos Builes Medellín, desde 2001 a la fecha. Amplia experiencia en el uso del cannabis medicinal desde 2019."}</>
+            },
+        },
+        'cardInfo':{
+            1:{ 
+                'title':<>{"Medico"}</>,
+                'precio':<>{"190.000 COP"}</>
+            },
+            2:{ 
+                'title':<>{"Estudiante"}</>,
+                'precio':<>{"90.000 COP"}</>
             },
         },
     },

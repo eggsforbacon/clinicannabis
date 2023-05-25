@@ -106,12 +106,14 @@
 }
 
 @media (min-width: 320px) {
-    .bnn__img2{
+    .bnn__img2 {
         display: block;
     }
-    .bnn__img1{
+
+    .bnn__img1 {
         display: none;
     }
+
     .Button-Banner {
         top: 21em;
         left: 4em;
@@ -124,29 +126,36 @@
     .border-Button {
         border: solid 4px #e5e7eb;
     }
+
     .h-banner {
         height: 30rem;
     }
-    .bnn-img{
+
+    .bnn-img {
         margin-top: 10vh;
     }
+
     .text-button {
         font-weight: 400;
         text-align: justify;
     }
+
     .Position-Btn {
         width: 60%;
     }
 }
+
 @media (min-width: 360px) {
     .Button-Banner {
         top: 23em;
         left: 5em;
     }
+
     .h-banner {
         height: 33rem;
     }
 }
+
 @media (min-width: 411px) {
     .Button-Banner {
         top: 26em;
@@ -160,13 +169,16 @@
     .border-Button {
         border: solid 4px #e5e7eb;
     }
+
     .h-banner {
         height: 37rem;
     }
-    .bnn-img{
+
+    .bnn-img {
         margin-top: 10vh;
     }
 }
+
 @media (min-width: 576px) {
     .Button-Banner {
         top: 35em;
@@ -180,13 +192,16 @@
     .border-Button {
         border: solid 4px #e5e7eb;
     }
+
     .h-banner {
         height: 50rem;
     }
-    .bnn-img{
+
+    .bnn-img {
         margin-top: 10vh;
     }
 }
+
 @media (min-width: 768px) {
     .Button-Banner {
         top: 19em;
@@ -200,15 +215,24 @@
     .border-Button {
         border: solid 4px #e5e7eb;
     }
+
     .h-banner {
         height: 28.5rem;
     }
-    .bnn-img{
+
+    .bnn-img {
         margin-top: 10vh;
     }
-    .bnn__img1{display: block;}
-    .bnn__img2{display: none;}
+
+    .bnn__img1 {
+        display: block;
+    }
+
+    .bnn__img2 {
+        display: none;
+    }
 }
+
 @media (min-width: 992px) {
     .Button-Banner {
         top: 24em;
@@ -223,13 +247,16 @@
     .bg-buttonHD {
         padding: 7px 25px;
     }
+
     .h-banner {
         height: 36rem;
     }
-    .bnn-img{
+
+    .bnn-img {
         margin-top: 10vh;
     }
 }
+
 @media (min-width: 1200px) {
     .Button-Banner {
         top: 29em;
@@ -239,43 +266,52 @@
     .bg-buttonHD {
         padding: 15px 40px;
     }
-    .bnn-img{
+
+    .bnn-img {
         margin-top: 13vh !important;
     }
-    .h-banner{
+
+    .h-banner {
         height: 56rem;
     }
+
     .h-banner {
         height: 47rem;
     }
 }
+
 @media (min-width: 1400px) {
     .Button-Banner {
-        top:  33em;
+        top: 33em;
         left: 22em;
     }
 
     .Position-Btn {
         width: 50%;
     }
+
     .h-banner {
         height: 57rem;
     }
 }
+
 @media (min-width: 1600px) {
     .Button-Banner {
         top: 39em;
         left: 27em;
     }
+
     .Position-Btn {
         width: 50%;
     }
 }
-@media (min-width: 1800px){
+
+@media (min-width: 1800px) {
     .Button-Banner {
         top: 44em;
         left: 28em;
     }
+
     .h-banner {
         height: 66rem;
     }
@@ -309,34 +345,49 @@
    --  Section Landing Seminario --
 ================================================ */
 /* Cards Information */
-.cont-cardInfo{
+.cont-cardInfo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px 40px;
 }
-.card__Information{
-    width: 295px;
-    height: 385px;
-    background: #fdfdfd;
+
+.card__Information {
+    width: 250px;
+    height: 350px;
+    background: #fff;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: 0.2s ease-in-out;
+    margin-right: 5vh;
+    margin-left: 5vh;
+    margin-bottom: 8vh;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  }
-  
-  .img-cardInfo {
-    height: 30%;
+}
+
+.img-cardInfo {
+    width: 20%;
+    height: auto;
     position: absolute;
     transition: 0.2s ease-in-out;
     z-index: 1;
-  }
-  
-  .textBox {
+}
+
+.TxtPreferenci{
+    position: relative;
+    z-index: 1 !important;
+    top: 24vh;
+    text-transform: uppercase;
+    padding-top: 5vh;
+}
+.card__Information:hover > .TxtPreferenci{
+    opacity: 0;
+}
+
+.textBox {
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -345,42 +396,49 @@
     gap: 15px;
     transition: 0.2s ease-in-out;
     z-index: 2;
-  }
-  
-  
-  
-  
-  
-  
-  .card__Information:hover > .textBox {
+}
+
+.card__Information:hover>.textBox {
     opacity: 1;
-  }
-  
-  .card__Information:hover > .img-cardInfo {
+}
+
+.card__Information:hover>.img-cardInfo {
     height: 65%;
-    filter: blur(7px);
+    width: 70%;
+    filter: blur(30px);
     animation: anim 3s infinite;
-  }
-  
-  @keyframes anim {
+}
+
+@keyframes anim {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  
+
     50% {
-      transform: translateY(-20px);
+        transform: translateY(-20px);
     }
-  
+
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  }
-  
-  .card__Information:hover {
+}
+
+.card__Information:hover {
     transform: scale(1.04) rotate(-1deg);
-  }
-  
-  
+}
+
+@media (min-width: 1800px) {
+    .card__Information{
+        width: 310px;
+        height: 390px;
+    }
+    .img-cardInfo{
+        width: 17%;
+    }
+    .TxtPreferenci{
+        top: 20vh;
+    }
+}
 /* =========================================== */
 /* -- Inicio Agenda -- */
 .InfoCronograma {
@@ -501,12 +559,13 @@
 
 /* ============= */
 /* -- Modal -- */
-.modal{
+.modal {
     width: 50%;
     position: absolute;
     margin-left: -4%;
     background: rgba(29, 29, 29, 0.378);
 }
+
 .overlay,
 .modal {
     margin-top: -80vh;
@@ -516,7 +575,7 @@
 }
 
 /* Modal1 */
-.modal1{
+.modal1 {
     width: 99%;
     position: absolute;
     margin-left: -28%;
@@ -532,7 +591,7 @@
 }
 
 /* Modal2 */
-.modal2{
+.modal2 {
     width: 99%;
     position: absolute;
     margin-left: -51.2%;
@@ -548,7 +607,7 @@
 }
 
 /* Modal3 */
-.moda3{
+.moda3 {
     width: 90%;
     position: absolute;
     margin-left: -155.5vh;
@@ -580,7 +639,7 @@
 }
 
 
-.modal-content p{
+.modal-content p {
     text-align: justify;
 }
 
@@ -589,6 +648,508 @@
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+}
+@media (min-width: 320px)  {
+    .img-conf{
+        width: 100% !important;
+    }
+    .cards-conferences{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .card {
+        width: 100%;
+        height: 33vh;
+    }
+    .card:hover {
+        height: 45vh;
+    }
+    .card-avatar img {
+        width: 85%;
+        margin-left: 21px;
+    }
+    .card-social{
+        padding: 0 3px;
+    }
+
+    .btn-modal{
+        margin-top: 12px !important;
+        width: 70%
+    }
+    .overlay, .modal-0{
+        height: 78vh;
+        margin-top: -50vh;
+    }
+    .overlay, .modal-1{
+        height: 78vh;
+        margin-top: -71vh;
+    }
+    
+    .overlay, .modal-2{
+        height: 85vh;
+        margin-top: -70vh;
+    }
+    .overlay, .modal-3{
+        height: 117vh;
+        margin-top: -80vh;
+    }
+
+    .overlay, .mda-0,
+    .overlay, .mda-1{
+        height: 65vh;
+        margin-top: -54vh;
+    }
+    .overlay, .mda-2{
+        height: 86vh;
+        margin-top: -73vh;
+    }
+    .overlay, .mda-3{
+        height: 65vh;
+        margin-top: -72vh;
+    }
+    .modal{margin-left: -5%;}
+    .modal1,  .modal2{margin-left: -5%;}
+    .moda3{margin-left: -2vh;}
+
+    .modal-content{
+        width: 100% !important;
+        padding: 22px;
+    }
+}
+@media (min-width: 360px)  {
+    .cards-conferences{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .card {
+        width: 100%;
+        height: 34vh;
+    }
+    .card:hover {
+        height: 50vh;
+    }
+    .card-avatar img {
+        width: 85%;
+        margin-left: 21px;
+    }
+    .card-social{
+        padding: 0 3px;
+    }
+
+    .btn-modal{
+        margin-top: 12px !important;
+        width: 70%
+    }
+    .overlay, .modal-0{
+        height: 78vh;
+        margin-top: -58vh;
+    }
+    .overlay, .modal-1{
+        height: 78vh;
+        margin-top: -71vh;
+    }
+    
+    .overlay, .modal-2{
+        height: 85vh;
+        margin-top: -70vh;
+    }
+    .overlay, .modal-3{
+        height: 117vh;
+        margin-top: -80vh;
+    }
+
+    .overlay, .mda-0,
+    .overlay, .mda-1{
+        height: 65vh;
+        margin-top: -54vh;
+    }
+    .overlay, .mda-2{
+        height: 86vh;
+        margin-top: -73vh;
+    }
+    .overlay, .mda-3{
+        height: 65vh;
+        margin-top: -72vh;
+    }
+    .modal{margin-left: -5%;}
+    .modal1,  .modal2{margin-left: -5%;}
+    .moda3{margin-left: -2vh;}
+
+    .modal-content{
+        width: 100% !important;
+        padding: 22px;
+    }
+}
+@media (min-width: 411px)  {
+    .img-conf{
+        width: 85% !important;
+    }
+    .cards-conferences{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .card {
+        width: 65%;
+        height: 28vh;
+    }
+    .card:hover {
+        height: 43vh;
+    }
+    .card-avatar img {
+        width: 85%;
+        margin-left: 21px;
+    }
+    .card-social{
+        padding: 0 3px;
+    }
+
+    .btn-modal{
+        margin-top: 12px !important;
+        width: 70%
+    }
+    .overlay, .modal-0{
+        height: 63vh;
+        margin-top: -52vh;
+    }
+    .overlay, .modal-1{
+        height: 63vh;
+        margin-top: -61vh;
+    }
+    
+    .overlay, .modal-2{
+        height: 75vh;
+        margin-top: -70vh;
+    }
+    .overlay, .modal-3{
+        height: 120vh;
+        margin-top: -71vh;
+    }
+
+    .overlay, .mda-0,
+    .overlay, .mda-1{
+        height: 65vh;
+        margin-top: -54vh;
+    }
+    .overlay, .mda-2{
+        height: 68vh;
+        margin-top: -59vh;
+    }
+    .overlay, .mda-3{
+        height: 57vh;
+        margin-top: -67vh;
+    }
+    .modal{margin-left: -18%;}
+    .modal1,  .modal2{margin-left: -18%;}
+    .moda3{margin-left: -9vh;}
+
+    .modal-content{
+        width: 100% !important;
+        padding: 22px;
+    }
+}
+@media (min-width: 576px)  {
+    .img-conf{
+        width: 70% !important;
+    }
+    .cards-conferences{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .card {
+        width: 44%;
+        height: 23vh;
+    }
+    .card:hover {
+        height: 38vh;
+    }
+    .card-avatar img {
+        width: 80%;
+        margin-left: 27px;
+    }
+    .card-social{
+        padding: 0 3px;
+    }
+
+    .btn-modal{
+        margin-top: 12px !important;
+        width: 70%
+    }
+    .overlay, .modal-0,
+    .overlay, .modal-1{
+        height: 122vh;
+        margin-top: -48vh;
+    }
+    
+    .overlay, .modal-2,
+    .overlay, .modal-3{
+        height: 120vh;
+        margin-top: -71vh;
+    }
+
+    .overlay, .mda-0,
+    .overlay, .mda-1{
+        height: 136vh;
+        margin-top: -108vh;
+    }
+    .overlay, .mda-2,
+    .overlay, .mda-3
+    {
+        height: 136vh;
+        margin-top: -138vh;
+    }
+    .modal{margin-left: -7%;}
+    .modal1{margin-left: -53.5%;}
+    .modal2{margin-left: -7%;}
+    .moda3{margin-left: -37vh;}
+
+    .modal-content{
+        width: 92% !important;
+        padding: 30px;
+    }
+}
+@media (min-width: 768px)  {
+    .img-conf{
+        width: 50% !important;
+    }
+    .card {
+        width: 35%;
+        height: 26vh;
+    }
+    .card:hover {
+        height: 43vh;
+    }
+    .card-avatar img {
+        width: 85%;
+        margin-left: 22px;
+    }
+
+    .card-social{
+        padding: 0;
+    }
+    .btn-modal{
+        margin-top: 12px !important;
+        width: 50%
+    }
+    .overlay, .modal-0,
+    .overlay, .modal-1{
+        height: 186vh;
+        margin-top: -58vh;
+    }
+    
+    .overlay, .modal-2,
+    .overlay, .modal-3{
+        height: 136vh;
+        margin-top: -49vh;
+    }
+
+    .overlay, .mda-0,
+    .overlay, .mda-1{
+        height: 136vh;
+        margin-top: -108vh;
+    }
+    .overlay, .mda-2,
+    .overlay, .mda-3
+    {
+        height: 136vh;
+        margin-top: -138vh;
+    }
+    .modal{margin-left: -15%;}
+    .modal1{margin-left: -51.5%;}
+    .modal2{margin-left: -15%;}
+    .moda3{margin-left: -48.3vh;}
+
+    .modal-content{
+        width: 80% !important;
+        padding: 60px;
+    }
+}
+@media (min-width: 992px)  {
+    .img-conf{
+        width: 40% !important;
+    }
+    .img-conf{
+        width: 35%;
+    }
+    .card {
+        width: 35%;
+        height: 34vh;
+    }
+    .card:hover {
+        height: 50vh;
+    }
+    .card-avatar img {
+        width: 85%;
+        margin-left: 22px;
+    }
+
+    .btn-modal{
+        margin-top: 12px !important;
+        width: 50%
+    }
+    .overlay, .modal-0,
+    .overlay, .modal-1{
+        height: 186vh;
+        margin-top: -58vh;
+    }
+    
+    .overlay, .modal-2,
+    .overlay, .modal-3{
+        height: 171vh;
+        margin-top: -96vh;
+    }
+
+    .overlay, .mda-0,
+    .overlay, .mda-1{
+        height: 171vh;
+        margin-top: -134vh;
+    }
+    .overlay, .mda-2,
+    .overlay, .mda-3
+    {
+        height: 170vh;
+        margin-top: -171vh;
+    }
+    .modal{margin-left: -15%;}
+    .modal1{margin-left: -51.5%;}
+    .modal2{margin-left: -15%;}
+    .moda3{margin-left: -61.3vh;}
+
+    .modal-content{width: 80% !important;}
+}
+@media (min-width: 1200px) {
+    .card {
+        height: 38vh;
+        width: 22%;
+    }
+    .card:hover {
+        height: 59vh;
+    }
+    .card-avatar img {
+        width: 85%;
+        margin-left: 22px;
+    }
+
+    .btn-modal{
+        margin-top: 12px !important;
+        width: 50%
+    }
+    .overlay, .modal-0,
+    .overlay, .modal-1,
+    .overlay, .modal-2,
+    .overlay, .modal-3{
+        height: 106vh;
+        margin-top: -53vh;
+    }
+
+    .overlay, .mda-0,
+    .overlay, .mda-1,
+    .overlay, .mda-2,
+    .overlay, .mda-3
+    {
+        height: 97vh;
+        margin-top: -95vh;
+    }
+    .modal{margin-left: -4%;}
+    .modal1{margin-left: -27.7%;}
+    .modal2{margin-left: -51.2%;}
+    .moda3{margin-left: -155.3vh;}
+    .modal-content{width: 66% !important;}
+}
+@media (min-width: 1400px) {
+    .img-conf{
+        width: 35% !important;
+    }
+    .card {
+        height: 33vh;
+    }
+    .card:hover {
+        height: 48vh;
+    }
+    .card-avatar img {
+        width: 90%;
+        margin-left: 18px;
+    }
+    .btn-modal{
+        margin-top: 12px !important;
+        width: 50%
+    }
+    .overlay, .modal-0,
+    .overlay, .modal-1,
+    .overlay, .modal-2,
+    .overlay, .modal-3{
+        height: 97vh;
+        margin-top: -59vh;
+    }
+
+    .overlay, .mda-0,
+    .overlay, .mda-1,
+    .overlay, .mda-2,
+    .overlay, .mda-3
+    {
+        height: 97vh;
+        margin-top: -95vh;
+    }
+    .modal{margin-left: -4.6%;}
+    .moda3{margin-left: -126vh;}
+    .modal-content{width: 50% !important;}
+}
+@media (min-width: 1600px) {
+    .card {
+        height: 37vh;
+    }
+    .card:hover {
+        height: 53vh;
+    }
+    .btn-modal{
+        margin-top: 12px !important;
+        width: 50%
+    }
+    .overlay, .modal-0,
+    .overlay, .modal-1,
+    .overlay, .modal-2,
+    .overlay, .modal-3{
+        height: 109vh;
+        margin-top: -65vh;
+    }
+
+    .overlay, .mda-0,
+    .overlay, .mda-1,
+    .overlay, .mda-2,
+    .overlay, .mda-3
+    {
+        height: 110vh;
+        margin-top: -106vh;
+    }
+    .moda3{margin-left: -143vh;}
+}
+@media (min-width: 1800px) {
+    .card {
+        height: 41vh;
+    }
+    .card:hover {
+        height: 58vh;
+    }
+    .btn-modal{
+        margin-top: 12px !important;
+        width: 50%
+    }
+    .overlay, .modal-0,
+    .overlay, .modal-1,
+    .overlay, .modal-2,
+    .overlay, .modal-3{
+        height: 118vh;
+        margin-top: -71vh
+    }
+
+    .overlay, .mda-0,
+    .overlay, .mda-1,
+    .overlay, .mda-2,
+    .overlay, .mda-3
+    {
+        height: 118vh;
+        margin-top: -115vh;
+    }
+    .moda3{margin-left: -160vh;}
 }
 
 /* ================================================ */

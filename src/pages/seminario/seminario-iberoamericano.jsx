@@ -139,64 +139,22 @@ export const Seminario = () => {
                 {/* Cards Information */}
                 <div className="cont-cardInfo">
                     <div className="card__Information">
-                        <svg className={'img-cardInfo'}
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={64}
-                            height={64}
-                            style={{ fill: "#26e07f", }}
-                            viewBox="0 0 172 172"
-                        >
-                            <g
-                                fill="none"
-                                strokeMiterlimit={10}
-                                fontFamily="none"
-                                fontSize="none"
-                                fontWeight="none"
-                                style={{
-                                    mixBlendMode: "normal",
-                                }}
-                                textAnchor="none"
-                            >
-                                <path d="M0 172V0h172v172z" />
-                                <path
-                                    fill="#1fb141"
-                                    d="M21.5 21.5v129H86v-129zM86 53.75C86 71.53 100.47 86 118.25 86s32.25-14.47 32.25-32.25-14.47-32.25-32.25-32.25S86 35.97 86 53.75zM118.25 86C100.47 86 86 100.47 86 118.25s14.47 32.25 32.25 32.25 32.25-14.47 32.25-32.25S136.03 86 118.25 86z"
-                                />
-                            </g>
-                        </svg>
+                        <Image src={"/images/LandingSeminario/doctor.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                            className={'img-cardInfo'} />
+
+                        <p className={"text-center text-lg mb-2 TxtPreferenci text-text-title"}><b>{strings.seminario.cardInfo["1"].title}</b></p>
                         <div class={'textBox'}>
-                            <p class="text head text-lg">Medicos</p>
+                            <p className={"text-left text-lg mb-2 lg:text-3xl"}><b>{strings.seminario.cardInfo["1"].precio}</b></p>
                         </div>
                     </div>
                     {/*  */}
                     <div className="card__Information">
-                        <svg className={'img-cardInfo'}
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={64}
-                            height={64}
-                            style={{ fill: "#26e07f", }}
-                            viewBox="0 0 172 172"
-                        >
-                            <g
-                                fill="none"
-                                strokeMiterlimit={10}
-                                fontFamily="none"
-                                fontSize="none"
-                                fontWeight="none"
-                                style={{
-                                    mixBlendMode: "normal",
-                                }}
-                                textAnchor="none"
-                            >
-                                <path d="M0 172V0h172v172z" />
-                                <path
-                                    fill="#1fb141"
-                                    d="M21.5 21.5v129H86v-129zM86 53.75C86 71.53 100.47 86 118.25 86s32.25-14.47 32.25-32.25-14.47-32.25-32.25-32.25S86 35.97 86 53.75zM118.25 86C100.47 86 86 100.47 86 118.25s14.47 32.25 32.25 32.25 32.25-14.47 32.25-32.25S136.03 86 118.25 86z"
-                                />
-                            </g>
-                        </svg>
-                        <div class={'textBox '}>
-                            <p class="text head text-lg">Estudiantes</p>
+                        <Image src={"/images/LandingSeminario/estudiante.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                            className={'img-cardInfo'} />
+
+                        <p className={"text-center text-lg mb-2 TxtPreferenci text-text-title"}><b>{strings.seminario.cardInfo["2"].title}</b></p>
+                        <div class={'textBox'}>
+                            <p className={"text-left text-lg mb-2 lg:text-3xl"}><b>{strings.seminario.cardInfo["2"].precio}</b></p>
                         </div>
                     </div>
 
@@ -205,7 +163,7 @@ export const Seminario = () => {
                 <div className="Agenda mb-20">
                     <div className={'mb-20'}>
                         <Image src={"/images/LandingSeminario/Clinicannabis-Seminario-04.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            style={style.imgAgenda} />
+                            style={style.imgAgenda} className={'img-conf'}/>
                         <p className={"text-center text-2xl text-text-title"}>{strings.seminario.subtitle}</p>
                     </div>
                     <div className={"CronogramaSeminario InfoCronograma"}>
@@ -306,7 +264,7 @@ export const Seminario = () => {
                 <div className="conferencistas mb-10 mt-10">
                     <div className={'mb-5'}>
                         <Image src={"/images/LandingSeminario/conferenci.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            style={style.imgAgenda} />
+                            style={style.imgAgenda} className={'img-conf'}/>
                     </div>
 
                     <div className="cards-conferences">
@@ -328,7 +286,7 @@ export const Seminario = () => {
                                 <button onClick={toggleModal} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
                                 <div className="">
                                     {modal && (
-                                        <div className="modal">
+                                        <div className="modal modal-0">
                                             <div onClick={toggleModal} className="overlay"></div>
                                             <div className="modal-content">
                                                 <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["1"].title}</b></p>
@@ -361,7 +319,7 @@ export const Seminario = () => {
                                 <button onClick={toggleModal1} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
                                 <div className="">
                                     {modal1 && (
-                                        <div className="modal1">
+                                        <div className="modal1 modal-1">
                                             <div onClick={toggleModal1} className="overlay"></div>
 
                                             <div className="modal-content">
@@ -395,7 +353,7 @@ export const Seminario = () => {
                                 <button onClick={toggleModal2} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
                                 <div className="">
                                     {modal2 && (
-                                        <div className="modal2">
+                                        <div className="modal2 modal-2">
                                             <div onClick={toggleModal2} className="overlay"></div>
                                             <div className="modal-content">
                                                 <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["3"].title}</b></p>
@@ -427,7 +385,7 @@ export const Seminario = () => {
                                 <button onClick={toggleModal3} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
                                 <article className="">
                                     {modal3 && (
-                                        <div className="moda3">
+                                        <div className="moda3 modal-3">
                                             <div onClick={toggleModal3} className="overlay"></div>
                                             <div className={'modal-content'}>
                                                 <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["4"].title}</b></p>
@@ -441,6 +399,7 @@ export const Seminario = () => {
                                 </article>
                             </div>
                         </div>
+
                         {/* Card 5 */}
                         <div className="card">
                             <div className="card-info">
@@ -461,7 +420,7 @@ export const Seminario = () => {
                                     <button onClick={toggleModal4} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
 
                                     {modal4 && (
-                                        <div className="modal">
+                                        <div className="modal mda-0">
                                             <div onClick={toggleModal4} className="overlay"></div>
                                             <div className="modal-content">
                                                 <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["6"].title}</b></p>
@@ -494,7 +453,7 @@ export const Seminario = () => {
                                 <button onClick={toggleModal5} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
                                 <div className="">
                                     {modal5 && (
-                                        <div className="modal1">
+                                        <div className="modal1 mda-1">
                                             <div onClick={toggleModal5} className="overlay"></div>
                                             <div className="modal-content">
                                                 <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["7"].title}</b></p>
@@ -527,7 +486,7 @@ export const Seminario = () => {
                                 <button onClick={toggleModal6} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
                                 <div className="">
                                     {modal6 && (
-                                        <div className="modal2">
+                                        <div className="modal2 mda-2">
                                             <div onClick={toggleModal6} className="overlay"></div>
                                             <div className="modal-content">
                                                 <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["8"].title}</b></p>
@@ -559,7 +518,7 @@ export const Seminario = () => {
                                 <button onClick={toggleModal7} className={'btn-modal bg-[#584280] rounded-full'}>Open</button>
                                 <div className="">
                                     {modal7 && (
-                                        <div className="moda3">
+                                        <div className="moda3 mda-3">
                                             <div onClick={toggleModal7} className="overlay"></div>
                                             <div className="modal-content">
                                                 <p className={"text-left text-lg mb-2"}><b>{strings.seminario.conferecistas["9"].title}</b></p>
@@ -580,7 +539,7 @@ export const Seminario = () => {
                 < div className="ubication" >
                     <div className={''}>
                         <Image src={"/images/LandingSeminario/Ubication.png "} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            style={style.imgAgenda} />
+                            style={style.imgAgenda} className={'img-conf'}/>
                     </div>
                     <div className="Google-map">
                         <iframe className={"map"}
