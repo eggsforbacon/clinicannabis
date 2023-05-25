@@ -333,8 +333,11 @@ export const strings: IKeyedObject = {
             },
         },
         'cardInfo':{
+            0:{
+                'title':<>{"Compra aqui:"}</>
+            },
             1:{ 
-                'title':<>{"Medico"}</>,
+                'title':<>{"Médico"}</>,
                 'precio':<>{"190.000 COP"}</>
             },
             2:{ 

@@ -137,33 +137,51 @@ export const Seminario = () => {
                         style={style.bnrHead} />
                 </div>
                 {/* Cards Information */}
-                <div className="cont-cardInfo">
-                    <div className="card__Information">
-                        <Image src={"/images/LandingSeminario/doctor.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            className={'img-cardInfo'} />
+                <div className={"content-form-TXT lg:mb-40"}>
+                    <div className="infoSeminarioForm">
+                        <article>
+                            <p className={" text-xl text-P-seminario"}><b>{strings.seminario.parrafo["1"].blackText}</b></p>
+                            <p className={"text-lg text-seminari mb-5"}>{strings.seminario.parrafo["1"].normalText}</p>
 
-                        <p className={"text-center text-lg mb-2 TxtPreferenci text-text-title"}><b>{strings.seminario.cardInfo["1"].title}</b></p>
-                        <div class={'textBox'}>
-                            <p className={"text-left text-lg mb-2 lg:text-3xl"}><b>{strings.seminario.cardInfo["1"].precio}</b></p>
-                        </div>
-                    </div>
-                    {/*  */}
-                    <div className="card__Information">
-                        <Image src={"/images/LandingSeminario/estudiante.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            className={'img-cardInfo'} />
-
-                        <p className={"text-center text-lg mb-2 TxtPreferenci text-text-title"}><b>{strings.seminario.cardInfo["2"].title}</b></p>
-                        <div class={'textBox'}>
-                            <p className={"text-left text-lg mb-2 lg:text-3xl"}><b>{strings.seminario.cardInfo["2"].precio}</b></p>
-                        </div>
+                            <p className={" text-xl text-P-seminario"}><b>{strings.seminario.parrafo["2"].blackText}</b></p>
+                            <p className={" text-lg text-seminari"}>{strings.seminario.parrafo["2"].normalText}</p>
+                        </article>
                     </div>
 
+                    <div className={'cont-infoCard'}>
+                        <div className="title-info">
+                            <h2 className={"text-center text-lg mb-4 text-text-title lg:text-4xl"}><b>{strings.seminario.cardInfo["0"].title}</b></h2>
+                        </div>
+
+                        <div className="cont-cardInfo">
+                            <div className="card__Information">
+                                <Image src={"/images/LandingSeminario/doctor.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    className={'img-cardInfo'} />
+
+                                <p className={"text-center text-lg mb-2 TxtPreferenci text-text-title"}><b>{strings.seminario.cardInfo["1"].title}</b></p>
+                                <div class={'textBox'}>
+                                    <p className={"text-left text-lg mb-2 lg:text-3xl"}><b>{strings.seminario.cardInfo["1"].precio}</b></p>
+                                </div>
+                            </div>
+                            {/*  */}
+                            <div className="card__Information">
+                                <Image src={"/images/LandingSeminario/estudiante.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                                    className={'img-cardInfo'} />
+
+                                <p className={"text-center text-lg mb-2 TxtPreferenci text-text-title"}><b>{strings.seminario.cardInfo["2"].title}</b></p>
+                                <div class={'textBox'}>
+                                    <p className={"text-left text-lg mb-2 lg:text-3xl"}><b>{strings.seminario.cardInfo["2"].precio}</b></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
                 {/* Inicio Agenda */}
                 <div className="Agenda mb-20">
                     <div className={'mb-20'}>
                         <Image src={"/images/LandingSeminario/Clinicannabis-Seminario-04.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            style={style.imgAgenda} className={'img-conf'}/>
+                            style={style.imgAgenda} className={'img-conf'} />
                         <p className={"text-center text-2xl text-text-title"}>{strings.seminario.subtitle}</p>
                     </div>
                     <div className={"CronogramaSeminario InfoCronograma"}>
@@ -264,7 +282,7 @@ export const Seminario = () => {
                 <div className="conferencistas mb-10 mt-10">
                     <div className={'mb-5'}>
                         <Image src={"/images/LandingSeminario/conferenci.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            style={style.imgAgenda} className={'img-conf'}/>
+                            style={style.imgAgenda} className={'img-conf'} />
                     </div>
 
                     <div className="cards-conferences">
@@ -539,7 +557,7 @@ export const Seminario = () => {
                 < div className="ubication" >
                     <div className={''}>
                         <Image src={"/images/LandingSeminario/Ubication.png "} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            style={style.imgAgenda} className={'img-conf'}/>
+                            style={style.imgAgenda} className={'img-conf'} />
                     </div>
                     <div className="Google-map">
                         <iframe className={"map"}
