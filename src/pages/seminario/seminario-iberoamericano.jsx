@@ -134,7 +134,7 @@ export const Seminario = () => {
             <section style={style.ImgContent}>
                 {/* Inicio Head */}
                 <div className={'w-100 sm:mb-20 lg:mb-40'}>
-                    <Image src={"/images/LandingSeminario/Landing page - Clinicannabis - Seminario_Mesa de trabajo 1.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                    <Image src={"/images/LandingSeminario/Landing page - Clinicannabis - Seminario__Mesa de trabajo 1.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                         style={style.bnrHead} />
                 </div>
                 {/* Cards Information */}
@@ -562,7 +562,7 @@ export const Seminario = () => {
                 </div >
                 {/* Inicio footer */}
                 < div className={'w-100'} >
-                    <Image src={"/images/LandingSeminario/Landing page-Clinicannabis-Seminario-03.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                    <Image src={"/images/LandingSeminario/Landing page-Clinicannabis-Seminario--03.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                         style={style.bnrHead} />
                 </div >
             </section >
