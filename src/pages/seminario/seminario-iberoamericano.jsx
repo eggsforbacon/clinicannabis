@@ -137,15 +137,13 @@ export const Seminario = () => {
                     <Image src={"/images/LandingSeminario/Landing page - Clinicannabis - Seminario__Mesa de trabajo 1.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                         style={style.bnrHead} />
                 </div>
-                {/* Cards Information */}
                 {/*   form y contexr   */}
                 <div className={"content-form-TXT lg:mb-40"}>
                     <div className="infoSeminarioForm">
                         <article>
-                            <p className={" text-xl text-P-seminario"}><b>{strings.seminario.parrafo["1"].blackText}</b></p>
-                            <p className={"text-lg text-seminari mb-5"}>{strings.seminario.parrafo["1"].normalText}</p>
+                            <p className={" text-xl text-P-seminario sm:mb-5 lg:mb-15"}><b>{strings.seminario.parrafo["1"].blackText}</b>{strings.seminario.parrafo["1"].normalText}</p>
 
-                            <p className={" text-xl text-P-seminario"}><b>{strings.seminario.parrafo["2"].blackText}</b>{strings.seminario.parrafo["2"].normalText}</p>
+                            <p className={" text-xl text-P-seminario sm:mt-5 lg:mt-5 sm-mg-txt"}><b>{strings.seminario.parrafo["2"].blackText}</b>{strings.seminario.parrafo["2"].normalText}</p>
                         </article>
                     </div>
 
