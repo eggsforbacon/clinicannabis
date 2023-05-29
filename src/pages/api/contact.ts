@@ -1,7 +1,9 @@
 import {NextApiRequest, NextApiResponse} from "next";
 import {mailOptions, transporter} from "../../config/nodemailer";
 
-const html : string = "<h1>Test title</h1>"
+const buildHTML = (name : string, email : string, message : string) : string => {
+    return "<h1>Test title</h1>";
+}
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     console.log(req.method);
@@ -14,9 +16,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         try {
             await transporter.sendMail({
                 ...mailOptions,
-                subject: "Test subject",
-                text: "This is a test string",
-                html: html
+                subject: "¡Nuevo suscriptor de Clinicannabis!",
+                html: buildHTML(data.name, data.email, data.message)
             });
 
         } catch (error : any) {

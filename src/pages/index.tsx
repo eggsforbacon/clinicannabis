@@ -4,18 +4,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import {strings} from "../model/strings";
 import React, {useContext, useEffect, useRef, useState} from "react";
-import {useRouter} from "next/router";
-import {Hero} from "../components/content/index/Hero";
 import {About} from "../components/content/index/About";
 import {Values} from "../components/content/index/Values";
 import {Experience} from "../components/content/index/Experience";
 import {Blog} from "../components/content/index/Blog";
 import NavbarContext from "../context/Navbar/NavbarContext";
 import {Invima} from "../components/content/index/Invima";
-import {PopUP} from "../components/PopUP";
 import {Services} from "../components/content/index/Services";
-import {HeroCarousel} from "../components/content/index/HeroSlides/HeroCarousel";
-import {ClinicIntro} from "../components/content/index/HeroSlides/ClinicIntro";
 import {IberoamericanoBanner} from "../components/content/index/HeroSlides/IberoamericanoBanner";
 
 
@@ -43,7 +38,6 @@ const Home: NextPage = () => {
             setHasWindow(true);
         }
         setLogoShown(false);
-        console.log(hasWindow);
     }, []);
 
     return (
