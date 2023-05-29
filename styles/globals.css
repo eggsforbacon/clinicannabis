@@ -1364,11 +1364,11 @@
     }
 
     .card {
-        height: 30vh;
+        height: 38.5vh;
     }
 
     .card:hover {
-        height: 50vh;
+        height: 57vh;
     }
 
     .card-avatar img {
@@ -1463,11 +1463,11 @@
 
 @media (min-width: 1800px) {
     .card {
-        height: 33vh;
+        height: 38vh;
     }
 
     .card:hover {
-        height: 46vh;
+        height: 52vh;
     }
 
     .btn-modal {
@@ -1506,11 +1506,11 @@
 
 @media (min-width: 1900px) {
     .card {
-        height: 34vh;
+        height: 53vh;
     }
 
     .card:hover {
-        height: 48vh;
+        height: 72vh;
     }
 
     .btn-modal {
@@ -1544,22 +1544,6 @@
 
     .moda3 {
         margin-left: -160vh;
-    }
-}
-
-@media (min-width: 1920px) {
-    .card {
-        height: 49vh;
-    }
-
-    .card:hover {
-        height: auto;
-        padding-bottom: 3vh;
-    }
-
-    .btn-modal {
-        margin-top: 12px !important;
-        width: 50%
     }
 }
 
