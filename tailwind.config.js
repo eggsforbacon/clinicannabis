@@ -54,7 +54,8 @@ module.exports = {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
             },
             fontFamily: {
-                'solomon-sans': ['Solomon Sans']
+                'solomon-sans': ['Solomon Sans', 'sans-serif'],
+                'aeonik': ['Aeonik', 'sans-serif'],
             },
             colors: {
                 'clinic-jade': '#00b34f',

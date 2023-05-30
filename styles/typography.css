@@ -1,64 +1,113 @@
+/* Solomon Sans */
+
 @font-face {
     font-family: "Solomon Sans";
     font-weight: 300;
-    src: url("../public/font/solomon_sans/Light.woff2") format("woff2"), url("../public/font/solomon_sans/woff/Light.woff") format("woff");
+    src: url("../public/font/solomon_sans/woff2/Light.woff2") format("woff2"), url("../public/font/solomon_sans/woff/Light.woff") format("woff");
 }
 
 @font-face {
     font-family: "Solomon Sans";
     font-weight: 300;
     font-style: italic;
-    src: url("../public/font/solomon_sans/LightItalic.woff2") format("woff2"), url("../public/font/solomon_sans/woff/LightItalic.woff") format("woff");
+    src: url("../public/font/solomon_sans/woff2/LightItalic.woff2") format("woff2"), url("../public/font/solomon_sans/woff/LightItalic.woff") format("woff");
 }
 
 @font-face {
     font-family: "Solomon Sans";
     font-weight: 400;
-    src: url("../public/font/solomon_sans/Normal.woff2") format("woff2"), url("../public/font/solomon_sans/woff/Normal.woff") format("woff");
+    src: url("../public/font/solomon_sans/woff2/Normal.woff2") format("woff2"), url("../public/font/solomon_sans/woff/Normal.woff") format("woff");
 }
 
 @font-face {
     font-family: "Solomon Sans";
     font-weight: 400;
     font-style: italic;
-    src: url("../public/font/solomon_sans/NormalItalic.woff2") format("woff2"), url("../public/font/solomon_sans/woff/NormalItalic.woff") format("woff");
+    src: url("../public/font/solomon_sans/woff2/NormalItalic.woff2") format("woff2"), url("../public/font/solomon_sans/woff/NormalItalic.woff") format("woff");
 }
 
 @font-face {
     font-family: "Solomon Sans";
     font-weight: 600;
-    src: url("../public/font/solomon_sans/SemiBold.woff2") format("woff2"), url("../public/font/solomon_sans/woff/SemiBold.woff") format("woff");
+    src: url("../public/font/solomon_sans/woff2/SemiBold.woff2") format("woff2"), url("../public/font/solomon_sans/woff/SemiBold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Solomon Sans";
     font-weight: 600;
     font-style: italic;
-    src: url("../public/font/solomon_sans/SemiBoldItalic.woff2") format("woff2"), url("../public/font/solomon_sans/woff/SemiBoldItalic.woff") format("woff");
+    src: url("../public/font/solomon_sans/woff2/SemiBoldItalic.woff2") format("woff2"), url("../public/font/solomon_sans/woff/SemiBoldItalic.woff") format("woff");
 }
 
 @font-face {
     font-family: "Solomon Sans";
     font-weight: 700;
-    src: url("../public/font/solomon_sans/Bold.woff2") format("woff2"), url("../public/font/solomon_sans/woff/Bold.woff") format("woff");
+    src: url("../public/font/solomon_sans/woff2/Bold.woff2") format("woff2"), url("../public/font/solomon_sans/woff/Bold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Solomon Sans";
     font-weight: 700;
     font-style: italic;
-    src: url("../public/font/solomon_sans/BoldItalic.woff2") format("woff2"), url("../public/font/solomon_sans/woff/BoldItalic.woff") format("woff");
+    src: url("../public/font/solomon_sans/woff2/BoldItalic.woff2") format("woff2"), url("../public/font/solomon_sans/woff/BoldItalic.woff") format("woff");
 }
 
 @font-face {
     font-family: "Solomon Sans";
     font-weight: 900;
-    src: url("../public/font/solomon_sans/Black.woff2") format("woff2"), url("../public/font/solomon_sans/woff/Black.woff") format("woff");
+    src: url("../public/font/solomon_sans/woff2/Black.woff2") format("woff2"), url("../public/font/solomon_sans/woff/Black.woff") format("woff");
 }
 
 @font-face {
     font-family: "Solomon Sans";
     font-weight: 900;
     font-style: italic;
-    src: url("../public/font/solomon_sans/BlackItalic.woff2") format("woff2"), url("../public/font/solomon_sans/woff/BlackItalic.woff") format("woff");
+    src: url("../public/font/solomon_sans/woff2/BlackItalic.woff2") format("woff2"), url("../public/font/solomon_sans/woff/BlackItalic.woff") format("woff");
+}
+
+
+/* Aeonik */
+
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 300;
+    src: url("../public/font/aeonik/woff2/Light.woff2") format("woff2"), url("../public/font/aeonik/woff/Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 400;
+    src: url("../public/font/aeonik/woff2/Regular.woff2") format("woff2"), url("../public/font/aeonik/woff/Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 400;
+    font-style: italic;
+    src: url("../public/font/aeonik/woff2/RegularItalic.woff2") format("woff2"), url("../public/font/aeonik/woff/RegularItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 500;
+    src: url("../public/font/aeonik/woff2/Medium.woff2") format("woff2"), url("../public/font/aeonik/woff/Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 500;
+    font-style: italic;
+    src: url("../public/font/aeonik/woff2/MediumItalic.woff2") format("woff2"), url("../public/font/aeonik/woff/MediumItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 700;
+    src: url("../public/font/aeonik/woff2/Bold.woff2") format("woff2"), url("../public/font/aeonik/woff/Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 900;
+    src: url("../public/font/aeonik/woff2/Black.woff2") format("woff2"), url("../public/font/aeonik/woff/Black.woff") format("woff");
 }

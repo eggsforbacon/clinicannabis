@@ -6,31 +6,16 @@ export const IberoamericanoBanner = () => {
     const navigate = useRouter();
 
     return (
-        <section className={"w-full h-banner relative mt-30"}>
-            <Image src={"/images/LandingSeminario/Banner Web--1280x620.png"}
-                alt={""} width={1280} height={565} className={"w-full absolute top-0 left-0 bnn-img bnn__img1"} quality={100} priority />
-            {/* <Image onClick={() => { navigate.push("/seminario/seminario-iberoamericano") }} src={"/images/LandingSeminario/Banner Web-1280x620.png"}
-                alt={""} width={1280} height={565} className={"w-full absolute top-16 left-0"} quality={100} priority /> */}
+        <section className={"w-full h-168 lg:h-192 xl:h-208 relative mt-30 flex flex-col items-center justify-start pt-44 gap-16"}>
+            <Image src={"/images/landing/bannerIberoamericano.png"}
+                alt={""} width={1920} height={1080} className={"absolute w-full scale-[2.5] top-[17rem] left-52 lg:scale-[1.4] lg:top-auto lg:bottom-8 lg:left-0 xl:scale-100 xl:top-0 xl:left-0"} quality={100} priority />
+            <article className={"relative debug w-full px-44 flex flex-col min-h-[20rem]"}>
+                <h1 className={"font-aeonik"}>Seminario Iberoamericano</h1>
 
-            <Image src={"/images/LandingSeminario/Banner Web_360x820.png"}
-                alt={""} width={1280} height={565} className={"w-full absolute top-0 left-0 bnn-img bnn__img2"} quality={100} priority />
-
-
-            <div className={'Button-Banner'}>
-                <div className="Position-Btn">
-                    {/* <div className="button-Info-1">
-                        <button className={'rounded-full border-Button text-center text-white bg-buttonHD'}>
-                            <Link href={""} className={`text-button`} target="_blank">Inscribete</Link>
-                        </button>
-                    </div> */}
-
-                    <div className="button-Info-2">
-                        <button className={'rounded-full border-Button text-center text-white bg-buttonHD'}>
-                            <Link href={"/seminario/seminario-iberoamericano"} className={`text-button`} target="_blank">M&aacute;s informaci&oacute;n</Link>
-                        </button>
-                    </div>
-                </div>
-            </div>
+            </article>
+            <button className={'relative rounded-full border-solid border-[3px] lg:border-4 border-neutral-100 text-center text-white py-1.5 px-5 lg:px-8 lg:py-3 xl:py-4 xl:px-10 backdrop-blur-lg transition duration-500 ease-in-out lg:hover:bg-white/20 lg:hover:shadow-xl'}>
+                <Link href={"/seminario/seminario-iberoamericano"} className={`text-base font-normal`} target="_blank">M&aacute;s informaci&oacute;n</Link>
+            </button>
         </section>
     );
 }
