@@ -20,7 +20,7 @@ export const ContactForm = () => {
             email : form.ctEmail.value,
             message : (form.ctMessage as HTMLTextAreaElement).value,
         });
-        console.log("Form says: ", data);
+        await console.log("Form says: ", data);
         await sendContactForm(data);
     }
 

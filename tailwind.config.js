@@ -54,7 +54,8 @@ module.exports = {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
             },
             fontFamily: {
-                'solomon-sans': ['Solomon Sans']
+                'solomon-sans': ['Solomon Sans', 'sans-serif'],
+                'aeonik': ['Aeonik', 'sans-serif'],
             },
             colors: {
                 'clinic-jade': '#00b34f',
@@ -76,9 +77,10 @@ module.exports = {
                 'dark-green': "#022528",
 
                 'text-title': "#494083",
-                'textInf-cards': "706f6f",
+                'textInf-cards': "#706f6f",
                 'P-seminario' : "#706f6f",
-                'seminari': "#787776 ", 
+                'seminari': "#787776",
+                'lemon-chiffon' : '#fdf5cd',
             },
             /*Awfully useful animation timing functions*/
             transitionTimingFunction: {
