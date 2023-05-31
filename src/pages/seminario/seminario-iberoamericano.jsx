@@ -1,8 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { strings } from "../../model/strings";
 import { sendContactForm } from "../../lib/api";
+import useCountDown from 'react-countdown-hook';
+
+import {Timer} from "../../components/TimerLand";
+
+
 
 export const Seminario = () => {
     const style = {
@@ -26,13 +31,13 @@ export const Seminario = () => {
             objectFit: 'cover',
         }
     };
-
+    // ======================================== //
+    // Parte de popUp Cards
     const [data, setData] = useState({
         name: "",
         email: "",
         phone: ""
     })
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         const form = (e.target);
@@ -44,7 +49,6 @@ export const Seminario = () => {
         console.log("Form says: ", data);
         await sendContactForm(data);
     }
-
     const [modal, setModal] = useState(false);
     const toggleModal = () => {
         setModal(!modal);
@@ -77,8 +81,6 @@ export const Seminario = () => {
     const toggleModal7 = () => {
         setModal7(!modal7);
     }
-
-
     if (typeof window !== "undefined") {
         if (modal) {
             document.body.classList.add('active-modal')
@@ -138,7 +140,7 @@ export const Seminario = () => {
                         style={style.bnrHead} />
                 </div>
                 {/*   form y contexr   */}
-                <div className={"content-form-TXT lg:mb-40"}>
+                <div className={"content-form-TXT "}>
                     <div className="infoSeminarioForm">
                         <article>
                             <p className={" text-xl text-P-seminario sm:mb-5 lg:mb-15"}><b>{strings.seminario.parrafo["1"].blackText}</b>{strings.seminario.parrafo["1"].normalText}</p>
@@ -146,26 +148,9 @@ export const Seminario = () => {
                             <p className={" text-xl text-P-seminario sm:mt-5 lg:mt-5 sm-mg-txt"}><b>{strings.seminario.parrafo["2"].blackText}</b>{strings.seminario.parrafo["2"].normalText}</p>
                         </article>
                     </div>
-
-                    <div className={'mg-Crd'}>
-                        <div class="card-Crd">
-                            <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSdmxYGuJwxoT-TMJtB6155LG80Dil0bMh53P0JsXBu_AiZVzg/viewform"} className={`text-button`} target="_blank">
-                                <p className={"text-lg text-P-seminario card__title"}><b>{strings.seminario.cardInfo["3"].title}</b></p>
-                            </Link>
-
-                            <div class="card__date">
-                               <p>{strings.seminario.cardInfo["3"].fecha}</p>
-                            </div>
-                            <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSdmxYGuJwxoT-TMJtB6155LG80Dil0bMh53P0JsXBu_AiZVzg/viewform"} className={`text-button`} target="_blank">
-                                <div class="card__arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                                        <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                                    </svg>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
                 </div>
+
+                <Timer/>
                 {/* Inicio Agenda */}
                 <div className="Agenda mb-20">
                     <div className={'mb-20'}>
@@ -276,15 +261,15 @@ export const Seminario = () => {
 
                     <div className="cards-conferences">
                         {/* Card 1 */}
-                        <div class="card">
-                            <div class="card-info">
-                                <div class="card-avatar">
+                        <div className="card">
+                            <div className="card-info">
+                                <div className="card-avatar">
                                     <Image src={"/images/LandingSeminario/Conferences/Landing page - Clinicannabis - Seminario-07.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                                         style={{}} />
                                 </div>
                             </div>
 
-                            <div class="card-social card-title text-text-title">
+                            <div className="card-social card-title text-text-title">
                                 <p className={"text-center text-lg"}>{strings.seminario.conference["1"].academy}
                                     <b>{strings.seminario.conference["1"].name}</b>
                                 </p>
@@ -406,7 +391,6 @@ export const Seminario = () => {
                                 </article>
                             </div>
                         </div>
-
                         {/* Card 5 */}
                         <div className="card">
                             <div className="card-info">
@@ -539,11 +523,10 @@ export const Seminario = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div >
                 </div >
                 {/* Inicio Google Maps */}
-                < div className="ubication" >
+                <div className="ubication" >
                     <div className={''}>
                         <Image src={"/images/LandingSeminario/Ubication.png "} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                             style={style.imgAgenda} className={'img-conf'} />
@@ -553,13 +536,12 @@ export const Seminario = () => {
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.563306712596!2d-76.53850312611074!3d3.4557794511935027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f19d047757%3A0x14b8c3e63b55e08a!2sCali%20Marriott%20Hotel!5e0!3m2!1sen!2sco!4v1684265260790!5m2!1sen!2sco"
                             width="1262" height="450"
                             allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+                            loading="lazy">
                         </iframe>
                     </div>
                 </div >
                 {/* Inicio footer */}
-                < div className={'w-100'} >
+                <div className={'w-100'} >
                     <Image src={"/images/LandingSeminario/Landing page-Clinicannabis-Seminario--03.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                         style={style.bnrHead} />
                 </div >
@@ -568,4 +550,4 @@ export const Seminario = () => {
     );
 }
 
-export default Seminario;
+    export default Seminario;

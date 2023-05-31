@@ -463,27 +463,159 @@
     }
 
     .infoSeminarioForm {
-        width: 56%;
-        padding-left: 3%;
-        padding-right: 3%;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
         padding-top: 0%;
     }
 }
 
 @media (min-width: 992px) {
     .infoSeminarioForm {
-        width: 50%;
-        padding-left: 6%;
-        padding-right: 0;
-    }
-
-    .infoSeminarioForm {
-        width: 50%;
-        padding-left: 6%;
+        padding-left: 7%;
+        padding-right: 3%;
     }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .infoSeminarioForm {
+        width: 90%;
+        padding-left: 7%;
+        padding-right: 3%;
+    }
+}
+
+/* =========================================== */
+/* Timer */
+.cont-timer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.timer-container {
+    background: linear-gradient(328deg, rgb(143 121 253) 0%, rgb(114 87 250) 51%, rgb(230 223 239) 100%);
+    left: 3%;
+    width: 45%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10vh;
+    margin-bottom: 5em;
+}
+
+.count-timer {
+    display: flex;
+    position: relative;
+    top: 3vh;
+    color: #fff;
+    justify-content: space-evenly;
+}
+
+.timerCount {
+    position: relative;
+    left: 4vh;
+    top: 3vh;
+}
+
+
+.hr-clor{
+    margin-top: 7vh;
+    width: 70%;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    left: 19%;
+    margin-bottom: -2vh;
+
+}
+.timer div:first-child {
+    text-align: center;
+    color: #fff;
+}
+
+.timer div:last-child {
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 1.4em;
+    padding: 20px 10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Solomon Sans';
+}
+
+.txt-timer p {
+    font-size: 2em;
+    text-align: center;
+}
+
+.txt-timer span {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.clock {
+    padding: 12px;
+    margin-top: 7vh;
+    border-radius: 60px;
+    border: 2px solid #fff;
+    height: 75px;
+    width: 14%;
+    position: relative;
+    left: calc(48% - 270px);
+}
+
+.clock:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 2px;
+    left: 48%;
+    height: 35px;
+    width: 2px;
+    border-radius: 10px;
+    -webkit-transform-origin: 50% 97%;
+    transform-origin: 50% 97%;
+    -webkit-animation: grdAiguille 20s linear infinite;
+    animation: grdAiguille 20s linear infinite;
+}
+
+@-webkit-keyframes grdAiguille {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes grdAiguille {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.clock:before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 6px;
+    left: 48%;
+    height: 31px;
+    width: 3px;
+    border-radius: 5px;
+    -webkit-transform-origin: 50% 94%;
+    transform-origin: 50% 94%;
+    -webkit-animation: ptAiguille 62s linear infinite;
+    animation: ptAiguille 62s linear infinite;
+}
+
 
 /* =========================================== */
 /* -- Inicio Agenda -- */
@@ -518,15 +650,17 @@
         height: 29vh;
         margin-top: 5vh;
     }
+
     .card-Crd .card__title {
         font-size: 35px;
         line-height: 39px;
         margin-top: 12px;
     }
-    .sm-mg-txt{
+
+    .sm-mg-txt {
         margin-top: 5vh;
     }
-    
+
 }
 
 @media (min-width: 768px) {
@@ -541,11 +675,13 @@
     .CronogramaSeminario {
         padding: 0 40px;
     }
+
     .card-Crd {
         width: 312px;
         height: 39vh;
         margin-right: 3vh;
     }
+
     .card-Crd .card__title {
         font-size: 44px;
         line-height: 47px;
@@ -557,16 +693,19 @@
     .CronogramaSeminario {
         padding: 0 80px;
     }
+
     .card-Crd .card__title {
         font-size: 47px;
         line-height: 52px;
         margin-top: 15px;
     }
+
     .card-Crd {
         width: 344px;
         height: 28vh;
         margin-right: 0;
     }
+
     .card-Crd .card__title {
         font-size: 48px;
         line-height: 55px;
@@ -585,11 +724,13 @@
         margin-right: 10vh;
         margin-left: 10vh;
     }
+
     .card-Crd .card__title {
         font-size: 50px;
         line-height: 55px;
         margin-top: 5px;
     }
+
     .card-Crd {
         width: 390px;
         height: 30vh;
@@ -607,6 +748,7 @@
         width: 60%;
         margin-right: 10vh;
     }
+
     .card-Crd {
         width: 390px;
         height: 24vh;
