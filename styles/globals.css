@@ -320,6 +320,20 @@
 /*  ================================================
    --  Adaptatividad Section Services --
 ================================================ */
+@media(min-width: 1200px) {
+    .pictSer {
+        width: 90em;
+        height: 142vh;
+        margin-left: 30vh;
+    }
+
+    .pictSer-2 {
+        max-width: 100%;
+        height: 158vh;
+        object-fit: cover;
+    }
+}
+
 @media(min-width: 1600px) {
     .pictSer {
         height: 78vh;
@@ -770,6 +784,18 @@
         height: 65px;
         width: 14%;
         left: calc(50% - 270px);
+    }
+}
+
+@media (min-width: 1400px) {
+    .timer-container {
+        width: 45%;
+    }
+
+    .clock {
+        height: 71px;
+        width: 14%;
+        left: calc(50% - 295px);
     }
 }
 
