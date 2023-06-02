@@ -337,11 +337,11 @@ export const strings: IKeyedObject = {
                 'title':<>{"Compra aquí:"}</>
             },
             1:{ 
-                'title1':<>{"ULTIMOS CUPOS"}</>,
+                'title1':<>{"Cupos Totales"}</>,
                 'title2':<>{"INSCRÍBETE AQUÍ"}</>,
             },
             2:{
-                'info':<>{"Boletas disponibles"}</>
+                'info':<>{"Ocupados"}</>
             }
         },
     },

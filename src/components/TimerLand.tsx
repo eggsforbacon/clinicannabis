@@ -51,45 +51,54 @@ export const Timer = ({ }) => {
         <>
             <section className={"flex cont-timer"}>
                 <div className="timer-container">
+                    
                     <div className={'count-timer'}>
-                        <div className="title__timer">
-                            <h2 className={"text-2xl"}><b>{strings.seminario.cardInfo["1"].title1}</b></h2>
-                            <p className={"text-lg"}><b>{strings.seminario.cardInfo["2"].info}</b></p>
+                        <div className="sep-cont-1 mb-timer">
+                            <h2 className={"text-3xl"}><b>{strings.seminario.cardInfo["1"].title1}</b></h2>
+                            <p className={"text-3xl"}><span>200</span></p>
                         </div>
-                        <div className="timerCount text-4xl">
-                            <Cound maxRange={100} />
+                        
+                        <div className="sep-cont-1 timerCount text-3xl">
+                            <p className={"text-xl"}><b>{strings.seminario.cardInfo["2"].info}</b></p>
+                            <Cound maxRange={95} />
                         </div>
                     </div>
 
-                    <div className={'hr-clor'}/>
+                    <div className={'hr-clor'} />
 
                     <div className={'flex'}>
                         <div className="clock"></div>
 
                         <div className="timer">
-                            <div>
-                                <section className="txt-timer">
+                            <div className="txt-timer">
+                                <div className="cont-inf__timer">
                                     <p>{timerDays}</p>
-                                    <p><span>D&iacute;a</span></p>
-                                </section>
-                                <span>:</span>
+                                    <span>:</span>
+                                </div>
+                                <p><span>D&iacute;as</span></p>
+                            </div>
 
-                                <section className="txt-timer">
+                            <div className="txt-timer">
+                                <div className="cont-inf__timer">
                                     <p>{timerHours}</p>
-                                    <p><span>Horas</span></p>
-                                </section>
-                                <span>:</span>
+                                    <span>:</span>
+                                </div>
+                                <p><span>Horas</span></p>
+                            </div>
 
-                                <section className="txt-timer">
+                            <div className="txt-timer">
+                                <div className="cont-inf__timer">
                                     <p>{timerMinutes}</p>
-                                    <p><span>Minutos</span></p>
-                                </section>
-                                <span>:</span>
+                                    <span>:</span>
+                                </div>
+                                <p><span>Minutos</span></p>
+                            </div>
 
-                                <section className="txt-timer">
+                            <div className="txt-timer">
+                                <div className="cont-inf__timer">
                                     <p>{timerSeconds}</p>
-                                    <p><span>Segundos</span></p>
-                                </section>
+                                </div>
+                                <p><span>Segundos</span></p>
                             </div>
                         </div>
                     </div>

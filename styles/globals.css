@@ -505,43 +505,60 @@
 }
 
 .count-timer {
-    display: flex;
+    /* display: flex; */
     position: relative;
     top: 3vh;
     color: #fff;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
+    width: 79%;
+    left: 5%;
 }
 
+.sep-cont-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 
 .timerCount {
     position: relative;
     left: 4vh;
-    top: 3vh;
+    top: 2vh;
+    display: flex;
+    align-items: center;
 }
+.timerCount span{
+    margin-left: 3px;
+    font-size: 28px;
+} */
 
 
-.hr-clor{
+.hr-clor {
     margin-top: 7vh;
-    width: 70%;
+    width: 85%;
     border-bottom: 2px solid #fff;
     position: relative;
-    left: 19%;
-    margin-bottom: -2vh;
-
+    left: 5%;
 }
-.timer div:first-child {
-    text-align: center;
+
+.timer {
+    margin-left: -10px;
+    margin-top: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
     color: #fff;
 }
 
-.timer div:last-child {
-    border-radius: 3px;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    margin-top: 1.4em;
-    padding: 20px 10px;
+.cont-inf__timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     text-align: center;
-    color: #fff;
-    font-family: 'Solomon Sans';
+    line-height: 20px;
 }
 
 .txt-timer p {
@@ -554,25 +571,24 @@
     text-align: center;
 }
 
-
 .clock {
-    padding: 12px;
-    margin-top: 7vh;
+    margin-top: 5vh;
     border-radius: 60px;
     border: 2px solid #fff;
-    height: 75px;
+    height: 65px;
     width: 14%;
     position: relative;
-    left: calc(48% - 270px);
+    left: calc(50% - 270px);
+    margin-bottom: 3vh;
 }
 
 .clock:after {
     content: "";
     position: absolute;
     background-color: #fff;
-    top: 2px;
+    top: 10px;
     left: 48%;
-    height: 35px;
+    height: 25px;
     width: 2px;
     border-radius: 10px;
     -webkit-transform-origin: 50% 97%;
@@ -616,6 +632,176 @@
     animation: ptAiguille 62s linear infinite;
 }
 
+@media (min-width: 320px) {
+    .cont-timer {
+        flex-direction: column;
+    }
+
+    .timer-container {
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    .timerCount {
+        left: 0;
+    }
+
+    .clock {
+        display: none;
+    }
+
+    .timer {
+        margin-left: 3px;
+    }
+
+    .cont-inf__timer {
+        padding: 22px;
+        line-height: 0px;
+    }
+
+    .txt-timer p {
+        font-size: 2.5em;
+    }
+
+    .txt-timer span {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 360px) {
+    .cont-inf__timer {
+        padding: 27px;
+        margin-left: 6px;
+    }
+
+    .timer {
+        margin-left: 0;
+    }
+
+    .txt-timer p {
+        font-size: 2.5em;
+    }
+
+    .txt-timer span {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 411px) {
+    .timerCount {
+        left: 4vh;
+    }
+
+    .timer {
+        margin-left: 10px;
+    }
+
+    .cont-inf__timer {
+        padding: 0;
+        line-height: 20px;
+        margin-left: 0;
+    }
+
+    .txt-timer p {
+        font-size: 2em;
+    }
+
+    .txt-timer span {
+        font-size: 20px;
+    }
+
+    .mb-timer {
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 576px) {
+    .timer-container {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+
+    .clock {
+        display: block;
+        height: 62px;
+        width: 15%;
+        left: calc(50% - 229px);
+    }
+
+    .timer {
+        margin-left: -10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .cont-timer {
+        flex-direction: row;
+    }
+
+    .timer-container {
+        width: 50%;
+    }
+
+    .clock {
+        height: 61px;
+        width: 20%;
+        left: calc(50% - 184px);
+    }
+}
+
+@media (min-width: 992px) {
+    .timer-container {
+        width: 50%;
+    }
+
+    .clock {
+        height: 65px;
+        width: 16%;
+        left: calc(50% - 230px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .timer-container {
+        width: 45%;
+    }
+
+    .clock {
+        height: 65px;
+        width: 14%;
+        left: calc(50% - 270px);
+    }
+}
+
+@media (min-width: 1600px) {
+    .timer-container {
+        width: 45%;
+    }
+
+    .clock {
+        height: 83px;
+        width: 14%;
+        left: calc(50% - 299px);
+    }
+
+    .clock:after {
+        top: 6px;
+        left: 48%;
+        height: 36px;
+        width: 2px;
+    }
+
+    .clock:before {
+        height: 36px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .txt-timer {
+        line-height: 20px;
+        margin-bottom: 5vh;
+    }
+}
 
 /* =========================================== */
 /* -- Inicio Agenda -- */
@@ -1566,7 +1752,7 @@
     }
 
     .card:hover {
-        height: 53vh;
+        height: 63vh;
     }
 
     .btn-modal {

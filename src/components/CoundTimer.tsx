@@ -7,7 +7,7 @@ function CoundTimer({maxRange}) {
 
     useEffect(() => {
         if(counter > 0){
-            setTimeout(() => setCounter(counter - 1), 1000 * 60 * 60 * 24);
+            setTimeout(() => setCounter(counter - 1), 1000 * 60 * 24);
         }
     }, [counter]);
 
