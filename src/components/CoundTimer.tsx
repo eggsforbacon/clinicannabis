@@ -1,8 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect, useRef, useState, useCallback, Component  } from "react";
+import React, {useEffect, useState, Dispatch, SetStateAction} from "react";
 
-function CoundTimer({maxRange}) {
+function CoundTimer({maxRange} : {maxRange : number}) {
         const [counter, setCounter] = useState(maxRange);
 
     useEffect(() => {

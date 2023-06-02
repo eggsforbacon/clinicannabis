@@ -143,7 +143,7 @@ const Navbar = (
             <nav
                 className={`${props.selection !== "contact" ? "block" : "block lg:hidden"} z-50 fixed transition duration-700 ease-in-out ${show ? "lg:bg-white lg:opacity-100" : "bg-transparent border-transparent lg:opacity-0 lg:bg-white lg:hover:opacity-100"} font-black text-dark-green flex flex-col lg:flex-row items-center justify-between h-[5.5rem] lg:h-fit w-full lg:px-24`}>
                 <section
-                    className={`max-lg:z-20 w-full border-solid border-2 transition duration-700 ease-in-out ${show ? "max-md:bg-white border-none" : "bg-transparent border-none"} lg:border-none p-4 md:px-16 lg:p-0 lg:w-auto h-fit flex items-center justify-between`}>
+                    className={`max-lg:z-20 w-full border-solid border-2 transition duration-700 ease-in-out ${show ? "max-lg:bg-white border-none" : "bg-transparent border-none"} lg:border-none p-4 md:px-16 lg:p-0 lg:w-auto h-fit flex items-center justify-between`}>
                     <Link href={"/"} >
                         <Image src={"/images/clinicannabis_hr.png"} className={`w-auto h-14 lg:h-24 lg:w-[17.25rem] transition duration-700 ease-in-out ${show ? "opacity-100" : "pointer-events-none selected:bg-transparent opacity-0"} lg:opacity-100`}
                                alt={"Logo horizontal de Clinicannabis"} width={500 / 2}
