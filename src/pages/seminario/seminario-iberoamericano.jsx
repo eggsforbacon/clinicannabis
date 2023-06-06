@@ -6,7 +6,8 @@ import { sendContactForm } from "../../lib/api";
 import useCountDown from 'react-countdown-hook';
 
 import { Timer } from "../../components/TimerLand";
-import { Helmet } from "react-helmet";
+import { NavLanding } from "../../components/NavbarLanding";
+
 
 export const Seminario = () => {
     const [data, setData] = useState({
@@ -109,13 +110,6 @@ export const Seminario = () => {
 
     return (
         <>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Seminario Iberoamericano</title>
-                <meta name="description" content="Seminario Iberoamericano Cannabinoides en la práctica clínica"></meta>
-                <meta name="Robots" content="index, follow"></meta>
-                <link rel="canonical" href="https://clinicannabis.com.co/seminario/seminario-iberoamericanos" />
-            </Helmet>
             <section style={style.ImgContent}>
                 <div className={'w-100 sm:mb-20 lg:mb-40 font-aeonik text-lemon-chiffon font-normal w-full'}>
                     <Image src={"/images/LandingSeminario/Landing-page---Clinicannabis---Seminario.jpg"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
@@ -134,7 +128,7 @@ export const Seminario = () => {
                             </div>
                         </section>
 
-                        <section className={"flex justify-center icons-landg"}>
+                        <section className={"flex justify-center"}>
                             <div className={"flex items-center justify-center"}>
                                 <Image src={"/images/svg/calendarIbero.svg"} alt={"16 de Junio de 2023"}
                                     width={90} height={80} className={""} />
@@ -166,34 +160,34 @@ export const Seminario = () => {
                         <section className={"w-full mgLogos"}>
                             <div>
                                 <h5 className={"uppercase text-center tracking-[0.2em] lg:text-base xl:text-lg"}>Organizan:</h5>
-                                <div className={"flex logLanding"}>
+                                <div className={"flex"}>
                                     <Image src={"/images/svg/curativaLogo.svg"} alt={"16 de Junio de 2023"}
                                         width={220} height={220} className={"scale-[0.7] lg:scale-[0.8] xl:scale-100 pr-2 mr-5"} />
                                     <Image src={"/images/svg/squiggly.svg"} alt={"16 de Junio de 2023"}
-                                        width={16} height={16} className={"-mx-5 scale-[0.7] lg:scale-[0.8] xl:scale-100 lineLandg"} />
+                                        width={16} height={16} className={"-mx-5 scale-[0.7] lg:scale-[0.8] xl:scale-100"} />
                                     <Image src={"/images/svg/clinic_lemon.svg"} alt={"16 de Junio de 2023"}
                                         width={280} height={280} className={"scale-75 lg:scale-[0.85] xl:scale-100"} />
                                     <Image src={"/images/svg/squiggly.svg"} alt={"16 de Junio de 2023"}
-                                        width={16} height={16} className={"-mx-4 lg:mx-auto scale-[0.7] lg:scale-[0.8] xl:scale-100 lineLandg"} />
+                                        width={16} height={16} className={"-mx-4 lg:mx-auto scale-[0.7] lg:scale-[0.8] xl:scale-100"} />
                                     <Image src={"/images/svg/asomedcamLogo.svg"} alt={"16 de Junio de 2023"}
                                         width={220} height={220} className={"scale-[0.7] lg:scale-[0.8] xl:scale-100"} />
                                 </div>
                             </div>
 
-                            <div className="sm-Log2">
+                            <div>
                                 <h5 className={"uppercase text-center tracking-[0.2em] lg:text-base xl:text-lg"}>Patrocina:</h5>
                                 <div className={"flex items-center w-full justify-center gap-10"}>
-                                    <Image src={"/images/svg/squiggly.svg"} alt={"16 de Junio de 2023"}
+                                <Image src={"/images/svg/squiggly.svg"} alt={"16 de Junio de 2023"}
                                         width={16} height={16} className={"-mx-4 lg:mx-auto scale-[0.7] lg:scale-[0.8] xl:scale-100 ds-imgLanding"} />
-                                    <Image src={"/images/svg/logoTp.webp"} alt={"16 de Junio de 2023"}
-                                        width={220} height={220} className={"scale-[0.7] lg:scale-[0.8] xl:scale-100 log2-landng"} />
+                                <Image src={"/images/svg/logoTp.webp"} alt={"16 de Junio de 2023"}
+                                        width={220} height={220} className={"scale-[0.7] lg:scale-[0.8] xl:scale-100"} />
                                 </div>
                             </div>
                         </section>
                     </article>
                 </div>
                 {/*   form y contexr   */}
-                <div className={"content-form-TXT sm:mt-4"}>
+                <div className={"content-form-TXT "}>
                     <div className="infoSeminarioForm">
                         <article>
                             <p className={" text-xl text-P-seminario sm:mb-5 lg:mb-15"}><b>{strings.seminario.parrafo["1"].blackText}</b>{strings.seminario.parrafo["1"].normalText}</p>
@@ -594,7 +588,7 @@ export const Seminario = () => {
                 </div >
                 {/* Inicio footer */}
                 <div className={'w-100'} >
-                    <Image src={"/images/LandingSeminario/Landing page-Clinicannabis-Seminario.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                    <Image src={"/images/LandingSeminario/Landing page-Clinicannabis-Seminario--03.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                         style={style.bnrHead} />
                 </div >
             </section >
@@ -613,7 +607,7 @@ const style = {
 
     bnrHead: {
         width: "100%",
-        height: "auto",
+        height: "94vh",
         objectfit: "Cover",
         position: "absolute",
         marginbottom: "40px",
