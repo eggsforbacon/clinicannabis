@@ -5,34 +5,11 @@ import { strings } from "../../model/strings";
 import { sendContactForm } from "../../lib/api";
 import useCountDown from 'react-countdown-hook';
 
-import {Timer} from "../../components/TimerLand";
-
+import { Timer } from "../../components/TimerLand";
+import { NavLanding } from "../../components/NavbarLanding";
 
 
 export const Seminario = () => {
-    const style = {
-        ImgContent: {
-            width: "100%",
-            height: 'auto',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundImage: `url("/images/LandingSeminario/Landing-page-Clinicannabis-Seminario-02.png")`,
-        },
-
-        bnrHead: {
-            width: "100%",
-            objectfit: "Cover"
-        },
-
-        imgAgenda: {
-            width: "35%",
-            display: "block",
-            margin: "auto",
-            objectFit: 'cover',
-        }
-    };
-    // ======================================== //
-    // Parte de popUp Cards
     const [data, setData] = useState({
         name: "",
         email: "",
@@ -134,10 +111,80 @@ export const Seminario = () => {
     return (
         <>
             <section style={style.ImgContent}>
-                {/* Inicio Head */}
-                <div className={'w-100 sm:mb-20 lg:mb-40'}>
-                    <Image src={"/images/LandingSeminario/Landing page - Clinicannabis - Seminario__Mesa de trabajo 1.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                        style={style.bnrHead} />
+                <div className={'w-100 sm:mb-20 lg:mb-40 font-aeonik text-lemon-chiffon font-normal w-full'}>
+                    <Image src={"/images/LandingSeminario/Landing-page---Clinicannabis---Seminario.jpg"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                        className="ImgHeadLand" />
+                    <article className={"NavLand"}>
+                        <section className={"flex justify-center w-full pstn-1"}>
+                            <Image src={"/images/svg/logoIbero2.webp"} alt={"Seminario Iberoamericano 2023"}
+                                width={220} height={220}
+                                className={"scale-[0.65] md:scale-100"} />
+
+                            <div className={"flex flex-col items-stretch text-center md:text-left md:items-start"}>
+                                <h1 className={"text-3xl lg:text-4xl"}>Seminario<br />Iberoamericano</h1>
+                                <h2 className={"text-4xl lg:text-5xl"}><strong className={"text-5xl lg:text-6xl tracking-wide"}>Cannabinoides</strong><br /><span
+                                    className={"underline underline-offset-[10px] lg:underline-offset-[14px] decoration-[3px] lg:decoration-4"}>en la práctica clínica</span>
+                                </h2>
+                            </div>
+                        </section>
+
+                        <section className={"flex justify-center"}>
+                            <div className={"flex items-center justify-center"}>
+                                <Image src={"/images/svg/calendarIbero.svg"} alt={"16 de Junio de 2023"}
+                                    width={90} height={80} className={""} />
+                                <div className={"text-xl lg:text-2xl xl:text-3xl flex flex-col items-start justify-center"}>
+                                    <h3 className={"font-bold"}>Junio de 2023</h3>
+                                    <h4 className={""}>Santiago de Cali</h4>
+                                </div>
+                            </div>
+
+                            <div className={"flex items-center justify-center"}>
+                                <Image src={"/images/svg/geoIbero.svg"} alt={"16 de Junio de 2023"}
+                                    width={70} height={60} className={""} />
+                                <div className={"text-xl lg:text-2xl xl:text-3xl flex flex-col items-start justify-center"}>
+                                    <h3 className={"font-bold"}>Junio de 2023</h3>
+                                    <h4 className={""}>Santiago de Cali</h4>
+                                </div>
+                            </div>
+
+                            <div className={"flex items-center justify-center"}>
+                                <Image src={"/images/svg/clockIbero.svg"} alt={"16 de Junio de 2023"}
+                                    width={70} height={60} className={""} />
+                                <div className={"text-xl lg:text-2xl xl:text-3xl flex flex-col items-start justify-center"}>
+                                    <h3 className={"font-bold"}>Junio de 2023</h3>
+                                    <h4 className={""}>Santiago de Cali</h4>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section className={"w-full mgLogos"}>
+                            <div>
+                                <h5 className={"uppercase text-center tracking-[0.2em] lg:text-base xl:text-lg"}>Organizan:</h5>
+                                <div className={"flex"}>
+                                    <Image src={"/images/svg/curativaLogo.svg"} alt={"16 de Junio de 2023"}
+                                        width={220} height={220} className={"scale-[0.7] lg:scale-[0.8] xl:scale-100 pr-2 mr-5"} />
+                                    <Image src={"/images/svg/squiggly.svg"} alt={"16 de Junio de 2023"}
+                                        width={16} height={16} className={"-mx-5 scale-[0.7] lg:scale-[0.8] xl:scale-100"} />
+                                    <Image src={"/images/svg/clinic_lemon.svg"} alt={"16 de Junio de 2023"}
+                                        width={280} height={280} className={"scale-75 lg:scale-[0.85] xl:scale-100"} />
+                                    <Image src={"/images/svg/squiggly.svg"} alt={"16 de Junio de 2023"}
+                                        width={16} height={16} className={"-mx-4 lg:mx-auto scale-[0.7] lg:scale-[0.8] xl:scale-100"} />
+                                    <Image src={"/images/svg/asomedcamLogo.svg"} alt={"16 de Junio de 2023"}
+                                        width={220} height={220} className={"scale-[0.7] lg:scale-[0.8] xl:scale-100"} />
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 className={"uppercase text-center tracking-[0.2em] lg:text-base xl:text-lg"}>Patrocina:</h5>
+                                <div className={"flex items-center w-full justify-center gap-10"}>
+                                <Image src={"/images/svg/squiggly.svg"} alt={"16 de Junio de 2023"}
+                                        width={16} height={16} className={"-mx-4 lg:mx-auto scale-[0.7] lg:scale-[0.8] xl:scale-100 ds-imgLanding"} />
+                                <Image src={"/images/svg/logoTp.webp"} alt={"16 de Junio de 2023"}
+                                        width={220} height={220} className={"scale-[0.7] lg:scale-[0.8] xl:scale-100"} />
+                                </div>
+                            </div>
+                        </section>
+                    </article>
                 </div>
                 {/*   form y contexr   */}
                 <div className={"content-form-TXT "}>
@@ -149,8 +196,7 @@ export const Seminario = () => {
                         </article>
                     </div>
                 </div>
-
-                <Timer/>
+                <Timer />
                 {/* Inicio Agenda */}
                 <div className="Agenda mb-20">
                     <div className={'mb-20'}>
@@ -550,4 +596,29 @@ export const Seminario = () => {
     );
 }
 
-    export default Seminario;
+const style = {
+    ImgContent: {
+        width: "100%",
+        height: 'auto',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundImage: `url("/images/LandingSeminario/Landing-page-Clinicannabis-Seminario-02.png")`,
+    },
+
+    bnrHead: {
+        width: "100%",
+        height: "94vh",
+        objectfit: "Cover",
+        position: "absolute",
+        marginbottom: "40px",
+    },
+
+    imgAgenda: {
+        width: "35%",
+        display: "block",
+        margin: "auto",
+        objectFit: 'cover',
+    }
+};
+
+export default Seminario;
