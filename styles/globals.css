@@ -323,46 +323,35 @@
 @media(min-width: 1200px) {
     .pictSer {
         width: 90em;
-        height: 150vh;
-        margin-left: 0vh;
+        height: 142vh;
+        margin-left: 30vh;
     }
 
     .pictSer-2 {
         max-width: 100%;
-        height: 166.5vh;
-        object-fit: cover;
-    }
-    .pictSer-3{
-        height: 155vh;
-        object-fit: cover;
-    }
-}
-
-@media(min-width: 1400px) {
-    .pictSer {
-        width: 90em;
-        height: 118vh;
-        margin-left: 1vh;
-    }
-
-    .pictSer-2 {
-        max-width: 100%;
-        height: 130.5vh;
+        height: 158vh;
         object-fit: cover;
     }
 }
 
 @media(min-width: 1600px) {
     .pictSer {
-        width: 90em;
-        height: 118vh;
-        margin-left: 1vh;
+        height: 78vh;
     }
 
     .pictSer-2 {
-        max-width: 100%;
-        height: 130.5vh;
+        height: 86.5vh;
         object-fit: cover;
+    }
+}
+
+@media(min-width: 1900px) {
+    .pictSer {
+        height: 90vh;
+    }
+
+    .pictSer-2 {
+        height: 100vh;
     }
 }
 
@@ -530,9 +519,11 @@
 }
 
 .count-timer {
+    /* display: flex; */
     position: relative;
     top: 3vh;
     color: #fff;
+    /* justify-content: space-between; */
     width: 79%;
     left: 5%;
 }
@@ -542,6 +533,20 @@
     align-items: center;
     justify-content: space-between;
 }
+
+/* 
+.timerCount {
+    position: relative;
+    left: 4vh;
+    top: 2vh;
+    display: flex;
+    align-items: center;
+}
+.timerCount span{
+    margin-left: 3px;
+    font-size: 28px;
+} */
+
 
 .hr-clor {
     margin-top: 7vh;
@@ -803,29 +808,6 @@
         height: 83px;
         width: 14%;
         left: calc(50% - 299px);
-    }
-
-    .clock:after {
-        top: 6px;
-        left: 48%;
-        height: 36px;
-        width: 2px;
-    }
-
-    .clock:before {
-        height: 36px;
-    }
-}
-
-@media (min-width: 1800px) {
-    .timer-container {
-        width: 45%;
-    }
-
-    .clock {
-        height: 83px;
-        width: 14%;
-        left: calc(50% - 360px);
     }
 
     .clock:after {
