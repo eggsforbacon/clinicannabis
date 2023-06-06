@@ -332,12 +332,14 @@
         height: 166.5vh;
         object-fit: cover;
     }
-    .pictSer-3{
+
+    .pictSer-3 {
         height: 155vh;
         object-fit: cover;
     }
 }
 
+/* 
 @media(min-width: 1400px) {
     .pictSer {
         width: 90em;
@@ -364,11 +366,72 @@
         height: 130.5vh;
         object-fit: cover;
     }
-}
+} */
 
 /*  ================================================
    --  Section Landing Seminario --
 ================================================ */
+/* NavLanding */
+.NavLand {
+    position: relative;
+}
+
+.pstn-1 {
+    padding: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mgLogos {
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ImgHeadLand {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 95vh;
+}
+@media (min-width: 320px){
+    .ds-imgLanding{
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .ImgHeadLand {
+        height: 108vh;
+    }
+    .pstn-1{
+        padding: 2px;
+    }
+}
+
+@media (min-width: 768px) {
+    .ImgHeadLand {
+        height: 108vh;
+    }
+    .pstn-1{
+        padding: 40px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .ImgHeadLand {
+        height: 95vh;
+    }
+    .ds-imgLanding{
+        display: block;
+    }
+}
+
+/* ============================================ */
+/* form y contexr */
 .content-form-TXT {
     display: flex;
     justify-content: space-evenly;
@@ -788,7 +851,7 @@
     }
 
     .clock {
-        height: 71px;
+        height: 75px;
         width: 14%;
         left: calc(50% - 295px);
     }
@@ -839,6 +902,30 @@
         height: 36px;
     }
 }
+
+@media (min-width: 1900px) {
+    .timer-container {
+        width: 45%;
+    }
+
+    .clock {
+        height: 100px;
+        width: 14%;
+        left: calc(50% - 387px);
+    }
+
+    .clock:after {
+        top: 12px;
+        left: 48%;
+        height: 40px;
+        width: 3px;
+    }
+
+    .clock:before {
+        height: 44px;
+    }
+}
+
 
 @media only screen and (max-width: 360px) {
     .txt-timer {
@@ -1740,7 +1827,7 @@
     }
 
     .card:hover {
-        height: 57vh;
+        height: 60vh;
     }
 
     .card-avatar img {
