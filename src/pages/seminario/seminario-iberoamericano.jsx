@@ -148,8 +148,8 @@ export const Seminario = () => {
                                 <Image src={"/images/svg/geoIbero.svg"} alt={"16 de Junio de 2023"}
                                     width={70} height={60} className={""} />
                                 <div className={"text-xl lg:text-2xl xl:text-3xl flex flex-col items-start justify-center"}>
-                                    <h3 className={"font-bold"}>Junio de 2023</h3>
-                                    <h4 className={""}>Santiago de Cali</h4>
+                                    <h3 className={"font-bold"}>Hotel Marriott</h3>
+                                    <h4 className={""}>Av. 8N. #10-18</h4>
                                 </div>
                             </div>
 
@@ -157,8 +157,8 @@ export const Seminario = () => {
                                 <Image src={"/images/svg/clockIbero.svg"} alt={"16 de Junio de 2023"}
                                     width={70} height={60} className={""} />
                                 <div className={"text-xl lg:text-2xl xl:text-3xl flex flex-col items-start justify-center"}>
-                                    <h3 className={"font-bold"}>Junio de 2023</h3>
-                                    <h4 className={""}>Santiago de Cali</h4>
+                                    <h3 className={"font-bold"}>7:00 a.m.</h3>
+                                    <h4 className={""}>a 6:00 p.m.</h4>
                                 </div>
                             </div>
                         </section>

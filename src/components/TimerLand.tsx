@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState, useCallback, Component } from "react";
-import useCountDown from 'react-countdown-hook';
 import { strings } from "../model/strings";
 import Cound from "../components/CoundTimer";
+
 
 
 export const Timer = ({ }) => {

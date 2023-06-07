@@ -1,6 +1,10 @@
+@import "typography.css";
 
-/* =========================================== */
-/* Timer */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
 .cont-timer {
     flex-wrap: wrap;
     flex-direction: row;
@@ -19,36 +23,28 @@
 }
 
 .count-timer {
-    display: flex;
     position: relative;
     top: 3vh;
     color: #fff;
-    justify-content: space-between;
     width: 79%;
     left: 5%;
 }
 
-.timerCount {
-    position: relative;
-    left: 4vh;
-    top: 2vh;
+.sep-cont-1 {
     display: flex;
     align-items: center;
-}
-.timerCount span{
-    margin-left: 3px;
-    font-size: 28px;
+    justify-content: space-between;
 }
 
-
-.hr-clor{
+.hr-clor {
     margin-top: 7vh;
     width: 85%;
     border-bottom: 2px solid #fff;
     position: relative;
     left: 5%;
 }
-.timer{
+
+.timer {
     margin-left: -10px;
     margin-top: 4vh;
     display: flex;
@@ -58,7 +54,8 @@
     width: 100%;
     color: #fff;
 }
-.cont-inf__timer{
+
+.cont-inf__timer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -102,6 +99,21 @@
     animation: grdAiguille 20s linear infinite;
 }
 
+.clock:before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 6px;
+    left: 48%;
+    height: 31px;
+    width: 3px;
+    border-radius: 5px;
+    -webkit-transform-origin: 50% 94%;
+    transform-origin: 50% 94%;
+    -webkit-animation: ptAiguille 62s linear infinite;
+    animation: ptAiguille 62s linear infinite;
+}
+
 @-webkit-keyframes grdAiguille {
     0% {
         -webkit-transform: rotate(0deg);
@@ -122,124 +134,232 @@
     }
 }
 
-.clock:before {
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    top: 6px;
-    left: 48%;
-    height: 31px;
-    width: 3px;
-    border-radius: 5px;
-    -webkit-transform-origin: 50% 94%;
-    transform-origin: 50% 94%;
-    -webkit-animation: ptAiguille 62s linear infinite;
-    animation: ptAiguille 62s linear infinite;
-}
-
 @media (min-width: 320px) {
-    .cont-timer{
+    .cont-timer {
         flex-direction: column;
     }
+
     .timer-container {
         width: 90%;
         margin-bottom: 0;
     }
-    .count-timer{
-        flex-direction: column;
-    }
-    .timerCount{
+
+    .timerCount {
         left: 0;
     }
-    .clock{
+
+    .clock {
         display: none;
     }
-    .timer{
+
+    .timer {
         margin-left: 3px;
     }
+
     .cont-inf__timer {
         padding: 22px;
         line-height: 0px;
     }
+
     .txt-timer p {
         font-size: 2.5em;
     }
+
     .txt-timer span {
         font-size: 24px;
     }
 }
-@media (min-width: 411px) {
-    .count-timer{
-        flex-direction: row;
+
+@media (min-width: 360px) {
+    .cont-inf__timer {
+        padding: 27px;
+        margin-left: 6px;
     }
-    .timerCount{
+
+    .timer {
+        margin-left: 0;
+    }
+
+    .txt-timer p {
+        font-size: 2.5em;
+    }
+
+    .txt-timer span {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 411px) {
+    .timerCount {
         left: 4vh;
     }
-    .clock{
-        display: block;
-        height: 62px;
-        width: 24%;
-        left: calc(50% - 170px);
-    }
-    .timer{
+
+    .timer {
         margin-left: 10px;
     }
-    .cont-inf__timer{
+
+    .cont-inf__timer {
         padding: 0;
         line-height: 20px;
+        margin-left: 0;
     }
+
     .txt-timer p {
         font-size: 2em;
     }
+
     .txt-timer span {
         font-size: 20px;
     }
+
+    .mb-timer {
+        margin-bottom: 5px;
+    }
 }
+
 @media (min-width: 576px) {
     .timer-container {
         width: 90%;
         margin-bottom: 1em;
     }
-    
-    .clock{
+
+    .clock {
+        display: block;
         height: 62px;
         width: 15%;
         left: calc(50% - 229px);
     }
-    .timer{
+
+    .timer {
         margin-left: -10px;
     }
 }
+
 @media (min-width: 768px) {
-    .cont-timer{
+    .cont-timer {
         flex-direction: row;
     }
-    .timer-container{
+
+    .timer-container {
         width: 50%;
     }
-    .clock{
+
+    .clock {
         height: 61px;
         width: 20%;
         left: calc(50% - 184px);
     }
 }
+
 @media (min-width: 992px) {
-    .timer-container{
+    .timer-container {
         width: 50%;
     }
-    .clock{
+
+    .clock {
         height: 65px;
         width: 16%;
         left: calc(50% - 230px);
     }
 }
+
 @media (min-width: 1200px) {
-    .timer-container{
+    .timer-container {
         width: 45%;
     }
-    .clock{
+
+    .clock {
         height: 65px;
         width: 14%;
         left: calc(50% - 270px);
     }
+}
+
+@media (min-width: 1400px) {
+    .timer-container {
+        width: 45%;
+    }
+
+    .clock {
+        height: 75px;
+        width: 14%;
+        left: calc(50% - 295px);
+    }
+}
+
+@media (min-width: 1600px) {
+    .timer-container {
+        width: 45%;
+    }
+
+    .clock {
+        height: 83px;
+        width: 14%;
+        left: calc(50% - 299px);
+    }
+
+    .clock:after {
+        top: 6px;
+        left: 48%;
+        height: 36px;
+        width: 2px;
+    }
+
+    .clock:before {
+        height: 36px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .timer-container {
+        width: 45%;
+    }
+
+    .clock {
+        height: 83px;
+        width: 14%;
+        left: calc(50% - 360px);
+    }
+
+    .clock:after {
+        top: 6px;
+        left: 48%;
+        height: 36px;
+        width: 2px;
+    }
+
+    .clock:before {
+        height: 36px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .timer-container {
+        width: 45%;
+    }
+
+    .clock {
+        height: 100px;
+        width: 14%;
+        left: calc(50% - 387px);
+    }
+
+    .clock:after {
+        top: 12px;
+        left: 48%;
+        height: 40px;
+        width: 3px;
+    }
+
+    .clock:before {
+        height: 44px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .txt-timer {
+        line-height: 20px;
+        margin-bottom: 5vh;
+    }
+}
 }
