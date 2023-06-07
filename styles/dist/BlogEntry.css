@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* Aquí van las clases que son específicas a esta entrada de blog. El nombre del archivo comparte el campo de "slug" de Strapi */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .custom-blog .links {
+    @apply flex flex-col w-full items-center justify-center text-center;
+  }
+  .custom-blog .suscribe {
+    @apply w-full text-center block;
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .custom-blog {
+    @apply flex flex-col items-start justify-start gap-4;
+  }
+  .custom-blog * > p, .custom-blog p {
+    @apply text-base md:text-xl;
+    @apply leading-[2] md:leading-[2.5] w-full;
+  }
+  .custom-blog blockquote {
+    @apply p-4 my-4 border-l-4 border-caribbean-green dark:border-gray-500 dark:bg-gray-800;
+  }
+  .custom-blog blockquote p {
+    @apply leading-[1.6] md:leading-[2] italic font-medium text-GO-green dark:text-white;
+  }
+  .custom-blog ul {
+    @apply list-disc;
+  }
+  .custom-blog ul li {
+    @apply ml-14;
+  }
+  .custom-blog * > a, .custom-blog a {
+    @apply underline underline-offset-4 decoration-1 text-caribbean-green;
+  }
+}
+
+/*# sourceMappingURL=BlogEntry.css.map */

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* Aquí van las clases que son específicas a esta entrada de blog. El nombre del archivo comparte el campo de "slug" de Strapi */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .custom-blog .links {
+    @apply flex flex-col w-full items-center justify-center;
+  }
+  .custom-blog .suscribe {
+    @apply text-2xl;
+  }
+}
+
+/*# sourceMappingURL=seminario-iberoamericano.css.map */

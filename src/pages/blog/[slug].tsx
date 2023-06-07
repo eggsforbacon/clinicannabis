@@ -7,6 +7,9 @@ import {AttributesBlogPost, BlogPost, CoverAttributesBlogPost, StrapiGetAllRespo
 import React, {useEffect, useState} from "react";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from "rehype-raw";
+
 
 export const slug = () => {
     const [posts, setPost] = useState<BlogPost[]>([]);
@@ -44,7 +47,6 @@ export const slug = () => {
                 }
 
                 const data = await response.json();
-                console.log(data)
                 const posts = data as unknown as StrapiGetAllResponse;
                 setPost(posts.data as BlogPost[]);
             } catch (error) {
@@ -70,6 +72,7 @@ export const slug = () => {
     const {title, subtitle, body, date, description} = attributes
 
     const cover: CoverAttributesBlogPost = (attributes.cover as unknown as CoverAttributesBlogPost);
+
     return (
         <main>
             <Head>
@@ -78,24 +81,23 @@ export const slug = () => {
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"none"}/>
-            <article className={"relative pt-24 w-full lg:px-44 flex flex-col items-center justify-start gap-16"}>
-                <section
-                    className={"absolute h-120 w-full flex flex-col gap-2 items-center justify-center text-white"}>
-                    <span
-                        className={"absolute -top-96 left-0 h-full w-full bg-midnight-green"}/>
+            <article className={"relative w-ful flex flex-col items-center justify-start gap-2 lg:gap-6"}>
+                <header
+                    className={"w-full relative md:h-168 xl:h-[44rem] md:px-16 lg:px-20 flex flex-col items-center justify-end pb-0 xl:pb-16 text-rich-black"}>
                     <Image src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${cover.data.attributes.url}`} alt={""}
-                           width={1920} height={640}
-                           className={"absolute top-0 left-0"}/>
-                    <span className={"absolute -top-3 left-0 h-full w-full bg-midnight-green/60"}/>
-                    <h1 className={"text-6xl relative font-black"}>{title}</h1>
-                    <h2 className={"text-3xl relative font-semibold"}>{subtitle}</h2>
-                    <h3 className={"text-2xl relative font-normal"}>{date}</h3>
-                </section>
+                           width={1920} height={544}
+                           className={"brightness-90 absolute top-[20%] md:top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[4.385] md:scale-[2.342] lg:scale-[1.6203] xl:scale-105"}/>
+                    <section className={"flex relative flex-col items-center justify-start gap-2 bg-white rounded-t-2xl mt-64 md:mt-0 mx-2 md:mx-0 p-4 md:p-8"}>
+                        <h1 className={"text-3xl md:text-5xl xl:text-6xl text-center relative font-black"}>{title}</h1>
+                        <h2 className={"text-xl md:text-2xl xl:text-3xl text-center relative font-semibold"}>{subtitle}</h2>
+                        <h3 className={"text-lg md:text-xl xl:text-2xl text-center relative font-normal"}>{date}</h3>
+                    </section>
+                </header>
                 <section
-                    className={"w-full h-full mt-96 relative px-4 lg:px-[26rem] text-justify flex flex-col items-center justify-start text-xl leading-[2] py-28"}>
-                    <ReactMarkdown transformImageUri={input => `${process.env.NEXT_PUBLIC_STRAPI_URL}${input}`}>
-                        {body}
-                    </ReactMarkdown>
+                    className={"w-full h-full relative px-4 md:px-16 lg:px-20 xl:px-64 text-justify flex flex-col items-center justify-start text-xl leading-[2] pb-28"}>
+                    <ReactMarkdown className={"custom-blog bg-white max-w-[768px]"} skipHtml={false} children={body}
+                                   remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}
+                                   transformImageUri={input => `${process.env.NEXT_PUBLIC_STRAPI_URL}${input}`}/>
                 </section>
                 {/*<section className={"w-full grid lg:grid-cols-2 place-items-center py-44"}>*/}
                 {/*    {prev && <RecommendedPost title={prev.title} subtitle={prev.subtitle}*/}

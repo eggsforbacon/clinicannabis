@@ -58,14 +58,6 @@ module.exports = {
                 'aeonik': ['Aeonik', 'sans-serif'],
             },
             colors: {
-                'clinic-jade': '#00b34f',
-                'clinic-muted-jade': '#00a052',
-                'clinic-dark-jade': '#003316',
-                'clinic-pale-jade': '#00ac69',
-                'clinic-persian-green': '#00a88f',
-                'clinic-blue-chill': '#0e9390',
-                'clinic-dark-teal': "#0c3b41",
-
                 'caribbean-green': "#00B451",
                 'GO-green': "#00AC69",
                 'green-sheen': "#74A5A2",
@@ -78,9 +70,9 @@ module.exports = {
 
                 'text-title': "#494083",
                 'textInf-cards': "#706f6f",
-                'P-seminario' : "#706f6f",
+                'P-seminario': "#706f6f",
                 'seminari': "#787776",
-                'lemon-chiffon' : '#fdf5cd',
+                'lemon-chiffon': '#fdf5cd',
             },
             /*Awfully useful animation timing functions*/
             transitionTimingFunction: {
@@ -191,15 +183,19 @@ module.exports = {
                     '100%': {transform: 'translateY(0px)'},
                 },
                 'shake-bottom': {
-                    '0%, 100%' : {transform: 'rotate(0deg)', transformOrigin: '50% 100%'},
-                    '10%' : {transform: 'rotate(2deg)'},
-                    '20%, 40%, 60%' : {transform: 'rotate(-4deg)'},
+                    '0%, 100%': {transform: 'rotate(0deg)', transformOrigin: '50% 100%'},
+                    '10%': {transform: 'rotate(2deg)'},
+                    '20%, 40%, 60%': {transform: 'rotate(-4deg)'},
                     '30%, 50%, 70%': {transform: 'rotate(4deg)'},
                     '80%': {transform: 'rotate(-2deg)'},
-                    '90%' : {transform: 'rotate(2deg)'},
+                    '90%': {transform: 'rotate(2deg)'},
                 },
-                'heartbeat' : {
-                    '0%, 100%': {transform: 'scale(1)', animationTimingFunction: 'ease-out', transformOrigin: 'center center'},
+                'heartbeat': {
+                    '0%, 100%': {
+                        transform: 'scale(1)',
+                        animationTimingFunction: 'ease-out',
+                        transformOrigin: 'center center'
+                    },
                     '10%': {transform: 'scale(0.91)', animationTimingFunction: 'ease-in'},
                     '17%': {transform: 'scale(0.98)', animationTimingFunction: 'ease-out'},
                     '33%': {transform: 'scale(0.87)', animationTimingFunction: 'ease-in'},
@@ -221,8 +217,8 @@ module.exports = {
                 'swing-in-top-fwd': 'swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1 forwards',
                 'swing-out-top-bck': 'swing-out-top-bck 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 1 forwards',
                 'bg-pan-right': 'bg-pan-right 8s linear infinite forwards',
-                'float-up-sm' : 'float-up-sm 8s ease-in-out infinite forwards',
-                'float-down-sm' : 'float-down-sm 8s ease-in-out infinite forwards',
+                'float-up-sm': 'float-up-sm 8s ease-in-out infinite forwards',
+                'float-down-sm': 'float-down-sm 8s ease-in-out infinite forwards',
                 'shake-bottom': 'shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) forwards infinite',
                 'heartbeat': 'heartbeat 3s ease-in-out infinite forwards',
             }

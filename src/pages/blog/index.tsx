@@ -9,6 +9,9 @@ import {fetchURI} from "../../lib/api";
 import {BlogPost, StrapiGetAllResponse} from "../../interfaces/interfaces";
 
 function Index ({blogs} : InferGetStaticPropsType<typeof getStaticProps>) {
+
+    console.log(blogs);
+
     return (
         <main className="w-full min-h-screen overflow-x-clip">
             <Head>
