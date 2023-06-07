@@ -1,0 +1,38 @@
+@forward "./blogs/seminario-iberoamericano";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-blog {
+
+    @apply flex flex-col items-start justify-start gap-4;
+
+    * > p, p {
+      @apply text-base md:text-xl;
+      @apply leading-[2] md:leading-[2.5] w-full;
+    }
+
+    blockquote {
+      @apply p-4 my-4 border-l-4 border-caribbean-green dark:border-gray-500 dark:bg-gray-800;
+
+      p {
+        @apply leading-[1.6] md:leading-[2] italic font-medium text-GO-green dark:text-white;
+      }
+    }
+
+    ul {
+      @apply list-disc;
+
+      li {
+        @apply ml-14;
+      }
+    }
+
+    * > a, a {
+      @apply underline underline-offset-4 decoration-1 text-caribbean-green;
+    }
+  }
+}
+

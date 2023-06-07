@@ -2,6 +2,8 @@
 @import './Timer.css';
 @import './Landing.css';
 
+@import "./dist/BlogEntry.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
