@@ -76,11 +76,22 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
     props: IProps
 }> = async ({req, params}) => {
     const {slug} = params;
-    const jwt =
+    let jwt =
         typeof window !== "undefined"
             ? getTokenFromLocalCookie()
             : getTokenFromServerCookie(req);
-
+    console.log("jwt from cookie: ", jwt);
+    if (!jwt) {
+        const response = await fetchURI<{ jwt: string }>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/auth/local`, {
+            method: 'POST',
+            body: {
+                identifier: process.env.NEXT_PUBLIC_STRAPI_USER,
+                password: process.env.NEXT_PUBLIC_STRAPI_PASS,
+            },
+        });
+        jwt = response.jwt;
+    }
+    console.log("jwt after first load: ", jwt);
     const {data: blogsData, error} = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts/?populate=*`, jwt ? {
         headers: {
             Authorization: `Bearer ${jwt}`,
