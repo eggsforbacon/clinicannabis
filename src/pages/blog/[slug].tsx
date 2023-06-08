@@ -8,21 +8,29 @@ import {
     CoverAttributesBlogPost,
     StrapiGetAllResponse,
 } from "../../interfaces/interfaces";
-import React from "react";
+import React, {useEffect} from "react";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from "rehype-raw";
 import {IncomingMessage} from "http";
-import {getTokenFromLocalCookie, getTokenFromServerCookie} from "../../lib/auth";
+import {getTokenFromLocalCookie, getTokenFromServerCookie, setToken} from "../../lib/auth";
 
 interface IProps {
     post: BlogPost | null,
-    error? : string
+    error? : string,
+    token? : string,
 }
 
 export function slug(props: IProps) {
     const postRaw = props.post;
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            if (props.token) setToken({jwt: props.token}, true);
+        }
+    }, []);
+
     if (postRaw === null) {
         return (
             <p>Cargando...</p>
@@ -43,7 +51,7 @@ export function slug(props: IProps) {
                 <header
                     className={"w-full relative md:h-168 xl:h-[44rem] md:px-16 lg:px-20 flex flex-col items-center justify-end pb-0 xl:pb-16 text-rich-black"}>
                     <Image src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${cover.data.attributes.url}`} alt={""}
-                           width={1920} height={544}
+                           width={1920} height={544} priority quality={80}
                            className={"brightness-90 absolute top-[20%] md:top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[4.385] md:scale-[2.342] lg:scale-[1.6203] xl:scale-105"}/>
                     <section
                         className={"flex relative flex-col items-center justify-start gap-2 bg-white rounded-t-2xl mt-64 md:mt-0 mx-2 md:mx-0 p-4 md:p-8"}>
@@ -76,11 +84,23 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
     props: IProps
 }> = async ({req, params}) => {
     const {slug} = params;
-    const jwt =
+    let jwt =
         typeof window !== "undefined"
             ? getTokenFromLocalCookie()
             : getTokenFromServerCookie(req);
-
+    if (!jwt) {
+        const response = await fetchURI<{ jwt: string }>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/auth/local`, {
+            method: 'POST',
+            body: {
+                identifier: process.env.NEXT_PUBLIC_STRAPI_USER,
+                password: process.env.NEXT_PUBLIC_STRAPI_PASS,
+            },
+        });
+        jwt = response.jwt;
+    }
+    if (typeof window !== 'undefined') {
+        sessionStorage.setItem("spi_jwt", jwt);
+    }
     const {data: blogsData, error} = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts/?populate=*`, jwt ? {
         headers: {
             Authorization: `Bearer ${jwt}`,
@@ -99,7 +119,8 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
     const post = blogsData.filter(p => (p.attributes as unknown as AttributesBlogPost).slug === slug)[0]
     return {
         props: {
-            post
+            post,
+            token : jwt
         }
     }
 }
