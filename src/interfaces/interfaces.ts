@@ -80,7 +80,18 @@ export interface BlogPost {
     attributes: [Object]
 }
 
-export interface StrapiGetAllResponse {
-    data: [{ id: number, attributes: [Object] }],
-    meta: { pagination: { page: number, pageSize: number, pageCount: number, total: number } }
+export interface StrapiGetOneResponse {
+    data: BlogPost,
+    meta: {}
+}
+
+export type StrapiGetAllResponse = {
+    data: [BlogPost] | null,
+    meta?: { pagination: { page: number, pageSize: number, pageCount: number, total: number } }
+    error?: {
+        status: number,
+        name : string,
+        message : string,
+        details: {}
+    }
 }

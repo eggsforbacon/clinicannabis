@@ -1,4 +1,3 @@
-import {ContactType} from "../model/types/ContactType";
 export const validateCaptcha = async (data : {token : string}) => {
     return fetch('/api/captcha', {
         method : "POST",
@@ -32,7 +31,7 @@ export const sendSubscribeForm = async (data : {email: string, gToken: string })
     });
 }
 
-type FetchOptions = Omit<RequestInit, 'body'> & {
+export type FetchOptions = Omit<RequestInit, 'body'> & {
     body?: BodyInit | null | Record<string, unknown>;
 };
 

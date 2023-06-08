@@ -4,13 +4,23 @@ import Footer from "../../components/Footer";
 import {Hero} from "../../components/content/blog/Hero";
 import {Posts} from "../../components/content/blog/Posts";
 import Head from "next/head";
-import React from "react";
+import React, {useEffect} from "react";
 import {fetchURI} from "../../lib/api";
 import {BlogPost, StrapiGetAllResponse} from "../../interfaces/interfaces";
+import useSWR, {SWRResponse} from "swr";
+import {setToken} from "../../lib/auth";
 
-function Index ({blogs} : InferGetStaticPropsType<typeof getStaticProps>) {
+function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>) {
+    // const { data } = useSWR<BlogPost[]>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?populate=*`, fetchURI, {
+    //     fallbackData: blogs
+    // });
 
-    console.log(blogs);
+    useEffect(() => {
+        if (typeof  window !== "undefined") {
+            setToken({jwt: token}, true);
+        }
+    }, []);
+
 
     return (
         <main className="w-full min-h-screen overflow-x-clip">
@@ -30,7 +40,7 @@ function Index ({blogs} : InferGetStaticPropsType<typeof getStaticProps>) {
 
 export default Index;
 
-export const getStaticProps: GetStaticProps<{ blogs: BlogPost[] }> = async (
+export const getStaticProps: GetStaticProps<{ blogs: BlogPost[], token : string }> = async (
     context,
 ) => {
     const response = await fetchURI<{ jwt: string }>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/auth/local`, {
@@ -52,7 +62,8 @@ export const getStaticProps: GetStaticProps<{ blogs: BlogPost[] }> = async (
     });
     return {
         props: {
-            blogs: blogResponse !== null ? blogResponse : []
+            blogs: blogResponse !== null ? blogResponse : [],
+            token
         }
     }
 }
