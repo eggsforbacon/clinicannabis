@@ -13,7 +13,7 @@ export const IberoamericanoBanner = () => {
                     className={"fondIndx"} />
                 
                 <article className={"NavLand w-100 flex flex-col justify-center items-center"}>
-                    <section className={"flex justify-center w-full pstn-1"}>
+                    <section className={"flex justify-center w-full pstn-1 pstn__1"}>
                         <div className={"flex flex-col items-stretch text-center md:text-left md:items-start"}>
                             <h1 className={"text-3xl lg:text-4xl"}>Seminario<br />Iberoamericano</h1>
                             <h2 className={"text-4xl lg:text-5xl"}><strong className={"text-5xl lg:text-6xl tracking-wide"}>Cannabinoides</strong><br /><span
