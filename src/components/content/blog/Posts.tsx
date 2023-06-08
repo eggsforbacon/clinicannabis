@@ -1,11 +1,10 @@
 import React from "react";
-import {useRouter} from "next/router";
 import Image from "next/image";
 import {BlogCard} from "./BlogCard";
 import {AttributesBlogPost, BlogPost, CoverAttributesBlogPost} from "../../../interfaces/interfaces";
 
 interface IProps {
-    blogPosts: BlogPost[]
+    blogPosts: BlogPost[] | undefined
 }
 
 export const Posts = (props: IProps) => {
@@ -14,7 +13,7 @@ export const Posts = (props: IProps) => {
         <article className={"min-h-[62rem] w-full relative"}>
             <section
                 className={"w-full px-8 lg:px-16 xl:px-32 grid lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-10 h-full"}>
-                {props.blogPosts.map((post) => {
+                {props.blogPosts && props.blogPosts.map((post) => {
                     const attributes: AttributesBlogPost = post.attributes as unknown as AttributesBlogPost;
                     const thumbnail: CoverAttributesBlogPost = (attributes.thumbnail as unknown as CoverAttributesBlogPost);
                     return (
