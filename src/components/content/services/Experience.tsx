@@ -10,7 +10,7 @@ export const Experience = () => {
     const navigate = useRouter();
 
     return (
-        <article className={"relative z-10 overflow-clip h-144 lg:h-[54rem]"}>
+        <article className={"relative z-10 overflow-clip h-144 lg:h-[46rem]"}>
             <Image className={`hidden lg:block absolute select-none scale-[4] bottom-72 opacity-30 lg:opacity-100 right-28 lg:scale-100 lg:-top-36 lg:-right-36 z-0`}
                    src={"/images/services/service5.png"} alt={"Placeholder"} width={1920} height={1268}/>
             <span className={"hidden lg:block w-full bg-gradient-to-b from-white via-white/70 absolute h-120 top-0 left-0"}/>

@@ -44,7 +44,7 @@ const Contact: NextPage = () => {
                            className={"brightness-[45%] scale-[5] lg:scale-100 absolute z-0 top-1/3 -left-10 lg:top-0 lg:left-0"}/>
                     <section
                         className={"z-10 pt-16 lg:py-16 px-8 lg:px-32 flex flex-col lg:flex-row items-center justify-between w-full"}>
-                        <section className={"flex flex-col items-center lg:items-start justify-center gap-8 text-neutral-200 lg:w-112"}>
+                        <section className={"flex flex-col items-center lg:items-start justify-center gap-8 text-neutral-200 lg:w-100"}>
                             <h1 className={"font-black text-white text-5xl lg:text-8xl"}>{strings.contact.headline}</h1>
                             <p className={"text-center lg:text-left text-xl lg:text-3xl font-normal"}>{strings.contact.copy}</p>
                         </section>

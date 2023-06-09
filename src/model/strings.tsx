@@ -211,7 +211,7 @@ export const strings: IKeyedObject = {
             },
             11: {
                 'time': <>{"3:40 - 4:00 p. m."}</>,
-                'info': <>{"Refrigerio"}</>,
+                'info': <>{"Receso"}</>,
             },
             12: {
                 'time': <>{"4:00 - 4:50 p. m."}</>,

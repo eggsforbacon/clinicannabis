@@ -1,8 +1,8 @@
 @import "typography.css";
 @import './Timer.css';
 @import './Landing.css';
-
 @import "./dist/BlogEntry.css";
+@import "./Services.css";
 
 @tailwind base;
 @tailwind components;
@@ -318,27 +318,6 @@
     border: 0;
 }
 
-/*  ================================================
-   --  Adaptatividad Section Services --
-================================================ */
-@media(min-width: 1200px) {
-    .pictSer {
-        width: 90em;
-        height: 150vh;
-        margin-left: 0vh;
-    }
-
-    .pictSer-2 {
-        max-width: 100%;
-        height: 166.5vh;
-        object-fit: cover;
-    }
-
-    .pictSer-3 {
-        height: 155vh;
-        object-fit: cover;
-    }
-}
 
 /* ================================================ */
 /* @media Para ocultar la img de fondo para IOS */
