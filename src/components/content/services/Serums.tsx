@@ -9,10 +9,10 @@ export const Serums = () => {
 
     return (
         <article className={"relative z-0 h-[44rem] lg:h-224"} id={"serums"}>
-            <Image src={"/images/services/service3.png"} className={"z-0 scale-[3.25] lg:scale-100 absolute select-none top-60 right-44 lg:-top-0 lg:right-0"} alt={""} width={1920}
-                   height={1110} quality={100} loading={"lazy"}/>
-            <section className={"px-8 lg:px-0 mt-16 relative lg:absolute lg:right-0 lg:w-208 lg:mt-40 lg:mr-12 flex flex-col justify-between items-start text-midnight-green"}>
-                <section className={"pt-8"}>
+            <Image src={"/images/services/service3.png"} className={"absolute lg:py-20 w-full object-cover lg:h-[64em]"} alt={""} width={1920}
+                   height={110} quality={100} loading={"lazy"}/>
+            <section className={"flex flex-col justify-between relative lg:absolute lg:px-0 mt-16 items-start lg:mt-40 lg:w-208 lg:right-0 lg:mr-[-30px]"}>
+                <section className={"pt-8 text-midnight-green"}>
                     <h2 className={"text-6xl lg:text-9xl font-black leading-[0.8] lg:leading-[0.8] lg:tracking-normal tracking-normal mb-2"}>{strings.services.sections["3"].headline}</h2>
                     <h3 className={"font-normal text-viridian-green text-2xl lg:text-4xl"}>{strings.services.sections["3"].subtitle}</h3>
                 </section>

@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --  Adaptatividad Section Services -- */
+@layer components {
+    .CannabisMedicinal_Service {
+        position: relative;
+        width: 100%;
+        height: 54em;
+    }
+
+    .pictSer-2 {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .infMedicinal_Service {
+        margin-top: 13rem;
+        padding: 0 60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infMedicinal_Service h2{
+        text-align: center;
+    }
+    .infMedicinal_Service h3{
+        text-align: center;
+    }
+    .infMedicinal_Service p{
+        text-align: center;
+    }
+
+    .infMedicinal_Service p {
+        text-align: justify;
+        margin-left: 2vh;
+        width: 85%;
+    }
+    @media(min-width: 320px) {
+        /* Cannabis medicinal */
+        .CannabisMedicinal_Service {
+            height: 49em;
+        }
+        .infMedicinal_Service {
+            margin-top: 9rem;
+            padding: 0;
+        }
+        .infMedicinal_Service p {
+            text-align: justify;
+            margin-left: 0;
+            width: 91%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .pictSer-2{
+            height: 17em;
+        }
+    }
+
+    @media(min-width: 411px) {
+        /* Cannabis medicinal */
+        .CannabisMedicinal_Service {
+            height: 49em;
+        }
+
+        .infMedicinal_Service {
+            margin-top: 10rem;
+            padding: 0;
+        }
+        .infMedicinal_Service p {
+            margin-left: 0;
+            width: 90%;
+            margin-top: 30px;
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+        .pictSer-2{
+            height: auto;
+        }
+    }
+
+    @media(min-width: 576px) {
+
+        /* Cannabis medicinal */
+        .CannabisMedicinal_Service {
+            height: 55em;
+        }
+
+        .infMedicinal_Service {
+            margin-top: 13rem;
+            padding: 0px 33px;
+        }
+
+        .infMedicinal_Service p {
+            margin-left: 0;
+            width: 100%;
+            margin-top: 30px;
+            text-align: justify;
+        }
+    }
+
+    @media(min-width: 768px) {
+
+        /* Cannabis medicinal */
+        .CannabisMedicinal_Service {
+            height: 60em;
+        }
+
+        .infMedicinal_Service {
+            padding: 0 60px;
+        }
+
+        .infMedicinal_Service p {
+            margin-left: 0;
+            width: 100%;
+            margin-top: 0px;
+        }
+    }
+
+    @media(min-width: 992px) {
+
+        /* Cannabis medicinal */
+        .CannabisMedicinal_Service {
+            height: 48em;
+        }
+
+        .infMedicinal_Service p {
+            margin-left: 0vh;
+            width: 80%;
+        }
+
+        .infMedicinal_Service {
+            margin-top: 14rem;
+            padding: 0 60px;
+        }
+
+        /* ======================= */
+        /* Sistema Sùper Inductivo */
+        .pictSer-3 {
+            height: 36%;
+            object-fit: cover;
+        }
+    }
+
+    @media(min-width: 1200px) {
+
+        /* Cannabis medicinal */
+        .infMedicinal_Service p {
+            margin-left: 0vh;
+            width: 93%;
+        }
+
+        .infMedicinal_Service {
+            margin-top: 14rem;
+            padding: 0 60px;
+        }
+
+        .CannabisMedicinal_Service {
+            height: 54em;
+        }
+
+        /* ======================= */
+        /* Sistema Sùper Inductivo */
+        .pictSer-3 {
+            height: 157vh;
+        }
+
+        /* ======================= */
+        /* Sueros Terapèuticos */
+        .imgSuerTerapeutico_Service {
+            height: 64em;
+        }
+
+        /* ======================= */
+        /* Medicina Funcional */
+        .infMedicinaFuncional_Service {
+            margin-left: 27vh;
+        }
+
+    }
+
+    @media(min-width: 1400px) {
+
+        /* ======================= */
+        /* Cannabis medicinal */
+        .infMedicinal_Service p {
+            margin-left: 2vh;
+            width: 85%;
+        }
+
+        /* ======================= */
+        /* Sueros Terapèuticos */
+        .infMedicinaFuncional_Service {
+            margin-left: 26vh;
+        }
+    }
+}
