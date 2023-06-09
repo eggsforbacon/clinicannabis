@@ -10,16 +10,18 @@ interface IProps {
 export const Posts = (props: IProps) => {
 
     return (
-        <article className={"min-h-[62rem] w-full relative"}>
+        <article className={"min-h-[62rem] w-full relative pb-16"}>
+            <span className={"absolute z-0 w-full h-104 md:h-144 xl:h-224 pointer-events-none select-none bg-gradient-to-t from-white via-white top-0"}/>
             <section
-                className={"w-full px-8 lg:px-16 xl:px-32 grid lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-10 h-full"}>
+                className={"relative w-full pt-8 px-8 lg:px-16 xl:px-32 grid md:grid-cols-2 xl:grid-cols-3 place-items-center gap-10 h-full"}>
                 {props.blogPosts && props.blogPosts.map((post) => {
                     const attributes: AttributesBlogPost = post.attributes as unknown as AttributesBlogPost;
                     const thumbnail: CoverAttributesBlogPost = (attributes.thumbnail as unknown as CoverAttributesBlogPost);
                     return (
                         <BlogCard key={attributes.slug} {...attributes} >
                             <Image src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${thumbnail.data.attributes.url}`} alt={""}
-                                   width={thumbnail.data.attributes.width} height={thumbnail.data.attributes.height} className={"scale-125"}/>
+                                   width={thumbnail.data.attributes.width} height={thumbnail.data.attributes.height}
+                                   className={"top-0 left-0"}/>
                         </BlogCard>
                     );
                 })}
