@@ -209,6 +209,7 @@ export const Seminario = () => {
                         <Image src={"/images/LandingSeminario/Clinicannabis-Seminario-04.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                             style={style.imgAgenda} className={'img-conf'} />
                         <p className={"text-center text-2xl text-text-title"}>{strings.seminario.subtitle}</p>
+                        <p className={"text-center text-2xl text-text-title"}>{strings.seminario.infotitle}</p>
                     </div>
                     <div className={"CronogramaSeminario InfoCronograma"}>
                         <div className="StepCrono-1">
@@ -223,20 +224,24 @@ export const Seminario = () => {
                             <div className="infoSeminario text-text-title">
                                 <p className={"text-left text-lg"}><b>{strings.seminario.sections["3"].time}</b></p>
                                 <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["3"].info} -
+                                    {strings.seminario.sections["3"].info} <br />
                                     {strings.seminario.sections["3"].name} - {strings.seminario.sections["3"].contry}
                                 </p>
                             </div>
                             <div className="infoSeminario text-text-title">
                                 <p className={"text-left text-lg"}><b>{strings.seminario.sections["4"].time}</b></p>
                                 <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["4"].info} -
+                                    {strings.seminario.sections["4"].info} <br />
                                     {strings.seminario.sections["4"].name} - {strings.seminario.sections["4"].contry}
                                 </p>
                             </div>
                             <div className="infoSeminario text-text-title">
                                 <p className={"text-left text-lg"}><b>{strings.seminario.sections["5"].time}</b></p>
                                 <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["5"].info}</p>
+                            </div>
+                            <div className="infoSeminario text-text-title">
+                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["5.1"].time}</b></p>
+                                <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["5.1"].info}</p>
                             </div>
                             <div className="infoSeminario text-text-title">
                                 <p className={"text-left text-lg"}><b>{strings.seminario.sections["6"].time}</b></p>
@@ -252,6 +257,11 @@ export const Seminario = () => {
                                     {strings.seminario.sections["7"].name} - {strings.seminario.sections["7"].contry}
                                 </p>
                             </div>
+
+                            <div className="infoSeminario text-text-title">
+                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["7.5"].time}</b></p>
+                                <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["7.5"].info}</p>
+                            </div>
                         </div>
 
                         <div className="StepCrono-2">
@@ -263,7 +273,7 @@ export const Seminario = () => {
                             <div className="infoSeminario text-text-title">
                                 <p className={"text-left text-lg"}><b>{strings.seminario.sections["9"].time}</b></p>
                                 <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["9"].info}- <br />
+                                    {strings.seminario.sections["9"].info} <br />
                                     {strings.seminario.sections["9"].name} - {strings.seminario.sections["9"].contry}
                                 </p>
                             </div>
@@ -271,7 +281,7 @@ export const Seminario = () => {
                             <div className="infoSeminario text-text-title">
                                 <p className={"text-left text-lg"}><b>{strings.seminario.sections["10"].time}</b></p>
                                 <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["10"].info} - <br />
+                                    {strings.seminario.sections["10"].info} <br />
                                     {strings.seminario.sections["10"].name} - {strings.seminario.sections["10"].contry}
                                 </p>
                             </div>
@@ -282,25 +292,42 @@ export const Seminario = () => {
                             </div>
 
                             <div className="infoSeminario text-text-title">
+                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["11.5"].time}</b></p>
+                                <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["11.5"].info}</p>
+                            </div>
+
+                            <div className="infoSeminario text-text-title">
                                 <p className={"text-left text-lg"}><b>{strings.seminario.sections["12"].time}</b></p>
                                 <p className={"text-left text-lg mb-6 leading-5"}>
                                     {strings.seminario.sections["12"].info} <br />
                                     {strings.seminario.sections["12"].name} - {strings.seminario.sections["12"].contry}
-
                                 </p>
                             </div>
 
                             <div className="infoSeminario text-text-title">
                                 <p className={"text-left text-lg"}><b>{strings.seminario.sections["13"].time}</b></p>
                                 <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["13"].info} - <br />
+                                    {strings.seminario.sections["13"].info} <br />
                                     {strings.seminario.sections["13"].name} - {strings.seminario.sections["13"].contry}
                                 </p>
                             </div>
                             <div className="infoSeminario text-text-title">
                                 <p className={"text-left text-lg"}><b>{strings.seminario.sections["14"].time}</b></p>
-                                <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["14"].info}</p>
+                                <p className={"text-left text-lg mb-6"}>
+                                    {strings.seminario.sections["14"].info} <br />
+                                    {strings.seminario.sections["14"].inf}
+                                </p>
                             </div>
+                        </div>
+                    </div>
+                    <div className={"semColor"}>
+                        <div className={"flex justify-center relative py-5"}>
+                            <p className={"text-center text-2xl"}><strong>{strings.seminario.MoreInfo["1"].InfoNumber} </strong> </p>
+                            <p className={"text-center text-2xl ml-2"}>
+                                {strings.seminario.MoreInfo["1"].Nom1} -
+                                {strings.seminario.MoreInfo["1"].Nom2} -
+                                {strings.seminario.MoreInfo["1"].Nom3}
+                            </p>
                         </div>
                     </div>
                 </div>
