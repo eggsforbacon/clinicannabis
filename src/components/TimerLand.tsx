@@ -59,7 +59,7 @@ export const Timer = ({ }) => {
                         
                         <div className="sep-cont-1 timerCount text-3xl">
                             <p className={"text-xl"}><b>{strings.seminario.cardInfo["2"].info}</b></p>
-                            <Cound maxRange={91} />
+                            <Cound maxRange={134} />
                         </div>
                     </div>
 
