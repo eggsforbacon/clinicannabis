@@ -19,7 +19,11 @@ export const MedicalCannabis = () => {
             <section
                 className={"relative infMedicinal_Service items-center text-white lg:gap-10 md:gap-8"}>
                 <section className={"infCannabisMedicinal_Service"}>
-                    <h2 className={"text-6xl lg:text-8xl leading-[0.7] lg:leading-[0.7] font-black tracking-wide"}>{strings.services.sections["1"].headline}<strong className={"text-7xl lg:text-9xl"}>{strings.services.sections["1"].remark}</strong>
+                    <h2 className={"text-6xl lg:text-8xl leading-[0.7] lg:leading-[0.7] font-black tracking-wide"}>
+                        {strings.services.sections["1"].headline}
+                        <strong className={"text-7xl lg:text-8xl"}>
+                            {strings.services.sections["1"].remark}
+                        </strong>
                     </h2>
                     <h3 className={"font-normal text-2xl lg:text-3xl md:text-2md mt-6"}>{strings.services.sections["1"].subtitle}</h3>
                 </section>
