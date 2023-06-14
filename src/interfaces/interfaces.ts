@@ -26,10 +26,6 @@ interface CoverFormats {
     url: string
 }
 
-interface LocalizationCover {
-    data: []
-}
-
 export interface CoverAttributesBlogPost {
     data: {
         id: number,
@@ -86,7 +82,7 @@ export interface StrapiGetOneResponse {
 }
 
 export type StrapiGetAllResponse = {
-    data: [BlogPost] | null,
+    data: BlogPost[] | null,
     meta?: { pagination: { page: number, pageSize: number, pageCount: number, total: number } }
     error?: {
         status: number,

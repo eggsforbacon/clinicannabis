@@ -4,10 +4,10 @@ import Footer from "../../components/Footer";
 import {Hero} from "../../components/content/blog/Hero";
 import {Posts} from "../../components/content/blog/Posts";
 import Head from "next/head";
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {fetchURI} from "../../lib/api";
 import {BlogPost, StrapiGetAllResponse} from "../../interfaces/interfaces";
-import useSWR, {SWRResponse} from "swr";
+import useSWR from "swr";
 import {setToken} from "../../lib/auth";
 
 function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>) {
@@ -15,12 +15,29 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
     //     fallbackData: blogs
     // });
 
+    const [mounted, setMounted] = useState(false);
+
     useEffect(() => {
         if (typeof  window !== "undefined") {
             setToken({jwt: token}, true);
+            setMounted(true);
         }
     }, []);
 
+    const { data } = useSWR(
+        mounted ? `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?populate=*` : null,
+        () => fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?populate=*`, {
+            method: "GET",
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        }),
+        {
+            fallbackData: {
+                data: blogs
+            },
+        }
+    );
 
     return (
         <main className="w-full min-h-screen overflow-x-clip">
@@ -32,7 +49,7 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
             </Head>
             <Navbar selection={"blog"} />
             <Hero />
-            <Posts blogPosts={blogs} />
+            <Posts blogPosts={data.data !== null ? data.data : undefined} />
             <Footer />
         </main>
     );
