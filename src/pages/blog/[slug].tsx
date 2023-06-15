@@ -18,8 +18,8 @@ import {getTokenFromLocalCookie, getTokenFromServerCookie, setToken} from "../..
 
 interface IProps {
     post: BlogPost | null,
-    error? : string,
-    token? : string,
+    error?: string,
+    token?: string,
 }
 
 export function slug(props: IProps) {
@@ -64,7 +64,7 @@ export function slug(props: IProps) {
                     className={"w-full h-full relative px-4 md:px-16 lg:px-20 xl:px-64 text-justify flex flex-col items-center justify-start text-xl leading-[2] pb-28"}>
                     <ReactMarkdown className={"custom-blog bg-white max-w-[768px]"} skipHtml={false} children={body}
                                    remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}
-                                   transformImageUri={input => `${process.env.NEXT_PUBLIC_STRAPI_URL}${input}`}/>
+                                   />
                 </section>
                 {/*<section className={"w-full grid lg:grid-cols-2 place-items-center py-44"}>*/}
                 {/*    {prev && <RecommendedPost title={prev.title} subtitle={prev.subtitle}*/}
@@ -101,7 +101,10 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
     if (typeof window !== 'undefined') {
         sessionStorage.setItem("spi_jwt", jwt);
     }
-    const {data: blogsData, error} = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts/?populate=*`, jwt ? {
+    const {
+        data: blogsData,
+        error
+    } = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts/?populate=*`, jwt ? {
         headers: {
             Authorization: `Bearer ${jwt}`,
         },
@@ -109,9 +112,9 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
 
     if (blogsData === null) {
         return {
-            props : {
-                post : blogsData,
-                error : error?.message
+            props: {
+                post: blogsData,
+                error: error?.message
             }
         }
     }
@@ -120,7 +123,7 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
     return {
         props: {
             post,
-            token : jwt
+            token: jwt
         }
     }
 }
