@@ -377,7 +377,7 @@ export const strings: IKeyedObject = {
                 'remark': <>{"medicinal"}</>,
                 'subtitle': <>{"Dolor crónico y otras patologías"}</>,
                 'content': <>{"Aplicamos protocolos de medicina cannábica enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obteniendo mejoras en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
-                'cta': <>{"Conócelo"}</>,
+                'cta': <>{"Aprende más"}</>,
             },
             2: {
                 'headline': <>{"Sistema Súper "}</>,
