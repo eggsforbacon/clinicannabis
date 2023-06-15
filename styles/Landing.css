@@ -18,6 +18,20 @@
         padding: 0 80px;
     }
 
+    .semColor{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+        background-image: url('/images/LandingSeminario/conferencii.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 26vh;
+        width: 100%;
+    }
+    .semColor p{
+        color: #f15c6d;
+        margin-top: 7.5vh;
+    }
     @media (min-width: 320px) {
         .Agenda {
             margin-top: 10%;
@@ -46,7 +60,7 @@
         .sm-mg-txt {
             margin-top: 5vh;
         }
-
+        .semColor{display: none;}
     }
 
     @media (min-width: 768px) {
@@ -97,6 +111,10 @@
             line-height: 55px;
             margin-top: 16px;
         }
+        .semColor{display: block;}
+        .semColor p{
+            margin-top: 8vh;
+        }
     }
 
     @media (min-width: 1200px) {
@@ -121,6 +139,9 @@
             width: 390px;
             height: 30vh;
         }
+        .semColor p{
+            margin-top: 7vh;
+        }
     }
 
     @media (min-width: 1400px) {
@@ -139,12 +160,18 @@
             width: 390px;
             height: 24vh;
         }
+        .semColor p{
+            margin-top: 9vh;
+        }
     }
 
     @media (min-width: 1800px) {
         .card-Crd {
             width: 390px;
             height: 18vh;
+        }
+        .semColor p {
+            margin-top: 10vh;
         }
     }
 }

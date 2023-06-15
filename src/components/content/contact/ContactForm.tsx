@@ -1,24 +1,24 @@
-import {Input} from "../../Input";
-import {Envelope, Person} from "react-bootstrap-icons";
-import {ContactType} from "../../../model/types/ContactType";
-import {sendContactForm} from "../../../lib/api";
-import React, {useState} from "react";
+import { Input } from "../../Input";
+import { Envelope, Person } from "react-bootstrap-icons";
+import { ContactType } from "../../../model/types/ContactType";
+import { sendContactForm } from "../../../lib/api";
+import React, { useState } from "react";
 
 export const ContactForm = () => {
 
-    const [data , setData] : [ContactType, any] = useState({
-        name : "",
-        email : "",
-        message : ""
+    const [data, setData]: [ContactType, any] = useState({
+        name: "",
+        email: "",
+        message: ""
     })
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const form = (e.target as HTMLFormElement);
         await setData({
-            name : form.ctName.value,
-            email : form.ctEmail.value,
-            message : (form.ctMessage as HTMLTextAreaElement).value,
+            name: form.ctName.value,
+            email: form.ctEmail.value,
+            message: (form.ctMessage as HTMLTextAreaElement).value,
         });
         await console.log("Form says: ", data);
         await sendContactForm(data);
@@ -29,11 +29,11 @@ export const ContactForm = () => {
     }
 
     return (
-        <form className={"w-full lg:w-192 h-full flex flex-col justify-start items-center py-8 gap-8 lg:gap-14 lg:px-8"} onSubmit={handleSubmit}>
-            <Input type={"text"} required label={"Tu nombre"} color={"white"} name={"ctName"} icon={<Person className={"p-3 w-14 h-full"} />} background={"bg-black/20"}/>
-            <Input type={"email"} required label={"Tu correo"} color={"white"} name={"ctEmail"} icon={<Envelope className={"p-3 w-14 h-full"}/>} background={"bg-black/20"} />
-            <Input type={"area"} required label={"¿Cómo podemos ayudarte?"} color={"white"} name={"ctMessage"} background={"bg-black/20"}/>
-            <input type={"submit"} className={"px-12 py-2 text-lg lg:text-2xl text-white border-solid border-2 border-white rounded-full shadow-md transition duration-500 ease-in-out hover:cursor-pointer lg:hover:border-viridian-green focus:border-viridian-green lg:hover:bg-viridian-green focus:bg-viridian-green lg:hover:text-white focus:text-white lg:hover:-translate-y-2 focus:-translate-y-2"} value={"Enviar"}/>
+        <form className={"w-full lg:w-192 h-full flex flex-col justify-start items-center lg:px-8"} onSubmit={handleSubmit}>
+            <Input type={"text"} required label={"Tu nombre"} color={"white"} name={"ctName"} icon={<Person className={"p-3 w-14 h-full"} />} background={"bg-black/20"} />
+            <Input type={"email"} required label={"Tu correo"} color={"white"} name={"ctEmail"} icon={<Envelope className={"p-3 w-14 h-full"} />} background={"bg-black/20"} />
+            <Input type={"area"} required label={"¿Cómo podemos ayudarte?"} color={"white"} name={"ctMessage"} background={"bg-black/20"} />
+            <input type={"submit"} className={"mt-10 px-12 py-2 text-lg lg:text-2xl text-white border-solid border-2 border-white rounded-full shadow-md transition duration-500 ease-in-out hover:cursor-pointer lg:hover:border-viridian-green focus:border-viridian-green lg:hover:bg-viridian-green focus:bg-viridian-green lg:hover:text-white focus:text-white lg:hover:-translate-y-2 focus:-translate-y-2"} value={"Enviar"} />
         </form>
     );
 }

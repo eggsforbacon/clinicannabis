@@ -156,6 +156,15 @@ export const strings: IKeyedObject = {
             }
         },
         'subtitle': <>{"Cronograma Cali - Viernes 16 de Junio"}</>,
+        'infotitle': <>{"Hotel Marriott - Salón Cartago"}</>,
+        'MoreInfo':{
+            1: {
+                'InfoNumber': <>{"Más información :  "}</>,
+                'Nom1':<>{" 3148220459 "}</>,
+                'Nom2':<>{" 3052328704 "}</>,
+                'Nom3':<>{" 3174834360 "}</>,
+            },
+        },
         'sections': {
             1: {
                 'time': <>{"7:00 - 8:00 a. m."}</>,
@@ -167,7 +176,7 @@ export const strings: IKeyedObject = {
             },
             3: {
                 'time': <>{"8:30 - 9:20 a. m."}</>,
-                'info': <>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal"}</>,
+                'info': <>{"Sistema endocannabinoide y aplicaciones terapéuticas del cannabis medicinal"}</>,
                 'name': <>{"Dr. Mariano García de Palau"}</>,
                 'contry': <>{"España"}</>,
             },
@@ -179,55 +188,68 @@ export const strings: IKeyedObject = {
             },
             5: {
                 'time': <>{"10:10 - 10:30 a. m."}</>,
+                'info': <>{"Sesión de preguntas - Bloque 1"}</>,
+            },
+            5.1:{
+                'time': <>{"10:20 - 10:40 a. m."}</>,
                 'info': <>{"Refrigerio"}</>,
             },
             6: {
-                'time': <>{"10:30 - 11:20 a. m."}</>,
-                'info': <>{"Cannabinoides y adicciones – Psiquiatra"}</>,
-                'name': <>{"Alberto Ulloa"}</>,
+                'time': <>{"10:40 - 11:30 a. m."}</>,
+                'info': <>{"Cannabinoides y adicciones "}</>,
+                'name': <>{"Psiquiatra Alberto Ulloa "}</>,
                 'contry': <>{"Medellín"}</>,
             },
             7: {
-                'time': <>{"11:20 a.m - 12:20 p. m."}</>,
-                'info': <>{"Cannabis y salud mental en animales de compañía- Veterinaria y Zootecnista"}</>,
-                'name': <>{"Natalia Mejía"}</>,
-                'contry': <>{"Medellín"}</>,
+                'time': <>{"11:30 a. m. - 12:20 p. m."}</>,
+                'info': <>{"Effective dosing: How much is enough?"}</>,
+                'name': <>{"Ing. Mara Gordon "}</>,
+                'contry': <>{"USA"}</>,
+            },
+            7.5:{
+                'time': <>{"12:20 - 12:35 p. m."}</>,
+                'info': <>{"Sesión de preguntas - Bloque 2"}</>,
             },
             8: {
-                'time': <>{"12:20 - 2:00 p. m."}</>,
+                'time': <>{"12:35 - 1:40 p. m."}</>,
                 'info': <>{"Almuerzo"}</>,
             },
             9: {
-                'time': <>{"2:00 - 2:50 p. m."}</>,
+                'time': <>{"1:40 - 2:30 p. m."}</>,
                 'info': <>{"Uso de cannabinoides en pacientes con dolor"}</>,
                 'name': <>{"Dr. Daniel Archer Juri"}</>,
                 'contry': <>{"Cali"}</>,
             },
             10: {
-                'time': <>{"2:50 - 3:40 p. m."}</>,
+                'time': <>{"2:30 – 3:20 p. m."}</>,
                 'info': <>{"Uso de cannabis en condiciones neurodegenerativas énfasis en Parkinson y Alzheimer"}</>,
                 'name': <>{"Dra. Paola Pineda"}</>,
                 'contry': <>{"Medellín"}</>,
             },
             11: {
-                'time': <>{"3:40 - 4:00 p. m."}</>,
-                'info': <>{"Refrigerio"}</>,
+                'time': <>{"3:20 - 3:40 p. m."}</>,
+                'info': <>{"Sesión de preguntas - Bloque 3"}</>,
+            },
+            11.5:{
+                'time': <>{"3:40 - 4:10 p. m."}</>,
+                'info': <>{"Receso"}</>,
             },
             12: {
-                'time': <>{"4:00 - 4:50 p. m."}</>,
-                'info': <>{"Effective dosing: How much is enough?"}</>,
-                'name': <>{"Ing. Mara Gordon"}</>,
-                'contry': <>{"USA"}</>,
+                'time': <>{"4:10 - 5:00 p. m."}</>,
+                'info': <>{"Cannabis y salud mental en animales de compañía"}</>,
+                'name': <>{"Veterinaria y zootecnista Natalia Mejía"}</>,
+                'contry': <>{"Medellín"}</>,
             },
             13: {
-                'time': <>{"4:50 - 5:40 p. m."}</>,
-                'info': <>{"Psiconeuroinmunodermatología y medicina cannábica en pequeños animales – Veterinario"}</>,
-                'name': <>{"Juan Carlos Builes"}</>,
+                'time': <>{"5:00 - 5:50 p. m."}</>,
+                'info': <>{"Psiconeuroinmunodermatología y medicina cannábica en pequeños animales"}</>,
+                'name': <>{"Veterinario Juan Carlos Builes"}</>,
                 'contry': <>{"Medellín"}</>,
             },
             14: {
-                'time': <>{"5:40 - 6:30 p. m."}</>,
+                'time': <>{"5:50 - 6:20 p. m."}</>,
                 'info': <>{"Sesión de preguntas"}</>,
+                'inf': <>{"Bloque 4 y reflexiones finales"}</>,
             },
         },
         'conference': {
