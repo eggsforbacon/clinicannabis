@@ -7,11 +7,11 @@ export const SIS = () => {
     const buttonStyle: string = "mt-12 lg:block text-xl lg:text-3xl rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-8 lg:px-10 py-1.5 lg:py-2 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
 
     return (
-        <article className={"relative h-[40rem] lg:h-192 z-0"} id={"sis"}>
-            <Image src={"/images/services/service2.png"} className={"absolute scale-[3] lg:scale-100 select-none top-36 lg:-top-28 -left-16 lg:left-0 pictSer-3"} alt={""} width={1920}
+        <article className={"relative h-[40rem] md:h-144 lg:h-192 z-0"} id={"sis"}>
+            <Image src={"/images/services/service2.png"} className={"absolute lg:scale-100 select-none top-36 lg:-top-28 -left-16 lg:left-0"} alt={""} width={1920}
                    height={1151} quality={100} loading={"lazy"}/>
-            <span className={"absolute lg:hidden w-screen bg-gradient-to-b from-white via-white/50 -top-28 left-0 h-96"}/>
-            <span className={"absolute lg:hidden w-screen bg-gradient-to-r from-white via-white -top-28 left-0 h-[120%]"}/>
+            <span className={"absolute lg:hidden w-screen bg-gradient-to-b from-white via-white/50 lg:-top-28 lg:left-0 lg:h-96"}/>
+            <span className={"absolute lg:hidden w-screen bg-gradient-to-r from-white via-white lg:-top-28 lg:left-0 lg:h-[120%]"}/>
             <span className={"lg:hidden w-screen h-64 bg-gradient-to-t from-white via-white/40 absolute bottom-0 left-0"}/>
             <section className={"px-8 lg:px-0 relative lg:absolute lg:w-168 lg:mt-32 lg:ml-56 flex flex-col justify-start items-start"}>
                 <h2 className={"text-5xl lg:text-8xl font-black text-midnight-green leading-[0.8] lg:leading-[0.75]"}>{strings.services.sections["2"].headline}<strong className={"text-6xl lg:text-9xl text-caribbean-green"}>{strings.services.sections["2"].remark}</strong></h2>
