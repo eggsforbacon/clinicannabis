@@ -13,7 +13,7 @@ export const MedicalCannabis = () => {
                 width={1920}
                 height={1001} quality={80} priority />
             <section
-                className={"relative flex flex-col justify-center items-center lg:items-start px-10 md:px-48 lg:mt-48 lg:px-64 text-white gap-6 lg:gap-10 md:gap-8"}>
+                className={"relative flex flex-col justify-center items-center lg:items-start px-8 md:px-24 lg:mt-48 lg:px-64 text-white gap-6 lg:gap-10"}>
                 <section className={"flex flex-col items-center lg:items-start justify-center"}>
                     <h2 className={"text-center lg:text-left text-6xl lg:text-8xl leading-[0.7] lg:leading-[0.7] font-black tracking-wide"}>
                         {strings.services.sections["1"].headline}<br/>
@@ -23,7 +23,7 @@ export const MedicalCannabis = () => {
                     </h2>
                     <h3 className={"font-normal text-center lg:text-left text-2xl lg:text-3xl md:text-2md mt-6"}>{strings.services.sections["1"].subtitle}</h3>
                 </section>
-                <p className={"font-normal text-center lg:text-left text-xl lg:text-2xl lg:max-w-[42rem]"}>{strings.services.sections["1"].content}</p>
+                <p className={"font-normal text-center lg:text-left text-xl lg:text-2xl max-w-[42rem]"}>{strings.services.sections["1"].content}</p>
                 <a href={"https://www.instagram.com/reel/Cp5swkDjj9M/?igshid=MDJmNzVkMjY="} target={"_blank"} rel={"noreferrer"} className={buttonStyle}>
                     {strings.services.sections["1"].cta}
                 </a>
