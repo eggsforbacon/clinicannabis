@@ -8,7 +8,7 @@ import {
     GeoAlt,
     Instagram,
     Mailbox,
-    Phone,
+    Phone, Twitter,
     Voicemail,
     Whatsapp,
     Youtube
@@ -84,29 +84,43 @@ const Footer = () => {
                         </section>
                         <span className={"w-full h-px bg-green-sheen"}/>
                         <section className={"px-3 py-10 h-full flex flex-col lg:flex-row items-center justify-between"}>
-                            <Image src={"/images/svg/clinic_white.svg"} alt={""} width={16} height={16}
-                                   className={"-ml-6 h-20 w-auto"}/>
-                            <ul className={"flex items-center justify-start"}>
+                            <Link href={"/"} className={"-ml-6 h-20 w-auto"}>
+                                <Image src={"/images/svg/clinic_white.svg"} alt={""} width={16} height={16}
+                                       className={"h-full w-auto"}/>
+                            </Link>
+                            <ul className={"grid grid-cols-2 lg:grid-cols-4 mt-4 lg:mt-auto place-items-center gap-6"}>
                                 <li>
-                                    <Link href={"https://www.facebook.com/Clinicanabis"} target={"_blank"}>
+                                    <Link href={"https://www.facebook.com/Clinicanabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <Facebook
-                                            className={"h-6 w-6 fill-green-sheen transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}/>
+                                            className={"h-6 w-6 fill-green-sheen transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
+                                        <p className={"text-sm font-normal"}>Clinicannabis</p>
                                         <p className={"sr-only"}>Facebook</p>
                                     </Link>
                                 </li>
-                                <span className={"h-full w-[2px] bg-white mx-3.5"}/>
+                                {/*<span className={"h-full w-[2px] bg-white mx-3.5"}/>*/}
                                 <li>
-                                    <Link href={"https://www.instagram.com/clinicanabis/"} target={"_blank"}>
+                                    <Link href={"https://www.instagram.com/clinicanabis.col/"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"} target={"_blank"}>
                                         <Instagram
-                                            className={"h-6 w-6 fill-green-sheen transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}/>
+                                            className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
+                                        <p className={"text-sm font-normal"}>@clinicannabis.col</p>
                                         <p className={"sr-only"}>Instagram</p>
                                     </Link>
                                 </li>
-                                <span className={"h-full w-[2px] bg-white mx-3.5"}/>
+                                {/*<span className={"h-full w-[2px] bg-white mx-3.5"}/>*/}
                                 <li>
-                                    <Link href={"https://www.youtube.com/@clinicannabis9526"} target={"_blank"}>
+                                    <Link href={"https://www.twitter.com/clinicannabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
+                                        <Twitter
+                                            className={"h-6 w-6 fill-green-sheen transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
+                                        <p className={"text-sm font-normal"}>@clinicannabis</p>
+                                        <p className={"sr-only"}>Twitter</p>
+                                    </Link>
+                                </li>
+                                {/*<span className={"h-full w-[2px] bg-white mx-3.5"}/>*/}
+                                <li>
+                                    <Link href={"https://www.youtube.com/@clinicannabis9526"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <Youtube
-                                            className={"h-6 w-6 fill-green-sheen transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}/>
+                                            className={"h-6 w-6 fill-green-sheen transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
+                                        <p className={"text-sm font-normal"}>@clinicannabis9526</p>
                                         <p className={"sr-only"}>YouTube</p>
                                     </Link>
                                 </li>
