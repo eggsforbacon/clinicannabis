@@ -8,7 +8,6 @@ import {FunctionalMedicine} from "../../components/content/services/FunctionalMe
 import {Experience} from "../../components/content/services/Experience";
 import Head from "next/head";
 import React from "react";
-import {Hero} from "../../components/content/services/Hero";
 
 const Index : NextPage = () => {
     return (
