@@ -435,6 +435,94 @@ export const strings: IKeyedObject = {
                         'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
                     }
                 },
+                4: {
+                    'name': <>{"Atenea"}</>,
+                    'function': <>{"Coctel de vitaminas y nutrientes atenea"}</>,
+                    'descriptions': {
+                        'short': <>{"Infusión de múltiples nutrientes entre vitaminas y minerales"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                5: {
+                    'name': <>{"Apolo"}</>,
+                    'function': <>{"Revitalizante antiedad para hombre"}</>,
+                    'descriptions': {
+                        'short': <>{"Tratamiento a nivel celular para lograr el mejor estado del cuerpo y así un envejecimiento sano que se refleja en la piel y los órganos. Fortalece el cabello, las uñas, mejora la textura de la piel"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                6: {
+                    'name': <>{"Ojo de tigre"}</>,
+                    'function': <>{"Deportivo"}</>,
+                    'descriptions': {
+                        'short': <>{"Recuperación deportiva, mejorar rendimiento"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                7: {
+                    'name': <>{"Ambrosía"}</>,
+                    'function': <>{"Antioxidante"}</>,
+                    'descriptions': {
+                        'short': <>{"Vitamina C para efecto antioxidante general"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                8: {
+                    'name': <>{"Amatista"}</>,
+                    'function': <>{"Menopausia"}</>,
+                    'descriptions': {
+                        'short': <>{"Síntomas asociados a los cambios de la menopausia, oleadas de calor, resequedad, cambios de humor, etc"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                9: {
+                    'name': <>{"Encanto de ámbar"}</>,
+                    'function': <>{"Migraña encanto de Ámbar"}</>,
+                    'descriptions': {
+                        'short': <>{"Dolor de cabeza asociado a migraña (prevenir crisis o frecuencia de las mismas)"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                10: {
+                    'name': <>{"Diamante"}</>,
+                    'function': <>{"Limpieza desintoxicante"}</>,
+                    'descriptions': {
+                        'short': <>{"Ayuda a depurar toxinas de los órganos principales: hígado, riñón, piel,colón, pulmón y sistema linfáticos"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                11: {
+                    'name': <>{"Caricia de jade"}</>,
+                    'function': <>{"Cirugìa post caricia de jade"}</>,
+                    'descriptions': {
+                        'short': <>{"Posquirúrgico= recuperación después de cirugía, mejora el dolor , la inflamación y ayuda a la cicatrización."}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                12: {
+                    'name': <>{"Amazonita"}</>,
+                    'function': <>{"Sìndrome premenstrual"}</>,
+                    'descriptions': {
+                        'short': <>{"Cólicos, cambios de humor, depresión asociada al período menstrual"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                13: {
+                    'name': <>{"Armonía"}</>,
+                    'function': <>{"Cirugìa Pre"}</>,
+                    'descriptions': {
+                        'short': <>{"Preparación para cirugías- Prequirúrgico-( prepara al organismo para cualquier procediemiento, ayuda a mejorar el sangrado, modula ainflamación, y evita lso efectos secundarios de los enestésicos)"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
+                14: {
+                    'name': <>{"Zircón eterno"}</>,
+                    'function': <>{"Revitalizante antiage para mujer"}</>,
+                    'descriptions': {
+                        'short': <>{"Tratamiento a nivel celular para lograr el mejor estado del cuerpo y así un envejecimiento sano que se refleja en la piel y los órganos. Fortalece el cabello, las uñas, mejora la textura de la piel"}</>,
+                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
+                    }
+                },
             },
         },
     },
