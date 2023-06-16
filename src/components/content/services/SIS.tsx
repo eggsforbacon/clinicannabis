@@ -22,11 +22,11 @@ export const SIS = () => {
                 className={"hidden lg:block w-screen h-96 bg-gradient-to-t from-white via-white/80 absolute bottom-0 left-0"}/>
             <section
                 className={"relative flex flex-col justify-center items-center lg:items-start mt-6 px-8 md:px-48 lg:mt-28 lg:px-64 text-white gap-2"}>
-                <h2 className={"text-center lg:text-left text-5xl lg:text-7xl font-black text-midnight-green leading-[0.8] lg:leading-[0.75]"}>{strings.services.sections["2"].headline}<br/><strong
-                    className={"text-6xl lg:text-9xl text-caribbean-green"}>{strings.services.sections["2"].remark}</strong>
+                <h2 className={"text-center lg:text-left text-6xl lg:text-7xl font-black text-midnight-green leading-[0.8] lg:leading-[0.75]"}>{strings.services.sections["2"].headline}<br/><strong
+                    className={"text-7xl lg:text-9xl text-caribbean-green"}>{strings.services.sections["2"].remark}</strong>
                 </h2>
                 <h3 className={"text-center lg:text-left text-2xl lg:text-4xl text-viridian-green"}>{strings.services.sections["2"].subtitle}</h3>
-                <p className={"mt-8 text-lg lg:text-2xl text-neutral-600 text-center lg:text-left max-w-[50rem]"}>{strings.services.sections["2"].content}</p>
+                <p className={"font-normal mt-8 text-xl lg:text-2xl text-neutral-600 text-center lg:text-left max-w-[50rem]"}>{strings.services.sections["2"].content}</p>
                 <a href={"https://www.instagram.com/reel/CqMA67CDUDB/?igshid=MDJmNzVkMjY="} target={"_blank"}
                    rel={"noreferrer"} className={buttonStyle}>
                     {strings.services.sections["2"].cta}

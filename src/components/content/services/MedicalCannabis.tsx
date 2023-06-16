@@ -23,7 +23,7 @@ export const MedicalCannabis = () => {
                     </h2>
                     <h3 className={"font-normal text-center lg:text-left text-2xl lg:text-3xl md:text-2md mt-6"}>{strings.services.sections["1"].subtitle}</h3>
                 </section>
-                <p className={"font-normal text-center lg:text-left lg:font-light text-lg lg:text-2xl lg:max-w-[42rem]"}>{strings.services.sections["1"].content}</p>
+                <p className={"font-normal text-center lg:text-left text-xl lg:text-2xl lg:max-w-[42rem]"}>{strings.services.sections["1"].content}</p>
                 <a href={"https://www.instagram.com/reel/Cp5swkDjj9M/?igshid=MDJmNzVkMjY="} target={"_blank"} rel={"noreferrer"} className={buttonStyle}>
                     {strings.services.sections["1"].cta}
                 </a>
