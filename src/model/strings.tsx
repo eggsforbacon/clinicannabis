@@ -391,7 +391,7 @@ export const strings: IKeyedObject = {
                 'subtitle': <>{"Regeneración y depuración"}</>,
                 'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. "}</>,
                 'remark': <>{"¡Hay uno elaborado especialmente para ti!"}</>,
-                'cta': <>{"Conócelos"}</>,
+                'cta': <>{"Encuéntralo"}</>,
             },
             4: {
                 'headline': <>{"Medicina "}</>,

@@ -7,9 +7,9 @@ export const SIS = () => {
     const buttonStyle: string = "mt-12 lg:block text-xl lg:text-3xl rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-8 lg:px-10 py-1.5 lg:py-2 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
 
     return (
-        <article className={"relative flex flex-col items-center justify-center lg:justify-start lg:items-stretch overflow-clip h-[40rem] md:h-168 lg:h-[54rem] xl:h-224 z-0"} id={"sis"}>
+        <article className={"relative flex flex-col items-center justify-center lg:justify-start lg:items-stretch overflow-clip h-192 md:h-168 lg:h-[54rem] xl:h-224 z-0"} id={"sis"}>
             <Image src={"/images/services/service2.png"}
-                   className={"absolute scale-[2.5] md:scale-[1.5] xl:scale-[1.3] select-none bottom-44 md:bottom-auto lg:bottom-28 xl:bottom-44 lg:right-24 xl:right-0"} alt={""}
+                   className={"absolute scale-[3.5] md:scale-[1.5] xl:scale-[1.3] select-none bottom-[17rem] md:bottom-auto lg:bottom-28 xl:bottom-44 lg:right-24 xl:right-0"} alt={""}
                    width={1920}
                    height={1151} quality={100} loading={"lazy"}/>
             <span
@@ -18,8 +18,10 @@ export const SIS = () => {
                 className={"absolute lg:hidden w-screen bg-gradient-to-r from-white via-white lg:-top-28 lg:left-0 lg:h-[120%]"}/>
             <span
                 className={"lg:hidden w-screen h-64 bg-gradient-to-t from-white via-white/40 absolute bottom-0 left-0"}/>
+            <span
+                className={"hidden lg:block w-screen h-96 bg-gradient-to-t from-white via-white/80 absolute bottom-0 left-0"}/>
             <section
-                className={"relative flex flex-col justify-center items-center lg:items-start mt-6 px-8 md:px-48 lg:mt-20 lg:px-64 text-white gap-2"}>
+                className={"relative flex flex-col justify-center items-center lg:items-start mt-6 px-8 md:px-48 lg:mt-28 lg:px-64 text-white gap-2"}>
                 <h2 className={"text-center lg:text-left text-5xl lg:text-7xl font-black text-midnight-green leading-[0.8] lg:leading-[0.75]"}>{strings.services.sections["2"].headline}<br/><strong
                     className={"text-6xl lg:text-9xl text-caribbean-green"}>{strings.services.sections["2"].remark}</strong>
                 </h2>
