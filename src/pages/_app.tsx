@@ -1,9 +1,10 @@
 import '../../styles/globals.css'
 import type {AppProps} from 'next/app'
 import {CartProvider} from "../context/Cart/CartProvider";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import {useRouter} from "next/router";
 import {NavbarProvider} from "../context/Navbar/NavbarProvider";
+import {WhatsappButton} from "../components/WhatsappButton";
 
 function MyApp({Component, pageProps}: AppProps) {
 
@@ -16,7 +17,10 @@ function MyApp({Component, pageProps}: AppProps) {
     return (
         <CartProvider>
             <NavbarProvider>
-                <Component {...pageProps} />
+                <>
+                    <WhatsappButton/>
+                    <Component {...pageProps} />
+                </>
             </NavbarProvider>
         </CartProvider>
     );
