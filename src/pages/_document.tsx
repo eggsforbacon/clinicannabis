@@ -1,26 +1,38 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import {Html, Head, Main, NextScript} from "next/document";
 import React from "react";
 import {WhatsappButton} from "../components/WhatsappButton";
 
 export default function Document() {
     return (
-        <Html className='scroll-smooth' lang={"es-CO"} >
+        <Html className='scroll-smooth' lang={"es-CO"}>
             <Head>
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
                 <link rel="icon" href="/favicon.png"/>
             </Head>
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J2GHYJD7T"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments)}
-                gtag('js', new Date());
+            <script type="text/javascript"
+                    async
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments)}
+                        gtag('js', new Date());
 
-                gtag('config', 'G-3J2GHYJD7T');
-            </script>
+                        gtag('config', 'G-3J2GHYJD7T');
+                        `
+                    }}/>
             <body>
-            <WhatsappButton />
-            <Main />
-            <NextScript />
+            <noscript>
+                <iframe
+                    src={`https://www.googletagmanager.com/ns.html?id=G-3J2GHYJD7T`}
+                    height="0"
+                    width="0"
+                    style={{ display: "none", visibility: "hidden" }}
+                ></iframe>
+            </noscript>
+            <WhatsappButton/>
+            <Main/>
+            <NextScript/>
             </body>
         </Html>
     );
