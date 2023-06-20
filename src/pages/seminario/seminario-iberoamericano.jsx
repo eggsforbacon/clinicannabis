@@ -202,9 +202,10 @@ export const Seminario = () => {
                         </article>
                     </div>
                 </div>
-                <Timer />
+                <br />
+                {/* <Timer /> */}
                 {/* Inicio Agenda */}
-                <div className="Agenda mb-20">
+                <div className="Agenda mb-20 mt-10">
                     <div className={'mb-20'}>
                         <Image src={"/images/LandingSeminario/Clinicannabis-Seminario-04.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                             style={style.imgAgenda} className={'img-conf'} />
