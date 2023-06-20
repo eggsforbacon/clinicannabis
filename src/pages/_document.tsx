@@ -1,6 +1,5 @@
 import {Html, Head, Main, NextScript} from "next/document";
 import React from "react";
-import {WhatsappButton} from "../components/WhatsappButton";
 
 export default function Document() {
     return (
@@ -30,7 +29,6 @@ export default function Document() {
                     style={{ display: "none", visibility: "hidden" }}
                 ></iframe>
             </noscript>
-            <WhatsappButton/>
             <Main/>
             <NextScript/>
             </body>

@@ -9,6 +9,7 @@ import {fetchURI} from "../../lib/api";
 import {BlogPost, StrapiGetAllResponse} from "../../interfaces/interfaces";
 import useSWR from "swr";
 import {setToken} from "../../lib/auth";
+import {FloatingSignupForm} from "../../components/content/blog/FloatingSignupForm";
 
 function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>) {
     // const { data } = useSWR<BlogPost[]>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?populate=*`, fetchURI, {
@@ -49,6 +50,7 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
             </Head>
             <Navbar selection={"blog"} />
             <Hero />
+            <FloatingSignupForm />
             <Posts blogPosts={data.data !== null ? data.data : undefined} />
             <Footer />
         </main>
