@@ -143,7 +143,7 @@ const Serums: NextPage = () => {
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"services"}/>
-            <section className={"relative flex flex-col justify-center items-center mt-28 debug w-full h-screen pt-28"}>
+            <section className={"relative flex flex-col justify-center items-center mt-28 w-full h-screen pt-28"}>
                 <section
                     className={"pb-16 overflow-y-auto scrollbar scrollbar-none overflow-x-clip relative w-full flex flex-col items-stretch justify-start z-10 pt-10 px-6 lg:pl-16"}>
                     <h1 className={"leading-[0.8] lg:leading-normal text-center lg:text-left text-7xl font-black text-rich-black"}>{strings.services.serums.headline}<strong
