@@ -9,6 +9,14 @@ export default function Document() {
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
                 <link rel="icon" href="/favicon.png"/>
             </Head>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J2GHYJD7T"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments)}
+                gtag('js', new Date());
+
+                gtag('config', 'G-3J2GHYJD7T');
+            </script>
             <body>
             <WhatsappButton />
             <Main />
