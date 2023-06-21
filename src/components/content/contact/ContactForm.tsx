@@ -3,6 +3,7 @@ import { Envelope, Person } from "react-bootstrap-icons";
 import { ContactType } from "../../../model/types/ContactType";
 import { sendContactForm } from "../../../lib/api";
 import React, { useState } from "react";
+import swal from 'sweetalert';
 
 export const ContactForm = () => {
 
@@ -20,8 +21,14 @@ export const ContactForm = () => {
             email: form.ctEmail.value,
             message: (form.ctMessage as HTMLTextAreaElement).value,
         });
-        await console.log("Form says: ", data);
-        await sendContactForm(data);
+        //await console.log("Form says: ", data);
+        sendContactForm(data).then((resAlert)=> {
+            resAlert.status;
+            swal("Good job!", "You clicked the button!", "success");
+        });
+
+        form.reset();
+
     }
 
     const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
@@ -29,7 +36,7 @@ export const ContactForm = () => {
     }
 
     return (
-        <form className={"w-full lg:w-192 h-full flex flex-col justify-start items-center lg:px-8"} onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={"w-full lg:w-192 h-full flex flex-col justify-start items-center lg:px-8"}>
             <Input type={"text"} required label={"Tu nombre"} color={"white"} name={"ctName"} icon={<Person className={"p-3 w-14 h-full"} />} background={"bg-black/20"} />
             <Input type={"email"} required label={"Tu correo"} color={"white"} name={"ctEmail"} icon={<Envelope className={"p-3 w-14 h-full"} />} background={"bg-black/20"} />
             <Input type={"area"} required label={"¿Cómo podemos ayudarte?"} color={"white"} name={"ctMessage"} background={"bg-black/20"} />
