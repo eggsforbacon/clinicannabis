@@ -573,7 +573,7 @@ export const strings: IKeyedObject = {
             "cta": <>{"Nuestro newsletter"}</>,
             "fields": {
                 "mail": <>{"Tu correo"}</>,
-                "submit": "Suscribirme",
+                "submit": "Suscribirme" ,
             },
         },
     },

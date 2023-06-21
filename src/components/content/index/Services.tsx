@@ -5,7 +5,7 @@ import {SwiperCarousel} from "../../SwiperCarousel";
 import React from "react";
 
 export const Services = () => {
-    const {width: wWidth, height: wHeight} = useWindowDimensions();
+    const {width: wWidth} = useWindowDimensions();
     const serviceImageStyle = "absolute inset-0 bg-cover bg-center bg-no-repeat h-full w-full";
     const linkStyle = "lg:text-transparent flex flex-col text-center gap-4 items-center justify-center relative z-10 w-full h-full lg:bg-transparent transition duration-300 lg:hover:text-white text-[1.75rem] leading-[1] text-white lg:focus:text-white lg:hover:bg-dark-green/70 lg:hover:cursor-pointer lg:focus:bg-black/25 bg-black/60";
     const servicesBgs = [
@@ -43,7 +43,7 @@ export const Services = () => {
 
     if (wWidth > 768) {
         return (
-            <ul className={"z-10 h-72 flex justify-center gap-10 w-full hero-clip bg-white overflow-clip"}>
+            <ul className={"z-10 h-72 flex justify-center gap-2 w-full hero-clip bg-white overflow-clip"}>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
                     <Link className={linkStyle} href={"/services#medicinal-cannabis"}>{servicesTitles[0]}</Link>
                     <section
