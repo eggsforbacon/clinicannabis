@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Image from "next/image";
 import {BlogCard} from "./BlogCard";
 import {AttributesBlogPost, BlogPost, CoverAttributesBlogPost} from "../../../interfaces/interfaces";
@@ -23,7 +23,7 @@ export const Posts = (props: IProps) => {
                             <Image src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${thumbnail.data.attributes.url}`}
                                    alt={""}
                                    width={thumbnail.data.attributes.width} height={thumbnail.data.attributes.height}
-                                   className={"top-0 left-0"}/>
+                                   className={"top-0 left-0 z-0 transition duration-700 ease-in-out hover:scale-[1.1]"}/>
                         </BlogCard>
                     );
                 })}

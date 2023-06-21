@@ -26,8 +26,8 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
     }, []);
 
     const { data } = useSWR(
-        mounted ? `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?populate=*` : null,
-        () => fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?populate=*`, {
+        mounted ? `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?sort=date%3Adesc&populate=*` : null,
+        () => fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?sort=date%3Adesc&populate=*`, {
             method: "GET",
             headers: {
                 Authorization: `Bearer ${token}`
@@ -73,7 +73,7 @@ export const getStaticProps: GetStaticProps<{ blogs: BlogPost[], token : string 
     if (typeof window !== 'undefined') {
         sessionStorage.setItem("spi_jwt", token);
     }
-    const {data: blogResponse} = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?populate=*`, {
+    const {data: blogResponse} = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?sort=date%3Adesc&populate=*`, {
         "method": "GET",
         "headers": {
             "Authorization": `Bearer ${token}`
