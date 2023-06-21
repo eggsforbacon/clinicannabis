@@ -2,7 +2,13 @@ import {NextApiRequest, NextApiResponse} from "next";
 import {mailOptions, transporter} from "../../config/nodemailer";
 
 const buildHTML = (name : string, email : string, message : string) : string => {
-    return "<h1>Test title</h1>";
+    return `<h1>Una nueva persona se quiere contactar con Clinicannabis</h1>
+            <p>Nuevo envío de formulario de contacto desde <a href='https://clinicannabis.com.co/contact'>Clinicannabis</a></p>
+            <p><strong>Nombre: </strong>${name}</p>
+            <p><strong>Correo: </strong>${email}</p>
+            <p><strong>Mensaje: </strong>${message}</p>
+            <br>
+            <p>Cualquier duda o inquietud: <a href="mailto:sistemas.marabunta@gmail.com">sistemas.marabunta@gmail.com</a></p>`;
 }
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
