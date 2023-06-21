@@ -25,6 +25,7 @@
     "react-markdown": "^8.0.7",
     "react-material-symbols": "^4.0.2",
     "sharp": "^0.32.0",
+    "sweetalert": "^2.1.2",
     "tailwindcss-animation": "^0.1.2",
     "tailwindcss-animation-delay": "^1.0.7"
   },

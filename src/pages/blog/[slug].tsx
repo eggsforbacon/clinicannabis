@@ -15,7 +15,6 @@ import remarkGfm from 'remark-gfm';
 import rehypeRaw from "rehype-raw";
 import {IncomingMessage} from "http";
 import {getTokenFromLocalCookie, getTokenFromServerCookie, setToken} from "../../lib/auth";
-import {FloatingSignupForm} from "../../components/content/blog/FloatingSignupForm";
 
 interface IProps {
     post: BlogPost | null,
@@ -48,7 +47,6 @@ export function slug(props: IProps) {
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"none"}/>
-            <FloatingSignupForm />
             <article className={"relative w-ful flex flex-col items-center justify-start gap-2 lg:gap-6"}>
                 <header
                     className={"w-full relative md:h-168 xl:h-[44rem] md:px-16 lg:px-20 flex flex-col items-center justify-end pb-0 xl:pb-16 text-rich-black"}>
