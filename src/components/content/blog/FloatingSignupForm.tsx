@@ -23,7 +23,9 @@ export const FloatingSignupForm = () => {
         await setData({
             email: form.subEmail.value,
         });
-        await sendSubscribeForm(data);
+        sendSubscribeForm(data).then((res) => {
+            console.log(">>>", res);
+        });
     }
 
     return (
