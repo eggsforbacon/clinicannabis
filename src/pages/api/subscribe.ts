@@ -8,28 +8,28 @@ const html = (data: {email: string}) => `
     </main>`
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-    console.log(req.method, req.method === "POST");
     if (req.method === "POST") {
         const data = req.body;
-        if (!data.email)
+        if (data.email === undefined || data.email === null) {
             return res.status(400).json({"message": "Bad Request"});
+        }
         try {
 
-            await transporter.sendMail({
+            const sentMessageInfo = await transporter.sendMail({
                 ...mailOptions,
-                to: "estrategia@marabunta.co",
                 subject: "Nuevo suscriptor a newsletter de Clinicannabis",
                 text: `El correo ${data} se ha suscrito al newsletter de clinicannabis`,
                 html: html(data)
             });
-
+            console.log(">>>", sentMessageInfo.response, "<<<");
+            return res.status(200).json({messageInfo: sentMessageInfo});
         } catch (error: any) {
             console.log(error);
             return res.status(400).json({message: error.message});
         }
+    } else {
+        return res.status(405).json({"message": "Method not Allowed"});
     }
-
-    return res.status(405).json({"message": "Method not Allowed"});
 }
 
 export default handler;

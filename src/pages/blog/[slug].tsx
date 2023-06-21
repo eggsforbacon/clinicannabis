@@ -56,7 +56,7 @@ export function slug(props: IProps) {
                     <section
                         className={"flex relative flex-col items-center justify-start gap-2 bg-white rounded-t-2xl mt-64 md:mt-0 mx-2 md:mx-0 p-4 md:p-8"}>
                         <h1 className={"text-3xl md:text-5xl xl:text-6xl text-center relative font-black"}>{title}</h1>
-                        <h2 className={"text-xl md:text-2xl xl:text-3xl text-center relative"}>{subtitle}</h2>
+                        <h2 className={"text-xl md:text-2xl xl:text-3xl text-center relative font-semibold"}>{subtitle}</h2>
                         <h3 className={"text-lg md:text-xl xl:text-2xl text-center relative font-normal"}>{date}</h3>
                     </section>
                 </header>

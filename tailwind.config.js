@@ -199,6 +199,13 @@ module.exports = {
                     '80%': {transform: 'rotate(-2deg)'},
                     '90%': {transform: 'rotate(2deg)'},
                 },
+                'shake-horizontal': {
+                    '0%, 100%': {transform: 'translateX(0)'},
+                    '10%, 30%, 50%, 70%': {transform: 'translateX(-10px)'},
+                    '20%, 40%, 60%': {transform: 'translateX(10px)'},
+                    '80%': {transform: 'translateX(8px)'},
+                    '90%': {transform: 'translateX(-8px)'},
+                },
                 'heartbeat': {
                     '0%, 100%': {
                         transform: 'scale(1)',
@@ -231,6 +238,7 @@ module.exports = {
                 'float-up-sm': 'float-up-sm 8s ease-in-out infinite forwards',
                 'float-down-sm': 'float-down-sm 8s ease-in-out infinite forwards',
                 'shake-bottom': 'shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) forwards infinite',
+                'shake-horizontal' : 'shake-horizontal 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) 1',
                 'heartbeat': 'heartbeat 3s ease-in-out infinite forwards',
             }
         },

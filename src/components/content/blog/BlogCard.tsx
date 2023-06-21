@@ -12,7 +12,7 @@ export const BlogCard = (props : {
             {props.children}
             <section className={"z-10 left-0 bottom-10 w-full min-h-[9rem] px-4 lg:px-2 text-center text-midnight-green bg-white flex flex-col items-stretch justify-start py-4 gap-2"}>
                 <h3 className={"text-sm text-md"}>{props.date}</h3>
-                <h2 className={"text-xl lg:text-2xl xl:text-3xl font-bold "}>{props.title}</h2>
+                <h2 className={"text-xl lg:text-2xl xl:text-3xl font-semibold"}>{props.title}</h2>
                 {/*<h3 className={"text-lg lg:text-xl  xl:text-2xl font-normal"}>{props.subtitle}</h3>*/}
             </section>
         </Link>
