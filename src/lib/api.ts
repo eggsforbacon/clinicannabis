@@ -20,7 +20,7 @@ export const sendContactForm = async (data : {[key : string]: string}) => {
     });
 }
 
-export const sendSubscribeForm = async (data : {email: string, gToken: string }) => {
+export const sendSubscribeForm = async (data : {email: string}) => {
     return fetch('/api/subscribe', {
         method : "POST",
         body : JSON.stringify(data),

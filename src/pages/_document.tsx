@@ -1,6 +1,5 @@
 import {Html, Head, Main, NextScript} from "next/document";
 import React from "react";
-import {WhatsappButton} from "../components/WhatsappButton";
 
 export default function Document() {
     return (
@@ -8,19 +7,19 @@ export default function Document() {
             <Head>
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
                 <link rel="icon" href="/favicon.png"/>
-            </Head>
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J2GHYJD7T"></script>
-            <script type="text/javascript"
-                    async
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments)}
-                        gtag('js', new Date());
+                {/*<script async src="https://www.googletagmanager.com/gtag/js?id=G-3J2GHYJD7T"></script>*/}
+                {/*<script type="text/javascript"*/}
+                {/*        async*/}
+                {/*        dangerouslySetInnerHTML={{*/}
+                {/*            __html: `*/}
+                {/*            window.dataLayer = window.dataLayer || [];*/}
+                {/*            function gtag(){dataLayer.push(arguments)}*/}
+                {/*            gtag('js', new Date());*/}
 
-                        gtag('config', 'G-3J2GHYJD7T');
-                        `
-                    }}/>
+                {/*            gtag('config', 'G-3J2GHYJD7T');*/}
+                {/*            `*/}
+                {/*        }}/>*/}
+            </Head>
             <body>
             <noscript>
                 <iframe
@@ -30,7 +29,6 @@ export default function Document() {
                     style={{ display: "none", visibility: "hidden" }}
                 ></iframe>
             </noscript>
-            <WhatsappButton/>
             <Main/>
             <NextScript/>
             </body>

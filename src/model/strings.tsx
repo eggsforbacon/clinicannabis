@@ -568,6 +568,14 @@ export const strings: IKeyedObject = {
         "copy": <>{"Entérate de la actualidad médica, de bienestar y tratamientos basados en la medicina cannábica y funcional, entre otros temas de interés."}</>,
         "teaser": <>{"¡Lo sentimos! Trabajamos para poder brindarte información de bienestar actual. Por el momento, mira todo lo que tenemos para ofrecerte"}</>,
         "cta": <>{"Nuestra Clínica"}</>,
+        "form": {
+            "title": <>{"¡Suscríbete a nuestro Newsletter!"}</>,
+            "cta": <>{"Nuestro newsletter"}</>,
+            "fields": {
+                "mail": <>{"Tu correo"}</>,
+                "submit": "Suscribirme" ,
+            },
+        },
     },
     'contact': {
         "headline": <>{"¡Contáctanos!"}</>,
@@ -580,6 +588,7 @@ export const strings: IKeyedObject = {
         "cta": <>{"Enviar"}</>,
     },
     'legal': {
+        'disclaimer': <>{"Acepto que he leído los términos y condiciones detratamiento de datos personales, y que al enviar este formulario acepto sus contenidos."}</>,
         'title': <>{"Política de Tratamiento de Datos Personales"}</>,
         'update': <>{"Actualizado por última vez el 25/04/2023"}</>,
         'version': <>{"Versión 1.0"}</>,
