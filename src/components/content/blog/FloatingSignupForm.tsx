@@ -27,7 +27,7 @@ export const FloatingSignupForm = () => {
     }
 
     return (
-        <div className={`${formHidden ? "pointer-events-none" : "pointer-events-auto"} w-full z-10 h-full absolute top-0 left-0`}>
+        <div className={`${formHidden ? "pointer-events-none" : "pointer-events-auto"} w-full z-20 h-full absolute top-0 left-0`}>
             <span onClick={handleShowForm} className={`${formHidden ? "pointer-events-none" : "pointer-events-auto"} hover:cursor-default select-none fixed z-0 top-0 left-0 w-full h-full`} />
             <aside
                 className={"z-50 fixed right-2 bottom-4 left-2 lg:right-8 lg:bottom-8 w-[95%] flex flex-col-reverse items-end justify-end gap-4"}>
