@@ -23,7 +23,6 @@ module.exports = {
                 '224': '56rem',
                 '256': '64rem',
                 '288': '72rem',
-
                 '320': '80rem',
                 '384': '96rem',
                 '424': '106rem',
@@ -141,8 +140,8 @@ module.exports = {
                     '100%': {opacity: '1', transform: 'translateY(0)'}
                 },
                 'fade-in-bottom': {
-                    '0%': {opacity: '0', transform: 'translateY(100px)'},
-                    '100%': {opacity: '1', transform: 'translateY(0)'}
+                    '0%': {opacity: '0', transform: 'translateY(100px) scale(--tw-scale-x, --tw-scale-y)'},
+                    '100%': {opacity: '--tw-opacity', transform: 'translateY(0) scale(--tw-scale-x, --tw-scale-y)'}
                 },
                 'fade-in-right': {
                     '0%': {opacity: '0', transform: 'translateX(100px)'},
