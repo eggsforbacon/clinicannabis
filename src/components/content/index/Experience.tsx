@@ -2,18 +2,15 @@ import {strings} from "../../../model/strings";
 import React from "react";
 import {useRouter} from "next/router";
 import Image from "next/image";
-import {useWindowDimensions} from "../../../hooks/useWindowDimensions";
 
 export const Experience = () => {
 
     const buttonStyle: string = "text-viridian-green lg:text-white border-solid border-2 border-viridian-green lg:border-white rounded-full px-16 py-2 text-xl shadow-md transition duration-300 quartic-out lg:hover:shadow-white/20 lg:hover:bg-viridian-green lg:hover:text-white";
     const navigate = useRouter();
 
-    const {width: wWidth, height: wHeight} = useWindowDimensions();
-
     return (
-        <article className={"w-full overflow-x-clip lg:h-[42rem] lg:px-44 relative article-3"}>
-            <Image src={"/images/landing/Centro-de-experienciaV2.png"} quality={100} loading={"lazy"} alt={""} width={1920} height={820} className={"z-0 absolute top-32 lg:-top-16 !scale-[5] max-sm:hidden lg:!scale-125 left-[42rem] lg:left-0 "} />
+        <article className={"w-full overflow-x-clip lg:h-[42rem] lg:px-44 relative z-0"}>
+            <Image src={"/images/landing/Centro-de-experienciaV2.png"} quality={100} loading={"lazy"} alt={""} width={1920} height={820} className={"z-0 absolute top-32 lg:-top-16 hidden lg:block lg:scale-125 left-[42rem] lg:left-0 "} />
 
             <section className={"relative z-10 px-8 md:pl-32 xl:px-0 w-full h-128 lg:h-[38rem] flex items-start lg:items-center justify-between"}>
                 <section className={"lg:w-1/2 relative z-10 flex flex-col items-stretch justify-end gap-8"}>

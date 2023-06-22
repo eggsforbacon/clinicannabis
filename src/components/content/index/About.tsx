@@ -1,21 +1,15 @@
 import Image from "next/image";
 import {strings} from "../../../model/strings";
-import React, {useContext, useEffect, useRef, useState} from "react";
+import React, { useEffect, useRef, useState} from "react";
 import {useRouter} from "next/router";
-import {useWindowDimensions} from "../../../hooks/useWindowDimensions";
-import NavbarContext from "../../../context/Navbar/NavbarContext";
 
 export const About = () => {
 
-    const hereRef = useRef(null);
     const triggerRef = useRef(null);
     const [animation, setAnimation] = useState("opacity-0 translate-y-[100px]");
-    const {setLogoShown, logoShown} = useContext(NavbarContext);
 
     useEffect(() => {
         const trigger = triggerRef.current as unknown as HTMLSpanElement;
-        const here = hereRef.current as unknown as HTMLSpanElement;
-
         function callback(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
             const entry = entries[0];
             if (entry.isIntersecting) {
@@ -34,12 +28,11 @@ export const About = () => {
 
     }, []);
 
-    const {width: wWidth, height: wHeight} = useWindowDimensions();
     const buttonStyle: string = "hidden lg:block rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-6 py-1 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
     const navigate = useRouter();
     return (
         <article 
-                className={"relative md:px-16 bg-white xl:px-44 pt-10 lg:pt-32 h-144 md:h-208 lg:min-h-[56rem] xl:min-h-[64rem] lg:h-auto w-full flex items-start justify-center lg:-mb-[15rem]"}>
+                className={"relative md:px-16 bg-white xl:px-44 pt-10 lg:pt-32 h-136 md:h-208 lg:min-h-[56rem] xl:min-h-[64rem] lg:h-auto w-full flex items-start justify-center lg:-mb-[15rem]"}>
             <Image src={"/images/landing/whoAreWeBg.png"}
                    className={`hidden lg:block md:opacity-90 lg:opacity-100 md:scale-[1.6] lg:scale-[1.5] xl:scale-[1.3] absolute pointer-events-none -top-10 lg:-top-4 left-4 lg:left-20 xl:left-10 select-none ${animation}`}
                    alt={""}
@@ -48,7 +41,7 @@ export const About = () => {
                    className={`lg:hidden block z-0 pointer-events-none absolute select-none left-0 top-0 opacity-60 ${animation}`}
                    alt={""}
                    height={1000} width={1000}/>
-            <section className={"z-10 px-12 lg:h-auto lg:px-0 w-full flex items-center justify-center lg:justify-between mb-20"}>
+            <section className={"z-10 px-12 lg:h-auto lg:px-0 w-full flex items-center justify-center lg:justify-between mb-20 md:pb-0 lg:mb-20"}>
                 <article className={"w-104 lg:w-136 flex flex-col items-center lg:items-start justify-start pt-16 gap-8 lg:gap-16"}>
                     <h2 className={`tracking-tight max-w-[28rem] lg:max-w-[22rem] leading-[0.8] md:leading-[0.7] lg:leading-[0.6] text-caribbean-green text-6xl md:text-8xl lg:text-9xl font-black ${animation} animation-duration-1000`}>{strings.landing.about.headline}<strong
                         className={"text-viridian-green relative "}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{strings.landing.about.headlineRemark}</strong>
