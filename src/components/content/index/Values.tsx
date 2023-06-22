@@ -31,26 +31,26 @@ export const Values = () => {
     return (
         <>
             <article
-                className={"bg-rich-black md:bg-transparent relative lg:px-16 xl:px-20 2xl:px-40 pt-16 md:pt-0 lg:pt-16 pb-20 lg:pb-56 xl:pb-40 mb-44 md:mb-0 md:min-h-[40rem] lg:min-h-[54rem] xl:min-h-[60rem] 2xl:min-h-[66rem] flex items-start justify-center lg:items-center md:justify-end"}>
+                className={"z-20 bg-rich-black md:bg-transparent relative lg:px-16 xl:px-20 2xl:px-40 pt-16 md:pt-0 lg:pt-16 pb-20 lg:pb-56 xl:pb-40 mb-44 md:mb-0 md:min-h-[40rem] lg:min-h-[54rem] xl:min-h-[60rem] 2xl:min-h-[66rem] flex items-start justify-center lg:items-center md:justify-end"}>
                 <Image quality={80} loading={"lazy"} src={humanizing}
                        className={`hidden md:block min-w-[360px] scale-[1.9] md:scale-[1.75] lg:scale-[1.3] xl:scale-[1.3] 2xl:scale-[1.1] pointer-events-none selection:bg-transparent absolute z-20 -left-64 md:-left-44 -top-8 md:-top-36 lg:top-10 xl:-top-2 2xl:top-4 lg:-left-10 ${animation} animation-duration-500`}
                        alt={""}/>
                 {/* !!! COMPOUND SHAPE STARTS HERE -- DO NOT TOUCH UNLESS EXPLICITLY ALLOWED TO DO SO !!! */}
                 {/* !!! INICIO DE FORMA COMPUESTA -- NO TOCAR SIN AUTORIZACIÓN EXPLICITA !!! */}
-                <span className={"md:hidden select-none absolute bg-rich-black aspect-square h-44 -bottom-28 left-0"}/>
+                <span className={"md:hidden select-none absolute bg-rich-black aspect-square h-44 -bottom-28 left-0 z-20"}/>
                 <Image src={"/images/services/questionableAsset.svg"} alt={""} height={440} width={440}
-                       className={"md:hidden select-none absolute -bottom-[26rem] -left-10 -scale-[2.8] -rotate-45"}/>
+                       className={"md:hidden select-none absolute -bottom-[26rem] -left-10 -scale-[2.8] -rotate-45 z-20"}/>
                 <Image src={"/images/services/service1_left.png"} alt={""} height={2461} width={1255}
-                       className={"md:hidden select-none absolute -top-52 -left-52 -rotate-12"}/>
+                       className={"md:hidden select-none absolute -top-52 -left-52 -rotate-12 z-20"}/>
                 <Image src={"/images/services/questionableAsset.svg"} alt={""} height={440} width={440}
-                       className={"md:hidden select-none absolute -top-[26rem] left-[24rem] scale-[2.9] -rotate-[40deg]"}/>
-                <span className={"md:hidden select-none absolute bg-rich-black aspect-square h-48 -top-7 left-0"}/>
-                <span className={"md:hidden select-none absolute bg-rich-black aspect-square h-44 -top-16 right-0"}/>
+                       className={"md:hidden select-none absolute -top-[26rem] left-[24rem] scale-[2.9] -rotate-[40deg] z-20"}/>
+                <span className={"md:hidden select-none absolute bg-rich-black aspect-square h-48 -top-7 left-0 z-20"}/>
+                <span className={"md:hidden select-none absolute bg-rich-black aspect-square h-44 -top-16 right-0 z-20"}/>
                 {/* !!! FIN DE FORMA COMPUESTA !!! */}
                 {/* !!! COMPOUND SHAPE END !!! */}
                 {/* Handcrafted hell yeah man, only took 2 hours or so */}
                 <span
-                    className={"hidden md:block bg-gradient-to-b from-white via-white w-full absolute bottom-4 left-0 h-28 z-10 xl:bottom-10"}/>
+                    className={"hidden lg:block bg-gradient-to-b from-white via-white/80 w-full absolute bottom-4 left-0 h-28 z-10 lg:bottom-16 2xl:-bottom-10"}/>
                 <span ref={triggerRef}
                       className={"absolute -top-6 w-full h-1 bg-transparent pointer-events-none select-none"}/>
                 <section
