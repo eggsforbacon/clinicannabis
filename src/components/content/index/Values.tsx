@@ -37,15 +37,15 @@ export const Values = () => {
                        alt={""}/>
                 {/* !!! COMPOUND SHAPE STARTS HERE -- DO NOT TOUCH UNLESS EXPLICITLY ALLOWED TO DO SO !!! */}
                 {/* !!! INICIO DE FORMA COMPUESTA -- NO TOCAR SIN AUTORIZACIÓN EXPLICITA !!! */}
-                <span className={"md:hidden select-none absolute bg-rich-black aspect-square h-44 -bottom-28 left-0 z-20"}/>
+                <span className={"md:hidden select-none absolute bg-rich-black h-44 w-64 -rotate-12 -bottom-28 -left-20 z-20"}/>
                 <Image src={"/images/services/questionableAsset.svg"} alt={""} height={440} width={440}
-                       className={"md:hidden select-none absolute -bottom-[26rem] -left-10 -scale-[2.8] -rotate-45 z-20"}/>
+                       className={"md:hidden select-none absolute -bottom-[26rem] -left-16 -scale-[2.8] -rotate-[46deg] z-20"}/>
                 <Image src={"/images/services/service1_left.png"} alt={""} height={2461} width={1255}
-                       className={"md:hidden select-none absolute -top-52 -left-52 -rotate-12 z-20"}/>
+                       className={"md:hidden select-none absolute -top-60 -left-52 -rotate-12 z-20"}/>
                 <Image src={"/images/services/questionableAsset.svg"} alt={""} height={440} width={440}
-                       className={"md:hidden select-none absolute -top-[26rem] left-[24rem] scale-[2.9] -rotate-[40deg] z-20"}/>
-                <span className={"md:hidden select-none absolute bg-rich-black aspect-square h-48 -top-7 left-0 z-20"}/>
-                <span className={"md:hidden select-none absolute bg-rich-black aspect-square h-44 -top-16 right-0 z-20"}/>
+                       className={"md:hidden select-none absolute -top-[26rem] left-[20rem] scale-[2.9] -rotate-[40deg] z-20"}/>
+                <span className={"md:hidden select-none absolute rotate-[40deg] bg-rich-black rounded-3xl h-48 w-36 -top-16 -left-20 z-20"}/>
+                <span className={"md:hidden select-none absolute bg-rich-black w-60 h-52 -top-24 -right-4 z-20"}/>
                 {/* !!! FIN DE FORMA COMPUESTA !!! */}
                 {/* !!! COMPOUND SHAPE END !!! */}
                 {/* Handcrafted hell yeah man, only took 2 hours or so */}

@@ -37,10 +37,10 @@ export const About = () => {
                    className={`hidden lg:block md:opacity-90 lg:opacity-100 md:scale-[1.6] lg:scale-[1.5] xl:scale-[1.3] absolute pointer-events-none -top-10 lg:-top-4 left-4 lg:left-20 xl:left-10 select-none ${animation}`}
                    alt={""}
                    height={1055*1.4} width={1920*1.4} quality={100} loading={"lazy"}/>
-            <Image src={"/images/svg/leafHumanizing.svg"}
-                   className={`lg:hidden block z-0 pointer-events-none absolute select-none left-0 top-0 opacity-60 ${animation}`}
-                   alt={""}
-                   height={1000} width={1000}/>
+            {/*<Image src={"/images/svg/leafHumanizing.svg"}*/}
+            {/*       className={`lg:hidden block z-0 pointer-events-none absolute select-none left-0 top-0 opacity-60 ${animation}`}*/}
+            {/*       alt={""}*/}
+            {/*       height={1000} width={1000}/>*/}
             <section className={"z-10 px-6 lg:h-auto lg:px-0 w-full flex items-center justify-center lg:justify-between mb-20 md:pb-0 lg:mb-20"}>
                 <article className={"w-104 lg:w-136 flex flex-col items-center lg:items-start justify-start pt-16 gap-8 lg:gap-16"}>
                     <h2 className={`tracking-tight max-w-[28rem] lg:max-w-[22rem] leading-[0.8] md:leading-[0.7] lg:leading-[0.6] text-caribbean-green text-6xl md:text-8xl lg:text-9xl font-black ${animation} animation-duration-1000`}>{strings.landing.about.headline}<strong
