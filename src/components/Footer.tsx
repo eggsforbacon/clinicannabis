@@ -99,7 +99,7 @@ const Footer = () => {
                                 </li>
                                 {/*<span className={"h-full w-[2px] bg-white mx-3.5"}/>*/}
                                 <li>
-                                    <Link href={"https://www.instagram.com/clinicanabis.col/"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"} target={"_blank"}>
+                                    <Link href={"https://www.instagram.com/clinicannabis.col/"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"} target={"_blank"}>
                                         <Instagram
                                             className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
                                         <p className={"text-sm font-normal"}>@clinicannabis.col</p>
