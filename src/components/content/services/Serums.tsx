@@ -20,7 +20,7 @@ export const Serums = () => {
                 </section>
                 <p className={"font-normal mt-8 md:w-144 lg:w-136 text-neutral-600 text-xl lg:text-2xl text-center lg:text-left"}>{strings.services.sections["3"].content}<span
                     className={"font-bold"}>{strings.services.sections["3"].remark}</span></p>
-                <Link href={"/services/serums"}
+                <Link href={"/404"}
                       className={buttonStyle}>
                     {strings.services.sections["3"].cta}
                 </Link>

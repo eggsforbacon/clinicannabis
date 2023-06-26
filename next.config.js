@@ -10,11 +10,11 @@ module.exports = {
         destination: '/404',
         permanent: true,
       },
-      /* {
+      {
         source: '/services/serums',
         destination: '/404',
         permanent: true,
-      }, */
+      },
     ]
   },
   images: {
