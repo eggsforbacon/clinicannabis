@@ -163,7 +163,7 @@ export const Seminario = () => {
                             </div>
                         </section>
 
-                        <section className={"w-full mgLogos"}>
+                        <section className={"w-full mgLogos sm-mb-20"}>
                             <div>
                                 <h5 className={"uppercase text-center tracking-[0.2em] lg:text-base xl:text-lg"}>Organizan:</h5>
                                 <div className={"flex logLanding"}>
@@ -192,8 +192,8 @@ export const Seminario = () => {
                         </section>
                     </article>
                 </div>
-                {/*   form y contexr   */}
-                <div className={"content-form-TXT sm:mt-4"}>
+                {/*   contexr   */}
+                <div className={"content-form-TXT sm:mt-20"}>
                     <div className="infoSeminarioForm">
                         <article>
                             <p className={" text-xl text-P-seminario sm:mb-5 lg:mb-15"}><b>{strings.seminario.parrafo["1"].blackText}</b>{strings.seminario.parrafo["1"].normalText}</p>
@@ -206,130 +206,13 @@ export const Seminario = () => {
                 {/* <Timer /> */}
                 {/* Inicio Agenda */}
                 <div className="Agenda mb-20 mt-10">
-                    <div className={'mb-20'}>
-                        <Image src={"/images/LandingSeminario/Clinicannabis-Seminario-04.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            style={style.imgAgenda} className={'img-conf'} />
-                        <p className={"text-center text-2xl text-text-title"}>{strings.seminario.subtitle}</p>
-                        <p className={"text-center text-2xl text-text-title"}>{strings.seminario.infotitle}</p>
+                    <div className="inf-landng__pic-1 mb-20">
+                        <Image src={"/images/LandingSeminario/infografia.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                            className={'img-conf'} />
                     </div>
-                    <div className={"CronogramaSeminario InfoCronograma"}>
-                        <div className="StepCrono-1">
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg text-xl-6"}><b>{strings.seminario.sections["1"].time}</b></p>
-                                <p className={"text-left text-lg mb-6 text-xl-6"}>{strings.seminario.sections["1"].info}</p>
-                            </div>
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["2"].time}</b></p>
-                                <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["2"].info}</p>
-                            </div>
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["3"].time}</b></p>
-                                <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["3"].info} <br />
-                                    {strings.seminario.sections["3"].name} - {strings.seminario.sections["3"].contry}
-                                </p>
-                            </div>
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["4"].time}</b></p>
-                                <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["4"].info} <br />
-                                    {strings.seminario.sections["4"].name} - {strings.seminario.sections["4"].contry}
-                                </p>
-                            </div>
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["5"].time}</b></p>
-                                <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["5"].info}</p>
-                            </div>
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["5.1"].time}</b></p>
-                                <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["5.1"].info}</p>
-                            </div>
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["6"].time}</b></p>
-                                <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["6"].info} <br />
-                                    {strings.seminario.sections["6"].name} - {strings.seminario.sections["6"].contry}
-                                </p>
-                            </div>
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["7"].time}</b></p>
-                                <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["7"].info} <br />
-                                    {strings.seminario.sections["7"].name} - {strings.seminario.sections["7"].contry}
-                                </p>
-                            </div>
-
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["7.5"].time}</b></p>
-                                <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["7.5"].info}</p>
-                            </div>
-                        </div>
-
-                        <div className="StepCrono-2">
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["8"].time}</b></p>
-                                <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["8"].info}</p>
-                            </div>
-
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["9"].time}</b></p>
-                                <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["9"].info} <br />
-                                    {strings.seminario.sections["9"].name} - {strings.seminario.sections["9"].contry}
-                                </p>
-                            </div>
-
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["10"].time}</b></p>
-                                <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["10"].info} <br />
-                                    {strings.seminario.sections["10"].name} - {strings.seminario.sections["10"].contry}
-                                </p>
-                            </div>
-
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["11"].time}</b></p>
-                                <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["11"].info}</p>
-                            </div>
-
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["11.5"].time}</b></p>
-                                <p className={"text-left text-lg mb-6"}>{strings.seminario.sections["11.5"].info}</p>
-                            </div>
-
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["12"].time}</b></p>
-                                <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["12"].info} <br />
-                                    {strings.seminario.sections["12"].name} - {strings.seminario.sections["12"].contry}
-                                </p>
-                            </div>
-
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["13"].time}</b></p>
-                                <p className={"text-left text-lg mb-6 leading-5"}>
-                                    {strings.seminario.sections["13"].info} <br />
-                                    {strings.seminario.sections["13"].name} - {strings.seminario.sections["13"].contry}
-                                </p>
-                            </div>
-                            <div className="infoSeminario text-text-title">
-                                <p className={"text-left text-lg"}><b>{strings.seminario.sections["14"].time}</b></p>
-                                <p className={"text-left text-lg mb-6"}>
-                                    {strings.seminario.sections["14"].info} <br />
-                                    {strings.seminario.sections["14"].inf}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={"semColor"}>
-                        <div className={"flex justify-center relative py-5"}>
-                            <p className={"text-center text-2xl"}><strong>{strings.seminario.MoreInfo["1"].InfoNumber} </strong> </p>
-                            <p className={"text-center text-2xl ml-2"}>
-                                {strings.seminario.MoreInfo["1"].Nom1} -
-                                {strings.seminario.MoreInfo["1"].Nom2} -
-                                {strings.seminario.MoreInfo["1"].Nom3}
-                            </p>
-                        </div>
+                    <div className="inf-landng__pic-2 mb-20">
+                        <Image src={"/images/LandingSeminario/adpatacion web - infografia-03.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                            className={'img-conf'} />
                     </div>
                 </div>
                 {/* Inicio Conferecistas */}

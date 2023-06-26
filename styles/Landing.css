@@ -5,173 +5,28 @@
 /* =========================================== */
 /* -- Inicio Agenda De LandingPAge-- */
 @layer components {
-    .InfoCronograma {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: space-around;
-    }
-
-    .CronogramaSeminario {
+    .img-conf {
         width: 100%;
-        position: relative;
-        padding: 0 80px;
+        object-fit: cover;
+        display: block;
+        margin: auto;
     }
 
-    .semColor{
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-
-        background-image: url('/images/LandingSeminario/conferencii.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 26vh;
-        width: 100%;
-    }
-    .semColor p{
-        color: #f15c6d;
-        margin-top: 7.5vh;
-    }
     @media (min-width: 320px) {
-        .Agenda {
-            margin-top: 10%;
+        .inf-landng__pic-2 {
+            display: block;
         }
-
-        .CronogramaSeminario {
-            padding: 0 60px;
-        }
-
-        .InfoCronograma {
-            flex-direction: column;
-        }
-
-        .card-Crd {
-            width: 262px;
-            height: 29vh;
-            margin-top: 5vh;
-        }
-
-        .card-Crd .card__title {
-            font-size: 35px;
-            line-height: 39px;
-            margin-top: 12px;
-        }
-
-        .sm-mg-txt {
-            margin-top: 5vh;
-        }
-        .semColor{display: none;}
-    }
-
-    @media (min-width: 768px) {
-        .Agenda {
-            margin-top: 0%;
-        }
-
-        .InfoCronograma {
-            flex-direction: row;
-        }
-
-        .CronogramaSeminario {
-            padding: 0 40px;
-        }
-
-        .card-Crd {
-            width: 312px;
-            height: 39vh;
-            margin-right: 3vh;
-        }
-
-        .card-Crd .card__title {
-            font-size: 44px;
-            line-height: 47px;
-            margin-top: 24px;
+        .inf-landng__pic-1{
+            display: none;
         }
     }
 
     @media (min-width: 992px) {
-        .CronogramaSeminario {
-            padding: 0 80px;
+        .inf-landng__pic-2 {
+            display: none;
         }
-
-        .card-Crd .card__title {
-            font-size: 47px;
-            line-height: 52px;
-            margin-top: 15px;
-        }
-
-        .card-Crd {
-            width: 344px;
-            height: 28vh;
-            margin-right: 0;
-        }
-
-        .card-Crd .card__title {
-            font-size: 48px;
-            line-height: 55px;
-            margin-top: 16px;
-        }
-        .semColor{display: block;}
-        .semColor p{
-            margin-top: 8vh;
-        }
-    }
-
-    @media (min-width: 1200px) {
-        .StepCrono-1 {
-            width: 100%;
-            margin-left: 10vh;
-        }
-
-        .StepCrono-2 {
-            width: 100%;
-            margin-right: 10vh;
-            margin-left: 10vh;
-        }
-
-        .card-Crd .card__title {
-            font-size: 50px;
-            line-height: 55px;
-            margin-top: 5px;
-        }
-
-        .card-Crd {
-            width: 390px;
-            height: 30vh;
-        }
-        .semColor p{
-            margin-top: 7vh;
-        }
-    }
-
-    @media (min-width: 1400px) {
-        .StepCrono-1 {
-            width: 60%;
-            padding-right: 10vh;
-            margin-left: 10vh;
-        }
-
-        .StepCrono-2 {
-            width: 60%;
-            margin-right: 10vh;
-        }
-
-        .card-Crd {
-            width: 390px;
-            height: 24vh;
-        }
-        .semColor p{
-            margin-top: 9vh;
-        }
-    }
-
-    @media (min-width: 1800px) {
-        .card-Crd {
-            width: 390px;
-            height: 18vh;
-        }
-        .semColor p {
-            margin-top: 10vh;
+        .inf-landng__pic-1{
+            display: block;
         }
     }
 }
@@ -1251,239 +1106,239 @@
 
 /*  ========================================== */
 /* -- Btn Head -- */
-@layer components{
+@layer components {
     .Button-Banner {
         position: relative;
         z-index: 1;
         top: 29em;
         left: 25em;
     }
-    
+
     .Position-Btn {
         display: flex;
         width: 50%;
         justify-content: space-around;
         align-items: center;
     }
-    
+
     .bg-buttonHD {
         padding: 15px 40px;
         transition: all .5s;
         backdrop-filter: blur(10px);
     }
-    
+
     .bg-buttonHD:hover {
         background: #ffffff36;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     }
-    
+
     @media (min-width: 320px) {
         .bnn__img2 {
             display: block;
         }
-    
+
         .bnn__img1 {
             display: none;
         }
-    
+
         .Button-Banner {
             top: 21em;
             left: 4em;
         }
-    
+
         .bg-buttonHD {
             padding: 6px 20px;
         }
-    
+
         .border-Button {
             border: solid 4px #e5e7eb;
         }
-    
+
         .h-banner {
             height: 30rem;
         }
-    
+
         .bnn-img {
             margin-top: 10vh;
         }
-    
+
         .text-button {
             font-weight: 400;
             text-align: justify;
         }
-    
+
         .Position-Btn {
             width: 60%;
         }
     }
-    
+
     @media (min-width: 360px) {
         .Button-Banner {
             top: 23em;
             left: 5em;
         }
-    
+
         .h-banner {
             height: 33rem;
         }
     }
-    
+
     @media (min-width: 411px) {
         .Button-Banner {
             top: 26em;
             left: 5em;
         }
-    
+
         .bg-buttonHD {
             padding: 6px 20px;
         }
-    
+
         .border-Button {
             border: solid 4px #e5e7eb;
         }
-    
+
         .h-banner {
             height: 37rem;
         }
-    
+
         .bnn-img {
             margin-top: 10vh;
         }
     }
-    
+
     @media (min-width: 576px) {
         .Button-Banner {
             top: 35em;
             left: 7em;
         }
-    
+
         .bg-buttonHD {
             padding: 6px 20px;
         }
-    
+
         .border-Button {
             border: solid 4px #e5e7eb;
         }
-    
+
         .h-banner {
             height: 50rem;
         }
-    
+
         .bnn-img {
             margin-top: 10vh;
         }
     }
-    
+
     @media (min-width: 768px) {
         .Button-Banner {
             top: 19em;
             left: 10em;
         }
-    
+
         .bg-buttonHD {
             padding: 6px 20px;
         }
-    
+
         .border-Button {
             border: solid 4px #e5e7eb;
         }
-    
+
         .h-banner {
             height: 28.5rem;
         }
-    
+
         .bnn-img {
             margin-top: 10vh;
         }
-    
+
         .bnn__img1 {
             display: block;
         }
-    
+
         .bnn__img2 {
             display: none;
         }
     }
-    
+
     @media (min-width: 992px) {
         .Button-Banner {
             top: 24em;
             left: 13em;
         }
-    
+
         .text-button {
             font-size: 1.25rem;
             font-weight: 400;
         }
-    
+
         .bg-buttonHD {
             padding: 7px 25px;
         }
-    
+
         .h-banner {
             height: 36rem;
         }
-    
+
         .bnn-img {
             margin-top: 10vh;
         }
     }
-    
+
     @media (min-width: 1200px) {
         .Button-Banner {
             top: 29em;
             left: 16em;
         }
-    
+
         .bg-buttonHD {
             padding: 15px 40px;
         }
-    
+
         .bnn-img {
             margin-top: 13vh !important;
         }
-    
+
         .h-banner {
             height: 56rem;
         }
-    
+
         .h-banner {
             height: 47rem;
         }
     }
-    
+
     @media (min-width: 1400px) {
         .Button-Banner {
             top: 33em;
             left: 22em;
         }
-    
+
         .Position-Btn {
             width: 50%;
         }
-    
+
         .h-banner {
             height: 57rem;
         }
     }
-    
+
     @media (min-width: 1600px) {
         .Button-Banner {
             top: 39em;
             left: 27em;
         }
-    
+
         .Position-Btn {
             width: 50%;
         }
     }
-    
+
     @media (min-width: 1800px) {
         .Button-Banner {
             top: 44em;
             left: 28em;
         }
-    
+
         .h-banner {
             height: 66rem;
         }
