@@ -5,12 +5,20 @@
 /* =========================================== */
 /* -- Inicio Agenda De LandingPAge-- */
 @layer components {
-    .img-conf {
+    .info-img {
         max-width: 100%;
-        width: 100%;
+        width: 80%;
         object-fit: cover;
         display: block;
         margin: auto;
+    }
+    .info-img-1{
+        padding: 0 20px;
+    }
+    .apoyo-img{
+        object-fit: cover;
+        width: 100%;
+        display: block;
     }
 
     @media (min-width: 320px) {

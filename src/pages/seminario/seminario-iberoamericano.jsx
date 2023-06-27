@@ -207,12 +207,12 @@ export const Seminario = () => {
                 {/* Inicio Agenda */}
                 <div className="Agenda mb-20 mt-10">
                     <div className="inf-landng__pic-1 mb-20">
-                        <Image src={"/images/LandingSeminario/infografia.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            className={'img-conf'} />
+                        <Image src={"/images/LandingSeminario/adpatacion web - infografia_Mesa de trabajo 1.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                            className={'info-img info-img-1'} />
                     </div>
                     <div className="inf-landng__pic-2 mb-20">
                         <Image src={"/images/LandingSeminario/adpatacion web - infografia-03.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            className={'img-conf'} />
+                            className={'info-img'} />
                     </div>
                 </div>
                 {/* Inicio Conferecistas */}
@@ -489,20 +489,21 @@ export const Seminario = () => {
                     </div >
                 </div >
                 {/* Inicio Google Maps */}
-                <div className="ubication" >
-                    <div className={''}>
-                        <Image src={"/images/LandingSeminario/Ubication.png "} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                <div className={"apoyo mt-20"}>
+                    <div className={'mb-5'}>
+                        <Image src={"/images/LandingSeminario/Apoyaron.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
                             style={style.imgAgenda} className={'img-conf'} />
                     </div>
-                    <div className="Google-map">
-                        <iframe className={"map"}
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.563306712596!2d-76.53850312611074!3d3.4557794511935027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f19d047757%3A0x14b8c3e63b55e08a!2sCali%20Marriott%20Hotel!5e0!3m2!1sen!2sco!4v1684265260790!5m2!1sen!2sco"
-                            width="1262" height="450"
-                            allowfullscreen=""
-                            loading="lazy">
-                        </iframe>
+
+                    <div className="inf-landng__pic-1">
+                        <Image src={"/images/LandingSeminario/Apoyo-Clinicannabis-Seminario.jpg"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                            className={'apoyo-img'} />
                     </div>
-                </div >
+                    <div className="inf-landng__pic-2">
+                        <Image src={"/images/LandingSeminario/infografia-apoya-05.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
+                            className={'apoyo-img'} />
+                    </div>
+                </div>
                 {/* Inicio footer */}
                 <div className={'w-100'} >
                     <Image src={"/images/LandingSeminario/Landing page-Clinicannabis-Seminario.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
