@@ -491,8 +491,8 @@ export const Seminario = () => {
                 {/* Inicio Google Maps */}
                 <div className={"apoyo mt-20"}>
                     <div className={'mb-5'}>
-                        <Image src={"/images/LandingSeminario/apoyaron.png"} loading={"lazy"} alt={"Seminario iberoamericano"} width={1920} height={520}
-                            style={style.imgAgenda} className={'img-conf'} />
+                        <Image src={"/images/LandingSeminario/apoyaron.png"} loading={"lazy"} 
+                            alt={"Seminario iberoamericano"} width={1920} height={520} style={style.imgAgenda} className={'img-conf'} />
                     </div>
 
                     <div className="inf-landng__pic-1">
