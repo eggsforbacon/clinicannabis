@@ -28,8 +28,15 @@
         .inf-landng__pic-1{
             display: none;
         }
+        .info-img{
+            width: 100%;
+        }
     }
-
+    @media (min-width: 768px){
+        .info-img{
+            width: 80%;
+        }
+    }
     @media (min-width: 992px) {
         .inf-landng__pic-2 {
             display: none;
@@ -179,9 +186,10 @@
 
     @media (min-width: 1200px) {
         .infoSeminarioForm {
-            width: 90%;
+            width: 91%;
             padding-left: 7%;
-            padding-right: 3%;
+            padding-right: 8%;
+            text-align: justify;
         }
     }
 
