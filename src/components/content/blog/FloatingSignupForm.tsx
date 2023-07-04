@@ -66,7 +66,7 @@ export const FloatingSignupForm = () => {
                     <p className={"max-md:hidden"}>{strings.blog.form.cta}</p>
                 </button>
                 <form onSubmit={handleSubmit}
-                    className={`${formHidden ? "translate-y-[600px] animate-fade-out-top-blog" : "translate-y-[600px] animate-fade-in-bottom-blog"} z-10 bottom-24 w-full lg:max-w-[36rem] py-8 px-10 absolute flex flex-col items-center justify-start gap-4 bg-white border-solid border-neutral-400 border-2 rounded-2xl`}>
+                    className={`${formHidden ? "translate-y-[600px] animate-fade-out-top-blog" : "translate-y-[600px] animate-fade-in-bottom-blog"} opacity-0 z-10 bottom-24 w-full lg:max-w-[36rem] py-8 px-10 absolute flex flex-col items-center justify-start gap-4 bg-white border-solid border-neutral-400 border-2 rounded-2xl`}>
                     <h2 className={"font-semibold text-3xl text-rich-black"}>{strings.blog.form.title}</h2>
                     <p>{strings.blog.copy}</p>
                     <Input required type={"email"} label={strings.blog.form.fields.mail} color={"GO-green"} name={"subEmail"}

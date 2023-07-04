@@ -153,7 +153,7 @@ const Navbar = (
                     className={"h-120 lg:h-full flex flex-col md:flex-row justify-center lg:justify-between items-center lg:gap-12"}
                     id={"navigation"}>
                     <ul
-                        className={`${mobileExpanded && show ? "max-lg:animate-swing-in-top-fwd" : "max-lg:animate-swing-out-top-bck"} lg:!debug bg-white lg:bg-transparent max-lg:z-10 absolute max-lg:top-0 w-full lg:w-auto border-b-solid border-b-2 border-b-neutral-300 lg:relative lg:border-none lg:border-transparent h-120 pt-36 lg:pt-0 lg:h-full flex flex-col lg:flex-row justify-center lg:justify-end items-center gap-10 py-8 lg:py-0`}>
+                        className={`${mobileExpanded && show ? "max-lg:animate-swing-in-top-fwd" : "max-lg:animate-swing-out-top-bck"} bg-white lg:bg-transparent max-lg:z-10 absolute max-lg:top-0 w-full lg:w-auto border-b-solid border-b-2 border-b-neutral-300 lg:relative lg:border-none lg:border-transparent h-120 pt-36 lg:pt-0 lg:h-full flex flex-col lg:flex-row justify-center lg:justify-end items-center gap-10 py-8 lg:py-0`}>
                         {linkTree()}
                     </ul>
                     {props.context !== "shop" &&

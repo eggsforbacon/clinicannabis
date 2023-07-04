@@ -11,7 +11,7 @@ import {Blog} from "../components/content/index/Blog";
 import NavbarContext from "../context/Navbar/NavbarContext";
 import {Invima} from "../components/content/index/Invima";
 import {Services} from "../components/content/index/Services";
-import {IberoamericanoBanner} from "../components/content/index/HeroSlides/IberoamericanoBanner";
+import {ClinicIntro} from "../components/content/index/HeroSlides/ClinicIntro";
 
 
 const Home: NextPage = () => {
@@ -50,8 +50,8 @@ const Home: NextPage = () => {
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={"home"}/>
-            {/*<ClinicIntro hasWindow={hasWindow}/>*/}
-            <IberoamericanoBanner /> {/* Temporal fix */}
+            <ClinicIntro hasWindow={hasWindow}/>
+            {/*<IberoamericanoBanner /> /!* Temporal fix *!/*/}
             <Services />
             <About/>
             <Values/>
