@@ -6,12 +6,12 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/experience/:path*',
+        source: '/experiencia/:path*',
         destination: '/404',
         permanent: true,
       },
       {
-        source: '/services/serums',
+        source: '/servicios/serums',
         destination: '/404',
         permanent: true,
       },

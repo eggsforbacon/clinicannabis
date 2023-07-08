@@ -59,7 +59,7 @@ export const ClinicIntro = (props: IProps) => {
                     </p>
                     <button onAnimationEnd={handleTextAnimEnd}
                             className={`hidden lg:block mt-6 rounded-full bg-viridian-green text-xl text-white px-10 py-2 shadow-lg shadow-viridian-green/15 transition duration-500 ease-in-out lg:hover:bg-white lg:hover:text-viridian-green focus:scale-110 focus:bg-white focus:text-viridian-green border-transparent border-2 border-solid lg:hover:border-viridian-green lg:hover:shadow-viridian-green/20 ${animateHero} lg:animation-duration-2400`}
-                            onClick={() => navigate.push("/contact")}>{strings.landing.hero.cta}</button>
+                            onClick={() => navigate.push("/contacto")}>{strings.landing.hero.cta}</button>
                 </article>
             </section>
             <section

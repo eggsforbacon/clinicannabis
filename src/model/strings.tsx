@@ -58,7 +58,7 @@ export const strings: IKeyedObject = {
             'mission': {
                 'headline': <>{"Nuestra "}</>,
                 'remark': <>{"Misión"}</>,
-                'content': <>{"Prestar services de salud preventiva, alivio del dolor y rehabilitación con el\n" +
+                'content': <>{"Prestar servicios de salud preventiva, alivio del dolor y rehabilitación con el\n" +
                     "uso de terapias autorizadas con cannabis medicinal, sueros terapéuticos y\n" +
                     "el Sistema Súper Inductivo de alta tecnología no invasiva que permitan\n" +
                     "mejorar las condiciones de salud de la población; con talento humano\n" +
@@ -69,7 +69,7 @@ export const strings: IKeyedObject = {
                 'headline': <>{"Nuestra "}</>,
                 'remark': <>{"Visión"}</>,
                 'content': <>{"Consolidarnos en el año 2025 como centro médico líder en la prestación de\n" +
-                    "services de salud en la modalidad presencial, domiciliaria y telemedicina\n" +
+                    "servicios de salud en la modalidad presencial, domiciliaria y telemedicina\n" +
                     "con cannabis medicinal y terapias alternativas, con un modelo de atención\n" +
                     "innovador e integral, identificando individualmente las necesidades de\n" +
                     "nuestros usuarios y sensibilizándonos con su recuperación."}</>,
@@ -112,6 +112,12 @@ export const strings: IKeyedObject = {
             'remark': <>{"experiencia"}</>,
             'content': <>{"¡Somos más que una clínica! Como centro de bienestar y salud, tenemos para ti una experiencia integral. En nuestras instalaciones cuentas con una boutique de productos con CBD y derivados cannábicos que promueven el cuidado personal. También tenemos a tu disposición el Salón Orígenes, diseñado como espacio de capacitación, y un Coffee Shop para disfrutar de alternativas saludables para tu salud."}</>,
             'cta': <>{"Conócelo"}</>,
+        },
+        'testimonials': {
+            'headline': <>{"Testimonios de"}</>,
+            'remark': <>{"pacientes"}</>,
+            'content': <>{""}</>,
+            'cta': <>{"Leelos"}</>,
         },
         'blog': {
             'slides': {

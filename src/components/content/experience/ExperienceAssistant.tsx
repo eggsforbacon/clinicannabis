@@ -32,9 +32,9 @@ export const ExperienceAssistant = () => {
     return (
         <section className={"w-full h-320 relative mt-32"}>
             <Image className={"absolute select-none bottom-[27rem] left-[52rem] scale-[190]"}
-                   src={"/images/experience/assistantBackLeaf.svg"} alt={"Placeholder"} width={16} height={6}/>
+                   src={"/images/experiencia/assistantBackLeaf.svg"} alt={"Placeholder"} width={16} height={6}/>
             <Image className={`absolute select-none top-1 ${bgAnimation}`}
-                   src={"/images/experience/assistantFront.png"} alt={"Placeholder"} width={1932} height={1210}/>
+                   src={"/images/experiencia/assistantFront.png"} alt={"Placeholder"} width={1932} height={1210}/>
             <article className={"w-256 h-2/3 relative flex flex-col items-start justify-between pt-20 pl-40"}>
                 <h2 className={`leading-[0.8] text-9xl text-caribbean-green font-black ${textAnimation} animation-duration-1200`}>{strings.experience.assistant.headline}<br/><strong
                     className={"text-viridian-green text-[6.5rem]"}>{strings.experience.assistant.remark}</strong></h2>

@@ -8,7 +8,7 @@ export const SIS = () => {
 
     return (
         <article className={"relative flex flex-col items-center justify-center lg:justify-start lg:items-stretch overflow-clip h-192 md:h-168 lg:h-[54rem] xl:h-224 z-0"} id={"sis"}>
-            <Image src={"/images/services/service2.png"}
+            <Image src={"/images/servicios/service2.png"}
                    className={"absolute scale-[3.5] md:scale-[1.5] xl:scale-[1.3] select-none bottom-[17rem] md:bottom-auto lg:bottom-28 xl:bottom-44 lg:right-24 xl:right-0"} alt={""}
                    width={1920}
                    height={1151} quality={100} loading={"lazy"}/>

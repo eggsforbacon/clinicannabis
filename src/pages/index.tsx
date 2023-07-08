@@ -12,6 +12,7 @@ import NavbarContext from "../context/Navbar/NavbarContext";
 import {Invima} from "../components/content/index/Invima";
 import {Services} from "../components/content/index/Services";
 import {ClinicIntro} from "../components/content/index/HeroSlides/ClinicIntro";
+import {Testimonials} from "../components/content/index/Testimonials";
 
 
 const Home: NextPage = () => {
@@ -56,6 +57,7 @@ const Home: NextPage = () => {
             <About/>
             <Values/>
             <Experience/>
+            <Testimonials />
             <Invima/>
             <Blog />
             <Footer/>

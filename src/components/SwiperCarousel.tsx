@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination } from "swiper";
+import {Autoplay, Navigation, Pagination} from "swiper";
 
 export const SwiperCarousel = (
     props : {
@@ -17,18 +17,21 @@ export const SwiperCarousel = (
         className? : string,
         auto? : boolean,
         pagination? : boolean,
+        navigation? : boolean,
+        loop? : boolean,
     }
 ) => {
 
     const modules = [];
     if (props.auto) modules.push(Autoplay);
     if (props.pagination) modules.push(Pagination);
+    if (props.navigation) modules.push(Navigation);
 
     return (
         <>
             <Swiper
                 slidesPerView={1}
-                loop={true}
+                loop={props.loop ?? true}
                 autoplay={{
                     delay : props.delay,
                     disableOnInteraction : false,
@@ -36,16 +39,23 @@ export const SwiperCarousel = (
                 }}
                 pagination={{
                     clickable: true,
+                    clickableClass: "swiper-pagination"
+                }}
+                navigation={{
+                    enabled: props.navigation ?? false,
+                    prevEl: "swiper-navigation-prev",
+                    nextEl: "swiper-navigation-next",
                 }}
                 modules={modules}
                 style={{
                     "--swiper-pagination-color" : "#009490",
+
                 } as CSSProperties}
                 className="mySwiper"
 
             >
                 {props.items.map((slide, index) =>
-                    <SwiperSlide key={`page${index}`} className={`w-full h-full ${props.className || ""}`}>
+                    <SwiperSlide key={`page${index}`} className={`w-screen h-full ${props.className ?? ""}`}>
                         {slide}
                     </SwiperSlide>
                     )}

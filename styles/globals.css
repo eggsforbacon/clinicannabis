@@ -52,7 +52,15 @@
     }
 
     .swiper-pagination {
-        @apply fill-viridian-green;
+        @apply fill-viridian-green w-screen relative z-30;
+    }
+
+    .swiper-navigation-prev {
+        @apply relative left-10 top-1/2 -translate-x-1/2;
+    }
+
+    .swiper-navigation-next {
+
     }
 
     .arrow-list li {

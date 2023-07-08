@@ -1,5 +1,6 @@
 import {ExclamationTriangleFill} from "react-bootstrap-icons";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Invima = () => {
     return (
@@ -21,10 +22,10 @@ export const Invima = () => {
                         <p className={"font-bold text-2xl lg:text-4xl lg:w-104"}>Conoce las alertas sanitarias del
                             INVIMA</p>
                     </section>
-                    <a href={"https://app.invima.gov.co/alertas/medicamentos-productos-biologicos"} target={"_blank"}
+                    <Link href={"https://app.invima.gov.co/alertas/medicamentos-productos-biologicos"} target={"_blank"}
                        rel={"noreferrer"}
                        className={"rounded-full px-6 lg:px-10 py-1.5 text-xl bg-transparent border-solid border-2 border-midnight-green transition duration-100 lg:hover:cursor-pointer lg:hover:bg-white/10 lg:hover:backdrop-blur-2xl focus:bg-white/10 focus:backdrop-blur-2xl lg:hover:scale-110"}>Más
-                        información</a>
+                        información</Link>
                 </section>
             </section>
         </article>

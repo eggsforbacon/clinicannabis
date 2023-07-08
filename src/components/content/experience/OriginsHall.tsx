@@ -1,5 +1,5 @@
 import Image from "next/image";
-import car0 from "../../../../public/images/experience/carousel/3.jpg";
+import car0 from "../../../../public/images/experiencia/carousel/3.jpg";
 
 export const OriginsHall = () => {
   return(

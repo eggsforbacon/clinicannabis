@@ -69,7 +69,7 @@ const Footer = () => {
                                 </ul>
                                 <ul className={"flex flex-col items-stretch justify-start gap-4 h-full lg:mr-10 w-full"}>
                                     <li><h3 className={"text-white text-xl"}>{strings.footer.fast.headline}</h3></li>
-                                    <li><Link href={"/contact"}
+                                    <li><Link href={"/contacto"}
                                               className={`${linkStyle} !text-white font-light text-xl`}>{strings.footer.fast.contact}</Link>
                                     </li>
                                     <li><Link href={"/legal"}

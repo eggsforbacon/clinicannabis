@@ -9,7 +9,7 @@ export const FunctionalMedicine = () => {
     return (
         <article className={"relative z-20 h-144 lg:h-288 flex flex-col items-center lg:items-start"} id={"functional-medicine"}>
             <Image className={`absolute lg:scale-[1.5] lg:left-48 xl:left-auto lg:bottom-44 xl:-bottom-14 xl:scale-100 select-none hidden lg:block w-full`}
-                   src={"/images/services/service4.png"} alt={"Medicina Funcional"} width={1920} height={1465}
+                   src={"/images/servicios/service4.png"} alt={"Medicina Funcional"} width={1920} height={1465}
                    quality={100}/>
             <section
                 className={"flex flex-col relative h-full xl:pt-16 lg:pl-56 items-center lg:items-start justify-start gap-6 lg:gap-20 mt-16 lg:mt-64"}>

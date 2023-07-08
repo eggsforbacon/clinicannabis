@@ -8,9 +8,9 @@ import {ContactForm} from "../components/content/contact/ContactForm";
 import {GoogleReCaptchaProvider} from "react-google-recaptcha-v3";
 import Image from "next/image";
 import Link from "next/link";
-import bgImage from "./../../public/images/contact/background.png";
+import bgImage from "../../public/images/contacto/background.png";
 
-const Contact: NextPage = () => {
+const Contacto: NextPage = () => {
 
     return (
         <GoogleReCaptchaProvider
@@ -58,4 +58,4 @@ const Contact: NextPage = () => {
     );
 }
 
-export default Contact;
+export default Contacto;

@@ -76,13 +76,13 @@ const Navbar = (
                 <li className={listItemStyle}>
                     <Link
                         className={`${linkStyle} ${props.selection === "services" ? linkUnderlineStyle : ""}`}
-                        href={"/services"}>{strings.navbar.services}</Link>
+                        href={"/servicios"}>{strings.navbar.services}</Link>
                     {/*<span className={deselectedStyle}/>*/}
                 </li>
                 {/*<li className={listItemStyle}>*/}
                 {/*    <Link*/}
-                {/*        className={`${linkStyle} ${props.selection === "experience" ? "font-bold text-caribbean-green" : ""}`}*/}
-                {/*        href={"/experience"}>{strings.navbar.experience}</Link>*/}
+                {/*        className={`${linkStyle} ${props.selection === "experiencia" ? "font-bold text-caribbean-green" : ""}`}*/}
+                {/*        href={"/experiencia"}>{strings.navbar.experiencia}</Link>*/}
                 {/*    {/*<span className={deselectedStyle}/>*/}
                 {/*</li>*/}
                 <li className={listItemStyle}>
@@ -94,7 +94,7 @@ const Navbar = (
                 <li className={listItemStyle}>
                     <Link
                         className={`${linkStyle} ${props.selection === "contact" ? linkUnderlineStyle : ""}`}
-                        href={"/contact"}>{strings.navbar.contact}</Link>
+                        href={"/contacto"}>{strings.navbar.contact}</Link>
                     {/*<span className={deselectedStyle}/>*/}
                 </li>
             </>
@@ -104,22 +104,22 @@ const Navbar = (
             <>
                 <li className={listItemStyle}>
                     <Link className={`${linkStyle} ${props.selection === "1" ? linkUnderlineStyle : ""}`}
-                          href={"/experience/pharmacy"}>{strings.experience.carousel["1"].headline}</Link>
+                          href={"/experiencia/pharmacy"}>{strings.experience.carousel["1"].headline}</Link>
                     {/*<span className={deselectedStyle}/>*/}
                 </li>
                 <li className={listItemStyle}>
                     <Link className={`${linkStyle} ${props.selection === "2" ? linkUnderlineStyle : ""}`}
-                          href={"/experience/coffee-shop"}>{strings.experience.carousel["2"].headline}</Link>
+                          href={"/experiencia/coffee-shop"}>{strings.experience.carousel["2"].headline}</Link>
                     {/*<span className={deselectedStyle}/>*/}
                 </li>
                 <li className={listItemStyle}>
                     <Link className={`${linkStyle} ${props.selection === "3" ? linkUnderlineStyle : ""}`}
-                          href={"/experience/boutique"}>{strings.experience.carousel["3"].headline}</Link>
+                          href={"/experiencia/boutique"}>{strings.experience.carousel["3"].headline}</Link>
                     {/*<span className={deselectedStyle}/>*/}
                 </li>
                 <li className={listItemStyle}>
                     <Link className={`${linkStyle} ${props.selection === "4" ? linkUnderlineStyle : ""}`}
-                          href={"/experience/origins"}>{strings.experience.carousel["4"].headline}</Link>
+                          href={"/experiencia/origins"}>{strings.experience.carousel["4"].headline}</Link>
                     {/*<span className={deselectedStyle}/>*/}
                 </li>
                 <li className={listItemStyle}>

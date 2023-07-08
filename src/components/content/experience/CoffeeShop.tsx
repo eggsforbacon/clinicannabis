@@ -1,5 +1,5 @@
 import Image from "next/image";
-import car0 from "../../../../public/images/experience/carousel/1.jpg";
+import car0 from "../../../../public/images/experiencia/carousel/1.jpg";
 
 export const CoffeeShop = () => {
     return (

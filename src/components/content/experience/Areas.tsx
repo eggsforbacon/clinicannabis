@@ -38,7 +38,7 @@ export const Areas = () => {
         return () => clearInterval(carouselInterval);
     }), [current]);
 
-    const links = ["/experience/pharmacy", "/experience/coffee-shop", "/experience/boutique", "/experience/origins-hall"];
+    const links = ["/experiencia/pharmacy", "/experiencia/coffee-shop", "/experiencia/boutique", "/experiencia/origins-hall"];
     const carouselItems = [<span/>, <span/>, <span/>, <span/>].map((_, i : number) => {
         const index = (i+1).toString();
         return <CarouselSlide src={`/images/experience/carousel/${i}.jpg`} alt={""}

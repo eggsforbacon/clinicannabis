@@ -1,5 +1,5 @@
 import Image from "next/image";
-import car0 from "../../../../public/images/experience/carousel/2.jpg";
+import car0 from "../../../../public/images/experiencia/carousel/2.jpg";
 
 export const Boutique = () => {
     return (

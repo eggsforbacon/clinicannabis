@@ -116,20 +116,20 @@ const Serums: NextPage = () => {
     ]
 
     const images = [
-        ["/images/services/serums/backgrounds/1.png", "/images/services/serums/foregrounds/1.png"],
-        ["/images/services/serums/backgrounds/2.png", "/images/services/serums/foregrounds/2.png", "/images/services/serums/foregrounds/2.1.png"],
-        ["/images/services/serums/backgrounds/3.png", "/images/services/serums/foregrounds/3.png"],
-        ["/images/services/serums/backgrounds/4.png", "/images/services/serums/backgrounds/4.1.png", "/images/services/serums/foregrounds/4.png"],
-        ["/images/services/serums/backgrounds/5.png", "/images/services/serums/backgrounds/5.1.png", "/images/services/serums/foregrounds/5.1.png", "/images/services/serums/foregrounds/5.png"],
-        ["/images/services/serums/backgrounds/6.png", "/images/services/serums/foregrounds/6.png", "/images/services/serums/foregrounds/6.1.png", "/images/services/serums/foregrounds/6.2.png", "/images/services/serums/foregrounds/6.3.png" ],
-        ["/images/services/serums/backgrounds/7.png", "/images/services/serums/backgrounds/7.1.png", "/images/services/serums/foregrounds/7.png"],
-        ["/images/services/serums/backgrounds/9.1.png",  "/images/services/serums/foregrounds/9.1.png"],
-        ["/images/services/serums/backgrounds/8.png", "/images/services/serums/backgrounds/8.1.png", "/images/services/serums/foregrounds/8.png"],
-        ["/images/services/serums/backgrounds/10.png", "/images/services/serums/backgrounds/10.1.png", "/images/services/serums/foregrounds/10.1.png", "/images/services/serums/foregrounds/10.png"],
-        ["/images/services/serums/backgrounds/11.png", "/images/services/serums/backgrounds/11.1.png", "/images/services/serums/foregrounds/11.png"],
-        ["/images/services/serums/backgrounds/12.png", "/images/services/serums/backgrounds/12.1.png", "/images/services/serums/foregrounds/12.png"],
-        ["/images/services/serums/backgrounds/13.png", "/images/services/serums/backgrounds/13.1.png", "/images/services/serums/foregrounds/13.png"],
-        ["/images/services/serums/backgrounds/14.png", "/images/services/serums/backgrounds/14.1.png", "/images/services/serums/foregrounds/14.png"],
+        ["/images/servicios/serums/backgrounds/1.png", "/images/servicios/serums/foregrounds/1.png"],
+        ["/images/servicios/serums/backgrounds/2.png", "/images/servicios/serums/foregrounds/2.png", "/images/servicios/serums/foregrounds/2.1.png"],
+        ["/images/servicios/serums/backgrounds/3.png", "/images/servicios/serums/foregrounds/3.png"],
+        ["/images/servicios/serums/backgrounds/4.png", "/images/servicios/serums/backgrounds/4.1.png", "/images/servicios/serums/foregrounds/4.png"],
+        ["/images/servicios/serums/backgrounds/5.png", "/images/servicios/serums/backgrounds/5.1.png", "/images/servicios/serums/foregrounds/5.1.png", "/images/servicios/serums/foregrounds/5.png"],
+        ["/images/servicios/serums/backgrounds/6.png", "/images/servicios/serums/foregrounds/6.png", "/images/servicios/serums/foregrounds/6.1.png", "/images/servicios/serums/foregrounds/6.2.png", "/images/servicios/serums/foregrounds/6.3.png" ],
+        ["/images/servicios/serums/backgrounds/7.png", "/images/servicios/serums/backgrounds/7.1.png", "/images/servicios/serums/foregrounds/7.png"],
+        ["/images/servicios/serums/backgrounds/9.1.png",  "/images/servicios/serums/foregrounds/9.1.png"],
+        ["/images/servicios/serums/backgrounds/8.png", "/images/servicios/serums/backgrounds/8.1.png", "/images/servicios/serums/foregrounds/8.png"],
+        ["/images/servicios/serums/backgrounds/10.png", "/images/servicios/serums/backgrounds/10.1.png", "/images/servicios/serums/foregrounds/10.1.png", "/images/servicios/serums/foregrounds/10.png"],
+        ["/images/servicios/serums/backgrounds/11.png", "/images/servicios/serums/backgrounds/11.1.png", "/images/servicios/serums/foregrounds/11.png"],
+        ["/images/servicios/serums/backgrounds/12.png", "/images/servicios/serums/backgrounds/12.1.png", "/images/servicios/serums/foregrounds/12.png"],
+        ["/images/servicios/serums/backgrounds/13.png", "/images/servicios/serums/backgrounds/13.1.png", "/images/servicios/serums/foregrounds/13.png"],
+        ["/images/servicios/serums/backgrounds/14.png", "/images/servicios/serums/backgrounds/14.1.png", "/images/servicios/serums/foregrounds/14.png"],
 
     ]
 
@@ -164,9 +164,9 @@ const Serums: NextPage = () => {
                 {/* <aside
                     className={`hidden lg:block transition duration-300 ease-in-out ${currentColors.asideColor} ${currentColors.titleColors} overflow-clip w-[40%] flex flex-col items-start justify-start gap-4 relative pl-14 pr-16 pt-14`}>
                     <h2 className={"text-5xl font-bold w-96"}>Sueros terapéuticos</h2>
-                    <p className={"font-normal text-lg"}>{strings.services.sections["3"].content}{strings.services.sections["3"].remark}</p>
+                    <p className={"font-normal text-lg"}>{strings.servicios.sections["3"].content}{strings.servicios.sections["3"].remark}</p>
                     <section className={"overflow-clip absolute bottom-16 -left-20 w-168 aspect-video"}>
-                            <Image src={`/images/services/serums/asides/${currentColors.aside}`} className={"absolute scale-150 top-10 -left-10"} alt={""} width={1834} height={1223} />
+                            <Image src={`/images/servicios/serums/asides/${currentColors.aside}`} className={"absolute scale-150 top-10 -left-10"} alt={""} width={1834} height={1223} />
                     </section>
                 </aside> */}
             </section>

@@ -21,10 +21,10 @@ export const Services = () => {
     ];
 
     const serviceLinks = [
-        "/services#medicinal-cannabis",
-        "/services#functional-medicine",
-        "/services#serums",
-        "/services#sis",
+        "/servicios#medicinal-cannabis",
+        "/servicios#functional-medicine",
+        "/servicios#serums",
+        "/servicios#sis",
     ];
 
     const servicePositions: [string, string][] = [
@@ -47,30 +47,30 @@ export const Services = () => {
         return (
             <ul className={"z-10 h-72 flex justify-center gap-2 w-full hero-clip bg-white overflow-clip"}>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
-                    <Link className={linkStyle} href={"/services#medicinal-cannabis"}>{servicesTitles[0]}</Link>
+                    <Link className={linkStyle} href={"/servicios#medicinal-cannabis"}>{servicesTitles[0]}</Link>
                     <section
                         className={`${servicesBgs[0]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}>
                     </section>
                 </li>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
-                    <Link className={linkStyle} href={"/services#functional-medicine"}>{servicesTitles[1]}</Link>
+                    <Link className={linkStyle} href={"/servicios#functional-medicine"}>{servicesTitles[1]}</Link>
                     <section
                         className={`${servicesBgs[1]} bg-[600px_auto] bg-[center_top_-2rem] ${serviceImageStyle}`}>
                     </section>
                 </li>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
-                    <Link className={linkStyle} href={"/services#serums"}>{servicesTitles[2]}</Link>
+                    <Link className={linkStyle} href={"/servicios#serums"}>{servicesTitles[2]}</Link>
                     <section className={`${servicesBgs[2]}  ${serviceImageStyle}`}>
                     </section>
                 </li>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
-                    <Link className={linkStyle} href={"/services#sis"}>{servicesTitles[3]}</Link>
+                    <Link className={linkStyle} href={"/servicios#sis"}>{servicesTitles[3]}</Link>
                     <section
                         className={`${servicesBgs[3]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}>
                     </section>
                 </li>
                 {/*<li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>*/}
-                {/*    <Link className={linkStyle} href={"/experience"}>Centro de Experiencia</Link>*/}
+                {/*    <Link className={linkStyle} href={"/experiencia"}>Centro de Experiencia</Link>*/}
                 {/*    <section className={`bg-[url('/images/hero/5.png')] ${serviceImageStyle}`}>*/}
                 {/*    </section>*/}
                 {/*</li>*/}
