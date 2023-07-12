@@ -1,4 +1,4 @@
-export interface CartItem {
+export type CartItem = {
     id: string,
     name: string,
     desc: string,
@@ -8,13 +8,13 @@ export interface CartItem {
 
 }
 
-export interface CartState {
+export type CartState = {
     itemCount: number
     items: CartItem[],
     checked: boolean
 }
 
-interface CoverFormats {
+type CoverFields = {
     name: string,
     hash: string,
     ext: string,
@@ -26,7 +26,7 @@ interface CoverFormats {
     url: string
 }
 
-export interface CoverAttributesBlogPost {
+export type CoverAttributesPost = {
     data: {
         id: number,
         attributes: {
@@ -36,10 +36,10 @@ export interface CoverAttributesBlogPost {
             width: number,
             height: number,
             formats: {
-                thumbnail: CoverFormats,
-                small: CoverFormats,
-                medium: CoverFormats,
-                large: CoverFormats
+                thumbnail: CoverFields,
+                small: CoverFields,
+                medium: CoverFields,
+                large: CoverFields
             },
             hash: string,
             ext: string,
@@ -55,7 +55,19 @@ export interface CoverAttributesBlogPost {
     }
 }
 
-export interface AttributesBlogPost {
+export type AttributesTestimonialPost = {
+    firstName: string,
+    lastName: string,
+    description: string,
+    createdAt: string,
+    updatedAt: string,
+    publishedAt: string,
+    locale: string,
+    reel: string,
+    localizations: [Object],
+}
+
+export type AttributesBlogPost = {
     body: string,
     slug: string,
     createdAt: string,
@@ -71,18 +83,18 @@ export interface AttributesBlogPost {
     localizations: [Object]
 }
 
-export interface BlogPost {
+export type StrapiPost = {
     id: number,
     attributes: [Object]
 }
 
-export interface StrapiGetOneResponse {
-    data: BlogPost,
+export type StrapiGetOneResponse = {
+    data: StrapiPost,
     meta: {}
 }
 
 export type StrapiGetAllResponse = {
-    data: BlogPost[] | null,
+    data: StrapiPost[] | null,
     meta?: { pagination: { page: number, pageSize: number, pageCount: number, total: number } }
     error?: {
         status: number,

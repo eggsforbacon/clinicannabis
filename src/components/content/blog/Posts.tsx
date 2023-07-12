@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import {BlogCard} from "./BlogCard";
-import {AttributesBlogPost, BlogPost, CoverAttributesBlogPost} from "../../../interfaces/interfaces";
+import {AttributesBlogPost, StrapiPost, CoverAttributesPost} from "../../../interfaces/interfaces";
 
 interface IProps {
-    blogPosts: BlogPost[] | undefined
+    blogPosts: StrapiPost[] | undefined
 }
 
 export const Posts = (props: IProps) => {
@@ -17,7 +17,7 @@ export const Posts = (props: IProps) => {
                 className={"relative w-full pt-8 px-8 lg:px-16 xl:px-32 grid md:grid-cols-2 xl:grid-cols-3 place-items-center gap-10 h-full"}>
                 {props.blogPosts && props.blogPosts.map((post) => {
                     const attributes: AttributesBlogPost = post.attributes as unknown as AttributesBlogPost;
-                    const thumbnail: CoverAttributesBlogPost = (attributes.thumbnail as unknown as CoverAttributesBlogPost);
+                    const thumbnail: CoverAttributesPost = (attributes.thumbnail as unknown as CoverAttributesPost);
                     return (
                         <BlogCard key={attributes.slug} {...attributes} >
                             <Image src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${thumbnail.data.attributes.url}`}

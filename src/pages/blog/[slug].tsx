@@ -4,8 +4,8 @@ import Navbar from "../../components/Navbar";
 import {FetchOptions, fetchURI} from "../../lib/api";
 import {
     AttributesBlogPost,
-    BlogPost,
-    CoverAttributesBlogPost,
+    StrapiPost,
+    CoverAttributesPost,
     StrapiGetAllResponse,
 } from "../../interfaces/interfaces";
 import React, {useEffect} from "react";
@@ -17,7 +17,7 @@ import {IncomingMessage} from "http";
 import {getTokenFromLocalCookie, getTokenFromServerCookie, setToken} from "../../lib/auth";
 
 interface IProps {
-    post: BlogPost | null,
+    post: StrapiPost | null,
     error?: string,
     token?: string,
 }
@@ -38,7 +38,7 @@ export function slug(props: IProps) {
     }
     const attributes = postRaw.attributes as unknown as AttributesBlogPost;
     const {title, subtitle, body, date, description} = attributes;
-    const cover: CoverAttributesBlogPost = attributes.cover as unknown as CoverAttributesBlogPost;
+    const cover: CoverAttributesPost = attributes.cover as unknown as CoverAttributesPost;
     return (
         <main>
             <Head>
@@ -104,12 +104,12 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
     const {
         data: blogsData,
         error
-    } = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts/?populate=*`, jwt ? {
+    } = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts/?locale=es-CO&populate=*`, jwt ? {
         headers: {
             Authorization: `Bearer ${jwt}`,
         },
     } : {} as FetchOptions);
-
+    console.log(blogsData);
     if (blogsData === null) {
         return {
             props: {
