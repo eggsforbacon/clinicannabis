@@ -150,6 +150,10 @@ export const strings: IKeyedObject = {
             'cta': <>{"Descúbrelo"}</>
         },
     },
+    'testimonials': {
+      'title' : <>{"Testimonios"}</>,
+      'copy': <>{"En nuestra clínica te acompañamos en todo tu proceso médico, brindándote una atención cálida y humana. Conoce algunas experiencias de nuestros pacientes."}</>
+    },
     'seminario':{
         'parrafo': {
             1:{

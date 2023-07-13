@@ -10,6 +10,7 @@ import {fetchURI} from "../lib/api";
 import {setToken} from "../lib/auth";
 import useSWR from "swr";
 import {TestimonialCarousel} from "../components/content/testimonials/TestimonialCarousel";
+import {strings} from "../model/strings";
 
 
 function Testimonios ({testimonials, token} : InferGetStaticPropsType<typeof getStaticProps>) {
@@ -48,18 +49,16 @@ function Testimonios ({testimonials, token} : InferGetStaticPropsType<typeof get
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
             <Navbar selection={""}/>
-            <article className={"relative flex flex-col pt-32 lg:pt-52 items-center justify-start gap-16 lg:gap-6 xl:gap-0 overflow-x-clip"}>
+            <article className={"relative flex flex-col pt-32 lg:pt-52 items-center justify-start lg:gap-6 xl:gap-0 overflow-x-clip"}>
                 <Image src={"/images/testimonios/background.svg"} alt={""} height={1920} width={1920}
                        className={"absolute top-56 xl:top-28 left-0 select-none z-0 scale-[7] lg:scale-[1.7] xl:scale-[1.3]"}/>
                 <Image src={"/images/testimonios/leaf.svg"} alt={""} height={1920} width={1920}
                        className={"absolute bottom-0 left-0 select-none z-0"}/>
                 <div className={"relative flex flex-col items-stretch justify-start gap-6"}>
-                    <h2 className={"text-midnight-green font-black text-6xl lg:text-8xl text-center w-full"}>Testimonios</h2>
-                    <p className={"text-lg lg:text-2xl text-neutral-700 text-center box-border px-6 lg:px-0 lg:w-208"}>Conoce aquí las experiencias de salud
-                        de nuestros pacientes. Cada uno de ellos ha contado con la
-                        experiencia de nuestro equipo médico para brindar una mejor calidad de vida.</p>
+                    <h2 className={"text-midnight-green font-black text-6xl lg:text-8xl text-center w-full"}>{strings.testimonials.title}</h2>
+                    <p className={"text-lg lg:text-2xl text-neutral-700 text-center box-border px-6 lg:px-0 lg:w-208"}>{strings.testimonials.copy}</p>
                 </div>
-                <section className={"relative flex flex-col items-center justify-start gap-4 lg:gap-0 lg:justify-start w-screen h-256"}>
+                <section className={"relative flex flex-col items-center justify-start gap-4 lg:gap-0 lg:justify-start w-screen border-box pt-16 pb-40"}>
                     <TestimonialCarousel>
                         {data.data!.map((t, i) => {
                             const attributes = t.attributes as unknown as AttributesTestimonialPost;

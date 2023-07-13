@@ -17,7 +17,7 @@ export const TestimonialSlide = (props: {
     }, []);
     return (
         <article
-            className={"w-screen lg:w-320 box-border h-224 relative flex flex-col lg:flex-row items-center lg:px-36 justify-between gap-16 lg:gap-0 overflow-clip"}>
+            className={"w-screen lg:w-320 box-border h-224 relative flex flex-col lg:flex-row items-center lg:px-36 justify-between gap-6 lg:gap-0 overflow-clip"}>
             <section className={"flex flex-col items-center relative justify-center gap-8 w-128 px-16 lg:px-0"}>
                 <h2 className={"text-center lg:text-start text-4xl lg:text-6xl font-bold text-viridian-green"}>{props.firstName}
                     <span
@@ -26,7 +26,7 @@ export const TestimonialSlide = (props: {
             </section>
             {hasWindow && /*&& <Image priority src={"/video/ClinicannabisAnimation.gif"} alt={""} height={1080 * 1.8} width={1920 * 1.8} className={"scale-[1.5] lg:scale-[1.75] xl:scale-[1.25]"} /> */
                 <ReactPlayer controls url={props.reel} height={768} width={432}
-                             className={"relative border-4 rounded-lg border-green-sheen shadow-2xl"}/>
+                             className={"relative border-8 rounded-lg border-viridian-green shadow-2xl"}/>
             }
         </article>
     );
