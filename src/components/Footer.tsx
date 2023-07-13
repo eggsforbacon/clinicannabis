@@ -4,20 +4,16 @@ import Image from "next/image";
 import {
     Envelope,
     Facebook,
-    Geo,
     GeoAlt,
     Instagram,
-    Mailbox,
-    Phone, Twitter,
-    Voicemail,
+    Twitter,
     Whatsapp,
     Youtube
 } from "react-bootstrap-icons";
 
 const Footer = () => {
 
-    const linkFamilyStyle: string = "h-full flex flex-col items-stretch justify-start space-y-2";
-    const linkStyle: string = "text-white lg:text-white lg:font-normal transition ease-in-out duration-300 lg:hover:text-caribbean-green focus:text-caribbean-green";
+    const linkStyle: string = "text-white font-light text-base xl:text-lg lg:font-normal transition ease-in-out duration-300 lg:hover:text-caribbean-green focus:text-caribbean-green";
     const linkButtonStyle : string = "flex items-center justify-start border-solid border-2 border-green-sheen lg:border-none gap-6 rounded-lg h-16 py-2 px-4 lg:p-0 lg:h-auto";
 
     return (
@@ -32,13 +28,13 @@ const Footer = () => {
                        alt={""}
                        height={16 * 50} width={16 * 50} priority/>
                 <section className={"z-0 h-fit lg:h-144 w-full bg-rich-black text-white"}>
-                    <section className={"lg:px-10 xl:mx-96 h-full flex flex-col items-stretch justify-between"}>
+                    <section className={"lg:px-10 xl:px-32 2xl:px-80 h-full flex flex-col items-stretch justify-between"}>
                         <section className={"px-6 g:px-3 py-10 h-full flex flex-col lg:flex-row items-center justify-start gap-16"}>
-                            <section className={"flex w-full flex-col items-stretch justify-start gap-10"}>
+                            <section className={"flex w-full flex-col items-stretch justify-start gap-10 text-base lg:text-lg"}>
                                 <div className={"flex flex-col items-start justify-start gap-4"}>
-                                    <h2 className={"text-3xl w-72"}>{strings.footer.questions.headline}
+                                    <h2 className={"text-2xl xl:text-3xl w-72"}>{strings.footer.questions.headline}
                                         <strong> {strings.footer.questions.remark}</strong></h2>
-                                    <p className={"text-lg lg:text-xl font-light"}>{strings.footer.questions.invitation}</p>
+                                    <p className={"text-lg lg:text-lg font-light"}>{strings.footer.questions.invitation}</p>
                                 </div>
                                 <Link href={"https://wa.me/+573174834360"} className={linkButtonStyle}>
                                     <Whatsapp className={"lg:fill-white fill-green/sheen h-full"} size={22}/>
@@ -55,25 +51,25 @@ const Footer = () => {
                             </section>
                             <section className={"h-full w-full flex flex-col lg:flex-row items-center justify-start gap-10 lg:gap-0"}>
                                 <ul className={"flex flex-col items-stretch justify-start gap-4 h-full lg:mr-10 w-full"}>
-                                    <li><h3 className={"text-white text-xl"}>{strings.footer.clinic.headline}</h3></li>
+                                    <li><h3 className={"text-white text-base lg:text-xl"}>{strings.footer.clinic.headline}</h3></li>
                                     <li><Link href={"/"}
-                                              className={`${linkStyle} !text-white font-light text-xl`}>{strings.footer.clinic.home}</Link>
+                                              className={linkStyle}>{strings.footer.clinic.home}</Link>
                                     </li>
                                     {/*<li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.history}</Link>*/}
                                     {/*</li>*/}
                                     <li><Link href={"/"}
-                                              className={`${linkStyle} !text-white font-light text-xl`}>{strings.footer.clinic.experience}</Link>
+                                              className={linkStyle}>{strings.footer.clinic.experience}</Link>
                                     </li>
                                     {/*<li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.stories}</Link>*/}
                                     {/*</li>*/}
                                 </ul>
                                 <ul className={"flex flex-col items-stretch justify-start gap-4 h-full lg:mr-10 w-full"}>
-                                    <li><h3 className={"text-white text-xl"}>{strings.footer.fast.headline}</h3></li>
+                                    <li><h3 className={"text-white text-base lg:text-xl"}>{strings.footer.fast.headline}</h3></li>
                                     <li><Link href={"/contacto"}
-                                              className={`${linkStyle} !text-white font-light text-xl`}>{strings.footer.fast.contact}</Link>
+                                              className={linkStyle}>{strings.footer.fast.contact}</Link>
                                     </li>
                                     <li><Link href={"/legal"}
-                                              className={`${linkStyle} !text-white font-light text-xl`}>{strings.footer.fast.data}</Link>
+                                              className={linkStyle}>{strings.footer.fast.data}</Link>
                                     </li>
                                     {/*<li><Link href={"/info"} className={`${linkStyle} text-2xl`}>{strings.footer.fast.FAQ}</Link>*/}
                                     {/*</li>*/}
