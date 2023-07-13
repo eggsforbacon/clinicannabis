@@ -116,7 +116,7 @@ export const strings: IKeyedObject = {
         'testimonials': {
             'headline': <>{"Testimonios de"}</>,
             'remark': <>{"pacientes"}</>,
-            'content': <>{""}</>,
+            'content': <>{"Conoce aquí las experiencias de salud de nuestros pacientes. Cada uno de ellos ha contado con la experiencia de nuestro equipo médico para brindar una mejor calidad de vida."}</>,
             'cta': <>{"Leelos"}</>,
         },
         'blog': {
