@@ -65,6 +65,12 @@ export const strings: IKeyedObject = {
                     "sensibilizado y competente para lograr los resultados deseados brindando\n" +
                     "una atención segura, humanizada, responsable y de calidad."}</>,
             },
+            'painBanner': {
+                'title': <>{"Clínica del"}</>,
+                'remark': <>{"Dolor"}</>,
+                'copy': <>{"Contamos con una unidad médica supra especializada en el manejo del dolor, con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad."}</>,
+                'cta': <>{"Leer más"}</>,
+            },
             'vision': {
                 'headline': <>{"Nuestra "}</>,
                 'remark': <>{"Visión"}</>,
@@ -397,25 +403,65 @@ export const strings: IKeyedObject = {
                 'cta': <>{"Conócelo"}</>,
             },
             3: {
+                'headline': <>{"Clínica del "}</>,
+                'remark': <>{"Dolor"}</>,
+                'copy' : {
+                    1 : <>{"Contamos con una unidad médica supra especializada en el manejo del dolor, con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad."}</>,
+                    2: <>{"Nuestro objetivo es aliviar el sufrimiento y brindar acompañamiento a pacientes y familias que conviven con dolores moderados a severos como consecuencias de diferentes patologías, que han sido diagnosticados con enfermedades crónicas o que han tenido accidentes de tránsito."}</>,
+                },
+                'cta': <>{"Conócela"}</>,
+            },
+            4: {
                 'headline': <>{"Sueros terapéuticos"}</>,
                 'subtitle': <>{"Regeneración y depuración"}</>,
                 'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. "}</>,
                 'remark': <>{"¡Hay uno elaborado especialmente para ti!"}</>,
                 'cta': <>{"Encuéntralo"}</>,
             },
-            4: {
+            5: {
                 'headline': <>{"Medicina "}</>,
                 'remark': <>{"Funcional"}</>,
                 'subtitle': <>{"Atención integral"}</>,
                 'content': <>{"Evaluamos a cada uno de nuestros pacientes. Nos enfocamos en tus necesidades de salud y bienestar, e identificamos los factores que puedan alterar tu calidad de vida."}</>,
                 'cta': <>{"Conócela"}</>,
             },
-            5: {
+            6: {
                 'headline': <>{"Centro de Experiencia"}</>,
                 'remark': <>{"Más cerca de ti"}</>,
                 'content': <>{"En Clinicannabis encontrarás complementos ideales para tu tratamiento y mejoramiento de calidad vida. Te ofrecemos una experiencia de bienestar donde productos derivados del cannabis, experiencias holísticas y de crecimiento personal, promueven el cuidado complemento de tu salud."}</>,
                 'cta': <>{"Conócelo"}</>,
             }
+        },
+        'painClinic' : {
+            'intro': {
+                'headline': <>{"¿Qué es el "}</>,
+                'remark': <>{"dolor crónico?"}</>,
+                'copy': <>{"Es aquel dolor agudo acompañado de una sensación incapacitante y desagradable que supera los 3 meses de evolución en la vida del paciente. Este dolor puede manifestarse de distintas formas y, dependiendo de su intensidad, impedir la realización de actividades cotidianas."}</>
+            },
+            'types': {
+                'intro': <>{"Existen diferentes tipos de "}<span className={"italic font-black"}>{"dolor crónico"}</span>{" entre los que se encuentran"}</>,
+                'articular': <><span className={"italic font-black"}>{"Dolor articular"}</span>{" en hombro, cadera, articulaciones, rodilla y columna asociados a artrosis, fibromialgia, hernia discal, epicondilitis, túnel de carpo y ciática."}</>,
+                'neural': <><span className={"italic font-black"}>{"Dolor neuropático"}</span>{" lesiones de nervios, neuralgia, posherpética y migrañas."}</>,
+                'oncological': <><span className={"italic font-black"}>{"Dolor oncológico"}</span>{" derivado del proceso de la enfermedad, la quimioterapia o radioterapia."}</>,
+            },
+            'therapy': {
+                'title': <>{"En Clinicannabis ofrecemos terapias como"}</>,
+                'items' : [
+                    <>{"Bloqueo guiado con ultrasonido"}</>,
+                    <>{"Bloqueo con fluoroscopio a través de rayos X"}</>,
+                    <>{"Toxina botulínica"}</>,
+                    <>{"Proloterapia - Terapia de proliferación"}</>,
+                ],
+            },
+            'regenerative': {
+                'title': <>{"Medicina Regenerativa"}</>,
+                'items' : [
+                    <>{"Bioestimulación con Plasma Rico en Plaquetas - PRP"}</>,
+                    <>{"Ozonoterapia"}</>,
+                    <>{"Terapia con células madre"}</>,
+                    <>{"Radiofrecuencia"}</>,
+                ],
+            },
         },
         'serums': {
             'headline': <>{"Nuestros "}</>,
