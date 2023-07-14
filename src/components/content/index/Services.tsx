@@ -79,7 +79,7 @@ export const Services = () => {
     } else {
         return (
             <section className={"w-screen relative"}>
-                <SwiperCarousel items={serviceCards} delay={6000} pagination/>
+                <SwiperCarousel items={serviceCards} delay={6000} pagination navigation/>
             </section>
         )
     }

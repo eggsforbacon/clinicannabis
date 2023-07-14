@@ -116,7 +116,7 @@ export const strings: IKeyedObject = {
         'testimonials': {
             'headline': <>{"Testimonios de"}</>,
             'remark': <>{"pacientes"}</>,
-            'content': <>{""}</>,
+            'content': <>{"Conoce aquí las experiencias de salud de nuestros pacientes. Cada uno de ellos ha contado con la experiencia de nuestro equipo médico para brindar una mejor calidad de vida."}</>,
             'cta': <>{"Leelos"}</>,
         },
         'blog': {
@@ -149,6 +149,10 @@ export const strings: IKeyedObject = {
             'content': <>{"Tenemos para ti la actualidad en temas de salud, medicina funcional e innovación médica alternativa."}</>,
             'cta': <>{"Descúbrelo"}</>
         },
+    },
+    'testimonials': {
+      'title' : <>{"Testimonios"}</>,
+      'copy': <>{"En nuestra clínica te acompañamos en todo tu proceso médico, brindándote una atención cálida y humana. Conoce algunas experiencias de nuestros pacientes."}</>
     },
     'seminario':{
         'parrafo': {
