@@ -23,6 +23,7 @@ const Index : NextPage = () => {
             {/*<Hero />*/}
             <MedicalCannabis />
             <SIS />
+            {/*<PainClinic />*/}
             <Serums />
             <FunctionalMedicine />
             <Experience />

@@ -10,7 +10,7 @@ export const Services = () => {
     const linkStyle = "lg:text-transparent flex flex-col text-center gap-4 items-center justify-center relative z-10 w-full h-full lg:bg-transparent transition duration-300 lg:hover:text-white text-[1.75rem] leading-[1] text-white lg:focus:text-white lg:hover:bg-dark-green/70 lg:hover:cursor-pointer lg:focus:bg-black/25 bg-black/60";
 
     const servicesTitles = [
-        "Cannabis Medicinal", "Medicina Funcional", "Sueros Terapéuticos", <>{"Sistema"}<br/>{"Súper Inductivo"}</>
+        "Cannabis Medicinal", "Medicina Funcional", "Sueros Terapéuticos", <>{"Sistema"}<br/>{"Súper Inductivo"}</>, <>{"Clínica del"}<br/><span className={"text-caribbean-green md:text-inherit"}>{"Dolor"}</span></>,
     ];
 
     const servicesBgs = [
@@ -18,6 +18,7 @@ export const Services = () => {
         "bg-[url('/images/hero/2.webp')]",
         "bg-[url('/images/hero/3.webp')]",
         "bg-[url('/images/hero/4.webp')]",
+        "bg-[url('/images/hero/5.webp')]",
     ];
 
     const serviceLinks = [
@@ -25,6 +26,7 @@ export const Services = () => {
         "/servicios#functional-medicine",
         "/servicios#serums",
         "/servicios#sis",
+        "/servicios#pain",
     ];
 
     const servicePositions: [string, string][] = [
@@ -32,6 +34,7 @@ export const Services = () => {
         ["bg-[right_-24rem_top] bg-[length:1060px_auto]", "bg-[right_-18rem_top] bg-[length:1080px_auto]"],
         ["bg-[right_-20rem_top] bg-[length:960px_auto]", "bg-[right_-16rem_top] bg-[length:1020px_auto]"],
         ["bg-[right_-22rem_top] bg-[length:990px_auto]", "bg-[right_-18rem_top] bg-[length:1080px_auto]"],
+        ["bg-[left_-2rem_top] bg-[length:460px_auto]", "bg-[right_-18rem_top] bg-[length:1080px_auto]"],
     ];
 
     const serviceCards = servicesTitles.map(
@@ -47,33 +50,34 @@ export const Services = () => {
         return (
             <ul className={"z-10 h-72 flex justify-center gap-2 w-full hero-clip bg-white overflow-clip"}>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
-                    <Link className={linkStyle} href={"/servicios#medicinal-cannabis"}>{servicesTitles[0]}</Link>
+                    <Link className={linkStyle} href={serviceLinks[0]}>{servicesTitles[0]}</Link>
                     <section
                         className={`${servicesBgs[0]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}>
                     </section>
                 </li>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
-                    <Link className={linkStyle} href={"/servicios#functional-medicine"}>{servicesTitles[1]}</Link>
+                    <Link className={linkStyle} href={serviceLinks[1]}>{servicesTitles[1]}</Link>
                     <section
                         className={`${servicesBgs[1]} bg-[600px_auto] bg-[center_top_-2rem] ${serviceImageStyle}`}>
                     </section>
                 </li>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
-                    <Link className={linkStyle} href={"/servicios#serums"}>{servicesTitles[2]}</Link>
+                    <Link className={linkStyle} href={serviceLinks[2]}>{servicesTitles[2]}</Link>
                     <section className={`${servicesBgs[2]}  ${serviceImageStyle}`}>
                     </section>
                 </li>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
-                    <Link className={linkStyle} href={"/servicios#sis"}>{servicesTitles[3]}</Link>
+                    <Link className={linkStyle} href={serviceLinks[3]}>{servicesTitles[3]}</Link>
                     <section
                         className={`${servicesBgs[3]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}>
                     </section>
                 </li>
-                {/*<li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>*/}
-                {/*    <Link className={linkStyle} href={"/experiencia"}>Centro de Experiencia</Link>*/}
-                {/*    <section className={`bg-[url('/images/hero/5.png')] ${serviceImageStyle}`}>*/}
-                {/*    </section>*/}
-                {/*</li>*/}
+                <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
+                    <Link className={linkStyle} href={serviceLinks[4]}>{servicesTitles[4]}</Link>
+                    <section
+                        className={`${servicesBgs[4]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}>
+                    </section>
+                </li>
             </ul>
         );
     } else {
