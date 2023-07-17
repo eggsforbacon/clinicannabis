@@ -10,7 +10,7 @@ export const MedicalCannabis = () => {
     return (
         <article className={"relative z-10 w-full h-192 md:h-168 overflow-clip lg:h-[58rem] lg:block flex flex-col items-stretch lg:items-start justify-center"} id={"medicinal-cannabis"}>
             <Image src={"/images/servicios/imagen-clinic.png"}
-                className={"select-none absolute scale-[3.4] lg:scale-[1.5] xl:scale-[1.3] right-16 brightness-[0.4] md:brightness-50 bottom-64 md:right-0 md:bottom-32 lg:bottom-40 lg:-right-24 xl:bottom-32 xl:right-0 xl:left-44"} alt={""}
+                className={"select-none absolute scale-[3.4] blur-sm lg:scale-[1.5] xl:scale-[1.3] right-16 brightness-[0.4] md:brightness-50 bottom-64 md:right-0 md:bottom-32 lg:bottom-40 lg:-right-24 xl:bottom-32 xl:right-0 xl:left-44"} alt={""}
                 width={1920}
                 height={1001} quality={80} priority />
             <section

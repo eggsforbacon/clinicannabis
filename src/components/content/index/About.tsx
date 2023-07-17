@@ -1,7 +1,6 @@
 import Image from "next/image";
 import {strings} from "../../../model/strings";
 import React, { useEffect, useRef, useState} from "react";
-import {useRouter} from "next/router";
 
 export const About = () => {
 
@@ -28,11 +27,9 @@ export const About = () => {
 
     }, []);
 
-    const buttonStyle: string = "hidden lg:block rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-6 py-1 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
-    const navigate = useRouter();
     return (
         <article 
-                className={"relative md:px-16 bg-white xl:px-44 pt-10 lg:pt-32 h-168 md:h-208 lg:min-h-[56rem] xl:min-h-[64rem] lg:h-auto w-full flex items-start justify-center lg:-mb-[15rem]"}>
+                className={"relative md:px-16 bg-white xl:px-44 lg:pt-32 h-144 md:h-208 lg:min-h-[56rem] xl:min-h-[64rem] lg:h-auto w-full flex items-start justify-center lg:-mb-[15rem]"}>
             <Image src={"/images/landing/whoAreWeBg.png"}
                    className={`hidden lg:block md:opacity-90 lg:opacity-100 md:scale-[1.6] lg:scale-[1.5] xl:scale-[1.3] absolute pointer-events-none -top-10 lg:-top-4 left-4 lg:left-20 xl:left-10 select-none ${animation}`}
                    alt={""}

@@ -39,7 +39,7 @@ const Contacto: NextPage = () => {
                 <Link href={"/"}>
                     <Image className={"lg:block hidden absolute top-4 left-24 z-50"} src={"/images/svg/clinic_white.svg"} alt={""} width={560*.6} height={560*.6} />
                 </Link>
-                <article className={"flex items-center justify-center relative pt-16"}>
+                <article className={"flex items-center justify-center relative py-16"}>
                     <Image src={bgImage} alt={""} quality={100} loading={"lazy"} placeholder={"blur"}
                            className={"brightness-[45%] scale-[5] lg:scale-100 absolute z-0 top-1/3 -left-10 lg:top-0 lg:left-0"}/>
                     <section
