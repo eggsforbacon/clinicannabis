@@ -8,6 +8,7 @@ import {FunctionalMedicine} from "../../components/content/services/FunctionalMe
 import {Experience} from "../../components/content/services/Experience";
 import Head from "next/head";
 import React from "react";
+import {PainClinic} from "../../components/content/services/PainClinic";
 
 const Index : NextPage = () => {
     return (
@@ -23,6 +24,7 @@ const Index : NextPage = () => {
             {/*<Hero />*/}
             <MedicalCannabis />
             <SIS />
+            <PainClinic />
             <Serums />
             <FunctionalMedicine />
             <Experience />

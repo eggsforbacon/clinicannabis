@@ -405,10 +405,10 @@ export const strings: IKeyedObject = {
             3: {
                 'headline': <>{"Clínica del "}</>,
                 'remark': <>{"Dolor"}</>,
-                'copy' : {
-                    1 : <>{"Contamos con una unidad médica supra especializada en el manejo del dolor, con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad."}</>,
-                    2: <>{"Nuestro objetivo es aliviar el sufrimiento y brindar acompañamiento a pacientes y familias que conviven con dolores moderados a severos como consecuencias de diferentes patologías, que han sido diagnosticados con enfermedades crónicas o que han tenido accidentes de tránsito."}</>,
-                },
+                'copy' : [
+                    <>{"Contamos con una unidad médica supra especializada en el manejo del dolor, con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad."}</>,
+                    <>{"Nuestro objetivo es aliviar el sufrimiento y brindar acompañamiento a pacientes y familias que conviven con dolores moderados a severos como consecuencias de diferentes patologías, que han sido diagnosticados con enfermedades crónicas o que han tenido accidentes de tránsito."}</>,
+                ],
                 'cta': <>{"Conócela"}</>,
             },
             4: {

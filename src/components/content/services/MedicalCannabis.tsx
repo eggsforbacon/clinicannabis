@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { strings } from "../../../model/strings";
 import React from "react";
+import Link from "next/link";
 
 export const MedicalCannabis = () => {
 
@@ -24,9 +25,9 @@ export const MedicalCannabis = () => {
                     <h3 className={"font-normal text-center lg:text-left text-2xl lg:text-3xl md:text-2md mt-6"}>{strings.services.sections["1"].subtitle}</h3>
                 </section>
                 <p className={"font-normal text-center lg:text-left text-xl lg:text-2xl max-w-[42rem]"}>{strings.services.sections["1"].content}</p>
-                <a href={"https://www.instagram.com/reel/Cp5swkDjj9M/?igshid=MDJmNzVkMjY="} target={"_blank"} rel={"noreferrer"} className={buttonStyle}>
+                <Link href={"https://www.instagram.com/reel/Cp5swkDjj9M/?igshid=MDJmNzVkMjY="} target={"_blank"} rel={"noreferrer"} className={buttonStyle}>
                     {strings.services.sections["1"].cta}
-                </a>
+                </Link>
             </section>
         </article>
     );
