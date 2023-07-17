@@ -22,7 +22,7 @@ export const SIS = () => {
             <span
                 className={"hidden lg:block w-screen h-96 bg-gradient-to-t from-white via-white/80 absolute bottom-0 left-0"}/>
             <section
-                className={"relative flex flex-col justify-center items-center lg:items-start mt-6 px-8 md:px-48 lg:mt-28 lg:px-64 text-white gap-2"}>
+                className={"relative flex flex-col justify-center items-center lg:items-start mt-6 px-8 md:px-10 lg:mt-28 lg:px-64 text-white gap-2"}>
                 <h2 className={"text-center lg:text-left text-6xl lg:text-7xl font-black text-midnight-green leading-[0.8] lg:leading-[0.75]"}>{strings.services.sections["2"].headline}<br/><strong
                     className={"text-7xl lg:text-9xl text-caribbean-green"}>{strings.services.sections["2"].remark}</strong>
                 </h2>

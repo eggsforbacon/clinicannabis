@@ -8,7 +8,7 @@ export const MedicalCannabis = () => {
     const buttonStyle: string = "text-xl lg:block lg:text-3xl rounded-full border-solid border-2 border-white text-white font-normal text-base px-8 lg:px-10 py-1.5 lg:py-2 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
 
     return (
-        <article className={"relative w-full h-192 md:h-168 overflow-clip lg:h-[58rem] lg:block flex flex-col items-stretch lg:items-start justify-center"} id={"medicinal-cannabis"}>
+        <article className={"relative z-10 w-full h-192 md:h-168 overflow-clip lg:h-[58rem] lg:block flex flex-col items-stretch lg:items-start justify-center"} id={"medicinal-cannabis"}>
             <Image src={"/images/servicios/imagen-clinic.png"}
                 className={"select-none absolute scale-[3.4] lg:scale-[1.5] xl:scale-[1.3] right-16 brightness-[0.4] md:brightness-50 bottom-64 md:right-0 md:bottom-32 lg:bottom-40 lg:-right-24 xl:bottom-32 xl:right-0 xl:left-44"} alt={""}
                 width={1920}
