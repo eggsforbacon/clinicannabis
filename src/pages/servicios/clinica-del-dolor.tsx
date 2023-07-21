@@ -76,8 +76,8 @@ const ClinicaDelDolor: NextPage = () => {
                         className={"hidden lg:block lg:absolute lg:aspect-square lg:rounded-full lg:h-144 lg:bg-gradient-radial lg:from-caribbean-green lg:via-caribbean-green/10 lg:via-75% lg:to-white/0 lg:to-80% lg:-left-52 lg:-bottom-44 blur-xl"}/>
                     <Image src={"/images/servicios/painClinic/skobeloffCurve.svg"} alt={""} width={1920} height={1920}
                            className={"hidden lg:block absolute bottom-1 left-0 scale-x-125 -scale-y-[.95] rotate-[0.25deg] xl:-scale-y-[1.2] 2xl:-scale-y-[.85] xl:bottom-5 xl:rotate-[2deg] 2xl:rotate-[1.375deg] 2xl:bottom-1"}/>
-                    <div className={"relative flex flex-col items-center lg:items-start justify-start lg:w-136"}>
-                        <h2 className={"relative text-[2.7rem] leading-[0.8] lg:text-6xl font-black text-skobeloff lg:text-rich-black"}>&nbsp;{strings.services.painClinic.intro.headline}&nbsp;
+                    <div className={"relative flex flex-col items-center lg:items-start justify-start lg:w-136 lg:gap-8"}>
+                        <h2 className={"lg:-ml-4 relative text-[2.7rem] leading-[0.8] lg:text-6xl font-black text-skobeloff lg:text-rich-black"}>&nbsp;{strings.services.painClinic.intro.headline}&nbsp;
                             <br className={"hidden lg:inline-block"}/>&nbsp;
                             <span
                                 className={"text-5xl lg:text-7xl text-rich-black lg:text-caribbean-green"}>{strings.services.painClinic.intro.remark}</span>
@@ -86,7 +86,7 @@ const ClinicaDelDolor: NextPage = () => {
                     </div>
                 </section>
                 <section
-                    className={"relative flex flex-col items-center justify-start gap-6 text-lg font-base text-center text-rich-black z-10"}>
+                    className={"relative flex flex-col items-center justify-start gap-6 text-lg lg:text-xl font-normal text-center lg:text-start text-rich-black z-10"}>
                     <p>{strings.services.painClinic.types.intro}</p>
                     <p>{strings.services.painClinic.types.articular}</p>
                     <p>{strings.services.painClinic.types.neural}</p>
