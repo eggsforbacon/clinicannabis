@@ -73,6 +73,18 @@
         list-style-type: '\2014';
         padding-inline-start: 1ch;
     }
+
+    /** This WILL be painful to write
+      * The scheme is {ROLE}-clip[-{SIZE}].
+      * If no size is specified*/
+
+    .pain-clinic-clip-lg {
+        clip-path: ellipse(180% 40% at -30% 47%);
+    }
+
+    .pain-clinic-clip-xl {
+        clip-path: ellipse(180% 60% at -44% 36%);
+    }
 }
 
 /*  ================================================
