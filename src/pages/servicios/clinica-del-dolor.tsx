@@ -70,12 +70,12 @@ const ClinicaDelDolor: NextPage = () => {
                            className={"absolute -bottom-14 left-1/2 -translate-x-1/2 z-0 scale-125 scale-y-[1.6] lg:hidden"}/>
                     <Image src={"/images/servicios/painClinic/lightGreenCurve.svg"} alt={""} width={1920} height={1920}
                            className={"hidden lg:inline-block absolute -top-32 xl:-top-[10.125rem] z-0 scale-125 scale-x-[.9] xl:scale-x-75 xl:scale-y-[0.9] left-0 xl:left-32"}/>
-                    <Image src={"/images/servicios/painClinic/skobeloffCurve.svg"} alt={""} width={1920} height={1920}
-                           className={"hidden lg:block absolute -bottom-1.5 left-0 scale-x-125 -scale-y-75 -rotate-[1.125deg]"}/>
                     <span
                         className={"hidden lg:block lg:absolute lg:rounded-full lg:aspect-square lg:h-168 lg:bg-gradient-radial lg:from-persian-green lg:via-viridian-green/40 lg:via-55% lg:to-skobeloff/0 lg:to-90% lg:left-auto lg:translate-x-0 lg:-right-64 lg:top-28 lg:blur-xl"}/>
                     <span
                         className={"hidden lg:block lg:absolute lg:aspect-square lg:rounded-full lg:h-144 lg:bg-gradient-radial lg:from-caribbean-green lg:via-caribbean-green/10 lg:via-75% lg:to-white/0 lg:to-80% lg:-left-52 lg:-bottom-44 blur-xl"}/>
+                    <Image src={"/images/servicios/painClinic/skobeloffCurve.svg"} alt={""} width={1920} height={1920}
+                           className={"hidden lg:block absolute bottom-1 left-0 scale-x-125 -scale-y-[.95] rotate-[0.25deg] xl:-scale-y-[1.2] 2xl:-scale-y-[.85] xl:bottom-5 xl:rotate-[2deg] 2xl:rotate-[1.375deg] 2xl:bottom-1"}/>
                     <div className={"relative flex flex-col items-center lg:items-start justify-start lg:w-136"}>
                         <h2 className={"relative text-[2.7rem] leading-[0.8] lg:text-6xl font-black text-skobeloff lg:text-rich-black"}>&nbsp;{strings.services.painClinic.intro.headline}&nbsp;
                             <br className={"hidden lg:inline-block"}/>&nbsp;
