@@ -84,7 +84,7 @@ const Footer = () => {
                                 <Image src={"/images/svg/clinic_white.svg"} alt={""} width={16} height={16}
                                        className={"h-full w-auto"}/>
                             </Link>
-                            <ul className={"grid grid-cols-2 lg:grid-cols-4 mt-4 lg:mt-auto place-items-center gap-6"}>
+                            <ul className={"grid grid-cols-2 lg:grid-cols-4 mt-4 place-items-center gap-6"}>
                                 <li>
                                     <Link href={"https://www.facebook.com/Clinicanabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <Facebook
