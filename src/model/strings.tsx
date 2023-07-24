@@ -445,7 +445,8 @@ export const strings: IKeyedObject = {
                 'oncological': <><span className={"italic font-black"}>{"Dolor oncológico"}</span>{" derivado del proceso de la enfermedad, la quimioterapia o radioterapia."}</>,
             },
             'therapy': {
-                'title': <>{"En Clinicannabis ofrecemos terapias como"}</>,
+                'title': <>{"En Clinicannabis "}</>,
+                'remark': <>{"ofrecemos terapias como"}</>,
                 'items' : [
                     <>{"Bloqueo guiado con ultrasonido"}</>,
                     <>{"Bloqueo con fluoroscopio a través de rayos X"}</>,
@@ -454,7 +455,8 @@ export const strings: IKeyedObject = {
                 ],
             },
             'regenerative': {
-                'title': <>{"Medicina Regenerativa"}</>,
+                'title': <>{"Medicina "}</>,
+                'remark': <>{"Regenerativa"}</>,
                 'items' : [
                     <>{"Bioestimulación con Plasma Rico en Plaquetas - PRP"}</>,
                     <>{"Ozonoterapia"}</>,
