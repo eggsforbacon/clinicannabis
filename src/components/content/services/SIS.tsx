@@ -9,10 +9,6 @@ export const SIS = () => {
 
     return (
         <div className={"relative"}>
-            {/*The following two lines are part of the PainClinic section. The enclosing div is also part of this. If the order of the sections ha to change,
-            please be aware of this fact. */}
-            <Image src={"/images/servicios/painClinic/skobeloffCurve.svg"} alt={""} width={1920} height={1920} className={"hidden pointer-events-none select-none absolute sm:block sm:-bottom-6 sm:scale-x-105 lg:scale-y-50 lg:-scale-x-105 md:-bottom-14 left-1/2 -translate-x-1/2 lg:-bottom-32 z-20"} />
-            <Image src={"/images/servicios/painClinic/blueCurve.svg"} alt={""} width={640} height={640} className={"pointer-events-none select-none absolute -bottom-3 left-0 z-20 sm:hidden"}/>
             <article className={"relative flex flex-col items-center z-10 justify-center lg:justify-start lg:items-stretch overflow-clip h-192 md:h-168 lg:h-208 xl:h-192"} id={"sis"}>
                 <Image src={"/images/servicios/service2.png"}
                        className={"absolute pointer-events-none select-none scale-[3.5] opacity-60  md:scale-[1.5] xl:scale-[1.3] bottom-[17rem] md:bottom-auto lg:bottom-28 xl:bottom-44 lg:right-24 xl:right-0"} alt={""}

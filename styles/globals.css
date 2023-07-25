@@ -84,6 +84,22 @@
     .pain-clinic-intro-clip-xl {
         clip-path: ellipse(180% 76% at -17% 16%);
     }
+
+    .pain-clinic-section-clip-sm {
+        clip-path: ellipse(180% 90% at 20% 85%);
+    }
+
+    .pain-clinic-section-clip-md {
+        clip-path: ellipse(180% 90% at 0% 75%);
+    }
+
+    .pain-clinic-section-clip-lg {
+        clip-path: ellipse(220% 88% at 78% 87%);
+    }
+
+    .pain-clinic-section-clip-xl {
+        clip-path: ellipse(220% 88% at 78% 75%);
+    }
 }
 
 /*  ================================================
@@ -181,7 +197,7 @@
 
     .icons_landg {
         width: 100%;
-        margin-top: 0vh;
+        margin-top: 0;
     }
 
     .fondIndx {
@@ -234,7 +250,7 @@
 
     .icons_landg {
         width: 100%;
-        margin-top: 0vh;
+        margin-top: 0;
     }
 }
 
@@ -274,7 +290,7 @@
 
     .icons_landg {
         width: 100%;
-        margin-top: 0vh;
+        margin-top: 0;
     }
 }
 
