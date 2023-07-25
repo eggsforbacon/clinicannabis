@@ -69,7 +69,7 @@ const ClinicaDelDolor: NextPage = () => {
                            height={420}
                            className={"absolute -bottom-14 left-1/2 -translate-x-1/2 z-0 scale-125 scale-y-[1.6] lg:hidden"}/>
                     <Image src={"/images/servicios/painClinic/lightGreenCurve.svg"} alt={""} width={1920} height={1920}
-                           className={"hidden lg:inline-block absolute top-0 xl:-top-[10.125rem] z-0 scale-125 scale-x-[.9] xl:scale-x-75 xl:scale-y-[0.9] left-0 xl:left-32"}/>
+                           className={"hidden lg:inline-block absolute top-0 z-0 scale-125 scale-x-[.9] xl:scale-x-75 xl:scale-y-[0.9] left-0 xl:left-32"}/>
                     <span
                         className={"hidden lg:block lg:absolute lg:rounded-full lg:aspect-square lg:h-168 lg:bg-gradient-radial lg:from-viridian-green lg:via-viridian-green/40 lg:via-55% lg:to-skobeloff/0 lg:to-90% lg:left-auto lg:translate-x-0 lg:-right-64 lg:top-56 lg:blur-xl z-0"}/>
                     <span
@@ -94,12 +94,12 @@ const ClinicaDelDolor: NextPage = () => {
                     <p className={"relative"}>{strings.services.painClinic.types.oncological}</p>
                 </section>
                 <section
-                    className={"relative flex flex-col items-center lg:items-start justify-start gap-8 text-lg xl:text-xl font-normal text-center lg:text-start text-rich-black lg:z-0 lg:w-full lg:px-44 xl:px-52 2xl:px-72 box-border 2xl:mt-36"}>
+                    className={"relative flex flex-col items-center lg:items-start justify-start gap-8 text-lg xl:text-xl font-normal text-center lg:text-start text-rich-black lg:z-0 lg:w-full lg:px-44 xl:px-52 2xl:px-72 box-border xl:mt-36"}>
                     <Image src={"/images/servicios/painClinic/glovesMolecules.png"} alt={""} width={1370} height={888}
                            quality={100}
-                           className={"scale-[2.25] -left-[5.25rem] absolute bottom-[8.75rem] lg:bottom-10 xl:-bottom-32 2xl:bottom-10 opacity-60 lg:opacity-50 2xl:opacity-60 z-0 lg:-left-20 xl:-left-8 lg:scale-[1.35] xl:scale-[1.125] 2xl:left-1/2 2xl:-translate-x-1/2"}/>
+                           className={"scale-[2.25] -left-[5.25rem] absolute bottom-[8.75rem] lg:bottom-10 opacity-60 lg:opacity-50 2xl:opacity-60 z-0 lg:-left-20 lg:scale-[1.35] xl:scale-[1.125] xl:left-1/2 xl:-translate-x-1/2"}/>
                     <Image src={"/images/servicios/painClinic/bloodSampleShaker.png"} alt={""} width={1441} height={759}
-                           className={"scale-[2.125] right-32 absolute -bottom-80 opacity-30 z-0 lg:-bottom-[26rem] lg:scale-[1.125] lg:right-0 lg:opacity-[0.15] 2xl:opacity-[0.25] 2xl:scale-[1.069] 2xl:right-1/2 2xl:translate-x-1/2 2xl:-bottom-[38rem]"}/>
+                           className={"scale-[2.125] right-32 absolute -bottom-80 opacity-30 z-0 lg:-bottom-[26rem] lg:scale-[1.125] lg:right-0 lg:opacity-[0.15] 2xl:opacity-[0.25] xl:scale-[1.069] xl:right-1/2 xl:translate-x-1/2 xl:-bottom-[38rem]"}/>
                     <span className={"hidden 2xl:block 2xl:absolute 2xl:h-424 2xl:-top-[44rem] left-0  2xl:w-[55vw] 2xl:bg-gradient-to-r 2xl:from-white from-25%"}/>
                     <span className={"hidden 2xl:block 2xl:absolute 2xl:h-424 2xl:-top-[44rem] right-0 2xl:w-[55vw] 2xl:bg-gradient-to-l 2xl:from-white from-25%"}/>
                     <span
@@ -124,7 +124,7 @@ const ClinicaDelDolor: NextPage = () => {
                         className={"hidden lg:block lg:absolute lg:aspect-square lg:rounded-full lg:h-168 lg:bg-gradient-radial lg:from-viridian-green/80 lg:via-viridian-green/10 lg:via-75% lg:to-white/0 lg:to-80% lg:-right-[22rem] lg:-bottom-80 blur-xl z-0"}/>
                 </section>
                 <section
-                    className={"relative flex flex-col items-center lg:items-start justify-start gap-8 text-lg xl:text-xl font-normal text-center lg:text-start text-rich-black lg:w-full lg:px-44 xl:px-52 2xl:px-72 2xl:mb-28"}>
+                    className={"relative flex flex-col items-center lg:items-start justify-start gap-8 text-lg xl:text-xl font-normal text-center lg:text-start text-rich-black lg:w-full lg:px-44 xl:px-52 2xl:px-72 xl:mb-28"}>
                     <span className={"hidden lg:block lg:absolute lg:aspect-square lg:h-192 lg:right-0 lg:-bottom-36 lg:bg-gradient-to-tl lg:from-caribbean-green/50 lg:via-caribbean-green/10 lg:via-45% lg:to-white/0 lg:to-55% lg:blur-xl"}/>
                     <span className={"hidden xl:block xl:absolute xl:aspect-square xl:h-136 xl:left-0 xl:-bottom-36 xl:bg-gradient-to-tr xl:from-caribbean-green/40 xl:via-caribbean-green/10 xl:via-45% xl:to-white/0 xl:to-55% xl:blur-3xl"}/>
                     <span
