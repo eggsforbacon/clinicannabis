@@ -12,6 +12,7 @@ export const strings: IKeyedObject = {
         'blog': <>{"Blog"}</>,
         'contact': <>{"Contáctanos"}</>,
         'cta': <>{"Agéndate"}</>,
+        'ctaMessage': "¡Hola! Me gustaría agendar una cita.",
     },
     'footer': {
         'copy': <>{"Clinicannabis "}&copy;{" 2023 | Todos los derechos reservados"}</>,

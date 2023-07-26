@@ -9,6 +9,17 @@
 @tailwind utilities;
 
 @layer base {
+
+    *::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    * {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
     .debug {
         @apply border-solid border-2 border-fuchsia-600;
     }
@@ -162,7 +173,7 @@
     }
     .icons_landg{
         width: 100%;
-        margin-top: 0vh;
+        margin-top: 0;
     }
     .fondIndx {
         height: 192vh;
@@ -206,7 +217,7 @@
     }
     .icons_landg{
         width: 100%;
-        margin-top: 0vh;
+        margin-top: 0;
     }
 }
 
@@ -241,7 +252,7 @@
     }
     .icons_landg{
         width: 100%;
-        margin-top: 0vh;
+        margin-top: 0;
     }
 }
 
