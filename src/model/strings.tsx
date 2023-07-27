@@ -44,12 +44,28 @@ export const strings: IKeyedObject = {
     },
     'landing': {
         'hero': {
-            'headline': <>{"No te acostumbres "}</>,
-            'headlineRemark': <>{"al dolor"}</>,
-            'subtitle': <>{"En Clinicannabis creemos que siempre hay una mejor alternativa para tratarlo. Contamos con un equipo de profesionales dispuestos a mostrarte que el alivio "}</>,
-            'subtitleRemark': <>{"sí es posible."}</>,
-            'cta': <>{"Contáctanos"}</>,
-            'experience': <>{"Nuestro centro de Experiencia"}</>
+            'animation': {
+                'headline': <>{"No te acostumbres "}</>,
+                'headlineRemark': <>{"al dolor"}</>,
+                'subtitle': <>{"En Clinicannabis creemos que siempre hay una mejor alternativa para tratarlo. Contamos con un equipo de profesionales dispuestos a mostrarte que el alivio "}</>,
+                'subtitleRemark': <>{"sí es posible."}</>,
+                'cta': <>{"Contáctanos"}</>,
+            },
+            'blog': {
+                'title': <>{"Actualidad "}<br/><span
+                    className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/>{"en la salud"}</>,
+                'titleRemark': <>{"en la salud"}</>,
+                'copy': <>{"Obtén información de "}<span
+                    className={"font-bold"}>{"Clinicannabis"}</span>{" enviada directamente a tu correo."}</>,
+                'cta': <>{"Suscríbete"}</>,
+                'image': "/images/landing/blog/updatedBg.png",
+            },
+            'painClinic': {
+                'title': <>{"Clínica del "}</>,
+                'remark': <>{"Dolor"}</>,
+                'copy': <>{"Contamos con una unidad médica supra especializada en el manejo del dolor, con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad."}</>,
+                'cta': <>{"Leer más"}</>,
+            },
         },
         'about': {
             'headline': <>{"¿Quiénes "}</>,
@@ -126,18 +142,6 @@ export const strings: IKeyedObject = {
             'cta': <>{"Leelos"}</>,
         },
         'blog': {
-            'slides': {
-                1: {
-                    'title': <>{"Actualidad "}<br/><span
-                        className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/><span
-                        className={"font-normal"}>{"en la salud"}</span></>,
-                    'copy': <>{"Obtén información de "}<span
-                        className={"font-bold"}>Clinicannabis</span>{" enviada directamente a tu correo."}</>,
-                    'cta': <>{"Suscríbete"}</>,
-                    'image': "/images/landing/blog/updatedBg.png",
-
-                },
-            },
             'headline': <>{"Blog "}</>,
             'remark': <>{"médico"}</>,
             'content': <>{"Tenemos para ti la actualidad en temas de salud, medicina funcional e innovación médica alternativa."}</>,
