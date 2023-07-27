@@ -39,16 +39,8 @@
         clip-path: ellipse(190% 75% at -20% 80%);
     }
 
-    .swiper-pagination {
-        @apply fill-viridian-green w-screen relative z-30;
-    }
-
-    .swiper-navigation-prev {
-        @apply relative left-10 top-1/2 -translate-x-1/2;
-    }
-
-    .swiper-navigation-next {
-
+    .c-swiper-horizontal {
+        @apply !w-fit !px-6 !py-1 !box-border !left-1/2 !-translate-x-1/2 !bottom-8 md:!bottom-32 lg:!bottom-24 xl:!bottom-16 !top-auto !rounded-2xl !bg-white/30 !backdrop-blur-2xl !drop-shadow-sm;
     }
 
     .arrow-list li {

@@ -3,9 +3,9 @@ import {strings} from "../../../../model/strings";
 
 export const BlogSlide = () => {
     return (
-        <article className={"w-full h-[55vh] lg:h-192 relative flex items-center lg:px-36 justify-start overflow-clip"}>
+        <article className={"w-full h-192 sm:h-208 md:h-256 relative flex items-center lg:px-36 justify-start overflow-clip"}>
             <Image src={strings.landing.blog.slides["1"].image} alt={""} width={1920} height={1280}
-                   quality={100} className={"z-0 absolute brightness-[60%] lg:brightness-100 scale-[3.2] md:scale-[2.2] lg:scale-[1.8] xl:scale-[1.35] bottom-36 md:bottom-20 lg:bottom-32 right-16 lg:-right-10 select-none pointer-events-none"}/>
+                   quality={100} className={"z-0 absolute brightness-[60%] lg:brightness-100 scale-[4.5] sm:scale-[3.2] md:scale-[2.8] lg:scale-[2] xl:scale-[1.75] 2xl:scale-[1.35] top-72 sm:top-64 md:top-80 lg:top-32 xl:top-32 2xl:top-24 right-16 lg:-right-10 select-none pointer-events-none"}/>
             <span className={"select-none absolute w-full h-full top-0 left-0 bg-gradient-to-r from-viridian-green lg:from-viridian-green/80 lg:via-viridian-green/30 z-10 selection:none pointer-events-none"}/>
             <section className={"text-white px-6 lg:px-0 h-full lg:h-auto text-left lg:w-136 relative z-10 flex flex-col items-start lg:items-stretch justify-center lg:justify-end gap-6 lg:gap-8"}>
                 <h2 className={"font-black text-5xl leading-[0.85] lg:leading-[0.85] w-full lg:text-7xl"}>{strings.landing.blog.slides["1"].title}

@@ -1,37 +1,50 @@
-import React, {CSSProperties} from "react";
+import React, {CSSProperties, useState} from "react";
 import {ClinicIntro} from "./HeroSlides/ClinicIntro";
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay, Navigation, Pagination} from "swiper";
+import {Swiper as SwiperComponent, SwiperSlide} from "swiper/react";
+import {Swiper as SwiperClass, Autoplay, Navigation, Pagination} from "swiper";
 import {BlogSlide} from "./HeroSlides/BlogSlide";
+import {PainClinic} from "./HeroSlides/PainClinic";
 
 export const Hero = () => {
+
+    const [activeIndex, setActiveIndex] = useState(0);
+
     const slides: JSX.Element[] = [
         <ClinicIntro />,
         <BlogSlide />,
+        <PainClinic />,
     ];
 
+    const colors = ["#009490", "#FAFAFA", "#00B451"]
+
+    const handleChange = (s: SwiperClass) => {
+        setActiveIndex(s.realIndex);
+    };
+
     return (
-        <header className={"w-full h-192 sm:h-208 md:h-224 relative"}>
-            <Swiper
+        <header className={"w-full h-192 sm:h-208 md:h-224 lg:h-[50rem] xl:h-[51.5rem] 2xl:h-[51.75rem] relative"}>
+            <SwiperComponent
+                onSlideChange={handleChange}
                 slidesPerView={1}
                 loop={true}
                 autoplay={{
                     delay : 8000,
                     disableOnInteraction : false,
-                    pauseOnMouseEnter : true,
+                    pauseOnMouseEnter : false,
                 }}
                 navigation={true}
                 pagination={{
+                    horizontalClass: "c-swiper-horizontal",
                     clickable: true,
-                    clickableClass: "swiper-pagination"
+                    clickableClass: "swiper-pagination",
                 }}
                 modules={[Navigation, Pagination, Autoplay]}
                 style={{
-                    "--swiper-pagination-color" : "#009490",
+                    "--swiper-pagination-color" : colors[activeIndex],
                     "--swiper-navigation-size": "2rem",
                     "--swiper-navigation-top-offset": "50%",
-                    "--swiper-navigation-sides-offset": "2rem",
-                    "--swiper-navigation-color": "#009490",
+                    "--swiper-navigation-sides-offset": "1rem",
+                    "--swiper-navigation-color": colors[activeIndex],
                 } as CSSProperties}
                 className="w-screen h-192 sm:h-208 md:h-256 lg:h-224"
 
@@ -41,7 +54,7 @@ export const Hero = () => {
                         {slide}
                     </SwiperSlide>
                 )}
-            </Swiper>
+            </SwiperComponent>
         </header>
     );
 }
