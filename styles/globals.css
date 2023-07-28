@@ -40,7 +40,7 @@
     }
 
     .c-swiper-horizontal {
-        @apply !w-fit !px-6 !py-1 !box-border !left-1/2 !-translate-x-1/2 !bottom-8 md:!bottom-32 lg:!bottom-24 xl:!bottom-16 !top-auto !rounded-2xl !bg-white/30 !backdrop-blur-2xl !drop-shadow-sm;
+        @apply !w-fit !px-6 !py-1 !box-border !left-1/2 !-translate-x-1/2 !bottom-4 md:!bottom-32 lg:!bottom-24 xl:!bottom-16 !top-auto !rounded-2xl !bg-white/30 !backdrop-blur-2xl !drop-shadow-sm;
     }
 
     .arrow-list li {
