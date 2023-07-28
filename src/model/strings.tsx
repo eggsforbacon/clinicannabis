@@ -432,7 +432,7 @@ export const strings: IKeyedObject = {
             },
             'types': {
                 'intro': <>{"Existen diferentes tipos de "}<span className={"italic font-black"}>{"dolor crónico"}</span>{" entre los que se encuentran:"}</>,
-                'articular': <><span className={"italic font-black"}>{"Dolor articular:"}</span>{" se presentan en hombro, cadera, articulaciones, rodilla y columna asociados a artrosis, fibromialgia, hernia discal, epicondilitis, túnel de carpo y ciática."}</>,
+                'articular': <><span className={"italic font-black"}>{"Dolor articular:"}</span>{" se presenta en hombro, cadera, articulaciones, rodilla y columna asociados a artrosis, fibromialgia, hernia discal, epicondilitis, túnel de carpo y ciática."}</>,
                 'neural': <><span className={"italic font-black"}>{"Dolor neuropático:"}</span>{" lesiones de nervios, neuralgia, posherpética y migrañas."}</>,
                 'oncological': <><span className={"italic font-black"}>{"Dolor oncológico:"}</span>{" derivado del proceso de la enfermedad, la quimioterapia o radioterapia."}</>,
             },
