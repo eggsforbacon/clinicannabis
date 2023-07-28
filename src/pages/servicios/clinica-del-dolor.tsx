@@ -61,20 +61,20 @@ const ClinicaDelDolor: NextPage = () => {
 
                 <section
                     className={"relative flex flex-col items-center lg:items-start justify-start gap-4 h-[38rem] lg:pt-44 lg:h-[39rem] xl:h-168 2xl:h-[46rem] w-full lg:px-24 xl:px-52 2xl:px-72 z-10 lg:pain-clinic-intro-clip-lg xl:pain-clinic-intro-clip-xl lg:bg-white"}>
-                    <Image src={"/images/servicios/painClinic/whiteCurve.svg"} alt={""} width={280} height={280}
+                    <Image src={"/images/services/painClinic/whiteCurve.svg"} alt={""} width={280} height={280}
                            className={"absolute -top-32 -right-24 z-0 lg:hidden"}/>
-                    <Image src={"/images/servicios/painClinic/doctorEcho.png"} alt={""} width={956} height={637}
+                    <Image src={"/images/services/painClinic/doctorEcho.png"} alt={""} width={956} height={637}
                            className={"scale-[1.6] lg:scale-y-[0.625] lg:-scale-x-[0.625] xl:-scale-x-[0.8] xl:scale-y-[0.8] -left-10 xl:-right-44 2xl:-right-36 absolute bottom-0 lg:bottom-auto lg:-top-10 lg:left-auto lg:-right-52 opacity-60 lg:opacity-50 xl:opacity-80"}/>
-                    <Image src={"/images/servicios/painClinic/blueUpsideDownCurve.svg"} alt={""} width={420}
+                    <Image src={"/images/services/painClinic/blueUpsideDownCurve.svg"} alt={""} width={420}
                            height={420}
                            className={"absolute -bottom-14 left-1/2 -translate-x-1/2 z-0 scale-125 scale-y-[1.6] lg:hidden"}/>
-                    <Image src={"/images/servicios/painClinic/lightGreenCurve.svg"} alt={""} width={1920} height={1920}
+                    <Image src={"/images/services/painClinic/lightGreenCurve.svg"} alt={""} width={1920} height={1920}
                            className={"hidden lg:inline-block absolute top-0 z-0 scale-125 scale-x-[.9] xl:scale-x-75 xl:scale-y-[0.9] left-0 xl:left-32"}/>
                     <span
                         className={"hidden lg:block lg:absolute lg:rounded-full lg:aspect-square lg:h-168 lg:bg-gradient-radial lg:from-viridian-green lg:via-viridian-green/40 lg:via-55% lg:to-skobeloff/0 lg:to-90% lg:left-auto lg:translate-x-0 lg:-right-64 lg:top-56 lg:blur-xl z-0"}/>
                     <span
                         className={"hidden lg:block lg:absolute lg:aspect-square lg:rounded-full lg:h-144 lg:bg-gradient-radial lg:from-caribbean-green/80 lg:via-caribbean-green/10 lg:via-75% lg:to-white/0 lg:to-80% lg:-left-64 lg:-bottom-64 blur-xl z-0"}/>
-                    <Image src={"/images/servicios/painClinic/skobeloffCurve.svg"} alt={""} width={1920} height={1920}
+                    <Image src={"/images/services/painClinic/skobeloffCurve.svg"} alt={""} width={1920} height={1920}
                            className={"hidden lg:block absolute lg:bottom-5 left-0 scale-x-125 -scale-y-[.95] lg:-rotate-[1.5deg] xl:-scale-y-[1.2] 2xl:-scale-y-[.85] xl:bottom-10 xl:rotate-[0.5deg] 2xl:rotate-[0.025deg] 2xl:bottom-6"}/>
                     <div
                         className={"relative flex flex-col items-center lg:items-start justify-start lg:w-136 lg:gap-8 lg:z-10 xl:w-168"}>
@@ -95,10 +95,10 @@ const ClinicaDelDolor: NextPage = () => {
                 </section>
                 <section
                     className={"relative flex flex-col items-center lg:items-start justify-start gap-8 text-lg xl:text-xl font-normal text-center lg:text-start text-rich-black lg:z-0 lg:w-full lg:px-44 xl:px-52 2xl:px-72 box-border xl:mt-36"}>
-                    <Image src={"/images/servicios/painClinic/glovesMolecules.png"} alt={""} width={1370} height={888}
+                    <Image src={"/images/services/painClinic/glovesMolecules.png"} alt={""} width={1370} height={888}
                            quality={100}
                            className={"scale-[2.25] -left-[5.25rem] absolute bottom-[8.75rem] lg:bottom-10 opacity-60 lg:opacity-50 2xl:opacity-60 z-0 lg:-left-20 lg:scale-[1.35] xl:scale-[1.125] xl:left-1/2 xl:-translate-x-1/2"}/>
-                    <Image src={"/images/servicios/painClinic/bloodSampleShaker.png"} alt={""} width={1441} height={759}
+                    <Image src={"/images/services/painClinic/bloodSampleShaker.png"} alt={""} width={1441} height={759}
                            className={"scale-[2.125] right-32 absolute -bottom-80 opacity-30 z-0 lg:-bottom-[26rem] lg:scale-[1.125] lg:right-0 lg:opacity-[0.15] 2xl:opacity-[0.25] xl:scale-[1.069] xl:right-1/2 xl:translate-x-1/2 xl:-bottom-[38rem]"}/>
                     <span className={"hidden 2xl:block 2xl:absolute 2xl:h-424 2xl:-top-[44rem] left-0  2xl:w-[55vw] 2xl:bg-gradient-to-r 2xl:from-white from-25%"}/>
                     <span className={"hidden 2xl:block 2xl:absolute 2xl:h-424 2xl:-top-[44rem] right-0 2xl:w-[55vw] 2xl:bg-gradient-to-l 2xl:from-white from-25%"}/>

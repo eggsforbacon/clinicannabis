@@ -58,7 +58,7 @@ export const strings: IKeyedObject = {
                 'copy': <>{"Obtén información de "}<span
                     className={"font-bold"}>{"Clinicannabis"}</span>{" enviada directamente a tu correo."}</>,
                 'cta': <>{"Suscríbete"}</>,
-                'image': "/images/landing/blog/updatedBg.png",
+                'image': "/images/landing/hero/updatedBg.png",
             },
             'painClinic': {
                 'title': <>{"Clínica del "}</>,

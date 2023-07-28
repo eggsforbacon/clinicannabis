@@ -15,7 +15,7 @@ export const Hero = () => {
         <PainClinic />,
     ];
 
-    const colors = ["#009490", "#FAFAFA", "#00B451"]
+    const colors = ["#009490", "#FAFAFA", "#006875"]
 
     const handleChange = (s: SwiperClass) => {
         setActiveIndex(s.realIndex);
@@ -38,7 +38,7 @@ export const Hero = () => {
                     clickable: true,
                     clickableClass: "swiper-pagination",
                 }}
-                modules={[Navigation, Pagination, Autoplay]}
+                modules={[Navigation, Pagination]}
                 style={{
                     "--swiper-pagination-color" : colors[activeIndex],
                     "--swiper-navigation-size": "2rem",
