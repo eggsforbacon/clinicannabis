@@ -10,9 +10,11 @@ import {StrapiPost, StrapiGetAllResponse} from "../../interfaces/interfaces";
 import useSWR from "swr";
 import {setToken} from "../../lib/auth";
 import {FloatingSignupForm} from "../../components/content/blog/FloatingSignupForm";
+import {ChevronLeft, ChevronRight} from "react-bootstrap-icons";
 
 function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>) {
     const [mounted, setMounted] = useState(false);
+    const [pageIndex, setPageIndex] = useState(1);
 
     useEffect(() => {
         if (typeof  window !== "undefined") {
@@ -21,9 +23,9 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
         }
     }, []);
 
-    const { data } = useSWR(
+    const { data, isValidating } = useSWR(
         mounted ? `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&sort=date%3Adesc&populate=*` : null,
-        () => fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&sort=date%3Adesc&populate=*`, {
+        () => fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&pagination[page]=${pageIndex}&pagination[pageSize]=6&sort=date%3Adesc&populate=*`, {
             method: "GET",
             headers: {
                 Authorization: `Bearer ${token}`
@@ -36,6 +38,16 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
         }
     );
 
+    const prevPage = () => {
+        setPageIndex(pageIndex - 1);
+        console.log(isValidating);
+    }
+
+    const nextPage = () => {
+        setPageIndex(pageIndex + 1);
+        console.log(isValidating);
+    }
+
     return (
         <main className="w-full min-h-screen overflow-x-clip">
             <Head>
@@ -47,6 +59,10 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
             <Navbar selection={"blog"} />
             <Hero />
             <FloatingSignupForm />
+            <section className={"relative w-full h-20 box-border px-8 lg:px-16 xl:px-32 py-2 flex items-center justify-center gap-2"}>
+                <button onClick={prevPage} className={"rounded-xl box-border p-1 aspect-square h-10 flex items-center justify-center bg-caribbean-green/40 disabled:bg-neutral-100/60 backdrop-blur-md disabled:cursor-not-allowed [&>*]:fill-caribbean-green [&>*]:disabled:fill-neutral-500"} disabled={pageIndex === 1}><ChevronLeft size={24}/></button>
+                <button onClick={nextPage} className={"rounded-xl box-border p-1 aspect-square h-10 flex items-center justify-center bg-caribbean-green/40 disabled:bg-neutral-100/60 backdrop-blur-md disabled:cursor-not-allowed [&>*]:fill-caribbean-green [&>*]:disabled:fill-neutral-500"} disabled={pageIndex === (data && data.meta?.pagination.pageCount)}><ChevronRight size={24}/></button>
+            </section>
             <Posts blogPosts={data.data !== null ? data.data : undefined} />
             <Footer />
         </main>
@@ -67,7 +83,7 @@ export const getStaticProps: GetStaticProps<{ blogs: StrapiPost[], token : strin
     if (typeof window !== 'undefined') {
         sessionStorage.setItem("spi_jwt", token);
     }
-    const {data: blogResponse} = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&sort=date%3Adesc&populate=*`, {
+    const {data: blogResponse} = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&pagination[page]=1&pagination[pageSize]=6&sort=date%3Adesc&populate=*`, {
         "method": "GET",
         "headers": {
             "Authorization": `Bearer ${token}`
