@@ -431,14 +431,14 @@ export const strings: IKeyedObject = {
                 'copy': <>{"Es aquel dolor agudo acompañado de una sensación incapacitante y desagradable que supera los 3 meses de evolución en la vida del paciente. Este dolor puede manifestarse de distintas formas y, dependiendo de su intensidad, impedir la realización de actividades cotidianas."}</>
             },
             'types': {
-                'intro': <>{"Existen diferentes tipos de "}<span className={"italic font-black"}>{"dolor crónico"}</span>{" entre los que se encuentran"}</>,
-                'articular': <><span className={"italic font-black"}>{"Dolor articular"}</span>{" en hombro, cadera, articulaciones, rodilla y columna asociados a artrosis, fibromialgia, hernia discal, epicondilitis, túnel de carpo y ciática."}</>,
-                'neural': <><span className={"italic font-black"}>{"Dolor neuropático"}</span>{" lesiones de nervios, neuralgia, posherpética y migrañas."}</>,
-                'oncological': <><span className={"italic font-black"}>{"Dolor oncológico"}</span>{" derivado del proceso de la enfermedad, la quimioterapia o radioterapia."}</>,
+                'intro': <>{"Existen diferentes tipos de "}<span className={"italic font-black"}>{"dolor crónico"}</span>{" entre los que se encuentran:"}</>,
+                'articular': <><span className={"italic font-black"}>{"Dolor articular:"}</span>{" en hombro, cadera, articulaciones, rodilla y columna asociados a artrosis, fibromialgia, hernia discal, epicondilitis, túnel de carpo y ciática."}</>,
+                'neural': <><span className={"italic font-black"}>{"Dolor neuropático:"}</span>{" lesiones de nervios, neuralgia, posherpética y migrañas."}</>,
+                'oncological': <><span className={"italic font-black"}>{"Dolor oncológico:"}</span>{" derivado del proceso de la enfermedad, la quimioterapia o radioterapia."}</>,
             },
             'therapy': {
                 'title': <>{"En Clinicannabis "}</>,
-                'remark': <>{"ofrecemos terapias como"}</>,
+                'remark': <>{"ofrecemos terapias como:"}</>,
                 'items' : [
                     <>{"Bloqueo guiado con ultrasonido"}</>,
                     <>{"Bloqueo con fluoroscopio a través de rayos X"}</>,

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {strings} from "../../../../model/strings";
+import Link from "next/link";
 
 export const BlogSlide = () => {
     return (
@@ -11,7 +12,7 @@ export const BlogSlide = () => {
                 <h2 className={"font-black text-5xl leading-[0.85] lg:leading-[0.85] w-full lg:text-7xl"}>{strings.landing.hero.blog.title}
                 </h2>
                 <p className={"lg:text-2xl text-xl font-light md:text-left lg:w-112"}>{strings.landing.hero.blog.copy}</p>
-                <button className={"mt-8 w-fit rounded-full border-solid border-2 text-white border-white px-10 py-1.5 text-xl transition duration-300 ease-in-out lg:hover:cursor-pointer lg:hover:bg-viridian-green lg:hover:shadow-md lg:hover:shadow-white/30 focus:bg-viridian-green focus:shadow-md focus:shadow-white/30"}>{strings.landing.hero.blog.cta}</button>
+                <Link href={"/blog"} className={"mt-8 w-fit rounded-full border-solid border-2 text-white border-white px-10 py-1.5 text-xl transition duration-300 ease-in-out lg:hover:cursor-pointer lg:hover:bg-viridian-green lg:hover:shadow-md lg:hover:shadow-white/30 focus:bg-viridian-green focus:shadow-md focus:shadow-white/30"}>{strings.landing.hero.blog.cta}</Link>
             </section>
         </article>
     );
