@@ -23,7 +23,7 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
         }
     }, []);
 
-    const { data, isValidating } = useSWR(
+    const { data, mutate } = useSWR(
         mounted ? `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&sort=date%3Adesc&populate=*` : null,
         () => fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&pagination[page]=${pageIndex}&pagination[pageSize]=6&sort=date%3Adesc&populate=*`, {
             method: "GET",
@@ -40,12 +40,12 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
 
     const prevPage = () => {
         setPageIndex(pageIndex - 1);
-        console.log(isValidating);
+        mutate();
     }
 
     const nextPage = () => {
         setPageIndex(pageIndex + 1);
-        console.log(isValidating);
+        mutate();
     }
 
     return (
