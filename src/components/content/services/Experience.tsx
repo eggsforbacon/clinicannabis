@@ -11,8 +11,8 @@ export const Experience = () => {
 
     return (
         <article className={"relative z-10 overflow-clip flex flex-col items-center justify-start lg:items-start h-144 lg:h-208"}>
-            <Image className={`opacity-30 md:opacity-50 lg:opacity-60 xl:opacity-100 absolute select-none scale-[2.4] bottom-44 md:bottom-52 right-16 lg:scale-125 lg:bottom-16 xl:bottom-0 lg:-right-36 z-0`}
-                   src={"/images/servicios/service6.png"} alt={"Placeholder"} width={1920} height={1268}/>
+            <Image className={"pointer-events-none select-none opacity-30 md:opacity-50 lg:opacity-60 xl:opacity-100 absolute scale-[2.4] bottom-44 md:bottom-52 right-16 lg:scale-125 lg:bottom-16 xl:bottom-0 lg:-right-36 z-0"}
+                   src={"/images/services/service6.png"} alt={"Placeholder"} width={1920} height={1268}/>
             <span className={"hidden lg:block w-full bg-gradient-to-b from-white via-white/70 absolute h-120 top-0 left-0"}/>
             <span className={"lg:hidden h-112 bg-gradient-to-b from-white via-white/70 absolute -top-0 left-0 w-full"}/>
             {/*<span className={"lg:hidden h-112 bg-gradient-to-b from-GO-green/30 via-GO-green/10 absolute top-0 left-0 w-full"}/>*/}
