@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/ui/Navbar";
 import {FetchOptions, fetchURI} from "../../lib/api";
 import {
     AttributesBlogPost,
@@ -46,7 +46,7 @@ export function slug(props: IProps) {
                 <meta name={"description"} content={description}/>
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
-            <Navbar selection={"none"}/>
+            <Navbar selection={""}/>
             <article className={"relative w-ful flex flex-col items-center justify-start gap-2 lg:gap-6"}>
                 <header
                     className={"w-full relative md:h-168 xl:h-[44rem] md:px-16 lg:px-20 flex flex-col items-center justify-end pb-0 xl:pb-16 text-rich-black"}>

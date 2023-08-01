@@ -1,6 +1,6 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
-import Navbar from "../components/Navbar";
+import Navbar from "../components/ui//Navbar";
 import Footer from "../components/Footer";
 import {strings} from "../model/strings";
 import React, {useContext, useEffect} from "react";

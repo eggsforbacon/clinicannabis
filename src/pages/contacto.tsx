@@ -1,5 +1,5 @@
 import {NextPage} from "next";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/ui/Navbar";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import {strings} from "../model/strings";

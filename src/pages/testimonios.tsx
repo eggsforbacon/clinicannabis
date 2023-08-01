@@ -1,5 +1,5 @@
 import {GetStaticProps, InferGetStaticPropsType} from "next";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/ui/Navbar";
 import React, {useEffect, useState} from "react";
 import Head from "next/head";
 import Footer from "../components/Footer";
@@ -74,9 +74,7 @@ function Testimonios ({testimonials, token} : InferGetStaticPropsType<typeof get
 
 export default Testimonios
 
-export const getStaticProps: GetStaticProps<{ testimonials: StrapiPost[], token : string }> = async (
-    context,
-) => {
+export const getStaticProps: GetStaticProps<{ testimonials: StrapiPost[], token : string }> = async () => {
     const response = await fetchURI<{ jwt: string }>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/auth/local`, {
         method: 'POST',
         body: {

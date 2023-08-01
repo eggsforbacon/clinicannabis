@@ -1,7 +1,7 @@
 import {NextPage} from "next";
 import Head from "next/head";
 import React, {useState} from "react";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/ui/Navbar";
 import {strings} from "../../model/strings";
 import {SerumCard} from "../../components/SerumCard";
 import {ISerumColors} from "../../model/interfaces";

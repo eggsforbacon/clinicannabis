@@ -1,10 +1,10 @@
 import {NextPage} from "next";
 import Head from "next/head";
+import Navbar from "../../components/ui/Navbar";
 import React from "react";
 import Footer from "../../components/Footer";
 import Image from "next/image";
 import {strings} from "../../model/strings";
-import Navbar from "../../components/Navbar";
 
 const ClinicaDelDolor: NextPage = () => {
     return (
