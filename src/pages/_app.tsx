@@ -1,8 +1,8 @@
 import '../../styles/globals.css'
 import type {AppProps} from 'next/app'
 import React, {useEffect} from "react";
-import {NavbarProvider} from "../context/Navbar/NavbarProvider";
 import {WhatsappButton} from "../components/WhatsappButton";
+import {GlobalProvider} from "../context/GlobalProvider";
 
 function MyApp({Component, pageProps}: AppProps) {
 
@@ -12,12 +12,11 @@ function MyApp({Component, pageProps}: AppProps) {
     }, [])
 
     return (
-        <NavbarProvider>
-            <>
-                <WhatsappButton/>
-                <Component {...pageProps} />
-            </>
-        </NavbarProvider>
+        <GlobalProvider>
+            <WhatsappButton/>
+            <Component {...pageProps} />
+        </GlobalProvider>
+
 
     );
 }

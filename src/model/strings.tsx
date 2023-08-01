@@ -45,12 +45,28 @@ export const strings: IKeyedObject = {
     },
     'landing': {
         'hero': {
-            'headline': <>{"No te acostumbres "}</>,
-            'headlineRemark': <>{"al dolor"}</>,
-            'subtitle': <>{"En Clinicannabis creemos que siempre hay una mejor alternativa para tratarlo. Contamos con un equipo de profesionales dispuestos a mostrarte que el alivio "}</>,
-            'subtitleRemark': <>{"sí es posible."}</>,
-            'cta': <>{"Contáctanos"}</>,
-            'experience': <>{"Nuestro centro de Experiencia"}</>
+            'animation': {
+                'headline': <>{"No te acostumbres "}</>,
+                'headlineRemark': <>{"al dolor"}</>,
+                'subtitle': <>{"En Clinicannabis creemos que siempre hay una mejor alternativa para tratarlo. Contamos con un equipo de profesionales dispuestos a mostrarte que el alivio "}</>,
+                'subtitleRemark': <>{"sí es posible."}</>,
+                'cta': <>{"Contáctanos"}</>,
+            },
+            'blog': {
+                'title': <>{"Actualidad "}<br/><span
+                    className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/>{"en la salud"}</>,
+                'titleRemark': <>{"en la salud"}</>,
+                'copy': <>{"Obtén información de "}<span
+                    className={"font-bold"}>{"Clinicannabis"}</span>{" enviada directamente a tu correo."}</>,
+                'cta': <>{"Suscríbete"}</>,
+                'image': "/images/landing/hero/updatedBg.png",
+            },
+            'painClinic': {
+                'title': <>{"Clínica del "}</>,
+                'remark': <>{"Dolor"}</>,
+                'copy': <>{"Contamos con una unidad médica supra especializada en el manejo del dolor, con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad."}</>,
+                'cta': <>{"Leer más"}</>,
+            },
         },
         'about': {
             'headline': <>{"¿Quiénes "}</>,
@@ -127,30 +143,6 @@ export const strings: IKeyedObject = {
             'cta': <>{"Leelos"}</>,
         },
         'blog': {
-            'slides': {
-                2: {
-                    'title': <>{"Noticias Médicas"}</>,
-                    'copy': <>{"Obtén información de Clinicannabis enviada directamente a tu correo."}</>,
-                    'cta': <>{"Suscríbete"}</>,
-                    'image': "/images/landing/blog/blogBackground.png",
-                },
-                1: {
-                    'title': <>{"Actualidad "}<br/><span
-                        className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/><span
-                        className={"font-normal"}>{"en la salud"}</span></>,
-                    'copy': <>{"Obtén información de "}<span
-                        className={"font-bold"}>Clinicannabis</span>{" enviada directamente a tu correo."}</>,
-                    'cta': <>{"Suscríbete"}</>,
-                    'image': "/images/landing/blog/updatedBg.png",
-
-                },
-                3: {
-                    'title': <>{""}</>,
-                    'copy': <>{""}</>,
-                    'cta': <>{""}</>,
-                    'image': "/images/landing/blog/blogBackground.png",
-                },
-            },
             'headline': <>{"Blog "}</>,
             'remark': <>{"médico"}</>,
             'content': <>{"Tenemos para ti la actualidad en temas de salud, medicina funcional e innovación médica alternativa."}</>,
@@ -440,13 +432,14 @@ export const strings: IKeyedObject = {
                 'copy': <>{"Es aquel dolor agudo acompañado de una sensación incapacitante y desagradable que supera los 3 meses de evolución en la vida del paciente. Este dolor puede manifestarse de distintas formas y, dependiendo de su intensidad, impedir la realización de actividades cotidianas."}</>
             },
             'types': {
-                'intro': <>{"Existen diferentes tipos de "}<span className={"italic font-black"}>{"dolor crónico"}</span>{" entre los que se encuentran"}</>,
-                'articular': <><span className={"italic font-black"}>{"Dolor articular"}</span>{" en hombro, cadera, articulaciones, rodilla y columna asociados a artrosis, fibromialgia, hernia discal, epicondilitis, túnel de carpo y ciática."}</>,
-                'neural': <><span className={"italic font-black"}>{"Dolor neuropático"}</span>{" lesiones de nervios, neuralgia, posherpética y migrañas."}</>,
-                'oncological': <><span className={"italic font-black"}>{"Dolor oncológico"}</span>{" derivado del proceso de la enfermedad, la quimioterapia o radioterapia."}</>,
+                'intro': <>{"Existen diferentes tipos de "}<span className={"italic font-black"}>{"dolor crónico"}</span>{" entre los que se encuentran:"}</>,
+                'articular': <><span className={"italic font-black"}>{"Dolor articular:"}</span>{" se presenta en hombro, cadera, articulaciones, rodilla y columna asociados a artrosis, fibromialgia, hernia discal, epicondilitis, túnel de carpo y ciática."}</>,
+                'neural': <><span className={"italic font-black"}>{"Dolor neuropático:"}</span>{" lesiones de nervios, neuralgia, posherpética y migrañas."}</>,
+                'oncological': <><span className={"italic font-black"}>{"Dolor oncológico:"}</span>{" derivado del proceso de la enfermedad, la quimioterapia o radioterapia."}</>,
             },
             'therapy': {
-                'title': <>{"En Clinicannabis ofrecemos terapias como"}</>,
+                'title': <>{"En Clinicannabis "}</>,
+                'remark': <>{"ofrecemos terapias como:"}</>,
                 'items' : [
                     <>{"Bloqueo guiado con ultrasonido"}</>,
                     <>{"Bloqueo con fluoroscopio a través de rayos X"}</>,
@@ -455,7 +448,8 @@ export const strings: IKeyedObject = {
                 ],
             },
             'regenerative': {
-                'title': <>{"Medicina Regenerativa"}</>,
+                'title': <>{"Medicina "}</>,
+                'remark': <>{"Regenerativa"}</>,
                 'items' : [
                     <>{"Bioestimulación con Plasma Rico en Plaquetas - PRP"}</>,
                     <>{"Ozonoterapia"}</>,

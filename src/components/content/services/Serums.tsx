@@ -9,8 +9,8 @@ export const Serums = () => {
 
     return (
         <article className={"relative flex items-center justify-center lg:items-start lg:justify-end z-10 h-[48rem] md:h-208 lg:h-192 xl:h-224"} id={"serums"}>
-            <Image src={"/images/servicios/leafBackdrop.svg"} alt={""} width={1920} height={1068} className={"absolute opacity-100 top-64 left-0 scale-[3.2] md:scale-[1.5] lg:hidden"} />
-            <Image src={"/images/servicios/service4.png"} className={"absolute opacity-60 lg:opacity-100 lg:top-20 xl:-top-20 left-0 top-60 scale-[3.2] md:scale-[1.5] lg:scale-[1.5] xl:scale-[1.3] w-full"}
+            <Image src={"/images/services/leafBackdrop.svg"} alt={""} width={1920} height={1068} className={"pointer-events-none select-none absolute opacity-100 top-64 left-0 scale-[3.2] md:scale-[1.5] lg:hidden"} />
+            <Image src={"/images/services/service4.png"} className={"pointer-events-none select-none absolute opacity-60 lg:opacity-100 lg:top-20 xl:-top-20 left-0 top-60 scale-[3.2] md:scale-[1.5] lg:scale-[1.5] xl:scale-[1.3] w-full"}
                    alt={""} width={1920}
                    height={1068} quality={100} loading={"lazy"}/>
             <section

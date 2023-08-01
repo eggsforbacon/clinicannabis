@@ -20,13 +20,10 @@ const Footer = () => {
         <>
             <footer
                 className={"z-0 bg-rich-black lg:bg-white flex w-full h-fit lg:h-144 relative flex-col justify-end items-center mt-auto overflow-x-clip"}>
-                {/*<Image src={"/images/backgrounds/footer.svg"}*/}
-                {/*       className={"z-0 w-full h-auto pointer-events-none selection:bg-transparent absolute lg:scale-[1.85] xl:scale-[1.1] -top-28 lg:bottom-28 lg:left-36 xl:left-auto lg:top-auto xl:bottom-0"} alt={""}*/}
-                {/*       height={932} width={1920} priority/>*/}
-                <Image src={"/images/svg/leafFooter.svg"}
-                       className={"z-0 pointer-events-none selection:bg-transparent absolute right-0 -bottom-0 opacity-5"}
-                       alt={""}
-                       height={16 * 50} width={16 * 50} priority/>
+                {/*<Image src={"/images/svg/leafFooter.svg"}*/}
+                {/*       className={"z-0 pointer-events-none selection:bg-transparent absolute right-0 -bottom-0 opacity-5"}*/}
+                {/*       alt={""}*/}
+                {/*       height={16 * 50} width={16 * 50} priority/>*/}
                 <section className={"z-0 h-fit lg:h-144 w-full bg-rich-black text-white"}>
                     <section className={"lg:px-10 xl:px-32 2xl:px-80 h-full flex flex-col items-stretch justify-between"}>
                         <section className={"px-6 g:px-3 py-10 h-full flex flex-col lg:flex-row items-center justify-start gap-16"}>
@@ -84,7 +81,7 @@ const Footer = () => {
                                 <Image src={"/images/svg/clinic_white.svg"} alt={""} width={16} height={16}
                                        className={"h-full w-auto"}/>
                             </Link>
-                            <ul className={"grid grid-cols-2 lg:grid-cols-4 mt-4 lg:mt-auto place-items-center gap-6"}>
+                            <ul className={"grid grid-cols-2 lg:grid-cols-4 mt-4 place-items-center gap-6"}>
                                 <li>
                                     <Link href={"https://www.facebook.com/Clinicanabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <Facebook

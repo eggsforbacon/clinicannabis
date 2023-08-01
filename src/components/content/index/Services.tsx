@@ -14,11 +14,11 @@ export const Services = () => {
     ];
 
     const servicesBgs = [
-        "bg-[url('/images/hero/1.webp')]",
-        "bg-[url('/images/hero/2.webp')]",
-        "bg-[url('/images/hero/3.webp')]",
-        "bg-[url('/images/hero/4.webp')]",
-        "bg-[url('/images/hero/5.webp')]",
+        "bg-[url('/images/landing/curve-cards/1.webp')]",
+        "bg-[url('/images/landing/curve-cards/2.webp')]",
+        "bg-[url('/images/landing/curve-cards/3.webp')]",
+        "bg-[url('/images/landing/curve-cards/4.webp')]",
+        "bg-[url('/images/landing/curve-cards/5.webp')]",
     ];
 
     const serviceLinks = [

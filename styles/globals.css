@@ -50,16 +50,8 @@
         clip-path: ellipse(190% 75% at -20% 80%);
     }
 
-    .swiper-pagination {
-        @apply fill-viridian-green w-screen relative z-30;
-    }
-
-    .swiper-navigation-prev {
-        @apply relative left-10 top-1/2 -translate-x-1/2;
-    }
-
-    .swiper-navigation-next {
-
+    .c-swiper-horizontal {
+        @apply !w-fit !px-6 !py-1 !box-border !left-1/2 !-translate-x-1/2 !bottom-4 md:!bottom-32 lg:!bottom-24 xl:!bottom-16 !top-auto !rounded-2xl !bg-white/30 !backdrop-blur-2xl !drop-shadow-sm;
     }
 
     .arrow-list li {
@@ -84,6 +76,33 @@
         list-style-type: '\2014';
         padding-inline-start: 1ch;
     }
+
+    /** This WILL be painful to write
+      * The scheme is {ROLE}-clip[-{SIZE}].
+      * If no size is specified*/
+    .pain-clinic-intro-clip-lg {
+        clip-path: ellipse(180% 80% at -20% 17%);
+    }
+
+    .pain-clinic-intro-clip-xl {
+        clip-path: ellipse(180% 76% at -17% 16%);
+    }
+
+    .pain-clinic-section-clip-sm {
+        clip-path: ellipse(180% 90% at 20% 85%);
+    }
+
+    .pain-clinic-section-clip-md {
+        clip-path: ellipse(180% 90% at 0% 75%);
+    }
+
+    .pain-clinic-section-clip-lg {
+        clip-path: ellipse(220% 88% at 78% 87%);
+    }
+
+    .pain-clinic-section-clip-xl {
+        clip-path: ellipse(220% 88% at 78% 75%);
+    }
 }
 
 /*  ================================================
@@ -107,7 +126,7 @@
     flex-wrap: wrap;
 }
 
-.mgLogos img{
+.mgLogos img {
     margin-top: 2vh;
     object-fit: cover;
     width: 100%;
@@ -120,25 +139,27 @@
     width: 100%;
     height: 95vh;
 }
-.fondIndx{
+
+.fondIndx {
     height: 123vh;
 }
 
-.pstn__1{
+.pstn__1 {
     margin-top: 15vh;
     justify-content: space-evenly;
 }
 
-.icons_landg{
+.icons_landg {
     justify-content: space-evenly;
     width: 80%;
     margin-bottom: 5vh;
 }
 
 @media (min-width: 320px) {
-    .ds-imgLanding,.lineLandg {
+    .ds-imgLanding, .lineLandg {
         display: none;
     }
+
     .ImgHeadLand {
         height: 152vh;
     }
@@ -147,44 +168,55 @@
         padding: 2px;
     }
 
-    .icons-landg{
+    .icons-landg {
         flex-wrap: wrap;
         flex-direction: column;
         margin-top: 9vh;
     }
-    .mgLogos img{
+
+    .mgLogos img {
         width: 100%;
         height: 65px;
     }
-    .log2-landng{
+
+    .log2-landng {
         margin-top: -10px !important;
         height: 95px !important;
     }
-    .sm-Log2{
+
+    .sm-Log2 {
         margin-top: 3vh;
         padding-bottom: 1em;
     }
-    .bnrHead{
+
+    .bnrHead {
         object-fit: cover;
         height: auto;
     }
-    .logLanding{
+
+    .logLanding {
         flex-direction: column;
     }
-    .icons_landg{
+
+    .icons_landg {
         width: 100%;
         margin-top: 0;
     }
+
     .fondIndx {
         height: 192vh;
     }
 }
 
 @media (min-width: 411px) {
-    .logLanding{flex-direction: row;}
-    .lineLandg{
+    .logLanding {
+        flex-direction: row;
+    }
+
+    .lineLandg {
         display: block;
     }
+
     .ImgHeadLand {
         height: 120vh;
         margin-bottom: 15vh;
@@ -194,28 +226,32 @@
         padding: 2px;
     }
 
-    .icons-landg{
+    .icons-landg {
         flex-wrap: wrap;
         flex-direction: column;
         margin-top: 9vh;
     }
-    .mgLogos img{
+
+    .mgLogos img {
         width: 100%;
         height: 65px;
     }
-    .log2-landng{
+
+    .log2-landng {
         margin-top: -10px !important;
         height: 95px !important;
     }
-    .sm-Log2{
+
+    .sm-Log2 {
         margin-top: 3vh;
         padding-bottom: 1em;
     }
-    
+
     .fondIndx {
         height: 167vh;
     }
-    .icons_landg{
+
+    .icons_landg {
         width: 100%;
         margin-top: 0;
     }
@@ -230,27 +266,32 @@
         padding: 2px;
     }
 
-    .icons-landg{
+    .icons-landg {
         flex-wrap: wrap;
         flex-direction: column;
         margin-top: 9vh;
     }
-    .mgLogos img{
+
+    .mgLogos img {
         width: 100%;
         height: 85px;
     }
-    .log2-landng{
+
+    .log2-landng {
         margin-top: -11px !important;
         height: 100px !important;
     }
-    .bnrHead{
+
+    .bnrHead {
         object-fit: cover;
         height: auto;
     }
+
     .fondIndx {
         height: 171vh;
     }
-    .icons_landg{
+
+    .icons_landg {
         width: 100%;
         margin-top: 0;
     }
@@ -264,22 +305,27 @@
     .pstn-1 {
         padding: 40px;
     }
-    .icons-landg{
+
+    .icons-landg {
         margin-top: 2vh;
         flex-direction: row;
     }
+
     .mgLogos img {
         width: 100%;
         height: 113px;
     }
-    .log2-landng{
+
+    .log2-landng {
         margin-top: 0 !important;
         height: 113px !important;
     }
+
     .fondIndx {
         height: 171vh;
     }
-    .icons_landg{
+
+    .icons_landg {
         width: 80%;
         margin-top: 9vh;
     }
@@ -293,27 +339,32 @@
     .ds-imgLanding {
         display: block;
     }
+
     .mgLogos img {
         width: 100%;
         height: 90px;
     }
-    .log2-landng{
+
+    .log2-landng {
         margin-top: 0 !important;
         height: 95px !important;
     }
+
     .fondIndx {
         height: 124vh;
     }
-    .mgLogosX{
+
+    .mgLogosX {
         margin-top: 4vh;
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .fondIndx {
         height: 130vh;
     }
-    .mgLogosX{
+
+    .mgLogosX {
         margin-top: 8vh;
     }
 }
