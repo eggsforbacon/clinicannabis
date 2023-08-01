@@ -23,8 +23,8 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
         }
     }, []);
 
-    const { data, mutate } = useSWR(
-        mounted ? `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&sort=date%3Adesc&populate=*` : null,
+    const { data } = useSWR(
+        mounted ? `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&pagination[page]=${pageIndex}&pagination[pageSize]=6&sort=date%3Adesc&populate=*` : null,
         () => fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&pagination[page]=${pageIndex}&pagination[pageSize]=6&sort=date%3Adesc&populate=*`, {
             method: "GET",
             headers: {
@@ -40,12 +40,10 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
 
     const prevPage = () => {
         setPageIndex(pageIndex - 1);
-        mutate();
     }
 
     const nextPage = () => {
         setPageIndex(pageIndex + 1);
-        mutate();
     }
 
     return (
@@ -59,9 +57,10 @@ function Index ({blogs, token} : InferGetStaticPropsType<typeof getStaticProps>)
             <Navbar selection={"blog"} />
             <Hero />
             <FloatingSignupForm />
-            <section className={"relative w-full h-20 box-border px-8 lg:px-16 xl:px-32 py-2 flex items-center justify-center gap-2"}>
-                <button onClick={prevPage} className={"rounded-xl box-border p-1 aspect-square h-10 flex items-center justify-center bg-caribbean-green/40 disabled:bg-neutral-100/60 backdrop-blur-md disabled:cursor-not-allowed [&>*]:fill-caribbean-green [&>*]:disabled:fill-neutral-500"} disabled={pageIndex === 1}><ChevronLeft size={24}/></button>
-                <button onClick={nextPage} className={"rounded-xl box-border p-1 aspect-square h-10 flex items-center justify-center bg-caribbean-green/40 disabled:bg-neutral-100/60 backdrop-blur-md disabled:cursor-not-allowed [&>*]:fill-caribbean-green [&>*]:disabled:fill-neutral-500"} disabled={pageIndex === (data && data.meta?.pagination.pageCount)}><ChevronRight size={24}/></button>
+            <section className={"relative h-20 box-border px-8 lg:px-16 xl:px-32 mx-8 lg:mx-16 xl:mx-32 py-2 flex items-center justify-center gap-2 bg-white/5 backdrop-blur-md rounded-lg"}>
+                <button onClick={prevPage} className={"rounded-xl box-border p-1 aspect-square h-8 flex items-center justify-center bg-caribbean-green/20 disabled:bg-neutral-100/60 backdrop-blur-md disabled:cursor-not-allowed [&>*]:fill-white [&>*]:disabled:fill-neutral-500"} disabled={pageIndex === 1}><ChevronLeft size={20}/></button>
+                <p className={"text-center text-lg text-neutral-300"}>Página {pageIndex} de {data.meta?.pagination.pageCount}</p>
+                <button onClick={nextPage} className={"rounded-xl box-border p-1 aspect-square h-8 flex items-center justify-center bg-caribbean-green/20 disabled:bg-neutral-100/60 backdrop-blur-md disabled:cursor-not-allowed [&>*]:fill-white [&>*]:disabled:fill-neutral-500"} disabled={pageIndex === (data && data.meta?.pagination.pageCount)}><ChevronRight size={20}/></button>
             </section>
             <Posts blogPosts={data.data !== null ? data.data : undefined} />
             <Footer />
