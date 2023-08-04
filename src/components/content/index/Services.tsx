@@ -1,3 +1,5 @@
+"use client";
+
 import {useWindowDimensions} from "../../../hooks/useWindowDimensions";
 import {ServiceCard} from "../../ServiceCard";
 import Link from "next/link";
@@ -7,7 +9,7 @@ import React from "react";
 export const Services = () => {
     const {width: wWidth} = useWindowDimensions();
     const serviceImageStyle = "absolute inset-0 bg-cover bg-center bg-no-repeat h-full w-full";
-    const linkStyle = "lg:text-transparent flex flex-col text-center gap-4 items-center justify-center relative z-10 w-full h-full lg:bg-transparent transition duration-300 lg:hover:text-white text-[1.75rem] leading-[1] text-white lg:focus:text-white lg:hover:bg-dark-green/70 lg:hover:cursor-pointer lg:focus:bg-black/25 bg-black/60";
+    const linkStyle = "lg:text-transparent flex flex-col text-center gap-4 items-center justify-center relative z-10 w-full h-full lg:bg-transparent transition duration-300 lg:hover:text-white text-base text-white lg:focus:text-white lg:hover:bg-dark-green/70 lg:hover:cursor-pointer lg:focus:bg-black/25 bg-black/60";
 
     const servicesTitles = [
         "Cannabis Medicinal", "Medicina Funcional", "Sueros Terapéuticos", <>{"Sistema"}<br/>{"Súper Inductivo"}</>, <>{"Clínica del"}<br/><span className={"text-caribbean-green md:text-inherit"}>{"Dolor"}</span></>,

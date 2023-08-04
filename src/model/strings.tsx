@@ -54,7 +54,7 @@ export const strings: IKeyedObject = {
             },
             'blog': {
                 'title': <>{"Actualidad "}<br/><span
-                    className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/>{"en la salud"}</>,
+                    className={"max-md:!text-[2.7rem] lg:!text-[5rem]"}>{"del cannabis "}</span><br/>{"en la salud"}</>,
                 'titleRemark': <>{"en la salud"}</>,
                 'copy': <>{"Obtén información de "}<span
                     className={"font-bold"}>{"Clinicannabis"}</span>{" enviada directamente a tu correo."}</>,

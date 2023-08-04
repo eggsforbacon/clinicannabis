@@ -1,3 +1,5 @@
+"use client";
+
 import {ReactNode, useReducer} from "react";
 import {globalReducer} from "./globalReducer";
 import GlobalContext from "./GlobalContext";

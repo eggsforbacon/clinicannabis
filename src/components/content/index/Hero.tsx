@@ -1,13 +1,24 @@
-import React, {CSSProperties, useState} from "react";
+"use client";
+
+import React, {CSSProperties, useContext, useEffect, useState} from "react";
 import {ClinicIntro} from "./HeroSlides/ClinicIntro";
 import {Swiper as SwiperComponent, SwiperSlide} from "swiper/react";
 import {Swiper as SwiperClass, Autoplay, Navigation, Pagination} from "swiper";
 import {BlogSlide} from "./HeroSlides/BlogSlide";
 import {PainClinic} from "./HeroSlides/PainClinic";
+import GlobalContext from "../../../context/GlobalContext";
 
 export const Hero = () => {
 
+    const {enableWindow} = useContext(GlobalContext);
+
     const [activeIndex, setActiveIndex] = useState(0);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            enableWindow();
+        }
+    }, []);
 
     const slides: JSX.Element[] = [
         <ClinicIntro />,
