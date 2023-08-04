@@ -9,10 +9,11 @@ import React from "react";
 export const Services = () => {
     const {width: wWidth} = useWindowDimensions();
     const serviceImageStyle = "absolute inset-0 bg-cover bg-center bg-no-repeat h-full w-full";
-    const linkStyle = "lg:text-transparent flex flex-col text-center gap-4 items-center justify-center relative z-10 w-full h-full lg:bg-transparent transition duration-300 lg:hover:text-white text-base text-white lg:focus:text-white lg:hover:bg-dark-green/70 lg:hover:cursor-pointer lg:focus:bg-black/25 bg-black/60";
+    const linkStyle = "lg:text-transparent flex flex-col text-center items-center justify-center relative z-10 w-full h-full lg:bg-transparent transition duration-300 lg:hover:text-white text-base text-white lg:focus:text-white lg:hover:bg-dark-green/70 lg:hover:cursor-pointer lg:focus:bg-black/25 bg-black/60";
 
     const servicesTitles = [
-        "Cannabis Medicinal", "Medicina Funcional", "Sueros Terapéuticos", <>{"Sistema"}<br/>{"Súper Inductivo"}</>, <>{"Clínica del"}<br/><span className={"text-caribbean-green md:text-inherit"}>{"Dolor"}</span></>,
+        "Cannabis Medicinal", "Medicina Funcional", "Sueros Terapéuticos", <>{"Sistema"}<br/>{"Súper Inductivo"}</>, <>{"Clínica del"}<br/><span
+            className={"text-caribbean-green md:text-inherit"}>{"Dolor"}</span></>,
     ];
 
     const servicesBgs = [
@@ -41,44 +42,39 @@ export const Services = () => {
 
     const serviceCards = servicesTitles.map(
         (title, index) => {
-        return (
-            <ServiceCard name={title} to={serviceLinks[index]} background={servicesBgs[index]}
-                         interaction={"Descubre"} index={index}
-                         bgPos={wWidth > 640 ? servicePositions[index][1] : servicePositions[index][0]}/>
-        );
-    });
+            return (
+                <ServiceCard name={title} to={serviceLinks[index]} background={servicesBgs[index]}
+                             interaction={"Descubre"} index={index}
+                             bgPos={wWidth > 640 ? servicePositions[index][1] : servicePositions[index][0]}/>
+            );
+        });
 
     if (wWidth > 768) {
         return (
             <ul className={"z-10 h-72 flex justify-center gap-2 w-full hero-clip bg-white overflow-clip"}>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
                     <Link className={linkStyle} href={serviceLinks[0]}>{servicesTitles[0]}</Link>
-                    <section
-                        className={`${servicesBgs[0]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}>
-                    </section>
+                    <div
+                        className={`${servicesBgs[0]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}/>
                 </li>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
                     <Link className={linkStyle} href={serviceLinks[1]}>{servicesTitles[1]}</Link>
-                    <section
-                        className={`${servicesBgs[1]} bg-[600px_auto] bg-[center_top_-2rem] ${serviceImageStyle}`}>
-                    </section>
+                    <div
+                        className={`${servicesBgs[1]} bg-[600px_auto] bg-[center_top_-2rem] ${serviceImageStyle}`}/>
                 </li>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
                     <Link className={linkStyle} href={serviceLinks[2]}>{servicesTitles[2]}</Link>
-                    <section className={`${servicesBgs[2]}  ${serviceImageStyle}`}>
-                    </section>
+                    <div className={`${servicesBgs[2]}  ${serviceImageStyle}`}/>
                 </li>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
                     <Link className={linkStyle} href={serviceLinks[3]}>{servicesTitles[3]}</Link>
-                    <section
-                        className={`${servicesBgs[3]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}>
-                    </section>
+                    <div
+                        className={`${servicesBgs[3]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}/>
                 </li>
                 <li className={"relative w-full h-full overflow-clip flex items-center justify-center transition duration-75 ease-in-out lg:hover:text-white focus:text-white"}>
                     <Link className={linkStyle} href={serviceLinks[4]}>{servicesTitles[4]}</Link>
-                    <section
-                        className={`${servicesBgs[4]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}>
-                    </section>
+                    <div
+                        className={`${servicesBgs[4]} bg-[640px_auto] bg-[center_top_-4rem] ${serviceImageStyle}`}/>
                 </li>
             </ul>
         );

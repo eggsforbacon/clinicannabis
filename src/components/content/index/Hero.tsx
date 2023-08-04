@@ -57,7 +57,7 @@ export const Hero = () => {
                     "--swiper-navigation-sides-offset": "1rem",
                     "--swiper-navigation-color": colors[activeIndex],
                 } as CSSProperties}
-                className="w-screen h-192 sm:h-208 md:h-256 lg:h-224"
+                className="max-w-[1920px] w-screen h-192 sm:h-208 md:h-256 lg:h-224"
 
             >
                 {slides.map((slide, index) =>
