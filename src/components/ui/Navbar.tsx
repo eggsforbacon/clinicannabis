@@ -77,7 +77,7 @@ const Navbar = (props: _CProps) => {
                         size={30}/>
                 </button>
             </section>
-            <ul className={`absolute lg:relative top-24 left-0 lg:top-auto lg:left-auto py-6 lg:p-0 lg:h-full w-full lg:w-fit box-border bg-white lg:bg-transparent drop-shadow-md lg:drop-shadow-none flex flex-col lg:flex-row items-center justify-start lg:justify-end gap-6 sm:gap-8 md:gap-10 lg:gap-8 xl:gap-14 text-neutral-500 xl:text-sm lg:animate-none lg:pointer-events-auto lg:select-auto ${open && show ? "animate-swing-in-top-fwd" : "animate-swing-out-top-bck pointer-events-none select-none"}`}
+            <ul className={`absolute lg:relative top-24 left-0 lg:top-auto lg:left-auto py-6 lg:p-0 lg:h-full w-full lg:w-fit box-border bg-white lg:bg-transparent drop-shadow-md lg:drop-shadow-none flex flex-col lg:flex-row items-center justify-start lg:justify-end gap-6 sm:gap-8 md:gap-10 lg:gap-8 xl:gap-14 text-neutral-500 xl:text-sm 2xl:text-base lg:animate-none lg:pointer-events-auto lg:select-auto ${open && show ? "animate-swing-in-top-fwd" : "animate-swing-out-top-bck pointer-events-none select-none"}`}
                 id={"navigation_links"}>
                 {_destinations.map((d, i) => {
                     return (
