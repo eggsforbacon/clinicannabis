@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Input} from "../../Input";
+import {Input} from "../../ui/Input";
 import {strings} from "../../../model/strings";
 import {Envelope, EnvelopePaper} from "react-bootstrap-icons";
 import {TOSCheckbox} from "../../TOSCheckbox";

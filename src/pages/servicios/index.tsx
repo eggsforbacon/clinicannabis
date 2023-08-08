@@ -1,6 +1,6 @@
 import {NextPage} from "next";
 import Navbar from "../../components/ui/Navbar";
-import Footer from "../../components/Footer";
+import Footer from "../../components/ui/Footer";
 import {MedicalCannabis} from "../../components/content/services/MedicalCannabis";
 import {SIS} from "../../components/content/services/SIS";
 import {Serums} from "../../components/content/services/Serums";

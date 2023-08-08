@@ -1,12 +1,24 @@
-import {NextPage} from "next";
-import Navbar from "../components/ui/Navbar";
+"use client";
+
+import Navbar from "../../components/ui/Navbar";
+import {strings} from "../../model/strings";
 import {Link as ScrollLink} from "react-scroll/modules";
-import {strings} from "../model/strings";
-import Head from "next/head";
 import React from "react";
+import {Metadata} from "next";
+import Footer from "../../components/ui/Footer";
 
-const Legal: NextPage = () => {
+export const metadata : Metadata = {
+    title: 'Tratamiento de Datos | Clinicannabis',
+    icons: [
+        {
+            rel: 'icon',
+            url: '/favicon.ico',
+        }
+    ],
+    viewport: 'width=device-width, initial-scale=1',
+}
 
+export default function Legal () {
     const navigation = strings.legal.navigation;
     const content = strings.legal.content;
 
@@ -14,15 +26,9 @@ const Legal: NextPage = () => {
     const lih2 = "text-2xl font-bold uppercase mt-10";
     const pStyle = "mt-3";
     const lih3 = "text-xl font-bold uppercase my-4";
+
     return (
         <main>
-            <Head>
-                <title>Tratamiento de Datos</title>
-                <link rel="icon" href="/favicon.ico"/>
-                {/*<meta name={"description"}*/}
-                {/*      content={""}/>*/}
-                <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
-            </Head>
             <Navbar selection={""}/>
             <section className={"md:ml-8 w-full"}>
                 <article className={"flex flex-col items-center space-y-16 py-52"}>
@@ -239,9 +245,7 @@ const Legal: NextPage = () => {
                     </section>
                 </article>
             </section>
+            <Footer />
         </main>
-    )
-        ;
+    );
 }
-
-export default Legal;

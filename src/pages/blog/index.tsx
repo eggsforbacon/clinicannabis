@@ -1,6 +1,6 @@
 import {GetStaticProps, InferGetStaticPropsType} from "next";
 import Navbar from "../../components/ui/Navbar";
-import Footer from "../../components/Footer";
+import Footer from "../../components/ui/Footer";
 import {Hero} from "../../components/content/blog/Hero";
 import {Posts} from "../../components/content/blog/Posts";
 import Head from "next/head";

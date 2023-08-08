@@ -1,7 +1,7 @@
 import Navbar from "../components/ui/Navbar";
 import {Hero} from "../components/content/index/Hero";
 import {Services} from "../components/content/index/Services";
-import {WhatsappButton} from "../components/WhatsappButton";
+import {WhatsappButton} from "../components/ui/WhatsappButton";
 import React from "react";
 import {GlobalProvider} from "../context/GlobalProvider";
 import {About} from "../components/content/index/About";
@@ -9,7 +9,7 @@ import {Values} from "../components/content/index/Values";
 import {Experience} from "../components/content/index/Experience";
 import {Testimonials} from "../components/content/index/Testimonials";
 import {Invima} from "../components/content/index/Invima";
-import Footer from "../components/Footer";
+import Footer from "../components/ui/Footer";
 
 export default function Home() {
     return (

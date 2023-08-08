@@ -7,16 +7,19 @@ const sitemap = (): MetadataRoute.Sitemap => [
         url: baseURI,
     },
     {
-        url: `${baseURI}/services`,
+        url: `${baseURI}/servicios`,
     },
     {
-        url: `${baseURI}/contact`,
+        url: `${baseURI}/contacto`,
     },
     {
         url: `${baseURI}/blog`,
     },
     {
-        url: `${baseURI}/seminario/seminario-iberoamericano`,
+        url: `${baseURI}/testimonios`,
+    },
+    {
+        url: `${baseURI}/servicios/clinica-del-dolor`,
     },
 ];
 export default sitemap
