@@ -2,7 +2,7 @@ import {NextPage} from "next";
 import Head from "next/head";
 import Navbar from "../../components/ui/Navbar";
 import React from "react";
-import Footer from "../../components/Footer";
+import Footer from "../../components/ui/Footer";
 import Image from "next/image";
 import {strings} from "../../model/strings";
 

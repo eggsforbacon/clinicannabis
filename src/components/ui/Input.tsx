@@ -1,5 +1,4 @@
-import {Person} from "react-bootstrap-icons";
-import React, {ReactNode, useEffect, useRef, useState} from "react";
+import React, {ReactNode, useRef, useState} from "react";
 
 export const Input = (
     props: {

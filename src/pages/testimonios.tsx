@@ -2,7 +2,7 @@ import {GetStaticProps, InferGetStaticPropsType} from "next";
 import Navbar from "../components/ui/Navbar";
 import React, {useEffect, useState} from "react";
 import Head from "next/head";
-import Footer from "../components/Footer";
+import Footer from "../components/ui/Footer";
 import {TestimonialSlide} from "../components/content/testimonials/TestimonialSlide";
 import Image from "next/image";
 import {AttributesTestimonialPost, StrapiGetAllResponse, StrapiPost} from "../interfaces/interfaces";

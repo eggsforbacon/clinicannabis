@@ -29,18 +29,17 @@ export const strings: IKeyedObject = {
         },
         'clinic': {
             'headline': <>{"Clinicannabis"}</>,
-            'home': <>{"Inicio"}</>,
+            'home': <>{"Nuestra clínica"}</>,
             'stories': <>{"Historias de victoria"}</>,
-            'history': <>{"Nuestra historia"}</>,
-            'experience': <>{"Nuestra clínica"}</>,
-
+            'pain': <>{"Clínica del Dolor"}</>,
+            'experience': <>{"Somos una Experiencia"}</>,
         },
         'fast': {
             'headline': <>{"Enlaces de interés"}</>,
             'contact': <>{"Contáctanos"}</>,
             'data': <>{"Protección de datos"}</>,
-            'FAQ': <>{"Preguntas frecuentes"}</>,
-            'experts': <>{"Nuestros expertos"}</>,
+            'blog': <>{"Blog médico"}</>,
+            'invima': <>{"Alertas sanitarias"}</>,
         },
     },
     'landing': {
