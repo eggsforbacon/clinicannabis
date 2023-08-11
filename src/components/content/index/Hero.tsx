@@ -3,7 +3,6 @@ import {ClinicIntro} from "./HeroSlides/ClinicIntro";
 import {Swiper as SwiperComponent, SwiperSlide} from "swiper/react";
 import {Swiper as SwiperClass, Autoplay, Navigation, Pagination} from "swiper";
 import {BlogSlide} from "./HeroSlides/BlogSlide";
-import {PainClinic} from "./HeroSlides/PainClinic";
 
 export const Hero = () => {
 
@@ -12,10 +11,9 @@ export const Hero = () => {
     const slides: JSX.Element[] = [
         <ClinicIntro />,
         <BlogSlide />,
-        <PainClinic />,
     ];
 
-    const colors = ["#009490", "#FAFAFA", "#00B451"]
+    const colors = ["#009490", "#FAFAFA"]
 
     const handleChange = (s: SwiperClass) => {
         setActiveIndex(s.realIndex);

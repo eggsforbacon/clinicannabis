@@ -15,7 +15,7 @@ function MyApp({Component, pageProps}: AppProps) {
 
     return (
         <GlobalProvider>
-            <GoogleAnalytics GA_MEASUREMENT_ID={"G-970CX72QYY"} />
+            <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA4_KEY!.toString()} />
             <WhatsappButton/>
             <Component {...pageProps} />
             <CookieBanner />

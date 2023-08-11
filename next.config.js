@@ -16,6 +16,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/servicios/clinica-del-dolor',
+        destination: '/404',
+        permanent: true,
+      },
+      {
         source: '/seminario/:path*',
         destination: '/404',
         permanent: true,
