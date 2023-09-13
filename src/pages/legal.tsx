@@ -241,7 +241,7 @@ const Legal: NextPage = () => {
                                     </ul>
                                 </ol>
                                 <li className={lih2} id={"promociones"}>
-                                    <h2>{navigation.promotions.title}</h2>
+                                    <h2>{navigation.conditions.title}</h2>
                                 </li>
                                 <ol className={"ml-5"}>
                                     <li className={lih3}><h3>{navigation.promotions["amor-amistad"]}</h3></li>
