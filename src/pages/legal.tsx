@@ -64,7 +64,7 @@ const Legal: NextPage = () => {
                                 <li className={linkStyle}>
                                     <ScrollLink to="promociones" spy={true}
                                                 duration={1200}
-                                                offset={-150}>{navigation.promotions.title}</ScrollLink>
+                                                offset={-150}>{navigation.conditions.title}</ScrollLink>
                                 </li>
                             </ol>
                         </aside>
