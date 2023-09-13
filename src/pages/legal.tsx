@@ -14,6 +14,7 @@ const Legal: NextPage = () => {
     const lih2 = "text-2xl font-bold uppercase mt-10";
     const pStyle = "mt-3";
     const lih3 = "text-xl font-bold uppercase my-4";
+    const lih4 = "text-lg font-bold my-4";
     return (
         <main>
             <Head>
@@ -37,36 +38,41 @@ const Legal: NextPage = () => {
                             className={"nested text-center md:text-left mb-16 sticky left-0 top-10 py-8 pr-10 shadow-md md:shadow-none border-solid border-2 border-transparent border-b-viridian-green md:border-b-transparent md:p-0 bg-white md:top-52 w-full md:w-56 flex justify-center items-center md:flex-col md:justify-start md:items-start space-y-2"}>
                             <ol className={"relative list-decimal"}>
                                 <li className={linkStyle}>
-                                    <ScrollLink to="objective" spy={true}
+                                    <ScrollLink to="objetivo" spy={true}
                                                 duration={1200}
                                                 offset={-150}>{navigation.objective}</ScrollLink>
                                 </li>
                                 <li className={linkStyle}>
-                                    <ScrollLink to="liable" spy={true}
+                                    <ScrollLink to="responsable" spy={true}
                                                 duration={1200}
                                                 offset={-150}>{navigation.liable}</ScrollLink></li>
                                 <li className={linkStyle}>
-                                    <ScrollLink to="definitions" spy={true}
+                                    <ScrollLink to="definiciones" spy={true}
                                                 duration={1200}
                                                 offset={-150}>{navigation.definitions.title}</ScrollLink>
                                 </li>
                                 <li className={linkStyle}>
-                                    <ScrollLink to="general" spy={true}
+                                    <ScrollLink to="condiciones-generales" spy={true}
                                                 duration={1200}
                                                 offset={-150}>{navigation.general}</ScrollLink>
                                 </li>
                                 <li className={linkStyle}>
-                                    <ScrollLink to="elaboration" spy={true}
+                                    <ScrollLink to="desarrollo-de-tratamiento" spy={true}
                                                 duration={1200}
                                                 offset={-150}>{navigation.elaboration.title}</ScrollLink>
+                                </li>
+                                <li className={linkStyle}>
+                                    <ScrollLink to="promociones" spy={true}
+                                                duration={1200}
+                                                offset={-150}>{navigation.promotions.title}</ScrollLink>
                                 </li>
                             </ol>
                         </aside>
                         <article className={"text-lg flex flex-col items-center w-4/6 justify-start -mt-10 gap-16"}>
                             <ol className={"list-decimal"}>
-                                <li className={lih2} id={"objective"}><h2>{navigation.objective}</h2></li>
+                                <li className={lih2} id={"objetivo"}><h2>{navigation.objective}</h2></li>
                                 <p className={pStyle}>{content.objective}</p>
-                                <li className={lih2} id={"liable"}><h2>{navigation.liable}</h2></li>
+                                <li className={lih2} id={"responsable"}><h2>{navigation.liable}</h2></li>
                                 <p className={pStyle}>{content.liable.paragraph}</p>
                                 <ul className={"list-disc ml-10 flex flex-col items-start justify-start gap-3 mt-4"}>
                                     <li>{content.liable.pbx}</li>
@@ -74,7 +80,7 @@ const Legal: NextPage = () => {
                                     <li>{content.liable.mail}</li>
                                 </ul>
                                 <p className={pStyle}>{content.liable.post}</p>
-                                <li className={lih2} id={"definitions"}><h2>{navigation.definitions.title}</h2></li>
+                                <li className={lih2} id={"definiciones"}><h2>{navigation.definitions.title}</h2></li>
                                 <ul className={"list-disc ml-10 flex flex-col items-start justify-start gap-3"}>
                                     <li className={"mt-4"}>
                                         <strong>{navigation.definitions.auth}:</strong> {content.definitions.auth}</li>
@@ -131,11 +137,11 @@ const Legal: NextPage = () => {
                                         <strong>{navigation.definitions.confidentiality}:</strong> {content.definitions.confidentiality}
                                     </li>
                                 </ul>
-                                <li className={lih2} id={"general"}><h2>{navigation.general}</h2></li>
+                                <li className={lih2} id={"condiciones-generales"}><h2>{navigation.general}</h2></li>
                                 <ul className={"list-disc ml-10 mt-4 flex flex-col items-center justify-start gap-3"}>
                                     {Object.values(content.general).map((s) => <li>{s as unknown as JSX.Element}</li>)}
                                 </ul>
-                                <li className={lih2} id={"elaboration"}><h2>{navigation.elaboration.title}</h2></li>
+                                <li className={lih2} id={"desarrollo-de-tratamiento"}><h2>{navigation.elaboration.title}</h2></li>
                                 <ol className={"ml-5"}>
                                     <li className={lih3}><h3>{navigation.elaboration.content}</h3></li>
                                     <section className={"flex flex-col items-start justify-start gap-3 mt-4"}>
@@ -233,6 +239,45 @@ const Legal: NextPage = () => {
                                                 key={`channel${index}`}>{c as unknown as JSX.Element}</li>
                                         })}
                                     </ul>
+                                </ol>
+                                <li className={lih2} id={"promociones"}>
+                                    <h2>{navigation.promotions.title}</h2>
+                                </li>
+                                <ol className={"ml-5"}>
+                                    <li className={lih3}><h3>{navigation.promotions["amor-amistad"]}</h3></li>
+                                    <p>En Clinicannabis pensamos en tu bienestar y en tus seres queridos. Por esta
+                                        razón, creamos una promoción en el mes de septiembre de 2023 para que celebres
+                                        el amor y la amistad cuidando tu salud y la de quienes amas.</p>
+                                    <li className={lih4}><h4>¿En qué consiste nuestra promoción?</h4></li>
+                                    <ul className={"list-disc ml-5"}>
+                                        <li>2x1 en todos nuestros servicios.</li>
+                                        <li>Consulta médica presencial.</li>
+                                        <li>Sistema Súper Inductivo.</li>
+                                        <li>Sueroterapia.</li>
+                                        <li>Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas,
+                                            Biopuntura, Masaje Tradicional Chino, Reflexología, Auriculoterapia,
+                                            Terapias Bioenergéticas (Cristaloterapia, Gemoterapia y Poliedros).
+                                        </li>
+                                        <li>Teleorientación gratuita + 50% de descuento en sueroterapia a domicilio</li>
+                                    </ul>
+                                    <p>Un médico especialista, realizará una llamada contigo completamente gratuita y te
+                                        recomendará un paquete de sueros de acuerdo con tus necesidades. Posteriormente,
+                                        nuestro equipo de enfermería se desplazará hasta tu casa, trabajo o el lugar que
+                                        indiques, y que cumpla con las condiciones necesarias, para recibir tu sesión de
+                                        sueroterapia a domicilio a mitad de precio.</p>
+                                    <li className={lih4}><h4>¿Cuáles son las condiciones y restricciones de esta
+                                        promoción?</h4></li>
+                                    <ol className={"ml-5 list-decimal"}>
+                                        <li>Promoción válida hasta el 30 de septiembre de 2023.</li>
+                                        <li>La promoción no incluye el valor del domicilio de la sueroterapia.</li>
+                                        <li>2 personas x el pago de 1 consulta médica presencial.</li>
+                                        <li>Se debe pagar el tratamiento completo.</li>
+                                        <li>No aplica para convenios.</li>
+                                        <li>En el 2x1, dado que algunos servicios y sueros tienen precios variables,
+                                            según la fórmula indicada por el médico, se debe pagar el servicio con mayor
+                                            costo.
+                                        </li>
+                                    </ol>
                                 </ol>
                             </ol>
                         </article>

@@ -25,8 +25,8 @@ const Footer = () => {
                 {/*       alt={""}*/}
                 {/*       height={16 * 50} width={16 * 50} priority/>*/}
                 <section className={"z-0 h-fit lg:h-144 w-full bg-rich-black text-white"}>
-                    <section className={"lg:px-10 xl:px-32 2xl:px-80 h-full flex flex-col items-stretch justify-between"}>
-                        <section className={"px-6 g:px-3 py-10 h-full flex flex-col lg:flex-row items-center justify-start gap-16"}>
+                    <section className={"lg:px-10 xl:px-24 2xl:px-72 h-full flex flex-col items-stretch justify-between"}>
+                        <section className={"px-6 g:px-3 py-10 h-full flex flex-col lg:flex-row items-center justify-start gap-8"}>
                             <section className={"flex w-full flex-col items-stretch justify-start gap-10 text-base lg:text-lg"}>
                                 <div className={"flex flex-col items-start justify-start gap-4"}>
                                     <h2 className={"text-2xl xl:text-3xl w-72"}>{strings.footer.questions.headline}
@@ -46,7 +46,7 @@ const Footer = () => {
                                     <p className={linkStyle}>{strings.footer.questions.address}<br/>{strings.footer.questions.addressScript}</p>
                                 </Link>
                             </section>
-                            <section className={"h-full w-full flex flex-col lg:flex-row items-center justify-start gap-10 lg:gap-0"}>
+                            <section className={"h-full w-full flex flex-col lg:flex-row items-center justify-start gap-8 lg:gap-0"}>
                                 <ul className={"flex flex-col items-stretch justify-start gap-4 h-full lg:mr-10 w-full"}>
                                     <li><h3 className={"text-white text-base lg:text-xl"}>{strings.footer.clinic.headline}</h3></li>
                                     <li><Link href={"/"}
@@ -60,13 +60,16 @@ const Footer = () => {
                                     {/*<li><Link href={"/"} className={`${linkStyle} text-2xl`}>{strings.footer.clinic.stories}</Link>*/}
                                     {/*</li>*/}
                                 </ul>
-                                <ul className={"flex flex-col items-stretch justify-start gap-4 h-full lg:mr-10 w-full"}>
+                                <ul className={"flex flex-col items-stretch justify-start gap-4 h-full w-full"}>
                                     <li><h3 className={"text-white text-base lg:text-xl"}>{strings.footer.fast.headline}</h3></li>
                                     <li><Link href={"/contacto"}
                                               className={linkStyle}>{strings.footer.fast.contact}</Link>
                                     </li>
                                     <li><Link href={"/legal"}
                                               className={linkStyle}>{strings.footer.fast.data}</Link>
+                                    </li>
+                                    <li><Link href={"/legal#promociones"}
+                                              className={linkStyle}>{strings.footer.fast.promotions}</Link>
                                     </li>
                                     {/*<li><Link href={"/info"} className={`${linkStyle} text-2xl`}>{strings.footer.fast.FAQ}</Link>*/}
                                     {/*</li>*/}

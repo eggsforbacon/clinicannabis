@@ -39,6 +39,7 @@ export const strings: IKeyedObject = {
             'headline': <>{"Enlaces de interés"}</>,
             'contact': <>{"Contáctanos"}</>,
             'data': <>{"Protección de datos"}</>,
+            'promotions': <>{"Condiciones y restricciones de Promociones"}</>,
             'FAQ': <>{"Preguntas frecuentes"}</>,
             'experts': <>{"Nuestros expertos"}</>,
         },
@@ -686,6 +687,10 @@ export const strings: IKeyedObject = {
                 },
                 'validity': <>{"Vigencia"}</>,
                 'channels': <>{"Canales de atención a los Titulares"}</>,
+            },
+            'promotions': {
+                'title': <>{"Condiciones y restricciones de promoción"}</>,
+                'amor-amistad': <>{"Promoción de Amor y Amistad Clinicannabis septiembre 2023"}</>,
             },
         },
         'content': {
