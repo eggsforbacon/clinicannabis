@@ -244,7 +244,7 @@ const Legal: NextPage = () => {
                                     <h2>{navigation.conditions.title}</h2>
                                 </li>
                                 <ol className={"ml-5"}>
-                                    <li className={lih3}><h3>{navigation.promotions["amor-amistad"]}</h3></li>
+                                    <li className={lih3}><h3>{navigation.conditions["amor-amistad"]}</h3></li>
                                     <p>En Clinicannabis pensamos en tu bienestar y en tus seres queridos. Por esta
                                         razón, creamos una promoción en el mes de septiembre de 2023 para que celebres
                                         el amor y la amistad cuidando tu salud y la de quienes amas.</p>
