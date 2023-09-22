@@ -99,7 +99,7 @@ const Footer = () => {
                                 <li>
                                     <Link aria-label={"Twitter"} href={"https://www.twitter.com/clinicannabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <Twitter
-                                            className={"h-6 w-6 fill-green-sheen transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
+                                            className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
                                         <p className={"text-sm font-normal"}>@clinicannabis</p>
                                         <p className={"sr-only"}>Twitter</p>
                                     </Link>
@@ -107,7 +107,7 @@ const Footer = () => {
                                 <li>
                                     <Link aria-label={"YouTube"} href={"https://www.youtube.com/@clinicannabis9526"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <Youtube
-                                            className={"h-6 w-6 fill-green-sheen transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
+                                            className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
                                         <p className={"text-sm font-normal"}>@clinicannabis9526</p>
                                         <p className={"sr-only"}>YouTube</p>
                                     </Link>

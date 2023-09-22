@@ -26,7 +26,7 @@ export const ContactForm = () => {
             email: form.ctEmail.value,
             message: (form.ctMessage as HTMLTextAreaElement).value,
         });
-        sendContactForm(data).then((res)=> {
+        sendContactForm(data).then((res) => {
             const ok = res.status === 200;
             const title = ok ? "Estás en las mejores manos" : "Lo sentimos :(";
             const message = ok ? "Hemos recibido tu solicitud, y pronto nos pondremos en contacto contigo" : "Ocurrió un error. Intenta más tarde, o comunícate con nosotros a través de WhatsApp si el problema persiste.";
