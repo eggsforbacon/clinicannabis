@@ -19,6 +19,11 @@ module.exports = {
         destination: '/404',
         permanent: true,
       },
+      {
+        source: '/servicios/clinica-del-dolor',
+        destination: '/404',
+        permanent: true,
+      },
     ]
   },
   images: {

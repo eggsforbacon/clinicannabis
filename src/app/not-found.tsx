@@ -25,7 +25,7 @@ export default function NotFound() {
                         </li>
                         <span className={"h-full w-[2px] bg-white mx-3.5"}/>
                         <li>
-                            <Link href={"https://www.instagram.com/clinicanabis/"} target={"_blank"}>
+                            <Link href={"https://www.instagram.com/clinicannabis.col/"} target={"_blank"}>
                                 <Instagram
                                     className={"h-6 w-6 fill-caribbean-green transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110"}/>
                                 <p className={"sr-only"}>Instagram</p>
