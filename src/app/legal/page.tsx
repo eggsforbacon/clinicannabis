@@ -4,21 +4,9 @@ import Navbar from "../../components/ui/Navbar";
 import {strings} from "../../model/strings";
 import {Link as ScrollLink} from "react-scroll/modules";
 import React from "react";
-import {Metadata} from "next";
 import Footer from "../../components/ui/Footer";
 
-export const metadata : Metadata = {
-    title: 'Tratamiento de Datos | Clinicannabis',
-    icons: [
-        {
-            rel: 'icon',
-            url: '/favicon.ico',
-        }
-    ],
-    viewport: 'width=device-width, initial-scale=1',
-}
-
-export default function Legal () {
+export default function Legal() {
     const navigation = strings.legal.navigation;
     const content = strings.legal.content;
 
@@ -245,7 +233,7 @@ export default function Legal () {
                     </section>
                 </article>
             </section>
-            <Footer />
+            <Footer/>
         </main>
     );
 }
