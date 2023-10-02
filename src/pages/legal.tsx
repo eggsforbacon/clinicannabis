@@ -4,6 +4,7 @@ import {Link as ScrollLink} from "react-scroll/modules";
 import {strings} from "../model/strings";
 import Head from "next/head";
 import React from "react";
+import { List } from "react-bootstrap-icons";
 
 const Legal: NextPage = () => {
 
@@ -244,39 +245,34 @@ const Legal: NextPage = () => {
                                     <h2>{navigation.conditions.title}</h2>
                                 </li>
                                 <ol className={"ml-5"}>
-                                    <li className={lih3}><h3>{navigation.conditions["amor-amistad"]}</h3></li>
-                                    <p>En Clinicannabis pensamos en tu bienestar y en tus seres queridos. Por esta
-                                        razón, creamos una promoción en el mes de septiembre de 2023 para que celebres
-                                        el amor y la amistad cuidando tu salud y la de quienes amas.</p>
-                                    <li className={lih4}><h4>¿En qué consiste nuestra promoción?</h4></li>
+                                    <li className={lih3}><h3>{navigation.conditions["promotionOctubre"]}</h3></li>
+                                    <p>En <b>Clinicannabis</b> nos unimos a la conmemoración de diferentes patologías en el mes de
+                                        octubre, por parte de la Organización Mundial de la Salud y el Ministerio de Salud, como
+                                        el cáncer de mama, la salud mental, el dolor y enfermedades reumáticas. Sin embargo, no
+                                        queremos quedarnos solo en la pedagogía y en la concientización, queremos poner a
+                                        disposición de los pacientes las herramientas terapéuticas que tenemos para ayudarles a
+                                        aliviar el dolor y mejorar su calidad de vida. Es por esto por lo que lanzamos una
+                                        promoción durante este mes, exclusiva para quienes padecen estas enfermedades.
+                                    </p>
+                                    <li className={lih3}><h4>¿En qué consiste nuestra promoción?</h4></li>
+                                    <li className={lih4}><h4>25% de descuentos en servicios como: </h4></li>
                                     <ul className={"list-disc ml-5"}>
-                                        <li>2x1 en todos nuestros servicios.</li>
-                                        <li>Consulta médica presencial.</li>
+                                        <li>Consulta médica con especialista en cannabis medicinal, medicina funcional o
+                                            integrativa.</li>
                                         <li>Sistema Súper Inductivo.</li>
-                                        <li>Sueroterapia.</li>
-                                        <li>Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas,
-                                            Biopuntura, Masaje Tradicional Chino, Reflexología, Auriculoterapia,
-                                            Terapias Bioenergéticas (Cristaloterapia, Gemoterapia y Poliedros).
-                                        </li>
-                                        <li>Teleorientación gratuita + 50% de descuento en sueroterapia a domicilio</li>
+                                        <li>Sueroterapia en casa y a domicilio.</li>
+                                        <li>Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas, Biopuntura,
+                                            Masaje Tradicional Chino, Reflexología, Auriculoterapia, Terapias Bioenergéticas
+                                            (Cristaloterapia, Gemoterapia y Poliedros)</li>
                                     </ul>
-                                    <p>Un médico especialista, realizará una llamada contigo completamente gratuita y te
-                                        recomendará un paquete de sueros de acuerdo con tus necesidades. Posteriormente,
-                                        nuestro equipo de enfermería se desplazará hasta tu casa, trabajo o el lugar que
-                                        indiques, y que cumpla con las condiciones necesarias, para recibir tu sesión de
-                                        sueroterapia a domicilio a mitad de precio.</p>
+                                    
                                     <li className={lih4}><h4>¿Cuáles son las condiciones y restricciones de esta
                                         promoción?</h4></li>
                                     <ol className={"ml-5 list-decimal"}>
-                                        <li>Promoción válida hasta el 30 de septiembre de 2023.</li>
+                                        <li>Promoción válida hasta el 31 de octubre de 2023</li>
                                         <li>La promoción no incluye el valor del domicilio de la sueroterapia.</li>
-                                        <li>2 personas x el pago de 1 consulta médica presencial.</li>
                                         <li>Se debe pagar el tratamiento completo.</li>
                                         <li>No aplica para convenios.</li>
-                                        <li>En el 2x1, dado que algunos servicios y sueros tienen precios variables,
-                                            según la fórmula indicada por el médico, se debe pagar el servicio con mayor
-                                            costo.
-                                        </li>
                                     </ol>
                                 </ol>
                             </ol>
