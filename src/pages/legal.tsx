@@ -248,7 +248,7 @@ const Legal: NextPage = () => {
                                     <li className={lih3}><h3>{navigation.conditions["promotionOctubre"]}</h3></li>
                                     <p>En <b>Clinicannabis</b> nos unimos a la conmemoración de diferentes patologías en el mes de
                                         octubre, por parte de la Organización Mundial de la Salud y el Ministerio de Salud, como
-                                        el cáncer de mama, la salud mental, el dolor y enfermedades reumáticas. Sin embargo, no
+                                        el <b>cáncer de mama, la salud mental, el dolor y enfermedades reumáticas</b>. Sin embargo, no
                                         queremos quedarnos solo en la pedagogía y en la concientización, queremos poner a
                                         disposición de los pacientes las herramientas terapéuticas que tenemos para ayudarles a
                                         aliviar el dolor y mejorar su calidad de vida. Es por esto por lo que lanzamos una
@@ -263,7 +263,7 @@ const Legal: NextPage = () => {
                                         <li>Sueroterapia en casa y a domicilio.</li>
                                         <li>Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas, Biopuntura,
                                             Masaje Tradicional Chino, Reflexología, Auriculoterapia, Terapias Bioenergéticas
-                                            (Cristaloterapia, Gemoterapia y Poliedros)</li>
+                                            (Cristaloterapia, Gemoterapia y Poliedros) de acuerdo a criterio médico</li>
                                     </ul>
                                     
                                     <li className={lih4}><h4>¿Cuáles son las condiciones y restricciones de esta
