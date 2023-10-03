@@ -691,7 +691,6 @@ export const strings: IKeyedObject = {
             'conditions': {
                 'title': <>{"Condiciones y restricciones de promoción"}</>,
                 'amor-amistad': <>{"Promoción de Amor y Amistad Clinicannabis septiembre 2023"}</>,
-                'promotionOctubre':<>{"Promoción Octubre 2023"}</>,
             },
 
         },

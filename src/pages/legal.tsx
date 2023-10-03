@@ -255,14 +255,14 @@ const Legal: NextPage = () => {
                                         promoción durante este mes, exclusiva para quienes padecen estas enfermedades.
                                     </p>
                                     <li className={lih3}><h4>¿En qué consiste nuestra promoción?</h4></li>
-                                    <li className={lih4}><h4>25% de descuentos en servicios como: </h4></li>
+                                    <li className={lih4}><h4>25% de descuento en servicios como: </h4></li>
                                     <ul className={"list-disc ml-5"}>
                                         <li>Consulta médica con especialista en cannabis medicinal, medicina funcional o
                                             integrativa.</li>
                                         <li>Sistema Súper Inductivo.</li>
                                         <li>Sueroterapia en casa y a domicilio.</li>
                                         <li>Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas, Biopuntura,
-                                            Masaje Tradicional Chino, Reflexología, Auriculoterapia, Terapias Bioenergéticas
+                                            Masaje Tradicional Chino, Auriculoterapia, Terapias Bioenergéticas
                                             (Cristaloterapia, Gemoterapia y Poliedros) de acuerdo a criterio médico</li>
                                     </ul>
                                     
