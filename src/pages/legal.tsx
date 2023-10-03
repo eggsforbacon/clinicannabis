@@ -263,7 +263,7 @@ const Legal: NextPage = () => {
                                         <li>Sueroterapia en casa y a domicilio.</li>
                                         <li>Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas, Biopuntura,
                                             Masaje Tradicional Chino, Auriculoterapia, Terapias Bioenergéticas
-                                            (Cristaloterapia, Gemoterapia y Poliedros) de acuerdo a criterio médico</li>
+                                            (Cristaloterapia, Gemoterapia y Poliedros) de acuerdo a criterio médico.</li>
                                     </ul>
                                     
                                     <li className={lih4}><h4>¿Cuáles son las condiciones y restricciones de esta
