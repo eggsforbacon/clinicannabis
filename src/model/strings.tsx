@@ -448,10 +448,9 @@ export const strings: IKeyedObject = {
                 'title': <>{"En Clinicannabis "}</>,
                 'remark': <>{"ofrecemos terapias como:"}</>,
                 'items' : [
+                    <>{"Consulta médica por algesiología"}</>,
                     <>{"Bloqueo guiado con ultrasonido"}</>,
-                    <>{"Bloqueo con fluoroscopio a través de rayos X"}</>,
-                    <>{"Toxina botulínica"}</>,
-                    <>{"Proloterapia - Terapia de proliferación"}</>,
+                    <>{"Fisioterapia (Kinesio-TAPE)"}</>,
                 ],
             },
             'regenerative': {

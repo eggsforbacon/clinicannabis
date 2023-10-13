@@ -80,6 +80,10 @@
     /** This WILL be painful to write
       * The scheme is {ROLE}-clip[-{SIZE}].
       * If no size is specified*/
+    .pain-clinic-intro-clip-md {
+        clip-path: ellipse(180% 80% at -8% 17%);
+    }
+
     .pain-clinic-intro-clip-lg {
         clip-path: ellipse(180% 80% at -20% 17%);
     }
