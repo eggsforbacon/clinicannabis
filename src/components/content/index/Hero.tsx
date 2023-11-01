@@ -3,9 +3,8 @@
 import React, {CSSProperties, useContext, useEffect, useState} from "react";
 import {ClinicIntro} from "./HeroSlides/ClinicIntro";
 import {Swiper as SwiperComponent, SwiperSlide} from "swiper/react";
-import {Swiper as SwiperClass, Autoplay, Navigation, Pagination} from "swiper";
+import {Autoplay, Navigation, Pagination, Swiper as SwiperClass} from "swiper";
 import {BlogSlide} from "./HeroSlides/BlogSlide";
-import {PainClinic} from "./HeroSlides/PainClinic";
 import GlobalContext from "../../../context/GlobalContext";
 
 export const Hero = () => {
@@ -21,9 +20,8 @@ export const Hero = () => {
     }, []);
 
     const slides: JSX.Element[] = [
-        <ClinicIntro />,
-        <BlogSlide />,
-        <PainClinic />,
+        <ClinicIntro/>,
+        <BlogSlide/>,
     ];
 
     const colors = ["#009490", "#FAFAFA", "#00B451"]
@@ -39,9 +37,9 @@ export const Hero = () => {
                 slidesPerView={1}
                 loop={true}
                 autoplay={{
-                    delay : 8000,
-                    disableOnInteraction : false,
-                    pauseOnMouseEnter : false,
+                    delay: 8000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: false,
                 }}
                 navigation={true}
                 pagination={{
@@ -51,7 +49,7 @@ export const Hero = () => {
                 }}
                 modules={[Navigation, Pagination, Autoplay]}
                 style={{
-                    "--swiper-pagination-color" : colors[activeIndex],
+                    "--swiper-pagination-color": colors[activeIndex],
                     "--swiper-navigation-size": "2rem",
                     "--swiper-navigation-top-offset": "50%",
                     "--swiper-navigation-sides-offset": "1rem",
