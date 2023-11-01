@@ -39,6 +39,7 @@ export const strings: IKeyedObject = {
             'contact': <>{"Contáctanos"}</>,
             'data': <>{"Protección de datos"}</>,
             'blog': <>{"Blog médico"}</>,
+            'promotions': <>{"Condiciones y restricciones de promoción"}</>,
             'invima': <>{"Alertas sanitarias"}</>,
         },
     },

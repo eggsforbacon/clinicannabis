@@ -9,7 +9,7 @@ export const SIS = () => {
 
     return (
         <div className={"relative"}>
-            <article className={"relative flex flex-col items-center z-10 justify-center lg:justify-start lg:items-stretch overflow-clip h-192 md:h-168 lg:h-208 xl:h-192"} id={"sis"}>
+            <article className={"relative flex flex-col items-center z-10 justify-center lg:justify-start lg:items-stretch overflow-clip h-192 md:h-168 lg:h-208 xl:h-224"} id={"sistema-super-inductivo"}>
                 <Image src={"/images/services/service2.png"}
                        className={"absolute pointer-events-none select-none scale-[3.5] opacity-60  md:scale-[1.5] xl:scale-[1.3] bottom-[17rem] md:bottom-auto lg:bottom-28 xl:bottom-44 lg:right-24 xl:right-0"} alt={""}
                        width={1920}

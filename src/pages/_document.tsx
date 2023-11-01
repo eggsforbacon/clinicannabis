@@ -1,4 +1,4 @@
-import {Html, Head, Main, NextScript} from "next/document";
+import {Head, Html, Main, NextScript} from "next/document";
 import React from "react";
 
 export default function Document() {
@@ -7,28 +7,11 @@ export default function Document() {
             <Head>
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
                 <link rel="icon" href="/favicon.png"/>
-                {/*<script async src="https://www.googletagmanager.com/gtag/js?id=G-3J2GHYJD7T"></script>*/}
-                {/*<script type="text/javascript"*/}
-                {/*        async*/}
-                {/*        dangerouslySetInnerHTML={{*/}
-                {/*            __html: `*/}
-                {/*            window.dataLayer = window.dataLayer || [];*/}
-                {/*            function gtag(){dataLayer.push(arguments)}*/}
-                {/*            gtag('js', new Date());*/}
-
-                {/*            gtag('config', 'G-3J2GHYJD7T');*/}
-                {/*            `*/}
-                {/*        }}/>*/}
             </Head>
             <body>
-            <noscript>
-                <iframe
-                    src={`https://www.googletagmanager.com/ns.html?id=G-3J2GHYJD7T`}
-                    height="0"
-                    width="0"
-                    style={{ display: "none", visibility: "hidden" }}
-                ></iframe>
-            </noscript>
+            <noscript dangerouslySetInnerHTML={{
+                __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}"
+                            height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscript>
             <Main/>
             <NextScript/>
             </body>
