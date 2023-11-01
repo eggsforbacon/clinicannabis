@@ -1,12 +1,12 @@
-"use client";
-
+import {NextPage} from "next";
 import Navbar from "../../components/ui/Navbar";
-import {strings} from "../../model/strings";
 import {Link as ScrollLink} from "react-scroll/modules";
+import {strings} from "../../model/strings";
+import Head from "next/head";
 import React from "react";
-import Footer from "../../components/ui/Footer";
 
-export default function Legal() {
+const Legal: NextPage = () => {
+
     const navigation = strings.legal.navigation;
     const content = strings.legal.content;
 
@@ -14,9 +14,16 @@ export default function Legal() {
     const lih2 = "text-2xl font-bold uppercase mt-10";
     const pStyle = "mt-3";
     const lih3 = "text-xl font-bold uppercase my-4";
-
+    const lih4 = "text-lg font-bold my-4";
     return (
         <main>
+            <Head>
+                <title>Tratamiento de Datos</title>
+                <link rel="icon" href="/favicon.ico"/>
+                {/*<meta name={"description"}*/}
+                {/*      content={""}/>*/}
+                <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
+            </Head>
             <Navbar selection={""}/>
             <section className={"md:ml-8 w-full"}>
                 <article className={"flex flex-col items-center space-y-16 py-52"}>
@@ -31,36 +38,41 @@ export default function Legal() {
                             className={"nested text-center md:text-left mb-16 sticky left-0 top-10 py-8 pr-10 shadow-md md:shadow-none border-solid border-2 border-transparent border-b-viridian-green md:border-b-transparent md:p-0 bg-white md:top-52 w-full md:w-56 flex justify-center items-center md:flex-col md:justify-start md:items-start space-y-2"}>
                             <ol className={"relative list-decimal"}>
                                 <li className={linkStyle}>
-                                    <ScrollLink to="objective" spy={true}
+                                    <ScrollLink to="objetivo" spy={true}
                                                 duration={1200}
                                                 offset={-150}>{navigation.objective}</ScrollLink>
                                 </li>
                                 <li className={linkStyle}>
-                                    <ScrollLink to="liable" spy={true}
+                                    <ScrollLink to="responsable" spy={true}
                                                 duration={1200}
                                                 offset={-150}>{navigation.liable}</ScrollLink></li>
                                 <li className={linkStyle}>
-                                    <ScrollLink to="definitions" spy={true}
+                                    <ScrollLink to="definiciones" spy={true}
                                                 duration={1200}
                                                 offset={-150}>{navigation.definitions.title}</ScrollLink>
                                 </li>
                                 <li className={linkStyle}>
-                                    <ScrollLink to="general" spy={true}
+                                    <ScrollLink to="condiciones-generales" spy={true}
                                                 duration={1200}
                                                 offset={-150}>{navigation.general}</ScrollLink>
                                 </li>
                                 <li className={linkStyle}>
-                                    <ScrollLink to="elaboration" spy={true}
+                                    <ScrollLink to="desarrollo-de-tratamiento" spy={true}
                                                 duration={1200}
                                                 offset={-150}>{navigation.elaboration.title}</ScrollLink>
+                                </li>
+                                <li className={linkStyle}>
+                                    <ScrollLink to="promociones" spy={true}
+                                                duration={1200}
+                                                offset={-150}>{navigation.conditions.title}</ScrollLink>
                                 </li>
                             </ol>
                         </aside>
                         <article className={"text-lg flex flex-col items-center w-4/6 justify-start -mt-10 gap-16"}>
                             <ol className={"list-decimal"}>
-                                <li className={lih2} id={"objective"}><h2>{navigation.objective}</h2></li>
+                                <li className={lih2} id={"objetivo"}><h2>{navigation.objective}</h2></li>
                                 <p className={pStyle}>{content.objective}</p>
-                                <li className={lih2} id={"liable"}><h2>{navigation.liable}</h2></li>
+                                <li className={lih2} id={"responsable"}><h2>{navigation.liable}</h2></li>
                                 <p className={pStyle}>{content.liable.paragraph}</p>
                                 <ul className={"list-disc ml-10 flex flex-col items-start justify-start gap-3 mt-4"}>
                                     <li>{content.liable.pbx}</li>
@@ -68,7 +80,7 @@ export default function Legal() {
                                     <li>{content.liable.mail}</li>
                                 </ul>
                                 <p className={pStyle}>{content.liable.post}</p>
-                                <li className={lih2} id={"definitions"}><h2>{navigation.definitions.title}</h2></li>
+                                <li className={lih2} id={"definiciones"}><h2>{navigation.definitions.title}</h2></li>
                                 <ul className={"list-disc ml-10 flex flex-col items-start justify-start gap-3"}>
                                     <li className={"mt-4"}>
                                         <strong>{navigation.definitions.auth}:</strong> {content.definitions.auth}</li>
@@ -125,11 +137,11 @@ export default function Legal() {
                                         <strong>{navigation.definitions.confidentiality}:</strong> {content.definitions.confidentiality}
                                     </li>
                                 </ul>
-                                <li className={lih2} id={"general"}><h2>{navigation.general}</h2></li>
+                                <li className={lih2} id={"condiciones-generales"}><h2>{navigation.general}</h2></li>
                                 <ul className={"list-disc ml-10 mt-4 flex flex-col items-center justify-start gap-3"}>
                                     {Object.values(content.general).map((s) => <li>{s as unknown as JSX.Element}</li>)}
                                 </ul>
-                                <li className={lih2} id={"elaboration"}><h2>{navigation.elaboration.title}</h2></li>
+                                <li className={lih2} id={"desarrollo-de-tratamiento"}><h2>{navigation.elaboration.title}</h2></li>
                                 <ol className={"ml-5"}>
                                     <li className={lih3}><h3>{navigation.elaboration.content}</h3></li>
                                     <section className={"flex flex-col items-start justify-start gap-3 mt-4"}>
@@ -228,12 +240,48 @@ export default function Legal() {
                                         })}
                                     </ul>
                                 </ol>
+                                <li className={lih2} id={"promociones"}>
+                                    <h2>{navigation.conditions.title}</h2>
+                                </li>
+                                <ol className={"ml-5"}>
+                                    <li className={lih3}><h3>{navigation.conditions["promotionOctubre"]}</h3></li>
+                                    <p>En <b>Clinicannabis</b> nos unimos a la conmemoración de diferentes patologías en el mes de
+                                        octubre, por parte de la Organización Mundial de la Salud y el Ministerio de Salud, como
+                                        el <b>cáncer de mama, la salud mental, el dolor y enfermedades reumáticas</b>. Sin embargo, no
+                                        queremos quedarnos solo en la pedagogía y en la concientización, queremos poner a
+                                        disposición de los pacientes las herramientas terapéuticas que tenemos para ayudarles a
+                                        aliviar el dolor y mejorar su calidad de vida. Es por esto por lo que lanzamos una
+                                        promoción durante este mes, exclusiva para quienes padecen estas enfermedades.
+                                    </p>
+                                    <li className={lih3}><h4>¿En qué consiste nuestra promoción?</h4></li>
+                                    <li className={lih4}><h4>25% de descuento en servicios como: </h4></li>
+                                    <ul className={"list-disc ml-5"}>
+                                        <li>Consulta médica con especialista en cannabis medicinal, medicina funcional o
+                                            integrativa.</li>
+                                        <li>Sistema Súper Inductivo.</li>
+                                        <li>Sueroterapia en casa y a domicilio.</li>
+                                        <li>Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas, Biopuntura,
+                                            Masaje Tradicional Chino, Auriculoterapia, Terapias Bioenergéticas
+                                            (Cristaloterapia, Gemoterapia y Poliedros) de acuerdo a criterio médico.</li>
+                                    </ul>
+                                    
+                                    <li className={lih4}><h4>¿Cuáles son las condiciones y restricciones de esta
+                                        promoción?</h4></li>
+                                    <ol className={"ml-5 list-decimal"}>
+                                        <li>Promoción válida hasta el 31 de octubre de 2023</li>
+                                        <li>La promoción no incluye el valor del domicilio de la sueroterapia.</li>
+                                        <li>Se debe pagar el tratamiento completo.</li>
+                                        <li>No aplica para convenios.</li>
+                                    </ol>
+                                </ol>
                             </ol>
                         </article>
                     </section>
                 </article>
             </section>
-            <Footer/>
         </main>
-    );
+    )
+        ;
 }
+
+export default Legal;
