@@ -3,8 +3,8 @@
 import Image from "next/image";
 import {strings} from "../../model/strings";
 import Link from "next/link";
-import {List} from "react-bootstrap-icons";
 import React, {useEffect, useState} from "react";
+import {List} from "../icons";
 
 const _destinations = ["home", "services", "blog", "contact"] as const;
 const _canonical = {
@@ -65,7 +65,7 @@ const Navbar = (props: _CProps) => {
                 className={`relative h-full w-full lg:w-fit py-5 px-6 md:py-4 md:px-8 lg:p-0 flex items-center justify-between lg:justify-start transition-all duration-300 ease-in-out ${show ? "bg-white lg:bg-transparent md:drop-shadow-md lg:drop-shadow-none" : "bg-transparent drop-shadow-none"}`}>
                 <Link href={"/"}
                       className={`h-full transition-all duration-300 ease-in-out ${show ? "opacity-100" : "opacity-0"} lg:opacity-100`}>
-                    <Image src={"/images/svg/clinic_color.svg"} alt={"Clinicannabis. Centro de Medicina Ancestral Orígenes"} width={16} height={16}
+                    <Image src={"/_common/images/svg/clinic_color.svg"} alt={"Clinicannabis. Centro de Medicina Ancestral Orígenes"} width={16} height={16}
                            className={"h-full w-auto"} priority/>
                 </Link>
                 <button

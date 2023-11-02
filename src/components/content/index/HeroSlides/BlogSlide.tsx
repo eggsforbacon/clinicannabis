@@ -6,7 +6,7 @@ export const BlogSlide = () => {
     return (
         <article
             className={"w-full h-192 sm:h-208 md:h-256 relative flex items-start lg:px-36 justify-start overflow-clip"}>
-            <Image src={strings.landing.hero.blog.image} alt={""} width={1920} height={1280}
+            <Image src={"/index/header/slides/blogBackground.png"} alt={""} width={1920} height={1280}
                    quality={100}
                    className={"z-0 absolute brightness-[60%] lg:brightness-100 scale-[4.5] sm:scale-[3.2] md:scale-[2.8] lg:scale-[2] xl:scale-[1.75] 2xl:scale-[1.35] top-72 sm:top-64 md:top-80 lg:top-32 xl:top-32 2xl:top-24 right-16 lg:-right-10 select-none pointer-events-none"}/>
             <span

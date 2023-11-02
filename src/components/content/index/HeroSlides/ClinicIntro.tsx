@@ -52,7 +52,7 @@ export const ClinicIntro = () => {
                     <video height={1080 * 1.8} width={1920 * 1.8} muted playsInline autoPlay controls={false}
                            className={"scale-[1.5] lg:scale-[1.75] xl:scale-[1.25]"}
                            onEnded={handleOnEnded}>
-                        <source src={"/video/ClinicannabisAnimation.mp4"}
+                        <source src={"/index/header/slides/ClinicannabisAnimation.mp4"}
                                 type={"video/mp4"}/>
                         Your browser does not support the video tag.
                     </video>
