@@ -18,17 +18,7 @@ export default function Home() {
             <main>
                 <Navbar selection={"home"}/>
                 <Hero/>
-                {/*<Services/>*/}
-                <li className={"w-full h-44 px-16 flex items-center justify-start gap-2"}>
-                   <ul className={"w-full text-center debug h-full"}></ul>
-                   <ul className={"w-full text-center debug h-full"}></ul>
-                   <ul className={"w-full text-center debug h-full"}></ul>
-                   <ul className={"w-full text-center debug h-full"}></ul>
-                   <ul className={"w-full text-center debug h-full"}></ul>
-                   <ul className={"w-full text-center debug h-full"}></ul>
-                   <ul className={"w-full text-center debug h-full"}></ul>
-                   <ul className={"w-full text-center debug h-full"}></ul>
-                </li>
+                <Services/>
                 <About />
                 <Values />
                 <Experience />
