@@ -29,18 +29,19 @@ export const strings: IKeyedObject = {
         },
         'clinic': {
             'headline': <>{"Clinicannabis"}</>,
-            'home': <>{"Nuestra clínica"}</>,
+            'home': <>{"Inicio"}</>,
             'stories': <>{"Historias de victoria"}</>,
-            'pain': <>{"Clínica del Dolor"}</>,
-            'experience': <>{"Somos una Experiencia"}</>,
+            'history': <>{"Nuestra historia"}</>,
+            'experience': <>{"Nuestra clínica"}</>,
+
         },
         'fast': {
             'headline': <>{"Enlaces de interés"}</>,
             'contact': <>{"Contáctanos"}</>,
             'data': <>{"Protección de datos"}</>,
-            'blog': <>{"Blog médico"}</>,
             'promotions': <>{"Condiciones y restricciones de promoción"}</>,
-            'invima': <>{"Alertas sanitarias"}</>,
+            'FAQ': <>{"Preguntas frecuentes"}</>,
+            'experts': <>{"Nuestros expertos"}</>,
         },
     },
     'landing': {
@@ -54,7 +55,7 @@ export const strings: IKeyedObject = {
             },
             'blog': {
                 'title': <>{"Actualidad "}<br/><span
-                    className={"max-md:!text-[2.7rem] lg:!text-[5rem]"}>{"del cannabis "}</span><br/>{"en la salud"}</>,
+                    className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/>{"en la salud"}</>,
                 'titleRemark': <>{"en la salud"}</>,
                 'copy': <>{"Obtén información de "}<span
                     className={"font-bold"}>{"Clinicannabis"}</span>{" enviada directamente a tu correo."}</>,
@@ -449,9 +450,10 @@ export const strings: IKeyedObject = {
                 'title': <>{"En Clinicannabis "}</>,
                 'remark': <>{"ofrecemos terapias como:"}</>,
                 'items' : [
-                    <>{"Consulta médica por algesiología"}</>,
                     <>{"Bloqueo guiado con ultrasonido"}</>,
-                    <>{"Fisioterapia (Kinesio-TAPE)"}</>,
+                    <>{"Bloqueo con fluoroscopio a través de rayos X"}</>,
+                    <>{"Toxina botulínica"}</>,
+                    <>{"Proloterapia - Terapia de proliferación"}</>,
                 ],
             },
             'regenerative': {
@@ -694,6 +696,11 @@ export const strings: IKeyedObject = {
                 'validity': <>{"Vigencia"}</>,
                 'channels': <>{"Canales de atención a los Titulares"}</>,
             },
+            'conditions': {
+                'title': <>{"Condiciones y restricciones de promoción"}</>,
+                'amor-amistad': <>{"Promoción de Amor y Amistad Clinicannabis septiembre 2023"}</>,
+            },
+
         },
         'content': {
             'objective': <>{"Establecer los lineamientos y la Política de Tratamiento de Datos Personales de Clinicannabis, en cumplimiento de " +
