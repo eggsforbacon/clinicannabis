@@ -1,8 +1,9 @@
 import Image from "next/image";
 import {strings} from "../model/strings";
 import Link from "next/link";
-import {Facebook, Instagram, Youtube} from "react-bootstrap-icons";
+
 import React from "react";
+import {Facebook, Instagram, Youtube} from "../components/icons";
 
 export default function NotFound() {
     return (

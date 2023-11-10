@@ -1,1 +1,9 @@
 export {default as List} from "./List";
+export {default as Whatsapp} from "./Whatsapp";
+export {default as TwitterX} from "./TwitterX";
+export {default as Youtube} from "./Youtube";
+export {default as Instagram} from "./Instagram";
+export {default as Facebook} from "./Facebook";
+export {default as ExclamationTriangleFill} from "./ExclamationTriangleFill";
+export {default as Envelope} from "./Envelope";
+export {default as GeoAlt} from "./GeoAlt";

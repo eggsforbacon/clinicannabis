@@ -6,10 +6,10 @@ import {
     Facebook,
     GeoAlt,
     Instagram,
-    Twitter,
+    TwitterX,
     Whatsapp,
     Youtube
-} from "react-bootstrap-icons";
+} from "./../icons";
 
 const Footer = () => {
 
@@ -98,7 +98,7 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link aria-label={"Twitter"} href={"https://www.twitter.com/clinicannabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
-                                        <Twitter
+                                        <TwitterX
                                             className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
                                         <p className={"text-sm font-normal"}>@clinicannabis</p>
                                         <p className={"sr-only"}>Twitter</p>

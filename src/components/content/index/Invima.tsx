@@ -1,4 +1,4 @@
-import {ExclamationTriangleFill} from "react-bootstrap-icons";
+import {ExclamationTriangleFill} from "./../../icons";
 import Image from "next/image";
 import Link from "next/link";
 
