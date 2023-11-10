@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Input} from "../../ui/Input";
 import {strings} from "../../../model/strings";
-import {Envelope, EnvelopePaper} from "react-bootstrap-icons";
+import {Envelope, EnvelopePaper} from "./../../icons";
 import {TOSCheckbox} from "../../TOSCheckbox";
 import {sendSubscribeForm} from "../../../lib/api";
 import swal from 'sweetalert';
@@ -12,7 +12,7 @@ export const FloatingSignupForm = () => {
     const [formSending, setFormSending] = useState("Sin enviar");
     const [formSendingClass, setFormSendingClass] = useState("select-none text-transparent pointer-events-none");
 
-    const handleShowForm = (e: React.MouseEvent<HTMLButtonElement | HTMLSpanElement>) => {
+    const handleShowForm = () => {
         setFormHidden(!formHidden);
     };
 

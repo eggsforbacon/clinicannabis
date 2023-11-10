@@ -1,5 +1,5 @@
 import { Input } from "../../ui/Input";
-import { Envelope, Person } from "react-bootstrap-icons";
+import { Envelope, Person } from "./../../icons";
 import { ContactType } from "../../../model/types/ContactType";
 import { sendContactForm } from "../../../lib/api";
 import React, { useState } from "react";

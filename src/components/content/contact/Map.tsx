@@ -1,7 +1,5 @@
-import {GoogleMap, useLoadScript, Marker, MarkerF} from "@react-google-maps/api";
+import {GoogleMap, useLoadScript, MarkerF} from "@react-google-maps/api";
 import React, {useMemo} from "react";
-import {GeoAltFill} from "react-bootstrap-icons";
-import {useRouter} from "next/router";
 
 export const Map = () => {
     const {isLoaded} = useLoadScript({
@@ -9,7 +7,6 @@ export const Map = () => {
     });
 
     const center = useMemo(() => ({lat: 3.362428, lng : -76.531214}), []);
-    const navigate = useRouter();
 
     const styles =[
         {

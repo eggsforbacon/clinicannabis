@@ -1,5 +1,5 @@
 import React, {ReactNode, useState} from "react";
-import {ChevronLeft, ChevronRight} from "react-bootstrap-icons";
+import {ChevronLeft, ChevronRight} from "./../../icons";
 
 export const TestimonialCarousel = (props: {
     children: ReactNode[];

@@ -10,7 +10,7 @@ import {StrapiGetAllResponse, StrapiPost} from "../../interfaces/interfaces";
 import useSWR from "swr";
 import {setToken} from "../../lib/auth";
 import {FloatingSignupForm} from "../../components/content/blog/FloatingSignupForm";
-import {ChevronLeft, ChevronRight} from "react-bootstrap-icons";
+import {ChevronLeft, ChevronRight} from "./../../components/icons";
 
 function Index({blogs, token}: InferGetStaticPropsType<typeof getStaticProps>) {
     const [mounted, setMounted] = useState(false);
