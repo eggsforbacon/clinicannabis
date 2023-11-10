@@ -29,19 +29,18 @@ export const strings: IKeyedObject = {
         },
         'clinic': {
             'headline': <>{"Clinicannabis"}</>,
-            'home': <>{"Inicio"}</>,
+            'home': <>{"Nuestra clínica"}</>,
             'stories': <>{"Historias de victoria"}</>,
-            'history': <>{"Nuestra historia"}</>,
-            'experience': <>{"Nuestra clínica"}</>,
-
+            'pain': <>{"Clínica del Dolor"}</>,
+            'experience': <>{"Somos una Experiencia"}</>,
         },
         'fast': {
             'headline': <>{"Enlaces de interés"}</>,
             'contact': <>{"Contáctanos"}</>,
             'data': <>{"Protección de datos"}</>,
+            'blog': <>{"Blog médico"}</>,
             'promotions': <>{"Condiciones y restricciones de promoción"}</>,
-            'FAQ': <>{"Preguntas frecuentes"}</>,
-            'experts': <>{"Nuestros expertos"}</>,
+            'invima': <>{"Alertas sanitarias"}</>,
         },
     },
     'landing': {
@@ -55,7 +54,7 @@ export const strings: IKeyedObject = {
             },
             'blog': {
                 'title': <>{"Actualidad "}<br/><span
-                    className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/>{"en la salud"}</>,
+                    className={"max-md:!text-[2.7rem] lg:!text-[5rem]"}>{"del cannabis "}</span><br/>{"en la salud"}</>,
                 'titleRemark': <>{"en la salud"}</>,
                 'copy': <>{"Obtén información de "}<span
                     className={"font-bold"}>{"Clinicannabis"}</span>{" enviada directamente a tu correo."}</>,
@@ -386,43 +385,51 @@ export const strings: IKeyedObject = {
                 'headline': <>{"Cannabis "}</>,
                 'remark': <>{"medicinal"}</>,
                 'subtitle': <>{"Dolor crónico y otras patologías"}</>,
-                'content': <>{"Aplicamos protocolos de medicina cannábica enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obteniendo mejoras en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
+                'content': <>{"Aplicamos protocolos de cannabis medicinal enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obtener mejoras en estados de ansiedad, depresión, alteración del apetito, trastornos del sueño y enfermedades crónicas no transmisibles como fibromialgia y artrosis, entre otras."}</>,
                 'cta': <>{"Aprende más"}</>,
             },
             2: {
                 'headline': <>{"Sistema Súper "}</>,
                 'remark': <>{"Inductivo"}</>,
                 'subtitle': <>{"Innovación tecnológica"}</>,
-                'content': <>{"Como pioneros en el Valle del Cauca, nuestro equipo médico está a la vanguardia en la tecnología biomédica que, haciendo uso del Sistema Súper Inductivo, permite diagnosticar de manera no invasiva e indolora a nuestros pacientes, logrando tratar enfermedades neuromusculares, osteoarticulares, lesiones deportivas, recuperación postquirúrgica, alivio del dolor y rehabilitación respiratoria."}</>,
+                'content': <>{"¡Somos pioneros en el suroccidente colombiano! Contamos con una moderna herramienta biomédica no invasiva e indolora, que favorece y acelera los procesos de rehabilitación respiratoria, neuromuscular, osteoarticular y postquirúrgica. Además, es ideal para la recuperación de lesiones deportivas."}</>,
                 'cta': <>{"Conócelo"}</>,
             },
             3: {
                 'headline': <>{"Clínica del "}</>,
                 'remark': <>{"Dolor"}</>,
-                'copy' : [
-                    <>{"Contamos con una unidad médica supra especializada en el manejo del dolor, con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad."}</>,
-                    <>{"Nuestro objetivo es aliviar el sufrimiento y brindar acompañamiento a pacientes y familias que conviven con dolores moderados a severos como consecuencias de diferentes patologías, que han sido diagnosticados con enfermedades crónicas o que han tenido accidentes de tránsito."}</>,
-                ],
+                'copy' : <>{"Contamos con una unidad médica supra especializada en el "}<b>{"manejo del dolor"}</b>{", con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad para aliviar el sufrimiento y brindar acompañamiento a pacientes y familias que conviven con dolores moderados a severos como consecuencia de diferentes patologías, que han sido diagnosticados con enfermedades crónicas o que han tenido accidentes de tránsito."}</>,
                 'cta': <>{"Conócela"}</>,
             },
             4: {
-                'headline': <>{"Sueros terapéuticos"}</>,
-                'subtitle': <>{"Regeneración y depuración"}</>,
-                'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. "}</>,
-                'remark': <>{"¡Hay uno elaborado especialmente para ti!"}</>,
+                'headline': <>{"Sueroterapia"}</>,
+                'subtitle': <>{"En clínica o a domicilio"}</>,
+                'content': <>{"La sueroterapia consiste en la administración de sueros específicos vía intravenosa que favorecen la autocuración del organismo a partir de una selección de vitaminas, minerales, enzimas, oligoelementos y fármacos homeopáticos según las necesidades de cada paciente."}</>,
                 'cta': <>{"Encuéntralo"}</>,
             },
             5: {
                 'headline': <>{"Medicina "}</>,
                 'remark': <>{"Funcional"}</>,
                 'subtitle': <>{"Atención integral"}</>,
-                'content': <>{"Evaluamos a cada uno de nuestros pacientes. Nos enfocamos en tus necesidades de salud y bienestar, e identificamos los factores que puedan alterar tu calidad de vida."}</>,
+                'content': <>{"Valoramos a cada paciente de manera integral enfocándonos en la biología de los sistemas del organismo e identificando los factores que puedan alterar su equilibrio."}</>,
                 'cta': <>{"Conócela"}</>,
+            },
+            6: {
+                'headline': <>{"Medicina Alternativa"}</>,
+                'subtitle': <>{""}</>,
+                'content': <>{"Ofrecemos diferentes terapias, incluyendo las energéticas, que ayudan en el control del estrés, la ansiedad y otros padecimientos de salud mental; dolores agudos o crónicos y, tratamientos de desintoxicación para la activación del metabolismo con énfasis en alimentación y estilo de vida saludable."}</>,
+                'cta': <>{"Conócelo"}</>,
+            },
+            7: {
+                'headline': <>{"Ayudas Diagnósticas"}</>,
+                'subtitle': <>{""}</>,
+                'content': <>{"Realizamos estudios complementarios para la evaluación clínica de un paciente que permite al médico tratante confirmar un diagnóstico."}</>,
+                'cta': <>{"Conócelas"}</>,
             },
             8: {
                 'headline': <>{"Centro de Experiencia"}</>,
                 'remark': <>{"Más cerca de ti"}</>,
-                'content': <>{"En Clinicannabis encontrarás complementos ideales para tu tratamiento y mejoramiento de calidad vida. Te ofrecemos una experiencia de bienestar donde productos derivados del cannabis, experiencias holísticas y de crecimiento personal, promueven el cuidado complemento de tu salud."}</>,
+                'content': <>{"¡Somos más que una clínica! Como centro de bienestar y salud, tenemos para ti una experiencia integral. En Clinicannabis encontrarás complementos ideales para tu tratamiento y mejoramiento de calidad vida. Te ofrecemos una experiencia de bienestar con productos derivados del cannabis, alimentos naturales, experiencias holísticas y de crecimiento personal, para el cuidado de tu salud."}</>,
                 'cta': <>{"Conócelo"}</>,
             }
         },
@@ -442,10 +449,9 @@ export const strings: IKeyedObject = {
                 'title': <>{"En Clinicannabis "}</>,
                 'remark': <>{"ofrecemos terapias como:"}</>,
                 'items' : [
+                    <>{"Consulta médica por algesiología"}</>,
                     <>{"Bloqueo guiado con ultrasonido"}</>,
-                    <>{"Bloqueo con fluoroscopio a través de rayos X"}</>,
-                    <>{"Toxina botulínica"}</>,
-                    <>{"Proloterapia - Terapia de proliferación"}</>,
+                    <>{"Fisioterapia (Kinesio-TAPE)"}</>,
                 ],
             },
             'regenerative': {
@@ -688,11 +694,6 @@ export const strings: IKeyedObject = {
                 'validity': <>{"Vigencia"}</>,
                 'channels': <>{"Canales de atención a los Titulares"}</>,
             },
-            'conditions': {
-                'title': <>{"Condiciones y restricciones de promoción"}</>,
-                'amor-amistad': <>{"Promoción de Amor y Amistad Clinicannabis septiembre 2023"}</>,
-            },
-
         },
         'content': {
             'objective': <>{"Establecer los lineamientos y la Política de Tratamiento de Datos Personales de Clinicannabis, en cumplimiento de " +
