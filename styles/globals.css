@@ -42,6 +42,14 @@
         clip-path: ellipse(80% 72% at 50% 80%);
     }
 
+    .functional-medicine-clip-xl {
+        clip-path: ellipse(100% 48% at 51% 62%);
+    }
+
+    .functional-medicine-clip-lg {
+        clip-path: ellipse(100% 48% at 58% 52%);
+    }
+
     .service-clip-even {
         clip-path: ellipse(190% 75% at 120% 80%);
     }
