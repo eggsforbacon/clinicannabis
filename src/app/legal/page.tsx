@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "../../components/ui/Navbar";
 import {Link as ScrollLink} from "react-scroll/modules";
 import {strings} from "../../model/strings";

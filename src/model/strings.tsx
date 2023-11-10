@@ -29,18 +29,19 @@ export const strings: IKeyedObject = {
         },
         'clinic': {
             'headline': <>{"Clinicannabis"}</>,
-            'home': <>{"Nuestra clínica"}</>,
+            'home': <>{"Inicio"}</>,
             'stories': <>{"Historias de victoria"}</>,
-            'pain': <>{"Clínica del Dolor"}</>,
-            'experience': <>{"Somos una Experiencia"}</>,
+            'history': <>{"Nuestra historia"}</>,
+            'experience': <>{"Nuestra clínica"}</>,
+
         },
         'fast': {
             'headline': <>{"Enlaces de interés"}</>,
             'contact': <>{"Contáctanos"}</>,
             'data': <>{"Protección de datos"}</>,
-            'blog': <>{"Blog médico"}</>,
             'promotions': <>{"Condiciones y restricciones de promoción"}</>,
-            'invima': <>{"Alertas sanitarias"}</>,
+            'FAQ': <>{"Preguntas frecuentes"}</>,
+            'experts': <>{"Nuestros expertos"}</>,
         },
     },
     'landing': {
@@ -54,11 +55,12 @@ export const strings: IKeyedObject = {
             },
             'blog': {
                 'title': <>{"Actualidad "}<br/><span
-                    className={"max-md:!text-[2.7rem] lg:!text-[5rem]"}>{"del cannabis "}</span><br/>{"en la salud"}</>,
+                    className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/>{"en la salud"}</>,
                 'titleRemark': <>{"en la salud"}</>,
                 'copy': <>{"Obtén información de "}<span
                     className={"font-bold"}>{"Clinicannabis"}</span>{" enviada directamente a tu correo."}</>,
                 'cta': <>{"Suscríbete"}</>,
+                'image': "/images/landing/hero/updatedBg.png",
             },
             'painClinic': {
                 'title': <>{"Clínica del "}</>,
@@ -149,8 +151,8 @@ export const strings: IKeyedObject = {
         },
     },
     'testimonials': {
-      'title' : <>{"Testimonios"}</>,
-      'copy': <>{"En nuestra clínica te acompañamos en todo tu proceso médico, brindándote una atención cálida y humana. Conoce algunas experiencias de nuestros pacientes."}</>
+        'title' : <>{"Testimonios"}</>,
+        'copy': <>{"En nuestra clínica te acompañamos en todo tu proceso médico, brindándote una atención cálida y humana. Conoce algunas experiencias de nuestros pacientes."}</>
     },
     'seminario':{
         'parrafo': {
@@ -312,50 +314,50 @@ export const strings: IKeyedObject = {
             }
         },
         'conferecistas':{
-            1:{ 
+            1:{
                 'title':<>{"Conferencista:"}</>,
                 'subtitle':<>{"Dra. Cristina Sánchez - España."}</>,
                 'indice':<>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
                 'txt':<>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979. Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral. Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
             },
-            2:{ 
+            2:{
                 'title':<>{"Conferencista:"}</>,
                 'subtitle':<>{"Dr. Mariano García de Palau – España."}</>,
                 'indice':<>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
                 'txt':<>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979 Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral."
-                + "Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
+                    + "Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
             },
-            3:{ 
+            3:{
                 'title':<>{"Conferencista:"}</>,
                 'subtitle':<>{"Ing. Mara Gordon – USA."}</>,
                 'indice':<>{"Effective dosing: How much is enough?"}</>,
                 'txt':<>{"Líder de renombre mundial en el ecosistema del cannabis medicinal. Utilizó su experiencia como ingeniera de procesos para ayudar a las empresas de Fortune 500 a desarrollar sistemas inteligentes en la creación de fórmulas de cannabis y regímenes de dosificación terapéuticos para miles de pacientes en California, mejorando drásticamente su salud, calidad de vida y longevidad. Mara forma parte de los consejos de administración de Aunt Zelda’s y Zelira Therapeutics."}</>
             },
-            4:{ 
+            4:{
                 'title':<>{"Conferencista:"}</>,
                 'subtitle':<>{"Dra. Paola Pineda – Colombia."}</>,
                 'indice':<>{"Uso de cannabis en condiciones neurodegenerativas énfasis en Parkinson y Alzheimer."}</>,
                 'txt':<>{"Médica y cirujana con experiencia de 10 años en manejo de personas con epilepsia, cáncer, dolor no asociado a neoplasias, enfermedades neurodegenerativas, enfermedades autoinmunes, trastornos del sueño, entre otros, que han optado por la terapia a base de cannabis como parte fundamental de su tratamiento. Desde 2013, encontró como podría integrar la medicina con cannabis en la atención de pacientes con enfermedades crónicas quienes por su condición de base tienen un gran deterioro en su calidad de vida. Participó en los primeros debates del congreso de la república donde se empezó a hablar sobre la importancia de la reglamentación del cannabis medicinal para diferentes condiciones de salud."}</>
             },
-            6:{ 
+            6:{
                 'title':<>{"Conferencista:"}</>,
                 'subtitle':<>{"Veterinaria y zootecnista Natalia Mejía – Colombia."}</>,
                 'indice':<>{"Cannabis y salud mental en animales de compañía."}</>,
                 'txt':<>{"Médica veterinaria zootecnista, magíster en etología clínica con estudios en medicina veterinaria integrativa y con varios años de experiencia en el uso de cannabis medicinal en sus pacientes."}</>
             },
-            7:{ 
+            7:{
                 'title':<>{"Conferencista:"}</>,
                 'subtitle':<>{"Psiquiatra Alberto Ulloa – Colombia."}</>,
                 'indice':<>{"Cannabinoides y adicciones."}</>,
                 'txt':<>{"Médico especialista en psiquiatría de la Universidad Javeriana. Cuenta con 33 años de experiencia en el ejercicio público y privado de la psiquiatría, la asesoría, la docencia y la atención, de personas e instituciones que requieren de servicio y apoyo técnico, para la promoción, prevención y atención de problemas de salud mental y el consumo de sustancias psicoactivas."}</>
             },
-            8:{ 
+            8:{
                 'title':<>{"Conferencista:"}</>,
                 'subtitle':<>{"Dr. Daniel Archer Juri – Colombia."}</>,
                 'indice':<>{"Uso de cannabinoides en pacientes con dolor."}</>,
                 'txt':<>{"Médico de la Universidad Libre, especialista en terapias alternativas de la Universidad Manuela Beltrán. Cuenta con amplia experiencia en el manejo clínico de cannabis medicinal, integrando el conocimiento de la medicina tradicional china y la medicina alopática, es docente médico y terapeuta de la Escuela Neijing Kali, médico especialista en cannabis del Centro de Medicina Ancestral Orígenes Clinicannabis."}</>
             },
-            9:{ 
+            9:{
                 'title':<>{"Conferencista:"}</>,
                 'subtitle':<>{"Veterinario Juan Carlos Builes – Colombia."}</>,
                 'indice':<>{"Psiconeuroinmunodermatología y medicina cannábica en pequeños animales."}</>,
@@ -366,7 +368,7 @@ export const strings: IKeyedObject = {
             0:{
                 'title':<>{"Compra aquí:"}</>
             },
-            1:{ 
+            1:{
                 'title1':<>{"Cupos Totales"}</>,
                 'title2':<>{"INSCRÍBETE AQUÍ"}</>,
             },
@@ -384,51 +386,43 @@ export const strings: IKeyedObject = {
                 'headline': <>{"Cannabis "}</>,
                 'remark': <>{"medicinal"}</>,
                 'subtitle': <>{"Dolor crónico y otras patologías"}</>,
-                'content': <>{"Aplicamos protocolos de cannabis medicinal enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obtener mejoras en estados de ansiedad, depresión, alteración del apetito, trastornos del sueño y enfermedades crónicas no transmisibles como fibromialgia y artrosis, entre otras."}</>,
+                'content': <>{"Aplicamos protocolos de medicina cannábica enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obteniendo mejoras en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
                 'cta': <>{"Aprende más"}</>,
             },
             2: {
                 'headline': <>{"Sistema Súper "}</>,
                 'remark': <>{"Inductivo"}</>,
                 'subtitle': <>{"Innovación tecnológica"}</>,
-                'content': <>{"¡Somos pioneros en el suroccidente colombiano! Contamos con una moderna herramienta biomédica no invasiva e indolora, que favorece y acelera los procesos de rehabilitación respiratoria, neuromuscular, osteoarticular y postquirúrgica. Además, es ideal para la recuperación de lesiones deportivas."}</>,
+                'content': <>{"Como pioneros en el Valle del Cauca, nuestro equipo médico está a la vanguardia en la tecnología biomédica que, haciendo uso del Sistema Súper Inductivo, permite diagnosticar de manera no invasiva e indolora a nuestros pacientes, logrando tratar enfermedades neuromusculares, osteoarticulares, lesiones deportivas, recuperación postquirúrgica, alivio del dolor y rehabilitación respiratoria."}</>,
                 'cta': <>{"Conócelo"}</>,
             },
             3: {
                 'headline': <>{"Clínica del "}</>,
                 'remark': <>{"Dolor"}</>,
-                'copy' : <>{"Contamos con una unidad médica supra especializada en el "}<b>{"manejo del dolor"}</b>{", con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad para aliviar el sufrimiento y brindar acompañamiento a pacientes y familias que conviven con dolores moderados a severos como consecuencia de diferentes patologías, que han sido diagnosticados con enfermedades crónicas o que han tenido accidentes de tránsito."}</>,
+                'copy' : [
+                    <>{"Contamos con una unidad médica supra especializada en el manejo del dolor, con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad."}</>,
+                    <>{"Nuestro objetivo es aliviar el sufrimiento y brindar acompañamiento a pacientes y familias que conviven con dolores moderados a severos como consecuencias de diferentes patologías, que han sido diagnosticados con enfermedades crónicas o que han tenido accidentes de tránsito."}</>,
+                ],
                 'cta': <>{"Conócela"}</>,
             },
             4: {
-                'headline': <>{"Sueroterapia"}</>,
-                'subtitle': <>{"En clínica o a domicilio"}</>,
-                'content': <>{"La sueroterapia consiste en la administración de sueros específicos vía intravenosa que favorecen la autocuración del organismo a partir de una selección de vitaminas, minerales, enzimas, oligoelementos y fármacos homeopáticos según las necesidades de cada paciente."}</>,
+                'headline': <>{"Sueros terapéuticos"}</>,
+                'subtitle': <>{"Regeneración y depuración"}</>,
+                'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. "}</>,
+                'remark': <>{"¡Hay uno elaborado especialmente para ti!"}</>,
                 'cta': <>{"Encuéntralo"}</>,
             },
             5: {
                 'headline': <>{"Medicina "}</>,
                 'remark': <>{"Funcional"}</>,
                 'subtitle': <>{"Atención integral"}</>,
-                'content': <>{"Valoramos a cada paciente de manera integral enfocándonos en la biología de los sistemas del organismo e identificando los factores que puedan alterar su equilibrio."}</>,
+                'content': <>{"Evaluamos a cada uno de nuestros pacientes. Nos enfocamos en tus necesidades de salud y bienestar, e identificamos los factores que puedan alterar tu calidad de vida."}</>,
                 'cta': <>{"Conócela"}</>,
             },
             6: {
-                'headline': <>{"Medicina Alternativa"}</>,
-                'subtitle': <>{""}</>,
-                'content': <>{"Ofrecemos diferentes terapias, incluyendo las energéticas, que ayudan en el control del estrés, la ansiedad y otros padecimientos de salud mental; dolores agudos o crónicos y, tratamientos de desintoxicación para la activación del metabolismo con énfasis en alimentación y estilo de vida saludable."}</>,
-                'cta': <>{"Conócelo"}</>,
-            },
-            7: {
-                'headline': <>{"Ayudas Diagnósticas"}</>,
-                'subtitle': <>{""}</>,
-                'content': <>{"Realizamos estudios complementarios para la evaluación clínica de un paciente que permite al médico tratante confirmar un diagnóstico."}</>,
-                'cta': <>{"Conócelas"}</>,
-            },
-            8: {
                 'headline': <>{"Centro de Experiencia"}</>,
                 'remark': <>{"Más cerca de ti"}</>,
-                'content': <>{"¡Somos más que una clínica! Como centro de bienestar y salud, tenemos para ti una experiencia integral. En Clinicannabis encontrarás complementos ideales para tu tratamiento y mejoramiento de calidad vida. Te ofrecemos una experiencia de bienestar con productos derivados del cannabis, alimentos naturales, experiencias holísticas y de crecimiento personal, para el cuidado de tu salud."}</>,
+                'content': <>{"En Clinicannabis encontrarás complementos ideales para tu tratamiento y mejoramiento de calidad vida. Te ofrecemos una experiencia de bienestar donde productos derivados del cannabis, experiencias holísticas y de crecimiento personal, promueven el cuidado complemento de tu salud."}</>,
                 'cta': <>{"Conócelo"}</>,
             }
         },
@@ -448,9 +442,10 @@ export const strings: IKeyedObject = {
                 'title': <>{"En Clinicannabis "}</>,
                 'remark': <>{"ofrecemos terapias como:"}</>,
                 'items' : [
-                    <>{"Consulta médica por algesiología"}</>,
                     <>{"Bloqueo guiado con ultrasonido"}</>,
-                    <>{"Fisioterapia (Kinesio-TAPE)"}</>,
+                    <>{"Bloqueo con fluoroscopio a través de rayos X"}</>,
+                    <>{"Toxina botulínica"}</>,
+                    <>{"Proloterapia - Terapia de proliferación"}</>,
                 ],
             },
             'regenerative': {
@@ -693,6 +688,11 @@ export const strings: IKeyedObject = {
                 'validity': <>{"Vigencia"}</>,
                 'channels': <>{"Canales de atención a los Titulares"}</>,
             },
+            'conditions': {
+                'title': <>{"Condiciones y restricciones de promoción"}</>,
+                'amor-amistad': <>{"Promoción de Amor y Amistad Clinicannabis septiembre 2023"}</>,
+            },
+
         },
         'content': {
             'objective': <>{"Establecer los lineamientos y la Política de Tratamiento de Datos Personales de Clinicannabis, en cumplimiento de " +
