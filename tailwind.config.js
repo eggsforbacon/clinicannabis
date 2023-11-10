@@ -245,5 +245,5 @@ module.exports = {
             }
         },
     },
-    plugins: [require('tailwind-scrollbar')({nocompatible: true}), require('flowbite/plugin'), require("tailwindcss-animation"),],
+    plugins: [require('tailwind-scrollbar')({nocompatible: true}), require("tailwindcss-animation"),],
 }
