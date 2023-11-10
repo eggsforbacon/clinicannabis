@@ -48,11 +48,8 @@ const Footer = () => {
                                     <li><Link href={"/"}
                                               className={linkStyle}>{strings.footer.clinic.home}</Link>
                                     </li>
-                                    <li><Link href={"/testimonios"}
-                                              className={linkStyle}>{strings.footer.clinic.stories}</Link>
-                                    </li>
-                                    <li><Link href={"/servicios/clinica-del-dolor"}
-                                              className={linkStyle}>{strings.footer.clinic.pain}</Link>
+                                    <li><Link href={"/"}
+                                              className={linkStyle}>{strings.footer.clinic.experience}</Link>
                                     </li>
                                 </ul>
                                 <ul className={"flex flex-col items-stretch justify-start gap-4 h-full lg:mr-10 w-full"}>
@@ -63,12 +60,8 @@ const Footer = () => {
                                     <li><Link href={"/legal"}
                                               className={linkStyle}>{strings.footer.fast.data}</Link>
                                     </li>
-                                    <li><Link href={"/blog"}
-                                              className={linkStyle}>{strings.footer.fast.blog}</Link>
-                                    </li>
-                                    <li>
-                                        <Link href={"https://app.invima.gov.co/alertas/medicamentos-productos-biologicos"} target={"_blank"}
-                                              className={linkStyle}>{strings.footer.fast.invima}</Link>
+                                    <li><Link href={"/legal#promociones"}
+                                              className={linkStyle}>{strings.footer.fast.promotions}</Link>
                                     </li>
                                 </ul>
                             </section>
@@ -97,11 +90,11 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link aria-label={"Twitter"} href={"https://www.twitter.com/clinicannabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
+                                    <Link aria-label={"Twitter/X"} href={"https://www.twitter.com/clinicannabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <TwitterX
                                             className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
                                         <p className={"text-sm font-normal"}>@clinicannabis</p>
-                                        <p className={"sr-only"}>Twitter</p>
+                                        <p className={"sr-only"}>Twitter/X</p>
                                     </Link>
                                 </li>
                                 <li>
