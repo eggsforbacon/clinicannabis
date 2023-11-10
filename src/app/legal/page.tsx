@@ -1,11 +1,10 @@
-import {NextPage} from "next";
 import Navbar from "../../components/ui/Navbar";
 import {Link as ScrollLink} from "react-scroll/modules";
 import {strings} from "../../model/strings";
 import Head from "next/head";
 import React from "react";
 
-const Legal: NextPage = () => {
+export default function Legal () {
 
     const navigation = strings.legal.navigation;
     const content = strings.legal.content;
@@ -283,5 +282,3 @@ const Legal: NextPage = () => {
     )
         ;
 }
-
-export default Legal;
