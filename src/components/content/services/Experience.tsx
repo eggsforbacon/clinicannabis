@@ -17,7 +17,7 @@ export const Experience = () => {
             <section
                 className={"relative px-8 lg:px-0 lg:absolute lg:left-0 max-w-[34rem] lg:mt-32 lg:ml-44 flex flex-col gap-8 lg:gap-12 justify-between items-center text-midnight-green"}>
                 <section className={"pt-2 text-center lg:text-start flex flex-col items-center lg:items-start justify-start gap-2"}>
-                    <h2 id={"experiencia-center"} className={"text-6xl lg:text-8xl font-black leading-[0.8] tracking-normal lg:tracking-wide mb-2"}>{strings.services.sections["6"].headline}</h2>
+                    <h2 id={"experiencia-center"} className={"text-6xl lg:text-8xl font-black leading-[0.8] tracking-normal lg:tracking-wide mb-2"}>{strings.services.sections["8"].headline}</h2>
                     <h3 className={"font-normal text-2xl lg:text-4xl"}>{strings.services.sections["8"].remark}</h3>
                 </section>
                 <p className={"text-center lg:text-start font-normal text-xl lg:text-2xl"}>{strings.services.sections["8"].content}</p>

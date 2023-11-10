@@ -419,7 +419,7 @@ export const strings: IKeyedObject = {
                 'content': <>{"Evaluamos a cada uno de nuestros pacientes. Nos enfocamos en tus necesidades de salud y bienestar, e identificamos los factores que puedan alterar tu calidad de vida."}</>,
                 'cta': <>{"Conócela"}</>,
             },
-            6: {
+            8: {
                 'headline': <>{"Centro de Experiencia"}</>,
                 'remark': <>{"Más cerca de ti"}</>,
                 'content': <>{"En Clinicannabis encontrarás complementos ideales para tu tratamiento y mejoramiento de calidad vida. Te ofrecemos una experiencia de bienestar donde productos derivados del cannabis, experiencias holísticas y de crecimiento personal, promueven el cuidado complemento de tu salud."}</>,
