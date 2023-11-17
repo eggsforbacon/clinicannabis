@@ -8,9 +8,13 @@ export const Serums = () => {
     const buttonStyle: string = "mt-16 w-fit text-xl lg:block lg:text-3xl rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-8 lg:px-10 py-1.5 lg:py-2 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
 
     return (
-        <article className={"relative flex items-center justify-center lg:items-start lg:justify-end z-10 h-208 md:h-208 lg:h-192 xl:h-224"} id={"serums"}>
-            <Image src={"/images/services/leafBackdrop.svg"} alt={""} width={1920} height={1068} className={"pointer-events-none select-none absolute opacity-100 left-0 top-[18.25rem] md:top-56 scale-[3.6] md:scale-[1.5] lg:hidden"} />
-            <Image src={"/images/services/service4.png"} className={"pointer-events-none select-none absolute opacity-60 lg:opacity-100 lg:top-20 xl:-top-20 left-0 top-[17.25rem] md:top-[13.65rem] scale-[3.6] md:scale-[1.5] lg:scale-[1.5] xl:scale-[1.3] w-full"}
+        <article
+            className={"overflow-clip relative flex items-center justify-center lg:items-start lg:justify-end z-10 h-208 md:h-208 lg:h-192 xl:h-224"}
+            id={"serums"}>
+            <Image src={"/images/services/leafBackdrop.svg"} alt={""} width={1920} height={1068}
+                   className={"pointer-events-none select-none absolute opacity-100 left-0 top-[18.25rem] md:top-56 scale-[3.6] md:scale-[1.5] lg:hidden"}/>
+            <Image src={"/images/services/service4.png"}
+                   className={"pointer-events-none select-none absolute opacity-60 lg:opacity-100 lg:top-20 xl:-top-20 left-0 top-[17.25rem] md:top-[13.65rem] scale-[3.6] md:scale-[1.5] lg:scale-[1.5] xl:scale-[1.3] w-full"}
                    alt={""} width={1920}
                    height={1068} quality={100} loading={"lazy"}/>
             <section

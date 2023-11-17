@@ -25,7 +25,6 @@ export const Experience = () => {
                     {strings.services.sections["8"].cta}
                 </Link>
             </section>
-
         </article>
     );
 }

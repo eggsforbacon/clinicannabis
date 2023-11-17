@@ -7,7 +7,7 @@ export const FunctionalMedicine = () => {
     const buttonStyle: string = "w-fit text-xl lg:block text-3xl rounded-full border-solid border-2 border-GO-green text-GO-green lg:border-white lg:text-white font-normal text-base px-8 lg:px-10 py-1.5 lg:py-2 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
 
     return (
-        <article className={"relative z-20 h-144 lg:h-288 flex flex-col items-center lg:items-start"} id={"medicina-funcional"}>
+        <article className={"overflow-clip relative z-20 h-144 lg:h-288 flex flex-col items-center lg:items-start"} id={"medicina-funcional"}>
             <div className={"absolute w-full h-full lg:bottom-44 bottom-0 hidden lg:block lg:functional-medicine-clip-lg xl:functional-medicine-clip-xl"}>
                 <Image src={"/services/medicina-funcional/leaf-background.png"} alt={""} width={1920} height={915} className={"absolute lg:bottom-16 xl:-bottom-32 2xl:-bottom-32 left-0 2xl:scale-105 xl:scale-100 lg:scale-125"}/>
                 <Image className={"pointer-events-none select-none absolute lg:bottom-10 xl:-bottom-44 2xl:-bottom-52 hidden lg:block lg:scale-110 xl:scale-90 -right-[32rem]"}
