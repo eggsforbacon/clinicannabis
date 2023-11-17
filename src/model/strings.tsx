@@ -692,7 +692,15 @@ export const strings: IKeyedObject = {
                 'title': <>{"Condiciones y restricciones de promoción"}</>,
                 'amor-amistad': <>{"Promoción de Amor y Amistad Clinicannabis septiembre 2023"}</>,
             },
-
+            'blackFriday23': {
+                'title': <>{"Black Friday 2023"}</>,
+                'welcome': <>{"¡El Black Friday llega a Clinicannabis!"}</>,
+                'explanation': <>{"¿En qué consiste nuestra promoción?"}</>,
+                'applies': <>{"Aplica para"}</>,
+                'headline5': <>{"5% de descuento en nuestros medicamentos"}</>,
+                'conditions': <>{"¿Cuáles son las condiciones y restricciones de esta promoción?"}</>,
+                'specialOffer': <>{"¡Este fin de año disfruta ofertas exclusivas para tu salud y equilibrio!"}</>,
+            },
         },
         'content': {
             'objective': <>{"Establecer los lineamientos y la Política de Tratamiento de Datos Personales de Clinicannabis, en cumplimiento de " +
@@ -992,8 +1000,36 @@ export const strings: IKeyedObject = {
                     5: <>{"Sitio web "}<Link href={"https://www.clinicannabis.com"}>{"https://www.clinicannabis.com"}</Link></>,
 
                 },
-            }
-        }
+            },
+            'legal': {
+
+            },
+            'blackFriday23': {
+                'notice': <>{"Este Black Friday te invitamos a invertir en tu salud y bienestar con nuestras terapias alternativas y enfoques holísticos a partir del cannabis medicinal, la medicina funcional y alternativa."}</>,
+                'explanation': {
+                    1: <>{"40% de descuento por la compra de 1 servicio."}</>,
+                    2: <>{"50% de descuento por la compra de 2 servicios."}</>,
+                    3: <>{"60% de descuento por la compra de 3 servicios en adelante."}</>,
+                },
+                'applies': {
+                    1: <>{"Consulta médica con especialista en cannabis medicinal, medicina funcional o integrativa."}</>,
+                    2: <>{"Fisioterapia avanzada (SIS)."}</>,
+                    3: <>{"Sueroterapia en clínica y a domicilio, en la comodidad de tu casa u oficina."}</>,
+                    4: <>{"Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas, Biopuntura,Masaje Tradicional Chino, Auriculoterapia, Terapias Bioenergéticas (Cristaloterapia, Gemoterapia y Poliedros) según criterio médico."}</>,
+                },
+                'headline5': {
+                    1: <>{"Droguería y cosméticos."}</>,
+                    2: <>{"Fórmulas magistrales."}</>,
+                },
+                'conditions': {
+                    1: <>{"Promoción válida únicamente el viernes 24 y sábado 25 de noviembre de 2023."}</>,
+                    2: <>{"La promoción no incluye el valor del domicilio de la sueroterapia."}</>,
+                    3: <>{"Se debe pagar el tratamiento completo y se pueden agendar las citas médicas hasta el 31 de enero de 2024."}</>,
+                    4: <>{"Contamos con bonos para personalizar y dar el regalo perfecto en navidad."}</>,
+                    5: <>{"El descuento no es acumulable con otros existentes."}</>,
+                },
+            },
+        },
     },
     '404': {
         "headline": <>{"No encontramos esta página"}</>,
