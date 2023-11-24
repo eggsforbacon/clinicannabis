@@ -20,7 +20,7 @@ export const strings: IKeyedObject = {
             'headline': <>{"¿Tienes alguna"}</>,
             'remark': <>{"pregunta?"}</>,
             'invitation': <>{"¡Nosotros te ayudamos!"}</>,
-            'phone': <>{"317 483 4360"}</>,
+            'phone': <>{"317 435 5876"}</>,
             'phoneScript': <>{"Lunes a viernes 8:00 - 17:00"}</>,
             'email': <>{"info@clinicannabis.com.co"}</>,
             'emailScript': <>{"Apuntamos a un tiempo de respuesta de 24h"}</>,
@@ -172,7 +172,7 @@ export const strings: IKeyedObject = {
                 'InfoNumber': <>{"Más información :  "}</>,
                 'Nom1':<>{" 3148220459 "}</>,
                 'Nom2':<>{" 3052328704 "}</>,
-                'Nom3':<>{" 3174834360 "}</>,
+                'Nom3':<>{" 3174355876 "}</>,
             },
         },
         'sections': {
@@ -712,7 +712,7 @@ export const strings: IKeyedObject = {
                 'paragraph': <>{"Centro de Medicina Ancestral Orígenes S.A - Clinicannabis, es una Institución Prestadora de Servicios de Salud de " +
                     "carácter privado, con NIT 901.172.983-0"}</>,
                 'pbx': <>{"PBX: 5244080"}</>,
-                'phone': <>{"Celular: 3174834360 - 3009126254"}</>,
+                'phone': <>{"Celular: 3174355876 - 3009126254"}</>,
                 'mail': <>{"Correo electrónico: info@clinicannabis.com.co"}</>,
                 'post': <>{"Es importante tener presente que toda área, colaborador, empleado, proveedor y/o contratista de Clinicannabis, " +
                     "que por sus funciones está encargado del tratamiento de las bases de datos que contengan información personal, " +
@@ -995,7 +995,7 @@ export const strings: IKeyedObject = {
                     0: <>{"Auxiliar Administrativa (Recepción)"}</>,
                     1: <>{"Auxiliar de experiencia del Paciente"}</>,
                     2: <>{"Buzón disponible en la sede."}</>,
-                    3: <>{"Línea telefónica: 3174834360 5244080 - 3009126254"}</>,
+                    3: <>{"Línea telefónica: 3174355876 5244080 - 3009126254"}</>,
                     4: <>{"Correo electrónico info@clinicannabis.com.co"}</>,
                     5: <>{"Sitio web "}<Link href={"https://www.clinicannabis.com"}>{"https://www.clinicannabis.com"}</Link></>,
 

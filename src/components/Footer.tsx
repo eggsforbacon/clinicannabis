@@ -33,7 +33,7 @@ const Footer = () => {
                                         <strong> {strings.footer.questions.remark}</strong></h2>
                                     <p className={"text-lg lg:text-lg font-light"}>{strings.footer.questions.invitation}</p>
                                 </div>
-                                <Link href={"https://wa.me/+573174834360"} className={linkButtonStyle}>
+                                <Link href={"https://wa.me/+573174355876"} className={linkButtonStyle}>
                                     <Whatsapp className={"lg:fill-white fill-green/sheen h-full"} size={22}/>
                                     <p className={linkStyle}>{strings.footer.questions.phone}</p>
                                 </Link>

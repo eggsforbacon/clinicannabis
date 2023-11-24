@@ -78,7 +78,7 @@ const Navbar = (props : _CProps) => {
                     );
                 })}
                 <li className={"rounded-full border-solid border-2 border-viridian-green text-viridian-green text-base px-6 py-1 transition duration-300 ease-exponential-out lg:hover:border-white focus:border-white lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white"}>
-                    <Link href={`https://wa.me/+573174834360?text=${strings.navbar.ctaMessage}`} target={"_blank"} rel={"noreferrer"}>
+                    <Link href={`https://wa.me/+573174355876?text=${strings.navbar.ctaMessage}`} target={"_blank"} rel={"noreferrer"}>
                         {strings.navbar.cta}
                     </Link>
                 </li>
