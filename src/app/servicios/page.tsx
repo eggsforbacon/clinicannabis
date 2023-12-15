@@ -1,13 +1,15 @@
 import {Metadata} from "next";
-import Navbar from "../../components/ui/Navbar";
-import {MedicalCannabis} from "../../components/content/services/MedicalCannabis";
-import {SIS} from "../../components/content/services/SIS";
-import {PainClinic} from "../../components/content/services/PainClinic";
-import {Serums} from "../../components/content/services/Serums";
-import {FunctionalMedicine} from "../../components/content/services/FunctionalMedicine";
-import {Experience} from "../../components/content/services/Experience";
-import Footer from "../../components/ui/Footer";
+import Navbar from "@/components/ui/Navbar";
+import {MedicalCannabis} from "@/components/content/services/MedicalCannabis";
+import {SIS} from "@/components/content/services/SIS";
+import {PainClinic} from "@/components/content/services/PainClinic";
+import {Serums} from "@/components/content/services/Serums";
+import {FunctionalMedicine} from "@/components/content/services/FunctionalMedicine";
+import {Experience} from "@/components/content/services/Experience";
+import Footer from "@/components/ui/Footer";
 import React from "react";
+import {AlternativeMedicine} from "@/components/content/services/AlternativeMedicine";
+import {Diagnostics} from "@/components/content/services/Diagnostics";
 export const metadata : Metadata = {
     title: 'Nuestros Servicios',
     description: 'Trabajamos para cumplir con los estándares de calidad que garanticen que nuestros tratamientos y productos te brinden una mejor calidad de vida.',
@@ -31,6 +33,8 @@ export default function Services() {
             <PainClinic />
             <Serums />
             <FunctionalMedicine />
+            <AlternativeMedicine />
+            <Diagnostics />
             <Experience />
             <Footer />
         </main>

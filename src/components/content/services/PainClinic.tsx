@@ -1,4 +1,4 @@
-import {strings} from "../../../model/strings";
+import {strings} from "@/model/strings";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
@@ -8,8 +8,8 @@ export const PainClinic = () => {
 
     return (
         <article
-            className={"overflow-clip relative h-[95vh] xs:h-[80vh] sm:h-[70vh] md:h-112 xl:h-[58rem] lg:h-224 flex flex-col items-center lg:items-start justify-start py-16 lg:pt-24 box-border gap-6 md:gap-8 px-6 lg:px-32 lg:pr-64 xl:px-64 z-10 text-center lg:text-start pain-clinic-section-clip-sm md:pain-clinic-section-clip-md lg:pain-clinic-section-clip-lg xl:pain-clinic-section-clip-xl"}
-            id={"pain"}>
+            className={"lg:overflow-clip relative h-[95vh] xs:h-[80vh] sm:h-[70vh] md:h-136 lg:h-224 xl:h-[58rem] flex flex-col items-center lg:items-start justify-start py-16 lg:pt-24 box-border gap-6 md:gap-8 px-6 lg:px-32 lg:pr-64 xl:px-64 z-10 text-center lg:text-start pain-clinic-section-clip-sm md:pain-clinic-section-clip-md lg:pain-clinic-section-clip-lg xl:pain-clinic-section-clip-xl"}
+            id={"clinica-del-dolor"}>
             <Image src={"/images/services/painClinic/skobeloffCurve.svg"} alt={""} width={1920} height={1920}
                    className={"hidden pointer-events-none select-none absolute sm:-top-6 sm:scale-x-105 lg:scale-y-[1.2] 2xl:scale-y-[.9] lg:-scale-x-105 md:-top-14 left-1/2 -translate-x-1/2 lg:-top-10 lg:rotate-[4.8deg] xl:rotate-[3.2deg] 2xl:-top-28 z-20"}/>
             <Image src={"/images/services/painClinic/blueCurve.svg"} alt={""} width={640} height={640}
@@ -36,7 +36,7 @@ export const PainClinic = () => {
             <h2 className={"relative text-6xl lg:text-8xl text-viridian-green leading-[0.85] font-black lg:w-136"}>{strings.services.sections["3"].headline}<span
                 className={"text-[4rem] lg:text-[6.5rem] text-caribbean-green"}>{strings.services.sections["3"].remark}</span>
             </h2>
-            <p className={"relative text-lg lg:text-2xl text-neutral-700 font-normal md:w-144 lg:w-[40rem]"}>{strings.services.sections["3"].copy}</p>
+            <p className={"relative text-base md:text-lg lg:text-2xl text-neutral-700 font-normal md:w-144 lg:w-[40rem]"}>{strings.services.sections["3"].copy}</p>
             <Link href={"/servicios/clinica-del-dolor"}
                   className={buttonStyle}>{strings.services.sections["3"].cta}</Link>
         </article>

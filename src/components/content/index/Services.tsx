@@ -1,6 +1,6 @@
 "use client";
 
-import {useWindowDimensions} from "../../../hooks/useWindowDimensions";
+import {useWindowDimensions} from "@/hooks/useWindowDimensions";
 import {ServiceCard} from "../../ServiceCard";
 import Link from "next/link";
 import {SwiperCarousel} from "../../SwiperCarousel";
@@ -25,11 +25,11 @@ export const Services = () => {
     ];
 
     const serviceLinks = [
-        "/servicios#medicinal-cannabis",
-        "/servicios#functional-medicine",
-        "/servicios#serums",
-        "/servicios#sis",
-        "/servicios#pain",
+        "/servicios#cannabis-medicinal",
+        "/servicios#medicina-funcional",
+        "/servicios#sueroterapia",
+        "/servicios#sistema-super-inductivo",
+        "/servicios#clinica-del-dolor",
     ];
 
     const servicePositions: [string, string][] = [

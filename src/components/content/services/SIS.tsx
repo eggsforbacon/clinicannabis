@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {strings} from "../../../model/strings";
+import {strings} from "@/model/strings";
 import React from "react";
 import Link from "next/link";
 
@@ -31,7 +31,7 @@ export const SIS = () => {
                     className={"text-7xl lg:text-9xl text-caribbean-green"}>{strings.services.sections["2"].remark}</strong>
                 </h2>
                 <h3 className={"text-center lg:text-left text-2xl lg:text-4xl text-viridian-green"}>{strings.services.sections["2"].subtitle}</h3>
-                <p className={"font-normal mt-8 text-xl lg:text-2xl text-neutral-600 text-center lg:text-left max-w-[50rem]"}>{strings.services.sections["2"].content}</p>
+                <p className={"font-normal mt-8 text-base md:text-lg lg:text-2xl text-neutral-600 text-center lg:text-left max-w-[38rem] lg:max-w-[50rem]"}>{strings.services.sections["2"].content}</p>
                 <Link href={"https://www.instagram.com/reel/CqMA67CDUDB/?igshid=MDJmNzVkMjY="} target={"_blank"}
                       rel={"noreferrer"} className={buttonStyle}>
                     {strings.services.sections["2"].cta}
