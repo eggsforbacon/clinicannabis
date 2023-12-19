@@ -589,16 +589,29 @@ export const strings: IKeyedObject = {
                 },
             },
         },
-        'medicinal-cannabis': [
-            {
-                'intro': <>{"Este tipo de tratamiento es altamente efectivo "}</>,
-                'content': <>{"para el manejo del dolor crónico, la ansiedad, la depresión, las alteraciones del apetito o del sueño. Ponemos a tu servicio la experiencia de nuestros médicos y garantizamos procedimientos bajo la normativa legal vigente."}</>,
+        'medicinal-cannabis': {
+            'body': [
+                {
+                    'intro': <>{"Este tipo de tratamiento es altamente efectivo "}</>,
+                    'content': <>{"para el manejo del dolor crónico, la ansiedad, la depresión, las alteraciones del apetito o del sueño. Ponemos a tu servicio la experiencia de nuestros médicos y garantizamos procedimientos bajo la normativa legal vigente."}</>,
+                },
+                {
+                    'intro': <>{"Te ofrecemos fórmulas magistrales para tratamiento individualizado, "}</>,
+                    'content': <>{"con los mejores y más altos estándares de fabricación, ya que son laboratorios certificados."}</>,
+                }
+            ],
+        },
+        'sis': {
+            'intro': <>{"El Sistema Súper Inductivo es un dispositivo de fisioterapia avanzada que produce un campo electromagnético de alta potencia (2,5T), a una profundidad de 10 cm, que interactúa con los tejidos del cuerpo humano y le confiere una gran capacidad de penetración y potencia para la despolarización del tejido celular afectado, en todos los sistemas del cuerpo: muscular, óseo, nervioso y tegumentario."}</>,
+            'points': {
+                'intro': <>{"Contamos con diferentes paquetes para el SIS:"}</>,
+                'bullets': [
+                    <>{"Paquete articular"}</>,
+                    <>{"Paquete muscular"}</>,
+                    <>{"Paquete postquirúrgico"}</>,
+                ],
             },
-            {
-                'intro': <>{"Te ofrecemos fórmulas magistrales para tratamiento individualizado, "}</>,
-                'content': <>{"con los mejores y más altos estándares de fabricación, ya que son laboratorios certificados."}</>,
-            }
-        ],
+        },
     },
     'experience': {
         'hero': {

@@ -32,7 +32,7 @@ export const SIS = () => {
                 </h2>
                 <h3 className={"text-center lg:text-left text-2xl lg:text-4xl text-viridian-green"}>{strings.services.sections["2"].subtitle}</h3>
                 <p className={"font-normal mt-8 text-base md:text-lg lg:text-2xl text-neutral-600 text-center lg:text-left max-w-[38rem] lg:max-w-[50rem]"}>{strings.services.sections["2"].content}</p>
-                <Link href={"https://www.instagram.com/reel/CqMA67CDUDB/?igshid=MDJmNzVkMjY="} target={"_blank"}
+                <Link href={"/servicios/sistema-super-inductivo"} target={"_blank"}
                       rel={"noreferrer"} className={buttonStyle}>
                     {strings.services.sections["2"].cta}
                 </Link>
