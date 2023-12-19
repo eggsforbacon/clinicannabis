@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import {BlogCard} from "./BlogCard";
-import {AttributesBlogPost, StrapiPost, CoverAttributesPost} from "../../../interfaces/interfaces";
+import {AttributesBlogPost, StrapiPost, CoverAttributesPost} from "@/interfaces/interfaces";
 
 interface IProps {
     blogPosts: StrapiPost[] | undefined
@@ -12,7 +12,7 @@ export const Posts = (props: IProps) => {
     return (
         <article className={"min-h-[62rem] w-full relative pb-16"}>
             <span
-                className={"absolute z-0 w-full h-104 md:h-144 xl:h-224 pointer-events-none select-none bg-gradient-to-t from-white via-white top-0"}/>
+                className={"absolute z-0 w-full h96 md:h-144 xl:h-224 pointer-events-none select-none bg-gradient-to-t from-white via-white top-0"}/>
             <section
                 className={"relative w-full pt-8 px-8 lg:px-16 xl:px-32 grid md:grid-cols-2 xl:grid-cols-3 place-items-center gap-10 h-full"}>
                 {props.blogPosts && props.blogPosts.map((post) => {

@@ -19,7 +19,7 @@ export const Invima = () => {
                     <section className={"flex gap-3 lg:gap-0 items-center justify-evenly w-full px-3"}>
                         <ExclamationTriangleFill size={96}
                                                  className={"animate-heartbeat fill-midnight-green aspect-square h-full"}/>
-                        <p className={"font-bold text-2xl lg:text-3xl 2xl:text-4xl lg:w-104"}>Conoce las alertas sanitarias del
+                        <p className={"font-bold text-2xl lg:text-3xl 2xl:text-4xl lg:w-96"}>Conoce las alertas sanitarias del
                             INVIMA</p>
                     </section>
                     <Link href={"https://app.invima.gov.co/alertas/medicamentos-productos-biologicos"} target={"_blank"}

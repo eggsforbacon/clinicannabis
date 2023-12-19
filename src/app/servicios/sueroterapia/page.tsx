@@ -1,177 +1,77 @@
-"use client";
-
-import {NextPage} from "next";
-import Head from "next/head";
-import React, {useState} from "react";
+import {Metadata} from "next";
 import Navbar from "@/components/ui/Navbar";
-import {strings} from "@/model/strings";
-import {SerumCard} from "@/components/SerumCard";
-import {ISerumColors} from "@/model/interfaces";
+import Footer from "@/components/ui/Footer";
+import React, {ReactNode} from "react";
 import Image from "next/image";
+import {strings} from "@/model/strings";
 
-const Serums: NextPage = () => {
-
-    const initialColors: ISerumColors = {
-        asideColor: "bg-midnight-green", textColor: "text-viridian-green", titleColors: "text-white"
-    }
-
-    const [currentColors, setCurrentColors] = useState({index: "0", aside: "default.png",  ...initialColors});
-
-    const availableColors: ISerumColors[] = [
+export const metadata: Metadata = {
+    title: 'Sueroterapia - Nuestros Servicios',
+    description: 'La sueroterapia consiste en la administración de sueros específicos vía intravenosa que favorecen la autocuración del organismo a partir de una selección de vitaminas, minerales, enzimas, oligoelementos y fármacos homeopáticos según las necesidades de cada paciente.',
+    icons: [
         {
-            asideColor: "bg-[#6e5593]",
-            textColor: "text-[#6e5593]",
-            titleColors: "text-white",
-            bg: "bg-[#f2d4f4]",
-        },
-
-        {
-            asideColor: "bg-[#1A5B70]",
-            textColor: "text-[#2684a2]",
-            titleColors: "text-white",
-            bg: "bg-[#d3e7f4]",
-        },
-
-        {
-            asideColor: "bg-[#ae6d15]",
-            textColor: "text-[#dd820a]",
-            titleColors: "text-white",
-            bg: "bg-[#edf5f9]",
-        }, 
-
-        {
-            asideColor: "bg-transparent",
-            titleColors: "text-[#e686b5]",
-            textColor: "text-[#e686b5]",
-            bg: "bg-[#edf5f9]"
-        },
-
-        {
-            asideColor: "bg-[#ae6d15]",
-            titleColors: "text-[#f8b133]",
-            textColor: "text-[#f8b133]",
-            bg: "bg-[#edf5f9]"
-        },
-
-        {
-            asideColor: "bg-[#ae6d15]",
-            textColor: "text-[#819820]",
-            titleColors: "text-white",
-            bg: "bg-[#edf5f9]"
-        },
-
-        {
-            asideColor: "bg-[#f5a771]",
-            textColor: "text-[#f5a771]",
-            titleColors: "text-white",
-            bg: "bg-[#edf5f9]"
-        },
-
-        {
-            asideColor: "bg-[#6e549c]",
-            textColor: "text-[#6e549c]",
-            titleColors: "text-white",
-            bg: "bg-[#edf5f9]"
-        },
-
-        {
-            asideColor: "bg-[#f5a771]",
-            textColor: "text-[#f5a771]",
-            titleColors: "text-white",
-            bg: "bg-[#edf5f9]"
-        },
-        {
-            asideColor: "bg-[#6a6768]",
-            textColor: "text-[#6a6768]",
-            titleColors: "text-white",
-            bg: "bg-[#edf5f9]"
-        },
-        {
-            asideColor: "bg-[#07431e]",
-            textColor: "text-[#07431e]",
-            titleColors: "text-white",
-            bg: "bg-[#07431e]"
-        },
-        {
-            asideColor: "bg-[#2ebada]",
-            textColor: "text-[#2ebada]",
-            titleColors: "text-white",
-            bg: "bg-[#07431e]"
-        },
-        {
-            asideColor: "bg-[#e66f8b]",
-            textColor: "text-[#e66f8b]",
-            titleColors: "text-white",
-            bg: "bg-[#07431e]"
-        },
-        {
-            asideColor: "bg-[#851a14]",
-            textColor: "text-[#851a14]",
-            titleColors: "text-white",
-            bg: "bg-[#07431e]"
-        },
-        
-        
-        
+            rel: 'icon',
+            url: '/favicon.ico',
+        }
     ]
+}
 
-    const images = [
-        ["/images/services/serums/backgrounds/1.png", "/images/services/serums/foregrounds/1.png"],
-        ["/images/services/serums/backgrounds/2.png", "/images/services/serums/foregrounds/2.png", "/images/services/serums/foregrounds/2.1.png"],
-        ["/images/services/serums/backgrounds/3.png", "/images/services/serums/foregrounds/3.png"],
-        ["/images/services/serums/backgrounds/4.png", "/images/services/serums/backgrounds/4.1.png", "/images/services/serums/foregrounds/4.png"],
-        ["/images/services/serums/backgrounds/5.png", "/images/services/serums/backgrounds/5.1.png", "/images/services/serums/foregrounds/5.1.png", "/images/services/serums/foregrounds/5.png"],
-        ["/images/services/serums/backgrounds/6.png", "/images/services/serums/foregrounds/6.png", "/images/services/serums/foregrounds/6.1.png", "/images/services/serums/foregrounds/6.2.png", "/images/services/serums/foregrounds/6.3.png" ],
-        ["/images/services/serums/backgrounds/7.png", "/images/services/serums/backgrounds/7.1.png", "/images/services/serums/foregrounds/7.png"],
-        ["/images/services/serums/backgrounds/9.1.png",  "/images/services/serums/foregrounds/9.1.png"],
-        ["/images/services/serums/backgrounds/8.png", "/images/services/serums/backgrounds/8.1.png", "/images/services/serums/foregrounds/8.png"],
-        ["/images/services/serums/backgrounds/10.png", "/images/services/serums/backgrounds/10.1.png", "/images/services/serums/foregrounds/10.1.png", "/images/services/serums/foregrounds/10.png"],
-        ["/images/services/serums/backgrounds/11.png", "/images/services/serums/backgrounds/11.1.png", "/images/services/serums/foregrounds/11.png"],
-        ["/images/services/serums/backgrounds/12.png", "/images/services/serums/backgrounds/12.1.png", "/images/services/serums/foregrounds/12.png"],
-        ["/images/services/serums/backgrounds/13.png", "/images/services/serums/backgrounds/13.1.png", "/images/services/serums/foregrounds/13.png"],
-        ["/images/services/serums/backgrounds/14.png", "/images/services/serums/backgrounds/14.1.png", "/images/services/serums/foregrounds/14.png"],
+export default function Serums() {
 
-    ]
+    const s = strings.services.serums;
+    const serums = s.list.items as { name: ReactNode, function: ReactNode }[];
+    const halfLength = Math.ceil(serums.length/2);
 
     return (
-        <main className="w-full min-h-screen overflow-x-clip">
-            <Head>
-                <title>Nuestros Sueros</title>
-                <link rel="icon" href="/favicon.ico"/>
-                <meta name={"description"}
-                      content={"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. ¡Hay uno elaborado especialmente para ti!"}/>
-                <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
-            </Head>
-            <Navbar selection={"services"}/>
-            <section className={"relative flex flex-col justify-center items-center mt-28 w-full h-screen pt-28"}>
+        <main className={"w-full min-h-screen overflow-x-clip"}>
+            <Navbar selection={""}/>
+            <article
+                className={"relative flex flex-col items-center justify-start px-6 md:px-16 pt-36 pb-16 md:pt-44 md:pb-32 lg:pt-44 lg:pb-16 2xl:pt-52 2xl:pb-36 lg:px-32 xl:px-44 2xl:px-64 h-auto"}>
+                <div className={"absolute h-full w-full top-0 left-0 overflow-clip"}>
+                    <Image src={"/services/sueroterapia/serums.webp"}
+                           alt={"Some cannabis leaves on a white background with some seeds and alternative medicine"}
+                           quality={100}
+                           width={1920} height={1802}
+                           className={"absolute top-192 md:top-72 lg:top-48 xl:top-10 -left-136 md:-left-64 lg:-left-64 xl:left-0 select-none pointer-events-none scale-[5.2] md:scale-[2.2] lg:scale-[1.8] xl:scale-[1.15] 2xl:scale-110"}/>
+                    <Image src={"/services/sueroterapia/gradient.webp"} alt={"A gradient"} quality={100}
+                           width={1920} height={1802}
+                           className={"absolute top-192 md:top-72 lg:top-48 xl:top-10 left-96 md:left-64 lg:left-64 xl:left-0 select-none pointer-events-none scale-[5.2] md:scale-[2.3] lg:scale-[1.8] xl:scale-[1.15] 2xl:scale-110"}/>
+                </div>
                 <section
-                    className={"pb-16 overflow-y-auto scrollbar scrollbar-none overflow-x-clip relative w-full flex flex-col items-stretch justify-start z-10 pt-10 px-6 lg:pl-16"}>
-                    <h1 className={"leading-[0.8] lg:leading-normal text-center lg:text-left text-7xl font-black text-rich-black"}>{strings.services.serums.headline}<strong
-                        className={"text-caribbean-green"}>{strings.services.serums.remark}</strong></h1>
-                    <section
-                        className={"relative z-0 pt-16 lg:pt-6 w-full grid grid-flow-row justify-center lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-y-8 items-stretch"}>
-                        {availableColors.map((colors, index) => {
-                            return (
-                                <SerumCard setCurrentColors={setCurrentColors} bg={availableColors[index].bg} index={(index + 1).toString()}
-                                           icon={<Image className={availableColors[index].textColor}
-                                                        src={`/images/services/serums/icons/${index + 1}.svg`} alt={""}
-                                                        width={48} height={48}/>} colors={availableColors[index]}
-                                           images={images[index]}/>
-                            );
-                        })}
-                    </section>
+                    className={"relative flex flex-col items-center justify-start gap-8 text-center md:text-xl 2xl:text-2xl font-normal text-midnight-green"}>
+                    <p className={"lg:px-16"}>{s.paragraph1[0]}<span className={"font-bold"}>{s.paragraph1[1]}</span>{s.paragraph1[2]}</p>
+                    <p className={"lg:px-16"}>{s.paragraph2}</p>
+                    <p className={"lg:px-16"}>{s.paragraph3}</p>
+                    <h2 className={"mt-8 font-black italic text-viridian-green text-2xl md:text-4xl 2xl:text-5xl"}>{s.list.title}</h2>
+                    <ul className="grid md:grid-cols-2 grid-cols-1 place-items-center lg:gap-x-6 text-center lg:text-start">
+                        <div className={"flex flex-col items-center lg:items-start justify-start w-full h-full text-start whitespace-nowrap"}>
+                            {
+                                serums.slice(0, halfLength).map((e, i) => {
+                                    return (
+                                        <li key={i} className={"flex flex-col items-center lg:items-start w-full lg:px-6 2xl:px-8 py-4"}>
+                                            <h3 className={"font-black italic text-xl md:text-3xl 2xl:text-4xl text-skobeloff"}>{e.name}</h3>
+                                            <p className={"font-semibold text-lg md:text-xl 2xl:text-2xl"}>{e.function}</p>
+                                        </li>
+                                    );
+                                })
+                            }
+                        </div>
+                        <div className={"flex flex-col items-center lg:items-start justify-start w-full"}>
+                            {
+                                serums.slice(halfLength).map((e, i) => {
+                                    return (
+                                        <li key={i} className={"flex flex-col items-center lg:items-start w-full h-full lg:px-6 2xl:px-8 py-4"}>
+                                            <h3 className={"font-black italic text-xl md:text-3xl 2xl:text-4xl text-skobeloff"}>{e.name}</h3>
+                                            <p className={"font-semibold text-lg md:text-xl 2xl:text-2xl"}>{e.function}</p>
+                                        </li>
+                                    );
+                                })
+                            }
+                        </div>
+                    </ul>
                 </section>
-                {/* <aside
-                    className={`hidden lg:block transition duration-300 ease-in-out ${currentColors.asideColor} ${currentColors.titleColors} overflow-clip w-[40%] flex flex-col items-start justify-start gap-4 relative pl-14 pr-16 pt-14`}>
-                    <h2 className={"text-5xl font-bold w-96"}>Sueros terapéuticos</h2>
-                    <p className={"font-normal text-lg"}>{strings.services.sections["3"].content}{strings.services.sections["3"].remark}</p>
-                    <section className={"overflow-clip absolute bottom-16 -left-20 w-168 aspect-video"}>
-                            <Image src={`/images/services/serums/asides/${currentColors.aside}`} className={"absolute scale-150 top-10 -left-10"} alt={""} width={1834} height={1223} />
-                    </section>
-                </aside> */}
-            </section>
+            </article>
+            <Footer/>
         </main>
     );
 }
-
-export default Serums;

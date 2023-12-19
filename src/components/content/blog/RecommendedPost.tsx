@@ -6,7 +6,7 @@ export const RecommendedPost = (props: {
     to : string
 }) => {
     return (
-        <Link href={props.to} className={"w-104 xl:w-136 h-136 relative rounded-3xl flex items-start justify-center"} >
+        <Link href={props.to} className={"w-96 xl:w-136 h-136 relative rounded-3xl flex items-start justify-center"} >
             <article className={"w-full h-96 flex items-center justify-start rounded-3xl overflow-clip shadow-md"}>
 
             </article>

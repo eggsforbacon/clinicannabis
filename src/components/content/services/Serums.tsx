@@ -24,7 +24,8 @@ export const Serums = () => {
                     <h3 className={"text-center lg:text-left font-normal text-viridian-green text-2xl lg:text-4xl"}>{strings.services.sections["4"].subtitle}</h3>
                 </section>
                 <p className={"font-normal mt-8 md:w-144 lg:w-136 text-neutral-600 text-base md:text-lg lg:text-2xl text-center lg:text-left"}>{strings.services.sections["4"].content}</p>
-                <Link href={"/servicios/sueroterapia"}
+                <Link href={"/servicios/sueroterapia"} target={"_blank"}
+                      rel={"noreferrer"}
                       className={buttonStyle}>
                     {strings.services.sections["4"].cta}
                 </Link>

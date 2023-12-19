@@ -16,34 +16,36 @@ export const metadata: Metadata = {
     ]
 }
 
-export default function Services() {
+export default function MedicinalCannabis() {
     return (
         <main className={"w-full min-h-screen overflow-x-clip"}>
             <Navbar selection={""}/>
             <article
-                className={"relative flex flex-col items-center md:items-start justify-center gap-8 px-6 md:px-16 pt-16 lg:pt-8 xl:pt-0 lg:px-32 xl:px-44 2xl:px-64 h-144 md:h-168 lg:h-208 2xl:h-256"}>
+                className={"relative flex flex-col items-center md:items-start justify-center gap-8 px-6 md:px-16 lg:px-32 xl:px-44 2xl:px-64"}>
                 <div className={"absolute h-full w-full top-0 left-0 overflow-clip"}>
                     <Image src={"/services/cannabis-medicinal/leafs-and-beads.webp"}
                            alt={"Some cannabis leaves on a white background with some seeds and alternative medicine"}
                            quality={100}
                            width={1920} height={1080}
-                           className={"absolute top-64 md:top-6 lg:top-20 xl:top-0 -left-44 md:left-16 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.2] lg:scale-[1.3] xl:scale-110 2xl:scale-100"}/>
+                           className={"absolute top-64 md:top-6 lg:top-20 xl:top-10 -left-44 md:left-16 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.2] lg:scale-[1.3] xl:scale-110"}/>
                     <Image src={"/services/cannabis-medicinal/gradient.webp"} alt={"A gradient"} quality={100}
                            width={1920} height={1080}
-                           className={"absolute top-64 md:-top-6 lg:top-20 xl:top-0 -left-44 md:left-16 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.3] lg:scale-[1.3] xl:scale-110 2xl:scale-100"}/>
+                           className={"absolute top-64 md:-top-6 lg:top-20 xl:top-10 -left-44 md:left-16 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.3] lg:scale-[1.3] xl:scale-110"}/>
                 </div>
-                {
-                    (strings.services["medicinal-cannabis"].body as {
-                        intro: ReactNode,
-                        content: ReactNode
-                    }[]).map((s, i) => {
-                        return (
-                            <p key={i}
-                               className={"relative md:w-96 text-center md:text-start 2xl:w-128 font-normal md:text-xl 2xl:text-2xl text-midnight-green"}>
-                                <span className={"font-black"}>{s.intro}</span>{s.content}</p>
-                        );
-                    })
-                }
+                <div className={"relative h-full py-64 md:pb-16 md:pt-44 lg:pb-32 lg:pt-40 xl:py-52 2xl:py-72 flex flex-col items-center md:items-start justify-center gap-8"}>
+                    {
+                        (strings.services["medicinal-cannabis"].body as {
+                            intro: ReactNode,
+                            content: ReactNode
+                        }[]).map((s, i) => {
+                            return (
+                                <p key={i}
+                                   className={"md:w-96 text-center md:text-start 2xl:w-128 font-normal md:text-xl 2xl:text-2xl text-midnight-green"}>
+                                    <span className={"font-black"}>{s.intro}</span>{s.content}</p>
+                            );
+                        })
+                    }
+                </div>
             </article>
             <Footer/>
         </main>

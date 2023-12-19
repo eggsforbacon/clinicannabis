@@ -1,22 +1,25 @@
-import {NextPage} from "next";
-import Head from "next/head";
-import Navbar from "../../../components/ui/Navbar";
+import {Metadata} from "next";
+import Navbar from "@/components/ui/Navbar";
 import React from "react";
-import Footer from "../../../components/ui/Footer";
+import Footer from "@/components/ui/Footer";
 import Image from "next/image";
-import {strings} from "../../../model/strings";
+import {strings} from "@/model/strings";
 
-const ClinicaDelDolor: NextPage = () => {
+export const metadata: Metadata = {
+    title: 'Clínica del Dolor - Nuestros Servicios',
+    description: 'Contamos con una unidad médica supra especializada en el manejo del dolor, con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad para aliviar el sufrimiento y brindar acompañamiento a pacientes y familias que conviven con dolores moderados a severos como consecuencia de diferentes patologías, que han sido diagnosticados con enfermedades crónicas o que han tenido accidentes de tránsito.',
+    icons: [
+        {
+            rel: 'icon',
+            url: '/favicon.ico',
+        }
+    ]
+}
+
+export default function PainClinic() {
     return (
         <main className="w-full min-h-screen overflow-x-clip">
-            <Head>
-                <title>Clínica del Dolor</title>
-                <link rel="icon" href="/favicon.ico"/>
-                <meta name={"description"}
-                      content={"Trabajamos para cumplir con los estándares de calidad que garanticen que nuestros tratamientos y productos te brinden una mejor calidad de vida."}/>
-                <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
-            </Head>
-            <Navbar selection={"services"}/>
+            <Navbar selection={""}/>
             <article
                 className={"flex flex-col items-center justify-center pt-32 md:pt-0 pb-36 box-border px-4 md:px-0 gap-20 md:gap-10 2xl:gap-16 relative overflow-clip"}>
                 <div
@@ -132,5 +135,3 @@ const ClinicaDelDolor: NextPage = () => {
         </main>
     );
 }
-
-export default ClinicaDelDolor;

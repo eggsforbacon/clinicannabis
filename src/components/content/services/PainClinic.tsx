@@ -37,7 +37,8 @@ export const PainClinic = () => {
                 className={"text-[4rem] lg:text-[6.5rem] text-caribbean-green"}>{strings.services.sections["3"].remark}</span>
             </h2>
             <p className={"relative text-base md:text-lg lg:text-2xl text-neutral-700 font-normal md:w-144 lg:w-[40rem]"}>{strings.services.sections["3"].copy}</p>
-            <Link href={"/servicios/clinica-del-dolor"}
+            <Link href={"/servicios/clinica-del-dolor"} target={"_blank"}
+                  rel={"noreferrer"}
                   className={buttonStyle}>{strings.services.sections["3"].cta}</Link>
         </article>
     );

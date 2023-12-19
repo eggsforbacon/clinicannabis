@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {strings} from "../../../model/strings";
+import {strings} from "@/model/strings";
 import React, { useEffect, useRef, useState} from "react";
 
 export const About = () => {
@@ -38,7 +38,7 @@ export const About = () => {
                    height={1080} width={1920} quality={100} loading={"lazy"}/>
             <span className={"h-24 w-full absolute bg-gradient-to-b from-white top-96 md:top-52 lg:hidden"}/>
             <section className={"z-10 px-6 lg:h-auto lg:px-0 w-full flex items-center justify-center md:justify-between mb-20 md:pb-0 lg:mb-20"}>
-                <article className={"w-104 lg:w-[32.5rem] 2xl:w-136 flex flex-col items-center lg:items-start justify-start pt-16 gap-8 lg:gap-12"}>
+                <article className={"w-96 lg:w-[32.5rem] 2xl:w-136 flex flex-col items-center lg:items-start justify-start pt-16 gap-8 lg:gap-12"}>
                     <h2 className={`tracking-tight max-w-[28rem] lg:max-w-[20rem] leading-[0.8] md:leading-[0.7] lg:leading-[0.6] 2xl:leading-[0.6] text-caribbean-green text-6xl md:text-8xl 2xl:text-9xl font-black ${animation} animation-duration-1000`}>{strings.landing.about.headline}<strong
                         className={"text-viridian-green relative "}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{strings.landing.about.headlineRemark}</strong>
                     </h2>
