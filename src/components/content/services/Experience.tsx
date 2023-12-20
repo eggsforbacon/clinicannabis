@@ -21,7 +21,7 @@ export const Experience = () => {
                     <h3 className={"font-normal text-2xl lg:text-4xl"}>{strings.services.sections["8"].remark}</h3>
                 </section>
                 <p className={"text-center lg:text-start font-normal text-base md:text-lg lg:text-2xl"}>{strings.services.sections["8"].content}</p>
-                <Link className={buttonStyle} href={"/soon"}>
+                <Link className={buttonStyle} href={"/servicios/centro-de-experiencia"} target={"_blank"} rel={"norreferer"}>
                     {strings.services.sections["8"].cta}
                 </Link>
             </section>

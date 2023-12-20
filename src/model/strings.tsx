@@ -613,6 +613,27 @@ export const strings: IKeyedObject = {
               <>{"Glucometría"}</>,
           ],
         },
+        'experience': {
+            'title': <>{"En nuestras instalaciones cuentas con:"}</>,
+            'places': [
+                {
+                    'name': <>{"Droguería: "}</>,
+                    'description': <>{"para que tengas a disposición tus medicamentos, suplementos, alimentos nutricionales y todo lo que requieras en tu tratamiento. Además, garantizamos que estos productos farmacéuticos son de las mejores marcas, provienen de laboratorios certificados y reconocidos, originarios de países como Alemania, Suiza, Estados Unidos y Canadá."}</>,
+                },
+                {
+                    'name': <>{"Boutique: "}</>,
+                    'description': <>{"en la que encontrarás variedad de productos con CBD y derivados cannábicos que promueven el cuidado dermocosmético y el bienestar."}</>,
+                },
+                {
+                    'name': <>{"Coffee Shop: "}</>,
+                    'description': <>{"para que disfrutes alternativas de alimentación saludables para tu salud como complemento a tus tratamientos médicos."}</>,
+                },
+                {
+                    'name': <>{"Salón Orígenes: "}</>,
+                    'description': <>{"espacio multifuncional diseñado como lugar de capacitación, de aprendizaje y de encuentro comunitario, para promover el cuidado de la salud física y mental."}</>,
+                },
+            ],
+        },
     },
     'experience': {
         'hero': {
