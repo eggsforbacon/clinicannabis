@@ -564,6 +564,18 @@ export const strings: IKeyedObject = {
                 ],
             },
         },
+        'functional-medicine': {
+            'paragraph1': <>{"La Medicina Funcional es un modelo de atención médica, centrado en la persona más no en la enfermedad, el cual tiene 4 pilares: es una medicina predictiva, preventiva, participativa y personalizada."}</>,
+            'paragraph2': <>{"A partir de este modelo evaluamos los hábitos de vida del paciente como:"}</>,
+            'bullets': [
+                <>{"Alimentación"}</>,
+                <>{"Contaminación del pensamiento"}</>,
+                <>{"Higiene del sueño"}</>,
+                <>{"Hidratación"}</>,
+                <>{"Sedentarismo"}</>,
+            ],
+            'paragraph3': <>{"Este análisis integral nos permite atacar la raíz de la enfermedad y mejorar la calidad de vida del paciente en el corto, mediano y largo plazo."}</>,
+        },
     },
     'experience': {
         'hero': {

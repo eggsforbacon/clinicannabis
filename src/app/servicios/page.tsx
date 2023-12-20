@@ -23,7 +23,6 @@ export const metadata : Metadata = {
 
 export default function Services() {
 
-
     return (
         <main className={"w-full min-h-screen overflow-x-clip"}>
             <Navbar selection={"services"} />

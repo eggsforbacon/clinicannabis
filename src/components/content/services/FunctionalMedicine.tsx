@@ -4,7 +4,7 @@ import React from "react";
 
 export const FunctionalMedicine = () => {
 
-    const buttonStyle: string = "w-fit text-xl lg:block text-3xl rounded-full border-solid border-2 border-GO-green text-GO-green lg:border-white lg:text-white font-normal text-base px-8 lg:px-10 py-1.5 lg:py-2 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
+    const buttonStyle: string = "text-xl lg:block lg:text-3xl rounded-full border-solid border-2 border-white text-white font-normal text-base px-8 lg:px-10 py-1.5 lg:py-2 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
 
     return (
         <article className={"overflow-clip relative z-20 h-144 lg:h-224 xl:h-224 2xl:h-288 flex flex-col items-center justify-start md:justify-center lg:justify-start lg:items-start"} id={"medicina-funcional"}>
@@ -21,12 +21,12 @@ export const FunctionalMedicine = () => {
                         className={"text-caribbean-green text-7xl lg:text-[9rem]"}>{strings.services.sections["5"].remark}</strong>
                     </h2>
                 </section>
-                <section className={"flex px-6 flex-col items-center lg:items-start justify-start gap-16"}>
+                <section className={"flex flex-col items-center lg:items-start justify-start gap-16"}>
                     <section className={"flex flex-col items-center lg:items-start justify-start gap-6"}>
                         <h3 className={"text-center lg:text-left font-semibold text-caribbean-green lg:text-white -mt-4 lg:mt-0 text-2xl lg:text-5xl"}>{strings.services.sections["5"].subtitle}</h3>
                         <p className={"max-w-[34rem] text-center lg:text-left lg:w-144 text-neutral-600 lg:text-white font-normal text-base md:text-lg lg:text-2xl"}>{strings.services.sections["5"].content}</p>
                     </section>
-                    <a href={"https://www.instagram.com/p/CqLiruWDhMs/"} target={"_blank"} rel={"noreferrer"}
+                    <a href={"/servicios/medicina-funcional"} target={"_blank"} rel={"noreferrer"}
                        className={buttonStyle}>
                         {strings.services.sections["5"].cta}
                     </a>
