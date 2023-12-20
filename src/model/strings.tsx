@@ -576,6 +576,35 @@ export const strings: IKeyedObject = {
             ],
             'paragraph3': <>{"Este análisis integral nos permite atacar la raíz de la enfermedad y mejorar la calidad de vida del paciente en el corto, mediano y largo plazo."}</>,
         },
+        'alternative-medicine': {
+            "paragraph1": <>{"La Medicina alternativa hace parte de la prestación de servicios en salud según la OMS. Es un enfoque médico que aborda los aspectos físicos, emocionales, mentales y espirituales del paciente, centrándose en el paciente como individuo único buscar alternativas para su curación y bienestar óptimo a partir de múltiples técnicas terapéuticas."}</>,
+            "paragraph2": <>{"En Clinicannabis contamos con terapias como:"}</>,
+            "bullets": [
+                {
+                    'point': <>{"Acupuntura"}</>,
+                },
+                {
+                    'point': <>{"Medicina Tradicional China"}</>,
+                    'subtext': <>{"(Moxibustión, Ventosas y Masaje Tradicional Chino)"}</>,
+                },
+                {
+                    'point': <>{"Bioenergética"}</>,
+                    'subtext': <>{"(Cristaloterapia, Gemoterapia y Poliedros)"}</>,
+                },
+                {
+                    'point': <>{"Terapia Neural"}</>,
+                },
+                {
+                    'point': <>{"Biopuntura"}</>,
+                },
+                {
+                    'point': <>{"Auriculoterapia"}</>,
+                },
+                {
+                    'point': <>{"Reflexología"}</>,
+                },
+            ],
+        },
     },
     'experience': {
         'hero': {
