@@ -17,6 +17,8 @@ export const metadata: Metadata = {
 }
 
 export default function PainClinic() {
+    const s = strings.services.painClinic;
+
     return (
         <main className="w-full min-h-screen overflow-x-clip">
             <Navbar selection={""}/>
@@ -81,24 +83,24 @@ export default function PainClinic() {
                            className={"hidden md:block absolute md:bottom-5 left-0 scale-x-125 -scale-y-[.95] md:-rotate-[1.5deg] xl:-scale-y-[1.2] 2xl:-scale-y-[.85] xl:bottom-10 xl:rotate-[0.5deg] 2xl:rotate-[0.025deg] 2xl:bottom-6"}/>
                     <div
                         className={"relative flex flex-col items-center md:items-start justify-start md:w-136 md:gap-8 md:z-10 xl:w-168"}>
-                        <h2 className={"md:-ml-4 relative text-[2.7rem] leading-[0.8] lg:text-6xl font-black text-skobeloff md:text-rich-black xl:text-7xl"}>&nbsp;{strings.services.painClinic.intro.headline}&nbsp;
+                        <h2 className={"md:-ml-4 relative text-[2.7rem] leading-[0.8] lg:text-6xl font-black text-skobeloff md:text-rich-black xl:text-7xl"}>&nbsp;{s.intro.headline}&nbsp;
                             <br className={"hidden md:inline-block"}/>&nbsp;
                             <span
-                                className={"text-5xl lg:text-7xl xl:text-8xl text-rich-black md:text-caribbean-green"}>{strings.services.painClinic.intro.remark}</span>
+                                className={"text-5xl lg:text-7xl xl:text-8xl text-rich-black md:text-caribbean-green"}>{s.intro.remark}</span>
                         </h2>
-                        <p className={"relative text-lg lg:text-xl xl:text-2xl font-normal text-center md:text-start text-rich-black"}>{strings.services.painClinic.intro.copy}</p>
+                        <p className={"relative text-lg lg:text-xl xl:text-2xl font-normal text-center md:text-start text-rich-black"}>{s.intro.copy}</p>
                     </div>
                 </section>
                 <section
                     className={"relative flex flex-col items-center md:items-start justify-start gap-6 text-lg md:text-xl xl:text-2xl font-normal text-center md:text-start text-rich-black z-10 md:px-[9.8rem] xl:px-52 2xl:px-72 box-border"}>
-                    <p className={"relative"}>{strings.services.painClinic.types.intro}</p>
-                    <p className={"relative"}>{strings.services.painClinic.types.articular}</p>
-                    <p className={"relative"}>{strings.services.painClinic.types.neural}</p>
-                    <p className={"relative"}>{strings.services.painClinic.types.oncological}</p>
+                    <p className={"relative"}>{s.types.intro}</p>
+                    <p className={"relative"}>{s.types.articular}</p>
+                    <p className={"relative"}>{s.types.neural}</p>
+                    <p className={"relative"}>{s.types.oncological}</p>
                 </section>
                 <section
                     className={"relative flex flex-col items-center md:items-start justify-start gap-8 text-lg xl:text-xl font-normal text-center md:text-start text-rich-black md:z-0 md:w-full md:px-44 xl:px-52 2xl:px-72 box-border xl:my-36"}>
-                    <Image src={"/images/services/painClinic/glovesMolecules.png"} alt={""} width={1370} height={888}
+                    <Image src={"/images/services/painClinic/glovesMoleculespng"} alt={""} width={1370} height={888}
                            quality={100}
                            className={"scale-[2.25] -left-[5.25rem] absolute bottom-[8.75rem] md:bottom-10 opacity-60 md:opacity-50 2xl:opacity-60 z-0 md:-left-20 md:scale-[1.35] xl:scale-[1.125] xl:left-1/2 xl:-translate-x-1/2"}/>
                     <Image src={"/images/services/painClinic/bloodSampleShaker.png"} alt={""} width={1441} height={759}
@@ -119,11 +121,11 @@ export default function PainClinic() {
                     <span className={"hidden xl:block xl:absolute xl:aspect-square xl:h-136 xl:left-0 xl:-bottom-36 xl:bg-gradient-to-tr xl:from-caribbean-green/40 xl:via-caribbean-green/10 xl:via-45% xl:to-white/0 xl:to-55% xl:blur-3xl"}/>
                     <span
                         className={"hidden md:block md:absolute md:rounded-full md:w-[60rem] md:h-256 xl:aspect-square xl:h-320 md:bg-gradient-radial md:from-viridian-green md:via-viridian-green/40 md:via-65% xl:via-45% md:to-white/0 md:to-80% md:-right-72 md:-bottom-[58rem] xl:-right-24 xl:-bottom-[68rem] blur-lg z-0"}/>
-                    <h2 className={"relative text-3xl md:text-6xl xl:text-7xl font-black md:text-caribbean-green"}>{strings.services.painClinic.therapy.title}<br/><span
-                        className={"md:text-5xl xl:text-6xl md:text-rich-black"}>{strings.services.painClinic.therapy.remark}</span>
+                    <h2 className={"relative text-3xl md:text-6xl xl:text-7xl font-black md:text-caribbean-green"}>{s.therapy.title}<br/><span
+                        className={"md:text-5xl xl:text-6xl md:text-rich-black"}>{s.therapy.remark}</span>
                     </h2>
                     <ul className={"relative list-disc mx-9 flex flex-col items-start text-start"}>
-                        {strings.services.painClinic.therapy.items.map((p: JSX.Element, i: number) => {
+                        {s.therapy.items.map((p: JSX.Element, i: number) => {
                             return (
                                 <li key={`therapy${i}`}>{p}</li>
                             );

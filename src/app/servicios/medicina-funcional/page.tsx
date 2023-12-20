@@ -31,10 +31,12 @@ export default function FunctionalMedicine() {
                            alt={"Some cannabis leaves on a white background with some seeds and alternative medicine"}
                            quality={100}
                            width={1920} height={1080}
-                           className={"opacity-30 lg:opacity-100 absolute top-72 md:top-6 lg:top-20 xl:top-20 2xl:top-10 -left-80 md:-left-32 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.2] lg:scale-[1.3] xl:scale-[1.35] 2xl:scale-110"}/>
+                           className={"opacity-30 md:opacity-60 lg:opacity-100 absolute top-72 md:top-6 lg:top-20 xl:top-20 2xl:top-10 -left-80 md:-left-52 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.2] lg:scale-[1.3] xl:scale-[1.35] 2xl:scale-110"}/>
                     <Image src={"/services/medicina-funcional/gradient.webp"} alt={"A gradient"} quality={100}
                            width={1920} height={1080}
                            className={"opacity-60 md:opacity-100 absolute top-64 md:-top-6 lg:top-20 xl:top-20 2xl:top-10 -left-20 md:left-120 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.3] lg:scale-[1.3] xl:scale-[1.35] 2xl:scale-110"}/>
+                    <Image src={"/services/medicina-funcional/gradient-light.webp"} alt={""} width={1920} height={1920}
+                           className={"absolute top-20 -right-20 hidden md:block lg:hidden"}/>
                 </div>
                 <section
                     className={"md:w-136 lg:w-96 text-center md:text-start 2xl:w-128 font-normal md:text-xl 2xl:text-2xl text-neutral-600 relative h-full pt-36 pb-20 md:pb-16 md:pt-40 lg:pb-16 lg:pt-36 xl:pb-32 xl:pt-48 2x:pb-40 2xl:pt-44 flex flex-col items-center md:items-start justify-center gap-8"}>

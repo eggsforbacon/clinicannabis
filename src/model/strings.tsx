@@ -605,6 +605,14 @@ export const strings: IKeyedObject = {
                 },
             ],
         },
+        'diagnosis': {
+          'paragraph1': <>{"A través de las ayudas diagnósticas detectamos diferentes patologías, incluso en etapa precoz, que permiten definir un tratamiento terapéutico oportuno y eficaz."}</>,
+          'paragraph2': <>{"En Clinicannabis contamos con estudios como:"}</>,
+          'bullets': [
+              <>{"Electrocardiograma"}</>,
+              <>{"Glucometría"}</>,
+          ],
+        },
     },
     'experience': {
         'hero': {

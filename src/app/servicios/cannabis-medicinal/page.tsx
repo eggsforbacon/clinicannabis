@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 }
 
 export default function MedicinalCannabis() {
+
+    const m = strings.services["medicinal-cannabis"];
+    const body = m.body as {
+        intro: ReactNode,
+        content: ReactNode
+    }[];
+
     return (
         <main className={"w-full min-h-screen overflow-x-clip"}>
             <Navbar selection={""}/>
@@ -32,12 +39,10 @@ export default function MedicinalCannabis() {
                            width={1920} height={1080}
                            className={"absolute top-64 md:-top-6 lg:top-20 xl:top-10 -left-44 md:left-16 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.3] lg:scale-[1.3] xl:scale-110"}/>
                 </div>
-                <div className={"relative h-full py-64 md:pb-16 md:pt-44 lg:pb-32 lg:pt-40 xl:py-52 2xl:py-72 flex flex-col items-center md:items-start justify-center gap-8"}>
+                <div
+                    className={"relative h-full py-64 md:pb-16 md:pt-44 lg:pb-32 lg:pt-40 xl:py-52 2xl:py-72 flex flex-col items-center md:items-start justify-center gap-8"}>
                     {
-                        (strings.services["medicinal-cannabis"].body as {
-                            intro: ReactNode,
-                            content: ReactNode
-                        }[]).map((s, i) => {
+                        body.map((s, i) => {
                             return (
                                 <p key={i}
                                    className={"md:w-96 text-center md:text-start 2xl:w-128 font-normal md:text-xl 2xl:text-2xl text-midnight-green"}>

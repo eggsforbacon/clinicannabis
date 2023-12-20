@@ -17,6 +17,9 @@ export const metadata: Metadata = {
 }
 
 export default function SIS() {
+    const s = strings.services.sis;
+    const bullets = s.points.bullets as ReactNode[];
+
     return (
         <main className={"w-full min-h-screen overflow-x-clip"}>
             <Navbar selection={""}/>
@@ -34,11 +37,11 @@ export default function SIS() {
                 </div>
                 <section
                     className={"relative lg:w-112 2xl:w-136 flex flex-col items-center lg:items-start justify-start gap-8 text-center lg:text-start md:text-xl 2xl:text-2xl font-normal text-white"}>
-                    <p>{strings.services.sis.intro}</p>
-                    <p>{strings.services.sis.points.intro}</p>
+                    <p>{s.intro}</p>
+                    <p>{s.points.intro}</p>
                     <ul className={"font-bold list-disc ml-5"}>
                         {
-                            (strings.services.sis.points.bullets as ReactNode[]).map((s, i) => {
+                            bullets.map((s, i) => {
                                 return (
                                     <li key={i}>
                                         {s}

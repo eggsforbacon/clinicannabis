@@ -23,7 +23,7 @@ export const Diagnostics = () => {
                 className={"relative flex flex-col items-center lg:items-start justify-center gap-6 text-center lg:text-start text-white px-6 md:w-144"}>
                 <h2 className={"text-6xl lg:text-8xl font-black md:w-80 lg:w-96"}>{strings.services.sections["7"].headline}</h2>
                 <p className={"text-base md:text-lg lg:text-2xl font-normal"}>{strings.services.sections["7"].content}</p>
-                <Link href={"/servicios/ayudas-diagnosticas"}
+                <Link href={"/servicios/ayudas-diagnosticas"} target={"_blank"} rel={"norreferer"}
                       className={buttonStyle}>
                     {strings.services.sections["7"].cta}
                 </Link>
