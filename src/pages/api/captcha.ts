@@ -12,10 +12,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             })
                 .then((reCaptchaRes) => reCaptchaRes.json())
                 .then((reCaptchaRes) => {
-                    console.log(
-                        reCaptchaRes,
-                        "Response from Google reCaptcha verification API"
-                    );
                     if (reCaptchaRes?.score > 0.5) {
                         res.status(200).json({
                             status: "success",
@@ -35,7 +31,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             });
         }
     }
-    console.log("This shouldn't print")
     return res.status(405).json({"message": "Method not Allowed"});
 }
 

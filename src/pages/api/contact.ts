@@ -12,7 +12,6 @@ const buildHTML = (name : string, email : string, message : string) : string => 
 }
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-    console.log(req.method);
     if (req.method === "POST") {
         const data = req.body;
         if (data.name === undefined || data.email === undefined || data.message === undefined) {
@@ -28,7 +27,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             return res.status(200).json({message: sentMessageInfo});
 
         } catch (error : any) {
-            console.log(error);
             return res.status(400).json({message: error.message});
         }
     }

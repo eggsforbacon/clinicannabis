@@ -21,10 +21,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
                 text: `El correo ${data} se ha suscrito al newsletter de clinicannabis`,
                 html: html(data)
             });
-            console.log(">>>", sentMessageInfo.response, "<<<");
             return res.status(200).json({messageInfo: sentMessageInfo});
         } catch (error: any) {
-            console.log(error);
             return res.status(400).json({message: error.message});
         }
     } else {

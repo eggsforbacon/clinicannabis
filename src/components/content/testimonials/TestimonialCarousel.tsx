@@ -19,7 +19,6 @@ export const TestimonialCarousel = (props: {
 
     const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
         setMouseInitial(e.touches[0].clientX);
-        console.log("Touch down");
     };
 
     const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {

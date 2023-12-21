@@ -1,30 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { strings } from "../../model/strings";
-import { sendContactForm } from "../../lib/api";
-import useCountDown from 'react-countdown-hook';
 
-import { Timer } from "../../components/TimerLand";
 import { Helmet } from "react-helmet";
 
 export const Seminario = () => {
-    const [data, setData] = useState({
-        name: "",
-        email: "",
-        phone: ""
-    })
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const form = (e.target);
-        await setData({
-            name: form.ctName.value,
-            email: form.ctEmail.value,
-            phone: form.ctPhone.value,
-        });
-        console.log("Form says: ", data);
-        await sendContactForm(data);
-    }
     const [modal, setModal] = useState(false);
     const toggleModal = () => {
         setModal(!modal);
