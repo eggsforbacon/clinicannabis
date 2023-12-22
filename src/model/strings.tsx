@@ -20,7 +20,7 @@ export const strings: IKeyedObject = {
             'headline': <>{"¿Tienes alguna"}</>,
             'remark': <>{"pregunta?"}</>,
             'invitation': <>{"¡Nosotros te ayudamos!"}</>,
-            'phone': <>{"317 483 4360"}</>,
+            'phone': <>{"317 435 5876"}</>,
             'phoneScript': <>{"Lunes a viernes 8:00 - 17:00"}</>,
             'email': <>{"info@clinicannabis.com.co"}</>,
             'emailScript': <>{"Apuntamos a un tiempo de respuesta de 24h"}</>,
@@ -141,7 +141,7 @@ export const strings: IKeyedObject = {
             'headline': <>{"Testimonios de"}</>,
             'remark': <>{"pacientes"}</>,
             'content': <>{"Conoce aquí las experiencias de salud de nuestros pacientes. Cada uno de ellos ha contado con la experiencia de nuestro equipo médico para brindar una mejor calidad de vida."}</>,
-            'cta': <>{"Léelos"}</>,
+            'cta': <>{"Leelos"}</>,
         },
         'blog': {
             'headline': <>{"Blog "}</>,
@@ -151,28 +151,28 @@ export const strings: IKeyedObject = {
         },
     },
     'testimonials': {
-        'title': <>{"Testimonios"}</>,
+        'title' : <>{"Testimonios"}</>,
         'copy': <>{"En nuestra clínica te acompañamos en todo tu proceso médico, brindándote una atención cálida y humana. Conoce algunas experiencias de nuestros pacientes."}</>
     },
-    'seminario': {
+    'seminario':{
         'parrafo': {
-            1: {
+            1:{
                 'blackText': <>{"Santiago de Cali será sede del Seminario Iberoamericano Cannabinoides "}</>,
                 'normalText': <>{"en la práctica clínica, una apuesta por realizar un recorrido académico a través de los conceptos básicos de la medicina cannábica."}</>
             },
-            2: {
+            2:{
                 'blackText': <>{"Clinicannabis Medicina Integrativa, pionera en la aplicación de medicina cannábica en el suroccidente colombiano,"}</>,
                 'normalText': <>{" es el anfitrión de este gran evento que reúne a profesionales de amplia trayectoria y estudiantes universitarios de las áreas de la salud, para adentrarse en el campo del Sistema Endocannabinoide y sus aplicaciones en el manejo del dolor."}</>
             }
         },
         'subtitle': <>{"Cronograma Cali - Viernes 16 de Junio"}</>,
         'infotitle': <>{"Hotel Marriott - Salón Cartago"}</>,
-        'MoreInfo': {
+        'MoreInfo':{
             1: {
                 'InfoNumber': <>{"Más información :  "}</>,
-                'Nom1': <>{" 3148220459 "}</>,
-                'Nom2': <>{" 3052328704 "}</>,
-                'Nom3': <>{" 3174834360 "}</>,
+                'Nom1':<>{" 3148220459 "}</>,
+                'Nom2':<>{" 3052328704 "}</>,
+                'Nom3':<>{" 3174355876 "}</>,
             },
         },
         'sections': {
@@ -200,7 +200,7 @@ export const strings: IKeyedObject = {
                 'time': <>{"10:10 - 10:30 a. m."}</>,
                 'info': <>{"Sesión de preguntas - Bloque 1"}</>,
             },
-            5.1: {
+            5.1:{
                 'time': <>{"10:20 - 10:40 a. m."}</>,
                 'info': <>{"Refrigerio"}</>,
             },
@@ -216,7 +216,7 @@ export const strings: IKeyedObject = {
                 'name': <>{"Ing. Mara Gordon "}</>,
                 'contry': <>{"USA"}</>,
             },
-            7.5: {
+            7.5:{
                 'time': <>{"12:20 - 12:35 p. m."}</>,
                 'info': <>{"Sesión de preguntas - Bloque 2"}</>,
             },
@@ -240,7 +240,7 @@ export const strings: IKeyedObject = {
                 'time': <>{"3:20 - 3:40 p. m."}</>,
                 'info': <>{"Sesión de preguntas - Bloque 3"}</>,
             },
-            11.5: {
+            11.5:{
                 'time': <>{"3:40 - 4:10 p. m."}</>,
                 'info': <>{"Receso"}</>,
             },
@@ -263,117 +263,117 @@ export const strings: IKeyedObject = {
             },
         },
         'conference': {
-            1: {
-                'academy': <>{"Dra. "}</>,
-                'name': <>{"Cristina Sánchez"}</>,
-                'contry': <>{"España"}</>
+            1:{
+                'academy':<>{"Dra. "}</>,
+                'name':<>{"Cristina Sánchez"}</>,
+                'contry':<>{"España"}</>
             },
-            2: {
-                'academy': <>{"Dr. "}</>,
-                'name': <>{"Mariano García de Palau"}</>,
-                'contry': <>{"España"}</>
+            2:{
+                'academy':<>{"Dr. "}</>,
+                'name':<>{"Mariano García de Palau"}</>,
+                'contry':<>{"España"}</>
             },
-            3: {
-                'name': <>{"Mara Gordon"}</>,
-                'contry': <>{"Estados Unidos"}</>
+            3:{
+                'name':<>{"Mara Gordon"}</>,
+                'contry':<>{"Estados Unidos"}</>
             },
-            4: {
-                'academy': <>{"Dra. "}</>,
-                'name': <>{"Paola Pineda"}</>,
-                'contry': <>{"Colombia"}</>
+            4:{
+                'academy':<>{"Dra. "}</>,
+                'name':<>{"Paola Pineda"}</>,
+                'contry':<>{"Colombia"}</>
             },
-            5: {
-                'academy': <>{"Dr. "}</>,
-                'name': <>{"Juan Guillermo Maya"}</>,
-                'contry': <>{"Colombia"}</>
+            5:{
+                'academy':<>{"Dr. "}</>,
+                'name':<>{"Juan Guillermo Maya"}</>,
+                'contry':<>{"Colombia"}</>
             },
-            6: {
-                'academy': <>{"Dra. "}</>,
-                'name': <>{"Natalia Mejía"}</>,
-                'contry': <>{"Colombia"}</>
+            6:{
+                'academy':<>{"Dra. "}</>,
+                'name':<>{"Natalia Mejía"}</>,
+                'contry':<>{"Colombia"}</>
             },
-            7: {
-                'academy': <>{"Dr. "}</>,
-                'name': <>{"Alberto Ulloa"}</>,
-                'contry': <>{"Colombia"}</>
+            7:{
+                'academy':<>{"Dr. "}</>,
+                'name':<>{"Alberto Ulloa"}</>,
+                'contry':<>{"Colombia"}</>
             },
-            8: {
-                'academy': <>{"Dr. "}</>,
-                'name': <>{"Andrés D. Archer"}</>,
-                'contry': <>{"Colombia"}</>
+            8:{
+                'academy':<>{"Dr. "}</>,
+                'name':<>{"Andrés D. Archer"}</>,
+                'contry':<>{"Colombia"}</>
             },
-            9: {
-                'academy': <>{"Dr. "}</>,
-                'name': <>{"Juan Carlos Builes"}</>,
-                'contry': <>{"Colombia"}</>
+            9:{
+                'academy':<>{"Dr. "}</>,
+                'name':<>{"Juan Carlos Builes"}</>,
+                'contry':<>{"Colombia"}</>
             },
-            10: {
-                'academy': <>{"Dra. "}</>,
-                'name': <>{"Sandra Carrillo"}</>,
-                'contry': <>{"Colombia"}</>
+            10:{
+                'academy':<>{"Dra. "}</>,
+                'name':<>{"Sandra Carrillo"}</>,
+                'contry':<>{"Colombia"}</>
             }
         },
-        'conferecistas': {
-            1: {
-                'title': <>{"Conferencista:"}</>,
-                'subtitle': <>{"Dra. Cristina Sánchez - España."}</>,
-                'indice': <>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
-                'txt': <>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979. Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral. Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
+        'conferecistas':{
+            1:{
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Dra. Cristina Sánchez - España."}</>,
+                'indice':<>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
+                'txt':<>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979. Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral. Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
             },
-            2: {
-                'title': <>{"Conferencista:"}</>,
-                'subtitle': <>{"Dr. Mariano García de Palau – España."}</>,
-                'indice': <>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
-                'txt': <>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979 Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral."
+            2:{
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Dr. Mariano García de Palau – España."}</>,
+                'indice':<>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
+                'txt':<>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979 Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral."
                     + "Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
             },
-            3: {
-                'title': <>{"Conferencista:"}</>,
-                'subtitle': <>{"Ing. Mara Gordon – USA."}</>,
-                'indice': <>{"Effective dosing: How much is enough?"}</>,
-                'txt': <>{"Líder de renombre mundial en el ecosistema del cannabis medicinal. Utilizó su experiencia como ingeniera de procesos para ayudar a las empresas de Fortune 500 a desarrollar sistemas inteligentes en la creación de fórmulas de cannabis y regímenes de dosificación terapéuticos para miles de pacientes en California, mejorando drásticamente su salud, calidad de vida y longevidad. Mara forma parte de los consejos de administración de Aunt Zelda’s y Zelira Therapeutics."}</>
+            3:{
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Ing. Mara Gordon – USA."}</>,
+                'indice':<>{"Effective dosing: How much is enough?"}</>,
+                'txt':<>{"Líder de renombre mundial en el ecosistema del cannabis medicinal. Utilizó su experiencia como ingeniera de procesos para ayudar a las empresas de Fortune 500 a desarrollar sistemas inteligentes en la creación de fórmulas de cannabis y regímenes de dosificación terapéuticos para miles de pacientes en California, mejorando drásticamente su salud, calidad de vida y longevidad. Mara forma parte de los consejos de administración de Aunt Zelda’s y Zelira Therapeutics."}</>
             },
-            4: {
-                'title': <>{"Conferencista:"}</>,
-                'subtitle': <>{"Dra. Paola Pineda – Colombia."}</>,
-                'indice': <>{"Uso de cannabis en condiciones neurodegenerativas énfasis en Parkinson y Alzheimer."}</>,
-                'txt': <>{"Médica y cirujana con experiencia de 10 años en manejo de personas con epilepsia, cáncer, dolor no asociado a neoplasias, enfermedades neurodegenerativas, enfermedades autoinmunes, trastornos del sueño, entre otros, que han optado por la terapia a base de cannabis como parte fundamental de su tratamiento. Desde 2013, encontró como podría integrar la medicina con cannabis en la atención de pacientes con enfermedades crónicas quienes por su condición de base tienen un gran deterioro en su calidad de vida. Participó en los primeros debates del congreso de la república donde se empezó a hablar sobre la importancia de la reglamentación del cannabis medicinal para diferentes condiciones de salud."}</>
+            4:{
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Dra. Paola Pineda – Colombia."}</>,
+                'indice':<>{"Uso de cannabis en condiciones neurodegenerativas énfasis en Parkinson y Alzheimer."}</>,
+                'txt':<>{"Médica y cirujana con experiencia de 10 años en manejo de personas con epilepsia, cáncer, dolor no asociado a neoplasias, enfermedades neurodegenerativas, enfermedades autoinmunes, trastornos del sueño, entre otros, que han optado por la terapia a base de cannabis como parte fundamental de su tratamiento. Desde 2013, encontró como podría integrar la medicina con cannabis en la atención de pacientes con enfermedades crónicas quienes por su condición de base tienen un gran deterioro en su calidad de vida. Participó en los primeros debates del congreso de la república donde se empezó a hablar sobre la importancia de la reglamentación del cannabis medicinal para diferentes condiciones de salud."}</>
             },
-            6: {
-                'title': <>{"Conferencista:"}</>,
-                'subtitle': <>{"Veterinaria y zootecnista Natalia Mejía – Colombia."}</>,
-                'indice': <>{"Cannabis y salud mental en animales de compañía."}</>,
-                'txt': <>{"Médica veterinaria zootecnista, magíster en etología clínica con estudios en medicina veterinaria integrativa y con varios años de experiencia en el uso de cannabis medicinal en sus pacientes."}</>
+            6:{
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Veterinaria y zootecnista Natalia Mejía – Colombia."}</>,
+                'indice':<>{"Cannabis y salud mental en animales de compañía."}</>,
+                'txt':<>{"Médica veterinaria zootecnista, magíster en etología clínica con estudios en medicina veterinaria integrativa y con varios años de experiencia en el uso de cannabis medicinal en sus pacientes."}</>
             },
-            7: {
-                'title': <>{"Conferencista:"}</>,
-                'subtitle': <>{"Psiquiatra Alberto Ulloa – Colombia."}</>,
-                'indice': <>{"Cannabinoides y adicciones."}</>,
-                'txt': <>{"Médico especialista en psiquiatría de la Universidad Javeriana. Cuenta con 33 años de experiencia en el ejercicio público y privado de la psiquiatría, la asesoría, la docencia y la atención, de personas e instituciones que requieren de servicio y apoyo técnico, para la promoción, prevención y atención de problemas de salud mental y el consumo de sustancias psicoactivas."}</>
+            7:{
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Psiquiatra Alberto Ulloa – Colombia."}</>,
+                'indice':<>{"Cannabinoides y adicciones."}</>,
+                'txt':<>{"Médico especialista en psiquiatría de la Universidad Javeriana. Cuenta con 33 años de experiencia en el ejercicio público y privado de la psiquiatría, la asesoría, la docencia y la atención, de personas e instituciones que requieren de servicio y apoyo técnico, para la promoción, prevención y atención de problemas de salud mental y el consumo de sustancias psicoactivas."}</>
             },
-            8: {
-                'title': <>{"Conferencista:"}</>,
-                'subtitle': <>{"Dr. Daniel Archer Juri – Colombia."}</>,
-                'indice': <>{"Uso de cannabinoides en pacientes con dolor."}</>,
-                'txt': <>{"Médico de la Universidad Libre, especialista en terapias alternativas de la Universidad Manuela Beltrán. Cuenta con amplia experiencia en el manejo clínico de cannabis medicinal, integrando el conocimiento de la medicina tradicional china y la medicina alopática, es docente médico y terapeuta de la Escuela Neijing Kali, médico especialista en cannabis del Centro de Medicina Ancestral Orígenes Clinicannabis."}</>
+            8:{
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Dr. Daniel Archer Juri – Colombia."}</>,
+                'indice':<>{"Uso de cannabinoides en pacientes con dolor."}</>,
+                'txt':<>{"Médico de la Universidad Libre, especialista en terapias alternativas de la Universidad Manuela Beltrán. Cuenta con amplia experiencia en el manejo clínico de cannabis medicinal, integrando el conocimiento de la medicina tradicional china y la medicina alopática, es docente médico y terapeuta de la Escuela Neijing Kali, médico especialista en cannabis del Centro de Medicina Ancestral Orígenes Clinicannabis."}</>
             },
-            9: {
-                'title': <>{"Conferencista:"}</>,
-                'subtitle': <>{"Veterinario Juan Carlos Builes – Colombia."}</>,
-                'indice': <>{"Psiconeuroinmunodermatología y medicina cannábica en pequeños animales."}</>,
-                'txt': <>{"Médico veterinario y especialista médico de la Universidad de Antioquia, director del Centro Veterinario Juan Carlos Builes Medellín, desde 2001 a la fecha. Amplia experiencia en el uso del cannabis medicinal desde 2019."}</>
+            9:{
+                'title':<>{"Conferencista:"}</>,
+                'subtitle':<>{"Veterinario Juan Carlos Builes – Colombia."}</>,
+                'indice':<>{"Psiconeuroinmunodermatología y medicina cannábica en pequeños animales."}</>,
+                'txt':<>{"Médico veterinario y especialista médico de la Universidad de Antioquia, director del Centro Veterinario Juan Carlos Builes Medellín, desde 2001 a la fecha. Amplia experiencia en el uso del cannabis medicinal desde 2019."}</>
             },
         },
-        'cardInfo': {
-            0: {
-                'title': <>{"Compra aquí:"}</>
+        'cardInfo':{
+            0:{
+                'title':<>{"Compra aquí:"}</>
             },
-            1: {
-                'title1': <>{"Cupos Totales"}</>,
-                'title2': <>{"INSCRÍBETE AQUÍ"}</>,
+            1:{
+                'title1':<>{"Cupos Totales"}</>,
+                'title2':<>{"INSCRÍBETE AQUÍ"}</>,
             },
-            2: {
-                'info': <>{"Ocupados"}</>
+            2:{
+                'info':<>{"Ocupados"}</>
             }
         },
     },
@@ -591,12 +591,12 @@ export const strings: IKeyedObject = {
             ],
         },
         'diagnosis': {
-          'paragraph1': <>{"A través de las ayudas diagnósticas detectamos diferentes patologías, incluso en etapa precoz, que permiten definir un tratamiento terapéutico oportuno y eficaz."}</>,
-          'paragraph2': <>{"En Clinicannabis contamos con estudios como:"}</>,
-          'bullets': [
-              <>{"Electrocardiograma"}</>,
-              <>{"Glucometría"}</>,
-          ],
+            'paragraph1': <>{"A través de las ayudas diagnósticas detectamos diferentes patologías, incluso en etapa precoz, que permiten definir un tratamiento terapéutico oportuno y eficaz."}</>,
+            'paragraph2': <>{"En Clinicannabis contamos con estudios como:"}</>,
+            'bullets': [
+                <>{"Electrocardiograma"}</>,
+                <>{"Glucometría"}</>,
+            ],
         },
         'experience': {
             'title': <>{"En nuestras instalaciones cuentas con:"}</>,
@@ -667,7 +667,7 @@ export const strings: IKeyedObject = {
             "cta": <>{"Nuestro newsletter"}</>,
             "fields": {
                 "mail": <>{"Tu correo"}</>,
-                "submit": "Suscribirme",
+                "submit": "Suscribirme" ,
             },
         },
     },
@@ -734,7 +734,15 @@ export const strings: IKeyedObject = {
                 'title': <>{"Condiciones y restricciones de promoción"}</>,
                 'amor-amistad': <>{"Promoción de Amor y Amistad Clinicannabis septiembre 2023"}</>,
             },
-
+            'blackFriday23': {
+                'title': <>{"Black Friday 2023"}</>,
+                'welcome': <>{"¡El Black Friday llega a Clinicannabis!"}</>,
+                'explanation': <>{"¿En qué consiste nuestra promoción?"}</>,
+                'applies': <>{"Aplica para"}</>,
+                'headline5': <>{"5% de descuento en nuestros medicamentos"}</>,
+                'conditions': <>{"¿Cuáles son las condiciones y restricciones de esta promoción?"}</>,
+                'specialOffer': <>{"¡Este fin de año disfruta ofertas exclusivas para tu salud y equilibrio!"}</>,
+            },
         },
         'content': {
             'objective': <>{"Establecer los lineamientos y la Política de Tratamiento de Datos Personales de Clinicannabis, en cumplimiento de " +
@@ -746,7 +754,7 @@ export const strings: IKeyedObject = {
                 'paragraph': <>{"Centro de Medicina Ancestral Orígenes S.A - Clinicannabis, es una Institución Prestadora de Servicios de Salud de " +
                     "carácter privado, con NIT 901.172.983-0"}</>,
                 'pbx': <>{"PBX: 5244080"}</>,
-                'phone': <>{"Celular: 3174834360 - 3009126254"}</>,
+                'phone': <>{"Celular: 3174355876 - 3009126254"}</>,
                 'mail': <>{"Correo electrónico: info@clinicannabis.com.co"}</>,
                 'post': <>{"Es importante tener presente que toda área, colaborador, empleado, proveedor y/o contratista de Clinicannabis, " +
                     "que por sus funciones está encargado del tratamiento de las bases de datos que contengan información personal, " +
@@ -1029,14 +1037,41 @@ export const strings: IKeyedObject = {
                     0: <>{"Auxiliar Administrativa (Recepción)"}</>,
                     1: <>{"Auxiliar de experiencia del Paciente"}</>,
                     2: <>{"Buzón disponible en la sede."}</>,
-                    3: <>{"Línea telefónica: 3174834360 5244080 - 3009126254"}</>,
+                    3: <>{"Línea telefónica: 3174355876 5244080 - 3009126254"}</>,
                     4: <>{"Correo electrónico info@clinicannabis.com.co"}</>,
-                    5: <>{"Sitio web "}<Link
-                        href={"https://www.clinicannabis.com"}>{"https://www.clinicannabis.com"}</Link></>,
+                    5: <>{"Sitio web "}<Link href={"https://www.clinicannabis.com"}>{"https://www.clinicannabis.com"}</Link></>,
 
                 },
-            }
-        }
+            },
+            'legal': {
+
+            },
+            'blackFriday23': {
+                'notice': <>{"Este Black Friday te invitamos a invertir en tu salud y bienestar con nuestras terapias alternativas y enfoques holísticos a partir del cannabis medicinal, la medicina funcional y alternativa."}</>,
+                'explanation': {
+                    1: <>{"40% de descuento por la compra de 1 servicio."}</>,
+                    2: <>{"50% de descuento por la compra de 2 servicios."}</>,
+                    3: <>{"60% de descuento por la compra de 3 servicios en adelante."}</>,
+                },
+                'applies': {
+                    1: <>{"Consulta médica con especialista en cannabis medicinal, medicina funcional o integrativa."}</>,
+                    2: <>{"Fisioterapia avanzada (SIS)."}</>,
+                    3: <>{"Sueroterapia en clínica y a domicilio, en la comodidad de tu casa u oficina."}</>,
+                    4: <>{"Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas, Biopuntura,Masaje Tradicional Chino, Auriculoterapia, Terapias Bioenergéticas (Cristaloterapia, Gemoterapia y Poliedros) según criterio médico."}</>,
+                },
+                'headline5': {
+                    1: <>{"Droguería y cosméticos."}</>,
+                    2: <>{"Fórmulas magistrales."}</>,
+                },
+                'conditions': {
+                    1: <>{"Promoción válida únicamente el viernes 24 y sábado 25 de noviembre de 2023."}</>,
+                    2: <>{"La promoción no incluye el valor del domicilio de la sueroterapia."}</>,
+                    3: <>{"Se debe pagar el tratamiento completo y se pueden agendar las citas médicas hasta el 31 de enero de 2024."}</>,
+                    4: <>{"Contamos con bonos para personalizar y dar el regalo perfecto en navidad."}</>,
+                    5: <>{"El descuento no es acumulable con otros existentes."}</>,
+                },
+            },
+        },
     },
     '404': {
         "headline": <>{"No encontramos esta página"}</>,
