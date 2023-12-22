@@ -1,6 +1,6 @@
 import {NextPage} from "next";
 import Navbar from "../components/ui/Navbar";
-import Footer from "../components/Footer";
+import Footer from "../components/ui/Footer";
 import Head from "next/head";
 import {strings} from "../model/strings";
 import React from "react";
@@ -36,9 +36,6 @@ const Contacto: NextPage = () => {
                     <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
                 </Head>
                 <Navbar selection={"contact"} />
-                <Link href={"/"}>
-                    <Image className={"lg:block hidden absolute top-4 left-24 z-50"} src={"/images/svg/clinic_white.svg"} alt={""} width={560*.6} height={560*.6} />
-                </Link>
                 <article className={"flex items-center justify-center relative py-16"}>
                     <Image src={bgImage} alt={""} quality={100} loading={"lazy"} placeholder={"blur"}
                            className={"brightness-[45%] scale-[5] lg:scale-100 absolute z-0 top-1/3 -left-10 lg:top-0 lg:left-0"}/>
@@ -52,6 +49,9 @@ const Contacto: NextPage = () => {
                         {/*<Map/>*/}
                     </section>
                 </article>
+                <Link href={"/"}>
+                    <Image className={"lg:block hidden absolute top-4 left-24"} src={"/images/svg/clinic_white.svg"} alt={""} width={560*.6} height={560*.6} />
+                </Link>
                 <Footer/>
             </main>
         </GoogleReCaptchaProvider>

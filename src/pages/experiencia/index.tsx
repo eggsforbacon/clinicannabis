@@ -1,5 +1,5 @@
 import {NextPage} from "next";
-import Footer from "../../components/Footer";
+import Footer from "../../components/ui/Footer";
 import {Hero} from "../../components/content/experience/Hero";
 import {ExperienceAssistant} from "../../components/content/experience/ExperienceAssistant";
 import Head from "next/head";

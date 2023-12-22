@@ -20,7 +20,7 @@ export const strings: IKeyedObject = {
             'headline': <>{"¿Tienes alguna"}</>,
             'remark': <>{"pregunta?"}</>,
             'invitation': <>{"¡Nosotros te ayudamos!"}</>,
-            'phone': <>{"317 435 5876"}</>,
+            'phone': <>{"317 483 4360"}</>,
             'phoneScript': <>{"Lunes a viernes 8:00 - 17:00"}</>,
             'email': <>{"info@clinicannabis.com.co"}</>,
             'emailScript': <>{"Apuntamos a un tiempo de respuesta de 24h"}</>,
@@ -141,7 +141,7 @@ export const strings: IKeyedObject = {
             'headline': <>{"Testimonios de"}</>,
             'remark': <>{"pacientes"}</>,
             'content': <>{"Conoce aquí las experiencias de salud de nuestros pacientes. Cada uno de ellos ha contado con la experiencia de nuestro equipo médico para brindar una mejor calidad de vida."}</>,
-            'cta': <>{"Leelos"}</>,
+            'cta': <>{"Léelos"}</>,
         },
         'blog': {
             'headline': <>{"Blog "}</>,
@@ -151,28 +151,28 @@ export const strings: IKeyedObject = {
         },
     },
     'testimonials': {
-      'title' : <>{"Testimonios"}</>,
-      'copy': <>{"En nuestra clínica te acompañamos en todo tu proceso médico, brindándote una atención cálida y humana. Conoce algunas experiencias de nuestros pacientes."}</>
+        'title': <>{"Testimonios"}</>,
+        'copy': <>{"En nuestra clínica te acompañamos en todo tu proceso médico, brindándote una atención cálida y humana. Conoce algunas experiencias de nuestros pacientes."}</>
     },
-    'seminario':{
+    'seminario': {
         'parrafo': {
-            1:{
+            1: {
                 'blackText': <>{"Santiago de Cali será sede del Seminario Iberoamericano Cannabinoides "}</>,
                 'normalText': <>{"en la práctica clínica, una apuesta por realizar un recorrido académico a través de los conceptos básicos de la medicina cannábica."}</>
             },
-            2:{
+            2: {
                 'blackText': <>{"Clinicannabis Medicina Integrativa, pionera en la aplicación de medicina cannábica en el suroccidente colombiano,"}</>,
                 'normalText': <>{" es el anfitrión de este gran evento que reúne a profesionales de amplia trayectoria y estudiantes universitarios de las áreas de la salud, para adentrarse en el campo del Sistema Endocannabinoide y sus aplicaciones en el manejo del dolor."}</>
             }
         },
         'subtitle': <>{"Cronograma Cali - Viernes 16 de Junio"}</>,
         'infotitle': <>{"Hotel Marriott - Salón Cartago"}</>,
-        'MoreInfo':{
+        'MoreInfo': {
             1: {
                 'InfoNumber': <>{"Más información :  "}</>,
-                'Nom1':<>{" 3148220459 "}</>,
-                'Nom2':<>{" 3052328704 "}</>,
-                'Nom3':<>{" 3174355876 "}</>,
+                'Nom1': <>{" 3148220459 "}</>,
+                'Nom2': <>{" 3052328704 "}</>,
+                'Nom3': <>{" 3174834360 "}</>,
             },
         },
         'sections': {
@@ -200,7 +200,7 @@ export const strings: IKeyedObject = {
                 'time': <>{"10:10 - 10:30 a. m."}</>,
                 'info': <>{"Sesión de preguntas - Bloque 1"}</>,
             },
-            5.1:{
+            5.1: {
                 'time': <>{"10:20 - 10:40 a. m."}</>,
                 'info': <>{"Refrigerio"}</>,
             },
@@ -216,7 +216,7 @@ export const strings: IKeyedObject = {
                 'name': <>{"Ing. Mara Gordon "}</>,
                 'contry': <>{"USA"}</>,
             },
-            7.5:{
+            7.5: {
                 'time': <>{"12:20 - 12:35 p. m."}</>,
                 'info': <>{"Sesión de preguntas - Bloque 2"}</>,
             },
@@ -240,7 +240,7 @@ export const strings: IKeyedObject = {
                 'time': <>{"3:20 - 3:40 p. m."}</>,
                 'info': <>{"Sesión de preguntas - Bloque 3"}</>,
             },
-            11.5:{
+            11.5: {
                 'time': <>{"3:40 - 4:10 p. m."}</>,
                 'info': <>{"Receso"}</>,
             },
@@ -263,117 +263,117 @@ export const strings: IKeyedObject = {
             },
         },
         'conference': {
-            1:{
-                'academy':<>{"Dra. "}</>,
-                'name':<>{"Cristina Sánchez"}</>,
-                'contry':<>{"España"}</>
+            1: {
+                'academy': <>{"Dra. "}</>,
+                'name': <>{"Cristina Sánchez"}</>,
+                'contry': <>{"España"}</>
             },
-            2:{
-                'academy':<>{"Dr. "}</>,
-                'name':<>{"Mariano García de Palau"}</>,
-                'contry':<>{"España"}</>
+            2: {
+                'academy': <>{"Dr. "}</>,
+                'name': <>{"Mariano García de Palau"}</>,
+                'contry': <>{"España"}</>
             },
-            3:{
-                'name':<>{"Mara Gordon"}</>,
-                'contry':<>{"Estados Unidos"}</>
+            3: {
+                'name': <>{"Mara Gordon"}</>,
+                'contry': <>{"Estados Unidos"}</>
             },
-            4:{
-                'academy':<>{"Dra. "}</>,
-                'name':<>{"Paola Pineda"}</>,
-                'contry':<>{"Colombia"}</>
+            4: {
+                'academy': <>{"Dra. "}</>,
+                'name': <>{"Paola Pineda"}</>,
+                'contry': <>{"Colombia"}</>
             },
-            5:{
-                'academy':<>{"Dr. "}</>,
-                'name':<>{"Juan Guillermo Maya"}</>,
-                'contry':<>{"Colombia"}</>
+            5: {
+                'academy': <>{"Dr. "}</>,
+                'name': <>{"Juan Guillermo Maya"}</>,
+                'contry': <>{"Colombia"}</>
             },
-            6:{
-                'academy':<>{"Dra. "}</>,
-                'name':<>{"Natalia Mejía"}</>,
-                'contry':<>{"Colombia"}</>
+            6: {
+                'academy': <>{"Dra. "}</>,
+                'name': <>{"Natalia Mejía"}</>,
+                'contry': <>{"Colombia"}</>
             },
-            7:{
-                'academy':<>{"Dr. "}</>,
-                'name':<>{"Alberto Ulloa"}</>,
-                'contry':<>{"Colombia"}</>
+            7: {
+                'academy': <>{"Dr. "}</>,
+                'name': <>{"Alberto Ulloa"}</>,
+                'contry': <>{"Colombia"}</>
             },
-            8:{
-                'academy':<>{"Dr. "}</>,
-                'name':<>{"Andrés D. Archer"}</>,
-                'contry':<>{"Colombia"}</>
+            8: {
+                'academy': <>{"Dr. "}</>,
+                'name': <>{"Andrés D. Archer"}</>,
+                'contry': <>{"Colombia"}</>
             },
-            9:{
-                'academy':<>{"Dr. "}</>,
-                'name':<>{"Juan Carlos Builes"}</>,
-                'contry':<>{"Colombia"}</>
+            9: {
+                'academy': <>{"Dr. "}</>,
+                'name': <>{"Juan Carlos Builes"}</>,
+                'contry': <>{"Colombia"}</>
             },
-            10:{
-                'academy':<>{"Dra. "}</>,
-                'name':<>{"Sandra Carrillo"}</>,
-                'contry':<>{"Colombia"}</>
+            10: {
+                'academy': <>{"Dra. "}</>,
+                'name': <>{"Sandra Carrillo"}</>,
+                'contry': <>{"Colombia"}</>
             }
         },
-        'conferecistas':{
-            1:{ 
-                'title':<>{"Conferencista:"}</>,
-                'subtitle':<>{"Dra. Cristina Sánchez - España."}</>,
-                'indice':<>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
-                'txt':<>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979. Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral. Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
+        'conferecistas': {
+            1: {
+                'title': <>{"Conferencista:"}</>,
+                'subtitle': <>{"Dra. Cristina Sánchez - España."}</>,
+                'indice': <>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
+                'txt': <>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979. Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral. Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
             },
-            2:{ 
-                'title':<>{"Conferencista:"}</>,
-                'subtitle':<>{"Dr. Mariano García de Palau – España."}</>,
-                'indice':<>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
-                'txt':<>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979 Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral."
-                + "Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
+            2: {
+                'title': <>{"Conferencista:"}</>,
+                'subtitle': <>{"Dr. Mariano García de Palau – España."}</>,
+                'indice': <>{"Sistema Endocannabinoide y aplicaciones terapéuticas del cannabis medicinal."}</>,
+                'txt': <>{"Médico nacido en Barcelona, España. Se licenció en medicina y cirugía en la Universidad de Barcelona en el año 1979 Durante 38 años trabajó como médico de urgencias en el ámbito de la medicina laboral."
+                    + "Su interés por el cannabis surge de manera casual, y desde hace unos 15 años se dedica a estudiar el uso terapéutico del cannabis."}</>
             },
-            3:{ 
-                'title':<>{"Conferencista:"}</>,
-                'subtitle':<>{"Ing. Mara Gordon – USA."}</>,
-                'indice':<>{"Effective dosing: How much is enough?"}</>,
-                'txt':<>{"Líder de renombre mundial en el ecosistema del cannabis medicinal. Utilizó su experiencia como ingeniera de procesos para ayudar a las empresas de Fortune 500 a desarrollar sistemas inteligentes en la creación de fórmulas de cannabis y regímenes de dosificación terapéuticos para miles de pacientes en California, mejorando drásticamente su salud, calidad de vida y longevidad. Mara forma parte de los consejos de administración de Aunt Zelda’s y Zelira Therapeutics."}</>
+            3: {
+                'title': <>{"Conferencista:"}</>,
+                'subtitle': <>{"Ing. Mara Gordon – USA."}</>,
+                'indice': <>{"Effective dosing: How much is enough?"}</>,
+                'txt': <>{"Líder de renombre mundial en el ecosistema del cannabis medicinal. Utilizó su experiencia como ingeniera de procesos para ayudar a las empresas de Fortune 500 a desarrollar sistemas inteligentes en la creación de fórmulas de cannabis y regímenes de dosificación terapéuticos para miles de pacientes en California, mejorando drásticamente su salud, calidad de vida y longevidad. Mara forma parte de los consejos de administración de Aunt Zelda’s y Zelira Therapeutics."}</>
             },
-            4:{ 
-                'title':<>{"Conferencista:"}</>,
-                'subtitle':<>{"Dra. Paola Pineda – Colombia."}</>,
-                'indice':<>{"Uso de cannabis en condiciones neurodegenerativas énfasis en Parkinson y Alzheimer."}</>,
-                'txt':<>{"Médica y cirujana con experiencia de 10 años en manejo de personas con epilepsia, cáncer, dolor no asociado a neoplasias, enfermedades neurodegenerativas, enfermedades autoinmunes, trastornos del sueño, entre otros, que han optado por la terapia a base de cannabis como parte fundamental de su tratamiento. Desde 2013, encontró como podría integrar la medicina con cannabis en la atención de pacientes con enfermedades crónicas quienes por su condición de base tienen un gran deterioro en su calidad de vida. Participó en los primeros debates del congreso de la república donde se empezó a hablar sobre la importancia de la reglamentación del cannabis medicinal para diferentes condiciones de salud."}</>
+            4: {
+                'title': <>{"Conferencista:"}</>,
+                'subtitle': <>{"Dra. Paola Pineda – Colombia."}</>,
+                'indice': <>{"Uso de cannabis en condiciones neurodegenerativas énfasis en Parkinson y Alzheimer."}</>,
+                'txt': <>{"Médica y cirujana con experiencia de 10 años en manejo de personas con epilepsia, cáncer, dolor no asociado a neoplasias, enfermedades neurodegenerativas, enfermedades autoinmunes, trastornos del sueño, entre otros, que han optado por la terapia a base de cannabis como parte fundamental de su tratamiento. Desde 2013, encontró como podría integrar la medicina con cannabis en la atención de pacientes con enfermedades crónicas quienes por su condición de base tienen un gran deterioro en su calidad de vida. Participó en los primeros debates del congreso de la república donde se empezó a hablar sobre la importancia de la reglamentación del cannabis medicinal para diferentes condiciones de salud."}</>
             },
-            6:{ 
-                'title':<>{"Conferencista:"}</>,
-                'subtitle':<>{"Veterinaria y zootecnista Natalia Mejía – Colombia."}</>,
-                'indice':<>{"Cannabis y salud mental en animales de compañía."}</>,
-                'txt':<>{"Médica veterinaria zootecnista, magíster en etología clínica con estudios en medicina veterinaria integrativa y con varios años de experiencia en el uso de cannabis medicinal en sus pacientes."}</>
+            6: {
+                'title': <>{"Conferencista:"}</>,
+                'subtitle': <>{"Veterinaria y zootecnista Natalia Mejía – Colombia."}</>,
+                'indice': <>{"Cannabis y salud mental en animales de compañía."}</>,
+                'txt': <>{"Médica veterinaria zootecnista, magíster en etología clínica con estudios en medicina veterinaria integrativa y con varios años de experiencia en el uso de cannabis medicinal en sus pacientes."}</>
             },
-            7:{ 
-                'title':<>{"Conferencista:"}</>,
-                'subtitle':<>{"Psiquiatra Alberto Ulloa – Colombia."}</>,
-                'indice':<>{"Cannabinoides y adicciones."}</>,
-                'txt':<>{"Médico especialista en psiquiatría de la Universidad Javeriana. Cuenta con 33 años de experiencia en el ejercicio público y privado de la psiquiatría, la asesoría, la docencia y la atención, de personas e instituciones que requieren de servicio y apoyo técnico, para la promoción, prevención y atención de problemas de salud mental y el consumo de sustancias psicoactivas."}</>
+            7: {
+                'title': <>{"Conferencista:"}</>,
+                'subtitle': <>{"Psiquiatra Alberto Ulloa – Colombia."}</>,
+                'indice': <>{"Cannabinoides y adicciones."}</>,
+                'txt': <>{"Médico especialista en psiquiatría de la Universidad Javeriana. Cuenta con 33 años de experiencia en el ejercicio público y privado de la psiquiatría, la asesoría, la docencia y la atención, de personas e instituciones que requieren de servicio y apoyo técnico, para la promoción, prevención y atención de problemas de salud mental y el consumo de sustancias psicoactivas."}</>
             },
-            8:{ 
-                'title':<>{"Conferencista:"}</>,
-                'subtitle':<>{"Dr. Daniel Archer Juri – Colombia."}</>,
-                'indice':<>{"Uso de cannabinoides en pacientes con dolor."}</>,
-                'txt':<>{"Médico de la Universidad Libre, especialista en terapias alternativas de la Universidad Manuela Beltrán. Cuenta con amplia experiencia en el manejo clínico de cannabis medicinal, integrando el conocimiento de la medicina tradicional china y la medicina alopática, es docente médico y terapeuta de la Escuela Neijing Kali, médico especialista en cannabis del Centro de Medicina Ancestral Orígenes Clinicannabis."}</>
+            8: {
+                'title': <>{"Conferencista:"}</>,
+                'subtitle': <>{"Dr. Daniel Archer Juri – Colombia."}</>,
+                'indice': <>{"Uso de cannabinoides en pacientes con dolor."}</>,
+                'txt': <>{"Médico de la Universidad Libre, especialista en terapias alternativas de la Universidad Manuela Beltrán. Cuenta con amplia experiencia en el manejo clínico de cannabis medicinal, integrando el conocimiento de la medicina tradicional china y la medicina alopática, es docente médico y terapeuta de la Escuela Neijing Kali, médico especialista en cannabis del Centro de Medicina Ancestral Orígenes Clinicannabis."}</>
             },
-            9:{ 
-                'title':<>{"Conferencista:"}</>,
-                'subtitle':<>{"Veterinario Juan Carlos Builes – Colombia."}</>,
-                'indice':<>{"Psiconeuroinmunodermatología y medicina cannábica en pequeños animales."}</>,
-                'txt':<>{"Médico veterinario y especialista médico de la Universidad de Antioquia, director del Centro Veterinario Juan Carlos Builes Medellín, desde 2001 a la fecha. Amplia experiencia en el uso del cannabis medicinal desde 2019."}</>
+            9: {
+                'title': <>{"Conferencista:"}</>,
+                'subtitle': <>{"Veterinario Juan Carlos Builes – Colombia."}</>,
+                'indice': <>{"Psiconeuroinmunodermatología y medicina cannábica en pequeños animales."}</>,
+                'txt': <>{"Médico veterinario y especialista médico de la Universidad de Antioquia, director del Centro Veterinario Juan Carlos Builes Medellín, desde 2001 a la fecha. Amplia experiencia en el uso del cannabis medicinal desde 2019."}</>
             },
         },
-        'cardInfo':{
-            0:{
-                'title':<>{"Compra aquí:"}</>
+        'cardInfo': {
+            0: {
+                'title': <>{"Compra aquí:"}</>
             },
-            1:{ 
-                'title1':<>{"Cupos Totales"}</>,
-                'title2':<>{"INSCRÍBETE AQUÍ"}</>,
+            1: {
+                'title1': <>{"Cupos Totales"}</>,
+                'title2': <>{"INSCRÍBETE AQUÍ"}</>,
             },
-            2:{
-                'info':<>{"Ocupados"}</>
+            2: {
+                'info': <>{"Ocupados"}</>
             }
         },
     },
@@ -386,196 +386,238 @@ export const strings: IKeyedObject = {
                 'headline': <>{"Cannabis "}</>,
                 'remark': <>{"medicinal"}</>,
                 'subtitle': <>{"Dolor crónico y otras patologías"}</>,
-                'content': <>{"Aplicamos protocolos de medicina cannábica enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obteniendo mejoras en estados de ansiedad, depresión, alteración del apetito y trastornos del sueño."}</>,
+                'content': <>{"Aplicamos protocolos de cannabis medicinal enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obtener mejoras en estados de ansiedad, depresión, alteración del apetito, trastornos del sueño y enfermedades crónicas no transmisibles como fibromialgia y artrosis, entre otras."}</>,
                 'cta': <>{"Aprende más"}</>,
             },
             2: {
                 'headline': <>{"Sistema Súper "}</>,
                 'remark': <>{"Inductivo"}</>,
                 'subtitle': <>{"Innovación tecnológica"}</>,
-                'content': <>{"Como pioneros en el Valle del Cauca, nuestro equipo médico está a la vanguardia en la tecnología biomédica que, haciendo uso del Sistema Súper Inductivo, permite diagnosticar de manera no invasiva e indolora a nuestros pacientes, logrando tratar enfermedades neuromusculares, osteoarticulares, lesiones deportivas, recuperación postquirúrgica, alivio del dolor y rehabilitación respiratoria."}</>,
+                'content': <>{"¡Somos pioneros en el suroccidente colombiano! Contamos con una moderna herramienta biomédica no invasiva e indolora, que favorece y acelera los procesos de rehabilitación respiratoria, neuromuscular, osteoarticular y postquirúrgica. Además, es ideal para la recuperación de lesiones deportivas."}</>,
                 'cta': <>{"Conócelo"}</>,
             },
             3: {
                 'headline': <>{"Clínica del "}</>,
                 'remark': <>{"Dolor"}</>,
-                'copy' : [
-                    <>{"Contamos con una unidad médica supra especializada en el manejo del dolor, con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad."}</>,
-                    <>{"Nuestro objetivo es aliviar el sufrimiento y brindar acompañamiento a pacientes y familias que conviven con dolores moderados a severos como consecuencias de diferentes patologías, que han sido diagnosticados con enfermedades crónicas o que han tenido accidentes de tránsito."}</>,
-                ],
+                'copy': <>{"Contamos con una unidad médica supra especializada en el "}<b>{"manejo del dolor"}</b>{", con tratamientos indicados para cuadros dolorosos que requieren cuidado integral por su cronicidad y refractariedad para aliviar el sufrimiento y brindar acompañamiento a pacientes y familias que conviven con dolores moderados a severos como consecuencia de diferentes patologías, que han sido diagnosticados con enfermedades crónicas o que han tenido accidentes de tránsito."}</>,
                 'cta': <>{"Conócela"}</>,
             },
             4: {
-                'headline': <>{"Sueros terapéuticos"}</>,
-                'subtitle': <>{"Regeneración y depuración"}</>,
-                'content': <>{"Los sueros endovenosos terapéuticos fortalecen el sistema inmune, contribuyendo a la revitalización celular, fomentando la eliminación de toxinas y potenciando el tratamiento para enfermedades crónicas. "}</>,
-                'remark': <>{"¡Hay uno elaborado especialmente para ti!"}</>,
+                'headline': <>{"Sueroterapia"}</>,
+                'subtitle': <>{"En clínica o a domicilio"}</>,
+                'content': <>{"La sueroterapia consiste en la administración de sueros específicos vía intravenosa que favorecen la autocuración del organismo a partir de una selección de vitaminas, minerales, enzimas, oligoelementos y fármacos homeopáticos según las necesidades de cada paciente."}</>,
                 'cta': <>{"Encuéntralo"}</>,
             },
             5: {
                 'headline': <>{"Medicina "}</>,
                 'remark': <>{"Funcional"}</>,
-                'subtitle': <>{"Atención integral"}</>,
-                'content': <>{"Evaluamos a cada uno de nuestros pacientes. Nos enfocamos en tus necesidades de salud y bienestar, e identificamos los factores que puedan alterar tu calidad de vida."}</>,
-                'cta': <>{"Conócela"}</>,
+                'content': <>{"Valoramos a cada paciente de manera integral enfocándonos en la biología de los sistemas del organismo e identificando los factores que puedan alterar su equilibrio."}</>,
+                'cta': <>{"Aprende cómo"}</>,
             },
             6: {
+                'headline': <>{"Medicina Alternativa"}</>,
+                'subtitle': <>{""}</>,
+                'content': <>{"Ofrecemos diferentes terapias, incluyendo las energéticas, que ayudan en el control del estrés, la ansiedad y otros padecimientos de salud mental; dolores agudos o crónicos y, tratamientos de desintoxicación para la activación del metabolismo con énfasis en alimentación y estilo de vida saludable."}</>,
+                'cta': <>{"Descúbrela"}</>,
+            },
+            7: {
+                'headline': <>{"Ayudas Diagnósticas"}</>,
+                'subtitle': <>{""}</>,
+                'content': <>{"Realizamos estudios complementarios para la evaluación clínica del paciente que permite al médico tratante confirmar un diagnóstico."}</>,
+                'cta': <>{"Conócelas"}</>,
+            },
+            8: {
                 'headline': <>{"Centro de Experiencia"}</>,
                 'remark': <>{"Más cerca de ti"}</>,
-                'content': <>{"En Clinicannabis encontrarás complementos ideales para tu tratamiento y mejoramiento de calidad vida. Te ofrecemos una experiencia de bienestar donde productos derivados del cannabis, experiencias holísticas y de crecimiento personal, promueven el cuidado complemento de tu salud."}</>,
+                'content': <>{"¡Somos más que una clínica! Como centro de bienestar y salud, tenemos para ti una experiencia integral. En Clinicannabis encontrarás complementos ideales para tu tratamiento y mejoramiento de calidad vida. Te ofrecemos una experiencia de bienestar con productos derivados del cannabis, alimentos naturales, experiencias holísticas y de crecimiento personal, para el cuidado de tu salud."}</>,
                 'cta': <>{"Conócelo"}</>,
             }
         },
-        'painClinic' : {
+        'painClinic': {
             'intro': {
                 'headline': <>{"¿Qué es el "}</>,
                 'remark': <>{"dolor crónico?"}</>,
                 'copy': <>{"Es aquel dolor agudo acompañado de una sensación incapacitante y desagradable que supera los 3 meses de evolución en la vida del paciente. Este dolor puede manifestarse de distintas formas y, dependiendo de su intensidad, impedir la realización de actividades cotidianas."}</>
             },
             'types': {
-                'intro': <>{"Existen diferentes tipos de "}<span className={"italic font-black"}>{"dolor crónico"}</span>{" entre los que se encuentran:"}</>,
-                'articular': <><span className={"italic font-black"}>{"Dolor articular:"}</span>{" se presenta en hombro, cadera, articulaciones, rodilla y columna asociados a artrosis, fibromialgia, hernia discal, epicondilitis, túnel de carpo y ciática."}</>,
-                'neural': <><span className={"italic font-black"}>{"Dolor neuropático:"}</span>{" lesiones de nervios, neuralgia, posherpética y migrañas."}</>,
-                'oncological': <><span className={"italic font-black"}>{"Dolor oncológico:"}</span>{" derivado del proceso de la enfermedad, la quimioterapia o radioterapia."}</>,
+                'intro': <>{"Existen diferentes tipos de "}<span
+                    className={"italic font-black"}>{"dolor crónico"}</span>{" entre los que se encuentran:"}</>,
+                'articular': <><span
+                    className={"italic font-black"}>{"Dolor articular:"}</span>{" se presenta en hombro, cadera, articulaciones, rodilla y columna asociados a artrosis, fibromialgia, hernia discal, epicondilitis, túnel de carpo y ciática."}</>,
+                'neural': <><span
+                    className={"italic font-black"}>{"Dolor neuropático:"}</span>{" lesiones de nervios, neuralgia, posherpética y migrañas."}</>,
             },
             'therapy': {
                 'title': <>{"En Clinicannabis "}</>,
                 'remark': <>{"ofrecemos terapias como:"}</>,
-                'items' : [
+                'items': [
+                    <>{"Consulta médica con especialista en algesiología"}</>,
                     <>{"Bloqueo guiado con ultrasonido"}</>,
-                    <>{"Bloqueo con fluoroscopio a través de rayos X"}</>,
-                    <>{"Toxina botulínica"}</>,
-                    <>{"Proloterapia - Terapia de proliferación"}</>,
-                ],
-            },
-            'regenerative': {
-                'title': <>{"Medicina "}</>,
-                'remark': <>{"Regenerativa"}</>,
-                'items' : [
-                    <>{"Bioestimulación con Plasma Rico en Plaquetas - PRP"}</>,
-                    <>{"Ozonoterapia"}</>,
-                    <>{"Terapia con células madre"}</>,
-                    <>{"Radiofrecuencia"}</>,
                 ],
             },
         },
         'serums': {
-            'headline': <>{"Nuestros "}</>,
-            'remark': <>{"sueros"}</>,
-            'items': {
-                1: {
-                    'name': <>{"Afrodita"}</>,
-                    'function': <>{"Función sexual, hormonas femeninas"}</>,
-                    'descriptions': {
-                        'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                2: {
-                    'name': <>{"Poseidón"}</>,
-                    'function': <>{"Función sexual, hormonas masculinas"}</>,
-                    'descriptions': {
-                        'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                3: {
-                    'name': <>{"Perseo"}</>,
-                    'function': <>{"Resaca"}</>,
-                    'descriptions': {
-                        'short': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                4: {
-                    'name': <>{"Atenea"}</>,
-                    'function': <>{"Coctel de vitaminas y nutrientes atenea"}</>,
-                    'descriptions': {
-                        'short': <>{"Infusión de múltiples nutrientes entre vitaminas y minerales"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                5: {
-                    'name': <>{"Apolo"}</>,
-                    'function': <>{"Revitalizante antiedad para hombre"}</>,
-                    'descriptions': {
-                        'short': <>{"Tratamiento a nivel celular para lograr el mejor estado del cuerpo y así un envejecimiento sano que se refleja en la piel y los órganos. Fortalece el cabello, las uñas, mejora la textura de la piel"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                6: {
-                    'name': <>{"Ojo de tigre"}</>,
-                    'function': <>{"Deportivo"}</>,
-                    'descriptions': {
-                        'short': <>{"Recuperación deportiva, mejorar rendimiento"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                7: {
-                    'name': <>{"Ambrosía"}</>,
-                    'function': <>{"Antioxidante"}</>,
-                    'descriptions': {
-                        'short': <>{"Vitamina C para efecto antioxidante general"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                8: {
-                    'name': <>{"Amatista"}</>,
-                    'function': <>{"Menopausia"}</>,
-                    'descriptions': {
-                        'short': <>{"Síntomas asociados a los cambios de la menopausia, oleadas de calor, resequedad, cambios de humor, etc"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                9: {
-                    'name': <>{"Encanto de ámbar"}</>,
-                    'function': <>{"Migraña encanto de Ámbar"}</>,
-                    'descriptions': {
-                        'short': <>{"Dolor de cabeza asociado a migraña (prevenir crisis o frecuencia de las mismas)"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                10: {
-                    'name': <>{"Diamante"}</>,
-                    'function': <>{"Limpieza desintoxicante"}</>,
-                    'descriptions': {
-                        'short': <>{"Ayuda a depurar toxinas de los órganos principales: hígado, riñón, piel,colón, pulmón y sistema linfáticos"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                11: {
-                    'name': <>{"Caricia de jade"}</>,
-                    'function': <>{"Cirugìa post caricia de jade"}</>,
-                    'descriptions': {
-                        'short': <>{"Posquirúrgico= recuperación después de cirugía, mejora el dolor , la inflamación y ayuda a la cicatrización."}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                12: {
-                    'name': <>{"Amazonita"}</>,
-                    'function': <>{"Sìndrome premenstrual"}</>,
-                    'descriptions': {
-                        'short': <>{"Cólicos, cambios de humor, depresión asociada al período menstrual"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                13: {
-                    'name': <>{"Armonía"}</>,
-                    'function': <>{"Cirugìa Pre"}</>,
-                    'descriptions': {
-                        'short': <>{"Preparación para cirugías- Prequirúrgico-( prepara al organismo para cualquier procediemiento, ayuda a mejorar el sangrado, modula ainflamación, y evita lso efectos secundarios de los enestésicos)"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
-                14: {
-                    'name': <>{"Zircón eterno"}</>,
-                    'function': <>{"Revitalizante antiage para mujer"}</>,
-                    'descriptions': {
-                        'short': <>{"Tratamiento a nivel celular para lograr el mejor estado del cuerpo y así un envejecimiento sano que se refleja en la piel y los órganos. Fortalece el cabello, las uñas, mejora la textura de la piel"}</>,
-                        'long': <>{"Actúa en las mamas, enfatiza la sexualidad, líbido, aumentar progesterona, que hable de la mujer, reproducción, útero"}</>,
-                    }
-                },
+            'paragraph1': [
+                <>{"La "}</>,
+                <>{"sueroterapia"}</>,
+                <>{" tiene grandes beneficios para tu organismo debido a que fortalece el sistema inmune, contribuye a la revitalización celular, fomenta la eliminación de toxinas y potencia el tratamiento para enfermedades crónicas."}</>,
+            ],
+            'paragraph2': <>{"Los sueros terapéuticos, ya sean homeopáticos u ortomoleculares, no tienen efectos secundarios en el paciente, por lo que podrás retornar a tus actividades diarias una vez termines tu sesión."}</>,
+            'paragraph3': <>{"Puedes recibir la terapia de sueros tanto en la sala de sueroterapia de nuestra sede, donde contamos con sala VIP o en la comodidad de tu casa o trabajo."}</>,
+            'list': {
+                'title': <>{"Nuestras fórmulas propias"}</>,
+                'items': [
+                    {
+                        'name': <>{"Atenea"}</>,
+                        'function': <>{"Nutrición"}</>,
+                    },
+                    {
+                        'name': <>{"Armonía"}</>,
+                        'function': <>{"Prequirúrgico"}</>,
+                    },
+                    {
+                        'name': <>{"Caricia de Jade"}</>,
+                        'function': <>{"Postquirúrgico"}</>,
+                    },
+                    {
+                        'name': <>{"Diamante"}</>,
+                        'function': <>{"Desintoxicante avanzado"}</>,
+                    },
+                    {
+                        'name': <>{"Amatista"}</>,
+                        'function': <>{"Menopausia"}</>,
+                    },
+                    {
+                        'name': <>{"Encanto de Ámbar"}</>,
+                        'function': <>{"Migraña"}</>,
+                    },
+                    {
+                        'name': <>{"Perseo"}</>,
+                        'function': <>{"Resaca"}</>,
+                    },
+                    {
+                        'name': <>{"Zircón Eterno"}</>,
+                        'function': <>{"Revitalizante antiedad femenino"}</>,
+                    },
+                    {
+                        'name': <>{"Apolo"}</>,
+                        'function': <>{"Revitalizante antiedad masculino"}</>,
+                    },
+                    {
+                        'name': <>{"Afrodita"}</>,
+                        'function': <>{"Potenciador sexual femenino"}</>,
+                    },
+                    {
+                        'name': <>{"Poseidón"}</>,
+                        'function': <>{"Potenciador sexual masculino"}</>,
+                    },
+                    {
+                        'name': <>{"Ojo de Tigre"}</>,
+                        'function': <>{"Sport"}</>,
+                    },
+                    {
+                        'name': <>{"Amazonita"}</>,
+                        'function': <>{"Premenstrual"}</>,
+                    },
+                    {
+                        'name': <>{"Ambrosía"}</>,
+                        'function': <>{"Antioxidante"}</>,
+                    },
+                ],
             },
+        },
+        'medicinal-cannabis': {
+            'body': [
+                {
+                    'intro': <>{"Este tipo de tratamiento es altamente efectivo "}</>,
+                    'content': <>{"para el manejo del dolor crónico, la ansiedad, la depresión, las alteraciones del apetito o del sueño. Ponemos a tu servicio la experiencia de nuestros médicos y garantizamos procedimientos bajo la normativa legal vigente."}</>,
+                },
+                {
+                    'intro': <>{"Te ofrecemos fórmulas magistrales para tratamiento individualizado, "}</>,
+                    'content': <>{"con los mejores y más altos estándares de fabricación, ya que son laboratorios certificados."}</>,
+                }
+            ],
+        },
+        'sis': {
+            'intro': <>{"El Sistema Súper Inductivo es un dispositivo de fisioterapia avanzada que produce un campo electromagnético de alta potencia (2,5T), a una profundidad de 10 cm, que interactúa con los tejidos del cuerpo humano y le confiere una gran capacidad de penetración y potencia para la despolarización del tejido celular afectado, en todos los sistemas del cuerpo: muscular, óseo, nervioso y tegumentario."}</>,
+            'points': {
+                'intro': <>{"Contamos con diferentes paquetes para el SIS:"}</>,
+                'bullets': [
+                    <>{"Paquete articular"}</>,
+                    <>{"Paquete muscular"}</>,
+                    <>{"Paquete postquirúrgico"}</>,
+                ],
+            },
+        },
+        'functional-medicine': {
+            'paragraph1': <>{"La Medicina Funcional es un modelo de atención médica, centrado en la persona más no en la enfermedad, el cual tiene 4 pilares: es una medicina predictiva, preventiva, participativa y personalizada."}</>,
+            'paragraph2': <>{"A partir de este modelo evaluamos los hábitos de vida del paciente como:"}</>,
+            'bullets': [
+                <>{"Alimentación"}</>,
+                <>{"Contaminación del pensamiento"}</>,
+                <>{"Higiene del sueño"}</>,
+                <>{"Hidratación"}</>,
+                <>{"Sedentarismo"}</>,
+            ],
+            'paragraph3': <>{"Este análisis integral nos permite atacar la raíz de la enfermedad y mejorar la calidad de vida del paciente en el corto, mediano y largo plazo."}</>,
+        },
+        'alternative-medicine': {
+            "paragraph1": <>{"La Medicina alternativa hace parte de la prestación de servicios en salud según la OMS. Es un enfoque médico que aborda los aspectos físicos, emocionales, mentales y espirituales del paciente, centrándose en el paciente como individuo único buscando alternativas para su curación y bienestar óptimo a partir de múltiples técnicas terapéuticas."}</>,
+            "paragraph2": <>{"En Clinicannabis contamos con terapias como:"}</>,
+            "bullets": [
+                {
+                    'point': <>{"Acupuntura"}</>,
+                },
+                {
+                    'point': <>{"Medicina Tradicional China"}</>,
+                    'subtext': <>{"(Moxibustión, Ventosas y Masaje Tradicional Chino)"}</>,
+                },
+                {
+                    'point': <>{"Bioenergética"}</>,
+                    'subtext': <>{"(Cristaloterapia, Gemoterapia y Poliedros)"}</>,
+                },
+                {
+                    'point': <>{"Terapia Neural"}</>,
+                },
+                {
+                    'point': <>{"Biopuntura"}</>,
+                },
+                {
+                    'point': <>{"Auriculoterapia"}</>,
+                },
+                {
+                    'point': <>{"Reflexología"}</>,
+                },
+            ],
+        },
+        'diagnosis': {
+          'paragraph1': <>{"A través de las ayudas diagnósticas detectamos diferentes patologías, incluso en etapa precoz, que permiten definir un tratamiento terapéutico oportuno y eficaz."}</>,
+          'paragraph2': <>{"En Clinicannabis contamos con estudios como:"}</>,
+          'bullets': [
+              <>{"Electrocardiograma"}</>,
+              <>{"Glucometría"}</>,
+          ],
+        },
+        'experience': {
+            'title': <>{"En nuestras instalaciones cuentas con:"}</>,
+            'places': [
+                {
+                    'name': <>{"Droguería: "}</>,
+                    'description': <>{"para que tengas a disposición tus medicamentos, suplementos, alimentos nutricionales y todo lo que requieras en tu tratamiento. Además, garantizamos que estos productos farmacéuticos son de las mejores marcas, provienen de laboratorios certificados y reconocidos, originarios de países como Alemania, Suiza, Estados Unidos y Canadá."}</>,
+                },
+                {
+                    'name': <>{"Boutique: "}</>,
+                    'description': <>{"en la que encontrarás variedad de productos con CBD y derivados cannábicos que promueven el cuidado dermocosmético y el bienestar."}</>,
+                },
+                {
+                    'name': <>{"Coffee Shop: "}</>,
+                    'description': <>{"para que disfrutes alternativas de alimentación saludables para tu salud como complemento a tus tratamientos médicos."}</>,
+                },
+                {
+                    'name': <>{"Salón Orígenes: "}</>,
+                    'description': <>{"espacio multifuncional diseñado como lugar de capacitación, de aprendizaje y de encuentro comunitario, para promover el cuidado de la salud física y mental."}</>,
+                },
+            ],
         },
     },
     'experience': {
@@ -625,7 +667,7 @@ export const strings: IKeyedObject = {
             "cta": <>{"Nuestro newsletter"}</>,
             "fields": {
                 "mail": <>{"Tu correo"}</>,
-                "submit": "Suscribirme" ,
+                "submit": "Suscribirme",
             },
         },
     },
@@ -692,15 +734,7 @@ export const strings: IKeyedObject = {
                 'title': <>{"Condiciones y restricciones de promoción"}</>,
                 'amor-amistad': <>{"Promoción de Amor y Amistad Clinicannabis septiembre 2023"}</>,
             },
-            'blackFriday23': {
-                'title': <>{"Black Friday 2023"}</>,
-                'welcome': <>{"¡El Black Friday llega a Clinicannabis!"}</>,
-                'explanation': <>{"¿En qué consiste nuestra promoción?"}</>,
-                'applies': <>{"Aplica para"}</>,
-                'headline5': <>{"5% de descuento en nuestros medicamentos"}</>,
-                'conditions': <>{"¿Cuáles son las condiciones y restricciones de esta promoción?"}</>,
-                'specialOffer': <>{"¡Este fin de año disfruta ofertas exclusivas para tu salud y equilibrio!"}</>,
-            },
+
         },
         'content': {
             'objective': <>{"Establecer los lineamientos y la Política de Tratamiento de Datos Personales de Clinicannabis, en cumplimiento de " +
@@ -712,7 +746,7 @@ export const strings: IKeyedObject = {
                 'paragraph': <>{"Centro de Medicina Ancestral Orígenes S.A - Clinicannabis, es una Institución Prestadora de Servicios de Salud de " +
                     "carácter privado, con NIT 901.172.983-0"}</>,
                 'pbx': <>{"PBX: 5244080"}</>,
-                'phone': <>{"Celular: 3174355876 - 3009126254"}</>,
+                'phone': <>{"Celular: 3174834360 - 3009126254"}</>,
                 'mail': <>{"Correo electrónico: info@clinicannabis.com.co"}</>,
                 'post': <>{"Es importante tener presente que toda área, colaborador, empleado, proveedor y/o contratista de Clinicannabis, " +
                     "que por sus funciones está encargado del tratamiento de las bases de datos que contengan información personal, " +
@@ -995,41 +1029,14 @@ export const strings: IKeyedObject = {
                     0: <>{"Auxiliar Administrativa (Recepción)"}</>,
                     1: <>{"Auxiliar de experiencia del Paciente"}</>,
                     2: <>{"Buzón disponible en la sede."}</>,
-                    3: <>{"Línea telefónica: 3174355876 5244080 - 3009126254"}</>,
+                    3: <>{"Línea telefónica: 3174834360 5244080 - 3009126254"}</>,
                     4: <>{"Correo electrónico info@clinicannabis.com.co"}</>,
-                    5: <>{"Sitio web "}<Link href={"https://www.clinicannabis.com"}>{"https://www.clinicannabis.com"}</Link></>,
+                    5: <>{"Sitio web "}<Link
+                        href={"https://www.clinicannabis.com"}>{"https://www.clinicannabis.com"}</Link></>,
 
                 },
-            },
-            'legal': {
-
-            },
-            'blackFriday23': {
-                'notice': <>{"Este Black Friday te invitamos a invertir en tu salud y bienestar con nuestras terapias alternativas y enfoques holísticos a partir del cannabis medicinal, la medicina funcional y alternativa."}</>,
-                'explanation': {
-                    1: <>{"40% de descuento por la compra de 1 servicio."}</>,
-                    2: <>{"50% de descuento por la compra de 2 servicios."}</>,
-                    3: <>{"60% de descuento por la compra de 3 servicios en adelante."}</>,
-                },
-                'applies': {
-                    1: <>{"Consulta médica con especialista en cannabis medicinal, medicina funcional o integrativa."}</>,
-                    2: <>{"Fisioterapia avanzada (SIS)."}</>,
-                    3: <>{"Sueroterapia en clínica y a domicilio, en la comodidad de tu casa u oficina."}</>,
-                    4: <>{"Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas, Biopuntura,Masaje Tradicional Chino, Auriculoterapia, Terapias Bioenergéticas (Cristaloterapia, Gemoterapia y Poliedros) según criterio médico."}</>,
-                },
-                'headline5': {
-                    1: <>{"Droguería y cosméticos."}</>,
-                    2: <>{"Fórmulas magistrales."}</>,
-                },
-                'conditions': {
-                    1: <>{"Promoción válida únicamente el viernes 24 y sábado 25 de noviembre de 2023."}</>,
-                    2: <>{"La promoción no incluye el valor del domicilio de la sueroterapia."}</>,
-                    3: <>{"Se debe pagar el tratamiento completo y se pueden agendar las citas médicas hasta el 31 de enero de 2024."}</>,
-                    4: <>{"Contamos con bonos para personalizar y dar el regalo perfecto en navidad."}</>,
-                    5: <>{"El descuento no es acumulable con otros existentes."}</>,
-                },
-            },
-        },
+            }
+        }
     },
     '404': {
         "headline": <>{"No encontramos esta página"}</>,

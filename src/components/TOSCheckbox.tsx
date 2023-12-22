@@ -1,5 +1,5 @@
-import {Checkbox} from "flowbite-react";
 import {strings} from "../model/strings";
+import {Checkbox} from "./ui/Checkbox";
 
 export const TOSCheckbox = () => {
     return (

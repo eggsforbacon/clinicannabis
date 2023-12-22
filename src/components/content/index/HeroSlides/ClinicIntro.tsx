@@ -30,7 +30,7 @@ export const ClinicIntro = () => {
 
     return (
         <article
-            className={"pt-46 lg:px-44 lg:pt-52 h-screen md:h-208 lg:h-192 fixed lg:relative z-50 lg:z-10 bg-white flex items-start justify-center overflow-x-clip"}>
+            className={"lg:px-44 lg:pt-52 xl:pt-32 2xl:pt-40 h-screen md:h-208 lg:h-208 fixed lg:relative z-50 lg:z-10 bg-white flex items-start justify-center overflow-x-clip"}>
             <section
                 className={`absolute h-full w-full lg:w-auto lg:h-auto z-10 lg:relative flex items-center justify-around ${loadedOnce ? finalHeroHeadline : animateHeroHeadline}`}>
                 <article
@@ -52,7 +52,7 @@ export const ClinicIntro = () => {
                     <video height={1080 * 1.8} width={1920 * 1.8} muted playsInline autoPlay controls={false}
                            className={"scale-[1.5] lg:scale-[1.75] xl:scale-[1.25]"}
                            onEnded={handleOnEnded}>
-                        <source src={"/video/ClinicannabisAnimation.mp4"}
+                        <source src={"/index/header/slides/ClinicannabisAnimation.mp4"}
                                 type={"video/mp4"}/>
                         Your browser does not support the video tag.
                     </video>

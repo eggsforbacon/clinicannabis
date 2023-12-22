@@ -1,5 +1,5 @@
 import {NextApiRequest, NextApiResponse} from "next";
-import {mailOptions, transporter} from "../../config/nodemailer";
+import {mailOptions, transporter} from "@/config/nodemailer";
 
 const buildHTML = (name : string, email : string, message : string) : string => {
     return `<h1>Una nueva persona se quiere contactar con Clinicannabis</h1>

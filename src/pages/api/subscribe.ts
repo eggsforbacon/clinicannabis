@@ -1,5 +1,5 @@
 import {NextApiRequest, NextApiResponse} from "next";
-import {mailOptions, transporter} from "../../config/nodemailer";
+import {mailOptions, transporter} from "@/config/nodemailer";
 
 const html = (data: {email: string}) => `
     <main>

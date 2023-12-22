@@ -4,14 +4,14 @@ module.exports = {
         './src/pages/**/*.{js,ts,jsx,tsx}',
         './src/components/**/*.{js,ts,jsx,tsx}',
         './src/app/**/*.{js,ts,jsx,tsx}',
+        './src/model/strings.tsx',
     ],
     theme: {
         extend: {
             screens: {
-                'xs': '320px'
+                'xs': '390px'
             },
             height: {
-                '104': '24rem',
                 '112': '26rem',
                 '120': '28rem',
                 '128': '30rem',
@@ -28,7 +28,22 @@ module.exports = {
                 '424': '106rem',
             },
             width: {
-                '104': '24rem',
+                '112': '26rem',
+                '120': '28rem',
+                '128': '30rem',
+                '136': '34rem',
+                '144': '36rem',
+                '168': '42rem',
+                '192': '48rem',
+                '208': '52rem',
+                '224': '56rem',
+                '256': '64rem',
+                '288': '72rem',
+                '320': '80rem',
+                '384': '96rem',
+                '424': '106rem',
+            },
+            spacing: {
                 '112': '26rem',
                 '120': '28rem',
                 '128': '30rem',
@@ -244,5 +259,5 @@ module.exports = {
             }
         },
     },
-    plugins: [require('tailwind-scrollbar')({nocompatible: true}), require('flowbite/plugin'), require("tailwindcss-animation"),],
+    plugins: [require('tailwind-scrollbar')({nocompatible: true}), require("tailwindcss-animation"),],
 }

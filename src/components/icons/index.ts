@@ -1,0 +1,17 @@
+export {default as List} from "./List";
+export {default as Whatsapp} from "./Whatsapp";
+export {default as TwitterX} from "./TwitterX";
+export {default as Youtube} from "./Youtube";
+export {default as Instagram} from "./Instagram";
+export {default as Facebook} from "./Facebook";
+export {default as ExclamationTriangleFill} from "./ExclamationTriangleFill";
+export {default as Envelope} from "./Envelope";
+export {default as GeoAlt} from "./GeoAlt";
+export {default as DashSquare} from "./DashSquare";
+export {default as PlusSquare} from "./PlusSquare";
+export {default as ChevronRight} from "./ChevronRight";
+export {default as ChevronLeft} from "./ChevronLeft";
+export {default as Person} from "./Person";
+export {default as EnvelopePaper} from "./EnvelopePaper";
+export {default as Search} from "./Search";
+export {default as Trash3} from "./Trash3";

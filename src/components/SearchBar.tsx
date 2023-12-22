@@ -1,4 +1,4 @@
-import {Search} from "react-bootstrap-icons";
+import {Search} from "./icons";
 
 export const SearchBar = (
     props: {

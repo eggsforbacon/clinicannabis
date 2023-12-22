@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const withOptimizedImages = require('next-optimized-images')
 
 module.exports = {
   reactStrictMode: true,
@@ -7,16 +6,6 @@ module.exports = {
     return [
       {
         source: '/experiencia/:path*',
-        destination: '/404',
-        permanent: true,
-      },
-      {
-        source: '/servicios/serums',
-        destination: '/404',
-        permanent: true,
-      },
-      {
-        source: '/servicios/clinica-del-dolor',
         destination: '/404',
         permanent: true,
       },

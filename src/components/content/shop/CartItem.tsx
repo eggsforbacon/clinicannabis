@@ -1,5 +1,5 @@
 import {CartItem as ItemType} from "../../../interfaces/interfaces";
-import {DashSquare, PlusSquare, Trash3} from "react-bootstrap-icons";
+import {DashSquare, PlusSquare, Trash3} from "./../../icons";
 import React, {useState} from "react";
 
 export const CartItem = (
@@ -14,18 +14,6 @@ export const CartItem = (
         e.preventDefault();
         setShowButtons(!showButtons);
     };
-
-    const handleIncrease = () => {
-
-    };
-
-    const handleDecrease = () => {
-
-    };
-
-    const handleRemove = () => {
-
-    }
 
     return (
         <li onMouseEnter={handleHover} onMouseLeave={handleHover}

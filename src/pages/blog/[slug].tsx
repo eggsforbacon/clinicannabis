@@ -1,15 +1,15 @@
 import Image from "next/image";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/ui/Navbar";
-import {FetchOptions, fetchURI} from "../../lib/api";
-import {AttributesBlogPost, CoverAttributesPost, StrapiGetAllResponse, StrapiPost,} from "../../interfaces/interfaces";
+import Footer from "@/components/ui/Footer";
+import Navbar from "@/components/ui/Navbar";
+import {FetchOptions, fetchURI} from "@/lib/api";
+import {AttributesBlogPost, CoverAttributesPost, StrapiGetAllResponse, StrapiPost,} from "@/interfaces/interfaces";
 import React, {useEffect} from "react";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from "rehype-raw";
 import {IncomingMessage} from "http";
-import {getTokenFromLocalCookie, getTokenFromServerCookie, setToken} from "../../lib/auth";
+import {getTokenFromLocalCookie, getTokenFromServerCookie, setToken} from "@/lib/auth";
 import Link from "next/link";
 
 interface IProps {

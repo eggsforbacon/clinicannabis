@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {strings} from "../../../model/strings";
+import {strings} from "@/model/strings";
 import React from "react";
 import Link from "next/link";
 
@@ -8,20 +8,24 @@ export const Serums = () => {
     const buttonStyle: string = "mt-16 w-fit text-xl lg:block lg:text-3xl rounded-full border-solid border-2 border-viridian-green text-viridian-green font-normal text-base px-8 lg:px-10 py-1.5 lg:py-2 transition duration-300 exponential-out lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white";
 
     return (
-        <article className={"relative flex items-center justify-center lg:items-start lg:justify-end z-10 h-[48rem] md:h-168 lg:h-192 xl:h-224 2xl:h-256"} id={"sueros-medicinales"}>
-            <Image src={"/images/services/leafBackdrop.svg"} alt={""} width={1920} height={1068} className={"pointer-events-none select-none absolute opacity-100 top-64 md:top-34 left-0 scale-[3.2] sm:scale-[2.2] md:scale-[1.5] lg:hidden"} />
-            <Image src={"/images/services/service4.png"} className={"pointer-events-none select-none absolute opacity-60 lg:opacity-100 lg:top-20 xl:-top-20 left-0 top-60 md:top-32 scale-[3.2] sm:scale-[2.2] md:scale-[1.5] lg:scale-[1.5] xl:scale-[1.3] w-full"}
+        <article
+            className={"overflow-clip relative flex items-center justify-center lg:items-start lg:justify-end z-10 h-208 md:h-144 lg:h-[40rem] xl:h-168 2xl:h-208"}
+            id={"sueroterapia"}>
+            <Image src={"/images/services/leafBackdrop.svg"} alt={""} width={1920} height={1068}
+                   className={"pointer-events-none select-none absolute opacity-100 left-0 top-[18.25rem] md:top-14 md:left-20 lg:left-auto scale-[3.6] md:scale-[2.1] lg:hidden"}/>
+            <Image src={"/images/services/service4.png"}
+                   className={"pointer-events-none select-none absolute opacity-60 lg:opacity-100 lg:top-10 xl:-top-8 2xl:-top-12 left-0 top-[17.25rem] md:top-[3.15rem] md:left-20 lg:left-auto scale-[3.6] md:scale-[2.1] lg:scale-[1.55] xl:scale-[1.4] 2xl:scale-[1.3] w-full"}
                    alt={""} width={1920}
                    height={1068} quality={100} loading={"lazy"}/>
             <section
-                className={"flex flex-col justify-between relative lg:mt-8 lg:mr-32 xl:mr-20 items-center lg:px-0 px-6 lg:items-start lg:w-128 xl:w-[40%]"}>
+                className={"flex flex-col justify-between relative lg:mt-8 xl:mt-12 2xl:mt-24 lg:mr-32 xl:mr-20 items-center lg:px-0 px-6 lg:items-start lg:w-128 xl:w-[40%]"}>
                 <section className={"pt-8 text-midnight-green flex flex-col items-center justify-start lg:items-start"}>
                     <h2 className={"text-6xl text-center lg:text-left lg:text-8xl font-black leading-[0.8] lg:leading-[0.8] lg:tracking-normal tracking-normal mb-2"}>{strings.services.sections["4"].headline}</h2>
                     <h3 className={"text-center lg:text-left font-normal text-viridian-green text-2xl lg:text-4xl"}>{strings.services.sections["4"].subtitle}</h3>
                 </section>
-                <p className={"font-normal mt-8 md:w-144 lg:w-136 text-neutral-600 text-xl lg:text-2xl text-center lg:text-left"}>{strings.services.sections["4"].content}<span
-                    className={"font-bold"}>{strings.services.sections["4"].remark}</span></p>
-                <Link href={"/404"}
+                <p className={"font-normal mt-8 md:w-144 lg:w-136 text-neutral-600 text-base md:text-lg lg:text-2xl text-center lg:text-left"}>{strings.services.sections["4"].content}</p>
+                <Link href={"/servicios/sueroterapia"} target={"_blank"}
+                      rel={"noreferrer"}
                       className={buttonStyle}>
                     {strings.services.sections["4"].cta}
                 </Link>
