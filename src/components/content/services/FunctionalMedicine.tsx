@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {strings} from "@/model/strings";
 import React from "react";
+import Link from "next/link";
 
 export const FunctionalMedicine = () => {
 
@@ -22,14 +23,11 @@ export const FunctionalMedicine = () => {
                     </h2>
                 </section>
                 <section className={"flex flex-col items-center lg:items-start justify-start gap-16"}>
-                    <section className={"flex flex-col items-center lg:items-start justify-start gap-6"}>
-                        <h3 className={"text-center lg:text-left font-semibold text-caribbean-green lg:text-white -mt-4 lg:mt-0 text-2xl lg:text-5xl"}>{strings.services.sections["5"].subtitle}</h3>
-                        <p className={"max-w-[34rem] text-center lg:text-left lg:w-144 text-neutral-600 lg:text-white font-normal text-base md:text-lg lg:text-2xl"}>{strings.services.sections["5"].content}</p>
-                    </section>
-                    <a href={"/servicios/medicina-funcional"} target={"_blank"} rel={"noreferrer"}
+                    <p className={"max-w-[34rem] text-center lg:text-left lg:w-144 text-neutral-600 lg:text-white font-normal text-base md:text-lg lg:text-2xl"}>{strings.services.sections["5"].content}</p>
+                    <Link href={"/servicios/medicina-funcional"} target={"_blank"} rel={"noreferrer"}
                        className={buttonStyle}>
                         {strings.services.sections["5"].cta}
-                    </a>
+                    </Link>
                 </section>
             </section>
         </article>

@@ -96,7 +96,6 @@ export default function PainClinic() {
                     <p className={"relative"}>{s.types.intro}</p>
                     <p className={"relative"}>{s.types.articular}</p>
                     <p className={"relative"}>{s.types.neural}</p>
-                    <p className={"relative"}>{s.types.oncological}</p>
                 </section>
                 <section
                     className={"relative flex flex-col items-center md:items-start justify-start gap-8 text-lg xl:text-xl font-normal text-center md:text-start text-rich-black md:z-0 md:w-full md:px-44 xl:px-52 2xl:px-72 box-border xl:my-36"}>

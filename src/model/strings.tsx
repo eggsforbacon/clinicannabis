@@ -411,20 +411,19 @@ export const strings: IKeyedObject = {
             5: {
                 'headline': <>{"Medicina "}</>,
                 'remark': <>{"Funcional"}</>,
-                'subtitle': <>{"Atención integral"}</>,
                 'content': <>{"Valoramos a cada paciente de manera integral enfocándonos en la biología de los sistemas del organismo e identificando los factores que puedan alterar su equilibrio."}</>,
-                'cta': <>{"Conócela"}</>,
+                'cta': <>{"Aprende cómo"}</>,
             },
             6: {
                 'headline': <>{"Medicina Alternativa"}</>,
                 'subtitle': <>{""}</>,
                 'content': <>{"Ofrecemos diferentes terapias, incluyendo las energéticas, que ayudan en el control del estrés, la ansiedad y otros padecimientos de salud mental; dolores agudos o crónicos y, tratamientos de desintoxicación para la activación del metabolismo con énfasis en alimentación y estilo de vida saludable."}</>,
-                'cta': <>{"Conócelo"}</>,
+                'cta': <>{"Descúbrela"}</>,
             },
             7: {
                 'headline': <>{"Ayudas Diagnósticas"}</>,
                 'subtitle': <>{""}</>,
-                'content': <>{"Realizamos estudios complementarios para la evaluación clínica de un paciente que permite al médico tratante confirmar un diagnóstico."}</>,
+                'content': <>{"Realizamos estudios complementarios para la evaluación clínica del paciente que permite al médico tratante confirmar un diagnóstico."}</>,
                 'cta': <>{"Conócelas"}</>,
             },
             8: {
@@ -447,27 +446,13 @@ export const strings: IKeyedObject = {
                     className={"italic font-black"}>{"Dolor articular:"}</span>{" se presenta en hombro, cadera, articulaciones, rodilla y columna asociados a artrosis, fibromialgia, hernia discal, epicondilitis, túnel de carpo y ciática."}</>,
                 'neural': <><span
                     className={"italic font-black"}>{"Dolor neuropático:"}</span>{" lesiones de nervios, neuralgia, posherpética y migrañas."}</>,
-                'oncological': <><span
-                    className={"italic font-black"}>{"Dolor oncológico:"}</span>{" derivado del proceso de la enfermedad, la quimioterapia o radioterapia."}</>,
             },
             'therapy': {
                 'title': <>{"En Clinicannabis "}</>,
                 'remark': <>{"ofrecemos terapias como:"}</>,
                 'items': [
+                    <>{"Consulta médica con especialista en algesiología"}</>,
                     <>{"Bloqueo guiado con ultrasonido"}</>,
-                    <>{"Bloqueo con fluoroscopio a través de rayos X"}</>,
-                    <>{"Toxina botulínica"}</>,
-                    <>{"Proloterapia - Terapia de proliferación"}</>,
-                ],
-            },
-            'regenerative': {
-                'title': <>{"Medicina "}</>,
-                'remark': <>{"Regenerativa"}</>,
-                'items': [
-                    <>{"Bioestimulación con Plasma Rico en Plaquetas - PRP"}</>,
-                    <>{"Ozonoterapia"}</>,
-                    <>{"Terapia con células madre"}</>,
-                    <>{"Radiofrecuencia"}</>,
                 ],
             },
         },
@@ -577,7 +562,7 @@ export const strings: IKeyedObject = {
             'paragraph3': <>{"Este análisis integral nos permite atacar la raíz de la enfermedad y mejorar la calidad de vida del paciente en el corto, mediano y largo plazo."}</>,
         },
         'alternative-medicine': {
-            "paragraph1": <>{"La Medicina alternativa hace parte de la prestación de servicios en salud según la OMS. Es un enfoque médico que aborda los aspectos físicos, emocionales, mentales y espirituales del paciente, centrándose en el paciente como individuo único buscar alternativas para su curación y bienestar óptimo a partir de múltiples técnicas terapéuticas."}</>,
+            "paragraph1": <>{"La Medicina alternativa hace parte de la prestación de servicios en salud según la OMS. Es un enfoque médico que aborda los aspectos físicos, emocionales, mentales y espirituales del paciente, centrándose en el paciente como individuo único buscando alternativas para su curación y bienestar óptimo a partir de múltiples técnicas terapéuticas."}</>,
             "paragraph2": <>{"En Clinicannabis contamos con terapias como:"}</>,
             "bullets": [
                 {
