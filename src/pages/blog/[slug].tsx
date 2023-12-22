@@ -1,20 +1,16 @@
 import Image from "next/image";
-import Footer from "../../components/ui/Footer";
-import Navbar from "../../components/ui/Navbar";
-import {FetchOptions, fetchURI} from "../../lib/api";
-import {
-    AttributesBlogPost,
-    StrapiPost,
-    CoverAttributesPost,
-    StrapiGetAllResponse,
-} from "../../interfaces/interfaces";
+import Footer from "@/components/ui/Footer";
+import Navbar from "@/components/ui/Navbar";
+import {FetchOptions, fetchURI} from "@/lib/api";
+import {AttributesBlogPost, CoverAttributesPost, StrapiGetAllResponse, StrapiPost,} from "@/interfaces/interfaces";
 import React, {useEffect} from "react";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from "rehype-raw";
 import {IncomingMessage} from "http";
-import {getTokenFromLocalCookie, getTokenFromServerCookie, setToken} from "../../lib/auth";
+import {getTokenFromLocalCookie, getTokenFromServerCookie, setToken} from "@/lib/auth";
+import Link from "next/link";
 
 interface IProps {
     post: StrapiPost | null,
@@ -64,7 +60,61 @@ export function slug(props: IProps) {
                     className={"w-full h-full relative px-4 md:px-16 lg:px-20 xl:px-64 text-justify flex flex-col items-center justify-start text-xl leading-[2] pb-28"}>
                     <ReactMarkdown className={"custom-blog bg-white max-w-[768px]"} skipHtml={false} children={body}
                                    remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}
-                                   />
+                    />
+                    <section className={"flex flex-col w-full items-center justify-start gap-4 text-center"}>
+                        <p>Te puede interesar: <Link
+                            className={"underline underline-offset-4 decoration-1 text-caribbean-green"}
+                            href={"https://clinicannabis.com.co/servicios"}>Nuestros Servicios</Link></p>
+                        <p className={"font-bold"}>Agenda tu cita 📱 <Link
+                            className={"underline underline-offset-4 decoration-1 text-caribbean-green"}
+                            href={"https://wa.link/e7swak"}>317 435 5876</Link></p>
+                        <p className={"font-bold"}>Te invitamos a conocer mucho más de Clinicannabis navegando por su
+                            página web <Link
+                                className={"underline underline-offset-4 decoration-1 text-caribbean-green"}
+                                href={"/"}>www.clinicannabis.com</Link></p>
+                        <ul className={"list-none flex flex-row items-center justify-center gap-4"}>
+                            <li>
+                                <Link
+                                    className={"underline underline-offset-4 decoration-1 text-caribbean-green flex flex-col items-center justify-start gap-1"}
+                                    href={"https://twitter.com/clinicannabis"}>
+                                    <img
+                                        src={"https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"}
+                                        alt={"Twitter"}/>
+                                    @clinicannabis
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    className={"underline underline-offset-4 decoration-1 text-caribbean-green flex flex-col items-center justify-start gap-1"}
+                                    href={"https://instagram.com/clinicannabis.col"}>
+                                    <img
+                                        src={"https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"}
+                                        alt={"Instagram"}/>
+                                    @clinicannabis.col
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    className={"underline underline-offset-4 decoration-1 text-caribbean-green flex flex-col items-center justify-start gap-1"}
+                                    href={"https://facebook.com/Clinicanabis"}>
+                                    <img
+                                        src={"https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"}
+                                        alt={"Facebook"}/>
+                                    @Clinicannabis
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    className={"underline underline-offset-4 decoration-1 text-caribbean-green flex flex-col items-center justify-start gap-1"}
+                                    href={"/"}>
+                                    <img
+                                        src={"https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white"}
+                                        alt={"Nuestra página web"}/>
+                                    clinicannabis.com.co
+                                </Link>
+                            </li>
+                        </ul>
+                    </section>
                 </section>
                 {/*<section className={"w-full grid lg:grid-cols-2 place-items-center py-44"}>*/}
                 {/*    {prev && <RecommendedPost title={prev.title} subtitle={prev.subtitle}*/}
@@ -109,7 +159,6 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
             Authorization: `Bearer ${jwt}`,
         },
     } : {} as FetchOptions);
-    console.log(blogsData);
     if (blogsData === null) {
         return {
             props: {

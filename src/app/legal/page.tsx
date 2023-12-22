@@ -1,8 +1,8 @@
 "use client";
 
-import Navbar from "../../components/ui/Navbar";
+import Navbar from "@/components/ui/Navbar";
 import {Link as ScrollLink} from "react-scroll/modules";
-import {strings} from "../../model/strings";
+import {strings} from "@/model/strings";
 import Head from "next/head";
 import React from "react";
 
@@ -66,6 +66,11 @@ export default function Legal () {
                                     <ScrollLink to="promociones" spy={true}
                                                 duration={1200}
                                                 offset={-150}>{navigation.conditions.title}</ScrollLink>
+                                </li>
+                                <li className={linkStyle}>
+                                    <ScrollLink to="black-friday-2023" spy={true}
+                                                duration={1200}
+                                                offset={-150}>{navigation.blackFriday23.title}</ScrollLink>
                                 </li>
                             </ol>
                         </aside>
@@ -142,7 +147,8 @@ export default function Legal () {
                                 <ul className={"list-disc ml-10 mt-4 flex flex-col items-center justify-start gap-3"}>
                                     {Object.values(content.general).map((s) => <li>{s as unknown as JSX.Element}</li>)}
                                 </ul>
-                                <li className={lih2} id={"desarrollo-de-tratamiento"}><h2>{navigation.elaboration.title}</h2></li>
+                                <li className={lih2} id={"desarrollo-de-tratamiento"}>
+                                    <h2>{navigation.elaboration.title}</h2></li>
                                 <ol className={"ml-5"}>
                                     <li className={lih3}><h3>{navigation.elaboration.content}</h3></li>
                                     <section className={"flex flex-col items-start justify-start gap-3 mt-4"}>
@@ -246,26 +252,35 @@ export default function Legal () {
                                 </li>
                                 <ol className={"ml-5"}>
                                     <li className={lih3}><h3>{navigation.conditions["promotionOctubre"]}</h3></li>
-                                    <p>En <b>Clinicannabis</b> nos unimos a la conmemoración de diferentes patologías en el mes de
-                                        octubre, por parte de la Organización Mundial de la Salud y el Ministerio de Salud, como
-                                        el <b>cáncer de mama, la salud mental, el dolor y enfermedades reumáticas</b>. Sin embargo, no
-                                        queremos quedarnos solo en la pedagogía y en la concientización, queremos poner a
-                                        disposición de los pacientes las herramientas terapéuticas que tenemos para ayudarles a
-                                        aliviar el dolor y mejorar su calidad de vida. Es por esto por lo que lanzamos una
+                                    <p>En <b>Clinicannabis</b> nos unimos a la conmemoración de diferentes patologías en
+                                        el mes de
+                                        octubre, por parte de la Organización Mundial de la Salud y el Ministerio de
+                                        Salud, como
+                                        el <b>cáncer de mama, la salud mental, el dolor y enfermedades reumáticas</b>.
+                                        Sin embargo, no
+                                        queremos quedarnos solo en la pedagogía y en la concientización, queremos poner
+                                        a
+                                        disposición de los pacientes las herramientas terapéuticas que tenemos para
+                                        ayudarles a
+                                        aliviar el dolor y mejorar su calidad de vida. Es por esto por lo que lanzamos
+                                        una
                                         promoción durante este mes, exclusiva para quienes padecen estas enfermedades.
                                     </p>
                                     <li className={lih3}><h4>¿En qué consiste nuestra promoción?</h4></li>
                                     <li className={lih4}><h4>25% de descuento en servicios como: </h4></li>
                                     <ul className={"list-disc ml-5"}>
                                         <li>Consulta médica con especialista en cannabis medicinal, medicina funcional o
-                                            integrativa.</li>
+                                            integrativa.
+                                        </li>
                                         <li>Sistema Súper Inductivo.</li>
                                         <li>Sueroterapia en casa y a domicilio.</li>
-                                        <li>Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas, Biopuntura,
+                                        <li>Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas,
+                                            Biopuntura,
                                             Masaje Tradicional Chino, Auriculoterapia, Terapias Bioenergéticas
-                                            (Cristaloterapia, Gemoterapia y Poliedros) de acuerdo a criterio médico.</li>
+                                            (Cristaloterapia, Gemoterapia y Poliedros) de acuerdo a criterio médico.
+                                        </li>
                                     </ul>
-                                    
+
                                     <li className={lih4}><h4>¿Cuáles son las condiciones y restricciones de esta
                                         promoción?</h4></li>
                                     <ol className={"ml-5 list-decimal"}>
@@ -274,6 +289,44 @@ export default function Legal () {
                                         <li>Se debe pagar el tratamiento completo.</li>
                                         <li>No aplica para convenios.</li>
                                     </ol>
+                                </ol>
+                                <li className={lih2} id={"black-friday-2023"}>
+                                    <h2>{navigation.blackFriday23.title}</h2>
+                                </li>
+                                <ol className={"ml-5"}>
+                                    <li className={`${lih3} text-caribbean-green`}><h3>{navigation.blackFriday23.welcome}</h3></li>
+                                    <p>{content.blackFriday23.notice}</p>
+                                    <li className={lih3}>
+                                        <h3>{navigation.blackFriday23.explanation}</h3>
+                                    </li>
+                                    <ul>
+                                        <li className={"text-caribbean-green"}>{content.blackFriday23.explanation["1"]}</li>
+                                        <li className={"text-caribbean-green"}>{content.blackFriday23.explanation["2"]}</li>
+                                        <li className={"text-caribbean-green"}>{content.blackFriday23.explanation["3"]}</li>
+                                    </ul>
+                                    <li className={lih3}>
+                                        <h3>{navigation.blackFriday23.applies}</h3>
+                                    </li>
+                                    <ul className={"list-disc ml-5"}>
+                                        <li>{content.blackFriday23.applies["1"]}</li>
+                                        <li>{content.blackFriday23.applies["2"]}</li>
+                                        <li>{content.blackFriday23.applies["3"]}</li>
+                                        <li>{content.blackFriday23.applies["4"]}</li>
+                                    </ul>
+                                    <li className={`${lih2} text-caribbean-green`}><h2>{navigation.blackFriday23.headline5}</h2></li>
+                                    <ul className={"list-disc ml-5"}>
+                                        <li>{content.blackFriday23.headline5["1"]}</li>
+                                        <li>{content.blackFriday23.headline5["2"]}</li>
+                                    </ul>
+                                    <li className={lih3}><h3>{navigation.blackFriday23.conditions}</h3></li>
+                                    <ul className={"list-disc ml-5"}>
+                                        <li>{content.blackFriday23.conditions["1"]}</li>
+                                        <li>{content.blackFriday23.conditions["2"]}</li>
+                                        <li>{content.blackFriday23.conditions["3"]}</li>
+                                        <li>{content.blackFriday23.conditions["4"]}</li>
+                                        <li>{content.blackFriday23.conditions["5"]}</li>
+                                    </ul>
+                                    <li className={`${lih3} text-caribbean-green`}><h3>{navigation.blackFriday23.specialOffer}</h3></li>
                                 </ol>
                             </ol>
                         </article>
