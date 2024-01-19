@@ -390,8 +390,8 @@ export const strings: IKeyedObject = {
                 'cta': <>{"Aprende más"}</>,
             },
             2: {
-                'headline': <>{"Sistema Súper "}</>,
-                'remark': <>{"Inductivo"}</>,
+                'headline': <>{"Fisioterapia "}</>,
+                'remark': <>{"Avanzada"}</>,
                 'subtitle': <>{"Innovación tecnológica"}</>,
                 'content': <>{"¡Somos pioneros en el suroccidente colombiano! Contamos con una moderna herramienta biomédica no invasiva e indolora, que favorece y acelera los procesos de rehabilitación respiratoria, neuromuscular, osteoarticular y postquirúrgica. Además, es ideal para la recuperación de lesiones deportivas."}</>,
                 'cta': <>{"Conócelo"}</>,

@@ -28,7 +28,7 @@ export const Services = () => {
         "/servicios#cannabis-medicinal",
         "/servicios#medicina-funcional",
         "/servicios#sueroterapia",
-        "/servicios#sistema-super-inductivo",
+        "/servicios#fisioterapia-avanzada",
         "/servicios#clinica-del-dolor",
     ];
 
