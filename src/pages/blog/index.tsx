@@ -77,6 +77,7 @@ function Index({blogs, token}: InferGetStaticPropsType<typeof getStaticProps>) {
 export default Index;
 
 export const getStaticProps: GetStaticProps<{ blogs: StrapiPost[], token: string }> = async () => {
+
     const response = await fetchURI<{ jwt: string }>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/auth/local`, {
         method: 'POST',
         body: {
