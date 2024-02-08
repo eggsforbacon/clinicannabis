@@ -6,7 +6,7 @@ export const TestimonialSlide = (props: {
     lastName: string,
     description: string,
     reel: string,
-    thumbnail? : string,
+    thumbnail?: string,
 }) => {
 
     const [hasWindow, setHasWindow] = useState(false);
@@ -23,7 +23,18 @@ export const TestimonialSlide = (props: {
                 <h2 className={"text-center lg:text-start text-4xl lg:text-6xl font-bold text-viridian-green"}>{props.firstName}
                     <span
                         className={"text-caribbean-green"}> {props.lastName}</span></h2>
-                <p className={"text-center lg:text-start text-neutral-500 text-lg lg:text-2xl"}>{props.description}</p>
+                <p className={"text-center lg:text-start text-neutral-500 text-lg lg:text-2xl"}>
+                    {
+                        props.description.split("\n").map((s, i) => {
+                           const l = props.description.split("\n").length - 1;
+                           return (
+                               <>
+                                   <span>{s}</span>
+                                   {i !== l && <br/>}
+                               </>
+                           );
+                        })
+                    }</p>
             </section>
             {hasWindow && /*&& <Image priority src={"/video/ClinicannabisAnimation.gif"} alt={""} height={1080 * 1.8} width={1920 * 1.8} className={"scale-[1.5] lg:scale-[1.75] xl:scale-[1.25]"} /> */
                 <ReactPlayer controls url={props.reel} height={768} width={432} light={props.thumbnail}

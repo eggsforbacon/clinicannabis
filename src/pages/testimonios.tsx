@@ -3,14 +3,14 @@ import Navbar from "../components/ui/Navbar";
 import React, {useEffect, useState} from "react";
 import Head from "next/head";
 import Footer from "../components/ui/Footer";
-import {TestimonialSlide} from "../components/content/testimonials/TestimonialSlide";
+import {TestimonialSlide} from "@/components/content/testimonials/TestimonialSlide";
 import Image from "next/image";
-import {AttributesTestimonialPost, StrapiGetAllResponse, StrapiPost} from "../interfaces/interfaces";
-import {fetchURI} from "../lib/api";
-import {setToken} from "../lib/auth";
+import {AttributesTestimonialPost, StrapiGetAllResponse, StrapiPost} from "@/interfaces/interfaces";
+import {fetchURI} from "@/lib/api";
+import {setToken} from "@/lib/auth";
 import useSWR from "swr";
-import {TestimonialCarousel} from "../components/content/testimonials/TestimonialCarousel";
-import {strings} from "../model/strings";
+import {TestimonialCarousel} from "@/components/content/testimonials/TestimonialCarousel";
+import {strings} from "@/model/strings";
 
 
 function Testimonios ({testimonials, token} : InferGetStaticPropsType<typeof getStaticProps>) {
