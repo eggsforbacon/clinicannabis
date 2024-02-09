@@ -20,6 +20,7 @@ interface IProps {
 
 export function slug(props: IProps) {
     const postRaw = props.post;
+    const {error} = props;
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -27,9 +28,9 @@ export function slug(props: IProps) {
         }
     }, []);
 
-    if (postRaw === null) {
+    if (postRaw === null || error) {
         return (
-            <p>Cargando...</p>
+            <p>{error ?? "Cargando..."}</p>
         );
     }
     const attributes = postRaw.attributes as unknown as AttributesBlogPost;
@@ -50,7 +51,7 @@ export function slug(props: IProps) {
                            width={1920} height={544} priority quality={80}
                            className={"brightness-90 absolute top-[20%] md:top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[4.385] md:scale-[2.342] lg:scale-[1.6203] xl:scale-105"}/>
                     <section
-                        className={"flex relative flex-col items-center justify-start gap-2 bg-white rounded-t-2xl mt-64 md:mt-0 mx-2 md:mx-0 p-4 md:p-8"}>
+                        className={"flex relative flex-col items-center justify-start w-full md:w-auto xl:w-[76rem] gap-2 bg-white rounded-t-2xl mt-64 md:mt-0 mx-2 md:mx-0 p-4 md:p-8"}>
                         <h1 className={"text-3xl md:text-5xl xl:text-6xl text-center relative font-black"}>{title}</h1>
                         <h2 className={"text-xl md:text-2xl xl:text-3xl text-center relative font-semibold"}>{subtitle}</h2>
                         <h3 className={"text-lg md:text-xl xl:text-2xl text-center relative font-normal"}>{date}</h3>
@@ -116,12 +117,6 @@ export function slug(props: IProps) {
                         </ul>
                     </section>
                 </section>
-                {/*<section className={"w-full grid lg:grid-cols-2 place-items-center py-44"}>*/}
-                {/*    {prev && <RecommendedPost title={prev.title} subtitle={prev.subtitle}*/}
-                {/*                              to={`/blog/${prev.id}`}/>}*/}
-                {/*    {next && <RecommendedPost title={next.title} subtitle={next.subtitle}*/}
-                {/*                              to={`/blog/${next.id}`}/>}*/}
-                {/*</section>*/}
             </article>
             <Footer/>
         </main>
@@ -154,7 +149,7 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
     const {
         data: blogsData,
         error
-    } = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts/?locale=es-CO&populate=*`, jwt ? {
+    } = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts/?locale=es-CO&pagination[page]=1&pagination[pageSize]=${process.env.NEXT_PUBLIC_STRAPI_LIMIT}&populate=*`, jwt ? {
         headers: {
             Authorization: `Bearer ${jwt}`,
         },
@@ -167,8 +162,26 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
             }
         }
     }
+    if (!blogsData || !Array.isArray(blogsData)) {
+        return {
+            props: {
+                post: null,
+                error: 'No blog data available'
+            }
+        };
+    }
 
-    const post = blogsData.filter(p => (p.attributes as unknown as AttributesBlogPost).slug === slug)[0]
+    const post = blogsData.find(p => (p.attributes as unknown as AttributesBlogPost).slug === slug);
+    if (!post) {
+        return {
+            props: {
+                post : null,
+                error: 'Post not found'
+            }
+        };
+    }
+
+    // const post = blogsData.filter(p => (p.attributes as unknown as AttributesBlogPost).slug === slug)[0];
     return {
         props: {
             post,
