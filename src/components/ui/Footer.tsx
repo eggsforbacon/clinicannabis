@@ -63,6 +63,9 @@ const Footer = () => {
                                     <li><Link href={"/legal#promociones"}
                                               className={linkStyle}>{strings.footer.fast.promotions}</Link>
                                     </li>
+                                    <li><Link href={"/participacion-social"}
+                                              className={linkStyle}>{strings.footer.fast.social}</Link>
+                                    </li>
                                 </ul>
                             </section>
                         </section>

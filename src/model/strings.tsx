@@ -40,6 +40,7 @@ export const strings: IKeyedObject = {
             'contact': <>{"Contáctanos"}</>,
             'data': <>{"Protección de datos"}</>,
             'promotions': <>{"Condiciones y restricciones de promoción"}</>,
+            'social': <>{"Política de participación social en salud"}</>,
             'FAQ': <>{"Preguntas frecuentes"}</>,
             'experts': <>{"Nuestros expertos"}</>,
         },
