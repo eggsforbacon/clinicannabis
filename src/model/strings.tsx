@@ -41,6 +41,7 @@ export const strings: IKeyedObject = {
             'data': <>{"Protección de datos"}</>,
             'promotions': <>{"Condiciones y restricciones de promoción"}</>,
             'social': <>{"Política de participación social en salud"}</>,
+            'finances': <>{"Transparencia y acceso a información pública"}</>,
             'FAQ': <>{"Preguntas frecuentes"}</>,
             'experts': <>{"Nuestros expertos"}</>,
         },

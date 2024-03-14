@@ -175,7 +175,7 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
     if (!post) {
         return {
             props: {
-                post : null,
+                post: null,
                 error: 'Post not found'
             }
         };

@@ -53,7 +53,9 @@ const Footer = () => {
                                     </li>
                                 </ul>
                                 <ul className={"flex flex-col items-stretch justify-start gap-4 h-full lg:mr-10 w-full"}>
-                                    <li><h3 className={"text-white text-base lg:text-xl"}>{strings.footer.fast.headline}</h3></li>
+                                    <li><h3
+                                        className={"text-white text-base lg:text-xl"}>{strings.footer.fast.headline}</h3>
+                                    </li>
                                     <li><Link href={"/contacto"}
                                               className={linkStyle}>{strings.footer.fast.contact}</Link>
                                     </li>
@@ -65,6 +67,9 @@ const Footer = () => {
                                     </li>
                                     <li><Link href={"/participacion-social"}
                                               className={linkStyle}>{strings.footer.fast.social}</Link>
+                                    </li>
+                                    <li><Link href={"/estadosfinancieros"}
+                                              className={linkStyle}>{strings.footer.fast.finances}</Link>
                                     </li>
                                 </ul>
                             </section>
