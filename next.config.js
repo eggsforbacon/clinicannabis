@@ -29,6 +29,11 @@ module.exports = {
         hostname: 'strapi.clinicannabis.com.co',
         pathname: "/uploads/**"
       },
+      {
+        protocol: 'https',
+        hostname: 'strapi.clinivital.com.co',
+        pathname: "/uploads/**"
+      },
     ],
   },
 }
