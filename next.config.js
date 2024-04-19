@@ -33,7 +33,7 @@ module.exports = {
         protocol: 'https',
         hostname: 'strapi.clinivital.com.co',
         pathname: "/uploads/**"
-      }
+      },
     ],
   },
 }
