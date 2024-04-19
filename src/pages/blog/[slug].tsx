@@ -151,7 +151,7 @@ export const getServerSideProps: ({req, params}: { req: IncomingMessage, params:
         error
     } = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts/?locale=es-CO&pagination[page]=1&pagination[pageSize]=${process.env.NEXT_PUBLIC_STRAPI_LIMIT}&populate=*`, jwt ? {
         headers: {
-            Authorization: `Bearer ${jwt}`,
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_TOKEN}`,
         },
     } : {} as FetchOptions);
     if (blogsData === null) {

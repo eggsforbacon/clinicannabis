@@ -8,7 +8,6 @@ interface IProps {
 }
 
 export const Posts = (props: IProps) => {
-
     return (
         <article className={"min-h-[62rem] w-full relative pb-16"}>
             <span
@@ -20,10 +19,16 @@ export const Posts = (props: IProps) => {
                     const thumbnail: CoverAttributesPost = (attributes.thumbnail as unknown as CoverAttributesPost);
                     return (
                         <BlogCard key={attributes.slug} {...attributes} >
-                            <Image src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${thumbnail.data.attributes.url}`}
+                            {
+                                thumbnail.data && <Image src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${thumbnail.data.attributes.url}`}
+                                alt={""}
+                                width={thumbnail.data.attributes.width} height={thumbnail.data.attributes.height}
+                                className={"top-0 left-0 z-0 transition duration-700 ease-in-out hover:scale-[1.1]"}/>
+                            }
+                            {/*<Image src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${thumbnail.data.attributes.url}`}
                                    alt={""}
                                    width={thumbnail.data.attributes.width} height={thumbnail.data.attributes.height}
-                                   className={"top-0 left-0 z-0 transition duration-700 ease-in-out hover:scale-[1.1]"}/>
+                                   className={"top-0 left-0 z-0 transition duration-700 ease-in-out hover:scale-[1.1]"}/>*/}
                         </BlogCard>
                     );
                 })}
