@@ -3,7 +3,7 @@ import {mailOptions, transporter} from "@/config/nodemailer";
 
 const buildHTML = (name : string, email : string, message : string) : string => {
     return `<h1>Una nueva persona se quiere contactar con Clinicannabis</h1>
-            <p>Nuevo envío de formulario de contacto desde <a href='https://clinicannabis.com.co/contact'>Clinicannabis</a></p>
+            <p>Nuevo envío de formulario de contacto desde <a href='https://clinivital.com.co/contacto'>Clinivital</a></p>
             <p><strong>Nombre: </strong>${name}</p>
             <p><strong>Correo: </strong>${email}</p>
             <p><strong>Mensaje: </strong>${message}</p>
@@ -21,7 +21,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         try {
             const sentMessageInfo = await transporter.sendMail({
                 ...mailOptions,
-                subject: "¡Nuevo suscriptor de Clinicannabis!",
+                subject: "¡Nuevo suscriptor de Clinivital!",
                 html: buildHTML(data.name, data.email, data.message)
             });
             return res.status(200).json({message: sentMessageInfo});
