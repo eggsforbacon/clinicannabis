@@ -30,6 +30,7 @@ export type CoverAttributesPost = {
     data: {
         id: number,
         attributes: {
+            thumbnail: Element | Element[]
             name: string,
             alternativeText: null | string,
             caption: null | string,

@@ -29,7 +29,7 @@ function Testimonios ({testimonials, token} : InferGetStaticPropsType<typeof get
         () => fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/testimonials?locale=es-CO&sort=id%3Adesc&populate=*`, {
             method: "GET",
             headers: {
-                Authorization: `Bearer ${token}`
+                Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_TOKEN}`
             }
         }),
         {
@@ -89,7 +89,7 @@ export const getStaticProps: GetStaticProps<{ testimonials: StrapiPost[], token 
     const {data: testimonialResponse} = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/testimonials?locale=es-CO&sort=date%3Adesc&populate=*`, {
         "method": "GET",
         "headers": {
-            "Authorization": `Bearer ${token}`
+            "Authorization": `Bearer ${process.env.NEXT_PUBLIC_STRAPI_TOKEN}`
         }
     });
     return {

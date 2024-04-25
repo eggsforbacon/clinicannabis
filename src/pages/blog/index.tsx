@@ -1,3 +1,5 @@
+'use client'
+
 import {GetStaticProps, InferGetStaticPropsType} from "next";
 import Navbar from "../../components/ui/Navbar";
 import Footer from "../../components/ui/Footer";
@@ -20,6 +22,7 @@ function Index({blogs, token}: InferGetStaticPropsType<typeof getStaticProps>) {
         if (typeof window !== "undefined") {
             setToken({jwt: token}, true);
             setMounted(true);
+            
         }
     }, []);
 
@@ -28,7 +31,7 @@ function Index({blogs, token}: InferGetStaticPropsType<typeof getStaticProps>) {
         () => fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&pagination[page]=${pageIndex}&pagination[pageSize]=6&sort=date%3Adesc&populate=*`, {
             method: "GET",
             headers: {
-                Authorization: `Bearer ${token}`
+                Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_TOKEN}`
             }
         }),
         {
@@ -92,7 +95,7 @@ export const getStaticProps: GetStaticProps<{ blogs: StrapiPost[], token: string
     const {data: blogResponse} = await fetchURI<StrapiGetAllResponse>(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/posts?locale=es-CO&pagination[page]=1&pagination[pageSize]=6&sort=date%3Adesc&populate=*`, {
         "method": "GET",
         "headers": {
-            "Authorization": `Bearer ${token}`
+            "Authorization": `Bearer ${process.env.NEXT_PUBLIC_STRAPI_TOKEN}`
         }
     });
     return {
