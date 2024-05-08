@@ -67,11 +67,6 @@ export default function Legal () {
                                                 duration={1200}
                                                 offset={-150}>{navigation.conditions.title}</ScrollLink>
                                 </li>
-                                <li className={linkStyle}>
-                                    <ScrollLink to="black-friday-2023" spy={true}
-                                                duration={1200}
-                                                offset={-150}>{navigation.blackFriday23.title}</ScrollLink>
-                                </li>
                             </ol>
                         </aside>
                         <article className={"text-lg flex flex-col items-center w-4/6 justify-start -mt-10 gap-16"}>
@@ -251,82 +246,51 @@ export default function Legal () {
                                     <h2>{navigation.conditions.title}</h2>
                                 </li>
                                 <ol className={"ml-5"}>
-                                    <li className={lih3}><h3>{navigation.conditions["promotionOctubre"]}</h3></li>
-                                    <p>En <b>Clinicannabis</b> nos unimos a la conmemoración de diferentes patologías en
-                                        el mes de
-                                        octubre, por parte de la Organización Mundial de la Salud y el Ministerio de
-                                        Salud, como
-                                        el <b>cáncer de mama, la salud mental, el dolor y enfermedades reumáticas</b>.
-                                        Sin embargo, no
-                                        queremos quedarnos solo en la pedagogía y en la concientización, queremos poner
-                                        a
-                                        disposición de los pacientes las herramientas terapéuticas que tenemos para
-                                        ayudarles a
-                                        aliviar el dolor y mejorar su calidad de vida. Es por esto por lo que lanzamos
-                                        una
-                                        promoción durante este mes, exclusiva para quienes padecen estas enfermedades.
+                                    <li className={lih2}><h3>{navigation.conditions["promotionOctubre"]}</h3></li>
+                                    <li className={`${lih3} text-caribbean-green`}>PROMOCIÓN MES DE LAS MADRES 2024</li>
+                                    <p>
+                                        En <strong>Clinicannabis</strong> nos complace celebrar el amor y la dedicación de todas las madres durante este
+                                        mes especial. Por ello, hemos preparado una promoción exclusiva diseñada para honrar su
+                                        bienestar y cuidado. A continuación, detallamos las condiciones y restricciones aplicables a esta
+                                        promoción del mes de la madre para garantizar una experiencia satisfactoria y transparente.
                                     </p>
-                                    <li className={lih3}><h4>¿En qué consiste nuestra promoción?</h4></li>
-                                    <li className={lih4}><h4>25% de descuento en servicios como: </h4></li>
-                                    <ul className={"list-disc ml-5"}>
-                                        <li>Consulta médica con especialista en cannabis medicinal, medicina funcional o
-                                            integrativa.
+                                    <h5 className={lih4}>¿En qué consiste nuestra promoción?</h5>
+                                    <li className="text-caribbean-green">
+                                        40% de descuento en inyección de Plasma Rico en Plaquetas (PRP) y 25% de descuento en Terapia de Inducción de Colágeno (TIC) a partir de
+                                        paquetes de 4 sesiones.
+                                    </li>
+                                    <h5 className={lih4}>¿Cuáles son las condiciones y restricciones de esta promoción?</h5>
+                                    <ol className="list-decimal ml-5">
+                                        <li>Promoción válida hasta el 31 de mayo de 2024.</li>
+                                        <li>Se debe pagar el tratamiento completo en la primera sesión</li>
+                                        <li>Se pueden combinar terapias para armar el paquete, pero cada una conserva su propio descuento (PRP 40% y TIC 25%).</li>
+                                        <li>
+                                            Se aplica pago por convenios empresariales con la respectiva aprobación del área de
+                                            talento humano de cada empresa.
                                         </li>
-                                        <li>Sistema Súper Inductivo.</li>
-                                        <li>Sueroterapia en casa y a domicilio.</li>
-                                        <li>Terapias alternativas: Acupuntura, Terapia neural, Moxa, Ventosas,
-                                            Biopuntura,
-                                            Masaje Tradicional Chino, Auriculoterapia, Terapias Bioenergéticas
-                                            (Cristaloterapia, Gemoterapia y Poliedros) de acuerdo a criterio médico.
+                                        <li>
+                                            Para los convenios empresariales, socios, familia de socios, empleados, familiares y
+                                            amigos, se aplica el descuento de la campaña de mayo, pero no es acumulable con los
+                                            descuentos propios de cada convenio.
                                         </li>
-                                    </ul>
-
-                                    <li className={lih4}><h4>¿Cuáles son las condiciones y restricciones de esta
-                                        promoción?</h4></li>
-                                    <ol className={"ml-5 list-decimal"}>
-                                        <li>Promoción válida hasta el 31 de octubre de 2023</li>
-                                        <li>La promoción no incluye el valor del domicilio de la sueroterapia.</li>
-                                        <li>Se debe pagar el tratamiento completo.</li>
-                                        <li>No aplica para convenios.</li>
+                                        <li>El tiempo de redención es de 1 mes después de la compra.</li>
+                                        <li>
+                                            Se puede pagar con los bonos de diciembre, pero no se aplica el descuento de la
+                                            promoción del mes de las madres, es decir, se redime el bono con tarifa full y solo aplica
+                                            para la inyección de plasma rico en plaquetas.
+                                        </li>
+                                        <li>
+                                            Se pueden aplicar 2 tipos de terapia el mismo día, pero las siguientes deben realizarse
+                                            semanalmente y cada terapia tiene una duración de 45 minutos.
+                                        </li>
+                                        <li>
+                                            No se realizan devoluciones de dinero si no se toma el paquete completo. Las terapias
+                                            restantes se pueden ceder a otra persona, pero no se cambia por otros servicios o
+                                            productos.
+                                        </li>
+                                        <li>El descuento aplica para hombres y mujeres, mayores de edad, que deseen tomarlo.</li>
                                     </ol>
-                                </ol>
-                                <li className={lih2} id={"black-friday-2023"}>
-                                    <h2>{navigation.blackFriday23.title}</h2>
-                                </li>
-                                <ol className={"ml-5"}>
-                                    <li className={`${lih3} text-caribbean-green`}><h3>{navigation.blackFriday23.welcome}</h3></li>
-                                    <p>{content.blackFriday23.notice}</p>
-                                    <li className={lih3}>
-                                        <h3>{navigation.blackFriday23.explanation}</h3>
-                                    </li>
-                                    <ul>
-                                        <li className={"text-caribbean-green"}>{content.blackFriday23.explanation["1"]}</li>
-                                        <li className={"text-caribbean-green"}>{content.blackFriday23.explanation["2"]}</li>
-                                        <li className={"text-caribbean-green"}>{content.blackFriday23.explanation["3"]}</li>
-                                    </ul>
-                                    <li className={lih3}>
-                                        <h3>{navigation.blackFriday23.applies}</h3>
-                                    </li>
-                                    <ul className={"list-disc ml-5"}>
-                                        <li>{content.blackFriday23.applies["1"]}</li>
-                                        <li>{content.blackFriday23.applies["2"]}</li>
-                                        <li>{content.blackFriday23.applies["3"]}</li>
-                                        <li>{content.blackFriday23.applies["4"]}</li>
-                                    </ul>
-                                    <li className={`${lih2} text-caribbean-green`}><h2>{navigation.blackFriday23.headline5}</h2></li>
-                                    <ul className={"list-disc ml-5"}>
-                                        <li>{content.blackFriday23.headline5["1"]}</li>
-                                        <li>{content.blackFriday23.headline5["2"]}</li>
-                                    </ul>
-                                    <li className={lih3}><h3>{navigation.blackFriday23.conditions}</h3></li>
-                                    <ul className={"list-disc ml-5"}>
-                                        <li>{content.blackFriday23.conditions["1"]}</li>
-                                        <li>{content.blackFriday23.conditions["2"]}</li>
-                                        <li>{content.blackFriday23.conditions["3"]}</li>
-                                        <li>{content.blackFriday23.conditions["4"]}</li>
-                                        <li>{content.blackFriday23.conditions["5"]}</li>
-                                    </ul>
-                                    <li className={`${lih3} text-caribbean-green`}><h3>{navigation.blackFriday23.specialOffer}</h3></li>
+                                    <li className={`${lih3} text-caribbean-green`}>¡Ven a celebrar con nosotros a las madres!</li>
                                 </ol>
                             </ol>
                         </article>
