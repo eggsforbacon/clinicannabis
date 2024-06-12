@@ -17,7 +17,7 @@ export const FunctionalMedicine = () => {
             </div>
             <section
                 className={"flex flex-col relative lg:h-full lg:pl-16 xl:pt-32 xl:pl-32 2xl:pt-10 2xl:pl-56 items-center lg:items-start justify-start gap-6 lg:gap-20 mt-16 lg:mt-44 xl:mt-12 2xl:mt-72"}>
-                <section className={"flex flex-col lg:gap-4 text-rich-black lg:w-192"}>
+                <section className={"flex flex-col lg:gap-4 text-rich-black lg:w-192 mt-8"}>
                     <h2 className={"text-center lg:text-left text-6xl lg:text-[7rem] font-black lg:tracking-wide tracking-normal mb-4 leading-[0.65] lg:leading-[0.7]"}>{strings.services.sections["5"].headline}<br/><strong
                         className={"text-caribbean-green text-7xl lg:text-[9rem]"}>{strings.services.sections["5"].remark}</strong>
                     </h2>

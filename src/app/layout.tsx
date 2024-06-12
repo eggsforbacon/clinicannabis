@@ -1,9 +1,10 @@
 import React from "react";
 import '../../styles/globals.css'
+import Popup from "@/components/ui/Popup";
 
 export const metadata = {
-    title: 'Clinicannabis - Centro de Medicina Ancestral Orígenes',
-    description: 'No te acostumbres al dolor. "En Clinicannabis creemos que siempre hay una mejor alternativa para tratarlo. Contamos con un equipo de profesionales dispuestos a mostrarte que el alivio sí es posible.',
+    title: 'CliniVital - Centro de Medicina Ancestral Orígenes',
+    description: 'No te acostumbres al dolor. "En CliniVital creemos que siempre hay una mejor alternativa para tratarlo. Contamos con un equipo de profesionales dispuestos a mostrarte que el alivio sí es posible.',
     icons: [
         {
             rel: 'icon',
@@ -20,7 +21,7 @@ export default function RootLayout(
     }) {
     return (
         <html lang="es-CO">
-        <body>{children}</body>
+        <body>{children}<Popup/></body>
         </html>
     )
 }

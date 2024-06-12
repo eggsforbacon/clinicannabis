@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const baseURI = "https://clinicannabis.com.co";
+const baseURI = "https://clinivital.com.co";
 
 const sitemap = (): MetadataRoute.Sitemap => [
     {

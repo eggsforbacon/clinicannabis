@@ -15,20 +15,20 @@ export const strings: IKeyedObject = {
         'ctaMessage': "¡Hola! Me gustaría agendar una cita.",
     },
     'footer': {
-        'copy': <>{"Clinicannabis "}&copy;{" 2023 | Todos los derechos reservados"}</>,
+        'copy': <>{"CliniVital "}&copy;{" 2023 | Todos los derechos reservados"}</>,
         'questions': {
             'headline': <>{"¿Tienes alguna"}</>,
             'remark': <>{"pregunta?"}</>,
             'invitation': <>{"¡Nosotros te ayudamos!"}</>,
             'phone': <>{"317 435 5876"}</>,
             'phoneScript': <>{"Lunes a viernes 8:00 - 17:00"}</>,
-            'email': <>{"info@clinicannabis.com.co"}</>,
+            'email': <>{"info@clinivital.com.co"}</>,
             'emailScript': <>{"Apuntamos a un tiempo de respuesta de 24h"}</>,
             'address': <>{"Cl. 18 #106-11 Local 2"}</>,
             'addressScript': <>{"Ciudad Jardín - Cali."}</>,
         },
         'clinic': {
-            'headline': <>{"Clinicannabis"}</>,
+            'headline': <>{"CliniVital"}</>,
             'home': <>{"Inicio"}</>,
             'stories': <>{"Historias de victoria"}</>,
             'history': <>{"Nuestra historia"}</>,
@@ -49,18 +49,18 @@ export const strings: IKeyedObject = {
     'landing': {
         'hero': {
             'animation': {
-                'headline': <>{"No te acostumbres "}</>,
-                'headlineRemark': <>{"al dolor"}</>,
-                'subtitle': <>{"En Clinicannabis creemos que siempre hay una mejor alternativa para tratarlo. Contamos con un equipo de profesionales dispuestos a mostrarte que el alivio "}</>,
-                'subtitleRemark': <>{"sí es posible."}</>,
-                'cta': <>{"Contáctanos"}</>,
+                'headline': <>{"¡Clinicannabis es"}</>,
+                'headlineRemark': <>{"CliniVital!"}</>,
+                'subtitle': <>{"Nuestra historia empezó en el 2020.  A raíz de la crisis sanitaria y social que implicó el covid-19, abrimos las puertas de Clinicannabis, única clínica del suroccidente colombiano especializada en cannabis medicinal para atender las dolencias de cientos de pacientes y familias del país "}</>,
+                'subtitleRemark': <>{" sí es posible."}</>,
+                'cta': <>{"Ver más"}</>,
             },
             'blog': {
                 'title': <>{"Actualidad "}<br/><span
                     className={"max-md:text-[3.5rem] lg:!text-[5.25rem]"}>{"del cannabis "}</span><br/>{"en la salud"}</>,
                 'titleRemark': <>{"en la salud"}</>,
                 'copy': <>{"Obtén información de "}<span
-                    className={"font-bold"}>{"Clinicannabis"}</span>{" enviada directamente a tu correo."}</>,
+                    className={"font-bold"}>{"CliniVital"}</span>{" enviada directamente a tu correo."}</>,
                 'cta': <>{"Suscríbete"}</>,
                 'image': "/images/landing/hero/updatedBg.png",
             },
@@ -105,12 +105,12 @@ export const strings: IKeyedObject = {
             'humanization': {
                 'headline': <>{"Humanización "}</>,
                 'remark': <>{"en atención"}<br/>{" al paciente"}</>,
-                'content': <>{"Clinicannabis cuenta con personal calificado para atenderte. Nuestro objetivo es brindarte una asistencia más humana y cercana. Te escuchamos y determinamos el tratamiento que más se ajuste a la búsqueda de tu alivio. En Clinicannabis estás en las mejores manos. Tenemos experiencia en implementación de las Políticas de Seguridad del Paciente y Gestión del Riesgo."}</>,
+                'content': <>{"CliniVital cuenta con personal calificado para atenderte. Nuestro objetivo es brindarte una asistencia más humana y cercana. Te escuchamos y determinamos el tratamiento que más se ajuste a la búsqueda de tu alivio. En CliniVital estás en las mejores manos. Tenemos experiencia en implementación de las Políticas de Seguridad del Paciente y Gestión del Riesgo."}</>,
             },
             'respect': {
                 'headline': <>{"Cuidamos de "}</>,
                 'remark': <>{"tu salud"}</>,
-                'content': <>{"Nuestro equipo humano se caracteriza por aplicar los procedimientos correctos que procuren tu bienestar, aplicando los protocolos clínicos establecidos para tu cuidado."}<br/>{"En Clinicannabis encontrarás soluciones alternativas más cerca de ti."}</>,
+                'content': <>{"Nuestro equipo humano se caracteriza por aplicar los procedimientos correctos que procuren tu bienestar, aplicando los protocolos clínicos establecidos para tu cuidado."}<br/>{"En Clinivital encontrarás soluciones alternativas más cerca de ti."}</>,
             },
             'compromise': {
                 'headline': <>{"Estamos a "}</>,
@@ -125,7 +125,7 @@ export const strings: IKeyedObject = {
             'quality': {
                 'headline': <>{"Servicios con "}</>,
                 'remark': <>{"calidad médica"}</>,
-                'content': <>{"En Clinicannabis te ofrecemos soluciones con altos estándares de calidad, diseñadas por médicos expertos, para brindarte confianza y seguridad durante tus tratamientos, haciendo que tu experiencia con las terapias alternativas sea memorable."}</>,
+                'content': <>{"En Clinivital te ofrecemos soluciones con altos estándares de calidad, diseñadas por médicos expertos, para brindarte confianza y seguridad durante tus tratamientos, haciendo que tu experiencia con las terapias alternativas sea memorable."}</>,
             },
             'excellence': {
                 'headline': <>{"Estamos preparados"}<br/>{"para atender "}</>,
@@ -163,7 +163,7 @@ export const strings: IKeyedObject = {
                 'normalText': <>{"en la práctica clínica, una apuesta por realizar un recorrido académico a través de los conceptos básicos de la medicina cannábica."}</>
             },
             2:{
-                'blackText': <>{"Clinicannabis Medicina Integrativa, pionera en la aplicación de medicina cannábica en el suroccidente colombiano,"}</>,
+                'blackText': <>{"Clinivital Medicina Integrativa, pionera en la aplicación de medicina cannábica en el suroccidente colombiano,"}</>,
                 'normalText': <>{" es el anfitrión de este gran evento que reúne a profesionales de amplia trayectoria y estudiantes universitarios de las áreas de la salud, para adentrarse en el campo del Sistema Endocannabinoide y sus aplicaciones en el manejo del dolor."}</>
             }
         },
@@ -357,7 +357,7 @@ export const strings: IKeyedObject = {
                 'title':<>{"Conferencista:"}</>,
                 'subtitle':<>{"Dr. Daniel Archer Juri – Colombia."}</>,
                 'indice':<>{"Uso de cannabinoides en pacientes con dolor."}</>,
-                'txt':<>{"Médico de la Universidad Libre, especialista en terapias alternativas de la Universidad Manuela Beltrán. Cuenta con amplia experiencia en el manejo clínico de cannabis medicinal, integrando el conocimiento de la medicina tradicional china y la medicina alopática, es docente médico y terapeuta de la Escuela Neijing Kali, médico especialista en cannabis del Centro de Medicina Ancestral Orígenes Clinicannabis."}</>
+                'txt':<>{"Médico de la Universidad Libre, especialista en terapias alternativas de la Universidad Manuela Beltrán. Cuenta con amplia experiencia en el manejo clínico de cannabis medicinal, integrando el conocimiento de la medicina tradicional china y la medicina alopática, es docente médico y terapeuta de la Escuela Neijing Kali, médico especialista en cannabis del Centro de Medicina Ancestral Orígenes Clinivital."}</>
             },
             9:{
                 'title':<>{"Conferencista:"}</>,
@@ -387,15 +387,15 @@ export const strings: IKeyedObject = {
             1: {
                 'headline': <>{"Cannabis "}</>,
                 'remark': <>{"medicinal"}</>,
-                'subtitle': <>{"Dolor crónico y otras patologías"}</>,
+                'subtitle': <>{""}</>,
                 'content': <>{"Aplicamos protocolos de cannabis medicinal enmarcados dentro de los requisitos normativos para aliviar los síntomas derivados del dolor crónico y obtener mejoras en estados de ansiedad, depresión, alteración del apetito, trastornos del sueño y enfermedades crónicas no transmisibles como fibromialgia y artrosis, entre otras."}</>,
                 'cta': <>{"Aprende más"}</>,
             },
             2: {
                 'headline': <>{"Fisioterapia "}</>,
-                'remark': <>{"Avanzada"}</>,
-                'subtitle': <>{"Innovación tecnológica"}</>,
-                'content': <>{"¡Somos pioneros en el suroccidente colombiano! Contamos con una moderna herramienta biomédica no invasiva e indolora, que favorece y acelera los procesos de rehabilitación respiratoria, neuromuscular, osteoarticular y postquirúrgica. Además, es ideal para la recuperación de lesiones deportivas."}</>,
+                'remark': <>{""}</>,
+                'subtitle': <>{""}</>,
+                'content': <>{"En <strong class='text-skobeloff'>CliniVital</strong> contamos con tratamientos de fisioterapia convencional, avanzada e invasiva para la rehabilitación de trastornos musculoesqueléticos de baja, mediana y alta complejidad."}</>,
                 'cta': <>{"Conócelo"}</>,
             },
             3: {
@@ -412,14 +412,14 @@ export const strings: IKeyedObject = {
             },
             5: {
                 'headline': <>{"Medicina "}</>,
-                'remark': <>{"Funcional"}</>,
-                'content': <>{"Valoramos a cada paciente de manera integral enfocándonos en la biología de los sistemas del organismo e identificando los factores que puedan alterar su equilibrio."}</>,
+                'remark': <>{"funcional"}</>,
+                'content': <>{"Evaluamos a cada paciente de manera integral enfocándonos en la biología de los sistemas del organismo e identificando los factores que puedan alterar su equilibrio."}</>,
                 'cta': <>{"Aprende cómo"}</>,
             },
             6: {
-                'headline': <>{"Medicina Alternativa"}</>,
+                'headline': <>{"Medicina alternativa"}</>,
                 'subtitle': <>{""}</>,
-                'content': <>{"Ofrecemos diferentes terapias, incluyendo las energéticas, que ayudan en el control del estrés, la ansiedad y otros padecimientos de salud mental; dolores agudos o crónicos y, tratamientos de desintoxicación para la activación del metabolismo con énfasis en alimentación y estilo de vida saludable."}</>,
+                'content': <>{"Ponemos a tu disposición terapias alternativas y complementarias de calidad, seguras y efectivas; avaladas por el Ministerio de Salud y la OMS."}</>,
                 'cta': <>{"Descúbrela"}</>,
             },
             7: {
@@ -429,10 +429,22 @@ export const strings: IKeyedObject = {
                 'cta': <>{"Conócelas"}</>,
             },
             8: {
-                'headline': <>{"Centro de Experiencia"}</>,
-                'remark': <>{"Más cerca de ti"}</>,
-                'content': <>{"¡Somos más que una clínica! Como centro de bienestar y salud, tenemos para ti una experiencia integral. En Clinicannabis encontrarás complementos ideales para tu tratamiento y mejoramiento de calidad vida. Te ofrecemos una experiencia de bienestar con productos derivados del cannabis, alimentos naturales, experiencias holísticas y de crecimiento personal, para el cuidado de tu salud."}</>,
+                'headline': <>{"Centro de experiencia"}</>,
+                'remark': <>{"¡Somos más que una clínica!"}</>,
+                'content': <>{"Como centro de bienestar y salud, tenemos para ti una experiencia integral."}</>,
                 'cta': <>{"Conócelo"}</>,
+            },
+            9: {
+                'headline': <>{"Salud mental"}</>,
+                'subtitle': <>{""}</>,
+                'content': <>{"En un mundo cada vez más exigente y lleno de desafíos, es crucial cuidar de nuestra salud mental. En CliniVital nos comprometemos a ofrecer un espacio seguro y acogedor donde las personas puedan expresar sus emociones, recibir apoyo, orientación y trabajar en el fortalecimiento de su equilibrio mental."}</>,
+                'cta': <>{"Descúbrela"}</>,
+            },
+            10: {
+                'headline': <>{"Unidad de investigación, desarrollo e innovación"}</>,
+                'subtitle': <>{""}</>,
+                'content': <>{"Avanzamos en procesos de Investigación, Desarrollo tecnológico e Innovación <strong>I+D+i</strong>, pensados desde la posibilidad permanente del desarrollo de nuevos métodos diagnósticos, tecnologías para el cuidado de la salud y de actualización del talento humano."}</>,
+                'cta': <>{"Conócela"}</>,
             }
         },
         'painClinic': {
@@ -450,7 +462,7 @@ export const strings: IKeyedObject = {
                     className={"italic font-black"}>{"Dolor neuropático:"}</span>{" lesiones de nervios, neuralgia, posherpética y migrañas."}</>,
             },
             'therapy': {
-                'title': <>{"En Clinicannabis "}</>,
+                'title': <>{"En Clinivital "}</>,
                 'remark': <>{"ofrecemos terapias como:"}</>,
                 'items': [
                     <>{"Consulta médica con especialista en algesiología"}</>,
@@ -459,15 +471,23 @@ export const strings: IKeyedObject = {
             },
         },
         'serums': {
+            'title': <>{"Sueroterapia"}</>,
             'paragraph1': [
-                <>{"La "}</>,
-                <>{"sueroterapia"}</>,
-                <>{" tiene grandes beneficios para tu organismo debido a que fortalece el sistema inmune, contribuye a la revitalización celular, fomenta la eliminación de toxinas y potencia el tratamiento para enfermedades crónicas."}</>,
+                <>{""}</>,
+                <>{"Esta terapia tiene grandes beneficios para tu organismo debido a que fortalece el sistema inmune, contribuye a la revitalización celular, fomenta la eliminación de toxinas y potencia el tratamiento para enfermedades crónicas."}</>,
+                <>{""}</>,
             ],
             'paragraph2': <>{"Los sueros terapéuticos, ya sean homeopáticos u ortomoleculares, no tienen efectos secundarios en el paciente, por lo que podrás retornar a tus actividades diarias una vez termines tu sesión."}</>,
-            'paragraph3': <>{"Puedes recibir la terapia de sueros tanto en la sala de sueroterapia de nuestra sede, donde contamos con sala VIP o en la comodidad de tu casa o trabajo."}</>,
+            'paragraph3': [
+                <>{"En clínica"}</>,
+                <>{"Podrás recibir esta terapia de sueros en nuestra sede, donde disponemos de una sala confortable que incluye zonas VIP."}</>
+            ],
+            'paragraph4': [
+                <>{"A domicilio"}</>,
+                <>{"También podrás beneficiarte de la sueroterapia extramural, es decir, en la comodidad de tu casa o trabajo ya que nuestro personal médico se desplazará hasta el lugar indicado y realizará el procedimiento; brindándote acompañamiento permanente para que te sientas tranquilo y seguro."}</>
+            ],
             'list': {
-                'title': <>{"Nuestras fórmulas propias"}</>,
+                'title': "<span class='text-caribbean-green'>Conoce nuestras</span><br/> <span class='font-black'>fórmulas propias</span>",
                 'items': [
                     {
                         'name': <>{"Atenea"}</>,
@@ -499,11 +519,11 @@ export const strings: IKeyedObject = {
                     },
                     {
                         'name': <>{"Zircón Eterno"}</>,
-                        'function': <>{"Revitalizante antiedad femenino"}</>,
+                        'function': <>{"Revitalizante femenino"}</>,
                     },
                     {
                         'name': <>{"Apolo"}</>,
-                        'function': <>{"Revitalizante antiedad masculino"}</>,
+                        'function': <>{"Revitalizante masculino"}</>,
                     },
                     {
                         'name': <>{"Afrodita"}</>,
@@ -529,43 +549,57 @@ export const strings: IKeyedObject = {
             },
         },
         'medicinal-cannabis': {
+            'title': <>{"Cannabis medicinal"}</>,
             'body': [
                 {
                     'intro': <>{"Este tipo de tratamiento es altamente efectivo "}</>,
-                    'content': <>{"para el manejo del dolor crónico, la ansiedad, la depresión, las alteraciones del apetito o del sueño. Ponemos a tu servicio la experiencia de nuestros médicos y garantizamos procedimientos bajo la normativa legal vigente."}</>,
+                    'content': <>{"para el manejo del dolor crónico, la ansiedad, la depresión, las alteraciones del apetito o del sueño."}</>,
                 },
                 {
-                    'intro': <>{"Te ofrecemos fórmulas magistrales para tratamiento individualizado, "}</>,
-                    'content': <>{"con los mejores y más altos estándares de fabricación, ya que son laboratorios certificados."}</>,
+                    'intro': <>{"Te ofrecemos consulta médica con especialista "}</>,
+                    'content': <>{"en modulación del sistema endocannabinoide y fórmulas magistrales para tratamientos individualizados a base de esta planta; con los mejores y más altos estándares de fabricación en laboratorios certificados."}</>,
                 }
             ],
         },
         'sis': {
-            'intro': <>{"El Sistema Súper Inductivo es un dispositivo de fisioterapia avanzada que produce un campo electromagnético de alta potencia (2,5T), a una profundidad de 10 cm, que interactúa con los tejidos del cuerpo humano y le confiere una gran capacidad de penetración y potencia para la despolarización del tejido celular afectado, en todos los sistemas del cuerpo: muscular, óseo, nervioso y tegumentario."}</>,
+            'title': <>{"Fisioterapia"}</>,
+            'intro': <>{"En CliniVital adoptamos un modelo de atención en fisioterapia centrado en proporcionar soluciones personalizadas qur incluyen diversas técnicas y tecnologías innovadoras para aliviar el dolor, mejorar la movilidad y restaurar la función."}</>,
+            'paragraph1': <>{""}</>,
             'points': {
-                'intro': <>{"Contamos con diferentes paquetes para el SIS:"}</>,
+                'intro': <>{"Contamos con:"}</>,
                 'bullets': [
-                    <>{"Paquete articular"}</>,
-                    <>{"Paquete muscular"}</>,
-                    <>{"Paquete postquirúrgico"}</>,
+                    <>{"Sistema Súper Inductivo"}</>,
+                    <>{"Láser de baja densidad"}</>,
+                    <>{"Terapia láser ILIB"}</>,
+                    <>{"Láser terapéutico para el dolor"}</>,
+                    <>{"Infiltraciones articulares con ácido hialurónico"}</>,
+                    <>{"Plasma Rico en Plaquetas"}</>,
+                    <>{"Neuromodulación"}</>,
+                    <>{"Terapia física"}</>,
+                    <>{"Infiltración para dolor agudo y crónico"}</>,
+                    <>{"Terapia manual cabeza y cuello"}</>,
+                    <>{"Punción seca"}</>,
+                    <>{"Kinesiotape"}</>,
                 ],
             },
         },
         'functional-medicine': {
-            'paragraph1': <>{"La Medicina Funcional es un modelo de atención médica, centrado en la persona más no en la enfermedad, el cual tiene 4 pilares: es una medicina predictiva, preventiva, participativa y personalizada."}</>,
-            'paragraph2': <>{"A partir de este modelo evaluamos los hábitos de vida del paciente como:"}</>,
+            'title': <>{"Medicina funcional"}</>,
+            'paragraph1': <>{""}</>,
+            'paragraph2': <>{"Este modelo médico está centrado en los hábitos de vida de la persona a partir de 5 pilares:"}</>,
             'bullets': [
-                <>{"Alimentación"}</>,
-                <>{"Contaminación del pensamiento"}</>,
+                <>{"Alimentación saludable"}</>,
+                <>{"Gestión emocional"}</>,
                 <>{"Higiene del sueño"}</>,
-                <>{"Hidratación"}</>,
-                <>{"Sedentarismo"}</>,
+                <>{"Actividad física"}</>,
+                <>{"Dimensión espiritual"}</>,
             ],
-            'paragraph3': <>{"Este análisis integral nos permite atacar la raíz de la enfermedad y mejorar la calidad de vida del paciente en el corto, mediano y largo plazo."}</>,
+            'paragraph3': <>{"A través del análisis de estos pilares, nos enfocamos en la raíz o prevención de la enfermedad y mejoramos la calidad de vida del paciente en el corto, mediano y largo plazo."}</>,
         },
         'alternative-medicine': {
-            "paragraph1": <>{"La Medicina alternativa hace parte de la prestación de servicios en salud según la OMS. Es un enfoque médico que aborda los aspectos físicos, emocionales, mentales y espirituales del paciente, centrándose en el paciente como individuo único buscando alternativas para su curación y bienestar óptimo a partir de múltiples técnicas terapéuticas."}</>,
-            "paragraph2": <>{"En Clinicannabis contamos con terapias como:"}</>,
+            'title': <>{"Medicina alternativa"}</>,
+            "paragraph1": <>{"La OMS, en su Estrategia sobre la Medicina Tradicional 2014 -2023, reconoce que la Medicina Tradicional, Alternativa y Complementaria (MTAC) es el pilar de la prestación de salud o su complemento y que está arraigada en la historia y las culturas de nuestro planeta."}</>,
+            "paragraph2": <>{"Contamos con terapias como:"}</>,
             "bullets": [
                 {
                     'point': <>{"Acupuntura"}</>,
@@ -575,37 +609,27 @@ export const strings: IKeyedObject = {
                     'subtext': <>{"(Moxibustión, Ventosas y Masaje Tradicional Chino)"}</>,
                 },
                 {
-                    'point': <>{"Bioenergética"}</>,
-                    'subtext': <>{"(Cristaloterapia, Gemoterapia y Poliedros)"}</>,
-                },
-                {
                     'point': <>{"Terapia Neural"}</>,
                 },
                 {
                     'point': <>{"Biopuntura"}</>,
-                },
-                {
-                    'point': <>{"Auriculoterapia"}</>,
-                },
-                {
-                    'point': <>{"Reflexología"}</>,
-                },
+                }
             ],
         },
         'diagnosis': {
             'paragraph1': <>{"A través de las ayudas diagnósticas detectamos diferentes patologías, incluso en etapa precoz, que permiten definir un tratamiento terapéutico oportuno y eficaz."}</>,
-            'paragraph2': <>{"En Clinicannabis contamos con estudios como:"}</>,
+            'paragraph2': <>{"En Clinivital contamos con estudios como:"}</>,
             'bullets': [
                 <>{"Electrocardiograma"}</>,
                 <>{"Glucometría"}</>,
             ],
         },
         'experience': {
-            'title': <>{"En nuestras instalaciones cuentas con:"}</>,
+            'title': <>{"Centro de experiencia"}</>,
             'places': [
                 {
                     'name': <>{"Droguería: "}</>,
-                    'description': <>{"para que tengas a disposición tus medicamentos, suplementos, alimentos nutricionales y todo lo que requieras en tu tratamiento. Además, garantizamos que estos productos farmacéuticos son de las mejores marcas, provienen de laboratorios certificados y reconocidos, originarios de países como Alemania, Suiza, Estados Unidos y Canadá."}</>,
+                    'description': <>{"Para que tengas a disposición tus medicamentos, suplementos, alimentos nutricionales y todo lo que requieras en tu tratamiento. Además, garantizamos que estos productos farmacéuticos provienen de las mejores marcas y laboratorios certificados y reconocidos, originarios de países como Alemania, Suiza, Estados Unidos y Canadá."}</>,
                 },
                 {
                     'name': <>{"Boutique: "}</>,
@@ -621,6 +645,18 @@ export const strings: IKeyedObject = {
                 },
             ],
         },
+        'salud-mental': {
+            'title': <>{"Salud mental"}</>,
+            'paragraph1': <>{"Nuestro objetivo es promover el autocuidado, la resiliencia y el bienestar emocional, contribuyendo así al desarrollo de comunidades más sanas y equilibradas a través de:"}</>,
+            'bullets': [
+                <>{"Terapia psicológica"}</>,
+                <>{"Consulta médica con especialista en psiquiatría bajo remisión"}</>,
+            ],
+        },
+        'investigacion-desarrollo-innovacion': {
+            'title': <>{"Unidad de investigación, desarrollo e innovación"}</>,
+            'paragraph1': <>{"Nuestra unidad de I+D+i se encuentra inscrita y validada en la plataforma de MINCIENCIAS y en proceso de reconocimiento como actor del Sistema de Ciencia Tecnología e Innovación para la ejecución de proyectos de investigación yarticulación con múltiples actores que garanticen atención de calidad para todos nuestros usuarios."}</>
+        }
     },
     'experience': {
         'hero': {
@@ -734,11 +770,11 @@ export const strings: IKeyedObject = {
             },
             'conditions': {
                 'title': <>{"Condiciones y restricciones de promoción"}</>,
-                'amor-amistad': <>{"Promoción de Amor y Amistad Clinicannabis septiembre 2023"}</>,
+                'amor-amistad': <>{"Promoción de Amor y Amistad Clinivital septiembre 2023"}</>,
             },
             'blackFriday23': {
                 'title': <>{"Black Friday 2023"}</>,
-                'welcome': <>{"¡El Black Friday llega a Clinicannabis!"}</>,
+                'welcome': <>{"¡El Black Friday llega a Clinivital!"}</>,
                 'explanation': <>{"¿En qué consiste nuestra promoción?"}</>,
                 'applies': <>{"Aplica para"}</>,
                 'headline5': <>{"5% de descuento en nuestros medicamentos"}</>,
@@ -747,18 +783,18 @@ export const strings: IKeyedObject = {
             },
         },
         'content': {
-            'objective': <>{"Establecer los lineamientos y la Política de Tratamiento de Datos Personales de Clinicannabis, en cumplimiento de " +
+            'objective': <>{"Establecer los lineamientos y la Política de Tratamiento de Datos Personales de Clinivital, en cumplimiento de " +
                 "las disposiciones de la Ley 1581 de 2012 y del Decreto 1377 de 2013, que establecen y describen los mecanismos " +
                 "por medio de los cuales se debe garantizar el manejo adecuado y conforme al derecho, de los datos personales " +
                 "tratados, los cuales se encuentran en sus bases de datos, esto, con el fin de garantizar a los titulares de los " +
                 "mismos un adecuado ejercicio de su derecho al Habeas Data."}</>,
             'liable': {
-                'paragraph': <>{"Centro de Medicina Ancestral Orígenes S.A - Clinicannabis, es una Institución Prestadora de Servicios de Salud de " +
+                'paragraph': <>{"Centro de Medicina Ancestral Orígenes S.A - Clinivital, es una Institución Prestadora de Servicios de Salud de " +
                     "carácter privado, con NIT 901.172.983-0"}</>,
                 'pbx': <>{"PBX: 5244080"}</>,
                 'phone': <>{"Celular: 3174355876 - 3009126254"}</>,
                 'mail': <>{"Correo electrónico: info@clinicannabis.com.co"}</>,
-                'post': <>{"Es importante tener presente que toda área, colaborador, empleado, proveedor y/o contratista de Clinicannabis, " +
+                'post': <>{"Es importante tener presente que toda área, colaborador, empleado, proveedor y/o contratista de Clinivital, " +
                     "que por sus funciones está encargado del tratamiento de las bases de datos que contengan información personal, " +
                     "debe cumplir con lo dispuesto en la presente Política de Tratamiento"}</>
             },
@@ -831,28 +867,28 @@ export const strings: IKeyedObject = {
             },
             'general': {
                 0: <>{"Toda actividad de recolección de datos personales deberá contar con un enunciado previo relacionado a " +
-                    "autorización que entregará el titular a Clinicannabis frente al manejo de sus datos personales. Entre estas " +
+                    "autorización que entregará el titular a Clinivital frente al manejo de sus datos personales. Entre estas " +
                     "actividades: Encuestas, campañas, base de datos institucionales, entrega de boletín informativo."}</>,
                 1: <>{"Se contará con audio de cada llamada con el fin de salvaguardar al responsable del tratamiento en dicha " +
                     "autorización entregada por el titular."}</>,
                 2: <>{"Todo proveedor, cliente, socio, empleado o colaborador que participe en vídeos con fines educativos, " +
                     "publicitarios deberá firmar autorización a la agencia que realice dicha actividad. Documento que debe " +
-                    "reposar en los archivos de Clinicannabis en caso de futuras reclamaciones."}</>,
+                    "reposar en los archivos de Clinivital en caso de futuras reclamaciones."}</>,
             },
             'elaboration': {
                 'content': {
-                    0: <>{"Como regla general, las bases de datos de Clinicannabis, que se encuentren sujetas a tratamiento almacenan " +
+                    0: <>{"Como regla general, las bases de datos de Clinivital, que se encuentren sujetas a tratamiento almacenan " +
                         "información personal de los titulares, como por ejemplo el nombre, el número y el tipo de identificación, el género y " +
                         "los datos de contacto: dirección física y electrónica, el teléfono fijo y móvil, etc."}</>,
                     1: <>{"Dependiendo de la finalidad y la naturaleza de las bases de datos se tienen en ellas otra clase de datos específicos " +
                         "también sometidos a tratamiento, esto es, por ejemplo, en la base de datos de empleados y contratistas, " +
                         "información sobre la historia laboral y académica, también información familiar, personal y eventualmente bancaria."}</>,
-                    2: <>{"A su vez, teniendo en cuenta la naturaleza y los servicios que presta Clinicannabis, en sus bases de datos se " +
+                    2: <>{"A su vez, teniendo en cuenta la naturaleza y los servicios que presta Clinivital, en sus bases de datos se " +
                         "podrán almacenar datos sensibles y privados con previa autorización del titular, entre ellos datos relacionados con " +
                         "su estado de salud, tratamiento y rehabilitación."}</>,
                 },
                 'treatment': {
-                    0: <>{"Clinicannabis en virtud de su objeto social, ha obtenido y conservado desde su creación, datos personales de sus " +
+                    0: <>{"Clinivital en virtud de su objeto social, ha obtenido y conservado desde su creación, datos personales de sus " +
                         "grupos de interés, los cuales en adelante se llamarán titulares, estos datos son recolectados, almacenados, " +
                         "organizados, usados, transmitidos, actualizados, rectificados y en general administrados, de acuerdo con la " +
                         "respectiva relación y/o vinculación (civil, laboral, comercial o educativa o clínica, entre otras)."}</>,
@@ -862,27 +898,27 @@ export const strings: IKeyedObject = {
                     2: <>{"También podrá ser transmitida o transferida a los titulares, sus causahabientes y representantes legales. En todo " +
                         "caso, la entrega, transmisión o transferencia se hará previa suscripción de los compromisos que sean necesarios " +
                         "para salvaguardar la confidencialidad y privacidad de la información autorizada para tratar. A su vez, en " +
-                        "cumplimiento de deberes legales, Clinicannabis podrá suministrar la información personal a entidades judiciales o " +
+                        "cumplimiento de deberes legales, Clinivital podrá suministrar la información personal a entidades judiciales o " +
                         "administrativas."}</>,
-                    3: <>{"Clinicannabis, velará por el correcto uso de datos personales de menores de edad, garantizando que se cumpla " +
+                    3: <>{"Clinivital, velará por el correcto uso de datos personales de menores de edad, garantizando que se cumpla " +
                         "con las exigencias legales aplicables y que todo tratamiento esté previamente autorizado y se encuentre justificado " +
                         "en el interés superior de los menores."}</>,
                 },
                 'purpose': {
-                    0: <>{"La información que reposa en las bases de datos de Clinicannabis, tiene como finalidad permitir el adecuado " +
+                    0: <>{"La información que reposa en las bases de datos de Clinivital, tiene como finalidad permitir el adecuado " +
                         "desarrollo de su objeto social y permitir el adecuado cumplimiento de los deberes que la ley le impone, " +
                         "principalmente en materia contable, fiscal, administrativa, operativa, societaria, formativa, laboral, contractual, " +
                         "comercial y de mercadeo, etc."}</>,
                     1: <>{"La información sobre clientes, proveedores, socios y empleados, actuales o pasados, se guarda con el fin de " +
                         "facilitar, promover, permitir o mantener relaciones de carácter laboral, civil y comercial."}</>,
-                    2: <>{"Clinicannabis, suprime los datos personales recaudados cuando hayan dejado de ser necesarios, pertinentes y " +
+                    2: <>{"Clinivital, suprime los datos personales recaudados cuando hayan dejado de ser necesarios, pertinentes y " +
                         "adecuados para la finalidad y el propósito para el cual fueron recaudados."}</>,
                     3: <>{"En lo relativo a la grabación de vídeos y toma fotográfica estos son con fines exclusivamente educativos, de " +
                         "seguridad y/o publicitarios para promoción de los demás eventos. Siempre se contará con la autorización del uso " +
                         "de su imagen por escrito."}</>,
                     4: {
                         'intro': <>{"En términos generales, el tratamiento de los datos personales proporcionados por los diversos grupos de interés " +
-                            "de Clinicannabis, tendrá las siguientes finalidades:"}</>,
+                            "de Clinivital, tendrá las siguientes finalidades:"}</>,
                         0: <>{"Registrar y actualizar datos entregados por el titular."}</>,
                         1: <>{"Prestar servicios de salud."}</>,
                         2: <>{"Caracterizar y hacer seguimiento a la población, para la gestión del riesgo en salud, utilizando la " +
@@ -911,11 +947,11 @@ export const strings: IKeyedObject = {
                     },
                 },
                 'auth': {
-                    0: <>{"Clinicannabis solicita autorización escrita a todo proveedor, cliente, socio, empleado o colaborador del cual realice " +
+                    0: <>{"Clinivital solicita autorización escrita a todo proveedor, cliente, socio, empleado o colaborador del cual realice " +
                         "el tratamiento de datos personales, para que sus datos puedan ser tratados de conformidad con la finalidad " +
                         "establecida para cada caso, y en cumplimiento de las normas que regulan la materia, pero, principalmente, " +
                         "buscando la protección y la garantía del derecho constitucional al Habeas Data."}</>,
-                    1: <>{"Adicionalmente al comunicarse telefónicamente con Clinicannabis se estará autorizando el uso de tratamiento de " +
+                    1: <>{"Adicionalmente al comunicarse telefónicamente con Clinivital se estará autorizando el uso de tratamiento de " +
                         "datos cuando después de escuchar el mensaje relacionado el cliente o proveedor continúe en la llamada y sea " +
                         "atendido."}</>,
                 },
@@ -995,7 +1031,7 @@ export const strings: IKeyedObject = {
                     11: <>{"Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio."}</>,
                 },
                 'procedures': {
-                    'questions': <>{"Los titulares de los datos personales que conforman las bases de datos de Clinicannabis, o " +
+                    'questions': <>{"Los titulares de los datos personales que conforman las bases de datos de Clinivital, o " +
                         "sus causahabientes y representantes, podrán consultarlos. Toda solicitud de consulta, corrección, actualización o " +
                         "supresión deberá presentarse por escrito o por correo electrónico. Las consultas serán atendidas en un término de " +
                         "diez (10) días hábiles contados a partir de la fecha de recibo de la respectiva solicitud. Cuando no fuere posible " +
@@ -1019,22 +1055,22 @@ export const strings: IKeyedObject = {
                             "(8) días hábiles siguientes al vencimiento del primer término."}</>,
                     },
                     'note': <>{"La respuesta en ambos casos se hará con el apoyo del asesor jurídico con el fin de salvaguardar la imagen " +
-                        "de Clinicannabis y dando además cumplimiento a toda la normatividad vigente."}</>
+                        "de Clinivital y dando además cumplimiento a toda la normatividad vigente."}</>
                 },
                 'validity': {
-                    0: <>{"La Política de Tratamiento de Datos Personales de Clinicannabis estará vigente a partir del 24 de julio del año " +
+                    0: <>{"La Política de Tratamiento de Datos Personales de Clinivital estará vigente a partir del 24 de julio del año " +
                         "2022."}</>,
-                    1: <>{"Clinicannabis se reserva el derecho a modificarla, en los términos y con las limitaciones previstas en la " +
+                    1: <>{"Clinivital se reserva el derecho a modificarla, en los términos y con las limitaciones previstas en la " +
                         "Constitución y la ley."}</>,
-                    2: <>{"Las bases de datos administradas y tratadas por Clinicannabis se mantendrán indefinidamente, mientras sirvan " +
+                    2: <>{"Las bases de datos administradas y tratadas por Clinivital se mantendrán indefinidamente, mientras sirvan " +
                         "para desarrollar su objeto, y mientras sean necesarias para asegurar el cumplimiento de obligaciones de carácter " +
                         "legal, pero como se mencionó antes, los datos podrán ser eliminados cuando ya no sean necesarios ni pertinentes " +
                         "para cumplir con la finalidad y el propósito vigente al momento de la recolección, también serán eliminados a " +
-                        "solicitud de su titular, en tanto esta solicitud no contraríe una obligación legal de Clinicannabis o una obligación " +
-                        "contenida en un contrato entre Clinicannabis y el titular."}</>,
+                        "solicitud de su titular, en tanto esta solicitud no contraríe una obligación legal de Clinivital o una obligación " +
+                        "contenida en un contrato entre Clinivital y el titular."}</>,
                 },
                 'channels': {
-                    'intro': <>{"Los medios que Clinicannabis tiene a disposición para que los titulares ejerzan sus derechos y realicen las " +
+                    'intro': <>{"Los medios que Clinivital tiene a disposición para que los titulares ejerzan sus derechos y realicen las " +
                         "peticiones, consultas y reclamos son los siguientes:"}</>,
                     0: <>{"Auxiliar Administrativa (Recepción)"}</>,
                     1: <>{"Auxiliar de experiencia del Paciente"}</>,
@@ -1081,7 +1117,7 @@ export const strings: IKeyedObject = {
         "cta": <>{"Nuestra Clínica"}</>,
     },
     'soon': {
-        'headline': <>{"¡Clinicannabis ya está aquí!"}</>,
+        'headline': <>{"Clinivital ya está aquí!"}</>,
         'copy': <>{"Somos una institución que te ofrece alternativas terapéuticas no convencionales para tratar dolor crónico,\n" +
             "mejorar tu calidad de vida o simplemente prevenir cualquier afección que comprometa tu salud."}</>,
         'cta': <>{"¡Actualizate!"}</>,

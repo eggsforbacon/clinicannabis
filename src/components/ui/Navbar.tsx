@@ -60,12 +60,12 @@ const Navbar = (props: _CProps) => {
 
     return (
         <nav
-            className={`z-50 fixed w-full max-w-[1920px] h-28 box-border lg:py-8 lg:px-14 xl:py-6 xl:px-20 2xl:px-24 lg:bg-white lg:drop-shadow-md flex items-center lg:justify-between transition-all duration-300 ease-in-out ${show && props.selection !== "contact" ? "lg:opacity-100" : "bg-transparent drop-shadow-none lg:opacity-0 lg:hover:opacity-100"}`}>
+            className={`z-50 fixed w-full max-w-[1920px] h-28 box-border lg:py-8 lg:px-14 xl:py-4 xl:px-20 2xl:px-24 lg:bg-white lg:drop-shadow-md flex items-center lg:justify-between transition-all duration-300 ease-in-out ${show && props.selection !== "contact" ? "lg:opacity-100" : "bg-transparent drop-shadow-none lg:opacity-0 lg:hover:opacity-100"}`}>
             <section
                 className={`relative h-full w-full lg:w-fit py-5 px-6 md:py-4 md:px-8 lg:p-0 flex items-center justify-between lg:justify-start transition-all duration-300 ease-in-out ${show ? "bg-white lg:bg-transparent md:drop-shadow-md lg:drop-shadow-none" : "bg-transparent drop-shadow-none"}`}>
                 <Link href={"/"}
                       className={`h-full transition-all duration-300 ease-in-out ${show ? "opacity-100" : "opacity-0"} lg:opacity-100`}>
-                    <Image src={"/_common/images/svg/clinic_color.svg"} alt={"Clinicannabis. Centro de Medicina Ancestral Orígenes"} width={16} height={16}
+                    <Image src={"/images/icons/logo_default.png"} alt={"CliniVital. Centro de Medicina Ancestral Orígenes"} width={2895} height={932}
                            className={"h-full w-auto"} priority/>
                 </Link>
                 <button
@@ -90,7 +90,7 @@ const Navbar = (props: _CProps) => {
                     );
                 })}
                 <li className={"rounded-full border-solid border-2 border-viridian-green text-viridian-green text-base px-6 py-1 transition duration-300 ease-exponential-out lg:hover:border-white focus:border-white lg:hover:scale-110 lg:hover:bg-viridian-green lg:hover:text-white focus:scale-110 focus:bg-viridian-green focus:text-white"}>
-                    <Link href={`https://wa.me/+573174834360?text=${strings.navbar.ctaMessage}`} target={"_blank"}
+                    <Link href={`https://wa.link/e7swak`} target={"_blank"}
                           rel={"noreferrer"}>
                         {strings.navbar.cta}
                     </Link>

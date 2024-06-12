@@ -35,7 +35,7 @@ export default function SocialPartake() {
             <article className={"h-full pt-44 px-32 relative"}>
                 <header className={"w-full flex flex-col items-center justify-center gap-6 text-center"}>
                     <h1 className={"text-midnight-green text-6xl font-black"}>Participación Social</h1>
-                    <p className={"text-neutral-900 text-2xl text-center w-144"}>Descubre cómo en Clinicannabis hacemos de la participación social una parte integral de nuestro
+                    <p className={"text-neutral-900 text-2xl text-center w-144"}>Descubre cómo en Clinivital hacemos de la participación social una parte integral de nuestro
                         enfoque médico. Te invitamos a unirte a nosotros y colaborar en esta misión.</p>
                 </header>
                 <section className={"relative py-16 flex flex-col items-stretch gap-16"}>

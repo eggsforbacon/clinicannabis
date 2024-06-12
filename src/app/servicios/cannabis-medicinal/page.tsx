@@ -39,8 +39,10 @@ export default function MedicinalCannabis() {
                            width={1920} height={1080}
                            className={"absolute top-64 md:-top-6 lg:top-20 xl:top-10 -left-44 md:left-16 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.3] lg:scale-[1.3] xl:scale-110"}/>
                 </div>
+                
                 <div
                     className={"relative h-full py-64 md:pb-16 md:pt-44 lg:pb-32 lg:pt-40 xl:py-52 2xl:py-72 flex flex-col items-center md:items-start justify-center gap-8"}>
+                    <h4 className={"mt-8 lg:w-168 2xl:w-208 font-black italic text-caribbean-green text-3xl md:text-5xl 2xl:text-6xl"}>{m.title}</h4>
                     {
                         body.map((s, i) => {
                             return (

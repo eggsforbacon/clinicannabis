@@ -39,7 +39,7 @@ export function slug(props: IProps) {
     return (
         <main>
             <Head>
-                <title>{title} | Clinicannabis</title>
+                <title>{title} | Clinivital</title>
                 <meta name={"description"} content={description}/>
                 <meta name={"viewport"} content={"width=device-width, initial-scale=1"}/>
             </Head>
@@ -69,10 +69,10 @@ export function slug(props: IProps) {
                         <p className={"font-bold"}>Agenda tu cita 📱 <Link
                             className={"underline underline-offset-4 decoration-1 text-caribbean-green"}
                             href={"https://wa.link/e7swak"}>317 435 5876</Link></p>
-                        <p className={"font-bold"}>Te invitamos a conocer mucho más de Clinicannabis navegando por su
+                        <p className={"font-bold"}>Te invitamos a conocer mucho más de Clinivital navegando por su
                             página web <Link
                                 className={"underline underline-offset-4 decoration-1 text-caribbean-green"}
-                                href={"/"}>www.clinicannabis.com</Link></p>
+                                href={"/"}>www.clinivital.com.co</Link></p>
                         <ul className={"list-none flex flex-row items-center justify-center gap-4"}>
                             <li>
                                 <Link
@@ -81,7 +81,7 @@ export function slug(props: IProps) {
                                     <img
                                         src={"https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"}
                                         alt={"Twitter"}/>
-                                    @clinicannabis
+                                    @clinivital
                                 </Link>
                             </li>
                             <li>
@@ -91,7 +91,7 @@ export function slug(props: IProps) {
                                     <img
                                         src={"https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"}
                                         alt={"Instagram"}/>
-                                    @clinicannabis.col
+                                    @clinivital.col
                                 </Link>
                             </li>
                             <li>
@@ -101,7 +101,7 @@ export function slug(props: IProps) {
                                     <img
                                         src={"https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"}
                                         alt={"Facebook"}/>
-                                    @Clinicannabis
+                                    @clinivital
                                 </Link>
                             </li>
                             <li>
@@ -111,7 +111,7 @@ export function slug(props: IProps) {
                                     <img
                                         src={"https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white"}
                                         alt={"Nuestra página web"}/>
-                                    clinicannabis.com.co
+                                    clinivital.com.co
                                 </Link>
                             </li>
                         </ul>

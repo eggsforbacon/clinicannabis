@@ -8,7 +8,7 @@ export const AlternativeMedicine = () => {
 
     return (
         <article
-            className={"relative flex flex-col items-center z-10 justify-center lg:items-stretch overflow-clip h-192 md:h-168 lg:h-208 xl:h-224 lg:px-32 xl:px-44 2xl:px-56"}
+            className={"relative flex flex-col items-center z-10 justify-center lg:items-stretch overflow-clip h-192 md:h-168 lg:h-208 lg:px-32 xl:px-44 2xl:px-56"}
             id={"medicina-alternativa"}>
             <div className={"absolute h-full w-full top-0 left-0 overflow-clip brightness-75 lg:brightness-100"}>
                 <Image src={"/services/medicina-alternativa/massage-lady.webp"} alt={"A woman being massaged"}

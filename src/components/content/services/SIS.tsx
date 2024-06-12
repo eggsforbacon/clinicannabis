@@ -12,8 +12,8 @@ export const SIS = () => {
         <article
             className={"relative flex flex-col items-center z-10 justify-center lg:justify-start lg:items-stretch overflow-clip h-192 md:h-168 lg:h-208 xl:h-224"}
             id={"fisioterapia-avanzada"}>
-            <Image src={"/images/services/service2.png"}
-                   className={"absolute pointer-events-none select-none scale-[3.5] opacity-60 md:scale-[1.5] xl:scale-[1.3] bottom-[17rem] md:bottom-auto lg:bottom-28 xl:bottom-44 lg:right-24 xl:right-0"}
+            <Image src={"/images/services/service2.jpg"}
+                   className={"absolute pointer-events-none select-none bottom-[17rem] md:bottom-0 scale-[3.5] md:scale-100 "}
                    alt={""}
                    width={1920}
                    height={1151} quality={100} loading={"lazy"}/>
@@ -26,12 +26,12 @@ export const SIS = () => {
             <span
                 className={"pointer-events-none select-none hidden lg:block w-screen h-96 bg-gradient-to-t from-white via-white/80 absolute bottom-0 left-0"}/>
             <section
-                className={"relative flex flex-col justify-center items-center lg:items-start mt-6 px-8 md:px-10 lg:mt-28 lg:px-64 text-white gap-2"}>
-                <h2 className={"text-center lg:text-left text-6xl lg:text-7xl font-black text-midnight-green leading-[0.8] lg:leading-[0.75]"}>{strings.services.sections["2"].headline}<br/><strong
+                className={"relative flex flex-col justify-center items-center lg:items-start mt-6 px-8 md:px-10 lg:mt-28 lg:px-64 text-white gap-2 h-full"}>
+                <h2 className={"text-center lg:text-left text-6xl lg:text-7xl font-black text-viridian-green leading-[0.8] lg:leading-[0.75]"}>{strings.services.sections["2"].headline}<br/><strong
                     className={"text-7xl lg:text-9xl text-caribbean-green"}>{strings.services.sections["2"].remark}</strong>
                 </h2>
                 <h3 className={"text-center lg:text-left text-2xl lg:text-4xl text-viridian-green"}>{strings.services.sections["2"].subtitle}</h3>
-                <p className={"font-normal mt-8 text-base md:text-lg lg:text-2xl text-neutral-600 text-center lg:text-left max-w-[38rem] lg:max-w-[50rem]"}>{strings.services.sections["2"].content}</p>
+                <p className={"font-normal mt-8 text-base md:text-lg lg:text-2xl text-neutral-600 text-center lg:text-left max-w-[38rem] lg:max-w-[50rem]"} dangerouslySetInnerHTML={{__html: strings.services.sections["2"].content}}></p>
                 <Link href={"/servicios/fisioterapia-avanzada"} target={"_blank"}
                       rel={"noreferrer"} className={buttonStyle}>
                     {strings.services.sections["2"].cta}

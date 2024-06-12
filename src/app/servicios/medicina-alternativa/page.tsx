@@ -38,6 +38,7 @@ export default function AltMedicine() {
                 </div>
                 <section
                     className={"md:w-136 lg:w-96 text-center md:text-start 2xl:w-128 font-normal text-lg md:text-xl 2xl:text-2xl text-neutral-600 relative h-full pt-36 pb-20 md:pb-16 md:pt-40 lg:pb-16 lg:pt-36 xl:pb-32 xl:pt-48 2x:pb-40 2xl:pt-44 flex flex-col items-center md:items-start justify-center gap-8"}>
+                    <h2 className={"mt-8 lg:w-168 2xl:w-208 font-black italic text-caribbean-green text-3xl md:text-5xl 2xl:text-6xl"}>{s.title}</h2>
                     <p>{s.paragraph1}</p>
                     <p>{s.paragraph2}</p>
                     <ul className={"text-skobeloff font-black italic list-disc ml-6 text-start"}>

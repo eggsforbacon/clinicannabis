@@ -249,7 +249,7 @@ export default function Legal () {
                                     <li className={lih2}><h3>{navigation.conditions["promotionOctubre"]}</h3></li>
                                     <li className={`${lih3} text-caribbean-green`}>PROMOCIÓN MES DE LAS MADRES 2024</li>
                                     <p>
-                                        En <strong>Clinicannabis</strong> nos complace celebrar el amor y la dedicación de todas las madres durante este
+                                        En <strong>Clinivital</strong> nos complace celebrar el amor y la dedicación de todas las madres durante este
                                         mes especial. Por ello, hemos preparado una promoción exclusiva diseñada para honrar su
                                         bienestar y cuidado. A continuación, detallamos las condiciones y restricciones aplicables a esta
                                         promoción del mes de la madre para garantizar una experiencia satisfactoria y transparente.
