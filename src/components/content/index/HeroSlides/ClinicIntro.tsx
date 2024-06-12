@@ -42,7 +42,7 @@ export const ClinicIntro = () => {
                         <strong
                             className={"bg-gradient-to-r w-fit from-clinic-jade to-clinic-blue-chill bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-bg-size duration-300 ease-in-out lg:hover:bg-[length:100%_3px]"}>{strings.landing.hero.animation.subtitleRemark}</strong>
                     </p>
-                    <Link href={"/contacto"} onAnimationEnd={handleTextAnimEnd}
+                    <Link href={'/blog/clinicannabis-es-ahora-cliniVital'} onAnimationEnd={handleTextAnimEnd}
                             className={`hidden lg:block mt-6 rounded-full bg-viridian-green text-xl text-white px-10 py-2 shadow-lg shadow-viridian-green/15 transition duration-500 ease-in-out lg:hover:bg-white lg:hover:text-viridian-green focus:scale-110 focus:bg-white focus:text-viridian-green border-transparent border-2 border-solid lg:hover:border-viridian-green lg:hover:shadow-viridian-green/20 ${loadedOnce ? "" : animateHero} lg:animation-duration-2400`}>{strings.landing.hero.animation.cta}</Link>
                 </article>
             </section>
@@ -52,7 +52,7 @@ export const ClinicIntro = () => {
                     <video height={1080 * 1.8} width={1920 * 1.8} muted playsInline autoPlay controls={false}
                            className={"scale-[1.5] lg:scale-[1.75] xl:scale-[1.25]"}
                            onEnded={handleOnEnded}>
-                        <source src={"/index/header/slides/ClinicannabisAnimation.mp4"}
+                        <source src={"/index/header/slides/ClinicannabisAnimation2.mp4"}
                                 type={"video/mp4"}/>
                         Your browser does not support the video tag.
                     </video>

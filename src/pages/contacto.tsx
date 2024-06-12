@@ -50,7 +50,7 @@ const Contacto: NextPage = () => {
                     </section>
                 </article>
                 <Link href={"/"}>
-                    <Image className={"lg:block hidden absolute top-4 left-24"} src={"/images/svg/clinic_white.svg"} alt={""} width={560*.6} height={560*.6} />
+                    <Image className={"lg:block hidden absolute top-4 left-24"} src={"/images/icons/clinivital-04.png"} alt={""} width={560*.6} height={560*.6} />
                 </Link>
                 <Footer/>
             </main>

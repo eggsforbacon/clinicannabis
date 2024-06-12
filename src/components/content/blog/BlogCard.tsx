@@ -14,7 +14,7 @@ export const BlogCard = (props : {
             <section className={"z-10 left-0 bottom-10 w-full min-h-[9rem] px-4 lg:px-6 text-center text-midnight-green bg-white flex flex-col items-stretch justify-start py-4 gap-2"}>
                 <h3 className={"text-sm lg:text-base"}>{props.date}</h3>
                 <h2 className={"text-lg lg:text-xl xl:text-2xl font-semibold text-center lg:text-start"}>{props.title}</h2>
-                <h3 className={"text-sm lg:text-base xl:text-xl font-normal max-h-[5rem] text-center lg:text-start"}>{props.description}</h3>
+                <h3 className={"text-sm lg:text-base xl:text-xl font-normal max-h-[5rem] text-center lg:text-start"} dangerouslySetInnerHTML={{__html: props.description}}></h3>
             </section>
         </Link>
     );

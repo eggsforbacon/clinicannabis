@@ -2,8 +2,8 @@ import {NextApiRequest, NextApiResponse} from "next";
 import {mailOptions, transporter} from "@/config/nodemailer";
 
 const buildHTML = (name : string, email : string, message : string) : string => {
-    return `<h1>Una nueva persona se quiere contactar con Clinicannabis</h1>
-            <p>Nuevo envío de formulario de contacto desde <a href='https://clinivital.com.co/contacto'>Clinivital</a></p>
+    return `<h1>Una nueva persona se quiere contactar con Clinivital</h1>
+            <p>Nuevo envío de formulario de contacto desde <a href='https://clinivital.com.co/contact'>Clinivital</a></p>
             <p><strong>Nombre: </strong>${name}</p>
             <p><strong>Correo: </strong>${email}</p>
             <p><strong>Mensaje: </strong>${message}</p>

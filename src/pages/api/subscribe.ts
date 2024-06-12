@@ -3,7 +3,7 @@ import {mailOptions, transporter} from "@/config/nodemailer";
 
 const html = (data: {email: string}) => `
     <main>
-        <h1>Clinicannabis: nuevo suscriptor a newsletter de Clinicannabis</h1>
+        <h1>Clinivital: nuevo suscriptor a newsletter de Clinivital</h1>
         <p>Correo: ${ data.email }</p>
     </main>`
 
@@ -17,8 +17,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
             const sentMessageInfo = await transporter.sendMail({
                 ...mailOptions,
-                subject: "Nuevo suscriptor a newsletter de Clinicannabis",
-                text: `El correo ${data} se ha suscrito al newsletter de clinicannabis`,
+                subject: "Nuevo suscriptor a newsletter de Clinivital",
+                text: `El correo ${data} se ha suscrito al newsletter de Clinivital`,
                 html: html(data)
             });
             return res.status(200).json({messageInfo: sentMessageInfo});

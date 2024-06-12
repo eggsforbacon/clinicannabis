@@ -26,20 +26,21 @@ export default function SIS() {
             <article
                 className={"relative flex flex-col items-center lg:items-end justify-center px-6 md:px-16 pt-16 lg:pt-8 xl:pt-0 lg:px-32 xl:px-44 2xl:px-64 h-192 md:h-224 lg:h-208 2xl:h-[60rem]"}>
                 <div className={"absolute h-full w-full top-0 left-0 overflow-clip"}>
-                    <Image src={"/services/sis/legs.webp"}
+                    <Image src={"/services/sis/legs.jpg"}
                            alt={"Some cannabis leaves on a white background with some seeds and alternative medicine"}
                            quality={100}
                            width={1920} height={1080}
                            className={"absolute top-80 md:top-80 lg:top-24 xl:top-0 -left-128 md:left-44 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.2] lg:scale-[1.45] xl:scale-125 2xl:scale-115"}/>
-                    <Image src={"/services/sis/gradient.webp"} alt={"A gradient"} quality={100}
+                    {/*<Image src={"/services/sis/gradient.webp"} alt={"A gradient"} quality={100}
                            width={1920} height={1080}
-                           className={"absolute top-64 md:top-40 lg:top-24 xl:top-0 left-16 md:-left-32 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.3] lg:scale-[1.45] xl:scale-125 2xl:scale-115"}/>
+                           className={"absolute top-64 md:top-40 lg:top-24 xl:top-0 left-16 md:-left-32 lg:left-0 select-none pointer-events-none scale-[3.7] md:scale-[2.3] lg:scale-[1.45] xl:scale-125 2xl:scale-115"}/>*/}
                 </div>
                 <section
-                    className={"relative lg:w-112 2xl:w-136 flex flex-col items-center lg:items-start justify-start gap-8 text-center lg:text-start md:text-xl 2xl:text-2xl font-normal text-white"}>
+                    className={"relative lg:w-136 2xl:w-192 flex flex-col items-center lg:items-start justify-start gap-8 text-center lg:text-start md:text-xl 2xl:text-2xl font-normal text-neutral-500"}>
+                    <h2 className={"mt-8 lg:w-168 2xl:w-208 font-black italic text-caribbean-green text-3xl md:text-5xl 2xl:text-6xl"}>{s.title}</h2>
                     <p>{s.intro}</p>
                     <p>{s.points.intro}</p>
-                    <ul className={"font-bold list-disc ml-5"}>
+                    <ul className={"font-bold list-disc ml-5 h-[25vh] grid grid-cols-2 text-skobeloff"}>
                         {
                             bullets.map((s, i) => {
                                 return (
