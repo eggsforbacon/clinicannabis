@@ -10,6 +10,8 @@ import Footer from "@/components/ui/Footer";
 import React from "react";
 import {AlternativeMedicine} from "@/components/content/services/AlternativeMedicine";
 import {Diagnostics} from "@/components/content/services/Diagnostics";
+import { SaludMental } from "@/components/content/services/SaludMental";
+import InvestigacionDesarrolloInnovacion from "@/components/content/services/InvestigacionDesarrolloInnovacion";
 export const metadata : Metadata = {
     title: 'Nuestros Servicios',
     description: 'Trabajamos para cumplir con los estándares de calidad que garanticen que nuestros tratamientos y productos te brinden una mejor calidad de vida.',
@@ -26,14 +28,14 @@ export default function Services() {
     return (
         <main className={"w-full min-h-screen overflow-x-clip"}>
             <Navbar selection={"services"} />
+            <FunctionalMedicine />
             <MedicalCannabis />
             <SIS />
-            <PainClinic />
             <Serums />
-            <FunctionalMedicine />
             <AlternativeMedicine />
-            <Diagnostics />
+            <SaludMental/>
             <Experience />
+            <InvestigacionDesarrolloInnovacion/>
             <Footer />
         </main>
     );

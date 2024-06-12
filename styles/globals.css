@@ -10,15 +10,15 @@
 
 @layer base {
 
-    *::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-    * {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
+    body::-webkit-scrollbar-thumb {
+        background-color: #009490;
+        border-radius: 14px;
+        border: 8px solid #009490;
+      }
+    
+      body::-webkit-scrollbar {
+        width: 8px;
+      }
 
     .debug {
         @apply border-solid border-2 border-fuchsia-600;

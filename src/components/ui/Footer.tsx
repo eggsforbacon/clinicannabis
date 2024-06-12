@@ -77,7 +77,7 @@ const Footer = () => {
                         <span className={"w-full h-px bg-green-sheen"}/>
                         <section className={"px-3 py-10 h-full flex flex-col lg:flex-row items-center justify-between"}>
                             <Link aria-label={"Clinicannabis"} href={"/"} className={"-ml-6 h-20 w-auto"}>
-                                <Image src={"/images/svg/clinic_white.svg"} alt={"Clinicannabis. Centro de Medicina Ancestral Orígenes"} width={16} height={16}
+                                <Image src={"/images/icons/logo_default.png"} alt={"CliniVital. Centro de Medicina Ancestral Orígenes"} width={2895} height={932}
                                        className={"h-full w-auto"}/>
                             </Link>
                             <ul className={"grid grid-cols-2 lg:grid-cols-4 mt-4 place-items-center gap-6"}>
@@ -85,7 +85,7 @@ const Footer = () => {
                                     <Link aria-label={"Facebook"} href={"https://www.facebook.com/Clinicanabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <Facebook
                                             className={"h-6 w-6 fill-green-sheen transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
-                                        <p className={"text-sm font-normal"}>Clinicannabis</p>
+                                        <p className={"text-sm font-normal"}>Clinivital</p>
                                         <p className={"sr-only"}>Facebook</p>
                                     </Link>
                                 </li>
@@ -93,7 +93,7 @@ const Footer = () => {
                                     <Link aria-label={"Instagram"} href={"https://www.instagram.com/clinicannabis.col/"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"} target={"_blank"}>
                                         <Instagram
                                             className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
-                                        <p className={"text-sm font-normal"}>@clinicannabis.col</p>
+                                        <p className={"text-sm font-normal"}>@clinivital.col</p>
                                         <p className={"sr-only"}>Instagram</p>
                                     </Link>
                                 </li>
@@ -101,7 +101,7 @@ const Footer = () => {
                                     <Link aria-label={"Twitter/X"} href={"https://www.twitter.com/clinicannabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <TwitterX
                                             className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
-                                        <p className={"text-sm font-normal"}>@clinicannabis</p>
+                                        <p className={"text-sm font-normal"}>@clinivital</p>
                                         <p className={"sr-only"}>Twitter/X</p>
                                     </Link>
                                 </li>
@@ -109,7 +109,7 @@ const Footer = () => {
                                     <Link aria-label={"YouTube"} href={"https://www.youtube.com/@clinicannabis9526"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <Youtube
                                             className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
-                                        <p className={"text-sm font-normal"}>@clinicannabis9526</p>
+                                        <p className={"text-sm font-normal"}>@clinivital9526</p>
                                         <p className={"sr-only"}>YouTube</p>
                                     </Link>
                                 </li>

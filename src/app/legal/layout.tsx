@@ -2,7 +2,7 @@ import {Metadata} from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-    title: 'Tratamiento de Datos | Clinicannabis',
+    title: 'Tratamiento de Datos | Clinivital',
     icons: [
         {
             rel: 'icon',
