@@ -69,7 +69,7 @@ export function slug(props: IProps) {
                         <p className={"font-bold"}>Agenda tu cita 📱 <Link
                             className={"underline underline-offset-4 decoration-1 text-caribbean-green"}
                             href={"https://wa.link/e7swak"}>317 435 5876</Link></p>
-                        <p className={"font-bold"}>Te invitamos a conocer mucho más de Clinivital navegando por su
+                        <p className={"font-bold"}>Te invitamos a conocer mucho más de CliniVital navegando por su
                             página web <Link
                                 className={"underline underline-offset-4 decoration-1 text-caribbean-green"}
                                 href={"/"}>www.clinivital.com.co</Link></p>
