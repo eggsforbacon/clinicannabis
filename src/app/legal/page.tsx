@@ -247,50 +247,35 @@ export default function Legal () {
                                 </li>
                                 <ol className={"ml-5"}>
                                     <li className={lih2}><h3>{navigation.conditions["promotionOctubre"]}</h3></li>
-                                    <li className={`${lih3} text-caribbean-green`}>PROMOCIÓN MES DE LAS MADRES 2024</li>
+                                    <li className={`${lih3} text-caribbean-green`}>PROMOCIÓN DE AMOR Y AMISTAD <br />SEPTIEMBRE 2024</li>
                                     <p>
-                                        En <strong>Clinivital</strong> nos complace celebrar el amor y la dedicación de todas las madres durante este
-                                        mes especial. Por ello, hemos preparado una promoción exclusiva diseñada para honrar su
-                                        bienestar y cuidado. A continuación, detallamos las condiciones y restricciones aplicables a esta
-                                        promoción del mes de la madre para garantizar una experiencia satisfactoria y transparente.
+                                        En <strong>CliniVital</strong> pensamos en tu bienestar y en tus seres queridos. Por esta razón, creamos
+                                        una promoción en el mes de septiembre de 2024 para que celebres el amor y la amistad
+                                        regalando vitalidad y cuidando tu salud y la de quienes más amas.
                                     </p>
                                     <h5 className={lih4}>¿En qué consiste nuestra promoción?</h5>
                                     <li className="text-caribbean-green">
-                                        40% de descuento en inyección de Plasma Rico en Plaquetas (PRP) y 25% de descuento en Terapia de Inducción de Colágeno (TIC) a partir de
-                                        paquetes de 4 sesiones.
+                                        30% de descuento en tu segunda y cuarta sesión de sueroterapia.
+                                    </li>
+                                    <li className="text-caribbean-green">
+                                        Si traes un referido efectivo recibirás el 30% de descuento en tu segundo, tercer y cuarto suero.
                                     </li>
                                     <h5 className={lih4}>¿Cuáles son las condiciones y restricciones de esta promoción?</h5>
                                     <ol className="list-decimal ml-5">
-                                        <li>Promoción válida hasta el 31 de mayo de 2024.</li>
-                                        <li>Se debe pagar el tratamiento completo en la primera sesión</li>
-                                        <li>Se pueden combinar terapias para armar el paquete, pero cada una conserva su propio descuento (PRP 40% y TIC 25%).</li>
+                                        <li>Promoción válida hasta el 30 de septiembre de 2024.</li>
+                                        <li>Dado que los sueros tienen precios variables, según la fórmula indicada por el
+                                        médico, se debe pagar la fórmula con mayor costo.</li>
+                                        <li>El referido tendrá el beneficio del 30% de descuento en la segunda y cuarta sesión de
+                                        sueroterapia.</li>
                                         <li>
-                                            Se aplica pago por convenios empresariales con la respectiva aprobación del área de
-                                            talento humano de cada empresa.
+                                        Para el caso de los convenios, el descuento no es acumulable.
                                         </li>
                                         <li>
-                                            Para los convenios empresariales, socios, familia de socios, empleados, familiares y
-                                            amigos, se aplica el descuento de la campaña de mayo, pero no es acumulable con los
-                                            descuentos propios de cada convenio.
+                                        La promoción no incluye el valor del domicilio de la sueroterapia, en caso tomar el
+                                        servicio extramural.
                                         </li>
-                                        <li>El tiempo de redención es de 1 mes después de la compra.</li>
-                                        <li>
-                                            Se puede pagar con los bonos de diciembre, pero no se aplica el descuento de la
-                                            promoción del mes de las madres, es decir, se redime el bono con tarifa full y solo aplica
-                                            para la inyección de plasma rico en plaquetas.
-                                        </li>
-                                        <li>
-                                            Se pueden aplicar 2 tipos de terapia el mismo día, pero las siguientes deben realizarse
-                                            semanalmente y cada terapia tiene una duración de 45 minutos.
-                                        </li>
-                                        <li>
-                                            No se realizan devoluciones de dinero si no se toma el paquete completo. Las terapias
-                                            restantes se pueden ceder a otra persona, pero no se cambia por otros servicios o
-                                            productos.
-                                        </li>
-                                        <li>El descuento aplica para hombres y mujeres, mayores de edad, que deseen tomarlo.</li>
                                     </ol>
-                                    <li className={`${lih3} text-caribbean-green`}>¡Ven a celebrar con nosotros a las madres!</li>
+                                    <li className={`${lih3} text-caribbean-green`}>¡Te esperamos!</li>
                                 </ol>
                             </ol>
                         </article>
