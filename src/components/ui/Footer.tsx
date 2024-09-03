@@ -98,7 +98,7 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link aria-label={"Twitter/X"} href={"https://www.twitter.com/https://x.com/i/flow/login?redirect_after_login=%2Fclinivitalcol"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
+                                    <Link aria-label={"Twitter/X"} href={"https://x.com/clinivitalcol"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <TwitterX
                                             className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
                                         <p className={"text-sm font-normal"}>@clinivital</p>
