@@ -82,7 +82,7 @@ const Footer = () => {
                             </Link>
                             <ul className={"grid grid-cols-2 lg:grid-cols-4 mt-4 place-items-center gap-6"}>
                                 <li>
-                                    <Link aria-label={"Facebook"} href={"https://www.facebook.com/Clinicanabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
+                                    <Link aria-label={"Facebook"} href={"https://www.facebook.com/Clinivitalcol"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <Facebook
                                             className={"h-6 w-6 fill-green-sheen transition duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
                                         <p className={"text-sm font-normal"}>Clinivital</p>
@@ -90,7 +90,7 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link aria-label={"Instagram"} href={"https://www.instagram.com/clinicannabis.col/"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"} target={"_blank"}>
+                                    <Link aria-label={"Instagram"} href={"https://www.instagram.com/clinivitalcol/"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"} target={"_blank"}>
                                         <Instagram
                                             className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
                                         <p className={"text-sm font-normal"}>@clinivital.col</p>
@@ -98,7 +98,7 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link aria-label={"Twitter/X"} href={"https://www.twitter.com/clinicannabis"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
+                                    <Link aria-label={"Twitter/X"} href={"https://www.twitter.com/https://x.com/i/flow/login?redirect_after_login=%2Fclinivitalcol"} target={"_blank"} className={"text-green-sheen flex flex-col items-center justify-center gap-1 transition duration-300 ease-in-out hover:text-white"}>
                                         <TwitterX
                                             className={"h-6 w-6 transition fill-green-sheen duration-300 quintic-in-out lg:hover:scale-110 focus:scale-110 hover:fill-white"}/>
                                         <p className={"text-sm font-normal"}>@clinivital</p>
