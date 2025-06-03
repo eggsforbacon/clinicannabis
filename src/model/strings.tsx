@@ -16,6 +16,7 @@ export const strings: IKeyedObject = {
     },
     'footer': {
         'copy': <>{"CliniVital "}&copy;{" 2023 | Todos los derechos reservados"}</>,
+        'trademark': <>{"Desarrollado por "}<span className={"transition-all duration-200 ease-in-out group-hover:underline group-hover:text-white group-hover:font-bold"}>{"marabunta.co"}</span></>,
         'questions': {
             'headline': <>{"¿Tienes alguna"}</>,
             'remark': <>{"pregunta?"}</>,

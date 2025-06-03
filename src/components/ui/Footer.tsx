@@ -119,8 +119,9 @@ const Footer = () => {
                 </section>
             </footer>
             <section
-                className={"z-20 text-base text-green-sheen bg-dark-green font-normal grid grid-cols-1 place-items-center w-full py-3"}>
+                className={"z-20 text-base text-green-sheen bg-dark-green font-normal grid grid-cols-1 place-items-center w-full py-3 group"}>
                 <p className={"px-8 text-center"}>{strings.footer.copy}</p>
+                <Link href={"https://marabunta.co"} target={"_blank"}>{strings.footer.trademark}</Link>
             </section>
         </>
     );

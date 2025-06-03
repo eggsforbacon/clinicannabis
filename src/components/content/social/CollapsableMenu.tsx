@@ -52,11 +52,6 @@ export default function CollapsableMenu () {
                             Cronograma de actividades PPSS <BsFileExcel className={"h-8 aspect-square text-inherit"} size={24}/>
                         </Link>
                     </li>
-                    <li className={liStyle}>
-                        <Link className={linkStyle} href="/data/PACIENTES%20SEMANA%20VITAL.xlsx">
-                            Pacientes de la semana vital <BsFileExcel className={"h-8 aspect-square text-inherit"} size={24}/>
-                        </Link>
-                    </li>
                 </ul>
             </div>
         </div>
