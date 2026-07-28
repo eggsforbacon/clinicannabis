@@ -14,6 +14,10 @@ export default function Finances() {
           <h1 className={"relative text-white text-6xl font-bold"}>Estados Financieros</h1>
         </section>
         <section className={"flex flex-col items-stretch justify-start gap-8 py-16 w-full px-96"}>
+          <YearChip year={"2025 y 2024"}>
+            <Link href={"/data/estados-financieros/2024-2025/ESTADOS FINANCIEROS  Y NOTAS REVELACION DIC 2025.pdf"}>1. Estados Financieros y Notas 2025 2024 y 2024 2023</Link>
+            <Link href={"/data/estados-financieros/2024-2025/CERTIFICACION DE LOS ESTADOS FINANCIEROS DIC 2025 CLINIVITAL.pdf"}>2. Certificación de los Estados Financieros 2025</Link>
+          </YearChip>
           <YearChip year={"2023"}>
             <Link href={"/data/estados-financieros/2023/1.Estados Financieros  2023 2022.pdf"}>1. Estados Financieros 2023 2022</Link>
             <Link href={"/data/estados-financieros/2023/2.Notas Estados Financieros 2023 2022.pdf"}>2. Notas Estados Financieros 2023 2022</Link>
